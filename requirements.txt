@@ -1,0 +1,16 @@
+# Core ML + text
+torch
+transformers
+sentencepiece
+safetensors
+regex
+tqdm
+
+# PDF ingest
+pymupdf          # fitz
+pdfplumber
+pypdf
+
+# Export
+python-docx
+PyYAML

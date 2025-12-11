@@ -1,0 +1,20 @@
+{
+  "stem": "Book1",
+  "pdf_file": "/Users/repin/Projects/translate-my-book/ingest/Book1.pdf",
+  "size_bytes": 14291563,
+  "pages_total": 227,
+  "pages_status": {
+    "TEXT_OK": 224,
+    "WEAK_TEXT": 1,
+    "NO_TEXT": 2,
+    "OTHER": 0
+  },
+  "pages_source": {
+    "ocr": 3,
+    "text": 224
+  },
+  "language_main": "ru",
+  "language_probs": [
+    "ru:0.999997519395223"
+  ]
+}

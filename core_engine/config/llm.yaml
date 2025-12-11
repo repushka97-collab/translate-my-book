@@ -1,0 +1,7 @@
+translation_model: "dummy:echo"
+qa_model: "dummy:echo"
+research_model: "dummy:echo"
+ocr_model: "dummy:echo"
+local_fallback: "local:echo"
+
+

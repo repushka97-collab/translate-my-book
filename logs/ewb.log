@@ -1,0 +1,218 @@
+[2025-12-06 00:52:01,733] [INFO] ewb.llm_adapter: Starting translation: 78 blocks, batch_size=8, model=qwen2.5:7b
+[2025-12-06 00:55:57,990] [INFO] ewb.llm_adapter: Starting translation: 78 blocks, batch_size=8, model=qwen2.5:7b
+[2025-12-06 00:57:40,811] [INFO] ewb.llm_adapter: Starting translation: 78 blocks, batch_size=8, model=qwen2.5:7b
+[2025-12-06 00:59:38,653] [INFO] ewb.llm_adapter: Starting translation: 78 blocks, batch_size=8, model=qwen2.5:7b
+[2025-12-06 00:59:38,688] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 00:59:38,720] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 00:59:38,720] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 00:59:38,754] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 00:59:38,782] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 00:59:38,782] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 00:59:38,792] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 00:59:38,827] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 00:59:38,827] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 00:59:38,859] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 00:59:38,889] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 00:59:38,890] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 00:59:38,900] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 00:59:38,936] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 00:59:38,936] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 00:59:38,949] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 00:59:38,962] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 00:59:38,962] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 00:59:38,997] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 00:59:39,030] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 00:59:39,030] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 00:59:39,059] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 00:59:39,093] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 00:59:39,093] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 00:59:39,122] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 00:59:39,135] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 00:59:39,135] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 00:59:39,168] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 00:59:39,179] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 00:59:39,180] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 00:59:39,180] [INFO] ewb.llm_adapter: Translation completed.
+[2025-12-06 01:04:58,231] [INFO] ewb.llm_adapter: Starting translation: 78 blocks, batch_size=8, model=qwen2.5:7b
+[2025-12-06 01:04:58,246] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:04:58,284] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:04:58,284] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:04:58,315] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:04:58,343] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:04:58,343] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:04:58,374] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:04:58,408] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:04:58,408] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:04:58,436] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:04:58,449] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:04:58,449] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:04:58,483] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:04:58,517] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:04:58,517] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:04:58,534] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:04:58,564] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:04:58,564] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:04:58,579] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:04:58,606] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:04:58,606] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:04:58,640] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:04:58,668] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:04:58,668] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:04:58,698] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:04:58,729] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:04:58,729] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:04:58,759] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:04:58,792] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:04:58,792] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:04:58,792] [INFO] ewb.llm_adapter: Translation completed.
+[2025-12-06 01:13:13,562] [INFO] ewb.llm_adapter: Starting translation: 78 blocks, batch_size=8, model=qwen2.5:7b
+[2025-12-06 01:13:13,575] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:13:13,612] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:13:13,612] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:13:13,642] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:13:13,653] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:13:13,653] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:13:13,691] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:13:13,723] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:13:13,724] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:13:13,754] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:13:13,785] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:13:13,785] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:13:13,801] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:13:13,820] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:13:13,820] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:13:13,848] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:13:13,863] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:13:13,863] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:13:13,898] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:13:13,934] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:13:13,935] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:13:13,965] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:13:13,997] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:13:13,997] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:13:14,031] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:13:14,065] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:13:14,065] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:13:14,090] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:13:14,103] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:13:14,103] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:13:14,104] [INFO] ewb.llm_adapter: Translation completed.
+[2025-12-06 01:18:04,299] [INFO] ewb.llm_adapter: Starting translation: 78 blocks, batch_size=8, model=qwen2.5:7b
+[2025-12-06 01:18:04,313] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:18:04,325] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:18:04,325] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:18:04,335] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:18:04,346] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:18:04,346] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:18:04,369] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:18:04,381] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:18:04,381] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:18:04,415] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:18:04,426] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:18:04,426] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:18:04,462] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:18:04,493] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:18:04,493] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:18:04,525] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:18:04,558] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:18:04,558] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:18:04,588] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:18:04,620] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:18:04,620] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:18:04,647] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:18:04,678] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:18:04,678] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:18:04,690] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:18:04,724] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:18:04,724] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:18:04,735] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:18:04,747] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:18:04,747] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:18:04,747] [INFO] ewb.llm_adapter: Translation completed.
+[2025-12-06 01:18:11,399] [INFO] ewb.llm_adapter: Starting translation: 78 blocks, batch_size=8, model=qwen2.5:7b
+[2025-12-06 01:18:11,412] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:18:11,441] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:18:11,441] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:18:11,452] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:18:11,463] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:18:11,463] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:18:11,474] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:18:11,502] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:18:11,502] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:18:11,534] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:18:11,545] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:18:11,545] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:18:11,581] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:18:11,612] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:18:11,612] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:18:11,627] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:18:11,661] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:18:11,661] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:18:11,671] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:18:11,704] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:18:11,704] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:18:11,735] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:18:11,767] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:18:11,768] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:18:11,779] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:18:11,789] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:18:11,789] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:18:11,812] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 1): 
+[2025-12-06 01:18:11,823] [ERROR] ewb.llm_adapter: LLM HTTP 502 (attempt 2): 
+[2025-12-06 01:18:11,823] [ERROR] ewb.llm_adapter: LLM failed after 2 attempts, falling back to source texts
+[2025-12-06 01:18:11,824] [INFO] ewb.llm_adapter: Translation completed.
+[2025-12-06 01:25:03,476] [INFO] ewb.llm_adapter: Starting NLLB translation: 78 blocks, batch_size=8
+[2025-12-06 01:25:03,476] [INFO] ewb.llm_adapter: Loading NLLB model: facebook/nllb-200-distilled-1.3B
+[2025-12-06 01:25:04,318] [WARNING] huggingface_hub.file_download: Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+[2025-12-06 01:25:05,333] [WARNING] huggingface_hub.file_download: Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+[2025-12-06 01:25:09,086] [WARNING] huggingface_hub.file_download: Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+[2025-12-06 01:33:10,761] [WARNING] huggingface_hub.file_download: Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+[2025-12-06 01:33:11,456] [INFO] ewb.llm_adapter: NLLB model loaded on device: cpu
+[2025-12-06 01:44:07,753] [INFO] ewb.llm_adapter: Starting NLLB translation: 78 blocks, batch_size=8
+[2025-12-06 01:44:07,753] [INFO] ewb.llm_adapter: Loading NLLB model: facebook/nllb-200-distilled-1.3B
+[2025-12-06 01:44:10,372] [WARNING] huggingface_hub.file_download: Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+[2025-12-06 01:44:11,015] [INFO] ewb.llm_adapter: NLLB model loaded on device: cpu
+[2025-12-06 01:52:57,099] [INFO] ewb.llm_adapter: NLLB translation completed.
+[2025-12-06 01:58:49,190] [INFO] ewb.llm_adapter: Starting NLLB translation: 78 blocks, batch_size=8
+[2025-12-06 01:58:49,190] [INFO] ewb.llm_adapter: Loading NLLB model: facebook/nllb-200-distilled-1.3B
+[2025-12-06 01:58:52,429] [INFO] ewb.llm_adapter: NLLB model loaded on device: cpu
+[2025-12-06 02:07:33,410] [INFO] ewb.llm_adapter: NLLB translation completed.
+[2025-12-06 02:24:53,483] [INFO] ewb.llm_adapter: Starting NLLB translation: 78 blocks, batch_size=8
+[2025-12-06 02:24:53,483] [INFO] ewb.llm_adapter: Loading NLLB model: facebook/nllb-200-distilled-1.3B
+[2025-12-06 02:24:57,740] [INFO] ewb.llm_adapter: NLLB model loaded on device: cpu
+[2025-12-06 02:34:07,114] [INFO] ewb.llm_adapter: NLLB translation completed.
+[2025-12-06 03:10:52,494] [INFO] ewb.llm_adapter: Starting NLLB translation: 78 blocks, batch_size=8
+[2025-12-06 03:10:52,495] [INFO] ewb.llm_adapter: Loading NLLB model: facebook/nllb-200-distilled-1.3B
+[2025-12-06 03:10:55,740] [INFO] ewb.llm_adapter: NLLB model loaded on device: cpu
+[2025-12-06 03:20:59,149] [INFO] ewb.llm_adapter: NLLB translation completed.
+[2025-12-06 18:58:24,238] [INFO] ewb.llm_adapter: Starting NLLB translation: 78 blocks, batch_size=8
+[2025-12-06 18:58:24,239] [INFO] ewb.llm_adapter: Loading NLLB model: facebook/nllb-200-distilled-1.3B
+[2025-12-06 18:58:31,021] [INFO] ewb.llm_adapter: NLLB model loaded on device: cuda
+[2025-12-06 19:21:37,951] [INFO] ewb.llm_adapter: Starting NLLB translation: 78 blocks, batch_size=8
+[2025-12-06 19:21:37,951] [INFO] ewb.llm_adapter: Loading NLLB model: facebook/nllb-200-distilled-1.3B
+[2025-12-06 19:21:42,578] [INFO] ewb.llm_adapter: NLLB model loaded on device: cpu
+[2025-12-06 19:30:17,616] [INFO] ewb.llm_adapter: NLLB translation completed.
+[2025-12-06 20:37:50,076] [INFO] ewb.llm_adapter: Starting NLLB translation: 78 blocks, batch_size=8
+[2025-12-06 20:37:50,076] [INFO] ewb.llm_adapter: Loading NLLB model: facebook/nllb-200-distilled-1.3B
+[2025-12-06 20:37:53,674] [INFO] ewb.llm_adapter: NLLB model loaded on device: cpu
+[2025-12-06 20:46:31,196] [INFO] ewb.llm_adapter: NLLB translation completed.
+[2025-12-06 22:04:24,519] [INFO] ewb.llm_adapter: Starting NLLB translation: 8 blocks, batch_size=8
+[2025-12-06 22:04:24,519] [INFO] ewb.llm_adapter: Loading NLLB model: facebook/nllb-200-distilled-1.3B
+[2025-12-06 22:04:28,106] [INFO] ewb.llm_adapter: NLLB model loaded on device: cpu
+[2025-12-06 22:05:09,721] [INFO] ewb.llm_adapter: NLLB translation completed.
+[2025-12-06 22:19:41,123] [INFO] ewb.llm_adapter: Starting NLLB translation: 8 blocks, batch_size=8
+[2025-12-06 22:19:41,123] [INFO] ewb.llm_adapter: Loading NLLB model: facebook/nllb-200-distilled-1.3B
+[2025-12-06 22:19:44,724] [INFO] ewb.llm_adapter: NLLB model loaded on device: cpu
+[2025-12-06 22:20:20,489] [INFO] ewb.llm_adapter: NLLB translation completed.
+[2025-12-06 22:48:22,935] [INFO] ewb.llm_adapter: Starting NLLB translation: 8 blocks, batch_size=8
+[2025-12-06 22:48:22,935] [INFO] ewb.llm_adapter: Loading NLLB model: facebook/nllb-200-distilled-1.3B
+[2025-12-06 22:48:26,526] [INFO] ewb.llm_adapter: NLLB model loaded on device: cpu
+[2025-12-06 22:49:02,300] [INFO] ewb.llm_adapter: NLLB translation completed.
+[2025-12-06 22:53:03,366] [INFO] ewb.llm_adapter: Starting NLLB translation: 8 blocks, batch_size=8
+[2025-12-06 22:53:03,366] [INFO] ewb.llm_adapter: Loading NLLB model: facebook/nllb-200-distilled-1.3B
+[2025-12-06 22:53:07,100] [INFO] ewb.llm_adapter: NLLB model loaded on device: cpu
+[2025-12-06 22:53:42,105] [INFO] ewb.llm_adapter: NLLB translation completed.
+[2025-12-06 23:00:26,598] [INFO] ewb.llm_adapter: Starting NLLB translation: 8 blocks, batch_size=8
+[2025-12-06 23:00:26,598] [INFO] ewb.llm_adapter: Loading NLLB model: facebook/nllb-200-distilled-1.3B
+[2025-12-06 23:00:30,425] [INFO] ewb.llm_adapter: NLLB model loaded on device: cpu
+[2025-12-06 23:01:05,798] [INFO] ewb.llm_adapter: NLLB translation completed.

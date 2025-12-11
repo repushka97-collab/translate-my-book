@@ -1,0 +1,10 @@
+pipeline:
+  ingest:
+    max_block_size: 5000   # символов before safe split
+  translate:
+    language_source: en
+    language_target: ru
+  export:
+    save_html: false
+    save_pdf: false
+    save_json: true

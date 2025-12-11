@@ -1,0 +1,357 @@
+{
+  "status": "warn",
+  "issues": [
+    {
+      "block_id": "p10_b1",
+      "page": 10,
+      "order": 61,
+      "type": "potential_break",
+      "severity": "low",
+      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
+      "meta": {
+        "src_len": 662
+      }
+    },
+    {
+      "block_id": "p10_b12",
+      "page": 10,
+      "order": 72,
+      "type": "potential_break",
+      "severity": "low",
+      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
+      "meta": {
+        "src_len": 2817
+      }
+    },
+    {
+      "block_id": "p10_b12",
+      "page": 10,
+      "order": 72,
+      "type": "mixed_alphabet",
+      "severity": "medium",
+      "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+      "meta": {
+        "latin": 404,
+        "cyr": 1276,
+        "latin_ratio": 0.24,
+        "cyr_ratio": 0.76
+      }
+    },
+    {
+      "block_id": "p11_b1",
+      "page": 11,
+      "order": 75,
+      "type": "suspect_terms_en_in_ru",
+      "severity": "low",
+      "message": "English acupuncture-related terms found in Russian translation.",
+      "meta": {
+        "terms": [
+          "yang"
+        ]
+      }
+    },
+    {
+      "block_id": "p11_b1",
+      "page": 11,
+      "order": 75,
+      "type": "repeated_tokens",
+      "severity": "low",
+      "message": "Repeated tokens detected in translated text.",
+      "meta": {
+        "tokens": [
+          "2016"
+        ]
+      }
+    },
+    {
+      "block_id": "p11_b2",
+      "page": 11,
+      "order": 76,
+      "type": "suspect_terms_en_in_ru",
+      "severity": "low",
+      "message": "English acupuncture-related terms found in Russian translation.",
+      "meta": {
+        "terms": [
+          "chi"
+        ]
+      }
+    },
+    {
+      "block_id": "p1_b0",
+      "page": 1,
+      "order": 0,
+      "type": "potential_break",
+      "severity": "low",
+      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
+      "meta": {
+        "src_len": 104
+      }
+    },
+    {
+      "block_id": "p1_b0",
+      "page": 1,
+      "order": 0,
+      "type": "mixed_alphabet",
+      "severity": "medium",
+      "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+      "meta": {
+        "latin": 12,
+        "cyr": 30,
+        "latin_ratio": 0.286,
+        "cyr_ratio": 0.714
+      }
+    },
+    {
+      "block_id": "p1_b4",
+      "page": 1,
+      "order": 4,
+      "type": "potential_break",
+      "severity": "low",
+      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
+      "meta": {
+        "src_len": 136
+      }
+    },
+    {
+      "block_id": "p1_b6",
+      "page": 1,
+      "order": 6,
+      "type": "potential_break",
+      "severity": "low",
+      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
+      "meta": {
+        "src_len": 1852
+      }
+    },
+    {
+      "block_id": "p1_b6",
+      "page": 1,
+      "order": 6,
+      "type": "suspect_terms_en_in_ru",
+      "severity": "low",
+      "message": "English acupuncture-related terms found in Russian translation.",
+      "meta": {
+        "terms": [
+          "yin",
+          "yang",
+          "qi"
+        ]
+      }
+    },
+    {
+      "block_id": "p2_b2",
+      "page": 2,
+      "order": 10,
+      "type": "potential_break",
+      "severity": "low",
+      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
+      "meta": {
+        "src_len": 943
+      }
+    },
+    {
+      "block_id": "p2_b3",
+      "page": 2,
+      "order": 11,
+      "type": "potential_break",
+      "severity": "low",
+      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
+      "meta": {
+        "src_len": 991
+      }
+    },
+    {
+      "block_id": "p3_b1",
+      "page": 3,
+      "order": 13,
+      "type": "potential_break",
+      "severity": "low",
+      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
+      "meta": {
+        "src_len": 2972
+      }
+    },
+    {
+      "block_id": "p3_b1",
+      "page": 3,
+      "order": 13,
+      "type": "suspect_terms_en_in_ru",
+      "severity": "low",
+      "message": "English acupuncture-related terms found in Russian translation.",
+      "meta": {
+        "terms": [
+          "yin",
+          "yang",
+          "qi"
+        ]
+      }
+    },
+    {
+      "block_id": "p3_b3",
+      "page": 3,
+      "order": 15,
+      "type": "potential_break",
+      "severity": "low",
+      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
+      "meta": {
+        "src_len": 1434
+      }
+    },
+    {
+      "block_id": "p3_b3",
+      "page": 3,
+      "order": 15,
+      "type": "repeated_tokens",
+      "severity": "low",
+      "message": "Repeated tokens detected in translated text.",
+      "meta": {
+        "tokens": [
+          "исследования"
+        ]
+      }
+    },
+    {
+      "block_id": "p4_b1",
+      "page": 4,
+      "order": 18,
+      "type": "potential_break",
+      "severity": "low",
+      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
+      "meta": {
+        "src_len": 683
+      }
+    },
+    {
+      "block_id": "p4_b3",
+      "page": 4,
+      "order": 20,
+      "type": "potential_break",
+      "severity": "low",
+      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
+      "meta": {
+        "src_len": 674
+      }
+    },
+    {
+      "block_id": "p5_b1",
+      "page": 5,
+      "order": 25,
+      "type": "potential_break",
+      "severity": "low",
+      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
+      "meta": {
+        "src_len": 739
+      }
+    },
+    {
+      "block_id": "p5_b2",
+      "page": 5,
+      "order": 26,
+      "type": "potential_break",
+      "severity": "low",
+      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
+      "meta": {
+        "src_len": 1424
+      }
+    },
+    {
+      "block_id": "p6_b2",
+      "page": 6,
+      "order": 32,
+      "type": "potential_break",
+      "severity": "low",
+      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
+      "meta": {
+        "src_len": 231
+      }
+    },
+    {
+      "block_id": "p6_b3",
+      "page": 6,
+      "order": 33,
+      "type": "potential_break",
+      "severity": "low",
+      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
+      "meta": {
+        "src_len": 1299
+      }
+    },
+    {
+      "block_id": "p7_b2",
+      "page": 7,
+      "order": 37,
+      "type": "potential_break",
+      "severity": "low",
+      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
+      "meta": {
+        "src_len": 1307
+      }
+    },
+    {
+      "block_id": "p7_b2",
+      "page": 7,
+      "order": 37,
+      "type": "repeated_tokens",
+      "severity": "low",
+      "message": "Repeated tokens detected in translated text.",
+      "meta": {
+        "tokens": [
+          "3"
+        ]
+      }
+    },
+    {
+      "block_id": "p7_b4",
+      "page": 7,
+      "order": 39,
+      "type": "potential_break",
+      "severity": "low",
+      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
+      "meta": {
+        "src_len": 518
+      }
+    },
+    {
+      "block_id": "p8_b2",
+      "page": 8,
+      "order": 43,
+      "type": "repeated_tokens",
+      "severity": "low",
+      "message": "Repeated tokens detected in translated text.",
+      "meta": {
+        "tokens": [
+          "оценки"
+        ]
+      }
+    },
+    {
+      "block_id": "p9_b6",
+      "page": 9,
+      "order": 53,
+      "type": "potential_break",
+      "severity": "low",
+      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
+      "meta": {
+        "src_len": 179
+      }
+    }
+  ],
+  "summary": {
+    "total_blocks": 78,
+    "checked": 78,
+    "issues_total": 28,
+    "issues_by_type": {
+      "potential_break": 18,
+      "mixed_alphabet": 2,
+      "suspect_terms_en_in_ru": 4,
+      "repeated_tokens": 4
+    },
+    "issues_by_severity": {
+      "low": 26,
+      "medium": 2
+    },
+    "roles_count": {
+      "unknown": 78
+    }
+  }
+}

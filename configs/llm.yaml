@@ -1,0 +1,24 @@
+default_profile: fast
+
+profiles:
+  dev:
+    backend: placeholder
+    device: cpu
+
+  fast:
+    backend: nllb
+    model_name: facebook/nllb-200-distilled-600M
+    device: cuda
+    batch_size: 8
+    max_length: 640
+    source_lang: en
+    target_lang: ru
+
+  full:
+    backend: nllb
+    model_name: facebook/nllb-200-distilled-1.3B
+    device: cpu
+    batch_size: 4
+    max_length: 640
+    source_lang: en
+    target_lang: ru
