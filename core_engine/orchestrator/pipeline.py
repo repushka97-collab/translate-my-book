@@ -11,6 +11,7 @@ from core_engine.ingest.pdf_ingest import ingest_pdf
 from core_engine.normalize.text_cleaner import normalize_blocks
 from core_engine.translate.llm_adapter import translate_blocks
 from core_engine.layout.block_reassemble import build_layout_model
+from core_engine.layout.heading_detector import detect_headings
 from core_engine.layout.layout_reassemble_v2 import build_paragraph_stream
 from core_engine.export.export_json import export_json_bundle
 from core_engine.export.docx_exporter import export_docx
@@ -65,6 +66,7 @@ def run_book_pipeline(
     # --------------------------------------------------------
     print("[2/9] Normalize blocks...")
     normalized = normalize_blocks(ingest["blocks"])
+    normalized = detect_headings(normalized)
     validate_blocks_structure(normalized, stage="normalize")
 
     # --------------------------------------------------------

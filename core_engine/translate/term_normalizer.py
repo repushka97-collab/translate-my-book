@@ -53,7 +53,7 @@ def _normalize_terms(text: str) -> str:
         flags=re.IGNORECASE,
     )
 
-    # Qi / Chi → ци (Qi)  (только если рядом нет русской записи)
+    # Qi / Chi → ци (Qi)
     s = re.sub(
         r"\bQi\b",
         "ци (Qi)",
@@ -62,6 +62,12 @@ def _normalize_terms(text: str) -> str:
     )
     s = re.sub(
         r"\bChi\b",
+        "ци (Qi)",
+        s,
+        flags=re.IGNORECASE,
+    )
+    s = re.sub(
+        r"\bQi\b",
         "ци (Qi)",
         s,
         flags=re.IGNORECASE,
@@ -131,10 +137,10 @@ def _normalize_terms(text: str) -> str:
     return s
 
 
-def run_term_normalizer(blocks: List[Block], min_chars: int = 80) -> List[Block]:
+def run_term_normalizer(blocks: List[Block], min_chars: int = 0) -> List[Block]:
     """
     Терминологический проход v1: нормализуем ключевые термины
-    только в длинных блоках.
+    по умолчанию во всех блоках (min_chars=0).
     """
     out = []
 

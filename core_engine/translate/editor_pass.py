@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from typing import List, Dict, Any
 import re
+from collections import Counter
 
 
 Block = Dict[str, Any]
@@ -99,13 +100,71 @@ def _apply_custom_fixes(text: str) -> str:
     return s
 
 
-def run_editor_pass(blocks: List[Block], min_chars: int = 200) -> List[Block]:
+def _dedupe_repeated_tokens(text: str) -> str:
+    """
+    Убираем подряд идущие дублирующиеся токены (регистр нечувствителен).
+    """
+    tokens = re.findall(r"\S+", text)
+    if len(tokens) < 2:
+        return text
+
+    out = []
+    prev = None
+    for t in tokens:
+        if prev is not None and t.lower() == prev.lower():
+            # пропускаем повтор
+            continue
+        out.append(t)
+        prev = t
+
+    return re.sub(
+        r"\S+",
+        lambda _: out.pop(0),
+        text,
+    )
+
+
+def _replace_mixed_one_letter_tokens(text: str) -> str:
+    """
+    Если токен состоит из одной латинской буквы между русскими словами (часто артефакт),
+    заменяем на кириллический аналог, если есть.
+    """
+    mapping = {
+        "a": "а",
+        "e": "е",
+        "o": "о",
+        "p": "р",
+        "c": "с",
+        "x": "х",
+        "y": "у",
+        "k": "к",
+        "b": "в",
+        "m": "м",
+        "t": "т",
+    }
+
+    def repl(match):
+        token = match.group(0)
+        low = token.lower()
+        if low in mapping:
+            repl_char = mapping[low]
+            return repl_char.upper() if token[0].isupper() else repl_char
+        return token
+
+    return re.sub(r"\b[A-Za-z]\b", repl, text)
+
+    return s
+
+
+def run_editor_pass(blocks: List[Block], min_chars: int = 50) -> List[Block]:
     """
     Editor-pass v1: работаем поверх перевода, только на длинных блоках.
 
     Сейчас:
     - режем склейки латиница+кириллица в одном токене (meridiansвсе → meridians все);
-    - правим несколько жёстко захардкоженных артефактов (НТакупунктура и т.п.).
+    - правим несколько жёстко захардкоженных артефактов (НТакупунктура и т.п.);
+    - убираем подряд идущие дубликаты токенов;
+    - заменяем одиночные латинские буквы в русских предложениях на кириллические аналоги.
 
     В будущем сюда можно будет подвесить настоящую LLM-редактуру.
     """
@@ -129,6 +188,12 @@ def run_editor_pass(blocks: List[Block], min_chars: int = 200) -> List[Block]:
 
         # 2) Исправление склеенных токенов с разными алфавитами
         text = _fix_mixed_scripts_in_text(text)
+
+        # 3) Удаляем подряд идущие дубликаты
+        text = _dedupe_repeated_tokens(text)
+
+        # 4) Одиночные латинские буквы → кириллические аналоги (грубый фикс)
+        text = _replace_mixed_one_letter_tokens(text)
 
         if text == original:
             processed.append(b)

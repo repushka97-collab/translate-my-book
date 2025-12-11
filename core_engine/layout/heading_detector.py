@@ -1,7 +1,20 @@
 from __future__ import annotations
 from typing import List, Dict, Any
+import re
 
 Block = Dict[str, Any]
+
+
+_CAPTION_RE = re.compile(r"^(figure|рис(унок)?)[\\.:\\s]", re.IGNORECASE)
+_LIST_RE = re.compile(r"^(\\d+[\\.)]|[•\\-–—])\\s+")
+
+
+def _looks_like_caption(text: str) -> bool:
+    return bool(_CAPTION_RE.match(text.strip()))
+
+
+def _looks_like_list_item(text: str) -> bool:
+    return bool(_LIST_RE.match(text.lstrip()))
 
 
 def _classify_heading_level(text: str, page: int, order: int) -> str:
@@ -56,8 +69,9 @@ def _classify_heading_level(text: str, page: int, order: int) -> str:
 
 def detect_headings(blocks: List[Block]) -> List[Block]:
     """
-    Проставляет metadata.role = heading1 / heading2 / paragraph
-    на основе эвристик по тексту.
+    Проставляет metadata.role эвристически:
+      heading1 / heading2 / list_item / caption / body
+    По умолчанию — body.
     """
     new_blocks: List[Block] = []
 
@@ -68,7 +82,18 @@ def detect_headings(blocks: List[Block]) -> List[Block]:
         text = b.get("translated_text") or b.get("text") or ""
         meta = b.get("metadata") or {}
 
-        role = _classify_heading_level(text, page, order)
+        role = "body"
+
+        if _looks_like_caption(text):
+            role = "caption"
+        elif _looks_like_list_item(text):
+            role = "list_item"
+        else:
+            level = _classify_heading_level(text, page, order)
+            if level.startswith("heading"):
+                role = level
+            else:
+                role = "body"
 
         new_b = dict(b)
         new_b["metadata"] = dict(meta)

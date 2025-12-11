@@ -172,6 +172,11 @@ def export_docx(paragraphs: Any, output_path: PathLike) -> str:
     para_list = _coerce_paragraph_list(paragraphs)
     _validate_paragraphs(para_list)
 
+    # Жёсткий контроль: если все тексты пустые — останавливаем экспорт
+    non_empty = [p for p in para_list if (p.get("text") or "").strip()]
+    if not non_empty:
+        raise ValueError("EXPORT ERROR: all paragraphs are empty")
+
     doc = Document()
 
     for p in para_list:
