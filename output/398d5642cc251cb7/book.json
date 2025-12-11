@@ -21,7 +21,7 @@
               "10.1186/s44424-025-00015-1",
               "https://doi.org/10.1186/s44424-025-00015-1"
             ],
-            "role": "paragraph"
+            "role": "body"
           },
           "block_id": "p1_b0",
           "normalized_text": "Tong ﻿\nInnovations in Acupuncture and Medicine (2025) 18:15\nhttps://doi.org/10.1186/s44424-025-00015-1",
@@ -63,8 +63,8 @@
             "protected_tokens": [
               "http://​creat​iveco​mmons.​org/​licen​ses/​by/4.​0/."
             ],
-            "quality_pass": "heuristic_v1",
-            "role": "paragraph"
+            "role": "body",
+            "quality_pass": "heuristic_v1"
           },
           "block_id": "p1_b2",
           "normalized_text": "© The Author(s) 2025. Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which\npermits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the\noriginal author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or\nother third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line\nto the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory\nregulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this\nlicence, visit http://​creat​iveco​mmons.​org/​licen​ses/​by/4.​0/.",
@@ -104,7 +104,7 @@
           },
           "metadata": {
             "protected_tokens": [],
-            "role": "paragraph"
+            "role": "body"
           },
           "block_id": "p1_b4",
           "normalized_text": "A Narrative Review of Effects and Underlying\nMechanisms of Needling Therapy for Treating\nMyofascial Pain and Musculoskeletal Disorders",
@@ -144,14 +144,14 @@
           },
           "metadata": {
             "protected_tokens": [],
+            "role": "body",
             "quality_pass": "heuristic_v1",
             "editor_pass": "heuristic_v1",
-            "term_pass": "v1",
-            "role": "paragraph"
+            "term_pass": "v1"
           },
           "block_id": "p1_b6",
           "normalized_text": "Abstract\nThis review aims to summarise the effects and underlying mechanisms of needling therapy (NT) in the treatment\nof myofascial pain and musculoskeletal (MSK) disorders. This review aims doing so by categorising NT effects according to different anatomic levels of the human body and linking each effect to the specific mechanism. Acupuncture,\nthe first form of NT, has existed for 3000 years and been practised by Traditional Chinese Medicine (TCA); however, its\nmechanism is hard to be validated by modern science as it involves “Chi”, “Yin & Yang” and “meridians”—all the ambiguous concepts which are hard to be interpreted by the West and modern science. Dry needling (DN), another form\nof NT, which emerged in the West in the twentieth century, has not well been explicitly reviewed for its mechanisms.\nGiven that NT—acupuncture originated in the East and DN originated in the West—has been proven by systematic\nreviews and meta-analyses for its effectiveness to treat MSK disorders (world’s major disability contributor as defined\nby World Health Organization) and that many MSK disorders are caused by myofascial pain, a summary of NT effects\nand mechanisms in modern scientific terminology can provide practitioners with clearer clinical reasoning to justify\ntheir treatment using NT to treat myofascial pain and MSK disorders. This review summarised 4 main effects according\nto different anatomic levels of the human body attributed to NT. They are myofascial effect, supraspinal effect, spinal\neffect and local effect. The mechanisms responsible for each of these effects, respectively, are supressing motor end\nplate activity, descending inhibition mechanism, control gate mechanism and axon reflex.\nKeywords  Needling therapy, Acupuncture, Dry needling, Myofascial pain, Musculoskeletal disorders, Mechanisms,\nEffects",
-          "translated_text": "Резюме Настоящий обзор направлен на обобщение эффектов и основных механизмов иглотерапии (НТ) при лечении боли в миофассах и расстройств мышечной и скелетной системы (МСК) путем классификации эффектов НТ в соответствии с различными анатомическими уровнями организма человека и объединения каждого эффекта с конкретным механизмом. Акупунктура, первая форма НТ, существует уже 3000 лет и практикуется традиционной китайской медициной (TCA); однако, ее механизм трудно подтвердить современной наукой, поскольку она включает ци (Qi), Инь и Ян (Инь (Yin) & Ян (Yang)) и меридианы все обширные понятия, которые трудно интерпретировать Западом и современной наукой. Сухая игла (сухое иглоукалывание (DN)), другая форма NT, появившаяся на Западе в двадцатом веке, не была четко рассмотрена в отношении ее механизмов. Учитывая, что Акупунктура возникла на Востоке, а Акупунктура возникла на Западе, систематическими обзорами и метаанализами доказана ее эффективность в лечении расстройств НТа (главный фактор инвалидности в мире, как определено Всемирной организацией здравоохранения), и что многие расстройства НТа возникают из-за миофасальной боли, механизмы в современной научной терминологии могут предоставить практикующим более четкое клиническое обоснование для обоснования их лечения с использованием NT для лечения боли в миофассе и расстройств опорно-двигательный аппарат (MSK). В этом обзоре были обобщены 4 основных эффекта в соответствии с различными анатомическими уровнями организма человека, приписываемыми NT: миофазциальный эффект, супраспинальный эффект, позвоночный эффект и локальный эффект. Механизмы, ответственные за каждое из этих эффектов, соответственно, подавляют активность двигательной конечной пластины, снижают механизм ингибирования, механизм управления воротами и аксонный рефлекс."
+          "translated_text": "Резюме Настоящий обзор направлен на обобщение эффектов и основных механизмов иглотерапии (НТ) при лечении боли в миофассах и расстройств мышечной и скелетной системы (МСК) путем классификации эффектов НТ в соответствии с различными анатомическими уровнями организма человека и объединения каждого эффекта с конкретным механизмом. Акупунктура, первая форма НТ, существует уже 3000 лет и практикуется традиционной китайской медициной (TCA); однако, ее механизм трудно подтвердить современной наукой, поскольку она включает ци (ци (Qi)), Инь и Ян (Инь (Yin) & Ян (Yang)) и меридианы все обширные понятия, которые трудно интерпретировать Западом и современной наукой. Сухая игла (сухое иглоукалывание (DN)), другая форма NT, появившаяся на Западе в двадцатом веке, не была четко рассмотрена в отношении ее механизмов. Учитывая, что Акупунктура возникла на Востоке, а Акупунктура возникла на Западе, систематическими обзорами и метаанализами доказана ее эффективность в лечении расстройств НТа (главный фактор инвалидности в мире, как определено Всемирной организацией здравоохранения), и что многие расстройства НТа возникают из-за миофасальной боли, механизмы в современной научной терминологии могут предоставить практикующим более четкое клиническое обоснование для обоснования их лечения с использованием NT для лечения боли в миофассе и расстройств опорно-двигательный аппарат (MSK). В этом обзоре были обобщены 4 основных эффекта в соответствии с различными анатомическими уровнями организма человека, приписываемыми NT: миофазциальный эффект, супраспинальный эффект, позвоночный эффект и локальный эффект. Механизмы, ответственные за каждое из этих эффектов, соответственно, подавляют активность двигательной конечной пластины, снижают механизм ингибирования, механизм управления воротами и аксонный рефлекс."
         },
         {
           "id": "p1_b7",
@@ -240,8 +240,8 @@
               "[6]",
               "[7]"
             ],
-            "quality_pass": "heuristic_v1",
-            "role": "paragraph"
+            "role": "body",
+            "quality_pass": "heuristic_v1"
           },
           "block_id": "p2_b2",
           "normalized_text": "1  Introduction\nMusculoskeletal (MSK) disorders are defined as conditions affecting muscles, ligaments, tendons, bones and\nnerves acutely and chronically [1]. Data from the Global\nBurden of Disease shows that MSK disorders are the\nmost prevalent category of health issue affecting nearly\n1.71 billion people worldwide [2]. In the United Kingdom, almost one third of the population suffer from\nMSK disorders [3]. The World Health Organization has\ndefined MSK disorders as the leading contributor to\ndisability worldwide [4]. While the most prevalent MSK\ndisorders is low back pain [4], 85% of low back pain\nis caused by myofascial pain [5], and myofascial pain\naccounts for 30–85% of other different MSK disorders\n[6]. A systematic review conducted by Babatunde et al.\n[7] has shown that exercise therapy, psychosocial interventions and pharmacological treatments are effective\nto treat MSK disorders. However, these commonly",
@@ -265,9 +265,9 @@
               "[9]",
               "[10]"
             ],
+            "role": "body",
             "quality_pass": "heuristic_v1",
-            "term_pass": "v1",
-            "role": "paragraph"
+            "term_pass": "v1"
           },
           "block_id": "p2_b3",
           "normalized_text": "practised modalities appear to be insufficient to lower\nthe high prevalence of MSK disorders.\nNeedling therapy (NT), therefore, starts to gain its\npopularity as a new modality to treat MSK disorders\ndue to growing evidence to prove its efficacy. NT is an\numbrella term for any modality involving the use of needles inserting into the soft tissue to treat MSK pain and\nconditions [8]. There are two common forms of NT: acupuncture and dry needling (DT). While DT is defined by\nthe American Physical Therapy Association (APTA) as a\nskilled intervention involving the use of a filiform needle to penetrate the skin to stimulate underlying myofascial points, muscular and connective tissues to treat\nMSK pain and movement impairments [9], acupuncture\n(translated as needle penetration) is defined in TCM as\nthe use of small needles inserted into the specific points\nof the body (acupoints points) to treat bodily problems\n[10]. Two systematic reviews have shown effectiveness",
@@ -323,13 +323,13 @@
               "[19]",
               "[20]"
             ],
+            "role": "body",
             "quality_pass": "heuristic_v1",
-            "term_pass": "v1",
-            "role": "paragraph"
+            "term_pass": "v1"
           },
           "block_id": "p3_b1",
           "normalized_text": "of NT to treat low back pain (LBP) [11, 12]. One systematic review and meta-analysis has shown effectiveness of\nNT combined with stretching to treat myofascial trigger\npoints (TrP) [13]. Other systematic reviews and metaanalyses have also shown effectiveness of NT to treat\ntemporomandibular disorder [14], frozen shoulder [15],\nstiff neck [16] and plantar fasciitis [17]. These modern\nevidences proven in the West demonstrate the effectiveness of NT to treat MSK disorders, and the first form of\nNT—acupuncture—actually has been practised in the\nEast for almost 3000 years [18].\nThe first documentation of acupuncture was in\n“Nuangdi Neijing”, which is translated as “the Inner\nCanon of the Yellow Emperor”. It was a book written\nin about 2000 years ago in the Han Dynasty and is the\nfundamental doctrine for traditional Chinese Medicine\n(TCM) [19]. This book has documented the mechanism\nof acupuncture to explain how it works to treat all bodily pains and conditions. The underlying mechanism of\nacupuncture, according to the book, is to balance the\n“Yin” and “Yang” of a human body to restore internal\nharmony. “Yin” and “Yang” are both important opposing\nconcepts in TCM. While “Yin” symbolises female, cold,\nquiet, etc., “Yang” symbolises male, warm, movement,\netc. The human body has 20 meridian channels, where\ncontain “Chi” to flow. “Chi”, another important concept\nin TCM, can be translated as “vital energy”. While “Chi”\nflows through the meridian channels, and “blood” flows\nthrough the blood vessels. Blood contributes to “Yin”, and\n“Chi” contributes to “Yang”. Acupuncture has an effect on\n“Yang”. Since “Yin” and “Yang” has to be balanced well in\nthe human body to achieve internal harmony, all bodily\npains and conditions occur once human body loses internal harmony (i.e., “Yin” and “Yang” are not balanced), and\nacupuncture works by modulating “Yang” in the human\nbody to achieve internal harmony. Once internal harmony is achieved, all diseases are gone (Fig. 1).\nHowever, the mechanism of acupuncture explained by\nTCM all depends on “Chi”. Without the proof of the existence of “Chi”, the whole theory does not stand. Unfortunately, 2000 years later, “Chi” still has not been proven yet.\nThis theory, therefore, is not likely to be accepted in the\ncurrent literature. As a result, the mechanisms behind NT\nincluding acupuncture explained in modern scientific terminology need to be explored to justify the use of it. In addition, NT has grown in popularity over the last 20 years to\ntreat myofascial pain and MSK disorders [20]; however, no\nunified theories and mechanisms have well been reviewed\nand documented in the current literature—most of them\nare rather equivocal. This review is the first study aiming to\nsummarise and categorise NT effects according to different\nanatomic levels of the human body and to link each effect to\nthe specific underlying mechanism to treat myofascial pain",
-          "translated_text": "Один системный обзор и метаанализ показали эффективность НТ в сочетании с растяжкой для лечения миофасциальных триггерных точек (ТРП) [13]. Другие систематические обзоры и метаанализы также показали эффективность НТ в лечении временно-мандибулярного расстройства [14], замороженного плеча [15], жесткого шеи [16] и травенного фашита [17]. Эти современные доказательства, доказанные на Западе, демонстрируют эффективность НТ в лечении расстройств МСК, и первая форма НТакупунктуры фактически практиковалась на Востоке почти 3000 лет [18]. Это книга, написанная около 2000 лет назад в династии Хан и являющаяся основной доктриной традиционной китайской медицины [19]. Основной механизм иглоукалывания, согласно книге, состоит в том, чтобы сбалансировать Инь (Yin) и Ян (Yang) человеческого тела для восстановления внутренней гармонии. Инь (Yin) и Ян (Yang) являются важными противоположными понятиями в ТКМ. В то время как Инь (Yin) символизирует женщину, холод, тишина и т. д., Ян (Yang) символизирует мужчину, тепло, движение и т. д. Человеческое тело имеет 20 меридианных каналов, где содержится ци (Qi) для потока. ци (Qi), еще одна важная концепция в ТКМ, может быть переведена как vitale energy. В то время как ци (Qi) протекает через меридианные каналы, а blood протекает через кровеносные сосуды. Поскольку Йин и Янг должны быть хорошо сбалансированы в организме человека для достижения внутренней гармонии, все боли и состояния организма возникают после того, как организм человека теряет внутреннюю гармонию (т. е. Йин и Янг не сбалансированы), а акупунктура работает путем модуляции Янг в организме человека для достижения внутренней гармонии. Однако механизм иглоукалывания, объясненный ТКМ, все зависит от ци (Qi). Без доказательства существования ци (Qi), вся теория не выдерживается. К сожалению, спустя 2000 лет ци (Qi) все еще не доказана. Таким образом, эта теория, вероятно, не будет принята в современной литературе.В результате, механизмы, стоящие за НТ, включая иглоукалывание, объясненные в современной научной терминологии, должны быть изучены, чтобы обосновать его использование. Кроме того, за последние 20 лет НТ приобрела популярность для лечения миофаз. боли и расстройств МСК [20]; однако, никакие единые теории и механизмы не были хорошо рассмотрены и задокументированы в современной литературе. Данный обзор является первым исследованием, направленным на обобщение и классификацию эффектов НТ в соответствии с различными анатомическими уровнями организма человека и связь каждого эффекта с конкретным основным механизмом лечения миофасальной боли."
+          "translated_text": "Один системный обзор и метаанализ показали эффективность НТ в сочетании с растяжкой для лечения миофасциальных триггерных точек (ТРП) [13]. Другие систематические обзоры и метаанализы также показали эффективность НТ в лечении временно-мандибулярного расстройства [14], замороженного плеча [15], жесткого шеи [16] и травенного фашита [17]. Эти современные доказательства, доказанные на Западе, демонстрируют эффективность НТ в лечении расстройств МСК, и первая форма НТакупунктуры фактически практиковалась на Востоке почти 3000 лет [18]. Это книга, написанная около 2000 лет назад в династии Хан и являющаяся основной доктриной традиционной китайской медицины [19]. Основной механизм иглоукалывания, согласно книге, состоит в том, чтобы сбалансировать Инь (Yin) и Ян (Yang) человеческого тела для восстановления внутренней гармонии. Инь (Yin) и Ян (Yang) являются важными противоположными понятиями в ТКМ. В то время как Инь (Yin) символизирует женщину, холод, тишина и т. д., Ян (Yang) символизирует мужчину, тепло, движение и т. д. Человеческое тело имеет 20 меридианных каналов, где содержится ци (ци (Qi)) для потока. ци (ци (Qi)), еще одна важная концепция в ТКМ, может быть переведена как vitale energy. В то время как ци (ци (Qi)) протекает через меридианные каналы, а blood протекает через кровеносные сосуды. Поскольку Йин и Янг должны быть хорошо сбалансированы в организме человека для достижения внутренней гармонии, все боли и состояния организма возникают после того, как организм человека теряет внутреннюю гармонию (т. е. Йин и Янг не сбалансированы), а акупунктура работает путем модуляции Янг в организме человека для достижения внутренней гармонии. Однако механизм иглоукалывания, объясненный ТКМ, все зависит от ци (ци (Qi)). Без доказательства существования ци (ци (Qi)), вся теория не выдерживается. К сожалению, спустя 2000 лет ци (ци (Qi)) все еще не доказана. Таким образом, эта теория, вероятно, не будет принята в современной литературе.В результате, механизмы, стоящие за НТ, включая иглоукалывание, объясненные в современной научной терминологии, должны быть изучены, чтобы обосновать его использование. Кроме того, за последние 20 лет НТ приобрела популярность для лечения миофаз. боли и расстройств МСК [20]; однако, никакие единые теории и механизмы не были хорошо рассмотрены и задокументированы в современной литературе. Данный обзор является первым исследованием, направленным на обобщение и классификацию эффектов НТ в соответствии с различными анатомическими уровнями организма человека и связь каждого эффекта с конкретным основным механизмом лечения миофасальной боли."
         },
         {
           "id": "p3_b2",
@@ -345,8 +345,8 @@
           },
           "metadata": {
             "protected_tokens": [],
-            "term_pass": "v1",
-            "role": "paragraph"
+            "role": "body",
+            "term_pass": "v1"
           },
           "block_id": "p3_b2",
           "normalized_text": "and MSK disorders. The terms “effect” and “mechanism” are\ncausally related, so by unifying them, it can provide practitioners with clearer clinical reasoning to justify their treatment using NT to treat myofascial pain and MSK disorders.",
@@ -366,9 +366,9 @@
           },
           "metadata": {
             "protected_tokens": [],
+            "role": "body",
             "quality_pass": "heuristic_v1",
-            "term_pass": "v1",
-            "role": "paragraph"
+            "term_pass": "v1"
           },
           "block_id": "p3_b3",
           "normalized_text": "2  \u0007Methods\nThe methodology of narrative review was adopted for\nthe conduction of this review as the scope of this study\nis of a border topic with an intention of synthesising and\nsummarising the current literature on effects and mechanisms of NT (acupuncture and dry needling) for treating\nwider population of conditions which are myofascial pain\nand MSK disorders.\nFour electronic databases (AMED, CLINAL, Cochrane\nLibrary and Medline) were searched to identify the\npotential studies. External potential studies were also\nidentified through manual searching of citation from\nthe included studies. Three main themes comprising the\nsearch strategy were defined (conditions, interventions\nand effects/mechanisms). Synonyms and words of similar\nconcepts in each theme were connected using Boolean\noperator “OR”. The final search sequence was then created by connecting each theme with Boolean operators\n(“AND”). Detailed search strategy was listed in appendix\n1. Exclusion criteria were duplicate studies, studies without full text, not in English and conducted before 2005\nand studies with non-available references. In addition,\nthis review is only interested in NT that does not involve\ninjection of substance; therefore, any studies focus on\nwet needling were also excluded. The search years were\nfrom 2005 to 2025 (manual citation search not limited\nto years). Studies were not limited to RCTs, systematic",
@@ -390,7 +390,7 @@
             "protected_tokens": [
               "Fig. 1"
             ],
-            "role": "paragraph"
+            "role": "body"
           },
           "block_id": "p3_b4",
           "normalized_text": "Fig. 1  State of internal harmony with concept of Yin and Yang\naccording to TCM",
@@ -444,8 +444,8 @@
               "[44–46]",
               "[47]"
             ],
-            "quality_pass": "heuristic_v1",
-            "role": "paragraph"
+            "role": "body",
+            "quality_pass": "heuristic_v1"
           },
           "block_id": "p4_b1",
           "normalized_text": "reviews and meta-analyses, but the source types were\nlimited to academic journals only. The studies were only\nselected if they have reported and mentioned any effects\nor mechanisms of NT for treating myofascial pain or\nMSK disorders.\nThere were 27 studies being identified in total (Fig. 2),\nincluding 1 randomized control trial (RCT) [21], 4 nonrandomized control trials (NRCTs) [22–25], 11 narrative reviews [26–36], 6 theoretical articles [37–42], 1\nobservational study [43], 3 other experimental studies\n[44–46] and 1 expert opinion [47]. Quality appraisal was\ncompleted for the identified RCTs, NRCTs and narrative\nreviews. Centre for Evidence-Based Medicine (CEBM)",
@@ -469,8 +469,8 @@
               "[49]",
               "[50]"
             ],
-            "quality_pass": "heuristic_v1",
-            "role": "paragraph"
+            "role": "body",
+            "quality_pass": "heuristic_v1"
           },
           "block_id": "p4_b2",
           "normalized_text": "RCT critical appraisal sheet was applied to appraise the\nidentified RCT studies [48]; methodological Items for\nNon-Randomized Studies (MINORS) instrument was\napplied to appraise the identified NRCT studies [49];\nthe Scale for the Assessment of Narrative Review Articles (SARN) was applied to appraise the identified narrative reviews [50]. The appraisal results are listed in\nAppendix 2–4.",
@@ -494,9 +494,9 @@
               "[26]",
               "[37]"
             ],
+            "role": "body",
             "quality_pass": "heuristic_v1",
-            "term_pass": "v1",
-            "role": "paragraph"
+            "term_pass": "v1"
           },
           "block_id": "p4_b3",
           "normalized_text": "3  \u0007Four Main Needling Therapy Effects\nand Underlying Mechanisms\n3.1  \u0007Myofascial Effect and Suppression of Motor End Plate\nActivity\nOne of the major effects attributed to NT in the treatment of MSK pain is myofascial effect. This effect, as\nimplied by its name, occurs at the myofascial level of\nthe human body. To understand how NT produces this\neffect, it is essential to first introduce and understand the\npathophysiology of TrP (Fig. 3).\nThe pathophysiology of TrP can be explained by the\nintegrated trigger point hypothesis (ITPH) [26]. It suggests that the dysfunction of motor endplate is the cause\nof TrP [37]. The dysfunction of motor endplate leads to",
@@ -611,8 +611,8 @@
               "[38]",
               "[27, 51]"
             ],
-            "quality_pass": "heuristic_v1",
-            "role": "paragraph"
+            "role": "body",
+            "quality_pass": "heuristic_v1"
           },
           "block_id": "p5_b1",
           "normalized_text": "the excess release of acetylcholine (ACh), which is the\nculprit of forming TrP [38] (Fig. 4).\nACh is the neurotransmitter travelling along the\nmotor end plate, binding to the ACh receptors of the\nmuscle fibres. Once the binding occurred, calcium is\nreleased from the sarcoplasmic reticulum (SR) and\nattaches onto troponin to expose the myosin binding\nsites of actin so that myosin head can bind to actin to\nform the cross bridge. The sliding between the actin–\nmyosin filaments can then bring two adjacent Z lines\nclose together, hence shortening the sarcomere. This\nsliding mechanism is known as muscle sliding filament theory [27, 51] (Figs. 5, 6). However, whenever\nthere is excessive release of ACh, excess calcium is then",
@@ -639,8 +639,8 @@
               "[51]",
               "[21, 30]"
             ],
-            "quality_pass": "heuristic_v1",
-            "role": "paragraph"
+            "role": "body",
+            "quality_pass": "heuristic_v1"
           },
           "block_id": "p5_b2",
           "normalized_text": "released from SR, causing the myosin binding sites\nconstantly to expose themselves to form the constant\ncrossbridge. Since actin and myosin filaments slide\none pass each other, sarcomere is then shortened sustainably, causing prolonged muscle fibre contraction.\nEventually, contraction knots (i.e., TrP) are formed [43]\n(Fig. 4).\nSustained muscle fibre contraction not only enhances\nmetabolic demand, but also may cause ischemia [28, 29].\nSince oxygen is required to create adenosine triphosphate (ATP), ischemia depletes ATP. ATP is needed to\nrelease myosin head from binding to actin to break the\ncrossbridge according to the muscle sliding filament\ntheory [51], so a lack of ATP means crossbridge forms\nconstantly. As long as there is crossbridge formation, the\nreuptake of Ca2 + back to the SR is paused as Ca2 + is\nrequired to form the crossbridge; therefore, the constant\ncrossbridge formation leads to shortened sarcomere and\nsustained muscle fibre contraction, eventually forming\nTrP [43].\nNT works by breaking this envious cycle (Fig. 7). This\nis known as myofascial effect. There are three sub mechanisms to explain how myofascial effect works. First, NT\nmay suppress the motor end plate activity (i.e., depleting\nACh level) [21, 30]. It is found that this suppression effect\nis more pronounced when rapid dry needling is applied\nto elicit multiple lateral twitch responses (LTRs), which",
@@ -706,7 +706,7 @@
             "protected_tokens": [
               "Fig. 7"
             ],
-            "role": "paragraph"
+            "role": "body"
           },
           "block_id": "p5_b5",
           "normalized_text": "Fig. 7  Breaking the envious cycle—reducing release of ACh at the motor endplate",
@@ -757,8 +757,8 @@
               "[38]",
               "[29, 30]"
             ],
-            "quality_pass": "heuristic_v1",
-            "role": "paragraph"
+            "role": "body",
+            "quality_pass": "heuristic_v1"
           },
           "block_id": "p6_b1",
           "normalized_text": "can deplete more ACh in the motor end plate [30]. Second, NT may lower the level of calcitonin gene-related\npeptide (CGRP). Shah, et al. [29] found that the level of\nCGRP reduced significantly in the intervention group\nafter dry needling treatments with LTRs. CGRP is a neuropeptide released from nociceptor neurons when they\nare depolarised [38, 44] and is found increased significantly in amount near the sites of TrP [29]. Since CGRP\nserves as a facilitator for realising ACh [38], it is responsible for the increased level of ACh in the motor end plate,\nthus causing muscle fibre contraction. The reduction of\nCGRP level can, therefore, reduce the amount of ACh\nreleased in the motor end plate, hence releasing the tight\nknot. Third, NT may increase circulation. Local circulation is created near the site of needle insertion, facilitating “wash out effect” for CGRP, which in turn can lower\nthe amount of ACh in the motor end plate to release the\ntight knot [29, 30].",
@@ -780,8 +780,8 @@
             "protected_tokens": [
               "Fig. 8"
             ],
-            "term_pass": "v1",
-            "role": "paragraph"
+            "role": "body",
+            "term_pass": "v1"
           },
           "block_id": "p6_b2",
           "normalized_text": "3.2  \u0007Supraspinal Effect and Descending Inhibitory System\nThe second effect attributed to NT in the treatment of\nMSK pain is supraspinal effect (Fig. 8). As its name suggested, this effect happens at the supraspinal level of the",
@@ -808,13 +808,13 @@
               "[52]",
               "[24]"
             ],
+            "role": "body",
             "quality_pass": "heuristic_v1",
-            "editor_pass": "heuristic_v1",
-            "role": "paragraph"
+            "editor_pass": "heuristic_v1"
           },
           "block_id": "p6_b3",
           "normalized_text": "human body, and descending inhibitory system is the\nunderlying mechanism.\nHan [47] found that there is a link between acupuncture analgesia and the release of opioid in the central\nnerve system. In human body, opioid can be generated\nendogenously through the descending inhibitory system [31]. Descending inhibition system is a neural pathway originating in the brain (supraspinally) that sends\nsignal down and along the spinal cord to modulate pain\n[22]. NT appears to reduce MSK pain by activating the\ndescending inhibitory system [23].\nNociceptive input travels along the spinothalamic\ntract ascending into the sensory cortex to perceive pain.\nThere are two sensory fibres forming the spinothalamic\ntract picking up nociceptive signals: 1) A-delta (Aδ) fibres\nand C fibres. While Aδ fibres are high threshold afferent\nfibres; C fibres are of low threshold [52]. Therefore, any\nlow intensity nociceptive inputs will stimulate C fibres.\nSince input from NS is of high intensity comparatively,\nit will stimulate Aδ fibres. In terms of myelination and\nconduction velocity, Aδ fibres are moderately myelinated\nwith conduction velocity between 1 and 4 m/s; C fibres\nare non-myelinated with maximum conduction velocity\nto be less than 1 m/s [24]. Therefore, any input travelling",
-          "translated_text": "в организме человека, и снижающаяся ингибиторная система является основным механизмом. Хан [47] обнаружил, что существует связь между акупунктурной анальгетией и высвобождением опиоидов в центральной нервной системе. Снижающаяся ингибиционная система - это нейронный путь, исходящий из мозга (супраспинально), который посылает сигнал вниз и вдоль спинного мозга для модуляции боли [22]. Ноцицептивный вход путешествует вдоль спиноталамического тракта, поднимаясь в сенсорную кору для восприятия боли. Существуют две сенсорные волокна, образующие спиноталамический тракт, воспринимающие ноцицептивные сигналы: 1) А-дельта (Аδ) и С-волокна. Поэтому любые ноцицептивные входы низкой интенсивности стимулируют C- волокна. С точки зрения миелинизации и скорости проводимости, волокна Aδ умеренно миелинизируются с скоростью проводимости от 1 до 4 м/с; волокна C не миелинизируются с максимальной скоростью проводимости менее 1 м/с [24]."
+          "translated_text": "в организме человека, и снижающаяся ингибиторная система является основным механизмом. Хан [47] обнаружил, что существует связь между акупунктурной анальгетией и высвобождением опиоидов в центральной нервной системе. Снижающаяся ингибиционная система - это нейронный путь, исходящий из мозга (супраспинально), который посылает сигнал вниз и вдоль спинного мозга для модуляции боли [22]. Ноцицептивный вход путешествует вдоль спиноталамического тракта, поднимаясь в сенсорную кору для восприятия боли. Существуют две сенсорные волокна, образующие спиноталамический тракт, воспринимающие ноцицептивные сигналы: 1) А-дельта (Аδ) и С-волокна. Поэтому любые ноцицептивные входы низкой интенсивности стимулируют С- волокна. С точки зрения миелинизации и скорости проводимости, волокна Aδ умеренно миелинизируются с скоростью проводимости от 1 до 4 м/с; волокна С не миелинизируются с максимальной скоростью проводимости менее 1 м/с [24]."
         },
         {
           "id": "p6_b4",
@@ -882,13 +882,13 @@
               "[39, 54]",
               "[54]"
             ],
+            "role": "body",
             "quality_pass": "heuristic_v1",
-            "editor_pass": "heuristic_v1",
-            "role": "paragraph"
+            "editor_pass": "heuristic_v1"
           },
           "block_id": "p7_b1",
           "normalized_text": "along the Aδ fibres will be more rapid than that travelling\nalong the C fibres. Descending inhibition occurs once\nAδ fibres are activated [32]; therefore, if both Aδ fibres\nand C fibres are stimulated at the same time, it makes\nsense that descending pain modulation should occur\nquicker than the pain ascending to the sensory cortex.\nOnce the descending inhibition is activated by NT,\na chain of neurons which descending the length of the\nspinal cord are activated as well [53]. There are two key\nstructures of descending inhibitory system: periaqueductal gray (PAG) and amygdala [39, 54]. While amygdala is part of limbic system, playing important roles in\nemotional responses, stress and anxiety, PAG modulates\nrostral ventromedial medulla (RVM) to release serotonin into an area called substantia gelatinosa of the dorsal horn [54]. Once the serotonin hits to the dorsal horn,\nit will bind to the interneurons. The interneurons then\nsecrete opioids (enkaphalin/dynorphon) to the terminals\nof the 1st order neuron (C fibres), where opioid receptors\nare present. These endogenous opioids inhibit the release\nof substance P (SP) from the 1st order neuron to the 2nd\norder neuron. Since SP is the neurotransmitter carrying\nnociceptive signal along the spinothalamic tract, the inhibition of release of it means there is less nociceptive signal ascending along the tract to the sensory cortex, and\nas a result, less pain being perceived [32]. To sum up the\nsupraspinal effect produced by NT, the main principle is\nto “use pain to curb pain”.",
-          "translated_text": "по Аδ-волокнам будет быстрее, чем по C- волокнам. снижающееся ингибирование происходит, как только Аδ-волокна активируются [32]; поэтому, если одновременно стимулируются как Аδ-волокна, так и C- волокна, имеет смысл, что снижающаяся модуляция боли должна происходить быстрее, чем боль, поднимающаяся в сенсорную кору. После того, как НТ активирует нисходящее ингибирование, также активируется цепочка нейронов, которые нисходят по длине спинного мозга [53]. Существуют две ключевые структуры нисходящей ингибиторной системы: периак-дуктальный серый (ПАГ) и амигдала [39, 54]. В то время как амиг-дала является частью лимбической системы, играя важную роль в эмоциональных реакциях, стрессе и тревожности, ПАГ модулирует ростральный брюшной мозг (РВМ), чтобы высвободить серото-нин в область, называемую сущностью гелатинозы горного рога [54]. Затем интернеуроны выделяют опиоиды (энкафалин/динорфон) в терминалы нейрона первого порядка (волокна C), где присутствуют опиоидные рецепторы. Поскольку SP является нейротрансмиттером, несущим ноцицептивный сигнал вдоль спиноталамического тракта, предотвращение его высвобождения означает, что вдоль тракта в сенсорную кору поднимается меньше ноцицептивного сигнала, и в результате меньше боли воспринимаются [32]. Чтобы обобщить эффект на спину, вызванный НТ, основным принципом является использование боли для сдерживания боли."
+          "translated_text": "по Аδ-волокнам будет быстрее, чем по С- волокнам. снижающееся ингибирование происходит, как только Аδ-волокна активируются [32]; поэтому, если одновременно стимулируются как Аδ-волокна, так и С- волокна, имеет смысл, что снижающаяся модуляция боли должна происходить быстрее, чем боль, поднимающаяся в сенсорную кору. После того, как НТ активирует нисходящее ингибирование, также активируется цепочка нейронов, которые нисходят по длине спинного мозга [53]. Существуют две ключевые структуры нисходящей ингибиторной системы: периак-дуктальный серый (ПАГ) и амигдала [39, 54]. В то время как амиг-дала является частью лимбической системы, играя важную роль в эмоциональных реакциях, стрессе и тревожности, ПАГ модулирует ростральный брюшной мозг (РВМ), чтобы высвободить серото-нин в область, называемую сущностью гелатинозы горного рога [54]. Затем интернеуроны выделяют опиоиды (энкафалин/динорфон) в терминалы нейрона первого порядка (волокна С), где присутствуют опиоидные рецепторы. Поскольку SP является нейротрансмиттером, несущим ноцицептивный сигнал вдоль спиноталамического тракта, предотвращение его высвобождения означает, что вдоль тракта в сенсорную кору поднимается меньше ноцицептивного сигнала, и в результате меньше боли воспринимаются [32]. Чтобы обобщить эффект на спину, вызванный НТ, основным принципом является использование боли для сдерживания боли."
         },
         {
           "id": "p7_b2",
@@ -908,14 +908,14 @@
               "[40]",
               "[55]"
             ],
+            "role": "body",
             "quality_pass": "heuristic_v1",
             "editor_pass": "heuristic_v1",
-            "term_pass": "v1",
-            "role": "paragraph"
+            "term_pass": "v1"
           },
           "block_id": "p7_b2",
           "normalized_text": "3.3  \u0007Spinal Effect and Control Gate Mechanism\nThe third effect attributed to NT in the treatment of\nMSK pain is spinal effect which can be explained by gate\ncontrol mechanism [40]. The key concept of gate control mechanism is presynaptic inhibition through which\nthe “pain gate” is closed, hence causing analgesic effect\n(Fig. 9).\nThere are two main tracts involved in gate control\nmechanism: spinothalamic tract (STT) and dorsal column-medial lemniscus (DCML) pathway. SST transmits\nnociceptive signals from either Aδ fibres or C fibres all\nthe way to the sensory cortex, while DCML transmits\nnon-nociceptive signals from A-beta (Aβ) fibres all the\nway to the sensory cortex [55]. In the spinothalamic tract,\neither Aδ or C fibre picks up the nociceptive input, and\nSP acts as neurotransmitter to carry this nociceptive signal from the 1st order neuron to the 2nd order neuron in\nthe dorsal horn. Once the nociceptive input reaches cortex, pain is perceived. The synapse between the 1st and\n2nd order neurons is where the pain gate located. As long\nas this gate is closed, SP will be limited to travel through.\nAlthough it is impossible to fully close this gate, it conveys an idea that how the interruption of the transmission of SP within the synapse can lower pain perception",
-          "translated_text": "3.3 Эффект позвоночника и механизм управления воротами Третий эффект, приписываемый NT в лечении боли опорно-двигательный аппарат (MSK), является эффектом позвоночника, который можно объяснить механизмом контроля ворота [40]. В механизме управления воротами участвуют две основные траектории: спиноталамический тракт (STT) и д orsal column-medial lemniscus (DCML). SST передает ноцицептивные сигналы либо из Aδ- волокна, либо из C- волокна до сенсорной коры, в то время как DCML передает неноцицептивные сигналы из A- бета (Aβ) волокна до сенсорной коры [55]. В спиноталамическом тракте, или Aδ или C волокна захватывают ноцицептивный вход, и SP действует как нейротрансмитер, чтобы передать этот ноцицептивный сигнал от нейрона первого порядка в нейрон второго порядка в горне спинного рога. Синапс между нейронами 1-го и 2-го порядка находится там, где расположен болеутоляющий шлюз. Пока этот шлюз закрыт, СП будет ограничен в путешествии через. Хотя невозможно полностью закрыть этот шлюз, он передает идею о том, как прерывание передачи СП внутри синапса может снизить восприятие боли."
+          "translated_text": "3.3 Эффект позвоночника и механизм управления воротами Третий эффект, приписываемый NT в лечении боли опорно-двигательный аппарат (MSK), является эффектом позвоночника, который можно объяснить механизмом контроля ворота [40]. В механизме управления воротами участвуют две основные траектории: спиноталамический тракт (STT) и д orsal column-medial lemniscus (DCML). SST передает ноцицептивные сигналы либо из Aδ- волокна, либо из С- волокна до сенсорной коры, в то время как DCML передает неноцицептивные сигналы из А- бета (Aβ) волокна до сенсорной коры [55]. В спиноталамическом тракте, или Aδ или С волокна захватывают ноцицептивный вход, и SP действует как нейротрансмитер, чтобы передать этот ноцицептивный сигнал от нейрона первого порядка в нейрон второго порядка в горне спинного рога. Синапс между нейронами 1-го и 2-го порядка находится там, где расположен болеутоляющий шлюз. Пока этот шлюз закрыт, СП будет ограничен в путешествии через. Хотя невозможно полностью закрыть этот шлюз, он передает идею о том, как прерывание передачи СП внутри синапса может снизить восприятие боли."
         },
         {
           "id": "p7_b3",
@@ -934,8 +934,8 @@
               "[33]",
               "[34]"
             ],
-            "quality_pass": "heuristic_v1",
-            "role": "paragraph"
+            "role": "body",
+            "quality_pass": "heuristic_v1"
           },
           "block_id": "p7_b3",
           "normalized_text": "created by the cortex. One way to achieve this is presynaptic inhibition.\nNT can activate presynaptic inhibition to close the\npain gate (i.e., interrupting the nociceptive signal travelling between the 1st and 2nd order neurons) by stimulating the Aβ fibre [33]. Upon the stimulation, the Aβ fibre\nstimulates the inhibitory interneuron, the axon of which\nthen secretes gamma-aminobutyric acid (GABA) as neurotransmitter to the axon of the 1st order neuron of the\nSTT. GABA is inhibitory neurotransmitter, which can\ninhibit the release of SP released from the 1st order neuron to the 2nd of STT [34], hence less nociceptive signals\ntravelling to the brain to create pain perception.",
@@ -959,8 +959,8 @@
               "[41]",
               "[41, 42]"
             ],
-            "quality_pass": "heuristic_v1",
-            "role": "paragraph"
+            "role": "body",
+            "quality_pass": "heuristic_v1"
           },
           "block_id": "p7_b4",
           "normalized_text": "3.4  \u0007Local Effect and Axon Reflux\nLocal effect occurs whenever a needle is inserted into the\nlocal injured muscle tissue (Fig. 10). Axon reflex is the\nunderlying mechanism responsible for the local effect\ninduced by NT and is a primary physiological response to\nperipheral injury [41].\nDuring axon reflex the nerve sensory fibres are stimulated to release neuropeptides to cause vasodilation and\nincreased local circulation [41, 42]. Insertion of needles\ncan induce a controlled microtrauma (i.e., peripheral",
@@ -1033,12 +1033,13 @@
               "[41]",
               "[25]"
             ],
+            "role": "body",
             "quality_pass": "heuristic_v1",
-            "role": "paragraph"
+            "editor_pass": "heuristic_v1"
           },
           "block_id": "p8_b1",
           "normalized_text": "injury) that causes axon reflex [35, 36]. When a needle\ninserts into the tissue, the Aδ or C fibres are activated to\nrelease vasoactive neuropeptides, primarily CGRP and SP\n[42]. Both CGRP and SP are abundantly expressed in the\nnerve fibres and are potent vasodilators to cause increasing blood flow superficially and deeply to the local muscle\ntissue [25, 45, 46]. Therefore, after an individual receives\nneedling treatment, the tissue often responses with flushing bright red which implies the increasing blood flow in\nthe local area caused by axon reflux [41]. The increasing\nblood flow of the injured muscle tissue serves as a key factor to promote healing, hence causing pain reduction.\nIn addition, the CGRP and SP released from the nerve\nfibres during axon reflex induced by insertion of needles\nnot only act on the blood vessels in the local tissue but\nalso act on the mast cells in the local tissue to release 3\nneurotransmitters: tryptase, histamine (HA) and serotonin (5-HT) [25]. These 3 neurotransmitters enhance the\naxon reflex induced by insertion of needles to intensify\nthe local effect (i.e., vasodilation) [25].",
-          "translated_text": "когда игла вставляется в ткань, Aδ или C волокна активируются для высвобождения вазоактивных нейропептидов, в первую очередь CGRP и SP [42]. И CGRP, и SP в изобилии выражаются в нервных волокнах и являются мощными вазодилататорами, которые приводят к увеличению кровотока поверхностно и глубоко в местную мышечную ткань [25, 45, 46]. Следовательно, после того, как человек получает игловое лечение, ткань часто реагирует ярко-красным цветом, что означает увеличение кровотока в местной местности, вызванного рефлюксом аксонов [41]. Кроме того, CGRP и SP, высвобождаемые из нервных волокон во время аксонного рефлекса, вызванного введением игл, не только действуют на кровеносные сосуды в местной ткани, но и действуют на маст- клетки в местной ткани, высвобождая 3 нейротрансмиттера: триптазу, гистамин (HA) и серотонин (5-HT) [25]. Эти 3 нейротрансмиттера усиливают аксонный рефлекс, вызванный введением игл, чтобы усилить локальный эффект (т. е. вазоразширение) [25]."
+          "translated_text": "когда игла вставляется в ткань, Aδ или С волокна активируются для высвобождения вазоактивных нейропептидов, в первую очередь CGRP и SP [42]. И CGRP, и SP в изобилии выражаются в нервных волокнах и являются мощными вазодилататорами, которые приводят к увеличению кровотока поверхностно и глубоко в местную мышечную ткань [25, 45, 46]. Следовательно, после того, как человек получает игловое лечение, ткань часто реагирует ярко-красным цветом, что означает увеличение кровотока в местной местности, вызванного рефлюксом аксонов [41]. Кроме того, CGRP и SP, высвобождаемые из нервных волокон во время аксонного рефлекса, вызванного введением игл, не только действуют на кровеносные сосуды в местной ткани, но и действуют на маст- клетки в местной ткани, высвобождая 3 нейротрансмиттера: триптазу, гистамин (HA) и серотонин (5-HT) [25]. Эти 3 нейротрансмиттера усиливают аксонный рефлекс, вызванный введением игл, чтобы усилить локальный эффект (т. е. вазоразширение) [25]."
         },
         {
           "id": "p8_b2",
@@ -1056,8 +1057,8 @@
             "protected_tokens": [
               "[56]"
             ],
-            "quality_pass": "heuristic_v1",
-            "role": "paragraph"
+            "role": "body",
+            "quality_pass": "heuristic_v1"
           },
           "block_id": "p8_b2",
           "normalized_text": "4  \u0007Limitations\nOne limitation of this narrative review is that it was conducted by single screening approach for study selection\ndue to limited resource, so it might be prone to bias;\nhowever, it requires fewer resources to conduct, offering potential shortcuts for rapid reviews [56]. To minimise the effect due to single screening approach, different\nquality appraisal tools were applied to assess the quality\nof studies of different types. However, only three types\nof study (RCTs, NRCTs and narrative reviews) were\nappraised as there are no appraisal tools available for\nother types of studies. All the judging criteria, scoring\nand results are tabulated in Appendix 2, 3, 4.",
@@ -1082,8 +1083,8 @@
               "[58]",
               "[59]"
             ],
-            "quality_pass": "heuristic_v1",
-            "role": "paragraph"
+            "role": "body",
+            "quality_pass": "heuristic_v1"
           },
           "block_id": "p8_b3",
           "normalized_text": "Although the study selection was not limited to RCTs,\nsystematic review and meta-analyses which are of high\nstandard for effective research [57], there were no systematic review and meta-analysis identified in this review, and\nonly 1 RCT study was identified; the rest types of studies\nare of the lower hierarchy of evidence [57]. In addition, 1\nidentified NRCT [24] and 2 other experimental studies [35\n& 54] were animal trials (rats); however, laboratory rats are\nideal animal models for biomedical research as about 95%\nof their genes are shared with humans [58]. Furthermore,\nthis review focuses only on two common forms of NT\n(acupuncture and DN), while wet needling which involves\nthe addition of an injection of analgesic substance [59] is\nnot explored in this review.\nOne final limitation of this review is that this review\nexplores and documents the effects and mechanisms of\nNT (including acupuncture) in western scientific terminology. The results of this review might not be compatible\nwith or transferable to the TCM literature, which, however, might cause controversy or conflicting ideology for\ntraditional TCM practitioners who perform the modality.\nHowever, this review does not intend to reach consensus,\nchange the theory ingrained in TCM nor change the ideology of those TCM practitioners who perform the modality\nbut opens an alternative way of thinking for the practitioners to justify their selection of the modality.",
@@ -1103,9 +1104,9 @@
           },
           "metadata": {
             "protected_tokens": [],
+            "role": "body",
             "quality_pass": "heuristic_v1",
-            "term_pass": "v1",
-            "role": "paragraph"
+            "term_pass": "v1"
           },
           "block_id": "p8_b4",
           "normalized_text": "5  \u0007Conclusion\nThis review summarised and categorised four main effects\nand the underlying mechanisms of NT according to different anatomic levels of the human body. They are myofascial effect, supraspinal effect, spinal effect and local effect.\nEach effect occurs at the specific anatomic level of the\nhuman body as the name implies. For myofascial effect,\nNT suppresses the release of ACh at the motor end plate\nwithin the myofascial tissue, reducing motor end plate\nactivity. For supraspinal effect, NT activates the descending inhibition system at the supraspinal level, promoting\nthe release of endogenous opioids that travel down along\nthe spinal cord to alleviate pain (i.e., use pain to curb\npain). For spinal effect, NT triggers presynaptic inhibition\nat the spinal level, closing the “pain gate” to reduce nociceptive signal transmission. Finally, the mechanism behind\nlocal effect is that NT induces axon reflex as a response of\ncontrolled microtrauma at the local injured tissue, creating vasodilation to accelerate tissue healing. By summarising and categorising these four effects and mechanisms\naccording to different anatomic levels of the human body,\nit can provide practitioners with clearer clinical reasoning to justify their treatment using NT to treat myofascial\npain and MSK disorders.",
@@ -1174,7 +1175,7 @@
             "protected_tokens": [
               "Table 1"
             ],
-            "role": "paragraph"
+            "role": "body"
           },
           "block_id": "p9_b1",
           "normalized_text": "Appendix 1\nSee Table 1.",
@@ -1196,7 +1197,7 @@
             "protected_tokens": [
               "Table 2"
             ],
-            "role": "paragraph"
+            "role": "body"
           },
           "block_id": "p9_b2",
           "normalized_text": "Appendix 2\nSee Table 2.",
@@ -1218,7 +1219,7 @@
             "protected_tokens": [
               "Table 3"
             ],
-            "role": "paragraph"
+            "role": "body"
           },
           "block_id": "p9_b3",
           "normalized_text": "Appendix 3\nSee Table 3.",
@@ -1280,7 +1281,7 @@
           },
           "metadata": {
             "protected_tokens": [],
-            "role": "paragraph"
+            "role": "body"
           },
           "block_id": "p9_b6",
           "normalized_text": "Theme 1—conditions\n“Myofascial pain” OR “Trigger point*” OR “Musculoskeletal pain” OR “Musculoskeletal disorder*” OR “Musculoskeletal condition*” OR “Musculoskeletal disease*”",
@@ -1300,7 +1301,7 @@
           },
           "metadata": {
             "protected_tokens": [],
-            "role": "paragraph"
+            "role": "body"
           },
           "block_id": "p9_b7",
           "normalized_text": "Theme 2—interventions\n“Needling therapy” OR “Dry needling” OR Acupuncture",
@@ -1406,7 +1407,7 @@
             "protected_tokens": [
               "Table 4"
             ],
-            "role": "paragraph"
+            "role": "body"
           },
           "block_id": "p9_b12",
           "normalized_text": "Appendix 4\nSee Table 4.",
@@ -1431,7 +1432,7 @@
           },
           "metadata": {
             "protected_tokens": [],
-            "role": "paragraph"
+            "role": "body"
           },
           "block_id": "p10_b0",
           "normalized_text": "Page 10 of 11\nTong ﻿Innovations in Acupuncture and Medicine (2025) 18:15",
@@ -1451,9 +1452,9 @@
           },
           "metadata": {
             "protected_tokens": [],
+            "role": "body",
             "quality_pass": "heuristic_v1",
-            "term_pass": "v1",
-            "role": "paragraph"
+            "term_pass": "v1"
           },
           "block_id": "p10_b1",
           "normalized_text": "Abbreviations\nACh\n\u0007Acetylcholine\nATP\n\u0007Adenosine triphosphate\nCEBM\n\u0007Centre for evidence-based medicine\nCGRP\n\u0007Calcitonin gene-related peptide\nDCML\n\u0007Dorsal column-medial lemniscus\nDT\n\u0007Dry needling\nGABA\n\u0007Gamma-aminobutyric acid\nHA\n\u0007Histamine\nLBP\n\u0007Low back pain\nLTR\n\u0007Lateral twitch responses\nMINORS\n\u0007Methodological items for non-randomized studies\nMSK\n\u0007Musculoskeletal\nNT\n\u0007Needling therapy\nPAG\n\u0007Periaqueductal gray\nRVM\n\u0007Rostral ventromedial medulla\nSARN\n\u0007Scale for the assessment of narrative review articles\nSP\n\u0007Substance P\nSR\n\u0007Sarcoplasmic reticulum\nSTT\n\u0007Spinothalamic tract\nTCM\n\u0007Traditional Chinese Medicine\nTrP\n\u0007Trigger point\n5-HT\n\u0007Serotonin",
@@ -1473,7 +1474,7 @@
           },
           "metadata": {
             "protected_tokens": [],
-            "role": "paragraph"
+            "role": "body"
           },
           "block_id": "p10_b2",
           "normalized_text": "Author Contributions\nCMT confirms sole responsibility for the following: research idea, study selection, data analysis and synthesis, graphics creation, interpretation of results\nand manuscript writing.",
@@ -1493,7 +1494,7 @@
           },
           "metadata": {
             "protected_tokens": [],
-            "role": "paragraph"
+            "role": "body"
           },
           "block_id": "p10_b3",
           "normalized_text": "Funding\nNone.",
@@ -1513,7 +1514,7 @@
           },
           "metadata": {
             "protected_tokens": [],
-            "role": "paragraph"
+            "role": "body"
           },
           "block_id": "p10_b4",
           "normalized_text": "Availability of Data and Materials\nNo datasets were generated or analysed during the current study.",
@@ -1553,7 +1554,7 @@
           },
           "metadata": {
             "protected_tokens": [],
-            "role": "paragraph"
+            "role": "body"
           },
           "block_id": "p10_b6",
           "normalized_text": "Conflict of Interest\nThe authors declare no competing interests.",
@@ -1573,7 +1574,7 @@
           },
           "metadata": {
             "protected_tokens": [],
-            "role": "paragraph"
+            "role": "body"
           },
           "block_id": "p10_b7",
           "normalized_text": "Ethical Approval and Consent to Participate\nNot applicable.",
@@ -1593,7 +1594,7 @@
           },
           "metadata": {
             "protected_tokens": [],
-            "role": "paragraph"
+            "role": "body"
           },
           "block_id": "p10_b8",
           "normalized_text": "Consent for Publication\nNot applicable.",
@@ -1613,7 +1614,7 @@
           },
           "metadata": {
             "protected_tokens": [],
-            "role": "paragraph"
+            "role": "body"
           },
           "block_id": "p10_b9",
           "normalized_text": "Clinical Trial Number\nNot applicable.",
@@ -1633,7 +1634,7 @@
           },
           "metadata": {
             "protected_tokens": [],
-            "role": "paragraph"
+            "role": "body"
           },
           "block_id": "p10_b10",
           "normalized_text": "Author details\n1 London Northwest University Healthcare NHS Trust, National Health Service\n(NHS) England, London, UK.",
@@ -1677,12 +1678,13 @@
               "https://​www.​who.​int/​news-​room/​fact-​",
               "https://​www.​ncbi.​nlm.​nih.​gov/​books/​NBK53​"
             ],
+            "role": "body",
             "quality_pass": "heuristic_v1",
-            "role": "paragraph"
+            "editor_pass": "heuristic_v1"
           },
           "block_id": "p10_b12",
           "normalized_text": "References\n1.\nSmith E, Hoy DG, Cross M, Vos T, Naghavi M, Buchbinder R, Woolf AD,\nMarch L. The global burden of other musculoskeletal disorders: estimates from the Global Burden of Disease 2010 study. Ann Rheum Dis.\n2014;73(8):1462–9.\n2.\nCieza A, Causey K, Kamenov K, Hanson SW, Chatterji S, Vos T. Global\nestimates of the need for rehabilitation based on the Global Burden of\nDisease study 2019: a systematic analysis for the Global Burden of Disease\nStudy 2019. The Lancet. 2020;396(10267):2006–17.\n3.\nVersus Arthritis. The state of musculoskeletal health 2024—arthritis and\nother musculoskeletal conditions in numbers [Internet]. 2024 (cited 2025\nApr 13). Available from: https://​versu​sarth​ritis.​org/​about-​arthr​itis/​data-​\nand-​stati​stics/​the-​state-​of-​muscu​loske​letal-​health/\n4.\nWorld Health Organisation. Musculoskeletal Health [Internet]. 2022 [cited\n2025 Apr 13]. Available from: https://​www.​who.​int/​news-​room/​fact-​\nsheets/​detail/​muscu​loske​letal-​condi​tions\n5.\nLam C, Francio VT, Gustafson K, Carroll M, York A, Chadwick AL. Myofascial\npain—a major player in musculoskeletal pain. Best Pract Res Clin Rheumatol. 2024;21:101944.\n6.\nTantanatip A, Chang KV. Myofascial pain syndrome. Europe PMC. 2023\n7.\nBabatunde OO, Jordan JL, Van der Windt DA, Hill JC, Foster NE, Protheroe\nJ. Effective treatment options for musculoskeletal pain in primary care: a\nsystematic overview of current evidence. PLoS ONE. 2017;12(6):e0178621.\n8.\nMansfield CJ, Vanetten L, Willy R, Di Stasi S, Magnussen R, Briggs M. The\neffects of needling therapies on muscle force production: a systematic\nreview and meta-analysis. J Orthop Sports Phys Ther. 2019;49(3):154–70.\n9.\nAmerican Physical Therapy Association, American Physical Therapy Association. Description of dry needling in clinical practice: an educational\nresource paper. Alexandria: American Physical Therapy Association. 2013.\n10. Van Hal M, Dydyk AM, Green MS. Acupuncture. National Library of Medicine. 2023. Available from https://​www.​ncbi.​nlm.​nih.​gov/​books/​NBK53​\n2287/\n11. Mao X, He H, Ding J. Efficacy of laser acupuncture for treatment of\nchronic low back pain: a systematic review and meta-analysis. Pain management nursing. 2024.\n12. Yu H, Wang D, Verville L, Southerst D, Bussières A, Gross DP, Pereira P, Mior\nS, Tricco AC, Cedraschi C, Brunton G. Systematic review to inform a World\nHealth Organization (WHO) clinical practice guideline: benefits and\nharms of needling therapies for chronic primary low back pain in adults. J\nOccup Rehabil. 2023;33(4):661–72.\n13. Guzmán-Pavón MJ, Torres-Costoso AI, Cavero-Redondo I, Reina-Gutiérrez\nS, Lorenzo-García P, Álvarez-Bueno C. Effectiveness of deep dry needling\ncombined with stretching for the treatment of pain in patients with",
-          "translated_text": "СМИТ Е, Хой ДГ, Крос М, Вос Т, Нагави М, Букбиндер Р, Вулф АД, март L. Глобальное бремя других мышечно-скелетных расстройств: оценки из исследования Global Burden of Disease 2010. Глобальные оценки потребности в реабилитации на основе исследования Global Burden of Disease 2019: систематический анализ для исследования Global Burden of Disease 2019. The Lancet. 2020;396(10267):200617. 2024 (цитированный в 2025 г. 13 апреля). Доступный с: https:// versu sarth ritis.org/ about-arthitis/ data- and-statistics/ the- state- of- muscular loss- lethal- health/ 4. Всемирная организация здравоохранения. Лам С, Франсио ВТ, Густафсон К, Каролл М, Йорк А, Чадвик АЛ. Миофазциальная боль - главный фактор мышечной и скелетной боли. Лучшая практика Резолюции клинических заболеваний. 2024;21:101944. 6. Тантантип А, Чанг КВ. Миофазциальный болевой синдром. Европа ПМК. 2023 7. Babatunde OO, Jordan JL, Van der Windt DA, Hill JC, Foster NE, Protheroe J. Эффективные варианты лечения мышечно-скелетной боли в первичной медицинской помощи: систематический обзор текущих доказательств. PLoS ONE. 2017;12(6):e0178621. 8. Mansfield CJ, Vanetten L, Willy R, Di Stasi S, Magnussen R, Briggs M. Влияние игловой терапии на производство мышечной силы: систематический обзор и метаанализ. J Orthop Sports Phys Ther. 2019;49(3):15470. 9. Американская ассоциация физической терапии, Американская ассоциация физической терапии. Описание сухой игловой терапии в клинической практике: учебный ресурс. Александрия: Американская ассоциация физической терапии. 2013. 10. Ван Хал М, Дайдик АМ, Зеленый М. Акупунктура. Национальная библиотека медицины. 2023. Доступная с https://www.ncbi.nlm.nih.gov/books/ NBK53 2287/ 11. Мао Х, Хе Х, Динг Дж. Эффективность лазерной акупунктуры для лечения хронической боли в пояснице: систематический обзор и метаанализ. 12. Ю Х, Ван Д, Вервилл Л, Саутерст Д, Буссиерс А, Гросс ДП, Перейра П, Миор С, Трико АК, Седраши С, Брантон Г. Систематический обзор для информирования клинической практики мировой организации здравоохранения (ВОЗ): преимущества и вреды игловой терапии для хронической первичной боли в пояснице у взрослых. 13. Guzmán-Pavón MJ, Torres-Costoso AI, Cavero-Redondo I, Reina-Gutiérrez S, Lorenzo-García P, Álvarez-Bueno C."
+          "translated_text": "СМИТ Е, Хой ДГ, Крос М, Вос Т, Нагави М, Букбиндер Р, Вулф АД, март L. Глобальное бремя других мышечно-скелетных расстройств: оценки из исследования Global Burden of Disease 2010. Глобальные оценки потребности в реабилитации на основе исследования Global Burden of Disease 2019: систематический анализ для исследования Global Burden of Disease 2019. The Lancet. 2020;396(10267):200617. 2024 (цитированный в 2025 г. 13 апреля). Доступный с: https:// versu sarth ritis.org/ about-arthitis/ data- and-statistics/ the- state- of- muscular loss- lethal- health/ 4. Всемирная организация здравоохранения. Лам С, Франсио ВТ, Густафсон К, Каролл М, Йорк А, Чадвик АЛ. Миофазциальная боль - главный фактор мышечной и скелетной боли. Лучшая практика Резолюции клинических заболеваний. 2024;21:101944. 6. Тантантип А, Чанг КВ. Миофазциальный болевой синдром. Европа ПМК. 2023 7. Babatunde OO, Jordan JL, Van der Windt DA, Hill JC, Foster NE, Protheroe J. Эффективные варианты лечения мышечно-скелетной боли в первичной медицинской помощи: систематический обзор текущих доказательств. PLoS ONE. 2017;12(6):e0178621. 8. Mansfield CJ, Vanetten L, Willy R, Di Stasi S, Magnussen R, Briggs М. Влияние игловой терапии на производство мышечной силы: систематический обзор и метаанализ. J Orthop Sports Phys Ther. 2019;49(3):15470. 9. Американская ассоциация физической терапии, Американская ассоциация физической терапии. Описание сухой игловой терапии в клинической практике: учебный ресурс. Александрия: Американская ассоциация физической терапии. 2013. 10. Ван Хал М, Дайдик АМ, Зеленый М. Акупунктура. Национальная библиотека медицины. 2023. Доступная с https://www.ncbi.nlm.nih.gov/books/ NBK53 2287/ 11. Мао Х, Хе Х, Динг Дж. Эффективность лазерной акупунктуры для лечения хронической боли в пояснице: систематический обзор и метаанализ. 12. Ю Х, Ван Д, Вервилл Л, Саутерст Д, Буссиерс А, Гросс ДП, Перейра П, Миор С, Трико АК, Седраши С, Брантон Г. Систематический обзор для информирования клинической практики мировой организации здравоохранения (ВОЗ): преимущества и вреды игловой терапии для хронической первичной боли в пояснице у взрослых. 13. Guzmán-Pavón MJ, Torres-Costoso AI, Cavero-Redondo I, Reina-Gutiérrez S, Lorenzo-García Р, Álvarez-Bueno С."
         },
         {
           "id": "p10_b13",
@@ -1725,7 +1727,7 @@
           },
           "metadata": {
             "protected_tokens": [],
-            "role": "paragraph"
+            "role": "body"
           },
           "block_id": "p11_b0",
           "normalized_text": "Page 11 of 11\nTong ﻿Innovations in Acupuncture and Medicine (2025) 18:15",
@@ -1745,13 +1747,14 @@
           },
           "metadata": {
             "protected_tokens": [],
+            "role": "body",
             "quality_pass": "heuristic_v1",
-            "term_pass": "v1",
-            "role": "paragraph"
+            "editor_pass": "heuristic_v1",
+            "term_pass": "v1"
           },
           "block_id": "p11_b1",
           "normalized_text": "myofascial trigger points: a systematic review and meta-analysis. Journal\nof bodywork and movement therapies. J Bodyw Mov Ther. 2024.\n14. La Touche R, Goddard G, De-la-Hoz JL, Wang K, Paris-Alemany A, AnguloDíaz-Parreño S, Mesa J, Hernández M. Acupuncture in the treatment of\npain in temporomandibular disorders: a systematic review and metaanalysis of randomized controlled trials. Clin J Pain. 2010;26(6):541–50.\n15. Xu B, Zhang L, Zhao X, Feng S, Li J, Xu Y. Efficacy of combining acupuncture and physical therapy for the management of patients with frozen\nshoulder: a systematic review and meta-analysis. Pain Manag Nurs. 2024.\n16. Yu B, Yang Y, Fang J, Guo Y, Qiu Y, Yang S, Ran S, Zheng K, Wang T, Huang\nY. Efficacy and safety of acupuncture treatment for stiff neck: a systematic\nreview and meta-analysis. Medicine. 2024;103(45):e40415.\n17. Llurda-Almuzara L, Labata-Lezaun N, Meca-Rivera T, Navarro-Santana\nMJ, Cleland JA, Fernández-de-Las-Peñas C, Pérez-Bellmunt A. Is dry\nneedling effective for the management of plantar heel pain or plantar\nfasciitis? An updated systematic review and meta-analysis. Pain Med.\n2021;22(7):1630–41.\n18. Jishun J, Mittelman M. Acupuncture: past, present, and future. Glob Adv\nHealth Med. 2014;3(4):6–8.\n19. Ke SX. The principles of health, illness and treatment—the key concepts\nfrom “The Yellow Emperor’s Classic of Internal Medicine.” J Ayurveda\nIntegr Med. 2023;14(1):100637.\n20. Wang M, Zhao T, Liu J, Luo S. Global trends and performance of dry\nneedling from 2004 to 2024: a bibliometric analysis. Front Neurol.\n2024;9(15):1465983.\n21. Abbaszadeh-Amirdehi M, Ansari NN, Naghdi S, Olyaei G, Nourbakhsh\nMR. Therapeutic effects of dry needling in patients with upper trapezius\nmyofascial trigger points. Acupunct Med. 2017;35(2):85–92.\n22. Graeff P, Ruscheweyh R, Flanagin VL. Longitudinal changes in human\nsupraspinal processing after RIII-feedback training to improve descending pain inhibition. Neuroimage. 2023;1(283):120432.\n23. Chou LW, Hsieh YL, Chen HS, Hong CZ, Kao MJ, Han TI. Remote\ntherapeutic effectiveness of acupuncture in treating myofascial\ntrigger point of the upper trapezius muscle. Am J Phys Med Rehabil.\n2011;90(12):1036–49.\n24. Chen L, Guo T, Zhang S, Smith PP, Feng B. Blocking peripheral drive from\ncolorectal afferents by subkilohertz dorsal root ganglion stimulation. Pain.\n2022;163(4):665–81.\n25. Wu ML, Xu DS, Bai WZ, Cui JJ, Shu HM, He W, Wang XY, Shi H, Su YS, Hu\nL, Zhu B. Local cutaneous nerve terminal and mast cell responses to\nmanual acupuncture in acupoint LI4 area of the rats. J Chem Neuroanat.\n2015;1(68):14–21.\n26. Bron C, Dommerholt JD. Etiology of myofascial trigger points. Curr Pain\nHeadache Rep. 2012;16:439–44.\n27. Squire JM. Muscle contraction: sliding filament history, sarcomere dynamics and the two Huxleys. Global Cardiol Sci Pract. 2016;2016(2):e201611.\n28. Dommerholt J, Bron C, Franssen J. Myofascial trigger points: an evidenceinformed review. J Man Manip Ther. 2006;14(4):203–21.\n29. Shah JP. Uncovering the biochemical milieu of myofascial trigger points\nusing in vivo microdialysis. J Musculoskelet Pain. 2008;16(1–2):17–20.\n30. Perreault T, Dunning J, Butts R. The local twitch response during trigger\npoint dry needling: is it necessary for successful outcomes? J Bodyw Mov\nTher. 2017;21(4):940–7.\n31. Lv Q, Wu F, Gan X, Yang X, Zhou L, Chen J, He Y, Zhang R, Zhu B, Liu L. The\ninvolvement of descending pain inhibitory system in electroacupuncture-induced analgesia. Front Integr Neurosci. 2019;21(13):38.\n32. Kwon M, Altin M, Duenas H, Alev L. The role of descending inhibitory\npathways on chronic pain modulation and clinical implications. Pain\nPract. 2014;14(7):656–67.\n33. Cagnie B, Dewitte V, Barbe T, Timmermans F, Delrue N, Meeus M. Physiologic effects of dry needling. Curr Pain Headache Rep. 2013;17:1–8.\n34. Guo D, Hu J. Spinal presynaptic inhibition in pain control. Neuroscience.\n2014;26(283):95–106.\n35. Cheng KJ. Neurobiological mechanisms of acupuncture for some\ncommon illnesses: a clinician’s perspective. J Acupunct Meridian Stud.\n2014;7(3):105–14.\n36. Jin BX, Jin LL, Jin GY. The anti-inflammatory effect of acupuncture and its\nsignificance in analgesia. World J Acupunct Moxib. 2019;29(1):1–6.\n37. McPartland JM, Simons DG. Myofascial trigger points: translating molecular theory into manual therapy. J Man Manip Ther. 2006;14(4):232–9.",
-          "translated_text": "Миофазциальные триггерные точки: систематический обзор и метаанализ. Журнал терапии работы тела и движения. J Bodyw Mov Ther. 2024. 14. La Touche R, Goddard G, De-la-Hoz JL, Wang K, Paris-Germany A, Angulo- Díaz-Parreño S, Mesa J, Hernández M. Акупунктура при лечении боли при временно-мандибулярных расстройствах: систематический обзор и метаанализ рандомизированных контролируемых испытаний. Эффективность комбинирования акупункции и физической терапии для лечения пациентов с замороженным плечом: систематический обзор и метаанализ. Эффективность и безопасность терапии иглоукалыванием для жесткого шеи: систематический обзор и метаанализ. Сухой игол эффективен для лечения боли в локте или фашита? обновленный систематический обзор и мета-анализ. Боль Мед. 2021;22(7): 163041. 18. Джишун Ж, Миттлман М. Акупунктура: прошлое, настоящее и будущее. Glob Adv Health Med. 2014;3(4): 68. 19. Ke SX. Принципы здоровья, болезней и лечения ключевые концепции из \"Желтого императора\" Классики внутренней медицины. Abbaszadeh-Amirdehi M, Ansari NN, Naghdi S, Olyaei G, Nourbakhsh MR. Терапевтические эффекты сухой иглы у пациентов с верхней трапезией миофаз. Продолжительные изменения в процессе обработки головного мозга человека после тренировки RIII-feedback для улучшения ингибиции снижающейся боли. Неврообразование. 2023;1(283):120432. 23. Чжоу ЛУ, Хсиэ ЮЛ, Чэн ХС, Хон ЧЗ, Kao MJ, Хан ТИ. Удаленная терапевтическая эффективность иглоукалывания в лечении миофазциальной триггерной точки верхней трапезной мышцы. АМ Ж Физ Мед Реабилитация. 2011;90(12):103649. 24. Чэн Л, Гу Т, Чжан С, Смит ПП, Фэн Б. Блокирование периферического привода от колоректальных афферентов субкилогерцовой стимуляцией корневых ганглионов. Боль. 2022;163(4):66581. 25. Местные терминалы кожевых нервов и ответные клетки мастовых клеток на ручную иглоукалывание в области акупункта LI4 у крыс. J Chem Neuroanat. 2015;1(68):1421. 26. Bron C, Dommerholt JD. Этиология миофасциальных триггерных точек. Curr Pain Headache Rep. 2012;16:43944. 27. Squire JM. Сокращение мышц: история скользящих волокон, динамика саркомеров и два Хаксли. Глобальная научная практика кардиола. 2016;2016(2):e201611. 28. Доммерхолт J, Брон C, Франссен J. Миофазциальные триггерные точки: проверка на основании доказательств. J Man Manip Ther. 2006;14(4):20321. 29. Шах JP. Открытие биохимической среды миофасциальных точек спускового действия с помощью микродиализа in vivo. J Musculoskelet Pain. 2008;16(12):1720. 30. Perreault T, Dunning J, Butts R. Местная реакция на затягивание во время сухого затягивания точек спускового действия: необходимо ли это для успешных результатов? J Bodyw Mov Ther. 2017;21(4):9407. 31. Lv Q, Wu F, Gan X, Ян (Yang) X, Zhou L, Chen J, He Y, Zhang R, Zhu B, Liu L. Участие снижающейся ингибиторной системы боли в электроакупункции-индуцированной анальгетике. Практика боли. 2014;14(7):65667. 33. Кэгни Б, Девитте V, Барбе Т, Тиммерманс Ф, Делрю Н, Мэйус М. Физиологические эффекты сухой иглы. Невробиологические механизмы иглоукалывания для некоторых распространенных заболеваний: с точки зрения клиника. J Acupunct меридиан Stud. 2014;7(3):10514. 36. Миофазциальные триггерные точки: перевод молекулярной теории в ручную терапию."
+          "translated_text": "Миофазциальные триггерные точки: систематический обзор и метаанализ. Журнал терапии работы тела и движения. J Bodyw Mov Ther. 2024. 14. La Touche R, Goddard G, De-la-Hoz JL, Wang К, Paris-Germany А, Angulo- Díaz-Parreño S, Mesa J, Hernández М. Акупунктура при лечении боли при временно-мандибулярных расстройствах: систематический обзор и метаанализ рандомизированных контролируемых испытаний. Эффективность комбинирования акупункции и физической терапии для лечения пациентов с замороженным плечом: систематический обзор и метаанализ. Эффективность и безопасность терапии иглоукалыванием для жесткого шеи: систематический обзор и метаанализ. Сухой игол эффективен для лечения боли в локте или фашита? обновленный систематический обзор и мета-анализ. Боль Мед. 2021;22(7): 163041. 18. Джишун Ж, Миттлман М. Акупунктура: прошлое, настоящее и будущее. Glob Adv Health Med. 2014;3(4): 68. 19. Ke SX. Принципы здоровья, болезней и лечения ключевые концепции из \"Желтого императора\" Классики внутренней медицины. Abbaszadeh-Amirdehi М, Ansari NN, Naghdi S, Olyaei G, Nourbakhsh MR. Терапевтические эффекты сухой иглы у пациентов с верхней трапезией миофаз. Продолжительные изменения в процессе обработки головного мозга человека после тренировки RIII-feedback для улучшения ингибиции снижающейся боли. Неврообразование. 2023;1(283):120432. 23. Чжоу ЛУ, Хсиэ ЮЛ, Чэн ХС, Хон ЧЗ, Kao MJ, Хан ТИ. Удаленная терапевтическая эффективность иглоукалывания в лечении миофазциальной триггерной точки верхней трапезной мышцы. АМ Ж Физ Мед Реабилитация. 2011;90(12):103649. 24. Чэн Л, Гу Т, Чжан С, Смит ПП, Фэн Б. Блокирование периферического привода от колоректальных афферентов субкилогерцовой стимуляцией корневых ганглионов. Боль. 2022;163(4):66581. 25. Местные терминалы кожевых нервов и ответные клетки мастовых клеток на ручную иглоукалывание в области акупункта LI4 у крыс. J Chem Neuroanat. 2015;1(68):1421. 26. Bron С, Dommerholt JD. Этиология миофасциальных триггерных точек. Curr Pain Headache Rep. 2012;16:43944. 27. Squire JM. Сокращение мышц: история скользящих волокон, динамика саркомеров и два Хаксли. Глобальная научная практика кардиола. 2016;2016(2):e201611. 28. Доммерхолт J, Брон С, Франссен J. Миофазциальные триггерные точки: проверка на основании доказательств. J Man Manip Ther. 2006;14(4):20321. 29. Шах JP. Открытие биохимической среды миофасциальных точек спускового действия с помощью микродиализа in vivo. J Musculoskelet Pain. 2008;16(12):1720. 30. Perreault Т, Dunning J, Butts R. Местная реакция на затягивание во время сухого затягивания точек спускового действия: необходимо ли это для успешных результатов? J Bodyw Mov Ther. 2017;21(4):9407. 31. Lv Q, Wu F, Gan Х, Ян (Yang) Х, Zhou L, Chen J, He У, Zhang R, Zhu В, Liu L. Участие снижающейся ингибиторной системы боли в электроакупункции-индуцированной анальгетике. Практика боли. 2014;14(7):65667. 33. Кэгни Б, Девитте V, Барбе Т, Тиммерманс Ф, Делрю Н, Мэйус М. Физиологические эффекты сухой иглы. Невробиологические механизмы иглоукалывания для некоторых распространенных заболеваний: с точки зрения клиника. J Acupunct меридиан Stud. 2014;7(3):10514. 36. Миофазциальные триггерные точки: перевод молекулярной теории в ручную терапию."
         },
         {
           "id": "p11_b2",
@@ -1769,12 +1772,13 @@
             "protected_tokens": [
               "https://​www.​cebm.​ox.​ac.​uk/​resou​"
             ],
+            "role": "body",
             "quality_pass": "heuristic_v1",
-            "role": "paragraph"
+            "editor_pass": "heuristic_v1"
           },
           "block_id": "p11_b2",
           "normalized_text": "38. Gerwin RD, Dommerholt J, Shah JP. An expansion of Simons’ integrated hypothesis of trigger point formation. Curr Pain Headache Rep.\n2004;8:468–75.\n39. Hemington KS, Coulombe MA. The periaqueductal gray and descending\npain modulation: why should we study them and what role do they play\nin chronic pain? J Neurophysiol. 2015;114(4):2080–3.\n40. Bradnam L, Phty D. Clinical reasoning for western acupuncture. Acupuncture in manual therapy. Edinburgh: Churchill Livingstone. 2010. pp.1–7.\n41. Zhang ZJ, Wang XM, McAlonan GM. Neural acupuncture unit: a new concept for interpreting effects and mechanisms of acupuncture. Evid-Based\nComplement Altern Med. 2012;2012(1):429412.\n42. Carlsson C. Acupuncture mechanisms for clinically relevant longterm effects—reconsideration and a hypothesis. Acupunct Med.\n2002;20(2–3):82–99.\n43. Jin F, Guo Y, Wang Z, Badughaish A, Pan X, Zhang L, Qi F. The pathophysiological nature of sarcomeres in trigger points in patients with myofascial\npain syndrome: a preliminary study. Eur J Pain. 2020;24(10):1968–78.\n44. Capuano A, Currò D, Russo CD, Tringali G, Pozzoli G, Trapani GD, Navarra\nP. Nociceptin (1–13) NH2 inhibits stimulated calcitonin-gene-relatedpeptide release from primary cultures of rat trigeminal ganglia neurones.\nCephalalgia. 2007;27(8):868–76.\n45. Brain SD, Williams TJ, Tippins JR, Morris HR, MacIntyre I. Calcitonin generelated peptide is a potent vasodilator. Nature. 1985;313(5997):54–6.\n46. Strobel WM, Lüscher TF, Simper D, Linder L, Haefeli WE. Substance P in\nhuman hand veins in vivo: tolerance, efficacy, potency, and mechanism\nof venodilator action. Clin Pharmacol Ther. 1996;60(4):435–43.\n47. Han JS. Acupuncture: neuropeptide release produced by electrical stimulation of different frequencies. Trends Neurosci. 2003;26(1):17–22.\n48. Centre for Evidence-Based Medicine (CEBM). Critical Appraisal Tools. 2025\n[cited 2025 Jun 15]. Available from https://​www.​cebm.​ox.​ac.​uk/​resou​\nrces/​ebm-​tools/​criti​cal-​appra​isal-​tools\n49. Slim K, Nini E, Forestier D, Kwiatkowski F, Panis Y, Chipponi J. Methodological index for non-randomized studies (minors): development and\nvalidation of a new instrument. ANZ J Surg. 2003;73(9):712–6.\n50. Baethge C, Goldbeck-Wood S, Mertens S. SANRA—a scale for the quality\nassessment of narrative review articles. Res Integr Peer Rev. 2019;4:1–7.\n51. Cooper GM. The cell: a molecular approach. Sunderland: Sinauer Associates; 2000. p. 3.\n52. Lundy-Ekman, L. Neuroscience at the system level. In: Neuroscience—\nfundamentals for rehabilitation (4th edn). Saunders; 2013. p.102\n53. Norris CM. Managing sports injuries e-book: managing sports injuries\ne-book. Elsevier; 2011.\n54. Rajmohan V, Mohandas EAST. The limbic system. Indian J Psychiatry.\n2007;49(2):132–9.\n55. Kandel ER, Schwartz JH, Jessell TM, Siegelbaum S, Hudspeth AJ, Mack S,\neditors. Principles of neural science. New York: McGraw-hill; 2000.\n56. Haby MM, Chapman E, Clark R, Barreto J, Reveiz L, Lavis JN. What are\nthe best methodologies for rapid reviews of the research evidence for\nevidence-informed decision making in health policy and practice: a rapid\nreview. Health Res Policy Syst. 2016;14:1–2.\n57. Wallace SS, Barak G, Truong G, Parker MW. Hierarchy of evidence within\nthe medical literature. Hosp Pediatr. 2022;12(8):745–50.\n58. Bryda EC. The mighty mouse: the impact of rodents on advances in\nbiomedical research. Mo Med. 2013;110(3):207.\n59. Zha M, Chaffee K, Alsarraj J. Trigger point injections and dry needling can\nbe effective in treating long COVID syndrome-related myalgia: a case\nreport. J Med Case Rep. 2022;16(1):31.",
-          "translated_text": "38. Гервин РД, Доммерхолт Дж, Шах Дж. Расширение интегрированной гипотезы Симонса о формировании триггерных точек. Bradnam L, Phty D. Клиническое рассуждение для западной иглоукалывания. Акупунктура в ручной терапии. Эдинбург: Черчилль Ливингстон. 2010. pp.17. 41. Zhang ZJ, Wang XM, McAlonan GM. Нейронная иглоукалывания единица: новая концепция для интерпретации эффектов и механизмов иглоукалывания. Механизмы иглоукалывания для клинически значимых долгосрочных эффектовпереосмысление и гипотеза. 2020;24(10):196878. 44. Капуано А, Куро Д, Руссо CD, Трингали Г, Поззоли Г, Трапани ГД, Наварра П. Ноцицептин (113) -NH2 ингибирует стимулируемое выделение пептида, связанного с геном кальцитонина, из первичных культур нейронов тригеминальных ганглий крысы. Цефальгия. 2007;27(8):86876. 45. Brain SD, Уильямс TJ, Tippins JR, Моррис HR, Макинтайр I. Кальцитониновый пептид, связанный с генами, является мощным вазодилататором. Природа. 1985;313(5997): 546. 46. Strobel WM, Lüscher TF, Simper D, Linder L, Haefeli WE. Акупунктура: высвобождение нейропептидов, вызванное электрической стимуляцией различных частот. Slim K, Nini E, Forestier D, Kwiatkowski F, Panis Y, Chipponi J. Методологический индекс для не рандомизированных исследований (недополненные): разработка и проверка нового инструмента. ANZ J Surg. 2003;73(9):7126. 50. Baethge C, Goldbeck-Wood S, Mertens S. SANRA 2019;4:17. 51. Купер ГМ. Клетка: молекулярный подход. Сундерланд: Sinauer Associates; 2000. п. 3. 52. Лунди-Экман, Л. Нейронаука на системном уровне. В: Нейронаука основы для реабилитации (4-е издание). Саундерс; 2013. п.102 53. Норрис CM. Управление спортивными травмами электронная книга: управление спортивными травмами электронная книга. Elsevier; 2011. 54. Rajmohan V, Mohandas EAST. Лимбическая система. Индийская Психиатрия. 2007;49(2):1329. 55. Кандель ЭР, Шварц JH, Джесселл TM, Сигельбаум S, Худспет AJ, Мак С, редакторы. Принципы нейронной науки. Нью-Йорк: МакГрау-Хилл; 2000. 56. Хаби ММ, Чапман Э, Кларк Р, Баррето J, Ревиз L, Лавис ДжН. Какие наилучшие методологии для быстрых обзоров исследовательских доказательств для принятия на основе доказательств решений в политике и практике здравоохранения: быстрый обзор. Health Res Policy Syst. 2016;14:12. 57. Wallace SS, Barak G, Truong G, Parker MW. Иерархия доказательств в медицинской литературе. Hosp Pediatr. 2022;12(8):74550. 58. Bryda EC. Сильная мышь: влияние грызунов на прогресс в биомедицинских исследованиях. Mo Med. 2013;110(3):207. 59. Zha M, Chaffee K, Alsarraj J. Триггерные инъекции и сухая игла могут быть эффективны в лечении миалгии, связанной с длительным синдромом COVID: отчет о случаях. J Med Case Rep. 2022;16(1):31."
+          "translated_text": "38. Гервин РД, Доммерхолт Дж, Шах Дж. Расширение интегрированной гипотезы Симонса о формировании триггерных точек. Bradnam L, Phty D. Клиническое рассуждение для западной иглоукалывания. Акупунктура в ручной терапии. Эдинбург: Черчилль Ливингстон. 2010. pp.17. 41. Zhang ZJ, Wang XM, McAlonan GM. Нейронная иглоукалывания единица: новая концепция для интерпретации эффектов и механизмов иглоукалывания. Механизмы иглоукалывания для клинически значимых долгосрочных эффектовпереосмысление и гипотеза. 2020;24(10):196878. 44. Капуано А, Куро Д, Руссо CD, Трингали Г, Поззоли Г, Трапани ГД, Наварра П. Ноцицептин (113) -NH2 ингибирует стимулируемое выделение пептида, связанного с геном кальцитонина, из первичных культур нейронов тригеминальных ганглий крысы. Цефальгия. 2007;27(8):86876. 45. Brain SD, Уильямс TJ, Tippins JR, Моррис HR, Макинтайр I. Кальцитониновый пептид, связанный с генами, является мощным вазодилататором. Природа. 1985;313(5997): 546. 46. Strobel WM, Lüscher TF, Simper D, Linder L, Haefeli WE. Акупунктура: высвобождение нейропептидов, вызванное электрической стимуляцией различных частот. Slim К, Nini Е, Forestier D, Kwiatkowski F, Panis У, Chipponi J. Методологический индекс для не рандомизированных исследований (недополненные): разработка и проверка нового инструмента. ANZ J Surg. 2003;73(9):7126. 50. Baethge С, Goldbeck-Wood S, Mertens S. SANRA 2019;4:17. 51. Купер ГМ. Клетка: молекулярный подход. Сундерланд: Sinauer Associates; 2000. п. 3. 52. Лунди-Экман, Л. Нейронаука на системном уровне. В: Нейронаука основы для реабилитации (4-е издание). Саундерс; 2013. п.102 53. Норрис CM. Управление спортивными травмами электронная книга: управление спортивными травмами электронная книга. Elsevier; 2011. 54. Rajmohan V, Mohandas EAST. Лимбическая система. Индийская Психиатрия. 2007;49(2):1329. 55. Кандель ЭР, Шварц JH, Джесселл TM, Сигельбаум S, Худспет AJ, Мак С, редакторы. Принципы нейронной науки. Нью-Йорк: МакГрау-Хилл; 2000. 56. Хаби ММ, Чапман Э, Кларк Р, Баррето J, Ревиз L, Лавис ДжН. Какие наилучшие методологии для быстрых обзоров исследовательских доказательств для принятия на основе доказательств решений в политике и практике здравоохранения: быстрый обзор. Health Res Policy Syst. 2016;14:12. 57. Wallace SS, Barak G, Truong G, Parker MW. Иерархия доказательств в медицинской литературе. Hosp Pediatr. 2022;12(8):74550. 58. Bryda EC. Сильная мышь: влияние грызунов на прогресс в биомедицинских исследованиях. Mo Med. 2013;110(3):207. 59. Zha М, Chaffee К, Alsarraj J. Триггерные инъекции и сухая игла могут быть эффективны в лечении миалгии, связанной с длительным синдромом COVID: отчет о случаях. J Med Case Rep. 2022;16(1):31."
         },
         {
           "id": "p11_b3",
@@ -1790,7 +1794,7 @@
           },
           "metadata": {
             "protected_tokens": [],
-            "role": "paragraph"
+            "role": "body"
           },
           "block_id": "p11_b3",
           "normalized_text": "Publisher’s Note\nSpringer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.",

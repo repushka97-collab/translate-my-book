@@ -31,10 +31,10 @@
       "severity": "medium",
       "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
       "meta": {
-        "latin": 404,
-        "cyr": 1276,
-        "latin_ratio": 0.24,
-        "cyr_ratio": 0.76
+        "latin": 401,
+        "cyr": 1279,
+        "latin_ratio": 0.239,
+        "cyr_ratio": 0.761
       }
     },
     {
@@ -132,9 +132,22 @@
       "message": "English acupuncture-related terms found in Russian translation.",
       "meta": {
         "terms": [
+          "qi",
           "yin",
-          "yang",
-          "qi"
+          "yang"
+        ]
+      }
+    },
+    {
+      "block_id": "p1_b6",
+      "page": 1,
+      "order": 6,
+      "type": "repeated_tokens",
+      "severity": "low",
+      "message": "Repeated tokens detected in translated text.",
+      "meta": {
+        "tokens": [
+          "ци"
         ]
       }
     },
@@ -180,9 +193,22 @@
       "message": "English acupuncture-related terms found in Russian translation.",
       "meta": {
         "terms": [
+          "qi",
           "yin",
-          "yang",
-          "qi"
+          "yang"
+        ]
+      }
+    },
+    {
+      "block_id": "p3_b1",
+      "page": 3,
+      "order": 13,
+      "type": "repeated_tokens",
+      "severity": "low",
+      "message": "Repeated tokens detected in translated text.",
+      "meta": {
+        "tokens": [
+          "ци"
         ]
       }
     },
@@ -339,19 +365,21 @@
   "summary": {
     "total_blocks": 78,
     "checked": 78,
-    "issues_total": 28,
+    "issues_total": 30,
     "issues_by_type": {
       "potential_break": 18,
       "mixed_alphabet": 2,
       "suspect_terms_en_in_ru": 4,
-      "repeated_tokens": 4
+      "repeated_tokens": 6
     },
     "issues_by_severity": {
-      "low": 26,
+      "low": 28,
       "medium": 2
     },
     "roles_count": {
-      "unknown": 78
+      "body": 56,
+      "heading1": 1,
+      "heading2": 21
     }
   }
 }
