@@ -111,17 +111,43 @@ def _dedupe_repeated_tokens(text: str) -> str:
     out = []
     prev = None
     for t in tokens:
-        if prev is not None and t.lower() == prev.lower():
+        norm = re.sub(r"^[\W_]+|[\W_]+$", "", t).lower()
+        prev_norm = re.sub(r"^[\W_]+|[\W_]+$", "", prev).lower() if prev else None
+
+        if prev is not None and norm and prev_norm and norm == prev_norm:
             # пропускаем повтор
             continue
         out.append(t)
         prev = t
 
+    if not out:
+        return text
+
+    out_iter = iter(out)
+
     return re.sub(
         r"\S+",
-        lambda _: out.pop(0),
+        lambda m: next(out_iter, m.group(0)),
         text,
     )
+
+
+def _normalize_acu_terms(text: str) -> str:
+    """
+    Лёгкая нормализация часто встречающихся терминов (yin/yang/qi/chi),
+    чтобы убрать лишнюю латиницу.
+    """
+    repls = [
+        (r"\bYin[\-\u2013\u2014/\\&]*Yang\b", "Инь и Ян (Yin & Yang)"),
+        (r"\bYin\b", "Инь (Yin)"),
+        (r"\bYang\b", "Ян (Yang)"),
+        (r"\bQi\b", "ци (Qi)"),
+        (r"\bChi\b", "ци (Qi)"),
+    ]
+    s = text
+    for pattern, replacement in repls:
+        s = re.sub(pattern, replacement, s, flags=re.IGNORECASE)
+    return s
 
 
 def _replace_mixed_one_letter_tokens(text: str) -> str:
@@ -153,10 +179,7 @@ def _replace_mixed_one_letter_tokens(text: str) -> str:
 
     return re.sub(r"\b[A-Za-z]\b", repl, text)
 
-    return s
-
-
-def run_editor_pass(blocks: List[Block], min_chars: int = 50) -> List[Block]:
+def run_editor_pass(blocks: List[Block], min_chars: int = 0) -> List[Block]:
     """
     Editor-pass v1: работаем поверх перевода, только на длинных блоках.
 
@@ -164,7 +187,8 @@ def run_editor_pass(blocks: List[Block], min_chars: int = 50) -> List[Block]:
     - режем склейки латиница+кириллица в одном токене (meridiansвсе → meridians все);
     - правим несколько жёстко захардкоженных артефактов (НТакупунктура и т.п.);
     - убираем подряд идущие дубликаты токенов;
-    - заменяем одиночные латинские буквы в русских предложениях на кириллические аналоги.
+    - заменяем одиночные латинские буквы в русских предложениях на кириллические аналоги;
+    - нормализуем yin/yang/qi/chi.
 
     В будущем сюда можно будет подвесить настоящую LLM-редактуру.
     """
@@ -176,23 +200,21 @@ def run_editor_pass(blocks: List[Block], min_chars: int = 50) -> List[Block]:
             processed.append(b)
             continue
 
-        if len(text) < min_chars:
-            # короткие блоки не трогаем
-            processed.append(b)
-            continue
-
         original = text
 
         # 1) Адресные правки
         text = _apply_custom_fixes(text)
 
-        # 2) Исправление склеенных токенов с разными алфавитами
+        # 2) Терминологические фиксы (yin/yang/qi/chi)
+        text = _normalize_acu_terms(text)
+
+        # 3) Исправление склеенных токенов с разными алфавитами
         text = _fix_mixed_scripts_in_text(text)
 
-        # 3) Удаляем подряд идущие дубликаты
+        # 4) Удаляем подряд идущие дубликаты
         text = _dedupe_repeated_tokens(text)
 
-        # 4) Одиночные латинские буквы → кириллические аналоги (грубый фикс)
+        # 5) Одиночные латинские буквы → кириллические аналоги (грубый фикс)
         text = _replace_mixed_one_letter_tokens(text)
 
         if text == original:

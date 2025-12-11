@@ -45,46 +45,46 @@ def _normalize_terms(text: str) -> str:
     #  АНГЛИЙСКИЕ ТЕРМИНЫ → РУССКИЕ НОРМАЛИЗОВАННЫЕ
     # ============================
 
-    # Yin & Yang
+    # Yin & Yang (все варианты разделителей) → русская форма без английского хвоста
+    s = re.sub(
+        r"\bYin[\-\u2013\u2014/\\&]+\s*Yang\b",
+        "Инь и Ян",
+        s,
+        flags=re.IGNORECASE,
+    )
     s = re.sub(
         r"\bYin\s*&\s*Yang\b",
-        "Инь и Ян (Yin & Yang)",
+        "Инь и Ян",
         s,
         flags=re.IGNORECASE,
     )
 
-    # Qi / Chi → ци (Qi)
+    # Qi / Chi → ци
     s = re.sub(
         r"\bQi\b",
-        "ци (Qi)",
+        "ци",
         s,
         flags=re.IGNORECASE,
     )
     s = re.sub(
         r"\bChi\b",
-        "ци (Qi)",
-        s,
-        flags=re.IGNORECASE,
-    )
-    s = re.sub(
-        r"\bQi\b",
-        "ци (Qi)",
+        "ци",
         s,
         flags=re.IGNORECASE,
     )
 
-    # Yin → Инь (Yin)
+    # Yin → Инь
     s = re.sub(
         r"\bYin\b",
-        "Инь (Yin)",
+        "Инь",
         s,
         flags=re.IGNORECASE,
     )
 
-    # Yang → Ян (Yang)
+    # Yang → Ян
     s = re.sub(
         r"\bYang\b",
-        "Ян (Yang)",
+        "Ян",
         s,
         flags=re.IGNORECASE,
     )
