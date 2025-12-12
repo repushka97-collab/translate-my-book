@@ -2,7 +2,7 @@
   "book_id": "d247362f641f5add",
   "source_pdf": "I:\\PROJECTS\\Translate-my-book\\translate-my-book\\For test\\GPT.pdf",
   "library_pdf": "library\\d247362f641f5add\\original.pdf",
-  "created_at": "2025-12-12T18:56:01.081278Z",
+  "created_at": "2025-12-12T21:12:46.037581Z",
   "pages": 8,
   "metadata": {
     "title": "",
@@ -115,7 +115,7 @@
         "message": "Repeated tokens detected in translated text.",
         "meta": {
           "tokens": [
-            "we"
+            "а"
           ]
         }
       },

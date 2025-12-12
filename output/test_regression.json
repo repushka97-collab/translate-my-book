@@ -1,0 +1,39 @@
+{
+  "mode": "dev",
+  "env": {
+    "repo_root": "I:\\PROJECTS\\Translate-my-book\\translate-my-book",
+    "python_executable": "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "git_head": "b0f9c10b55dade3e9718940c0813d932de96d67b",
+    "torch_cuda_available": false
+  },
+  "runs": [
+    {
+      "source_pdf": "For test\\30-38.pdf",
+      "mode": "dev",
+      "ok": true,
+      "book_id": "16c9f47aa3421533",
+      "output_dir": "output\\16c9f47aa3421533",
+      "export_paths": {
+        "json": "output\\16c9f47aa3421533\\book.json",
+        "docx_main": "output\\16c9f47aa3421533\\book_ru.docx"
+      },
+      "qa_status": "warn",
+      "qa_issues_total": 51,
+      "qa_issues_by_type": {
+        "potential_break": 42,
+        "repeated_tokens": 4,
+        "suspect_terms_en_in_ru": 4,
+        "concatenated_scripts": 1
+      },
+      "qa_issues_by_severity": {
+        "low": 50,
+        "medium": 1
+      },
+      "paragraph_count": 129,
+      "docx_size_bytes": 188468,
+      "json_size_bytes": 196490,
+      "error": null,
+      "duration_sec": 0.172
+    }
+  ]
+}

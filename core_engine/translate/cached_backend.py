@@ -148,9 +148,18 @@ class CachedBackend(LLMBackend):
         # Объединяем кэшированные и переведенные блоки
         # Восстанавливаем исходный порядок
         result: List[Dict[str, Any]] = []
-        cached_idx = 0
-        uncached_idx = 0
         
+        # Создаем маппинг: cache_key -> переведенный блок
+        cached_map = {self._get_cache_key(b.get("text") or b.get("normalized_text", ""), source_lang, target_lang): b 
+                     for b in cached_blocks if (b.get("text") or b.get("normalized_text", "")).strip()}
+        translated_map = {}
+        for i, block in enumerate(uncached_blocks):
+            text = block.get("text") or block.get("normalized_text", "")
+            if text.strip():
+                cache_key = self._get_cache_key(text, source_lang, target_lang)
+                translated_map[cache_key] = translated_blocks[i]
+        
+        # Восстанавливаем порядок
         for block in blocks:
             text = block.get("text") or block.get("normalized_text", "")
             if not text.strip():
@@ -158,16 +167,16 @@ class CachedBackend(LLMBackend):
                 continue
             
             cache_key = self._get_cache_key(text, source_lang, target_lang)
-            cached_text = self._load_from_cache(cache_key)
             
-            if cached_text is not None:
+            if cache_key in cached_map:
                 # Берем из кэшированных
-                result.append(cached_blocks[cached_idx])
-                cached_idx += 1
-            else:
+                result.append(cached_map[cache_key])
+            elif cache_key in translated_map:
                 # Берем из переведенных
-                result.append(translated_blocks[uncached_idx])
-                uncached_idx += 1
+                result.append(translated_map[cache_key])
+            else:
+                # Fallback: оригинальный блок
+                result.append(block)
         
         return result
 

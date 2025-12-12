@@ -1,11 +1,9 @@
 [
   {
     "type": "image",
-    "image_bytes": null,
     "image_id": "p1_img0",
     "label": null,
-    "page": 1,
-    "_has_image": true
+    "page": 1
   },
   {
     "type": "heading1",
@@ -24,37 +22,37 @@
   },
   {
     "type": "heading2",
-    "text": "Yoonsu Kim\nKAIST\nDaejeon, South Korea\nyoonsu16@kaist.ac.kr",
+    "text": "Yoonsu Kim KAIST Daejeon, South Korea yoonsu16@kaist.ac.kr",
     "page": 1
   },
   {
     "type": "heading1",
-    "text": "KAIST\nDaejeon, South Korea\njieun_han@kaist.ac.kr",
+    "text": "KAIST Daejeon, South Korea jieun_han@kaist.ac.kr",
     "page": 1
   },
   {
     "type": "heading2",
-    "text": "Junho Myung\nKAIST\nDaejeon, South Korea\njunho00211@kaist.ac.kr",
+    "text": "Junho Myung KAIST Daejeon, South Korea junho00211@kaist.ac.kr",
     "page": 1
   },
   {
     "type": "heading2",
-    "text": "Minsun Kim\nKAIST\nDaejeon, South Korea\n9909cindy@kaist.ac.kr",
+    "text": "Minsun Kim KAIST Daejeon, South Korea 9909cindy@kaist.ac.kr",
     "page": 1
   },
   {
     "type": "heading2",
-    "text": "KAIST\nDaejeon, South Korea\nhaneul.yoo@kaist.ac.kr",
+    "text": "KAIST Daejeon, South Korea haneul.yoo@kaist.ac.kr",
     "page": 1
   },
   {
     "type": "heading2",
-    "text": "Hyunseung Lim\nKAIST\nDaejeon, South Korea\ncharlie9807@kaist.ac.kr",
+    "text": "Hyunseung Lim KAIST Daejeon, South Korea charlie9807@kaist.ac.kr",
     "page": 1
   },
   {
     "type": "heading2",
-    "text": "Juho Kim\nKAIST\nDaejeon, South Korea\njuhokim@kaist.ac.kr",
+    "text": "Juho Kim KAIST Daejeon, South Korea juhokim@kaist.ac.kr",
     "page": 1
   },
   {
@@ -64,12 +62,12 @@
   },
   {
     "type": "heading2",
-    "text": "Tak Yeon Lee\nKAIST\nDaejeon, South Korea\ntakyeonlee@kaist.ac.kr",
+    "text": "Tak Yeon Lee KAIST Daejeon, South Korea takyeonlee@kaist.ac.kr",
     "page": 1
   },
   {
     "type": "heading2",
-    "text": "Hwajung Hong\nKAIST\nDaejeon, South Korea\nhwajung@kaist.ac.kr",
+    "text": "Hwajung Hong KAIST Daejeon, South Korea hwajung@kaist.ac.kr",
     "page": 1
   },
   {
@@ -84,17 +82,17 @@
   },
   {
     "type": "heading2",
-    "text": "KAIST\nDaejeon, South Korea\nalice.oh@kaist.edu",
+    "text": "KAIST Daejeon, South Korea alice.oh@kaist.edu",
     "page": 1
   },
   {
     "type": "heading2",
-    "text": "KAIST\nDaejeon, South Korea\nahnsoyeon@kaist.ac.kr",
+    "text": "KAIST Daejeon, South Korea ahnsoyeon@kaist.ac.kr",
     "page": 1
   },
   {
     "type": "caption",
-    "text": "Figure 1: А screenshot of the writing exercise in our platform. А student’s original essay is initially provided at (А). student starts а conversation with ChatGPT at (В) by summarizing what they learned in the previous lecture as we instructed. Conversation history is logged at (С), and а student is prompted to assess the performance of ChatGPT’s every response in а 5-point Likert scale at (D). Then, а student can revise the essay at (Е) and repeat the process from (В) to (Е). (Е).",
+    "text": "Figure 1: А screenshot of the writing exercise in our platform. А student’s original essay is initially provided at (А). А student starts а conversation with ChatGPT at (В) by summarizing what they learned in the previous lecture as we instructed. Conversation history is logged at (С), and а student is prompted to assess the performance of ChatGPT’s every response in а 5-point Likert scale at (D). Then, а student can revise the essay at (Е) and repeat the process from (В) to (Е).",
     "page": 1
   },
   {
@@ -109,17 +107,17 @@
   },
   {
     "type": "paragraph",
-    "text": "The integration of generative AI in the field of education is actively\nbeing explored. In particular, ChatGPT has garnered significant\ninterest, offering an opportunity to examine its effectiveness in",
+    "text": "The integration of generative AI in the field of education is actively being explored. In particular, ChatGPT has garnered significant interest, offering an opportunity to examine its effectiveness in",
     "page": 1
   },
   {
     "type": "heading2",
-    "text": "∗Authors contributed equally.\n†Corresponding authors",
+    "text": "∗Authors contributed equally. †Corresponding authors",
     "page": 1
   },
   {
-    "type": "paragraph",
-    "text": "Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or а fee. Request permissions from permissions@acm.org. L@S ’23, July 20–22, 2023, Copenhagen, Denmark. © 2023 Copyright held by the owner/author(s). Publication rights licensed to ACM. ISBN 979-8-4007-0025-5/23/07…$15.00 https://doi.org/10.1145/3573051.3596200 https://doi.org/10.1145/3573051.3596200",
+    "type": "formula",
+    "text": "Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or а fee. Request permissions from permissions@acm.org. L@S ’23, July 20–22, 2023, Copenhagen, Denmark. © 2023 Copyright held by the owner/author(s). Publication rights licensed to ACM. ISBN 979-8-4007-0025-5/23/07…$15.00 https://doi.org/10.1145/3573051.3596200",
     "page": 1
   },
   {
@@ -128,12 +126,12 @@
   },
   {
     "type": "paragraph",
-    "text": "L@S ’23, July 20–22, 2023, Copenhagen, Denmark.\nHan et al.",
+    "text": "L@S ’23, July 20–22, 2023, Copenhagen, Denmark. Han et al.",
     "page": 2
   },
   {
     "type": "list_item",
-    "text": "(3) We collect students’ interaction data on their perception\nand ChatGPT usage through RECIPE to investigate further\ndevelopment of our platform.",
+    "text": "(3) We collect students’ interaction data on their perception and ChatGPT usage through RECIPE to investigate further development of our platform.",
     "page": 2
   },
   {
@@ -152,8 +150,8 @@
     "page": 2
   },
   {
-    "type": "list_item",
-    "text": "• Applied computing →Interactive learning environments;\n• Human-centered computing →User centered design.",
+    "type": "formula",
+    "text": "• Applied computing →Interactive learning environments; • Human-centered computing →User centered design.",
     "page": 2
   },
   {
@@ -172,12 +170,12 @@
     "page": 2
   },
   {
-    "type": "paragraph",
+    "type": "formula",
     "text": "ACM Reference Format: Jieun Han, Haneul Yoo, Yoonsu Kim, Junho Myung, Minsun Kim, Hyunseung Lim, Juho Kim, Tak Yeon Lee, Hwajung Hong, So-Yeon Ahn, and Alice Oh. 2023. RECIPE: How to Integrate ChatGPT into EFL Writing Education. In Proceedings of the Tenth ACM Conference on Learning @ Scale (L@S ’23), July 20–22, 2023, Copenhagen, Denmark. ACM, New York, NY, USA, 8 pages. https://doi.org/10.1145/3573051.3596200",
     "page": 2
   },
   {
-    "type": "heading1",
+    "type": "footnote",
     "text": "1 INTRODUCTION",
     "page": 2
   },
@@ -198,17 +196,17 @@
   },
   {
     "type": "list_item",
-    "text": "(1) We analyze the perception and usage of ChatGPT in the\ncontext of EFL among learners and instructors.\n(2) We introduce RECIPE (Revising an Essay with ChatGPT on\nan Interactive Platform with EFL learners), а learning platform designed to integrate ChatGPT with underlying two\ntypes of prompts for students’ better learning experience.",
+    "text": "(1) We analyze the perception and usage of ChatGPT in the context of EFL among learners and instructors. (2) We introduce RECIPE (Revising an Essay with ChatGPT on an Interactive Platform with EFL learners), а learning platform designed to integrate ChatGPT with underlying two types of prompts for students’ better learning experience.",
     "page": 2
   },
   {
     "type": "paragraph",
-    "text": "1https://www.grammarly.com/\n2https://quillbot.com/\n3https://chat.openai.com/\n4https://www.khanacademy.org/\n5https://www.duolingo.com/",
+    "text": "1https://www.grammarly.com/ 2https://quillbot.com/ 3https://chat.openai.com/ 4https://www.khanacademy.org/ 5https://www.duolingo.com/",
     "page": 2
   },
   {
     "type": "paragraph",
-    "text": "6to what extent they would recommend others to adopt ChatGPT\n7https://www.turnitin.com/\n8https://translate.google.com/\n9https://papago.naver.com/\n10https://www.wordtune.com/\n11https://www.explainpaper.com/\n12https://elicit.org/",
+    "text": "6to what extent they would recommend others to adopt ChatGPT 7https://www.turnitin.com/ 8https://translate.google.com/ 9https://papago.naver.com/ 10https://www.wordtune.com/ 11https://www.explainpaper.com/ 12https://elicit.org/",
     "page": 2
   },
   {
@@ -217,7 +215,7 @@
   },
   {
     "type": "paragraph",
-    "text": "RECIPE: How to Integrate ChatGPT into EFL Writing Education\nL@S ’23, July 20–22, 2023, Copenhagen, Denmark.",
+    "text": "RECIPE: How to Integrate ChatGPT into EFL Writing Education L@S ’23, July 20–22, 2023, Copenhagen, Denmark.",
     "page": 3
   },
   {
@@ -231,13 +229,8 @@
     "page": 3
   },
   {
-    "type": "heading2",
-    "text": "3 PLATFORM",
-    "page": 3
-  },
-  {
-    "type": "paragraph",
-    "text": "DESIGN",
+    "type": "footnote",
+    "text": "3 PLATFORM DESIGN",
     "page": 3
   },
   {
@@ -282,7 +275,7 @@
   },
   {
     "type": "caption",
-    "text": "Figure 1 displays а screenshot of our platform, which has а writing exercise interface divided into two sections: the left side is for editing an essay, while the right side is for interacting with ChatGPT. The students’ essay from the previous session is available on the left side, enabling them to revise their work with the help of ChatGPT. On the right side, students can consult ChatGPT about their essay. Unlike the existing ChatGPT interface from OpenAI, our platform provides two initial prompts based on empirical prompt engineering, as shown in Table 2: (а) hidden prompt for the model to set а persona for ChatGPT, acting as а personalized English writing teacher, and (в) an open prompt for students to start а dialogue efficiently. ChatGPT instructs students step by step to revise their essay based on the content they learned during the class, and students are asked to summarize what they learned during the corresponding week or previous classes as the first dialogue. We We",
+    "text": "Figure 1 displays а screenshot of our platform, which has а writing exercise interface divided into two sections: the left side is for editing an essay, while the right side is for interacting with ChatGPT. The students’ essay from the previous session is available on the left side, enabling them to revise their work with the help of ChatGPT. On the right side, students can consult ChatGPT about their essay. Unlike the existing ChatGPT interface from OpenAI, our platform provides two initial prompts based on empirical prompt engineering, as shown in Table 2: (а) а hidden prompt for the model to set а persona for ChatGPT, acting as а personalized English writing teacher, and (в) an open prompt for students to start а dialogue efficiently. ChatGPT instructs students step by step to revise their essay based on the content they learned during the class, and students are asked to summarize what they learned during the corresponding week or previous classes as the first dialogue. We",
     "page": 3
   },
   {
@@ -291,7 +284,7 @@
   },
   {
     "type": "paragraph",
-    "text": "L@S ’23, July 20–22, 2023, Copenhagen, Denmark.\nHan et al.",
+    "text": "L@S ’23, July 20–22, 2023, Copenhagen, Denmark. Han et al.",
     "page": 4
   },
   {
@@ -301,37 +294,37 @@
   },
   {
     "type": "heading2",
-    "text": "Pre-survey\nWriting Exercise\nPost-survey",
+    "text": "Pre-survey Writing Exercise Post-survey",
     "page": 4
   },
   {
     "type": "list_item",
-    "text": "• Reason not to revise essay\n• Confidence on students’ essay",
+    "text": "• Reason not to revise essay • Confidence on students’ essay",
     "page": 4
   },
   {
     "type": "paragraph",
-    "text": "(а) Essay\n• Students’ original essay\n• Student’s edited essay and its revision\nhistory",
+    "text": "(а) Essay • Students’ original essay • Student’s edited essay and its revision history",
     "page": 4
   },
   {
     "type": "list_item",
-    "text": "• Topics discussed with ChatGPT\n• Overall satisfaction towards\nChatGPT responses",
+    "text": "• Topics discussed with ChatGPT • Overall satisfaction towards ChatGPT responses",
     "page": 4
   },
   {
     "type": "paragraph",
-    "text": "(в) ChatGPT\n• Conversation log data\n• Helpfulness of each ChatGPT response",
+    "text": "(в) ChatGPT • Conversation log data • Helpfulness of each ChatGPT response",
     "page": 4
   },
   {
     "type": "list_item",
-    "text": "• Timestamp of each sent message\n• Actual help through the session\n• Improvements in comprehension\nlevel after writing exercise",
+    "text": "• Timestamp of each sent message • Actual help through the session • Improvements in comprehension level after writing exercise",
     "page": 4
   },
   {
     "type": "paragraph",
-    "text": "(с) Student\n• Expected help for the session\n• Comprehension level about course\ntopics",
+    "text": "(с) Student • Expected help for the session • Comprehension level about course topics",
     "page": 4
   },
   {
@@ -341,17 +334,17 @@
   },
   {
     "type": "heading2",
-    "text": "(а) Hidden prompt for ChatGPT\n(в) Open prompt for students",
+    "text": "(а) Hidden prompt for ChatGPT (в) Open prompt for students",
     "page": 4
   },
   {
     "type": "paragraph",
-    "text": "Hello! Welcome to the main exercise. Can you please tell me what you\nlearned in class so that I can help you in а better way? An example\ncan be: “Today I learned about comma rules. When there is а list that\ncontains two or more elements, we should use commas to separate\nthem.”",
+    "text": "Hello! Welcome to the main exercise. Can you please tell me what you learned in class so that I can help you in а better way? An example can be: “Today I learned about comma rules. When there is а list that contains two or more elements, we should use commas to separate them.”",
     "page": 4
   },
   {
     "type": "paragraph",
-    "text": "Act as an English writing class teacher and instruct а student to revise\nan essay based on the content learned during class. The student will\nprovide you with а summary of what they learned. Please guide them\nstep by step and do not revise or rewrite the essay at once. If you\nunderstand, please say yes only.",
+    "text": "Act as an English writing class teacher and instruct а student to revise an essay based on the content learned during class. The student will provide you with а summary of what they learned. Please guide them step by step and do not revise or rewrite the essay at once. If you understand, please say yes only.",
     "page": 4
   },
   {
@@ -386,7 +379,7 @@
   },
   {
     "type": "paragraph",
-    "text": "We conducted two interviews to further scrutinize the needs for\nfuture work on RECIPE: (1) а focus group interview (FGI) among\nsix students who had already taken at least one EFL writing course\nand (2) а 1:1 in-depth interview with an instructor who had taught",
+    "text": "We conducted two interviews to further scrutinize the needs for future work on RECIPE: (1) а focus group interview (FGI) among six students who had already taken at least one EFL writing course and (2) а 1:1 in-depth interview with an instructor who had taught",
     "page": 4
   },
   {
@@ -395,11 +388,11 @@
   },
   {
     "type": "paragraph",
-    "text": "RECIPE: How to Integrate ChatGPT into EFL Writing Education\nL@S ’23, July 20–22, 2023, Copenhagen, Denmark.",
+    "text": "RECIPE: How to Integrate ChatGPT into EFL Writing Education L@S ’23, July 20–22, 2023, Copenhagen, Denmark.",
     "page": 5
   },
   {
-    "type": "paragraph",
+    "type": "formula",
     "text": "(ICDEL 2020). Association for Computing Machinery, New York, NY, USA, 122–127. https://doi.org/10.1145/3402569.3402594 [5] Weijiao Huang, Khe Foon Hew, and Luke К. Fryer. 2022. Chatbots for language learning—Are they really useful?А systematic review of chatbot-supported language learning. Journal of Computer Assisted Learning 38, 1 (2022), 237–257. https://doi.org/10.1111/jcal.12610 [6] Silvia Milano, Joshua А McGrane, and Sabina Leonelli. 2023. Large language models challenge the future of higher education. Nature Machine Intelligence (2023), 1–2. https://doi.org/10.1038/s42256-023-00644-2 [7] Junaid Qadir. 2022. Engineering education in the era of ChatGPT: Promise and pitfalls of generative AI for education. https://doi.org/10.36227/techrxiv.21789434 [8] Jürgen Rudolph, Samson Tan, and Shannon Tan. 2023. ChatGPT: Bullshit spewer or the end of traditional assessments in higher education? Journal of Applied Learning and Teaching (JALT) 6, 1 (2023). https://doi.org/10.37074/jalt.2023.6.1.17 [9] Miriam Sullivan, Andrew Kelly, and Paul McLaughlan. 2023. ChatGPT in higher education: Considerations for academic integrity and student learning. Journal of Applied Learning and Teaching (JALT) 6, 1 (2023). https://doi.org/10.37074/jalt. 2023.6.1.17",
     "page": 5
   },
@@ -415,11 +408,11 @@
   },
   {
     "type": "paragraph",
-    "text": "Refined user interface. S5 suggested that а better user interface\nbetween two windows on the writing exercise of RECIPE would\nincrease engagement among EFL students. Specifically, text visualization or toggles for comparison of а student’s original essay and\nChatGPT’s suggestions may be useful.",
+    "text": "Refined user interface. S5 suggested that а better user interface between two windows on the writing exercise of RECIPE would increase engagement among EFL students. Specifically, text visualization or toggles for comparison of а student’s original essay and ChatGPT’s suggestions may be useful.",
     "page": 5
   },
   {
-    "type": "heading1",
+    "type": "footnote",
     "text": "5 CONCLUSION",
     "page": 5
   },
@@ -445,7 +438,7 @@
   },
   {
     "type": "paragraph",
-    "text": "[1] Ariyanti et al. 2021. Technology-Enhanced Paraphrasing Tool to Improve EFL Students’ Writing Achievement and Enjoyment. Journal of English Language Teaching and Linguistics (JELTL) 6, 3 (2021), 715–726. https://doi.org/10.21462/ jeltl.v6i3.698 [2] David Baidoo-Anu and Leticia Ansah. 2023. Education in the Era of Generative Artificial Intelligence (AI): Understanding the Potential Benefits of ChatGPT in Promoting Teaching and Learning. https://doi.org/10.2139/ssrn.4337484 [3] Yejin Bang, Samuel Cahyawijaya, Nayeon Lee, Wenliang Dai, Dan Su, Bryan Wilie, Holy Lovenia, Ziwei Ji, Tiezheng Yu, Willy Chung, Quyet V. Do, Yan Xu, and Pascale Fung. 2023. А Multitask, Multilingual, Multimodal Evaluation of ChatGPT on Reasoning, Hallucination, and Interactivity. arXiv:2302.04023 [cs.CL] [4] Hui-Wen Huang, Zehui Li, and Linda Taylor. 2020. The Effectiveness of Using Grammarly to Improve Students’ Writing Skills. In Proceedings of the 5th International Conference on Distance Education and Learning (Beijing, China) China)",
+    "text": "[1] Ariyanti et al. 2021. Technology-Enhanced Paraphrasing Tool to Improve EFL Students’ Writing Achievement and Enjoyment. Journal of English Language Teaching and Linguistics (JELTL) 6, 3 (2021), 715–726. https://doi.org/10.21462/ jeltl.v6i3.698 [2] David Baidoo-Anu and Leticia Ansah. 2023. Education in the Era of Generative Artificial Intelligence (AI): Understanding the Potential Benefits of ChatGPT in Promoting Teaching and Learning. https://doi.org/10.2139/ssrn.4337484 [3] Yejin Bang, Samuel Cahyawijaya, Nayeon Lee, Wenliang Dai, Dan Su, Bryan Wilie, Holy Lovenia, Ziwei Ji, Tiezheng Yu, Willy Chung, Quyet V. Do, Yan Xu, and Pascale Fung. 2023. А Multitask, Multilingual, Multimodal Evaluation of ChatGPT on Reasoning, Hallucination, and Interactivity. arXiv:2302.04023 [cs.CL] [4] Hui-Wen Huang, Zehui Li, and Linda Taylor. 2020. The Effectiveness of Using Grammarly to Improve Students’ Writing Skills. In Proceedings of the 5th International Conference on Distance Education and Learning (Beijing, China)",
     "page": 5
   },
   {
@@ -454,12 +447,12 @@
   },
   {
     "type": "paragraph",
-    "text": "L@S ’23, July 20–22, 2023, Copenhagen, Denmark.\nHan et al.",
+    "text": "L@S ’23, July 20–22, 2023, Copenhagen, Denmark. Han et al.",
     "page": 6
   },
   {
     "type": "paragraph",
-    "text": "multi-select questions in Table 4, 5, and 6. Numbers in each cell\nindicate the percentage of students who replied as the purpose and\nthe parenthesis indicate the rank, respectively.",
+    "text": "multi-select questions in Table 4, 5, and 6. Numbers in each cell indicate the percentage of students who replied as the purpose and the parenthesis indicate the rank, respectively.",
     "page": 6
   },
   {
@@ -469,32 +462,32 @@
   },
   {
     "type": "paragraph",
-    "text": "Table 4: Multi-select questions for the general purpose of\nChatGPT use asked to study participants in the preliminary\nquestionnaire. Please choose the purpose(s) for using ChatGPT.",
+    "text": "Table 4: Multi-select questions for the general purpose of ChatGPT use asked to study participants in the preliminary questionnaire. Please choose the purpose(s) for using ChatGPT.",
     "page": 6
   },
   {
     "type": "heading2",
-    "text": "А\nDETAILS ON PRELIMINARY\nQUESTIONNAIRE\nА.1\nStudy Design",
+    "text": "А DETAILS ON PRELIMINARY QUESTIONNAIRE А.1 Study Design",
     "page": 6
   },
   {
     "type": "paragraph",
-    "text": "This section describes how we design preliminary questionnaires.\nStudents are asked to answer 5-scale Likert questions in Table 3\ntowards their perception and usage of ChatGPT. We also provide\nOthers option for multi-select questions to get free-form inputs\nfrom students.",
+    "text": "This section describes how we design preliminary questionnaires. Students are asked to answer 5-scale Likert questions in Table 3 towards their perception and usage of ChatGPT. We also provide Others option for multi-select questions to get free-form inputs from students.",
     "page": 6
   },
   {
     "type": "paragraph",
-    "text": "Purpose\nUndergrad.\nGrad.",
+    "text": "Purpose Undergrad. Grad.",
     "page": 6
   },
   {
     "type": "paragraph",
-    "text": "Table 3: 5-scale Likert questions asked to study participants\nin the preliminary questionnaire.",
+    "text": "Table 3: 5-scale Likert questions asked to study participants in the preliminary questionnaire.",
     "page": 6
   },
   {
     "type": "paragraph",
-    "text": "For fun\n45.95 (2)\n50.82 (1)\nTo get help with academic work in college (е.g., assignments, quiz, test)",
+    "text": "For fun 45.95 (2) 50.82 (1) To get help with academic work in college (е.g., assignments, quiz, test)",
     "page": 6
   },
   {
@@ -504,27 +497,17 @@
   },
   {
     "type": "paragraph",
-    "text": "51.65 (1)\n42.62 (3)",
+    "text": "51.65 (1) 42.62 (3) motivation How motivated are you to learn new things through this class? engagement How willing are you to actively engage in this class? confidence How confident are you in your ability to succeed in this class?",
     "page": 6
   },
   {
     "type": "paragraph",
-    "text": "motivation\nHow motivated are you to learn new things\nthrough this class?\nengagement\nHow willing are you to actively engage in this\nclass?\nconfidence\nHow confident are you in your ability to succeed in this class?",
+    "text": "To improve English skills (е.g, reading, writing, grammar, vocabulary, listening, speaking) 4.60 (7) 21.31 (7)",
     "page": 6
   },
   {
     "type": "paragraph",
-    "text": "To improve English skills (е.g, reading,\nwriting, grammar, vocabulary, listening,\nspeaking)",
-    "page": 6
-  },
-  {
-    "type": "paragraph",
-    "text": "4.60 (7)\n21.31 (7)",
-    "page": 6
-  },
-  {
-    "type": "paragraph",
-    "text": "To translate texts\n9.89 (5)\n27.87 (5)\nTo get help with research\n4.49 (7)\n48.36 (2)\nTo assist coding and handling error messages",
+    "text": "To translate texts 9.89 (5) 27.87 (5) To get help with research 4.49 (7) 48.36 (2) To assist coding and handling error messages",
     "page": 6
   },
   {
@@ -534,27 +517,22 @@
   },
   {
     "type": "paragraph",
-    "text": "13.19 (4)\n22.95 (6)",
+    "text": "13.19 (4) 22.95 (6)",
     "page": 6
   },
   {
     "type": "heading2",
-    "text": "LLM\nunderstanding",
+    "text": "LLM understanding",
     "page": 6
   },
   {
     "type": "paragraph",
-    "text": "To learn more about AI and chatbot\n21.98 (3)\n30.33 (4)\nTo get advice on personal problems or\nissues",
+    "text": "To learn more about AI and chatbot 21.98 (3) 30.33 (4) To get advice on personal problems or issues",
     "page": 6
   },
   {
     "type": "paragraph",
-    "text": "How much do you understand about how Generative AI including ChatGPT works? (е.g.,\ndataset, training method, LLM, limitation)",
-    "page": 6
-  },
-  {
-    "type": "paragraph",
-    "text": "6.59 (6)\n7.38 (8)",
+    "text": "How much do you understand about how Generative AI including ChatGPT works? (е.g., dataset, training method, LLM, limitation) 6.59 (6) 7.38 (8)",
     "page": 6
   },
   {
@@ -564,12 +542,12 @@
   },
   {
     "type": "paragraph",
-    "text": "Table 5: Multi-select questions for English writing purpose\nof ChatGPT use asked to study participants in the preliminary questionnaire. By using ChatGPT in writing class, what\nkind of help do you expect from ChatGPT?",
+    "text": "Table 5: Multi-select questions for English writing purpose of ChatGPT use asked to study participants in the preliminary questionnaire. By using ChatGPT in writing class, what kind of help do you expect from ChatGPT?",
     "page": 6
   },
   {
     "type": "paragraph",
-    "text": "perceived\nhelpfulness Purpose\nUndergrad.\nGrad.",
+    "text": "perceived helpfulness Purpose Undergrad. Grad.",
     "page": 6
   },
   {
@@ -579,37 +557,27 @@
   },
   {
     "type": "paragraph",
-    "text": "To translate texts\n40.66 (5)\n51.64 (5)\nTo get help with assignments\n34.07 (7)\n25.41 (8)\nTo review the lecture\n12.09 (9)\n13.93 (10)\nTo brainstorm ideas\n43.96 (4)\n34.43 (5)\nTo find sources to support my writing\n53.85 (2)\n32.79 (6)\nTo get assessed and receive feedback\n48.35 (3)\n45.08 (3)\nTo get help with punctuation, spelling,\ncapitalization, and grammar",
+    "text": "To translate texts 40.66 (5) 51.64 (5) To get help with assignments 34.07 (7) 25.41 (8) To review the lecture 12.09 (9) 13.93 (10) To brainstorm ideas 43.96 (4) 34.43 (5) To find sources to support my writing 53.85 (2) 32.79 (6) To get assessed and receive feedback 48.35 (3) 45.08 (3) To get help with punctuation, spelling, capitalization, and grammar trustworthiness How much did you trust the response of ChatGPT? credibility How credible was the information provided by ChatGPT? appropriateness of style/tone",
     "page": 6
   },
   {
     "type": "paragraph",
-    "text": "trustworthiness How much did you trust the response of ChatGPT?\ncredibility\nHow credible was the information provided\nby ChatGPT?\nappropriateness\nof style/tone",
-    "page": 6
-  },
-  {
-    "type": "paragraph",
-    "text": "How appropriate was the style or tone of responses provided by ChatGPT?\nperformance\nHow was the overall response quality of ChatGPT?\noverall\nsatisfaction",
-    "page": 6
-  },
-  {
-    "type": "paragraph",
-    "text": "56.04 (1)\n61.48 (1)",
+    "text": "How appropriate was the style or tone of responses provided by ChatGPT? performance How was the overall response quality of ChatGPT? overall satisfaction 56.04 (1) 61.48 (1)",
     "page": 6
   },
   {
     "type": "heading2",
-    "text": "How was the overall satisfaction using ChatGPT?\nreferral\nintention",
+    "text": "How was the overall satisfaction using ChatGPT? referral intention",
     "page": 6
   },
   {
     "type": "paragraph",
-    "text": "To ask questions about the lecture\n7.69 (10)\n15.57 (9)\nTo generate а sample essay or paragraph\n30.77 (8)\n31.15 (7)\nTo revise а draft\n40.66 (5)\n42.62 (4)",
+    "text": "To ask questions about the lecture 7.69 (10) 15.57 (9) To generate а sample essay or paragraph 30.77 (8) 31.15 (7) To revise а draft 40.66 (5) 42.62 (4)",
     "page": 6
   },
   {
     "type": "heading2",
-    "text": "How likely would you encourage your friends\nto use ChatGPT?",
+    "text": "How likely would you encourage your friends to use ChatGPT?",
     "page": 6
   },
   {
@@ -619,17 +587,17 @@
   },
   {
     "type": "heading1",
-    "text": "В\nDETAILS ON INTERVIEW",
+    "text": "В DETAILS ON INTERVIEW",
     "page": 6
   },
   {
     "type": "paragraph",
-    "text": "performance\nHow do you expect overall response quality\nusing ChatGPT in this class?\ncredibility\nHow do you expect the credibility of information from ChatGPT regarding this class?\noverall\nsatisfaction",
+    "text": "performance How do you expect overall response quality using ChatGPT in this class? credibility How do you expect the credibility of information from ChatGPT regarding this class? overall satisfaction",
     "page": 6
   },
   {
     "type": "paragraph",
-    "text": "The educational backgrounds of six student interviewees in FGI,\nincluding education level, EFL course(s) taken, and frequency and\npurpose of ChatGPT use, are described in Table 7.",
+    "text": "The educational backgrounds of six student interviewees in FGI, including education level, EFL course(s) taken, and frequency and purpose of ChatGPT use, are described in Table 7.",
     "page": 6
   },
   {
@@ -639,12 +607,12 @@
   },
   {
     "type": "heading2",
-    "text": "А.2\nFindings",
+    "text": "А.2 Findings",
     "page": 6
   },
   {
     "type": "paragraph",
-    "text": "This section describes detailed purposes of students’ experience\nand expectations of using ChatGPT. Students are asked to answer",
+    "text": "This section describes detailed purposes of students’ experience and expectations of using ChatGPT. Students are asked to answer",
     "page": 6
   },
   {
@@ -653,22 +621,22 @@
   },
   {
     "type": "paragraph",
-    "text": "RECIPE: How to Integrate ChatGPT into EFL Writing Education\nL@S ’23, July 20–22, 2023, Copenhagen, Denmark.",
+    "text": "RECIPE: How to Integrate ChatGPT into EFL Writing Education L@S ’23, July 20–22, 2023, Copenhagen, Denmark.",
     "page": 7
   },
   {
     "type": "paragraph",
-    "text": "Table 6: Multi-select questions for the academic purpose of ChatGPT use asked to study participants in the preliminary questionnaire. (а) If you have used ChatGPT for your academic work in college, what kind of academic work(s) did you use ChatGPT\nfor? (в) For what kind of academic work do you plan to use ChatGPT?",
+    "text": "Table 6: Multi-select questions for the academic purpose of ChatGPT use asked to study participants in the preliminary questionnaire. (а) If you have used ChatGPT for your academic work in college, what kind of academic work(s) did you use ChatGPT for? (в) For what kind of academic work do you plan to use ChatGPT?",
     "page": 7
   },
   {
     "type": "heading2",
-    "text": "Purpose\n(а) experience\n(в) expectation",
+    "text": "Purpose (а) experience (в) expectation",
     "page": 7
   },
   {
     "type": "paragraph",
-    "text": "Undergrad.\nGrad.\nUndergrad.\nGrad.",
+    "text": "Undergrad. Grad. Undergrad. Grad.",
     "page": 7
   },
   {
@@ -678,7 +646,7 @@
   },
   {
     "type": "paragraph",
-    "text": "Student\nCurrent Program\nClass Taken\nFrequency of ChatGPT Use\nPurpose of ChatGPT Use",
+    "text": "Student Current Program Class Taken Frequency of ChatGPT Use Purpose of ChatGPT Use",
     "page": 7
   },
   {
@@ -688,42 +656,42 @@
   },
   {
     "type": "heading2",
-    "text": "S1\nMasters\nIRW, AW\nOften\n• To translate texts\n• To paraphrase texts",
+    "text": "S1 Masters IRW, AW Often • To translate texts • To paraphrase texts",
     "page": 7
   },
   {
     "type": "heading2",
-    "text": "S2\nBachelors\nIRW, AW\nRarely\n• For fun",
+    "text": "S2 Bachelors IRW, AW Rarely • For fun",
     "page": 7
   },
   {
     "type": "heading2",
-    "text": "S3\nDoctoral\nIRW, AW\nOccasionally\n• To get help with research",
+    "text": "S3 Doctoral IRW, AW Occasionally • To get help with research",
     "page": 7
   },
   {
     "type": "heading2",
-    "text": "S4\nDoctoral\nSW\nAlways\n• To translate texts\n• To get help with research",
+    "text": "S4 Doctoral SW Always • To translate texts • To get help with research",
     "page": 7
   },
   {
     "type": "heading2",
-    "text": "S5\nDoctoral\nSW\nOccasionally\n• To get help with research",
+    "text": "S5 Doctoral SW Occasionally • To get help with research",
     "page": 7
   },
   {
     "type": "paragraph",
-    "text": "and they are asked to assess ChatGPT’s response on а 5-scale regarding the helpfulness of each response from ChatGPT. They can edit\ntheir essay after each dialogue turn and continue the conversation\nafter essay revision based on suggestions from ChatGPT.",
+    "text": "and they are asked to assess ChatGPT’s response on а 5-scale regarding the helpfulness of each response from ChatGPT. They can edit their essay after each dialogue turn and continue the conversation after essay revision based on suggestions from ChatGPT.",
     "page": 7
   },
   {
     "type": "heading2",
-    "text": "S6\nMasters\nSW\nOften\n• To assist coding",
+    "text": "S6 Masters SW Often • To assist coding",
     "page": 7
   },
   {
     "type": "heading1",
-    "text": "С\nINTERACTION DATA FROM RECIPE",
+    "text": "С INTERACTION DATA FROM RECIPE",
     "page": 7
   },
   {
@@ -737,7 +705,7 @@
   },
   {
     "type": "paragraph",
-    "text": "L@S ’23, July 20–22, 2023, Copenhagen, Denmark.\nHan et al.",
+    "text": "L@S ’23, July 20–22, 2023, Copenhagen, Denmark. Han et al.",
     "page": 8
   },
   {
@@ -746,23 +714,23 @@
     "page": 8
   },
   {
-    "type": "paragraph",
-    "text": "5\n✔",
+    "type": "footnote",
+    "text": "5 ✔",
     "page": 8
   },
   {
     "type": "heading2",
-    "text": "Student’s Prompt\nChatGPT’s Response\nHelpfulness\nEssay Edits",
+    "text": "Student’s Prompt ChatGPT’s Response Helpfulness Essay Edits",
     "page": 8
   },
   {
     "type": "paragraph",
-    "text": "Yes, there are а few grammar errors in your essay. Let’s\ngo over some of them and how to revise them:",
+    "text": "Yes, there are а few grammar errors in your essay. Let’s go over some of them and how to revise them:",
     "page": 8
   },
   {
     "type": "paragraph",
-    "text": "<Student’s original essay>\nIs there any grammatical errors in my essay?",
+    "text": "<Student’s original essay> Is there any grammatical errors in my essay?",
     "page": 8
   },
   {
@@ -772,12 +740,12 @@
   },
   {
     "type": "paragraph",
-    "text": "Is 7 and 8 grammatical error?\nYes, 7 and 8 are grammatical errors. Let me explain\nwhy:",
+    "text": "Is 7 and 8 grammatical error? Yes, 7 and 8 are grammatical errors. Let me explain why:",
     "page": 8
   },
   {
     "type": "paragraph",
-    "text": "7번문장에서other말고다른부분은문법적오류가\n아니지않아?\n(Isn’т the part other than “other” in sentence 7 а grammatical error?)",
+    "text": "7번문장에서other말고다른부분은문법적오류가 아니지않아? (Isn’т the part other than “other” in sentence 7 а grammatical error?)",
     "page": 8
   },
   {
@@ -787,7 +755,7 @@
   },
   {
     "type": "paragraph",
-    "text": "네, 다른부분들은문법적오류가아니라문체나표현\n에있어서다소어색하거나효율적이지않은것으로\n교정해야할때도있습니다. 다른부분들도함께교정\n해보시면더욱발전된글쓰기를할수있을것입니다.\n(No, you might need to correct other parts that are not\ngrammatical errors but somewhat awkward or inefficient\nin style or expression. If you correct those parts as well,\nyou can write а better essay.)",
+    "text": "네, 다른부분들은문법적오류가아니라문체나표현 에있어서다소어색하거나효율적이지않은것으로 교정해야할때도있습니다. 다른부분들도함께교정 해보시면더욱발전된글쓰기를할수있을것입니다. (No, you might need to correct other parts that are not grammatical errors but somewhat awkward or inefficient in style or expression. If you correct those parts as well, you can write а better essay.)",
     "page": 8
   },
   {
@@ -796,13 +764,13 @@
     "page": 8
   },
   {
-    "type": "paragraph",
-    "text": "4\n✔",
+    "type": "footnote",
+    "text": "4 ✔",
     "page": 8
   },
   {
     "type": "heading2",
-    "text": "Student’s Prompt\nChatGPT’s Response\nHelpfulness\nEssay Edits",
+    "text": "Student’s Prompt ChatGPT’s Response Helpfulness Essay Edits",
     "page": 8
   },
   {
@@ -812,47 +780,47 @@
   },
   {
     "type": "paragraph",
-    "text": "Yes, that is correct! The methodology section of а scientific paper is where you describe the materials, methods, and procedures used to conduct your research.\nIt’s important to be clear and concise so that others\ncan understand your research and potentially replicate it. Did you have any specific questions about the\nmethodology section or any other part of scientific\nwriting?",
+    "text": "Yes, that is correct! The methodology section of а scientific paper is where you describe the materials, methods, and procedures used to conduct your research. It’s important to be clear and concise so that others can understand your research and potentially replicate it. Did you have any specific questions about the methodology section or any other part of scientific writing?",
     "page": 8
   },
   {
     "type": "paragraph",
-    "text": "I wrote the methodology of my study. Could you have\nа look and give me some feedback?",
+    "text": "I wrote the methodology of my study. Could you have а look and give me some feedback?",
     "page": 8
   },
   {
     "type": "paragraph",
-    "text": "Yes, I would be happy to take а look at your methodology section and provide you with feedback. Please\nshare your work with me, and I’ll do my best to help\nyou improve it.",
+    "text": "Yes, I would be happy to take а look at your methodology section and provide you with feedback. Please share your work with me, and I’ll do my best to help you improve it.",
     "page": 8
   },
   {
     "type": "paragraph",
-    "text": "<Methodology section from student’s research paper>\nGreat job on writing your methodology section! I have\nа few suggestions that could help you improve it even\nmore.",
+    "text": "<Methodology section from student’s research paper> Great job on writing your methodology section! I have а few suggestions that could help you improve it even more.",
+    "page": 8
+  },
+  {
+    "type": "footnote",
+    "text": "3 ✔",
     "page": 8
   },
   {
     "type": "paragraph",
-    "text": "3\n✔",
+    "text": "If I add following sentence at the beginning of the paragraph, would it be enough to explain the context? “<А new sentence written by the student based on the first suggestion from previous ChatGPT response>”",
     "page": 8
   },
   {
     "type": "paragraph",
-    "text": "If I add following sentence at the beginning of the\nparagraph, would it be enough to explain the context?\n“<А new sentence written by the student based on the\nfirst suggestion from previous ChatGPT response>”",
+    "text": "<Three suggestions on writing methodology section in order>...",
     "page": 8
   },
   {
     "type": "paragraph",
-    "text": "<Three suggestions on writing methodology section in\norder>\n...",
+    "text": "Yes, adding that sentence would help provide context for your study and give readers а better understanding of the rationale behind the methodology you used. It sets up the research question and hypothesis well, and makes it clear why the study was designed the way it was.",
     "page": 8
   },
   {
-    "type": "paragraph",
-    "text": "Yes, adding that sentence would help provide context\nfor your study and give readers а better understanding\nof the rationale behind the methodology you used. It\nsets up the research question and hypothesis well, and\nmakes it clear why the study was designed the way it\nwas.",
-    "page": 8
-  },
-  {
-    "type": "paragraph",
-    "text": "4\n✔",
+    "type": "footnote",
+    "text": "4 ✔",
     "page": 8
   }
 ]

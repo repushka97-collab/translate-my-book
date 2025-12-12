@@ -1,6 +1,19 @@
 {
-  "status": "warn",
+  "status": "error",
   "issues": [
+    {
+      "block_id": "p1_b1",
+      "page": 1,
+      "order": 1,
+      "type": "length_mismatch",
+      "severity": "medium",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
+      "meta": {
+        "src_len": 1,
+        "tgt_len": 4,
+        "ratio": 4.0
+      }
+    },
     {
       "block_id": "p1_b10",
       "page": 1,
@@ -172,19 +185,6 @@
       "block_id": "p3_b12",
       "page": 3,
       "order": 47,
-      "type": "suspect_terms_en_in_ru",
-      "severity": "low",
-      "message": "English acupuncture-related terms found in Russian translation.",
-      "meta": {
-        "terms": [
-          "yin"
-        ]
-      }
-    },
-    {
-      "block_id": "p3_b12",
-      "page": 3,
-      "order": 47,
       "type": "repeated_tokens",
       "severity": "low",
       "message": "Repeated tokens detected in translated text.",
@@ -230,19 +230,6 @@
       }
     },
     {
-      "block_id": "p3_b17",
-      "page": 3,
-      "order": 52,
-      "type": "suspect_terms_en_in_ru",
-      "severity": "low",
-      "message": "English acupuncture-related terms found in Russian translation.",
-      "meta": {
-        "terms": [
-          "chi"
-        ]
-      }
-    },
-    {
       "block_id": "p3_b18",
       "page": 3,
       "order": 53,
@@ -273,6 +260,19 @@
       "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
       "meta": {
         "src_len": 163
+      }
+    },
+    {
+      "block_id": "p3_b20",
+      "page": 3,
+      "order": 55,
+      "type": "repeated_tokens",
+      "severity": "low",
+      "message": "Repeated tokens detected in translated text.",
+      "meta": {
+        "tokens": [
+          "упражнения"
+        ]
       }
     },
     {
@@ -339,19 +339,6 @@
       "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
       "meta": {
         "src_len": 622
-      }
-    },
-    {
-      "block_id": "p4_b10",
-      "page": 4,
-      "order": 66,
-      "type": "suspect_terms_en_in_ru",
-      "severity": "low",
-      "message": "English acupuncture-related terms found in Russian translation.",
-      "meta": {
-        "terms": [
-          "yin"
-        ]
       }
     },
     {
@@ -489,6 +476,32 @@
       }
     },
     {
+      "block_id": "p7_b11",
+      "page": 7,
+      "order": 110,
+      "type": "length_mismatch",
+      "severity": "high",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
+      "meta": {
+        "src_len": 1,
+        "tgt_len": 50,
+        "ratio": 50.0
+      }
+    },
+    {
+      "block_id": "p7_b11",
+      "page": 7,
+      "order": 110,
+      "type": "repeated_tokens",
+      "severity": "low",
+      "message": "Repeated tokens detected in translated text.",
+      "meta": {
+        "tokens": [
+          "в"
+        ]
+      }
+    },
+    {
       "block_id": "p7_b3",
       "page": 7,
       "order": 102,
@@ -522,6 +535,19 @@
       }
     },
     {
+      "block_id": "p7_b5",
+      "page": 7,
+      "order": 104,
+      "type": "repeated_tokens",
+      "severity": "low",
+      "message": "Repeated tokens detected in translated text.",
+      "meta": {
+        "tokens": [
+          "неэффективные"
+        ]
+      }
+    },
+    {
       "block_id": "p7_b7",
       "page": 7,
       "order": 106,
@@ -533,19 +559,6 @@
       }
     },
     {
-      "block_id": "p7_b9",
-      "page": 7,
-      "order": 108,
-      "type": "concatenated_scripts",
-      "severity": "medium",
-      "message": "Tokens contain both Latin and Cyrillic characters without separation.",
-      "meta": {
-        "tokens": [
-          "(е.g.,"
-        ]
-      }
-    },
-    {
       "block_id": "p8_b10",
       "page": 8,
       "order": 124,
@@ -554,20 +567,6 @@
       "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
       "meta": {
         "src_len": 338
-      }
-    },
-    {
-      "block_id": "p8_b10",
-      "page": 8,
-      "order": 124,
-      "type": "suspect_terms_en_in_ru",
-      "severity": "low",
-      "message": "English acupuncture-related terms found in Russian translation.",
-      "meta": {
-        "terms": [
-          "yin",
-          "chi"
-        ]
       }
     },
     {
@@ -587,14 +586,14 @@
     "checked": 125,
     "issues_total": 51,
     "issues_by_type": {
+      "length_mismatch": 2,
       "potential_break": 42,
-      "repeated_tokens": 4,
-      "suspect_terms_en_in_ru": 4,
-      "concatenated_scripts": 1
+      "repeated_tokens": 7
     },
     "issues_by_severity": {
-      "low": 50,
-      "medium": 1
+      "medium": 1,
+      "low": 49,
+      "high": 1
     },
     "roles_count": {
       "body": 97,

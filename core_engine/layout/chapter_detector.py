@@ -46,7 +46,8 @@ def detect_chapter_structure(blocks: List[Block]) -> List[Block]:
     ]
     
     for block in blocks:
-        text = (block.get("translated_text") or block.get("text") or "").strip()
+        # Используем исходный текст для детекции (до перевода)
+        text = (block.get("text") or block.get("normalized_text") or block.get("translated_text") or "").strip()
         metadata = block.get("metadata", {})
         role = metadata.get("role", "")
         
