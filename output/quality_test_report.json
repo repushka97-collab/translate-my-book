@@ -1,0 +1,64 @@
+{
+  "summary": {
+    "total_pdfs": 4,
+    "successful": 4,
+    "failed": 0,
+    "aggregated_stats": {
+      "total_blocks": 817,
+      "total_issues": 282,
+      "total_potential_break": 30,
+      "average_potential_break_per_pdf": 7.5,
+      "average_length_ratio": 0.8438458504513354
+    }
+  },
+  "results": [
+    {
+      "pdf": "30-38.pdf",
+      "book_id": "16c9f47aa3421533",
+      "status": "success",
+      "total_blocks": 64,
+      "issues_total": 13,
+      "potential_break": 12,
+      "repeated_tokens": 1,
+      "length_mismatch": 0,
+      "average_length_ratio": 0.8057111971741033,
+      "qa_status": "warn"
+    },
+    {
+      "pdf": "GPT.pdf",
+      "book_id": "d247362f641f5add",
+      "status": "success",
+      "total_blocks": 78,
+      "issues_total": 15,
+      "potential_break": 9,
+      "repeated_tokens": 2,
+      "length_mismatch": 0,
+      "average_length_ratio": 0.8789134526008597,
+      "qa_status": "error"
+    },
+    {
+      "pdf": "KIDCITY.pdf",
+      "book_id": "a7e2c751b5e6db65",
+      "status": "success",
+      "total_blocks": 40,
+      "issues_total": 5,
+      "potential_break": 4,
+      "repeated_tokens": 1,
+      "length_mismatch": 0,
+      "average_length_ratio": 0.7583099549289218,
+      "qa_status": "warn"
+    },
+    {
+      "pdf": "Myofascial.pdf",
+      "book_id": "e4d0e0712aeb4be1",
+      "status": "success",
+      "total_blocks": 635,
+      "issues_total": 249,
+      "potential_break": 5,
+      "repeated_tokens": 10,
+      "length_mismatch": 0,
+      "average_length_ratio": 0.9324487971014569,
+      "qa_status": "error"
+    }
+  ]
+}

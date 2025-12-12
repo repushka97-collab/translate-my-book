@@ -1,0 +1,6 @@
+{
+  "original_text": "3\nPLATFORM DESIGN This section outlines the design of RECIPE, geared towards the development of English writing skills, utilizing ChatGPT’s capabilities\nin a targeted and effective manner. We deployed RECIPE for 213 students who enrolled to EFL courses (IRW, AW, and SW) in the spring\nsemester of 2023. Students’ interaction data is gathered throughout\nthe semester from undergraduate and graduate students using our\nplatform. RECIPE comprises three main components: a pre-survey\n(§3.1), the writing exercise (§3.2), and a post-survey (§3.3). Table 1\ndisplays the data collected at each phase of the platform.",
+  "translated_text": "3 ПЛАТФОРМ ДЕЙСЕЙН Этот раздел описывает дизайн RECIPE, ориентированный на развитие навыков письма на английском языке, используя возможности ChatGPTs целенаправленно и эффективно. Данные об взаимодействии студентов собираются на протяжении всего семестра от студентов-бакалавров и аспирантов, использующих нашу платформу. RECIPE включает в себя три основных компонента: предварительный опрос (§3.1), письменное упражнение (§3.2), и послепросный (§3.3).",
+  "source_lang": "en",
+  "target_lang": "ru"
+}

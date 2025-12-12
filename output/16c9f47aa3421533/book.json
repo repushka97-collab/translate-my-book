@@ -8,7 +8,7 @@
           "id": "p1_b0",
           "page": 1,
           "order": 0,
-          "text": "1 I P A R T General Concepts Therapeutic Exercise:\nFoundational Concepts C H A P T E R\n1",
+          "text": "1 I P A R T General Concepts Therapeutic Exercise:\nFoundational Concepts C H A P T E R\n1 THERAPEUTIC EXERCISE: IMPACT ON\nPHYSICAL FUNCTION 2\nDefinition of Therapeutic Exercise 2\nAspects of Physical Function: Definition of Key Terms 2\nTypes of Therapeutic Exercise Intervention 3\nExercise Safety 3 PROCESS AND MODELS OF DISABLEMENT 4\nThe Disablement Process 4\nModels of Disablement 4\nUse of Disablement Models and Classifications in Physical Therapy 5 PATIENT MANAGEMENT AND CLINICAL DECISION\nMAKING: AN INTERACTIVE RELATIONSHIP 11\nClinical Decision Making 11\nEvidence-Based Practice 11\nA Patient Management Model 12 STRATEGIES FOR EFFECTIVE EXERCISE AND\nTASK-SPECIFIC INSTRUCTION 24\nPreparation for Exercise Instruction 24\nConcepts of Motor Learning: A Foundation of Exercise and Task-Specific Instruction 24\nAdherence to Exercise 31 INDEPENDENT LEARNING ACTIVITIES 33",
           "type": "text",
           "bbox": {
             "x0": 553.1680297851562,
@@ -23,138 +23,12 @@
             "font": "RotisSansSerif-Bold",
             "protected_tokens": [],
             "role": "body",
-            "cache_hit": true,
+            "quality_pass": "heuristic_v1",
             "editor_pass": "heuristic_v1"
           },
           "block_id": "p1_b0",
-          "normalized_text": "1 I P A R T General Concepts Therapeutic Exercise:\nFoundational Concepts C H A P T E R\n1",
-          "translated_text": "1 I Р А R Т Общие понятия Терапевтические упражнения: Основные понятия С H А Р Т Е R 1"
-        },
-        {
-          "id": "p1_b6",
-          "page": 1,
-          "order": 6,
-          "text": "THERAPEUTIC EXERCISE: IMPACT ON\nPHYSICAL FUNCTION 2\nDefinition of Therapeutic Exercise 2\nAspects of Physical Function: Definition of Key Terms 2\nTypes of Therapeutic Exercise Intervention 3\nExercise Safety 3",
-          "type": "text",
-          "bbox": {
-            "x0": 73.78399658203125,
-            "y0": 311.1240234375,
-            "x1": 221.61582946777344,
-            "y1": 356.1458740234375
-          },
-          "metadata": {
-            "font_size": 10.0,
-            "is_bold": true,
-            "is_italic": false,
-            "font": "RotisSansSerif-Bold",
-            "protected_tokens": [],
-            "role": "body",
-            "cache_hit": true
-          },
-          "block_id": "p1_b6",
-          "normalized_text": "THERAPEUTIC EXERCISE: IMPACT ON\nPHYSICAL FUNCTION 2\nDefinition of Therapeutic Exercise 2\nAspects of Physical Function: Definition of Key Terms 2\nTypes of Therapeutic Exercise Intervention 3\nExercise Safety 3",
-          "translated_text": "Терапевтические упражнения: влияние на физическую функцию 2 Определение терапевтических упражнений 2 Аспекты физической функции: Определение ключевых терминов 2 Типы вмешательства в терапевтические упражнения 3 Безопасность упражнений 3"
-        },
-        {
-          "id": "p1_b8",
-          "page": 1,
-          "order": 8,
-          "text": "PROCESS AND MODELS OF DISABLEMENT 4\nThe Disablement Process 4\nModels of Disablement 4\nUse of Disablement Models and Classifications in Physical Therapy 5",
-          "type": "text",
-          "bbox": {
-            "x0": 73.78399658203125,
-            "y0": 392.1240234375,
-            "x1": 245.2084503173828,
-            "y1": 437.14569091796875
-          },
-          "metadata": {
-            "font_size": 10.0,
-            "is_bold": true,
-            "is_italic": false,
-            "font": "RotisSansSerif-Bold",
-            "protected_tokens": [],
-            "role": "body",
-            "cache_hit": true
-          },
-          "block_id": "p1_b8",
-          "normalized_text": "PROCESS AND MODELS OF DISABLEMENT 4\nThe Disablement Process 4\nModels of Disablement 4\nUse of Disablement Models and Classifications in Physical Therapy 5",
-          "translated_text": "Процесс и модели инвалидности 4 Процесс инвалидности 4 Модели инвалидности 4 Использование моделей инвалидности и классификации в физической терапии 5"
-        },
-        {
-          "id": "p1_b10",
-          "page": 1,
-          "order": 10,
-          "text": "PATIENT MANAGEMENT AND CLINICAL DECISION\nMAKING: AN INTERACTIVE RELATIONSHIP 11\nClinical Decision Making  11\nEvidence-Based Practice  11\nA Patient Management Model  12\n",
-          "type": "text",
-          "bbox": {
-            "x0": 279.90899658203125,
-            "y0": 311.1289978027344,
-            "x1": 442.48394775390625,
-            "y1": 367.15069580078125
-          },
-          "metadata": {
-            "font_size": 10.0,
-            "is_bold": true,
-            "is_italic": false,
-            "font": "RotisSansSerif-Bold",
-            "protected_tokens": [],
-            "role": "body",
-            "cache_hit": true
-          },
-          "block_id": "p1_b10",
-          "normalized_text": "PATIENT MANAGEMENT AND CLINICAL DECISION\nMAKING: AN INTERACTIVE RELATIONSHIP 11\nClinical Decision Making 11\nEvidence-Based Practice 11\nA Patient Management Model 12",
-          "translated_text": "Управление пациентами и принятие клинических решений: ВАКТИВНЫЕ ОБЩЕСТВЕНИЕ 11 Принятие клинических решений 11 Практика на основе доказательств 11 Модель управления пациентами 12"
-        },
-        {
-          "id": "p1_b11",
-          "page": 1,
-          "order": 11,
-          "text": "STRATEGIES FOR EFFECTIVE EXERCISE AND\nTASK-SPECIFIC INSTRUCTION 24\nPreparation for Exercise Instruction 24\nConcepts of Motor Learning: A Foundation of Exercise and Task-Specific Instruction 24\nAdherence to Exercise 31",
-          "type": "text",
-          "bbox": {
-            "x0": 279.90899658203125,
-            "y0": 370.1289978027344,
-            "x1": 439.0439453125,
-            "y1": 415.15087890625
-          },
-          "metadata": {
-            "font_size": 10.0,
-            "is_bold": true,
-            "is_italic": false,
-            "font": "RotisSansSerif-Bold",
-            "protected_tokens": [],
-            "role": "body",
-            "cache_hit": true
-          },
-          "block_id": "p1_b11",
-          "normalized_text": "STRATEGIES FOR EFFECTIVE EXERCISE AND\nTASK-SPECIFIC INSTRUCTION 24\nPreparation for Exercise Instruction 24\nConcepts of Motor Learning: A Foundation of Exercise and Task-Specific Instruction 24\nAdherence to Exercise 31",
-          "translated_text": "Стратегии эффективной тренировки и специальной инструкции по задачам 24 Подготовка к тренировкам 24 Концепции моторного обучения: основа упражнений и специальных задач 24 Придерживание упражнений 31"
-        },
-        {
-          "id": "p1_b13",
-          "page": 1,
-          "order": 13,
-          "text": "INDEPENDENT LEARNING ACTIVITIES 33\n",
-          "type": "text",
-          "bbox": {
-            "x0": 279.90899658203125,
-            "y0": 440.1289978027344,
-            "x1": 415.3760070800781,
-            "y1": 452.40899658203125
-          },
-          "metadata": {
-            "font_size": 10.0,
-            "is_bold": true,
-            "is_italic": false,
-            "font": "RotisSansSerif-Bold",
-            "protected_tokens": [],
-            "heading_preprocessed": true,
-            "role": "heading1",
-            "cache_hit": true
-          },
-          "block_id": "p1_b13",
-          "normalized_text": "САМОСТОЯТЕЛЬНЫЕ УЧЕБНЫЕ ЗАДАНИЯ 33",
-          "translated_text": "САМОСТОЯТЕЛЬНЫЕ УЧЕБНЫЕ ЗАДАНИЯ 33"
+          "normalized_text": "1 I P A R T General Concepts Therapeutic Exercise:\nFoundational Concepts C H A P T E R\n1 THERAPEUTIC EXERCISE: IMPACT ON\nPHYSICAL FUNCTION 2\nDefinition of Therapeutic Exercise 2\nAspects of Physical Function: Definition of Key Terms 2\nTypes of Therapeutic Exercise Intervention 3\nExercise Safety 3 PROCESS AND MODELS OF DISABLEMENT 4\nThe Disablement Process 4\nModels of Disablement 4\nUse of Disablement Models and Classifications in Physical Therapy 5 PATIENT MANAGEMENT AND CLINICAL DECISION\nMAKING: AN INTERACTIVE RELATIONSHIP 11\nClinical Decision Making 11\nEvidence-Based Practice 11\nA Patient Management Model 12 STRATEGIES FOR EFFECTIVE EXERCISE AND\nTASK-SPECIFIC INSTRUCTION 24\nPreparation for Exercise Instruction 24\nConcepts of Motor Learning: A Foundation of Exercise and Task-Specific Instruction 24\nAdherence to Exercise 31 INDEPENDENT LEARNING ACTIVITIES 33",
+          "translated_text": "1 I Р А R Т Общие понятия Терапевтические упражнения: Основные понятия С H А Р Т Е R 1 Терапевтические упражнения: Влияние на физическую функцию 2 Определение терапевтических упражнений 2 Аспекты физической функции: Определение ключевых терминов 2 Типы вмешательства в терапевтические упражнения 3 Безопасность упражнений 3 Процесс и модели инвалидности 4 Определение инвалидности rocess 4 Модели инвалидности 4 Использование моделей и классификаций инвалидности в физической терапии 5 Управление пациентами и принятие клинических решений: интерактивные отношения 11 Принятие клинических решений 11 Практика, основанная на доказательствах 11 Модель управления пациентами 12 стратегии эффективных упражнений и специальных задач 24 Подготовка к Е Инструкция 24 Концепции моторного обучения: основа упражнений и специальных задач 24 Соблюдение упражнений 31 НАДЕЛЕННЫЕ УЧЕНИЕ 33"
         },
         {
           "id": "p1_b14",
@@ -233,18 +107,19 @@
             "is_italic": false,
             "font": "RotisSansSerif-Bold",
             "protected_tokens": [],
+            "heading_preprocessed": true,
             "role": "heading1",
             "cache_hit": true
           },
           "block_id": "p2_b1",
-          "normalized_text": "THERAPEUTIC EXERCISE: IMPACT\nON PHYSICAL FUNCTION",
+          "normalized_text": "ТЕРАПЕВТИЧЕСКИЕ УПРАЖНЕНИЯ : IMPACT ON PHYSICAL FUNCTION",
           "translated_text": "Терапевтические упражнения: влияние на физическую функцию"
         },
         {
           "id": "p2_b2",
           "page": 2,
           "order": 19,
-          "text": "Of the many procedures used by physical therapists in\nthe continuum of care of patients and clients, therapeu-\ntic exercise takes its place as one of the key elements\nthat lies at the center of programs designed to improve\nor restore an individual’s function or to prevent dys-\nfunction.2\n",
+          "text": "Of the many procedures used by physical therapists in\nthe continuum of care of patients and clients, therapeutic exercise takes its place as one of the key elements\nthat lies at the center of programs designed to improve\nor restore an individual’s function or to prevent dysfunction.2 Definition of Therapeutic Exercise Therapeutic exercise2 is the systematic, planned performance of bodily movements, postures, or physical\nactivities intended to provide a patient/client with the\nmeans to Remediate or prevent impairments\nImprove, restore, or enhance physical function\nPrevent or reduce health-related risk factors\nOptimize overall health status, fitness, or sense of\nwell-being",
           "type": "text",
           "bbox": {
             "x0": 45.0,
@@ -261,64 +136,12 @@
               "OR"
             ],
             "role": "body",
-            "cache_hit": true
-          },
-          "block_id": "p2_b2",
-          "normalized_text": "Of the many procedures used by physical therapists in\nthe continuum of care of patients and clients, therapeutic exercise takes its place as one of the key elements\nthat lies at the center of programs designed to improve\nor restore an individual’s function or to prevent dysfunction.2",
-          "translated_text": "Из множества процедур, используемых физиотерапевтами при непрерывном уходе за пациентами и клиентами, терапевтические упражнения занимают свое место как один из ключевых элементов, лежащих в центре программ, предназначенных для улучшения или восстановления функции человека или предотвращения дисфункции.2"
-        },
-        {
-          "id": "p2_b3",
-          "page": 2,
-          "order": 20,
-          "text": "Definition of Therapeutic Exercise\n",
-          "type": "text",
-          "bbox": {
-            "x0": 45.0,
-            "y0": 249.78598022460938,
-            "x1": 210.85693359375,
-            "y1": 264.5220031738281
-          },
-          "metadata": {
-            "font_size": 12.0,
-            "is_bold": true,
-            "is_italic": false,
-            "font": "RotisSansSerif-Bold",
-            "protected_tokens": [],
-            "role": "heading2",
-            "cache_hit": true
-          },
-          "block_id": "p2_b3",
-          "normalized_text": "Definition of Therapeutic Exercise",
-          "translated_text": "Определение терапевтических упражнений"
-        },
-        {
-          "id": "p2_b4",
-          "page": 2,
-          "order": 21,
-          "text": "Therapeutic exercise2 is the systematic, planned performance of bodily movements, postures, or physical\nactivities intended to provide a patient/client with the\nmeans to Remediate or prevent impairments\nImprove, restore, or enhance physical function\nPrevent or reduce health-related risk factors\nOptimize overall health status, fitness, or sense of\nwell-being",
-          "type": "text",
-          "bbox": {
-            "x0": 45.0,
-            "y0": 266.8580017089844,
-            "x1": 259.3348693847656,
-            "y1": 315.93798828125
-          },
-          "metadata": {
-            "font_size": 10.0,
-            "is_bold": false,
-            "is_italic": true,
-            "font": "TimesNewRomanPS-ItalicMT",
-            "protected_tokens": [
-              "OR"
-            ],
-            "role": "body",
             "cache_hit": true,
             "quality_pass": "heuristic_v1"
           },
-          "block_id": "p2_b4",
-          "normalized_text": "Therapeutic exercise2 is the systematic, planned performance of bodily movements, postures, or physical\nactivities intended to provide a patient/client with the\nmeans to Remediate or prevent impairments\nImprove, restore, or enhance physical function\nPrevent or reduce health-related risk factors\nOptimize overall health status, fitness, or sense of\nwell-being",
-          "translated_text": "Терапевтические упражнения2 - это систематическое, планируемое выполнение физических движений, позиций или физических действий, предназначенных для обеспечения пациента/клиента средствами для устранения или предотвращения нарушений, улучшения, восстановления или улучшения физической функции, предотвращения или уменьшения рисков, связанных со здоровьем, оптимизации общего состояния здоровья, физической подготовки или чувства к себе. \"Эль-бытие\""
+          "block_id": "p2_b2",
+          "normalized_text": "Of the many procedures used by physical therapists in\nthe continuum of care of patients and clients, therapeutic exercise takes its place as one of the key elements\nthat lies at the center of programs designed to improve\nor restore an individual’s function or to prevent dysfunction.2 Definition of Therapeutic Exercise Therapeutic exercise2 is the systematic, planned performance of bodily movements, postures, or physical\nactivities intended to provide a patient/client with the\nmeans to Remediate or prevent impairments\nImprove, restore, or enhance physical function\nPrevent or reduce health-related risk factors\nOptimize overall health status, fitness, or sense of\nwell-being",
+          "translated_text": "Из многих процедур, используемых физиотерапевтами в процессе непрерывного ухода за пациентами и клиентами, терапевтическое упражнение занимает свое место как один из ключевых элементов, лежащих в центре программ, предназначенных для улучшения или восстановления функции индивида или предотвращения дисфункции.2 Определение терапевтических упражнений Истематическое, планируемое выполнение физических движений, позиций или физических действий, предназначенных для обеспечения пациента/клиента средствами для устранения или предотвращения нарушений Улучшения, восстановления или улучшения физической функции Предотвращение или уменьшение факторов риска, связанных со здоровьем Оптимизировать общее состояние здоровья, физическое состояние или чувство благополучия"
         },
         {
           "id": "p2_b6",
@@ -404,7 +227,7 @@
           "id": "p2_b9",
           "page": 2,
           "order": 26,
-          "text": "Balance. The ability to align body segments against gravi-\nty to maintain or move the body (center of mass) within\nthe available base of support without falling; the ability to\nmove the body in equilibrium with gravity via interaction\nof the sensory and motor systems.2,66,74,88,124,127,128\n",
+          "text": "Balance. The ability to align body segments against gravity to maintain or move the body (center of mass) within\nthe available base of support without falling; the ability to\nmove the body in equilibrium with gravity via interaction\nof the sensory and motor systems.2,66,74,88,124,127,128 Cardiopulmonary fitness. The ability to perform lowintensity, repetitive, total body movements (walking, jogging, cycling, swimming) over an extended period of\ntime1,81; a synonymous term is cardiopulmonary endurance.",
           "type": "text",
           "bbox": {
             "x0": 303.0,
@@ -421,42 +244,18 @@
               "OR"
             ],
             "role": "body",
-            "cache_hit": true
+            "cache_hit": true,
+            "quality_pass": "heuristic_v1"
           },
           "block_id": "p2_b9",
-          "normalized_text": "Balance. The ability to align body segments against gravity to maintain or move the body (center of mass) within\nthe available base of support without falling; the ability to\nmove the body in equilibrium with gravity via interaction\nof the sensory and motor systems.2,66,74,88,124,127,128",
-          "translated_text": "Баланс: способность выровнять сегменты тела против гравитации, чтобы поддерживать или двигать тело (центр массы) в пределах доступной базы опоры без падения; способность двигаться тела в равновесии с гравитацией через взаимодействие сенсорных и двигательных систем.2,66,74,88,124,127,128"
-        },
-        {
-          "id": "p2_b10",
-          "page": 2,
-          "order": 27,
-          "text": "Cardiopulmonary fitness. The ability to perform low-\nintensity, repetitive, total body movements (walking, jog-\nging, cycling, swimming) over an extended period of\ntime1,81; a synonymous term is cardiopulmonary endurance.\n",
-          "type": "text",
-          "bbox": {
-            "x0": 303.0,
-            "y0": 414.3320007324219,
-            "x1": 542.4609985351562,
-            "y1": 460.11199951171875
-          },
-          "metadata": {
-            "font_size": 10.0,
-            "is_bold": true,
-            "is_italic": true,
-            "font": "TimesNewRomanPS-BoldItal",
-            "protected_tokens": [],
-            "role": "body",
-            "cache_hit": true
-          },
-          "block_id": "p2_b10",
-          "normalized_text": "Cardiopulmonary fitness. The ability to perform lowintensity, repetitive, total body movements (walking, jogging, cycling, swimming) over an extended period of\ntime1,81; a synonymous term is cardiopulmonary endurance.",
-          "translated_text": "Умение выполнять низкоинтенсивные, повторяющиеся, общие движения тела (ходьба, бег, езда на велосипеде, плавание) в течение длительного периода времени1,81; синонимный термин - сердечно-пульмочная выносливость."
+          "normalized_text": "Balance. The ability to align body segments against gravity to maintain or move the body (center of mass) within\nthe available base of support without falling; the ability to\nmove the body in equilibrium with gravity via interaction\nof the sensory and motor systems.2,66,74,88,124,127,128 Cardiopulmonary fitness. The ability to perform lowintensity, repetitive, total body movements (walking, jogging, cycling, swimming) over an extended period of\ntime1,81; a synonymous term is cardiopulmonary endurance.",
+          "translated_text": "Баланс. Способность выровнять сегменты тела против гравитации, чтобы поддерживать или двигать тело (центр массы) в пределах доступной базы поддержки, не падая; Способность двигаться в равновесии с гравитацией через взаимодействие сенсорных и двигательных систем.2,66,74,88,124,127,128 Кардиопульмоночная фитнес. Способность выполнять низкоинтенсивные повторяющиеся движения тела в целом (ходьба, бег, велосипед, плавание) в течение длительного периода времени1,81; синонимный термин - сердечно-пульмочная выносливость."
         },
         {
           "id": "p2_b11",
           "page": 2,
           "order": 28,
-          "text": "Coordination. The correct timing and sequencing of mus-\ncle firing combined with the appropriate intensity of mus-\ncular contraction leading to the effective initiation, guiding,\nand grading of movement. It is the basis of smooth, accu-\nrate, efficient movement and occurs at a conscious or auto-\nmatic level.123,127\n",
+          "text": "Coordination. The correct timing and sequencing of muscle firing combined with the appropriate intensity of muscular contraction leading to the effective initiation, guiding,\nand grading of movement. It is the basis of smooth, accurate, efficient movement and occurs at a conscious or automatic level.123,127 Flexibility. The ability to move freely, without restriction;\nused interchangeably with mobility.",
           "type": "text",
           "bbox": {
             "x0": 303.0,
@@ -476,33 +275,8 @@
             "cache_hit": true
           },
           "block_id": "p2_b11",
-          "normalized_text": "Coordination. The correct timing and sequencing of muscle firing combined with the appropriate intensity of muscular contraction leading to the effective initiation, guiding,\nand grading of movement. It is the basis of smooth, accurate, efficient movement and occurs at a conscious or automatic level.123,127",
-          "translated_text": "Координация: правильное время и последовательность мышечного стрельбы в сочетании с соответствующей интенсивностью мышечного сокращения, что приводит к эффективному инициированию, направлению и классификации движения."
-        },
-        {
-          "id": "p2_b12",
-          "page": 2,
-          "order": 29,
-          "text": "Flexibility. The ability to move freely, without restriction;\nused interchangeably with mobility.\n",
-          "type": "text",
-          "bbox": {
-            "x0": 303.0,
-            "y0": 541.3319702148438,
-            "x1": 536.6119384765625,
-            "y1": 564.1119995117188
-          },
-          "metadata": {
-            "font_size": 10.0,
-            "is_bold": true,
-            "is_italic": true,
-            "font": "TimesNewRomanPS-BoldItal",
-            "protected_tokens": [],
-            "role": "body",
-            "cache_hit": true
-          },
-          "block_id": "p2_b12",
-          "normalized_text": "Flexibility. The ability to move freely, without restriction;\nused interchangeably with mobility.",
-          "translated_text": "Гибкость: способность свободно передвигаться без ограничений; используется взаимозаменяемо с мобильностью."
+          "normalized_text": "Coordination. The correct timing and sequencing of muscle firing combined with the appropriate intensity of muscular contraction leading to the effective initiation, guiding,\nand grading of movement. It is the basis of smooth, accurate, efficient movement and occurs at a conscious or automatic level.123,127 Flexibility. The ability to move freely, without restriction;\nused interchangeably with mobility.",
+          "translated_text": "Координация. Правильное время и последовательность мышечного стрельбы в сочетании с соответствующей интенсивностью мышечного сокращения, что приводит к эффективному инициированию, руководству и классификации движения. Способность свободно передвигаться без ограничений; используется взаимозаменяемо с мобильностью."
         },
         {
           "id": "p2_b13",
@@ -536,7 +310,7 @@
           "id": "p2_b14",
           "page": 2,
           "order": 31,
-          "text": "Muscle performance. The capacity of muscle to produce\ntension and do physical work. Muscle performance encom-\npasses strength, power, and muscular endurance.2\n",
+          "text": "Muscle performance. The capacity of muscle to produce\ntension and do physical work. Muscle performance encompasses strength, power, and muscular endurance.2 Neuromuscular control. Interaction of the sensory and\nmotor systems that enables synergists, agonists and antagonists, as well as stabilizers and neutralizers to anticipate or 2\nTHERAPEUTIC EXERCISE: IMPACT ON PHYSICAL FUNCTION FIGURE 1.1 Interrelated aspects of physical function.",
           "type": "text",
           "bbox": {
             "x0": 303.0,
@@ -549,65 +323,15 @@
             "is_bold": true,
             "is_italic": true,
             "font": "TimesNewRomanPS-BoldItal",
-            "protected_tokens": [],
-            "role": "body",
-            "cache_hit": true
-          },
-          "block_id": "p2_b14",
-          "normalized_text": "Muscle performance. The capacity of muscle to produce\ntension and do physical work. Muscle performance encompasses strength, power, and muscular endurance.2",
-          "translated_text": "Мышечная производительность. Способность мышц вырабатывать напряжение и выполнять физическую работу."
-        },
-        {
-          "id": "p2_b15",
-          "page": 2,
-          "order": 32,
-          "text": "Neuromuscular control. Interaction of the sensory and\nmotor systems that enables synergists, agonists and antagonists, as well as stabilizers and neutralizers to anticipate or 2\nTHERAPEUTIC EXERCISE: IMPACT ON PHYSICAL FUNCTION",
-          "type": "text",
-          "bbox": {
-            "x0": 303.0,
-            "y0": 685.8319702148438,
-            "x1": 542.2720336914062,
-            "y1": 720.1119995117188
-          },
-          "metadata": {
-            "font_size": 10.0,
-            "is_bold": true,
-            "is_italic": true,
-            "font": "TimesNewRomanPS-BoldItal",
             "protected_tokens": [
               "OR"
             ],
             "role": "body",
             "cache_hit": true
           },
-          "block_id": "p2_b15",
-          "normalized_text": "Neuromuscular control. Interaction of the sensory and\nmotor systems that enables synergists, agonists and antagonists, as well as stabilizers and neutralizers to anticipate or 2\nTHERAPEUTIC EXERCISE: IMPACT ON PHYSICAL FUNCTION",
-          "translated_text": "Нейромышечное управление: взаимодействие сенсорных и двигательных систем, позволяющее синергистам, агонистам и антагонистам, а также стабилизаторам и нейтрализаторам предсказывать или 2 ТЕРАПЕТИЧНЫЕ УВИЧЕНИЕ: Влияние на физическую функцию"
-        },
-        {
-          "id": "p2_b17",
-          "page": 2,
-          "order": 34,
-          "text": "FIGURE 1.1 Interrelated aspects of physical function.\n",
-          "type": "text",
-          "bbox": {
-            "x0": 340.0419921875,
-            "y0": 314.5639953613281,
-            "x1": 505.9491882324219,
-            "y1": 324.38800048828125
-          },
-          "metadata": {
-            "font_size": 8.0,
-            "is_bold": true,
-            "is_italic": false,
-            "font": "RotisSansSerif-Bold",
-            "protected_tokens": [],
-            "role": "body",
-            "cache_hit": true
-          },
-          "block_id": "p2_b17",
-          "normalized_text": "FIGURE 1.1 Interrelated aspects of physical function.",
-          "translated_text": "Рисунок 1.1 Взаимозавязанные аспекты физической функции."
+          "block_id": "p2_b14",
+          "normalized_text": "Muscle performance. The capacity of muscle to produce\ntension and do physical work. Muscle performance encompasses strength, power, and muscular endurance.2 Neuromuscular control. Interaction of the sensory and\nmotor systems that enables synergists, agonists and antagonists, as well as stabilizers and neutralizers to anticipate or 2\nTHERAPEUTIC EXERCISE: IMPACT ON PHYSICAL FUNCTION FIGURE 1.1 Interrelated aspects of physical function.",
+          "translated_text": "Мышечная производительность. Способность мышц вырабатывать напряжение и выполнять физическую работу. Взаимодействие сенсорных и двигательных систем, которое позволяет синергистам, агонистам и антагонистам, а также стабилизаторам и нейтрализаторам предвидеть или 2 ТЕРАПЕТИЧЕСКИЕ ДОЛЖЕНИЕ: Влияние на физическую функцию Рисунок 1.1 взаимосвязанные аспекты физической функции."
         }
       ],
       "images": [
@@ -764,7 +488,7 @@
           "id": "p3_b5",
           "page": 3,
           "order": 40,
-          "text": "Specific to each exercise in a program, the accuracy\nwith which a patient performs an exercise affects safety,\nincluding proper posture or alignment of the body, execution of the correct movement patterns, and performing\neach exercise with the appropriate intensity, speed, and\nduration. A patient must be informed of the signs of respond to proprioceptive and kinesthetic information and,\nsubsequently, to work in correct sequence to create coordinated movement.72",
+          "text": "Specific to each exercise in a program, the accuracy\nwith which a patient performs an exercise affects safety,\nincluding proper posture or alignment of the body, execution of the correct movement patterns, and performing\neach exercise with the appropriate intensity, speed, and\nduration. A patient must be informed of the signs of respond to proprioceptive and kinesthetic information and,\nsubsequently, to work in correct sequence to create coordinated movement.72 Postural control, postural stability, and equilibrium.\nUsed interchangeably with static or dynamic balance.50,124,127",
           "type": "text",
           "bbox": {
             "x0": 318.0,
@@ -785,41 +509,14 @@
             "quality_pass": "heuristic_v1"
           },
           "block_id": "p3_b5",
-          "normalized_text": "Specific to each exercise in a program, the accuracy\nwith which a patient performs an exercise affects safety,\nincluding proper posture or alignment of the body, execution of the correct movement patterns, and performing\neach exercise with the appropriate intensity, speed, and\nduration. A patient must be informed of the signs of respond to proprioceptive and kinesthetic information and,\nsubsequently, to work in correct sequence to create coordinated movement.72",
-          "translated_text": "Специфично для каждого упражнения в программе, точность, с которой пациент выполняет упражнение, влияет на безопасность, включая правильную позу или выравнивание тела, выполнение правильных закономерностей движения и выполнение каждого упражнения с соответствующей интенсивностью, скоростью и длительностью. Пациент должен быть информирован о признаках реагирования на проприоцептивную и кинестетическую информацию и, впоследствии, работать в правильной последовательности для создания скоординированного движения.72"
-        },
-        {
-          "id": "p3_b7",
-          "page": 3,
-          "order": 42,
-          "text": "Postural control, postural stability, and equilibrium.\nUsed interchangeably with static or dynamic bal-\nance.50,124,127\n",
-          "type": "text",
-          "bbox": {
-            "x0": 60.0,
-            "y0": 98.74798583984375,
-            "x1": 275.6969299316406,
-            "y1": 132.93798828125
-          },
-          "metadata": {
-            "font_size": 10.0,
-            "is_bold": true,
-            "is_italic": true,
-            "font": "TimesNewRomanPS-BoldItal",
-            "protected_tokens": [
-              "OR"
-            ],
-            "role": "heading2",
-            "cache_hit": true
-          },
-          "block_id": "p3_b7",
-          "normalized_text": "Postural control, postural stability, and equilibrium.\nUsed interchangeably with static or dynamic balance.50,124,127",
-          "translated_text": "Позиционный контроль, стабильность и равновесие."
+          "normalized_text": "Specific to each exercise in a program, the accuracy\nwith which a patient performs an exercise affects safety,\nincluding proper posture or alignment of the body, execution of the correct movement patterns, and performing\neach exercise with the appropriate intensity, speed, and\nduration. A patient must be informed of the signs of respond to proprioceptive and kinesthetic information and,\nsubsequently, to work in correct sequence to create coordinated movement.72 Postural control, postural stability, and equilibrium.\nUsed interchangeably with static or dynamic balance.50,124,127",
+          "translated_text": "Специфично для каждого упражнения в программе, точность, с которой пациент выполняет упражнение, влияет на безопасность, включая правильную позу или выравнивание тела, выполнение правильных закономерностей движения и выполнение каждого упражнения с соответствующей интенсивностью, скоростью и длительностью. Пациент должен быть информирован о признаках реагирования на проприоцептивную и кинестетическую информацию и, впоследствии, работать в правильной последовательности для создания скоординированного движения.72 Позиционный контроль, стабильность и равновесие."
         },
         {
           "id": "p3_b8",
           "page": 3,
           "order": 43,
-          "text": "Stability. The ability of the neuromuscular system through\nsynergistic muscle actions to hold a proximal or distal\nbody segment in a stationary position or to control a stable\nbase during superimposed movement.50,127,134 Joint stability\nis the maintenence of proper alignment of bony partners of\na joint by means of passive and dynamic components.85\n",
+          "text": "Stability. The ability of the neuromuscular system through\nsynergistic muscle actions to hold a proximal or distal\nbody segment in a stationary position or to control a stable\nbase during superimposed movement.50,127,134 Joint stability\nis the maintenence of proper alignment of bony partners of\na joint by means of passive and dynamic components.85 The systems of the body that control each of these\naspects of physical function react, adapt, and develop in\nresponse to forces and physical stresses (stress ! force/\narea) placed upon tisses that make up body systems.81,84\nGravity, for example, is a constant force that affects the\nmusculoskeletal, neuromuscular, and circulatory systems.\nAdditional forces, incurred during routine physical activities, help the body maintain a functional level of strength,\ncardiopulmonary fitness, and mobility. Imposed forces and\nphysical stresses that are excessive can cause acute\ninjuries, such as sprains and fractures, or chronic conditions, such as repetitive stress disorders.84 The absence of\ntypical forces on the body can also cause degeneration,\ndegradation, or deformity. For example, the absence of normal weight bearing associated with prolonged bed rest or\nimmobilization weakens muscle and bone.8,20,69,84,108 Prolonged inactivity also leads to decreased efficiency of the\ncirculatory and pulmonary systems.1 Impairment of any one or more of the body systems\nand subsequent impairment of any aspect of physical function, separately or jointly, can result in functional limitation and disability. Therapeutic exercise interventions\ninvolve the application of carefully graded physical stresses and forces that are imposed on impaired body systems,\nspecific tissues, or individual structures in a controlled,\nprogressive, safely executed manner to reduce physical\nimpairments and improve function.",
           "type": "text",
           "bbox": {
             "x0": 60.0,
@@ -836,67 +533,12 @@
               "OR"
             ],
             "role": "body",
-            "cache_hit": true
+            "cache_hit": true,
+            "quality_pass": "heuristic_v1"
           },
           "block_id": "p3_b8",
-          "normalized_text": "Stability. The ability of the neuromuscular system through\nsynergistic muscle actions to hold a proximal or distal\nbody segment in a stationary position or to control a stable\nbase during superimposed movement.50,127,134 Joint stability\nis the maintenence of proper alignment of bony partners of\na joint by means of passive and dynamic components.85",
-          "translated_text": "Стабильность. Способность нейромышечной системы посредством синергических мышечных действий удерживать проксимальный или дистальный сегмент тела в стационарном положении или контролировать стабильную базу во время наложенного движения.50,127,134 Стабильность суставов - это поддержание надлежащего выравнивания костных партнеров сустава посредством пассивных и динамических компонентов.85"
-        },
-        {
-          "id": "p3_b9",
-          "page": 3,
-          "order": 44,
-          "text": "The systems of the body that control each of these\naspects of physical function react, adapt, and develop in\nresponse to forces and physical stresses (stress ! force/\narea) placed upon tisses that make up body systems.81,84\nGravity, for example, is a constant force that affects the\nmusculoskeletal, neuromuscular, and circulatory systems.\nAdditional forces, incurred during routine physical activi-\nties, help the body maintain a functional level of strength,\ncardiopulmonary fitness, and mobility. Imposed forces and\nphysical stresses that are excessive can cause acute\ninjuries, such as sprains and fractures, or chronic condi-\ntions, such as repetitive stress disorders.84 The absence of\ntypical forces on the body can also cause degeneration,\ndegradation, or deformity. For example, the absence of nor-\nmal weight bearing associated with prolonged bed rest or\nimmobilization weakens muscle and bone.8,20,69,84,108 Pro-\nlonged inactivity also leads to decreased efficiency of the\ncirculatory and pulmonary systems.1\n",
-          "type": "text",
-          "bbox": {
-            "x0": 60.0,
-            "y0": 208.15798950195312,
-            "x1": 299.95184326171875,
-            "y1": 414.93798828125
-          },
-          "metadata": {
-            "font_size": 0,
-            "is_bold": false,
-            "is_italic": false,
-            "font": "",
-            "protected_tokens": [
-              "OR"
-            ],
-            "role": "body",
-            "cache_hit": true,
-            "quality_pass": "heuristic_v1"
-          },
-          "block_id": "p3_b9",
-          "normalized_text": "The systems of the body that control each of these\naspects of physical function react, adapt, and develop in\nresponse to forces and physical stresses (stress ! force/\narea) placed upon tisses that make up body systems.81,84\nGravity, for example, is a constant force that affects the\nmusculoskeletal, neuromuscular, and circulatory systems.\nAdditional forces, incurred during routine physical activities, help the body maintain a functional level of strength,\ncardiopulmonary fitness, and mobility. Imposed forces and\nphysical stresses that are excessive can cause acute\ninjuries, such as sprains and fractures, or chronic conditions, such as repetitive stress disorders.84 The absence of\ntypical forces on the body can also cause degeneration,\ndegradation, or deformity. For example, the absence of normal weight bearing associated with prolonged bed rest or\nimmobilization weakens muscle and bone.8,20,69,84,108 Prolonged inactivity also leads to decreased efficiency of the\ncirculatory and pulmonary systems.1",
-          "translated_text": "Системы тела, контролирующие каждый из этих аспектов физической функции, реагируют, адаптируются и развиваются в ответ на силы и физические нагрузки (стресс! сила / область), наложенные на ткани, составляющие системы тела. Дополнительные силы, возникающие во время регулярных физических упражнений, помогают организму поддерживать функциональный уровень силы, сердечно-легочную гибкость и подвижность. Навязанные силы и чрезмерные физические нагрузки могут вызвать острую травму, такую как шишки и переломы, или хронические состояния, такие как повторяющиеся стрессовые расстройства.84 Отсутствие типичных сил на организме также может вызвать дегенерацию, деградацию или деформацию. Например, отсутствие нормального веса, связанного с длительным отдыхом в постели или иммобилизацией, ослабляет мышцы и кости.8,20,69,84,108 Продолжительная неактивность также приводит к снижению эффективности кровеносных и лёгких систем.1"
-        },
-        {
-          "id": "p3_b10",
-          "page": 3,
-          "order": 45,
-          "text": "Impairment of any one or more of the body systems\nand subsequent impairment of any aspect of physical func-\ntion, separately or jointly, can result in functional limita-\ntion and disability. Therapeutic exercise interventions\ninvolve the application of carefully graded physical stress-\nes and forces that are imposed on impaired body systems,\nspecific tissues, or individual structures in a controlled,\nprogressive, safely executed manner to reduce physical\nimpairments and improve function.\n",
-          "type": "text",
-          "bbox": {
-            "x0": 60.0,
-            "y0": 415.1579895019531,
-            "x1": 297.2479248046875,
-            "y1": 518.43798828125
-          },
-          "metadata": {
-            "font_size": 0,
-            "is_bold": false,
-            "is_italic": false,
-            "font": "",
-            "protected_tokens": [
-              "OR"
-            ],
-            "role": "body",
-            "cache_hit": true,
-            "quality_pass": "heuristic_v1"
-          },
-          "block_id": "p3_b10",
-          "normalized_text": "Impairment of any one or more of the body systems\nand subsequent impairment of any aspect of physical function, separately or jointly, can result in functional limitation and disability. Therapeutic exercise interventions\ninvolve the application of carefully graded physical stresses and forces that are imposed on impaired body systems,\nspecific tissues, or individual structures in a controlled,\nprogressive, safely executed manner to reduce physical\nimpairments and improve function.",
-          "translated_text": "Повреждение одной или нескольких систем тела и последующее нарушение любого аспекта физической функции, отдельно или совместно, может привести к функциональным ограничениям и инвалидности. Лечебные упражнения включают в себя применение тщательно разрешенного физического стресса и сил, которые налагаются на нарушенные системы тела, конкретные ткани или отдельные структуры контролируемым, прогрессивным, безопасным образом для снижения физических нарушений и улучшения функции."
+          "normalized_text": "Stability. The ability of the neuromuscular system through\nsynergistic muscle actions to hold a proximal or distal\nbody segment in a stationary position or to control a stable\nbase during superimposed movement.50,127,134 Joint stability\nis the maintenence of proper alignment of bony partners of\na joint by means of passive and dynamic components.85 The systems of the body that control each of these\naspects of physical function react, adapt, and develop in\nresponse to forces and physical stresses (stress ! force/\narea) placed upon tisses that make up body systems.81,84\nGravity, for example, is a constant force that affects the\nmusculoskeletal, neuromuscular, and circulatory systems.\nAdditional forces, incurred during routine physical activities, help the body maintain a functional level of strength,\ncardiopulmonary fitness, and mobility. Imposed forces and\nphysical stresses that are excessive can cause acute\ninjuries, such as sprains and fractures, or chronic conditions, such as repetitive stress disorders.84 The absence of\ntypical forces on the body can also cause degeneration,\ndegradation, or deformity. For example, the absence of normal weight bearing associated with prolonged bed rest or\nimmobilization weakens muscle and bone.8,20,69,84,108 Prolonged inactivity also leads to decreased efficiency of the\ncirculatory and pulmonary systems.1 Impairment of any one or more of the body systems\nand subsequent impairment of any aspect of physical function, separately or jointly, can result in functional limitation and disability. Therapeutic exercise interventions\ninvolve the application of carefully graded physical stresses and forces that are imposed on impaired body systems,\nspecific tissues, or individual structures in a controlled,\nprogressive, safely executed manner to reduce physical\nimpairments and improve function.",
+          "translated_text": "Устойчивость. Способность нейромышечной системы посредством синергических мышечных действий держать проксимальный или дистальный сегмент тела в стационарном положении или контролировать стабильную базу во время перекрытия движения.50,127,134 Устойчивость суставов - это поддержание надлежащего выравнивания костных партнеров суставов посредством пассивных и динамических компонентов.85 Системы Тело, которое контролирует каждый из этих аспектов физической функции, реагирует, адаптируется и развивается в ответ на силы и физические нагрузки (стресс! В результате воздействия силы, возникающие при регулярной физической активности, организм поддерживает функциональный уровень силы, сердечно-пухотной гигиены и мобильности. Навязываемые силы и чрезмерное физическое напряжение могут вызвать острую травму, такую как перевороты и переломы, или хронические состояния, такие как повторяющиеся стрессовые расстройства.84 Отсутствие типичных сил на организме также может вызвать дегенерацию, деградацию или деформацию. Например, отсутствие нормального веса, связанного с длительным отдыхом в постели или иммобилизацией, ослабляет мышцы и кости.8,20,69,84,108 Длительная неактивность также приводит к снижению эффективности кровеносных и лёгких систем.1 Ухудшение одной или нескольких систем тела и последующее ухудшение любого аспекта физической функции n, отдельно или совместно, могут привести к функциональному ограничению и инвалидности. Лечебные упражнения включают в себя применение тщательно выделенных физических нагрузок и сил, которые налагаются на нарушенные системы тела, конкретные ткани или отдельные структуры контролируемым, прогрессивным, безопасным образом для снижения физических нарушений и улучшения функции."
         },
         {
           "id": "p3_b11",
@@ -927,7 +569,7 @@
           "id": "p3_b12",
           "page": 3,
           "order": 47,
-          "text": "Therapeutic exercise procedures embody a wide variety\nof activities, actions, and techniques. The techniques\nselected for an individualized therapeutic exercise pro-\ngram are based on a therapist’s determination of the\nunderlying cause or causes of a patient’s impairments,\nfunctional limitations, or disability. The types of thera-\npeutic exercise interventions presented in this textbook\nare listed in Box 1.1. Additional exercise interventions\nare used by therapists for patients with neuromuscular\nor developmental conditions.2\n",
+          "text": "Therapeutic exercise procedures embody a wide variety\nof activities, actions, and techniques. The techniques\nselected for an individualized therapeutic exercise program are based on a therapist’s determination of the\nunderlying cause or causes of a patient’s impairments,\nfunctional limitations, or disability. The types of therapeutic exercise interventions presented in this textbook\nare listed in Box 1.1. Additional exercise interventions\nare used by therapists for patients with neuromuscular\nor developmental conditions.2 N O T E : Although joint mobilization techniques are often\nclassified as manual therapy procedures, not therapeutic\nexercise,2 the authors of this textbook have chosen to\ninclude joint mobilization procedures under the broad C H A P T E R 1\nTherapeutic Exercise: Foundational Concepts\n3 BOX 1.1\nTherapeutic Exercise Interventions • Aerobic conditioning and reconditioning\n• Muscle performance exercises: strength, power, and endurance training\n• Stretching techniques including muscle-lengthening procedures and joint mobilization techniques\n• Neuromuscular control, inhibition, and facilitation techniques and posture awareness training\n• Postural control, body mechanics, and stabilization exercises\n• Balance exercises and agility training\n• Relaxation exercises\n• Breathing exercises and ventilatory muscle training\n• Task-specific functional training fatigue, the relationship of fatigue to the risk of injury,\nand the importance of rest for recovery during and after\nan exercise routine. When a patient is being directly\nsupervised in a clinical or home setting while learning\nan exercise program, the therapist can control these variables. However, when a patient is carrying out an exercise\nprogram independently at home or at a community fitness\nfacility, patient safety is enhanced and the risk of injury or\nre-injury is minimized by effective exercise instruction\nand patient education. Suggestions for effective exercise\ninstruction and patient education are discussed in a later\nsection of this chapter.",
           "type": "text",
           "bbox": {
             "x0": 60.0,
@@ -944,92 +586,13 @@
               "OR"
             ],
             "role": "body",
-            "cache_hit": true
-          },
-          "block_id": "p3_b12",
-          "normalized_text": "Therapeutic exercise procedures embody a wide variety\nof activities, actions, and techniques. The techniques\nselected for an individualized therapeutic exercise program are based on a therapist’s determination of the\nunderlying cause or causes of a patient’s impairments,\nfunctional limitations, or disability. The types of therapeutic exercise interventions presented in this textbook\nare listed in Box 1.1. Additional exercise interventions\nare used by therapists for patients with neuromuscular\nor developmental conditions.2",
-          "translated_text": "Процедуры терапевтических упражнений включают в себя широкий спектр мероприятий, действий и методов.Техники, выбранные для индивидуальной терапевтической программы упражнений, основаны на определении терапевтом основной причины или причин нарушений, функциональных ограничений или инвалидности пациента. Виды терапевтических упражнений, представленных в данном учебнике, перечислены в ящике 1.1."
-        },
-        {
-          "id": "p3_b13",
-          "page": 3,
-          "order": 48,
-          "text": "N O T E : Although joint mobilization techniques are often\nclassified as manual therapy procedures, not therapeutic\nexercise,2 the authors of this textbook have chosen to\ninclude joint mobilization procedures under the broad\n",
-          "type": "text",
-          "bbox": {
-            "x0": 60.0,
-            "y0": 673.2279663085938,
-            "x1": 293.1888732910156,
-            "y1": 719.8179931640625
-          },
-          "metadata": {
-            "font_size": 10.0,
-            "is_bold": true,
-            "is_italic": false,
-            "font": "RotisSansSerif-Bold",
-            "protected_tokens": [],
-            "role": "body",
-            "cache_hit": true,
-            "editor_pass": "heuristic_v1"
-          },
-          "block_id": "p3_b13",
-          "normalized_text": "N O T E : Although joint mobilization techniques are often\nclassified as manual therapy procedures, not therapeutic\nexercise,2 the authors of this textbook have chosen to\ninclude joint mobilization procedures under the broad",
-          "translated_text": "N О Т Е: Хотя методы совместной мобилизации часто классифицируются как процедуры ручной терапии, а не терапевтические упражнения,2 авторы этого учебника решили включить процедуры совместной мобилизации в рамках широкого"
-        },
-        {
-          "id": "p3_b14",
-          "page": 3,
-          "order": 49,
-          "text": "C H A P T E R 1\nTherapeutic Exercise: Foundational Concepts\n3 BOX 1.1\nTherapeutic Exercise Interventions",
-          "type": "text",
-          "bbox": {
-            "x0": 309.3699951171875,
-            "y0": 27.31800651550293,
-            "x1": 558.0004272460938,
-            "y1": 38.3700065612793
-          },
-          "metadata": {
-            "font_size": 9.0,
-            "is_bold": true,
-            "is_italic": false,
-            "font": "RotisSansSerif-Bold",
-            "protected_tokens": [],
-            "role": "body",
-            "cache_hit": true,
-            "editor_pass": "heuristic_v1"
-          },
-          "block_id": "p3_b14",
-          "normalized_text": "C H A P T E R 1\nTherapeutic Exercise: Foundational Concepts\n3 BOX 1.1\nTherapeutic Exercise Interventions",
-          "translated_text": "С H А Р Т Е R 1 Терапевтические упражнения: Основные понятия 3 РОБОКС 1.1 Терапевтические упражнения"
-        },
-        {
-          "id": "p3_b16",
-          "page": 3,
-          "order": 51,
-          "text": "• Aerobic conditioning and reconditioning\n• Muscle performance exercises: strength, power, and endurance training\n• Stretching techniques including muscle-lengthening procedures and joint mobilization techniques\n• Neuromuscular control, inhibition, and facilitation techniques and posture awareness training\n• Postural control, body mechanics, and stabilization exercises\n• Balance exercises and agility training\n• Relaxation exercises\n• Breathing exercises and ventilatory muscle training\n• Task-specific functional training fatigue, the relationship of fatigue to the risk of injury,\nand the importance of rest for recovery during and after\nan exercise routine. When a patient is being directly\nsupervised in a clinical or home setting while learning\nan exercise program, the therapist can control these variables. However, when a patient is carrying out an exercise\nprogram independently at home or at a community fitness\nfacility, patient safety is enhanced and the risk of injury or\nre-injury is minimized by effective exercise instruction\nand patient education. Suggestions for effective exercise\ninstruction and patient education are discussed in a later\nsection of this chapter.",
-          "type": "text",
-          "bbox": {
-            "x0": 324.0,
-            "y0": 86.10999298095703,
-            "x1": 527.8446044921875,
-            "y1": 107.89180755615234
-          },
-          "metadata": {
-            "font_size": 9.0,
-            "is_bold": false,
-            "is_italic": false,
-            "font": "RotisSerif",
-            "protected_tokens": [
-              "OR"
-            ],
-            "role": "body",
             "cache_hit": true,
             "quality_pass": "heuristic_v1",
             "editor_pass": "heuristic_v1"
           },
-          "block_id": "p3_b16",
-          "normalized_text": "• Aerobic conditioning and reconditioning\n• Muscle performance exercises: strength, power, and endurance training\n• Stretching techniques including muscle-lengthening procedures and joint mobilization techniques\n• Neuromuscular control, inhibition, and facilitation techniques and posture awareness training\n• Postural control, body mechanics, and stabilization exercises\n• Balance exercises and agility training\n• Relaxation exercises\n• Breathing exercises and ventilatory muscle training\n• Task-specific functional training fatigue, the relationship of fatigue to the risk of injury,\nand the importance of rest for recovery during and after\nan exercise routine. When a patient is being directly\nsupervised in a clinical or home setting while learning\nan exercise program, the therapist can control these variables. However, when a patient is carrying out an exercise\nprogram independently at home or at a community fitness\nfacility, patient safety is enhanced and the risk of injury or\nre-injury is minimized by effective exercise instruction\nand patient education. Suggestions for effective exercise\ninstruction and patient education are discussed in a later\nsection of this chapter.",
-          "translated_text": "• Аэробическое кондиционирование и рекондиционирование • упражнения на мышечную производительность: тренировки силы, и выносливости • методы растяжения, включая процедуры удлинения мышц и методы мобилизации суставов • методы нейромышечного контроля, ингибирования и облегчения и тренировки по состоянию тела • контроль по состоянию тела, механика тела и т.д. • упражнения по сбалансированию и тренировке гибкости • упражнения по расслаблению • упражнения по дыханию и тренировке вентиляционных мышц • специальная функциональная тренировка - усталость, отношение усталости к риску травм и важность отдыха для выздоровления во время и после тренировок. Когда пациент находится под непосредственным наблюдением в клинической или домашней обстановке во время обучения программе упражнений, терапевт может контролировать эти переменные. Однако, когда пациент проводит программу упражнений самостоятельно дома или в общественном фитнес-комнате, безопасность пациента повышается и риск травм или повторного травмы минимизируется благодаря эффективному обучению и обучению пациентов. Предложения по эффективному обучению физическим упражнениям и обучению пациентов обсуждаются в последующем разделе этой главы."
+          "block_id": "p3_b12",
+          "normalized_text": "Therapeutic exercise procedures embody a wide variety\nof activities, actions, and techniques. The techniques\nselected for an individualized therapeutic exercise program are based on a therapist’s determination of the\nunderlying cause or causes of a patient’s impairments,\nfunctional limitations, or disability. The types of therapeutic exercise interventions presented in this textbook\nare listed in Box 1.1. Additional exercise interventions\nare used by therapists for patients with neuromuscular\nor developmental conditions.2 N O T E : Although joint mobilization techniques are often\nclassified as manual therapy procedures, not therapeutic\nexercise,2 the authors of this textbook have chosen to\ninclude joint mobilization procedures under the broad C H A P T E R 1\nTherapeutic Exercise: Foundational Concepts\n3 BOX 1.1\nTherapeutic Exercise Interventions • Aerobic conditioning and reconditioning\n• Muscle performance exercises: strength, power, and endurance training\n• Stretching techniques including muscle-lengthening procedures and joint mobilization techniques\n• Neuromuscular control, inhibition, and facilitation techniques and posture awareness training\n• Postural control, body mechanics, and stabilization exercises\n• Balance exercises and agility training\n• Relaxation exercises\n• Breathing exercises and ventilatory muscle training\n• Task-specific functional training fatigue, the relationship of fatigue to the risk of injury,\nand the importance of rest for recovery during and after\nan exercise routine. When a patient is being directly\nsupervised in a clinical or home setting while learning\nan exercise program, the therapist can control these variables. However, when a patient is carrying out an exercise\nprogram independently at home or at a community fitness\nfacility, patient safety is enhanced and the risk of injury or\nre-injury is minimized by effective exercise instruction\nand patient education. Suggestions for effective exercise\ninstruction and patient education are discussed in a later\nsection of this chapter.",
+          "translated_text": "Процедуры терапевтических упражнений включают в себя широкий спектр мероприятий, действий и методов.Техники, выбранные для индивидуальной терапевтической программы упражнений, основаны на определении терапевтом основной причины или причин нарушений, функциональных ограничений или инвалидности пациента. Виды терапевтических упражнений, представленных в данном учебнике, перечислены в поле 1.1. Помимо того, что методы совместной мобилизации часто классифицируются как процедуры ручной терапии, а не как терапевтические упражнения,2 авторы данного учебника решили включить процедуры совместной мобилизации в общий объем С H А П Т Е Р 1 Терапевтические упражнения: Основные понятия 3 РОБОКС 1.1 Терапевтические упражнения • Аэробическое кондиционирование и рекондиционирование • упражнения на мышечную производительность: тренировки силы, и выносливости • Техники растяжения, включая процедуры удлинения мышц и методы мобилизации суставов • Невромышечный контроль, ингибирование, d техники облегчения и обучение осознанию положения • Контроль положения, механика тела и упражнения по стабилизации • упражнения по балансу и гибкости • упражнения по расслаблению • упражнения по дыханию и тренировки вентиляционных мышц • Утомление от функционального обучения, связанное с конкретной задачей, отношение усталости к риску травмы, и Отдых для восстановления во время и после тренировок. Когда пациент находится под непосредственным наблюдением в клинической или домашней обстановке во время обучения программе упражнений, терапевт может контролировать эти переменные. Однако, когда пациент проводит программу упражнений самостоятельно дома или в общественном фитнес-комнате, безопасность пациента повышается и риск травм или повторного травмы минимизируется благодаря эффективному обучению и обучению пациентов. Предложения по эффективному обучению физическим упражнениям и обучению пациентов обсуждаются в последующем разделе этой главы."
         }
       ]
     },
@@ -1107,11 +670,12 @@
             "is_italic": false,
             "font": "RotisSansSerif-Bold",
             "protected_tokens": [],
+            "heading_preprocessed": true,
             "role": "heading1",
             "cache_hit": true
           },
           "block_id": "p4_b3",
-          "normalized_text": "PROCESS AND MODELS\nOF DISABLEMENT",
+          "normalized_text": "ПРОЦЕСС И МОДЕЛИ ИНВАЛИДНОСТИ",
           "translated_text": "Процесс и модели инвалидности"
         },
         {
@@ -1172,7 +736,7 @@
           "id": "p4_b6",
           "page": 4,
           "order": 62,
-          "text": "Definition\nDisablement is a term that refers to the impact(s) and func-\ntional consequences of acute or chronic conditions, such as\ndisease, injury, and congenital or developmental abnormal-\nities, on specific body systems that compromise basic\nhuman performance and an individual’s ability to meet\nnecessary, customary, expected, and desired societal func-\ntions and roles.60,86,143 Physical therapists most commonly\nprovide care and services to people with physical disabili-\nty. Social, emotional, and cognitive disablement can affect\nphysical function and vice versa and, therefore, should not\nbe disregarded or dismissed.58,60\n",
+          "text": "Definition\nDisablement is a term that refers to the impact(s) and functional consequences of acute or chronic conditions, such as\ndisease, injury, and congenital or developmental abnormalities, on specific body systems that compromise basic\nhuman performance and an individual’s ability to meet\nnecessary, customary, expected, and desired societal functions and roles.60,86,143 Physical therapists most commonly\nprovide care and services to people with physical disability. Social, emotional, and cognitive disablement can affect\nphysical function and vice versa and, therefore, should not\nbe disregarded or dismissed.58,60 Implications in Health Care\nKnowledge of the process of disablement provides a\nfoundation for health-care professionals to develop an appreciation of the complex relationships among function, disability, and health.62,132 This knowledge, in turn,\nprovides a theoretical framework upon which practice\ncan be organized and research can be based, thus facilitating effective management and care of patients that is\nreflected by meaningful functional outcomes.40,62",
           "type": "text",
           "bbox": {
             "x0": 45.0,
@@ -1194,40 +758,14 @@
             "quality_pass": "heuristic_v1"
           },
           "block_id": "p4_b6",
-          "normalized_text": "Definition\nDisablement is a term that refers to the impact(s) and functional consequences of acute or chronic conditions, such as\ndisease, injury, and congenital or developmental abnormalities, on specific body systems that compromise basic\nhuman performance and an individual’s ability to meet\nnecessary, customary, expected, and desired societal functions and roles.60,86,143 Physical therapists most commonly\nprovide care and services to people with physical disability. Social, emotional, and cognitive disablement can affect\nphysical function and vice versa and, therefore, should not\nbe disregarded or dismissed.58,60",
-          "translated_text": "Определение Инвалидность - это термин, который относится к воздействию и функциональным последствиям острых или хронических заболеваний, таких как болезни, травмы и врожденные или развивающиеся аномалии, на конкретные системы организма, которые нарушают основные человеческие функции и способность индивида к выполнению необходимых, обычных, ожидаемых и желаемых условий общества. Функции и функции.60,86,143 Физиотерапевты наиболее часто оказывают помощь и услуги людям с физическими ограниченными возможностями. Социальные, эмоциональные и когнитивные нарушения могут повлиять на физическую функцию и наоборот, и поэтому их нельзя игнорировать или отклонять.58,60"
-        },
-        {
-          "id": "p4_b7",
-          "page": 4,
-          "order": 63,
-          "text": "Implications in Health Care\nKnowledge of the process of disablement provides a\nfoundation for health-care professionals to develop an appreciation of the complex relationships among function, disability, and health.62,132 This knowledge, in turn,\nprovides a theoretical framework upon which practice\ncan be organized and research can be based, thus facilitating effective management and care of patients that is\nreflected by meaningful functional outcomes.40,62",
-          "type": "text",
-          "bbox": {
-            "x0": 45.0,
-            "y0": 702.4779663085938,
-            "x1": 262.10687255859375,
-            "y1": 737.68798828125
-          },
-          "metadata": {
-            "font_size": 10.0,
-            "is_bold": true,
-            "is_italic": false,
-            "font": "RotisSansSerif-Bold",
-            "protected_tokens": [],
-            "role": "body",
-            "cache_hit": true,
-            "quality_pass": "heuristic_v1"
-          },
-          "block_id": "p4_b7",
-          "normalized_text": "Implications in Health Care\nKnowledge of the process of disablement provides a\nfoundation for health-care professionals to develop an appreciation of the complex relationships among function, disability, and health.62,132 This knowledge, in turn,\nprovides a theoretical framework upon which practice\ncan be organized and research can be based, thus facilitating effective management and care of patients that is\nreflected by meaningful functional outcomes.40,62",
-          "translated_text": "Знания о процессе инвалидности дают профессионалам здравоохранения основы для понимания сложных связей между функцией, инвалидностью и здоровьем.62,132 Эти знания, в свою очередь, обеспечивают теоретическую основу, на которой можно организовать практику и основываться на исследованиях, таким образом, в соответствии с Осуществление эффективного управления и ухода за пациентами, отражающегося на значимых функциональных результатах.40, 62"
+          "normalized_text": "Definition\nDisablement is a term that refers to the impact(s) and functional consequences of acute or chronic conditions, such as\ndisease, injury, and congenital or developmental abnormalities, on specific body systems that compromise basic\nhuman performance and an individual’s ability to meet\nnecessary, customary, expected, and desired societal functions and roles.60,86,143 Physical therapists most commonly\nprovide care and services to people with physical disability. Social, emotional, and cognitive disablement can affect\nphysical function and vice versa and, therefore, should not\nbe disregarded or dismissed.58,60 Implications in Health Care\nKnowledge of the process of disablement provides a\nfoundation for health-care professionals to develop an appreciation of the complex relationships among function, disability, and health.62,132 This knowledge, in turn,\nprovides a theoretical framework upon which practice\ncan be organized and research can be based, thus facilitating effective management and care of patients that is\nreflected by meaningful functional outcomes.40,62",
+          "translated_text": "Определение Инвалидность - это термин, который относится к воздействию и функциональным последствиям острых или хронических заболеваний, таких как болезни, травмы и врожденные или развивающиеся аномалии, на конкретные системы организма, которые нарушают основные человеческие показатели и способность индивида удовлетворить необходимые, обычные, ожидаемые и желаемые социальные потребности. 60,86,143 Физиотерапевты наиболее часто оказывают помощь и услуги людям с физическими ограниченными возможностями. Социальное, эмоциональное и когнитивное нарушение может повлиять на физическую функцию и наоборот, и, следовательно, не должно быть пренебрегнуто или отклонено.58,60 Знание процесса инвалидности в здравоохранении дает основы для специалистов в области здравоохранения для развития понимания сложных отношений между функцией, инвалидностью и инвалидностью. Это знание, в свою очередь, обеспечивает теоретическую основу, на которой можно организовать практику и основывать исследования, что облегчает эффективное управление и уход за пациентами, что отражается на значимых функциональных результатах.40,62"
         },
         {
           "id": "p4_b9",
           "page": 4,
           "order": 65,
-          "text": "Inherent in the integration and application of knowl-\nedge of the disablement process in health-care delivery is\nan understanding that the process is not unidirectional; that\nis, it is not necessarily unpreventable or irreversible.14 Fur-\nthermore, it is assumed that in most instances, depending\non factors such as the severity and duration of the patho-\nlogical condition, a patient’s access to quality health care\nas well as the motivation and desires of the patient, the\nprogression of the process can indeed be altered and the\npatient’s function improved.2,14,132,133\n",
+          "text": "Inherent in the integration and application of knowledge of the disablement process in health-care delivery is\nan understanding that the process is not unidirectional; that\nis, it is not necessarily unpreventable or irreversible.14 Furthermore, it is assumed that in most instances, depending\non factors such as the severity and duration of the pathological condition, a patient’s access to quality health care\nas well as the motivation and desires of the patient, the\nprogression of the process can indeed be altered and the\npatient’s function improved.2,14,132,133 An understanding and application of the disablement\nprocess shifts the focus of patient management from strict\ntreatment of a disease or injury to treatment of the impact\nthat a disease, injury, or disorder has on a patient’s function\nas well as the identification of the underlying causes of the\npatient’s dysfunction. This perspective puts the person, not\nsolely the disease or disorder, at the center of efforts to\nprevent or halt the progression of disablement by employing interventions that improve a patient’s functional abilities while simultaneously reducing or eliminating the\ncauses of disability.39,132,133 Models of Disablement",
           "type": "text",
           "bbox": {
             "x0": 302.9989929199219,
@@ -1248,61 +786,8 @@
             "quality_pass": "heuristic_v1"
           },
           "block_id": "p4_b9",
-          "normalized_text": "Inherent in the integration and application of knowledge of the disablement process in health-care delivery is\nan understanding that the process is not unidirectional; that\nis, it is not necessarily unpreventable or irreversible.14 Furthermore, it is assumed that in most instances, depending\non factors such as the severity and duration of the pathological condition, a patient’s access to quality health care\nas well as the motivation and desires of the patient, the\nprogression of the process can indeed be altered and the\npatient’s function improved.2,14,132,133",
-          "translated_text": "В интеграции и применении знаний о процессе инвалидности в медицинском обслуживании входит понимание того, что процесс не является однонаправленным, то есть не обязательно непредвиденным или необратимым.14 В дальнейшем предполагается, что в большинстве случаев, в зависимости от таких факторов, как тяжесть и продолжительность заболевания. У пациентов, имеющих возможность получить качественную медицинскую помощь, мотивацию и желания, прогрессирование процесса может быть изменено и функция пациента улучшена.2,14,132,133"
-        },
-        {
-          "id": "p4_b10",
-          "page": 4,
-          "order": 66,
-          "text": "An understanding and application of the disablement\nprocess shifts the focus of patient management from strict\ntreatment of a disease or injury to treatment of the impact\nthat a disease, injury, or disorder has on a patient’s function\nas well as the identification of the underlying causes of the\npatient’s dysfunction. This perspective puts the person, not\nsolely the disease or disorder, at the center of efforts to\nprevent or halt the progression of disablement by employ-\ning interventions that improve a patient’s functional abili-\nties while simultaneously reducing or eliminating the\ncauses of disability.39,132,133\n",
-          "type": "text",
-          "bbox": {
-            "x0": 303.0,
-            "y0": 242.15798950195312,
-            "x1": 542.548095703125,
-            "y1": 368.43798828125
-          },
-          "metadata": {
-            "font_size": 0,
-            "is_bold": false,
-            "is_italic": false,
-            "font": "",
-            "protected_tokens": [
-              "OR"
-            ],
-            "role": "body",
-            "cache_hit": true,
-            "quality_pass": "heuristic_v1"
-          },
-          "block_id": "p4_b10",
-          "normalized_text": "An understanding and application of the disablement\nprocess shifts the focus of patient management from strict\ntreatment of a disease or injury to treatment of the impact\nthat a disease, injury, or disorder has on a patient’s function\nas well as the identification of the underlying causes of the\npatient’s dysfunction. This perspective puts the person, not\nsolely the disease or disorder, at the center of efforts to\nprevent or halt the progression of disablement by employing interventions that improve a patient’s functional abilities while simultaneously reducing or eliminating the\ncauses of disability.39,132,133",
-          "translated_text": "Понимание и применение процесса инвалидности сдвигает внимание управления пациентом от строгого лечения заболевания или травмы к лечению воздействия заболевания, травмы или расстройства на функцию пациента, а также выявлению основных причин дисфункции пациента. Эта перспектива ставит человека, а не только болезнь или расстройство, в центр усилий по предотвращению или прекращению прогрессирования инвалидности путем применения вмешательств, которые улучшают функциональные способности пациента, одновременно сокращая или устраняя причины инвалидности.39,132,133"
-        },
-        {
-          "id": "p4_b11",
-          "page": 4,
-          "order": 67,
-          "text": "Models of Disablement\n",
-          "type": "text",
-          "bbox": {
-            "x0": 303.0,
-            "y0": 383.2869873046875,
-            "x1": 415.2121887207031,
-            "y1": 398.02301025390625
-          },
-          "metadata": {
-            "font_size": 12.0,
-            "is_bold": true,
-            "is_italic": false,
-            "font": "RotisSansSerif-Bold",
-            "protected_tokens": [],
-            "role": "heading2",
-            "cache_hit": true
-          },
-          "block_id": "p4_b11",
-          "normalized_text": "Models of Disablement",
-          "translated_text": "Модели инвалидности"
+          "normalized_text": "Inherent in the integration and application of knowledge of the disablement process in health-care delivery is\nan understanding that the process is not unidirectional; that\nis, it is not necessarily unpreventable or irreversible.14 Furthermore, it is assumed that in most instances, depending\non factors such as the severity and duration of the pathological condition, a patient’s access to quality health care\nas well as the motivation and desires of the patient, the\nprogression of the process can indeed be altered and the\npatient’s function improved.2,14,132,133 An understanding and application of the disablement\nprocess shifts the focus of patient management from strict\ntreatment of a disease or injury to treatment of the impact\nthat a disease, injury, or disorder has on a patient’s function\nas well as the identification of the underlying causes of the\npatient’s dysfunction. This perspective puts the person, not\nsolely the disease or disorder, at the center of efforts to\nprevent or halt the progression of disablement by employing interventions that improve a patient’s functional abilities while simultaneously reducing or eliminating the\ncauses of disability.39,132,133 Models of Disablement",
+          "translated_text": "В интеграции и применении знаний о процессе инвалидности в оказании медицинской помощи входит понимание того, что процесс не является однонаправленным, то есть не обязательно предотвратимым или необратимым.14 Кроме того, предполагается, что в большинстве случаев, в зависимости от таких факторов, как тяжесть и продолжительность болезни, логическое состояние, доступ пациента к качественной медицинской помощи, а также мотивация и желания пациента, прогрессирование процесса действительно может быть изменено и функция пациента улучшена.2,14,132,133 Понимание и применение процесса инвалидности сдвигает внимание управления пациентом от строгого лечения заболевания или травмы для лечения воздействия болезни, травмы или расстройства на функцию пациента, а также выявления основных причин дисфункции пациента. Эта перспектива ставит человека, а не только болезнь или расстройство, в центр усилий по предотвращению или прекращению прогрессирования инвалидности путем применения вмешательств, которые улучшают функциональные способности пациента, одновременно сокращая или устраняя причины инвалидности.39,132,133 Модели инвалидности"
         },
         {
           "id": "p4_b12",
@@ -1392,7 +877,7 @@
           "id": "p4_b15",
           "page": 4,
           "order": 71,
-          "text": "Impairments\nFunctional limitations\nDisabilities, handicaps, or societal limitations\n",
+          "text": "Impairments\nFunctional limitations\nDisabilities, handicaps, or societal limitations The conceptual frameworks of the Nagi, ICIDH, and\nNCMRR models of disablement, although applied widely 4\nPROCESS AND MODELS OF DISABLEMENT Use of Disablement Models and\nClassifications in Physical Therapy",
           "type": "text",
           "bbox": {
             "x0": 311.9989929199219,
@@ -1412,58 +897,8 @@
             "cache_hit": true
           },
           "block_id": "p4_b15",
-          "normalized_text": "Impairments\nFunctional limitations\nDisabilities, handicaps, or societal limitations",
-          "translated_text": "Ухудшение функциональных возможностей Инвалиды, инвалидности или социальные ограничения"
-        },
-        {
-          "id": "p4_b16",
-          "page": 4,
-          "order": 72,
-          "text": "The conceptual frameworks of the Nagi, ICIDH, and\nNCMRR models of disablement, although applied widely\n",
-          "type": "text",
-          "bbox": {
-            "x0": 302.9989929199219,
-            "y0": 714.6589965820312,
-            "x1": 535.2779541015625,
-            "y1": 737.4390258789062
-          },
-          "metadata": {
-            "font_size": 0,
-            "is_bold": false,
-            "is_italic": false,
-            "font": "",
-            "protected_tokens": [],
-            "role": "body",
-            "cache_hit": true
-          },
-          "block_id": "p4_b16",
-          "normalized_text": "The conceptual frameworks of the Nagi, ICIDH, and\nNCMRR models of disablement, although applied widely",
-          "translated_text": "Концептуальные рамки моделей инвалидности Nagi, ICIDH и NCMRR, хотя широко применяются"
-        },
-        {
-          "id": "p4_b17",
-          "page": 4,
-          "order": 73,
-          "text": "4\nPROCESS AND MODELS OF DISABLEMENT\n",
-          "type": "text",
-          "bbox": {
-            "x0": 45.0,
-            "y0": 27.31800651550293,
-            "x1": 222.90570068359375,
-            "y1": 38.3700065612793
-          },
-          "metadata": {
-            "font_size": 9.0,
-            "is_bold": true,
-            "is_italic": false,
-            "font": "RotisSansSerif-Bold",
-            "protected_tokens": [],
-            "role": "body",
-            "cache_hit": true
-          },
-          "block_id": "p4_b17",
-          "normalized_text": "4\nPROCESS AND MODELS OF DISABLEMENT",
-          "translated_text": "4 Процесс и модели инвалидности"
+          "normalized_text": "Impairments\nFunctional limitations\nDisabilities, handicaps, or societal limitations The conceptual frameworks of the Nagi, ICIDH, and\nNCMRR models of disablement, although applied widely 4\nPROCESS AND MODELS OF DISABLEMENT Use of Disablement Models and\nClassifications in Physical Therapy",
+          "translated_text": "Инвалиды Функциональные ограничения Инвалиды, инвалидности или социальные ограничения Концептуальные рамки моделей инвалидности Nagi, ICIDH и NCMRR, хотя широко применяются 4 Процесс и модели инвалидности Использование моделей и классификаций инвалидности в физической терапии"
         }
       ],
       "images": [
@@ -1484,31 +919,6 @@
     {
       "page_num": 5,
       "blocks": [
-        {
-          "id": "p5_b0",
-          "page": 5,
-          "order": 74,
-          "text": "Use of Disablement Models and\nClassifications in Physical Therapy\n",
-          "type": "text",
-          "bbox": {
-            "x0": 318.0,
-            "y0": 203.58401489257812,
-            "x1": 484.73004150390625,
-            "y1": 231.31959533691406
-          },
-          "metadata": {
-            "font_size": 12.0,
-            "is_bold": true,
-            "is_italic": false,
-            "font": "RotisSansSerif-Bold",
-            "protected_tokens": [],
-            "role": "heading2",
-            "cache_hit": true
-          },
-          "block_id": "p5_b0",
-          "normalized_text": "Use of Disablement Models and\nClassifications in Physical Therapy",
-          "translated_text": "Использование моделей и классификаций инвалидности в физической терапии"
-        },
         {
           "id": "p5_b1",
           "page": 5,
@@ -1569,7 +979,7 @@
           "id": "p5_b4",
           "page": 5,
           "order": 78,
-          "text": "Impairment of body structure (anatomical) and function\n(physiological)\nActivity limitation\n",
+          "text": "Impairment of body structure (anatomical) and function\n(physiological)\nActivity limitation Participation restriction\nImpact of contextual factors (environmental and personal) on functioning, disability, and health The components of the ICF model are compared in\nTable 1.1 to the Nagi and ICIDH models of disablement.",
           "type": "text",
           "bbox": {
             "x0": 68.45099639892578,
@@ -1584,72 +994,21 @@
             "font": "TimesNewRomanPSMT",
             "protected_tokens": [
               "Impairment of body structure (anatomical)",
-              "and function\n(physiological)"
-            ],
-            "role": "body",
-            "cache_hit": true
-          },
-          "block_id": "p5_b4",
-          "normalized_text": "Impairment of body structure (anatomical) and function\n(physiological)\nActivity limitation",
-          "translated_text": "Ухудшение структуры тела (анатомическая) и функции (физиологическая) Ограничение активности"
-        },
-        {
-          "id": "p5_b5",
-          "page": 5,
-          "order": 79,
-          "text": "Participation restriction\nImpact of contextual factors (environmental and person-\nal) on functioning, disability, and health\n",
-          "type": "text",
-          "bbox": {
-            "x0": 69.0,
-            "y0": 451.114990234375,
-            "x1": 295.2958068847656,
-            "y1": 485.3949890136719
-          },
-          "metadata": {
-            "font_size": 10.0,
-            "is_bold": false,
-            "is_italic": false,
-            "font": "TimesNewRomanPSMT",
-            "protected_tokens": [],
-            "role": "body",
-            "cache_hit": true
-          },
-          "block_id": "p5_b5",
-          "normalized_text": "Participation restriction\nImpact of contextual factors (environmental and personal) on functioning, disability, and health",
-          "translated_text": "Ограничение участия Влияние контекстуальных факторов (экологических и личных) на функционирование, инвалидность и здоровье"
-        },
-        {
-          "id": "p5_b6",
-          "page": 5,
-          "order": 80,
-          "text": "The components of the ICF model are compared in\nTable 1.1 to the Nagi and ICIDH models of disablement.\n",
-          "type": "text",
-          "bbox": {
-            "x0": 60.0,
-            "y0": 490.114990234375,
-            "x1": 288.9199523925781,
-            "y1": 512.89501953125
-          },
-          "metadata": {
-            "font_size": 0,
-            "is_bold": false,
-            "is_italic": false,
-            "font": "",
-            "protected_tokens": [
+              "and function\n(physiological)",
               "Table 1"
             ],
             "role": "body",
             "cache_hit": true
           },
-          "block_id": "p5_b6",
-          "normalized_text": "The components of the ICF model are compared in\nTable 1.1 to the Nagi and ICIDH models of disablement.",
-          "translated_text": "Компоненты модели ICF сравниваются в таблице 1.1 с моделями Nagi и ICIDH инвалидности."
+          "block_id": "p5_b4",
+          "normalized_text": "Impairment of body structure (anatomical) and function\n(physiological)\nActivity limitation Participation restriction\nImpact of contextual factors (environmental and personal) on functioning, disability, and health The components of the ICF model are compared in\nTable 1.1 to the Nagi and ICIDH models of disablement.",
+          "translated_text": "Ухудшение структуры тела (анатомическая) и функции (физиологическая) Ограничение деятельности Ограничение участия Влияние контекстных факторов (экологических и личных) на функционирование, инвалидность и здоровье Компоненты модели ICF сравниваются в таблице 1.1 с моделями Nagi и ICIDH инвалидности."
         },
         {
           "id": "p5_b7",
           "page": 5,
           "order": 81,
-          "text": "C H A P T E R  1\nTherapeutic Exercise: Foundational Concepts\n5\n",
+          "text": "C H A P T E R 1\nTherapeutic Exercise: Foundational Concepts\n5 TABLE 1.1\nComparison of Terminology of Three Disablement Models Model\nTissue/Cellular Level\nOrgan/System Level\nPersonal Level\nSocietal Level",
           "type": "text",
           "bbox": {
             "x0": 309.3699951171875,
@@ -1662,76 +1021,22 @@
             "is_bold": true,
             "is_italic": false,
             "font": "RotisSansSerif-Bold",
-            "protected_tokens": [],
-            "role": "heading2",
-            "chapter_level": "chapter",
-            "chapter_number": "CHAPTER 1",
-            "chapter_title": "Therapeutic Exercise: Foundational Concepts 5",
-            "chapter": "CHAPTER 1",
+            "protected_tokens": [
+              "TABLE 1"
+            ],
+            "role": "body",
             "cache_hit": true,
             "editor_pass": "heuristic_v1"
           },
           "block_id": "p5_b7",
-          "normalized_text": "C H A P T E R 1\nTherapeutic Exercise: Foundational Concepts\n5",
-          "translated_text": "С H А Р Т Е R 1 Терапевтические упражнения: основные понятия 5"
-        },
-        {
-          "id": "p5_b8",
-          "page": 5,
-          "order": 82,
-          "text": "TABLE 1.1\nComparison of Terminology of Three Disablement Models\n",
-          "type": "text",
-          "bbox": {
-            "x0": 66.09200286865234,
-            "y0": 64.1609878540039,
-            "x1": 399.69384765625,
-            "y1": 78.89698791503906
-          },
-          "metadata": {
-            "font_size": 10.0,
-            "is_bold": true,
-            "is_italic": false,
-            "font": "RotisSansSerif-Bold",
-            "protected_tokens": [
-              "TABLE 1"
-            ],
-            "role": "heading2",
-            "cache_hit": true
-          },
-          "block_id": "p5_b8",
-          "normalized_text": "TABLE 1.1\nComparison of Terminology of Three Disablement Models",
-          "translated_text": "ТАБЛЬКА 1.1 Сравнение терминологии трех моделей инвалидности"
-        },
-        {
-          "id": "p5_b9",
-          "page": 5,
-          "order": 83,
-          "text": "Model\nTissue/Cellular Level\nOrgan/System Level\nPersonal Level\nSocietal Level\n",
-          "type": "text",
-          "bbox": {
-            "x0": 66.09200286865234,
-            "y0": 90.0379867553711,
-            "x1": 497.20916748046875,
-            "y1": 101.260986328125
-          },
-          "metadata": {
-            "font_size": 9.0,
-            "is_bold": true,
-            "is_italic": false,
-            "font": "RotisSansSerif-ExtraBold",
-            "protected_tokens": [],
-            "role": "heading2",
-            "cache_hit": true
-          },
-          "block_id": "p5_b9",
-          "normalized_text": "Model\nTissue/Cellular Level\nOrgan/System Level\nPersonal Level\nSocietal Level",
-          "translated_text": "Модель тканей/клеточного уровня органа/системы Личный уровень Социальный уровень"
+          "normalized_text": "C H A P T E R 1\nTherapeutic Exercise: Foundational Concepts\n5 TABLE 1.1\nComparison of Terminology of Three Disablement Models Model\nTissue/Cellular Level\nOrgan/System Level\nPersonal Level\nSocietal Level",
+          "translated_text": "С H А Р Т Е R 1 Терапевтические упражнения: Основные понятия 5 Таблица 1.1 Сравнение терминологии трех моделей инвалидности Модель тканей/клеточного уровня Органы/системы Личный уровень Социальный уровень"
         },
         {
           "id": "p5_b10",
           "page": 5,
           "order": 84,
-          "text": "Nagi\nActive pathology\nImpairment\nFunctional limitation\nDisability\nICIDH*\nDisease\nImpairment \nDisability\nHandicap\nICF†\nImpairment of body \nActivity limitation\nParticipation restriction\nstructure/function\n",
+          "text": "Nagi\nActive pathology\nImpairment\nFunctional limitation\nDisability\nICIDH*\nDisease\nImpairment\nDisability\nHandicap\nICF†\nImpairment of body\nActivity limitation\nParticipation restriction\nstructure/function *International Classification of Impairments, Disabilities, and Handicaps.\n†International Classification of Functioning, Disability, and Health.",
           "type": "text",
           "bbox": {
             "x0": 66.09200286865234,
@@ -1746,37 +1051,12 @@
             "font": "Helvetica",
             "protected_tokens": [],
             "role": "body",
-            "cache_hit": true
-          },
-          "block_id": "p5_b10",
-          "normalized_text": "Nagi\nActive pathology\nImpairment\nFunctional limitation\nDisability\nICIDH*\nDisease\nImpairment\nDisability\nHandicap\nICF†\nImpairment of body\nActivity limitation\nParticipation restriction\nstructure/function",
-          "translated_text": "Наги Активная патология Ослабление Функциональное ограничение Инвалидность ICIDH* Заболевание Ослабление Инвалидность ICF† Ослабление организма Ослабление деятельности Ослабление участия Структура/функция ограничения"
-        },
-        {
-          "id": "p5_b11",
-          "page": 5,
-          "order": 85,
-          "text": "*International Classification of Impairments, Disabilities, and Handicaps.\n†International Classification of Functioning, Disability, and Health.\n",
-          "type": "text",
-          "bbox": {
-            "x0": 59.99440002441406,
-            "y0": 167.2340087890625,
-            "x1": 315.63232421875,
-            "y1": 185.4820098876953
-          },
-          "metadata": {
-            "font_size": 8.0,
-            "is_bold": false,
-            "is_italic": false,
-            "font": "Helvetica",
-            "protected_tokens": [],
-            "role": "body",
             "cache_hit": true,
             "editor_pass": "heuristic_v1"
           },
-          "block_id": "p5_b11",
-          "normalized_text": "*International Classification of Impairments, Disabilities, and Handicaps.\n†International Classification of Functioning, Disability, and Health.",
-          "translated_text": "*Международная классификация инвалидов, и инвалидов. †Международная классификация функционирования, инвалидности и здоровья."
+          "block_id": "p5_b10",
+          "normalized_text": "Nagi\nActive pathology\nImpairment\nFunctional limitation\nDisability\nICIDH*\nDisease\nImpairment\nDisability\nHandicap\nICF†\nImpairment of body\nActivity limitation\nParticipation restriction\nstructure/function *International Classification of Impairments, Disabilities, and Handicaps.\n†International Classification of Functioning, Disability, and Health.",
+          "translated_text": "Наги Активная патология Ослабление функции Ослабление ICIDH* Болезнь Ослабление ICF† Ослабление организма Ослабление деятельности Ослабление структуры/функции участия *Международная классификация Ослаблений, и Ослаблений. †Международная классификация функционирования, Ослабления и здоровья."
         },
         {
           "id": "p5_b12",
@@ -1973,7 +1253,7 @@
           "id": "p6_b6",
           "page": 6,
           "order": 93,
-          "text": "Impairments\nImpairments are the consequences of pathological condi-\ntions; that is, they are the signs and symptoms that reflect\nabnormalities at the body system, organ, or tissue\nlevel.2,36,58\n",
+          "text": "Impairments\nImpairments are the consequences of pathological conditions; that is, they are the signs and symptoms that reflect\nabnormalities at the body system, organ, or tissue\nlevel.2,36,58 Types of Impairment\nImpairments can be categorized as arising from anatomical, physiological, or psychological alterations as well as\nlosses or abnormalities of structure or function of a body\nsystem. Physical therapists typically provide care and services to patients with impairments that affect the following\nsystems.",
           "type": "text",
           "bbox": {
             "x0": 303.0,
@@ -1991,44 +1271,18 @@
             ],
             "role": "body",
             "cache_hit": true,
+            "quality_pass": "heuristic_v1",
             "editor_pass": "heuristic_v1"
           },
           "block_id": "p6_b6",
-          "normalized_text": "Impairments\nImpairments are the consequences of pathological conditions; that is, they are the signs and symptoms that reflect\nabnormalities at the body system, organ, or tissue\nlevel.2,36,58",
-          "translated_text": "Опасности являются последствиями патологических состояний; то есть они являются признаками и симптомами, которые отражают аномалии на уровне системы тела, органов или тканей.2,36,58"
-        },
-        {
-          "id": "p6_b7",
-          "page": 6,
-          "order": 94,
-          "text": "Types of Impairment\nImpairments can be categorized as arising from anatomi-\ncal, physiological, or psychological alterations as well as\nlosses or abnormalities of structure or function of a body\nsystem. Physical therapists typically provide care and serv-\nices to patients with impairments that affect the following\nsystems.\n",
-          "type": "text",
-          "bbox": {
-            "x0": 303.0,
-            "y0": 322.5489807128906,
-            "x1": 541.11279296875,
-            "y1": 402.9389953613281
-          },
-          "metadata": {
-            "font_size": 10.0,
-            "is_bold": true,
-            "is_italic": false,
-            "font": "TimesNewRomanPS-BoldMT",
-            "protected_tokens": [
-              "OR"
-            ],
-            "role": "body",
-            "cache_hit": true
-          },
-          "block_id": "p6_b7",
-          "normalized_text": "Types of Impairment\nImpairments can be categorized as arising from anatomical, physiological, or psychological alterations as well as\nlosses or abnormalities of structure or function of a body\nsystem. Physical therapists typically provide care and services to patients with impairments that affect the following\nsystems.",
-          "translated_text": "Виды нарушений Взрывы могут быть классифицированы как возникающие из-за анатомических, физиологических или психологических изменений, а также потери или аномалии структуры или функции системы тела."
+          "normalized_text": "Impairments\nImpairments are the consequences of pathological conditions; that is, they are the signs and symptoms that reflect\nabnormalities at the body system, organ, or tissue\nlevel.2,36,58 Types of Impairment\nImpairments can be categorized as arising from anatomical, physiological, or psychological alterations as well as\nlosses or abnormalities of structure or function of a body\nsystem. Physical therapists typically provide care and services to patients with impairments that affect the following\nsystems.",
+          "translated_text": "Опасности являются последствиями патологических состояний; то есть они являются признаками и симптомами, которые отражают аномалии на уровне системы тела, органов или тканей.2,36,58 Типы нарушений Опасности могут быть классифицированы как возникающие из-за анатомических, физиологических или психологических изменений, а также потерь или аномалий структуры или функции системы тела. Физиотерапевты обычно оказывают помощь и услуги пациентам с нарушениями, которые влияют на следующие системы."
         },
         {
           "id": "p6_b8",
           "page": 6,
           "order": 95,
-          "text": "Musculoskeletal\nNeuromuscular\nCardiovascular/pulmonary\nIntegumentary\n",
+          "text": "Musculoskeletal\nNeuromuscular\nCardiovascular/pulmonary\nIntegumentary Most impairments of these body systems primarily\nare the result of abnormalities of physiological function\nor anatomical structure. Some representative examples\nof physical impairments commonly identified by physical\ntherapists and managed with therapeutic exercise interventions are noted in Box 1.2.",
           "type": "text",
           "bbox": {
             "x0": 312.0010070800781,
@@ -2041,40 +1295,15 @@
             "is_bold": false,
             "is_italic": false,
             "font": "TimesNewRomanPSMT",
-            "protected_tokens": [],
-            "role": "heading2",
-            "cache_hit": true
-          },
-          "block_id": "p6_b8",
-          "normalized_text": "Musculoskeletal\nNeuromuscular\nCardiovascular/pulmonary\nIntegumentary",
-          "translated_text": "Мышечная и скелетная Нейромышечная, Кардиоваскульная и лёгкая Интегментальная"
-        },
-        {
-          "id": "p6_b9",
-          "page": 6,
-          "order": 96,
-          "text": "Most impairments of these body systems primarily\nare the result of abnormalities of physiological function\nor anatomical structure. Some representative examples\nof physical impairments commonly identified by physical\ntherapists and managed with therapeutic exercise interven-\ntions are noted in Box 1.2.\n",
-          "type": "text",
-          "bbox": {
-            "x0": 303.0010070800781,
-            "y0": 461.15899658203125,
-            "x1": 538.9338989257812,
-            "y1": 529.93896484375
-          },
-          "metadata": {
-            "font_size": 0,
-            "is_bold": false,
-            "is_italic": false,
-            "font": "",
             "protected_tokens": [
               "OR"
             ],
             "role": "body",
             "cache_hit": true
           },
-          "block_id": "p6_b9",
-          "normalized_text": "Most impairments of these body systems primarily\nare the result of abnormalities of physiological function\nor anatomical structure. Some representative examples\nof physical impairments commonly identified by physical\ntherapists and managed with therapeutic exercise interventions are noted in Box 1.2.",
-          "translated_text": "Большинство нарушений этих систем организма в первую очередь обусловлены нарушениями физиологической функции или анатомической структуры."
+          "block_id": "p6_b8",
+          "normalized_text": "Musculoskeletal\nNeuromuscular\nCardiovascular/pulmonary\nIntegumentary Most impairments of these body systems primarily\nare the result of abnormalities of physiological function\nor anatomical structure. Some representative examples\nof physical impairments commonly identified by physical\ntherapists and managed with therapeutic exercise interventions are noted in Box 1.2.",
+          "translated_text": "Мышечная и скелетная Нейромышечная Кардиоваскулярная/ лёгкая Интегиментальная Большинство нарушений этих систем тела в основном связаны с нарушениями физиологической функции или анатомической структуры. Некоторые представительные примеры физических нарушений, которые обычно выявляются физиотерапевтами и управляются с помощью терапевтических упражнений, приведены в поле 1.2."
         },
         {
           "id": "p6_b10",
@@ -2168,7 +1397,7 @@
           "id": "p7_b1",
           "page": 7,
           "order": 100,
-          "text": "C H A P T E R  1\nTherapeutic Exercise: Foundational Concepts\n7\n",
+          "text": "C H A P T E R 1\nTherapeutic Exercise: Foundational Concepts\n7 BOX 1.2\nCommon Physical Impairments\nManaged with Therapeutic Exercise Musculoskeletal\n• Pain\n• Muscle weakness/reduced torque production\n• Decreased muscular endurance\n• Limited range of motion due to • Restriction of the joint capsule\n• Restriction of periarticular connective tissue\n• Decreased muscle length\n• Joint hypermobility\n• Faulty posture\n• Muscle length/strength imbalances",
           "type": "text",
           "bbox": {
             "x0": 309.3699951171875,
@@ -2182,73 +1411,20 @@
             "is_italic": false,
             "font": "RotisSansSerif-Bold",
             "protected_tokens": [],
-            "role": "heading2",
-            "chapter_level": "chapter",
-            "chapter_number": "CHAPTER 1",
-            "chapter_title": "Therapeutic Exercise: Foundational Concepts 7",
-            "chapter": "CHAPTER 1",
+            "role": "body",
             "cache_hit": true,
+            "quality_pass": "heuristic_v1",
             "editor_pass": "heuristic_v1"
           },
           "block_id": "p7_b1",
-          "normalized_text": "C H A P T E R 1\nTherapeutic Exercise: Foundational Concepts\n7",
-          "translated_text": "С H А Р Т Е R 1 Терапевтические упражнения: основные понятия 7"
-        },
-        {
-          "id": "p7_b2",
-          "page": 7,
-          "order": 101,
-          "text": "BOX 1.2\nCommon Physical Impairments\nManaged with Therapeutic Exercise\n",
-          "type": "text",
-          "bbox": {
-            "x0": 324.0,
-            "y0": 61.819000244140625,
-            "x1": 524.83154296875,
-            "y1": 87.3268814086914
-          },
-          "metadata": {
-            "font_size": 9.0,
-            "is_bold": true,
-            "is_italic": false,
-            "font": "RotisSansSerif-Bold",
-            "protected_tokens": [],
-            "role": "body",
-            "cache_hit": true
-          },
-          "block_id": "p7_b2",
-          "normalized_text": "BOX 1.2\nCommon Physical Impairments\nManaged with Therapeutic Exercise",
-          "translated_text": "КОБОКС 1.2 Частые физические нарушения, устраненные с помощью терапевтических упражнений"
-        },
-        {
-          "id": "p7_b3",
-          "page": 7,
-          "order": 102,
-          "text": "Musculoskeletal\n• Pain\n• Muscle weakness/reduced torque production\n• Decreased muscular endurance\n• Limited range of motion due to • Restriction of the joint capsule\n• Restriction of periarticular connective tissue\n• Decreased muscle length\n• Joint hypermobility\n• Faulty posture\n• Muscle length/strength imbalances",
-          "type": "text",
-          "bbox": {
-            "x0": 324.0,
-            "y0": 100.51502990722656,
-            "x1": 499.6285705566406,
-            "y1": 156.38742065429688
-          },
-          "metadata": {
-            "font_size": 10.0,
-            "is_bold": true,
-            "is_italic": false,
-            "font": "RotisSerif-Bold",
-            "protected_tokens": [],
-            "role": "body",
-            "cache_hit": true
-          },
-          "block_id": "p7_b3",
-          "normalized_text": "Musculoskeletal\n• Pain\n• Muscle weakness/reduced torque production\n• Decreased muscular endurance\n• Limited range of motion due to • Restriction of the joint capsule\n• Restriction of periarticular connective tissue\n• Decreased muscle length\n• Joint hypermobility\n• Faulty posture\n• Muscle length/strength imbalances",
-          "translated_text": "Мышечная и скелетная • Боль • Мышечная слабость/ снижение производительности крутящего момента • Уменьшение мышечной выносливости • Ограниченный диапазон движений из-за • Ограничения суставной капсулы • Ограничения периартикулярной соединительной ткани • Уменьшение длины мышечной ткани • Гипермобильность суставов • Неисправное положение • Расстояние мышечной длины/ силы"
+          "normalized_text": "C H A P T E R 1\nTherapeutic Exercise: Foundational Concepts\n7 BOX 1.2\nCommon Physical Impairments\nManaged with Therapeutic Exercise Musculoskeletal\n• Pain\n• Muscle weakness/reduced torque production\n• Decreased muscular endurance\n• Limited range of motion due to • Restriction of the joint capsule\n• Restriction of periarticular connective tissue\n• Decreased muscle length\n• Joint hypermobility\n• Faulty posture\n• Muscle length/strength imbalances",
+          "translated_text": "С H А Р Т Е R 1 Терапевтические упражнения: Основные понятия 7 КОБОКС 1.2 Частые физические нарушения, лечащиеся терапевтическими упражнениями Мышечная и скелетная боль • Мышечная слабость/ снижение производительности крутящего момента • Уменьшение мышечной выносливости • Ограниченный диапазон движений из-за • Ограничения суставной капсулы • Ограничения периартикулярной соединительной ткани • D увеличение длины мышц • гипермобильность суставов • Неисправность позы • дисбаланс длины и силы мышц"
         },
         {
           "id": "p7_b5",
           "page": 7,
           "order": 104,
-          "text": "Neuromuscular\n• Pain\n• Impaired balance, postural stability, or control\n• Incoordination, faulty timing\n• Delayed motor development\n• Abnormal tone (hypotonia, hypertonia, dystonia)\n• Ineffective/inefficient functional movement strategies\n",
+          "text": "Neuromuscular\n• Pain\n• Impaired balance, postural stability, or control\n• Incoordination, faulty timing\n• Delayed motor development\n• Abnormal tone (hypotonia, hypertonia, dystonia)\n• Ineffective/inefficient functional movement strategies Cardiovascular/Pulmonary\n• Decreased aerobic capacity (cardiopulmonary endu- rance)\n• Impaired circulation (lymphatic, venous, arterial)\n• Pain with sustained physical activity (intermittent claudication) Integumentary\n• Skin hypomobility (e.g., immobile or adherent scarring) A B",
           "type": "text",
           "bbox": {
             "x0": 324.0,
@@ -2265,64 +1441,13 @@
               "OR"
             ],
             "role": "body",
-            "cache_hit": true
-          },
-          "block_id": "p7_b5",
-          "normalized_text": "Neuromuscular\n• Pain\n• Impaired balance, postural stability, or control\n• Incoordination, faulty timing\n• Delayed motor development\n• Abnormal tone (hypotonia, hypertonia, dystonia)\n• Ineffective/inefficient functional movement strategies",
-          "translated_text": "Нейромышечная • Боль • Ухудшение равновесия, стабильности позы или контроля • Некоординация, неправильное время • Задержка двигательного развития • Аномальный тон (гипотония, гипертония, дистония) • Неэффективные/неэффективные стратегии функционального движения"
-        },
-        {
-          "id": "p7_b6",
-          "page": 7,
-          "order": 105,
-          "text": "Cardiovascular/Pulmonary\n• Decreased aerobic capacity (cardiopulmonary endu- rance)\n• Impaired circulation (lymphatic, venous, arterial)\n• Pain with sustained physical activity (intermittent claudication)",
-          "type": "text",
-          "bbox": {
-            "x0": 324.0,
-            "y0": 318.5149841308594,
-            "x1": 528.540283203125,
-            "y1": 341.38800048828125
-          },
-          "metadata": {
-            "font_size": 10.0,
-            "is_bold": true,
-            "is_italic": false,
-            "font": "RotisSerif-Bold",
-            "protected_tokens": [],
-            "role": "body",
-            "cache_hit": true
-          },
-          "block_id": "p7_b6",
-          "normalized_text": "Cardiovascular/Pulmonary\n• Decreased aerobic capacity (cardiopulmonary endu- rance)\n• Impaired circulation (lymphatic, venous, arterial)\n• Pain with sustained physical activity (intermittent claudication)",
-          "translated_text": "Сердечно-сосудистые/ лёгкие • Снижение аэробной способности (сердечно-лугочная заболеваемость) • нарушение кровообращения (лимфатическая, венозная, артериальная) • Боль с длительной физической активностью (перерывная клаудикация)"
-        },
-        {
-          "id": "p7_b9",
-          "page": 7,
-          "order": 108,
-          "text": "Integumentary\n• Skin hypomobility (e.g., immobile or adherent scarring) A B",
-          "type": "text",
-          "bbox": {
-            "x0": 324.0,
-            "y0": 395.0149841308594,
-            "x1": 542.798095703125,
-            "y1": 417.88800048828125
-          },
-          "metadata": {
-            "font_size": 10.0,
-            "is_bold": true,
-            "is_italic": false,
-            "font": "RotisSerif-Bold",
-            "protected_tokens": [
-              "OR"
-            ],
-            "role": "body",
             "cache_hit": true,
+            "quality_pass": "heuristic_v1",
             "editor_pass": "heuristic_v1"
           },
-          "block_id": "p7_b9",
-          "normalized_text": "Integumentary\n• Skin hypomobility (e.g., immobile or adherent scarring) A B",
-          "translated_text": "Интегментальная • Гипомобильность кожи (например, неподвижная или привязанная рубка) А В"
+          "block_id": "p7_b5",
+          "normalized_text": "Neuromuscular\n• Pain\n• Impaired balance, postural stability, or control\n• Incoordination, faulty timing\n• Delayed motor development\n• Abnormal tone (hypotonia, hypertonia, dystonia)\n• Ineffective/inefficient functional movement strategies Cardiovascular/Pulmonary\n• Decreased aerobic capacity (cardiopulmonary endu- rance)\n• Impaired circulation (lymphatic, venous, arterial)\n• Pain with sustained physical activity (intermittent claudication) Integumentary\n• Skin hypomobility (e.g., immobile or adherent scarring) A B",
+          "translated_text": "Нейромышечная • Боль • нарушение равновесия, стабильности позы или контроля • Некоординация, неправильное время действия • Задержка двигательного развития • Аномальный тон (гипотония, гипертония, дистония) • Неэффективные/ стратегии функционального движения фатическая, венозная, артериальная) • Боль с длительной физической активностью (интермитентная клаудикация) Интегментальная • Гипомобильность кожи (например, неподвижная или привязанная рубка) А В"
         },
         {
           "id": "p7_b12",
@@ -2516,7 +1641,7 @@
           "id": "p8_b3",
           "page": 8,
           "order": 117,
-          "text": "As previously indicated in Figure 1.2, functional limi-\ntations may be physical, social, or psychological in nature.\nThe focus of physical therapy interventions is on the man-\nagement of limitations of physical functioning while\nrespecting the needs of the whole person and recognizing\nthat social and psychological influences can also limit a\nperson’s ability to function. In addition, the focus must be\non those functional limitations that are most important to\nthe patient and those that are or could be directly causing\ndisability. When impairments cause functional limitations, a\nperson’s quality of life may begin to deteriorate (see Fig.\n1.2). It should also be noted that a single or even several\nmild impairments often do not cause loss of function. Evi-\ndence suggests that the severity and complexity of impair-\nments must reach a critical level, which is different for each\nperson, before degradation of function begins to occur.95,103\n",
+          "text": "As previously indicated in Figure 1.2, functional limitations may be physical, social, or psychological in nature.\nThe focus of physical therapy interventions is on the management of limitations of physical functioning while\nrespecting the needs of the whole person and recognizing\nthat social and psychological influences can also limit a\nperson’s ability to function. In addition, the focus must be\non those functional limitations that are most important to\nthe patient and those that are or could be directly causing\ndisability. When impairments cause functional limitations, a\nperson’s quality of life may begin to deteriorate (see Fig.\n1.2). It should also be noted that a single or even several\nmild impairments often do not cause loss of function. Evidence suggests that the severity and complexity of impairments must reach a critical level, which is different for each\nperson, before degradation of function begins to occur.95,103 Types of Functional Limitations\nFunctional limitations in the physical domain deal with\nthe performance of sensorimotor tasks, that is, total body\nactions that are typically components or elements of functional activities.2,89 These activities include basic activities\nof daily living (ADL), such as bathing, dressing, or feeding, and the more complex tasks known as instrumental\nactivities of daily living (IADL), such as occupational\ntasks, school-related skills, housekeeping, and recreational\nactivities, or community mobility (driving, using public\ntransportation), just to name a few.",
           "type": "text",
           "bbox": {
             "x0": 302.9989013671875,
@@ -2531,51 +1656,24 @@
             "font": "",
             "protected_tokens": [
               "Fig.\n1",
-              "OR"
-            ],
-            "role": "body",
-            "cache_hit": true,
-            "quality_pass": "heuristic_v1"
-          },
-          "block_id": "p8_b3",
-          "normalized_text": "As previously indicated in Figure 1.2, functional limitations may be physical, social, or psychological in nature.\nThe focus of physical therapy interventions is on the management of limitations of physical functioning while\nrespecting the needs of the whole person and recognizing\nthat social and psychological influences can also limit a\nperson’s ability to function. In addition, the focus must be\non those functional limitations that are most important to\nthe patient and those that are or could be directly causing\ndisability. When impairments cause functional limitations, a\nperson’s quality of life may begin to deteriorate (see Fig.\n1.2). It should also be noted that a single or even several\nmild impairments often do not cause loss of function. Evidence suggests that the severity and complexity of impairments must reach a critical level, which is different for each\nperson, before degradation of function begins to occur.95,103",
-          "translated_text": "Как указано ранее на рисунке 1.2, функциональные ограничения могут иметь физический, социальный или психологический характер. Физиотерапевтические вмешательства сосредоточены на преодолении ограничений физического функционирования при уважении потребностей всего человека и признании того, что социальные и психологические влияния также могут ограничить способность человека функционировать. Кроме того, необходимо сосредоточиться на тех функциональных ограничениях, которые наиболее важны для пациента, и на тех, которые являются или могут быть непосредственным причиной инвалидности. Следует также отметить, что одно или даже несколько легких нарушений часто не вызывают потери функции."
-        },
-        {
-          "id": "p8_b4",
-          "page": 8,
-          "order": 118,
-          "text": "Types of Functional Limitations\nFunctional limitations in the physical domain deal with\nthe performance of sensorimotor tasks, that is, total body\nactions that are typically components or elements of func-\ntional activities.2,89 These activities include basic activities\nof daily living (ADL), such as bathing, dressing, or feed-\ning, and the more complex tasks known as instrumental\nactivities of daily living (IADL), such as occupational\ntasks, school-related skills, housekeeping, and recreational\nactivities, or community mobility (driving, using public\ntransportation), just to name a few.\n",
-          "type": "text",
-          "bbox": {
-            "x0": 303.0,
-            "y0": 282.50897216796875,
-            "x1": 538.4910278320312,
-            "y1": 408.89898681640625
-          },
-          "metadata": {
-            "font_size": 10.0,
-            "is_bold": true,
-            "is_italic": false,
-            "font": "TimesNewRomanPS-BoldMT",
-            "protected_tokens": [
               "OR",
               "These activities include basic activities\nof daily living (ADL)",
               "and the more complex tasks known as instrumental\nactivities of daily living (IADL)"
             ],
             "role": "body",
             "cache_hit": true,
-            "quality_pass": "heuristic_v1"
+            "quality_pass": "heuristic_v1",
+            "editor_pass": "heuristic_v1"
           },
-          "block_id": "p8_b4",
-          "normalized_text": "Types of Functional Limitations\nFunctional limitations in the physical domain deal with\nthe performance of sensorimotor tasks, that is, total body\nactions that are typically components or elements of functional activities.2,89 These activities include basic activities\nof daily living (ADL), such as bathing, dressing, or feeding, and the more complex tasks known as instrumental\nactivities of daily living (IADL), such as occupational\ntasks, school-related skills, housekeeping, and recreational\nactivities, or community mobility (driving, using public\ntransportation), just to name a few.",
-          "translated_text": "Виды функциональных ограничений Функциональные ограничения в физическом пространстве связаны с выполнением сенсомоторных задач, то есть общего количества действий тела, которые обычно являются компонентами или элементами функциональной деятельности. mplex задачи, известные как инструментальные мероприятия повседневной жизни (IADL), такие как профессиональные задачи, навыки, связанные с школой, уборка дома и развлекательные мероприятия, или мобильность сообщества (вождение автомобиля, использование общественного транспорта), только чтобы назвать несколько."
+          "block_id": "p8_b3",
+          "normalized_text": "As previously indicated in Figure 1.2, functional limitations may be physical, social, or psychological in nature.\nThe focus of physical therapy interventions is on the management of limitations of physical functioning while\nrespecting the needs of the whole person and recognizing\nthat social and psychological influences can also limit a\nperson’s ability to function. In addition, the focus must be\non those functional limitations that are most important to\nthe patient and those that are or could be directly causing\ndisability. When impairments cause functional limitations, a\nperson’s quality of life may begin to deteriorate (see Fig.\n1.2). It should also be noted that a single or even several\nmild impairments often do not cause loss of function. Evidence suggests that the severity and complexity of impairments must reach a critical level, which is different for each\nperson, before degradation of function begins to occur.95,103 Types of Functional Limitations\nFunctional limitations in the physical domain deal with\nthe performance of sensorimotor tasks, that is, total body\nactions that are typically components or elements of functional activities.2,89 These activities include basic activities\nof daily living (ADL), such as bathing, dressing, or feeding, and the more complex tasks known as instrumental\nactivities of daily living (IADL), such as occupational\ntasks, school-related skills, housekeeping, and recreational\nactivities, or community mobility (driving, using public\ntransportation), just to name a few.",
+          "translated_text": "Как указано ранее на рисунке 1.2, функциональные ограничения могут иметь физический, социальный или психологический характер. Основное внимание физиотерапевтических вмешательств уделяется управлению ограничениями физического функционирования при уважении потребностей всего человека и признании того, что социальные и психологические влияния также могут ограничить способность человека функционировать. Кроме того, необходимо сосредоточиться на тех функциональных ограничениях, которые наиболее важны для пациента, и на тех, которые являются или могут быть непосредственным причиной инвалидности. Следует также отметить, что одно или даже несколько легких нарушений часто не вызывают потери функции. Доказательства свидетельствуют о том, что тяжести и сложность нарушений должны достигать критического уровня, который отличается для каждого человека, прежде чем начинает происходить деградация функции.95,103 Типы функциональных ограничений Функциональные ограничения в физическом пространстве имеют отношение к выполнению сенсомоторных задач, то есть к общему количеству действий организма, которые являются т В частности, они являются компонентами или элементами функциональной деятельности.2,89 Эти мероприятия включают в себя основные мероприятия повседневной жизни (ADL), такие как купаться, одеваться или кормить, и более сложные задачи, известные как инструментальные мероприятия повседневной жизни (IADL), такие как профессиональные задачи, навыки, связанные с школой, уборка дома и развлекательные мероприятия, или Общественная мобильность (вождение, использование общественного транспорта), только чтобы назвать несколько."
         },
         {
           "id": "p8_b5",
           "page": 8,
           "order": 119,
-          "text": "Box 1.3 lists a number of functional limitations that\ncan arise from physical impairments, involve whole-body\nmovements, and are necessary component motions of sim-\nple to complex daily living skills. Defining functional limi-\n",
+          "text": "Box 1.3 lists a number of functional limitations that\ncan arise from physical impairments, involve whole-body\nmovements, and are necessary component motions of simple to complex daily living skills. Defining functional limi- 8\nPROCESS AND MODELS OF DISABLEMENT FIGURE 1.4 Limited ability to reach overhead (functional limitation) as the\nresult of impaired shoulder mobility may lead to difficulty performing personal grooming or household tasks independently (disability).",
           "type": "text",
           "bbox": {
             "x0": 303.0,
@@ -2588,72 +1686,23 @@
             "is_bold": false,
             "is_italic": false,
             "font": "",
-            "protected_tokens": [],
-            "role": "body",
-            "cache_hit": true
-          },
-          "block_id": "p8_b5",
-          "normalized_text": "Box 1.3 lists a number of functional limitations that\ncan arise from physical impairments, involve whole-body\nmovements, and are necessary component motions of simple to complex daily living skills. Defining functional limi-",
-          "translated_text": "В поле 1.3 перечислены ряд функциональных ограничений, которые могут возникнуть из-за физических нарушений, включают движения всего тела и являются необходимыми компонентами движений, включая сложные и сложные навыки повседневной жизни."
-        },
-        {
-          "id": "p8_b6",
-          "page": 8,
-          "order": 120,
-          "text": "8\nPROCESS AND MODELS OF DISABLEMENT\n",
-          "type": "text",
-          "bbox": {
-            "x0": 45.0,
-            "y0": 27.31800651550293,
-            "x1": 222.90570068359375,
-            "y1": 38.3700065612793
-          },
-          "metadata": {
-            "font_size": 9.0,
-            "is_bold": true,
-            "is_italic": false,
-            "font": "RotisSansSerif-Bold",
-            "protected_tokens": [],
-            "role": "body",
-            "cache_hit": true
-          },
-          "block_id": "p8_b6",
-          "normalized_text": "8\nPROCESS AND MODELS OF DISABLEMENT",
-          "translated_text": "8 Процесс и модели инвалидности"
-        },
-        {
-          "id": "p8_b7",
-          "page": 8,
-          "order": 121,
-          "text": "FIGURE 1.4 Limited ability to reach overhead (functional limitation) as the\nresult of impaired shoulder mobility may lead to difficulty performing person-\nal grooming or household tasks independently (disability).\n",
-          "type": "text",
-          "bbox": {
-            "x0": 45.0,
-            "y0": 677.5950317382812,
-            "x1": 284.5943908691406,
-            "y1": 705.2669677734375
-          },
-          "metadata": {
-            "font_size": 8.0,
-            "is_bold": true,
-            "is_italic": false,
-            "font": "RotisSansSerif-Bold",
             "protected_tokens": [
               "OR",
               "as the\nresult of impaired shoulder mobility may lead to difficulty performing personal grooming or household tasks independently (disability)"
             ],
             "role": "body",
-            "cache_hit": true
+            "cache_hit": true,
+            "quality_pass": "heuristic_v1"
           },
-          "block_id": "p8_b7",
-          "normalized_text": "FIGURE 1.4 Limited ability to reach overhead (functional limitation) as the\nresult of impaired shoulder mobility may lead to difficulty performing personal grooming or household tasks independently (disability).",
-          "translated_text": "Рисунок 1.4 Ограниченная способность достигать верхних расходов (функциональное ограничение) в результате нарушения подвижности плеч может привести к трудностям самостоятельно выполнения личных или бытовых задач (инвалидность)."
+          "block_id": "p8_b5",
+          "normalized_text": "Box 1.3 lists a number of functional limitations that\ncan arise from physical impairments, involve whole-body\nmovements, and are necessary component motions of simple to complex daily living skills. Defining functional limi- 8\nPROCESS AND MODELS OF DISABLEMENT FIGURE 1.4 Limited ability to reach overhead (functional limitation) as the\nresult of impaired shoulder mobility may lead to difficulty performing personal grooming or household tasks independently (disability).",
+          "translated_text": "Раздел 1.3 перечисляет ряд функциональных ограничений, которые могут возникнуть из-за физических нарушений, включают в себя движения всего тела и являются необходимыми компонентами простых и сложных навыков повседневной жизни. Определение функционального лимита - 8 ПРОЦЕСИ И МОДЕЛЫ ДЕСАБЛИМЕНТНОГО ПОЛОЖЕНИЯ Фигура 1.4 Ограниченная способность достигать верхних расходов (функциональное ограничение) в результате нарушения передвижности плеча может привести к трудностям в самостоятельном выполнении личных уборки или домашних задач (инвалидность)."
         },
         {
           "id": "p8_b8",
           "page": 8,
           "order": 122,
-          "text": "BOX 1.3\nCommon Functional Limitations\nRelated to Physical Tasks Limitation of",
+          "text": "BOX 1.3\nCommon Functional Limitations\nRelated to Physical Tasks Limitation of • Reaching and grasping\n• Lifting and carrying\n• Pushing and pulling\n• Bending and stooping\n• Turning and twisting\n• Throwing and catching\n• Rolling\n• Standing\n• Squatting and kneeling\n• Standing up and sitting down\n• Getting in and out of bed\n• Crawling, walking, running\n• Ascending and descending stairs\n• Hopping and jumping\n• Kicking",
           "type": "text",
           "bbox": {
             "x0": 309.0,
@@ -2667,37 +1716,13 @@
             "is_italic": false,
             "font": "RotisSansSerif-Bold",
             "protected_tokens": [],
-            "role": "heading2",
-            "cache_hit": true
+            "role": "body",
+            "cache_hit": true,
+            "quality_pass": "heuristic_v1"
           },
           "block_id": "p8_b8",
-          "normalized_text": "BOX 1.3\nCommon Functional Limitations\nRelated to Physical Tasks Limitation of",
-          "translated_text": "РОБОКС 1.3 Общие функциональные ограничения, связанные с физическими задачами"
-        },
-        {
-          "id": "p8_b10",
-          "page": 8,
-          "order": 124,
-          "text": "• Reaching and grasping\n• Lifting and carrying\n• Pushing and pulling\n• Bending and stooping\n• Turning and twisting\n• Throwing and catching\n• Rolling\n• Standing\n• Squatting and kneeling\n• Standing up and sitting down\n• Getting in and out of bed\n• Crawling, walking, running\n• Ascending and descending stairs\n• Hopping and jumping\n• Kicking\n",
-          "type": "text",
-          "bbox": {
-            "x0": 309.0,
-            "y0": 539.506103515625,
-            "x1": 440.73565673828125,
-            "y1": 704.2825927734375
-          },
-          "metadata": {
-            "font_size": 9.0,
-            "is_bold": false,
-            "is_italic": false,
-            "font": "RotisSerif",
-            "protected_tokens": [],
-            "role": "body",
-            "cache_hit": true
-          },
-          "block_id": "p8_b10",
-          "normalized_text": "• Reaching and grasping\n• Lifting and carrying\n• Pushing and pulling\n• Bending and stooping\n• Turning and twisting\n• Throwing and catching\n• Rolling\n• Standing\n• Squatting and kneeling\n• Standing up and sitting down\n• Getting in and out of bed\n• Crawling, walking, running\n• Ascending and descending stairs\n• Hopping and jumping\n• Kicking",
-          "translated_text": "• Подъем и похватка • подъем и подъем • толчок и тяга • сгибание и сгибание • поворачивание и поворачивание • бросание и поймание • ролинг • стояние • прикоснуться и коленичить • стояние и сидение • вхождение и выхождение из постели • ползание, ходьба, бегство • подъем и спуск по лестнице • прыжки и прыжки • ускорение"
+          "normalized_text": "BOX 1.3\nCommon Functional Limitations\nRelated to Physical Tasks Limitation of • Reaching and grasping\n• Lifting and carrying\n• Pushing and pulling\n• Bending and stooping\n• Turning and twisting\n• Throwing and catching\n• Rolling\n• Standing\n• Squatting and kneeling\n• Standing up and sitting down\n• Getting in and out of bed\n• Crawling, walking, running\n• Ascending and descending stairs\n• Hopping and jumping\n• Kicking",
+          "translated_text": "КРИСКА 1.3 Общие функциональные ограничения, связанные с физическими задачами Ограничение • Достижение и похвастание • Подъем и перенос • Подвиг и тяга • Погибание и погибание • Поворачивание и поворачивание • Бросание и похвастание • Ролинг • Стояние • Коленка и колени • Стояние и сидение • Вхождение и выход из постели • Погружение, ходьба, бег • Восхождение и спуск по лестнице • Прыжки и прыжки • Удары"
         }
       ],
       "images": [

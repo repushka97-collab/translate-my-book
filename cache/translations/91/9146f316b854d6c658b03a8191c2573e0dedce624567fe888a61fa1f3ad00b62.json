@@ -1,0 +1,6 @@
+{
+  "original_text": "Automated essay scoring. The instructor emphasized the need\nfor automatically-measured essay scores and explanations for eval-\nuation based on their own rubrics or grading systems. While some\nstate-of-the-art automated essay scoring (AES) systems for overall\nscores exist, it is nearly inaccessible for EFL instructors who don’t\nhave much background in AI techniques to incorporate and fine-\ntune them based on their own rubrics. We believe that instructor-\nfriendly platforms based on interactions with ChatGPT may miti-\ngate this issue.\n",
+  "translated_text": "Инструктор подчеркнул необходимость автоматически измеряемых баллов и объяснений для оценки на основе собственных рубрик или систем оценки. В то время как существуют некоторые современные автоматизированные системы оценки эссе (AES) для общих баллов, практически недоступно для инструкторов EFL, которые не имеют большого опыта в области искусственного интеллекта, включить и отрегулировать их на основе собственных рубрик. Мы считаем, что инструкторские платформы, основанные на взаимодействии с ChatGPT, могут решить эту проблему.",
+  "source_lang": "en",
+  "target_lang": "ru"
+}

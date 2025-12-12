@@ -51,7 +51,7 @@ INCOMPLETE_SENTENCE_PATTERNS = [
 def looks_like_sentence_continuation_en(prev_text: str, current_text: str) -> bool:
     """
     Определяет, является ли current_text продолжением prev_text (для английского текста).
-    Использует контекстный анализ: пунктуация, регистр, маркеры.
+    Улучшенная версия: более агрессивное слияние для уменьшения potential_break.
     """
     if not prev_text or not current_text:
         return False
@@ -59,13 +59,21 @@ def looks_like_sentence_continuation_en(prev_text: str, current_text: str) -> bo
     prev = prev_text.strip()
     curr = current_text.strip()
     
+    if not prev or not curr:
+        return False
+    
     # 1. Предыдущий текст заканчивается на завершенное предложение
-    prev_ends_complete = prev and prev[-1] in ".!?"
+    prev_ends_complete = prev[-1] in ".!?"
     if prev_ends_complete:
+        # Но если следующий блок начинается с маленькой буквы - может быть продолжение
+        # (например, "Dr. Smith" или "U.S.A.")
+        if curr[0].islower() and len(prev) < 10:
+            # Очень короткий блок с точкой - может быть аббревиатура
+            return True
         return False  # Предложение завершено
     
     # 2. Текущий текст начинается с маленькой буквы - вероятно продолжение
-    if curr and curr[0].islower():
+    if curr[0].islower():
         return True
     
     # 3. Предыдущий текст заканчивается на маркер незавершенного предложения
@@ -78,13 +86,67 @@ def looks_like_sentence_continuation_en(prev_text: str, current_text: str) -> bo
     if first_word in CONTINUATION_MARKERS:
         return True
     
-    # 5. Оба текста короткие - вероятно разорванное предложение
-    if len(prev) < 100 and len(curr) < 60:
+    # 5. УЛУЧШЕННОЕ: Если предыдущий блок длинный (>80) и не заканчивается на точку,
+    # а текущий не начинается с заглавной буквы - скорее всего продолжение
+    if len(prev) > 80 and not prev_ends_complete:
+        # Проверяем что текущий не начинается с заглавной (кроме начала предложения)
+        if not curr[0].isupper() or (curr[0].isupper() and len(curr.split()) == 1):
+            # Одно слово с заглавной - может быть имя собственное, но если короткий блок - продолжение
+            if len(curr) < 50:
+                return True
+    
+    # 6. Оба текста короткие - вероятно разорванное предложение
+    if len(prev) < 150 and len(curr) < 80:
         if not prev_ends_complete:
             return True
     
-    # 6. После запятой короткий фрагмент - продолжение
-    if prev and prev[-1] == "," and len(curr) < 80:
+    # 7. После запятой/точки с запятой/двоеточия - продолжение
+    if prev[-1] in ",;:":
+        return True
+    
+    # 8. НОВОЕ: Если предыдущий блок длинный (>100) и заканчивается на пробел/дефис,
+    # а текущий короткий (<100) - вероятно продолжение
+    if len(prev) > 100 and len(curr) < 100:
+        # Проверяем последние символы предыдущего блока
+        prev_end = prev[-20:].strip() if len(prev) > 20 else prev
+        if not prev_end[-1] in ".!?":
+            # Не заканчивается на завершающую пунктуацию
+            return True
+    
+    # 9. БОЛЕЕ АГРЕССИВНОЕ: Если предыдущий блок длинный (>60) без точки,
+    # а текущий начинается с маленькой буквы или короткий - продолжение
+    if len(prev) > 60 and not prev_ends_complete:
+        if curr[0].islower() or len(curr) < 100:
+            return True
+    
+    # 12. ЕЩЕ БОЛЕЕ АГРЕССИВНОЕ: Если предыдущий блок очень длинный (>200) без точки,
+    # а текущий не начинается с заглавной буквы - почти наверняка продолжение
+    if len(prev) > 200 and not prev_ends_complete:
+        if not curr[0].isupper() or (curr[0].isupper() and len(curr.split()) <= 2):
+            return True
+    
+    # 13. ЕЩЕ БОЛЕЕ АГРЕССИВНОЕ: Если предыдущий блок длинный (>100) и заканчивается на пробел/дефис,
+    # а текущий не слишком длинный (<200) - вероятно продолжение
+    if len(prev) > 100 and len(curr) < 200 and not prev_ends_complete:
+        # Проверяем последние слова предыдущего блока
+        prev_words = prev.split()
+        if prev_words:
+            last_word = prev_words[-1].lower()
+            # Если последнее слово - предлог/союз, точно продолжение
+            if last_word in {"and", "or", "but", "that", "which", "to", "for", "with", "in", "on", "at", "from", "by", "of", "as", "the", "a", "an"}:
+                return True
+            # Если последнее слово не заканчивается на пунктуацию - вероятно продолжение
+            if not last_word[-1] in ".!?;:,":
+                return True
+    
+    # 10. БОЛЕЕ АГРЕССИВНОЕ: Если предыдущий блок заканчивается на предлог/союз
+    # (and, or, but, that, which, to, for, with, in, on, at, from, by)
+    prev_last_word = prev.split()[-1].lower() if prev.split() else ""
+    if prev_last_word in {"and", "or", "but", "that", "which", "to", "for", "with", "in", "on", "at", "from", "by", "of", "as"}:
+        return True
+    
+    # 11. БОЛЕЕ АГРЕССИВНОЕ: Если текущий блок очень короткий (<40) и предыдущий не заканчивается на точку
+    if len(curr) < 40 and not prev_ends_complete:
         return True
     
     return False
@@ -94,6 +156,7 @@ def merge_blocks_sentences(blocks: List[Dict[str, Any]]) -> List[Dict[str, Any]]
     """
     Объединяет разорванные предложения между блоками на уровне normalize.
     Работает с normalized_text блоков.
+    Улучшенная версия: более агрессивное слияние.
     """
     if not blocks:
         return []
@@ -103,6 +166,7 @@ def merge_blocks_sentences(blocks: List[Dict[str, Any]]) -> List[Dict[str, Any]]
     for i, block in enumerate(blocks):
         # Получаем текст для анализа (normalized_text или text)
         prev_text = None
+        prev_block = None
         if merged:
             prev_block = merged[-1]
             prev_text = (prev_block.get("normalized_text") or prev_block.get("text") or "").strip()
@@ -114,8 +178,40 @@ def merge_blocks_sentences(blocks: List[Dict[str, Any]]) -> List[Dict[str, Any]]
             merged.append(block)
             continue
         
+        # ДОПОЛНИТЕЛЬНАЯ ПРОВЕРКА: Если блоки на одной странице и близко по order
+        # и предыдущий не заканчивается на точку - более агрессивное слияние
+        same_page = False
+        close_order = False
+        if prev_block:
+            prev_page = prev_block.get("page", 0)
+            prev_order = prev_block.get("order", 0)
+            curr_page = block.get("page", 0)
+            curr_order = block.get("order", 0)
+            
+            same_page = (prev_page == curr_page)
+            close_order = (curr_order - prev_order <= 2)  # В пределах 2 блоков
+        
         # Проверяем, нужно ли объединить с предыдущим блоком
-        if prev_text and looks_like_sentence_continuation_en(prev_text, current_text):
+        should_merge = False
+        if prev_text:
+            should_merge = looks_like_sentence_continuation_en(prev_text, current_text)
+            
+            # ДОПОЛНИТЕЛЬНО: Если блоки на одной странице и близко, и предыдущий длинный
+            # без точки - более агрессивное слияние
+            if not should_merge and same_page and close_order:
+                prev_ends_punct = prev_text and prev_text[-1] in ".!?"
+                if not prev_ends_punct and len(prev_text) > 60:  # Снижен порог с 80 до 60
+                    # Длинный блок без точки на той же странице - вероятно продолжение
+                    should_merge = True
+            
+            # ЕЩЕ БОЛЕЕ АГРЕССИВНОЕ: Если блоки на одной странице и предыдущий >50 без точки
+            if not should_merge and same_page:
+                prev_ends_punct = prev_text and prev_text[-1] in ".!?"
+                if not prev_ends_punct and len(prev_text) > 50 and len(current_text) < 150:
+                    # Средний блок без точки, следующий не слишком длинный - вероятно продолжение
+                    should_merge = True
+        
+        if should_merge:
             # Объединяем normalized_text
             prev_normalized = merged[-1].get("normalized_text") or merged[-1].get("text", "")
             current_normalized = block.get("normalized_text") or block.get("text", "")

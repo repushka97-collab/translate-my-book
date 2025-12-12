@@ -2,110 +2,9 @@
   "status": "warn",
   "issues": [
     {
-      "block_id": "p1_b0",
-      "page": 1,
-      "order": 0,
-      "type": "potential_break",
-      "severity": "low",
-      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-      "meta": {
-        "src_len": 88
-      }
-    },
-    {
-      "block_id": "p1_b10",
-      "page": 1,
-      "order": 10,
-      "type": "potential_break",
-      "severity": "low",
-      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-      "meta": {
-        "src_len": 167
-      }
-    },
-    {
-      "block_id": "p1_b11",
-      "page": 1,
-      "order": 11,
-      "type": "potential_break",
-      "severity": "low",
-      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-      "meta": {
-        "src_len": 217
-      }
-    },
-    {
-      "block_id": "p1_b6",
-      "page": 1,
-      "order": 6,
-      "type": "potential_break",
-      "severity": "low",
-      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-      "meta": {
-        "src_len": 207
-      }
-    },
-    {
-      "block_id": "p1_b8",
-      "page": 1,
-      "order": 8,
-      "type": "potential_break",
-      "severity": "low",
-      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-      "meta": {
-        "src_len": 153
-      }
-    },
-    {
-      "block_id": "p2_b11",
-      "page": 2,
-      "order": 28,
-      "type": "potential_break",
-      "severity": "low",
-      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-      "meta": {
-        "src_len": 316
-      }
-    },
-    {
-      "block_id": "p2_b14",
-      "page": 2,
-      "order": 31,
-      "type": "potential_break",
-      "severity": "low",
-      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-      "meta": {
-        "src_len": 158
-      }
-    },
-    {
-      "block_id": "p2_b15",
-      "page": 2,
-      "order": 32,
-      "type": "potential_break",
-      "severity": "low",
-      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-      "meta": {
-        "src_len": 227
-      }
-    },
-    {
-      "block_id": "p2_b17",
-      "page": 2,
-      "order": 34,
-      "type": "repeated_tokens",
-      "severity": "low",
-      "message": "Repeated tokens detected in translated text.",
-      "meta": {
-        "tokens": [
-          "1"
-        ]
-      }
-    },
-    {
-      "block_id": "p2_b2",
-      "page": 2,
-      "order": 19,
+      "block_id": "p4_b15",
+      "page": 4,
+      "order": 71,
       "type": "potential_break",
       "severity": "low",
       "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
@@ -114,200 +13,9 @@
       }
     },
     {
-      "block_id": "p2_b4",
-      "page": 2,
-      "order": 21,
-      "type": "potential_break",
-      "severity": "low",
-      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-      "meta": {
-        "src_len": 359
-      }
-    },
-    {
-      "block_id": "p2_b9",
-      "page": 2,
-      "order": 26,
-      "type": "potential_break",
-      "severity": "low",
-      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-      "meta": {
-        "src_len": 290
-      }
-    },
-    {
-      "block_id": "p3_b12",
-      "page": 3,
-      "order": 47,
-      "type": "potential_break",
-      "severity": "low",
-      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-      "meta": {
-        "src_len": 531
-      }
-    },
-    {
-      "block_id": "p3_b12",
-      "page": 3,
-      "order": 47,
-      "type": "repeated_tokens",
-      "severity": "low",
-      "message": "Repeated tokens detected in translated text.",
-      "meta": {
-        "tokens": [
-          "1"
-        ]
-      }
-    },
-    {
-      "block_id": "p3_b13",
-      "page": 3,
-      "order": 48,
-      "type": "potential_break",
-      "severity": "low",
-      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-      "meta": {
-        "src_len": 224
-      }
-    },
-    {
-      "block_id": "p3_b14",
-      "page": 3,
-      "order": 49,
-      "type": "potential_break",
-      "severity": "low",
-      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-      "meta": {
-        "src_len": 104
-      }
-    },
-    {
-      "block_id": "p3_b14",
-      "page": 3,
-      "order": 49,
-      "type": "repeated_tokens",
-      "severity": "low",
-      "message": "Repeated tokens detected in translated text.",
-      "meta": {
-        "tokens": [
-          "1"
-        ]
-      }
-    },
-    {
-      "block_id": "p3_b5",
-      "page": 3,
-      "order": 40,
-      "type": "potential_break",
-      "severity": "low",
-      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-      "meta": {
-        "src_len": 465
-      }
-    },
-    {
-      "block_id": "p3_b7",
-      "page": 3,
-      "order": 42,
-      "type": "potential_break",
-      "severity": "low",
-      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-      "meta": {
-        "src_len": 119
-      }
-    },
-    {
-      "block_id": "p3_b8",
-      "page": 3,
-      "order": 43,
-      "type": "potential_break",
-      "severity": "low",
-      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-      "meta": {
-        "src_len": 349
-      }
-    },
-    {
-      "block_id": "p3_b9",
-      "page": 3,
-      "order": 44,
-      "type": "potential_break",
-      "severity": "low",
-      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-      "meta": {
-        "src_len": 1019
-      }
-    },
-    {
-      "block_id": "p4_b10",
-      "page": 4,
-      "order": 66,
-      "type": "potential_break",
-      "severity": "low",
-      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-      "meta": {
-        "src_len": 622
-      }
-    },
-    {
-      "block_id": "p4_b15",
-      "page": 4,
-      "order": 71,
-      "type": "potential_break",
-      "severity": "low",
-      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-      "meta": {
-        "src_len": 83
-      }
-    },
-    {
-      "block_id": "p4_b16",
-      "page": 4,
-      "order": 72,
-      "type": "potential_break",
-      "severity": "low",
-      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-      "meta": {
-        "src_len": 102
-      }
-    },
-    {
-      "block_id": "p4_b6",
-      "page": 4,
-      "order": 62,
-      "type": "potential_break",
-      "severity": "low",
-      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-      "meta": {
-        "src_len": 631
-      }
-    },
-    {
-      "block_id": "p4_b7",
-      "page": 4,
-      "order": 63,
-      "type": "potential_break",
-      "severity": "low",
-      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-      "meta": {
-        "src_len": 461
-      }
-    },
-    {
-      "block_id": "p4_b9",
-      "page": 4,
-      "order": 65,
-      "type": "potential_break",
-      "severity": "low",
-      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-      "meta": {
-        "src_len": 572
-      }
-    },
-    {
-      "block_id": "p5_b10",
+      "block_id": "p5_b7",
       "page": 5,
-      "order": 84,
+      "order": 81,
       "type": "potential_break",
       "severity": "low",
       "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
@@ -316,31 +24,9 @@
       }
     },
     {
-      "block_id": "p5_b4",
+      "block_id": "p5_b7",
       "page": 5,
-      "order": 78,
-      "type": "potential_break",
-      "severity": "low",
-      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-      "meta": {
-        "src_len": 90
-      }
-    },
-    {
-      "block_id": "p5_b5",
-      "page": 5,
-      "order": 79,
-      "type": "potential_break",
-      "severity": "low",
-      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-      "meta": {
-        "src_len": 124
-      }
-    },
-    {
-      "block_id": "p5_b8",
-      "page": 5,
-      "order": 82,
+      "order": 81,
       "type": "repeated_tokens",
       "severity": "low",
       "message": "Repeated tokens detected in translated text.",
@@ -349,97 +35,29 @@
           "1"
         ]
       }
-    },
-    {
-      "block_id": "p6_b6",
-      "page": 6,
-      "order": 93,
-      "type": "potential_break",
-      "severity": "low",
-      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-      "meta": {
-        "src_len": 193
-      }
-    },
-    {
-      "block_id": "p7_b3",
-      "page": 7,
-      "order": 102,
-      "type": "potential_break",
-      "severity": "low",
-      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-      "meta": {
-        "src_len": 315
-      }
-    },
-    {
-      "block_id": "p7_b5",
-      "page": 7,
-      "order": 104,
-      "type": "potential_break",
-      "severity": "low",
-      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-      "meta": {
-        "src_len": 238
-      }
-    },
-    {
-      "block_id": "p7_b5",
-      "page": 7,
-      "order": 104,
-      "type": "repeated_tokens",
-      "severity": "low",
-      "message": "Repeated tokens detected in translated text.",
-      "meta": {
-        "tokens": [
-          "неэффективные"
-        ]
-      }
-    },
-    {
-      "block_id": "p8_b10",
-      "page": 8,
-      "order": 124,
-      "type": "potential_break",
-      "severity": "low",
-      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-      "meta": {
-        "src_len": 338
-      }
-    },
-    {
-      "block_id": "p8_b3",
-      "page": 8,
-      "order": 117,
-      "type": "potential_break",
-      "severity": "low",
-      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-      "meta": {
-        "src_len": 947
-      }
     }
   ],
   "summary": {
-    "total_blocks": 98,
-    "checked": 98,
-    "issues_total": 37,
+    "total_blocks": 60,
+    "checked": 60,
+    "issues_total": 3,
     "issues_by_type": {
-      "potential_break": 32,
-      "repeated_tokens": 5
+      "potential_break": 2,
+      "repeated_tokens": 1
     },
     "issues_by_severity": {
-      "low": 37
+      "low": 3
     },
     "roles_count": {
-      "body": 79,
-      "heading1": 3,
-      "heading2": 16
+      "body": 53,
+      "heading1": 2,
+      "heading2": 5
     }
   },
   "translation_metrics": {
-    "average_length_ratio": 0.8170581920271186,
-    "min_length_ratio": 0.375,
-    "max_length_ratio": 2.0,
-    "blocks_analyzed": 98
+    "average_length_ratio": 0.7946327852488193,
+    "min_length_ratio": 0.4489795918367347,
+    "max_length_ratio": 1.0,
+    "blocks_analyzed": 60
   }
 }

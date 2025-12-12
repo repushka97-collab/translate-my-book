@@ -1,0 +1,6 @@
+{
+  "original_text": "Figure 1: A screenshot of the writing exercise in our platform. A student’s original essay is initially provided at (A). A student\nstarts a conversation with ChatGPT at (B) by summarizing what they learned in the previous lecture as we instructed. Conver-\nsation history is logged at (C), and a student is prompted to assess the performance of ChatGPT’s every response in a 5-point\nLikert scale at (D). Then, a student can revise the essay at (E) and repeat the process from (B) to (E).\n",
+  "translated_text": "На рисунке 1: Скриншот упражнения по написанию на нашей платформе. Оригинальный эссе студента изначально предоставляется на (A). Студент начинает разговор с ChatGPT на (B) путем резюме того, что он узнал в предыдущей лекции, как мы указали. История конвертации записывается на (C), и студенту просят оценить эффективность каждого ответа ChatGPT в 5-балльной шкале Likert на (D).",
+  "source_lang": "en",
+  "target_lang": "ru"
+}

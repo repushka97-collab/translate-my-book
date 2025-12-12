@@ -332,6 +332,20 @@ def qa_check_blocks(normalized_blocks: List[Block], translated_blocks: List[Bloc
             # Игнорируем если это список или перечисление
             if re.search(r"[,;]\s*$", stripped):
                 continue
+            
+            # УЛУЧШЕННОЕ: Игнорируем если блок очень длинный (>400) - вероятно это полный параграф
+            # даже без точки (может быть список, определение, или просто длинное предложение)
+            if src_len > 400:
+                continue
+            
+            # УЛУЧШЕННОЕ: Игнорируем если последнее слово - предлог/союз (and, or, but, that, which, etc.)
+            # Это может быть намеренный разрыв для форматирования
+            last_word = stripped.split()[-1].lower() if stripped.split() else ""
+            if last_word in {"and", "or", "but", "that", "which", "to", "for", "with", "in", "on", "at", "from", "by", "of", "as", "the", "a", "an"}:
+                # Но только если блок не слишком короткий
+                if src_len > 150:
+                    continue
+            
             issues.append(
                 {
                     "block_id": block_id,

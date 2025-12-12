@@ -2,7 +2,7 @@
   "book_id": "e4d0e0712aeb4be1",
   "source_pdf": "I:\\PROJECTS\\Translate-my-book\\translate-my-book\\For test\\Myofascial.pdf",
   "library_pdf": "library\\e4d0e0712aeb4be1\\original.pdf",
-  "created_at": "2025-12-12T00:44:08.203914Z",
+  "created_at": "2025-12-12T22:13:13.195674Z",
   "pages": 61,
   "metadata": {
     "title": "Myofascial Pain Syndrome: An Update on Clinical Characteristics, Etiopathogenesis, Diagnosis, and Treatment - Steen - Muscle & Nerve - Wiley Online Library",
@@ -14,32 +14,2095 @@
     "docx_main": "output\\e4d0e0712aeb4be1\\book_ru.docx"
   },
   "qa": {
-    "status": "warn",
+    "status": "error",
     "issues": [
       {
-        "block_id": "p10_b1",
-        "page": 10,
-        "order": 118,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 10,
-          "cyr": 32,
-          "latin_ratio": 0.238,
-          "cyr_ratio": 0.762
-        }
+        "block_id": "p28_b1",
+        "page": 28,
+        "order": 419,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
       },
       {
-        "block_id": "p10_b2",
-        "page": 10,
-        "order": 119,
-        "type": "potential_break",
-        "severity": "low",
-        "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-        "meta": {
-          "src_len": 97
-        }
+        "block_id": "p28_b11",
+        "page": 28,
+        "order": 429,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p28_b13",
+        "page": 28,
+        "order": 431,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p28_b3",
+        "page": 28,
+        "order": 421,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p28_b5",
+        "page": 28,
+        "order": 423,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p28_b7",
+        "page": 28,
+        "order": 425,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p28_b9",
+        "page": 28,
+        "order": 427,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p29_b0",
+        "page": 29,
+        "order": 433,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p29_b10",
+        "page": 29,
+        "order": 443,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p29_b12",
+        "page": 29,
+        "order": 445,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p29_b14",
+        "page": 29,
+        "order": 447,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p29_b2",
+        "page": 29,
+        "order": 435,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p29_b4",
+        "page": 29,
+        "order": 437,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p29_b6",
+        "page": 29,
+        "order": 439,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p29_b8",
+        "page": 29,
+        "order": 441,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p30_b1",
+        "page": 30,
+        "order": 449,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p30_b11",
+        "page": 30,
+        "order": 459,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p30_b13",
+        "page": 30,
+        "order": 461,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p30_b15",
+        "page": 30,
+        "order": 463,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p30_b3",
+        "page": 30,
+        "order": 451,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p30_b5",
+        "page": 30,
+        "order": 453,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p30_b7",
+        "page": 30,
+        "order": 455,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p30_b9",
+        "page": 30,
+        "order": 457,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p31_b1",
+        "page": 31,
+        "order": 465,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p31_b11",
+        "page": 31,
+        "order": 475,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p31_b13",
+        "page": 31,
+        "order": 477,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p31_b15",
+        "page": 31,
+        "order": 479,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p31_b3",
+        "page": 31,
+        "order": 467,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p31_b5",
+        "page": 31,
+        "order": 469,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p31_b7",
+        "page": 31,
+        "order": 471,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p31_b9",
+        "page": 31,
+        "order": 473,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p32_b1",
+        "page": 32,
+        "order": 481,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p32_b11",
+        "page": 32,
+        "order": 491,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p32_b13",
+        "page": 32,
+        "order": 493,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p32_b15",
+        "page": 32,
+        "order": 495,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p32_b3",
+        "page": 32,
+        "order": 483,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p32_b5",
+        "page": 32,
+        "order": 485,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p32_b7",
+        "page": 32,
+        "order": 487,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p32_b9",
+        "page": 32,
+        "order": 489,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p33_b1",
+        "page": 33,
+        "order": 497,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p33_b11",
+        "page": 33,
+        "order": 507,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p33_b13",
+        "page": 33,
+        "order": 509,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p33_b15",
+        "page": 33,
+        "order": 511,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p33_b3",
+        "page": 33,
+        "order": 499,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p33_b5",
+        "page": 33,
+        "order": 501,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p33_b7",
+        "page": 33,
+        "order": 503,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p33_b9",
+        "page": 33,
+        "order": 505,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p34_b1",
+        "page": 34,
+        "order": 513,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p34_b11",
+        "page": 34,
+        "order": 523,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p34_b13",
+        "page": 34,
+        "order": 525,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p34_b15",
+        "page": 34,
+        "order": 527,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p34_b3",
+        "page": 34,
+        "order": 515,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p34_b5",
+        "page": 34,
+        "order": 517,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p34_b7",
+        "page": 34,
+        "order": 519,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p34_b9",
+        "page": 34,
+        "order": 521,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p35_b1",
+        "page": 35,
+        "order": 529,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p35_b11",
+        "page": 35,
+        "order": 539,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p35_b13",
+        "page": 35,
+        "order": 541,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p35_b3",
+        "page": 35,
+        "order": 531,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p35_b5",
+        "page": 35,
+        "order": 533,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p35_b7",
+        "page": 35,
+        "order": 535,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p35_b9",
+        "page": 35,
+        "order": 537,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p36_b0",
+        "page": 36,
+        "order": 543,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p36_b10",
+        "page": 36,
+        "order": 553,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p36_b12",
+        "page": 36,
+        "order": 555,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p36_b14",
+        "page": 36,
+        "order": 557,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p36_b2",
+        "page": 36,
+        "order": 545,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p36_b4",
+        "page": 36,
+        "order": 547,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p36_b6",
+        "page": 36,
+        "order": 549,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p36_b8",
+        "page": 36,
+        "order": 551,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p37_b1",
+        "page": 37,
+        "order": 559,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p37_b11",
+        "page": 37,
+        "order": 569,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p37_b13",
+        "page": 37,
+        "order": 571,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p37_b15",
+        "page": 37,
+        "order": 573,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p37_b3",
+        "page": 37,
+        "order": 561,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p37_b5",
+        "page": 37,
+        "order": 563,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p37_b7",
+        "page": 37,
+        "order": 565,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p37_b9",
+        "page": 37,
+        "order": 567,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p38_b1",
+        "page": 38,
+        "order": 575,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p38_b11",
+        "page": 38,
+        "order": 585,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p38_b13",
+        "page": 38,
+        "order": 587,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p38_b3",
+        "page": 38,
+        "order": 577,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p38_b5",
+        "page": 38,
+        "order": 579,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p38_b7",
+        "page": 38,
+        "order": 581,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p38_b9",
+        "page": 38,
+        "order": 583,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p39_b0",
+        "page": 39,
+        "order": 589,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p39_b10",
+        "page": 39,
+        "order": 599,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p39_b12",
+        "page": 39,
+        "order": 601,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p39_b14",
+        "page": 39,
+        "order": 603,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p39_b2",
+        "page": 39,
+        "order": 591,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p39_b4",
+        "page": 39,
+        "order": 593,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p39_b6",
+        "page": 39,
+        "order": 595,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p39_b8",
+        "page": 39,
+        "order": 597,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p40_b1",
+        "page": 40,
+        "order": 605,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p40_b11",
+        "page": 40,
+        "order": 615,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p40_b13",
+        "page": 40,
+        "order": 617,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p40_b3",
+        "page": 40,
+        "order": 607,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p40_b5",
+        "page": 40,
+        "order": 609,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p40_b7",
+        "page": 40,
+        "order": 611,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p40_b9",
+        "page": 40,
+        "order": 613,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p41_b1",
+        "page": 41,
+        "order": 620,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p41_b11",
+        "page": 41,
+        "order": 630,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p41_b13",
+        "page": 41,
+        "order": 632,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p41_b15",
+        "page": 41,
+        "order": 634,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p41_b3",
+        "page": 41,
+        "order": 622,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p41_b5",
+        "page": 41,
+        "order": 624,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p41_b7",
+        "page": 41,
+        "order": 626,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p41_b9",
+        "page": 41,
+        "order": 628,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p42_b1",
+        "page": 42,
+        "order": 636,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p42_b11",
+        "page": 42,
+        "order": 646,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p42_b13",
+        "page": 42,
+        "order": 648,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p42_b3",
+        "page": 42,
+        "order": 638,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p42_b5",
+        "page": 42,
+        "order": 640,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p42_b7",
+        "page": 42,
+        "order": 642,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p42_b9",
+        "page": 42,
+        "order": 644,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p43_b0",
+        "page": 43,
+        "order": 650,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p43_b10",
+        "page": 43,
+        "order": 660,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p43_b12",
+        "page": 43,
+        "order": 662,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p43_b14",
+        "page": 43,
+        "order": 664,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p43_b2",
+        "page": 43,
+        "order": 652,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p43_b4",
+        "page": 43,
+        "order": 654,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p43_b6",
+        "page": 43,
+        "order": 656,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p43_b8",
+        "page": 43,
+        "order": 658,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p44_b0",
+        "page": 44,
+        "order": 666,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p44_b10",
+        "page": 44,
+        "order": 676,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p44_b12",
+        "page": 44,
+        "order": 678,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p44_b14",
+        "page": 44,
+        "order": 680,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p44_b2",
+        "page": 44,
+        "order": 668,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p44_b4",
+        "page": 44,
+        "order": 670,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p44_b6",
+        "page": 44,
+        "order": 672,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p44_b8",
+        "page": 44,
+        "order": 674,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p45_b1",
+        "page": 45,
+        "order": 682,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p45_b11",
+        "page": 45,
+        "order": 692,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p45_b13",
+        "page": 45,
+        "order": 694,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p45_b15",
+        "page": 45,
+        "order": 696,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p45_b3",
+        "page": 45,
+        "order": 684,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p45_b5",
+        "page": 45,
+        "order": 686,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p45_b7",
+        "page": 45,
+        "order": 688,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p45_b9",
+        "page": 45,
+        "order": 690,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p46_b1",
+        "page": 46,
+        "order": 698,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p46_b11",
+        "page": 46,
+        "order": 708,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p46_b13",
+        "page": 46,
+        "order": 710,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p46_b3",
+        "page": 46,
+        "order": 700,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p46_b5",
+        "page": 46,
+        "order": 702,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p46_b7",
+        "page": 46,
+        "order": 704,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p46_b9",
+        "page": 46,
+        "order": 706,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p47_b1",
+        "page": 47,
+        "order": 713,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p47_b11",
+        "page": 47,
+        "order": 723,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p47_b13",
+        "page": 47,
+        "order": 725,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p47_b3",
+        "page": 47,
+        "order": 715,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p47_b5",
+        "page": 47,
+        "order": 717,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p47_b7",
+        "page": 47,
+        "order": 719,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p47_b9",
+        "page": 47,
+        "order": 721,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p48_b0",
+        "page": 48,
+        "order": 727,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p48_b10",
+        "page": 48,
+        "order": 737,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p48_b12",
+        "page": 48,
+        "order": 739,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p48_b14",
+        "page": 48,
+        "order": 741,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p48_b2",
+        "page": 48,
+        "order": 729,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p48_b4",
+        "page": 48,
+        "order": 731,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p48_b6",
+        "page": 48,
+        "order": 733,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p48_b8",
+        "page": 48,
+        "order": 735,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p49_b1",
+        "page": 49,
+        "order": 744,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p49_b13",
+        "page": 49,
+        "order": 756,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p49_b15",
+        "page": 49,
+        "order": 758,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p49_b3",
+        "page": 49,
+        "order": 746,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p49_b5",
+        "page": 49,
+        "order": 748,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p49_b7",
+        "page": 49,
+        "order": 750,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p49_b9",
+        "page": 49,
+        "order": 752,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p50_b1",
+        "page": 50,
+        "order": 760,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p50_b11",
+        "page": 50,
+        "order": 770,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p50_b13",
+        "page": 50,
+        "order": 772,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p50_b3",
+        "page": 50,
+        "order": 762,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p50_b5",
+        "page": 50,
+        "order": 764,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p50_b7",
+        "page": 50,
+        "order": 766,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p50_b9",
+        "page": 50,
+        "order": 768,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p51_b1",
+        "page": 51,
+        "order": 774,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p51_b11",
+        "page": 51,
+        "order": 784,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p51_b13",
+        "page": 51,
+        "order": 786,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p51_b3",
+        "page": 51,
+        "order": 776,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p51_b5",
+        "page": 51,
+        "order": 778,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p51_b7",
+        "page": 51,
+        "order": 780,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p51_b9",
+        "page": 51,
+        "order": 782,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p52_b1",
+        "page": 52,
+        "order": 788,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p52_b11",
+        "page": 52,
+        "order": 798,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p52_b13",
+        "page": 52,
+        "order": 800,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p52_b3",
+        "page": 52,
+        "order": 790,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p52_b5",
+        "page": 52,
+        "order": 792,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p52_b7",
+        "page": 52,
+        "order": 794,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p52_b9",
+        "page": 52,
+        "order": 796,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p53_b1",
+        "page": 53,
+        "order": 803,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p53_b11",
+        "page": 53,
+        "order": 813,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p53_b13",
+        "page": 53,
+        "order": 815,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p53_b15",
+        "page": 53,
+        "order": 817,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p53_b3",
+        "page": 53,
+        "order": 805,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p53_b5",
+        "page": 53,
+        "order": 807,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p53_b7",
+        "page": 53,
+        "order": 809,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p53_b9",
+        "page": 53,
+        "order": 811,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p54_b1",
+        "page": 54,
+        "order": 819,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p54_b11",
+        "page": 54,
+        "order": 829,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p54_b13",
+        "page": 54,
+        "order": 831,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p54_b3",
+        "page": 54,
+        "order": 821,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p54_b5",
+        "page": 54,
+        "order": 823,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p54_b7",
+        "page": 54,
+        "order": 825,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p54_b9",
+        "page": 54,
+        "order": 827,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p55_b1",
+        "page": 55,
+        "order": 834,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p55_b11",
+        "page": 55,
+        "order": 844,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p55_b13",
+        "page": 55,
+        "order": 846,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p55_b3",
+        "page": 55,
+        "order": 836,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p55_b5",
+        "page": 55,
+        "order": 838,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p55_b7",
+        "page": 55,
+        "order": 840,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p56_b0",
+        "page": 56,
+        "order": 848,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p56_b10",
+        "page": 56,
+        "order": 858,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p56_b12",
+        "page": 56,
+        "order": 860,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p56_b14",
+        "page": 56,
+        "order": 862,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p56_b2",
+        "page": 56,
+        "order": 850,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p56_b4",
+        "page": 56,
+        "order": 852,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p56_b6",
+        "page": 56,
+        "order": 854,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p57_b11",
+        "page": 57,
+        "order": 874,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p57_b13",
+        "page": 57,
+        "order": 876,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p57_b5",
+        "page": 57,
+        "order": 868,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p57_b7",
+        "page": 57,
+        "order": 870,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p57_b9",
+        "page": 57,
+        "order": 872,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p58_b1",
+        "page": 58,
+        "order": 878,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p58_b11",
+        "page": 58,
+        "order": 888,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p58_b3",
+        "page": 58,
+        "order": 880,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p58_b5",
+        "page": 58,
+        "order": 882,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p58_b7",
+        "page": 58,
+        "order": 884,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p58_b9",
+        "page": 58,
+        "order": 886,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p59_b1",
+        "page": 59,
+        "order": 892,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p59_b3",
+        "page": 59,
+        "order": 894,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p59_b5",
+        "page": 59,
+        "order": 896,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
+      },
+      {
+        "block_id": "p59_b7",
+        "page": 59,
+        "order": 898,
+        "type": "lost_block",
+        "severity": "high",
+        "message": "Block present in normalized_blocks but missing in translated_blocks.",
+        "meta": {}
       },
       {
         "block_id": "p10_b24",
@@ -49,27 +2112,35 @@
         "severity": "low",
         "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
         "meta": {
-          "src_len": 282
+          "src_len": 386
         }
       },
       {
-        "block_id": "p13_b0",
-        "page": 13,
-        "order": 208,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "block_id": "p10_b4",
+        "page": 10,
+        "order": 121,
+        "type": "potential_break",
+        "severity": "low",
+        "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
         "meta": {
-          "latin": 10,
-          "cyr": 32,
-          "latin_ratio": 0.238,
-          "cyr_ratio": 0.762
+          "src_len": 310
         }
       },
       {
-        "block_id": "p13_b1",
-        "page": 13,
-        "order": 209,
+        "block_id": "p12_b1",
+        "page": 12,
+        "order": 182,
+        "type": "potential_break",
+        "severity": "low",
+        "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
+        "meta": {
+          "src_len": 511
+        }
+      },
+      {
+        "block_id": "p12_b26",
+        "page": 12,
+        "order": 207,
         "type": "potential_break",
         "severity": "low",
         "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
@@ -78,20 +2149,9 @@
         }
       },
       {
-        "block_id": "p15_b2",
-        "page": 15,
-        "order": 227,
-        "type": "potential_break",
-        "severity": "low",
-        "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-        "meta": {
-          "src_len": 84
-        }
-      },
-      {
-        "block_id": "p16_b3",
+        "block_id": "p16_b1",
         "page": 16,
-        "order": 316,
+        "order": 314,
         "type": "repeated_tokens",
         "severity": "low",
         "message": "Repeated tokens detected in translated text.",
@@ -154,19 +2214,6 @@
         }
       },
       {
-        "block_id": "p17_b2",
-        "page": 17,
-        "order": 325,
-        "type": "concatenated_scripts",
-        "severity": "medium",
-        "message": "Tokens contain both Latin and Cyrillic characters without separation.",
-        "meta": {
-          "tokens": [
-            "GABA-А,"
-          ]
-        }
-      },
-      {
         "block_id": "p18_b0",
         "page": 18,
         "order": 329,
@@ -180,55 +2227,6 @@
         }
       },
       {
-        "block_id": "p19_b7",
-        "page": 19,
-        "order": 347,
-        "type": "potential_break",
-        "severity": "low",
-        "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-        "meta": {
-          "src_len": 685
-        }
-      },
-      {
-        "block_id": "p1_b10",
-        "page": 1,
-        "order": 10,
-        "type": "potential_break",
-        "severity": "low",
-        "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-        "meta": {
-          "src_len": 1106
-        }
-      },
-      {
-        "block_id": "p1_b10",
-        "page": 1,
-        "order": 10,
-        "type": "repeated_tokens",
-        "severity": "low",
-        "message": "Repeated tokens detected in translated text.",
-        "meta": {
-          "tokens": [
-            "волна"
-          ]
-        }
-      },
-      {
-        "block_id": "p1_b4",
-        "page": 1,
-        "order": 4,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 14,
-          "cyr": 24,
-          "latin_ratio": 0.368,
-          "cyr_ratio": 0.632
-        }
-      },
-      {
         "block_id": "p20_b1",
         "page": 20,
         "order": 349,
@@ -238,19 +2236,6 @@
         "meta": {
           "tokens": [
             "4"
-          ]
-        }
-      },
-      {
-        "block_id": "p20_b7",
-        "page": 20,
-        "order": 355,
-        "type": "concatenated_scripts",
-        "severity": "medium",
-        "message": "Tokens contain both Latin and Cyrillic characters without separation.",
-        "meta": {
-          "tokens": [
-            "(BTX-А),"
           ]
         }
       },
@@ -268,2092 +2253,6 @@
         }
       },
       {
-        "block_id": "p21_b0",
-        "page": 21,
-        "order": 357,
-        "type": "concatenated_scripts",
-        "severity": "medium",
-        "message": "Tokens contain both Latin and Cyrillic characters without separation.",
-        "meta": {
-          "tokens": [
-            "BTX-А",
-            "BTX-А",
-            "BTX-А"
-          ]
-        }
-      },
-      {
-        "block_id": "p21_b5",
-        "page": 21,
-        "order": 362,
-        "type": "potential_break",
-        "severity": "low",
-        "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-        "meta": {
-          "src_len": 442
-        }
-      },
-      {
-        "block_id": "p22_b3",
-        "page": 22,
-        "order": 366,
-        "type": "potential_break",
-        "severity": "low",
-        "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-        "meta": {
-          "src_len": 1051
-        }
-      },
-      {
-        "block_id": "p22_b5",
-        "page": 22,
-        "order": 368,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 10,
-          "cyr": 32,
-          "latin_ratio": 0.238,
-          "cyr_ratio": 0.762
-        }
-      },
-      {
-        "block_id": "p23_b0",
-        "page": 23,
-        "order": 369,
-        "type": "potential_break",
-        "severity": "low",
-        "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-        "meta": {
-          "src_len": 106
-        }
-      },
-      {
-        "block_id": "p23_b4",
-        "page": 23,
-        "order": 373,
-        "type": "repeated_tokens",
-        "severity": "low",
-        "message": "Repeated tokens detected in translated text.",
-        "meta": {
-          "tokens": [
-            "1"
-          ]
-        }
-      },
-      {
-        "block_id": "p23_b8",
-        "page": 23,
-        "order": 377,
-        "type": "potential_break",
-        "severity": "low",
-        "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-        "meta": {
-          "src_len": 777
-        }
-      },
-      {
-        "block_id": "p24_b6",
-        "page": 24,
-        "order": 384,
-        "type": "potential_break",
-        "severity": "low",
-        "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-        "meta": {
-          "src_len": 696
-        }
-      },
-      {
-        "block_id": "p25_b3",
-        "page": 25,
-        "order": 388,
-        "type": "concatenated_scripts",
-        "severity": "medium",
-        "message": "Tokens contain both Latin and Cyrillic characters without separation.",
-        "meta": {
-          "tokens": [
-            "BTX-А"
-          ]
-        }
-      },
-      {
-        "block_id": "p25_b6",
-        "page": 25,
-        "order": 391,
-        "type": "potential_break",
-        "severity": "low",
-        "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-        "meta": {
-          "src_len": 800
-        }
-      },
-      {
-        "block_id": "p27_b12",
-        "page": 27,
-        "order": 411,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 4,
-          "cyr": 10,
-          "latin_ratio": 0.286,
-          "cyr_ratio": 0.714
-        }
-      },
-      {
-        "block_id": "p27_b16",
-        "page": 27,
-        "order": 415,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 4,
-          "cyr": 10,
-          "latin_ratio": 0.286,
-          "cyr_ratio": 0.714
-        }
-      },
-      {
-        "block_id": "p27_b4",
-        "page": 27,
-        "order": 403,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p27_b6",
-        "page": 27,
-        "order": 405,
-        "type": "concatenated_scripts",
-        "severity": "medium",
-        "message": "Tokens contain both Latin and Cyrillic characters without separation.",
-        "meta": {
-          "tokens": [
-            "J.Р.S."
-          ]
-        }
-      },
-      {
-        "block_id": "p28_b0",
-        "page": 28,
-        "order": 418,
-        "type": "suspect_terms_en_in_ru",
-        "severity": "low",
-        "message": "English acupuncture-related terms found in Russian translation.",
-        "meta": {
-          "terms": [
-            "fascia"
-          ]
-        }
-      },
-      {
-        "block_id": "p28_b0",
-        "page": 28,
-        "order": 418,
-        "type": "repeated_tokens",
-        "severity": "low",
-        "message": "Repeated tokens detected in translated text.",
-        "meta": {
-          "tokens": [
-            "simons"
-          ]
-        }
-      },
-      {
-        "block_id": "p28_b1",
-        "page": 28,
-        "order": 419,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p28_b10",
-        "page": 28,
-        "order": 428,
-        "type": "repeated_tokens",
-        "severity": "low",
-        "message": "Repeated tokens detected in translated text.",
-        "meta": {
-          "tokens": [
-            "68"
-          ]
-        }
-      },
-      {
-        "block_id": "p28_b11",
-        "page": 28,
-        "order": 429,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p28_b12",
-        "page": 28,
-        "order": 430,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 70,
-          "cyr": 101,
-          "latin_ratio": 0.409,
-          "cyr_ratio": 0.591
-        }
-      },
-      {
-        "block_id": "p28_b2",
-        "page": 28,
-        "order": 420,
-        "type": "suspect_terms_en_in_ru",
-        "severity": "low",
-        "message": "English acupuncture-related terms found in Russian translation.",
-        "meta": {
-          "terms": [
-            "fascia"
-          ]
-        }
-      },
-      {
-        "block_id": "p28_b6",
-        "page": 28,
-        "order": 424,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 60,
-          "cyr": 92,
-          "latin_ratio": 0.395,
-          "cyr_ratio": 0.605
-        }
-      },
-      {
-        "block_id": "p28_b8",
-        "page": 28,
-        "order": 426,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 34,
-          "cyr": 83,
-          "latin_ratio": 0.291,
-          "cyr_ratio": 0.709
-        }
-      },
-      {
-        "block_id": "p29_b1",
-        "page": 29,
-        "order": 434,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 26,
-          "cyr": 89,
-          "latin_ratio": 0.226,
-          "cyr_ratio": 0.774
-        }
-      },
-      {
-        "block_id": "p29_b3",
-        "page": 29,
-        "order": 436,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 60,
-          "cyr": 103,
-          "latin_ratio": 0.368,
-          "cyr_ratio": 0.632
-        }
-      },
-      {
-        "block_id": "p29_b6",
-        "page": 29,
-        "order": 439,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p29_b9",
-        "page": 29,
-        "order": 442,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 98,
-          "cyr": 156,
-          "latin_ratio": 0.386,
-          "cyr_ratio": 0.614
-        }
-      },
-      {
-        "block_id": "p29_b9",
-        "page": 29,
-        "order": 442,
-        "type": "repeated_tokens",
-        "severity": "low",
-        "message": "Repeated tokens detected in translated text.",
-        "meta": {
-          "tokens": [
-            "sanchez"
-          ]
-        }
-      },
-      {
-        "block_id": "p2_b3",
-        "page": 2,
-        "order": 14,
-        "type": "concatenated_scripts",
-        "severity": "medium",
-        "message": "Tokens contain both Latin and Cyrillic characters without separation.",
-        "meta": {
-          "tokens": [
-            "BTX-А"
-          ]
-        }
-      },
-      {
-        "block_id": "p2_b6",
-        "page": 2,
-        "order": 17,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 4,
-          "cyr": 9,
-          "latin_ratio": 0.308,
-          "cyr_ratio": 0.692
-        }
-      },
-      {
-        "block_id": "p30_b1",
-        "page": 30,
-        "order": 449,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p30_b15",
-        "page": 30,
-        "order": 463,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p30_b4",
-        "page": 30,
-        "order": 452,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 42,
-          "cyr": 63,
-          "latin_ratio": 0.4,
-          "cyr_ratio": 0.6
-        }
-      },
-      {
-        "block_id": "p30_b5",
-        "page": 30,
-        "order": 453,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p30_b6",
-        "page": 30,
-        "order": 454,
-        "type": "suspect_terms_en_in_ru",
-        "severity": "low",
-        "message": "English acupuncture-related terms found in Russian translation.",
-        "meta": {
-          "terms": [
-            "fascia"
-          ]
-        }
-      },
-      {
-        "block_id": "p31_b1",
-        "page": 31,
-        "order": 465,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p31_b11",
-        "page": 31,
-        "order": 475,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p31_b14",
-        "page": 31,
-        "order": 478,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 56,
-          "cyr": 149,
-          "latin_ratio": 0.273,
-          "cyr_ratio": 0.727
-        }
-      },
-      {
-        "block_id": "p31_b2",
-        "page": 31,
-        "order": 466,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 36,
-          "cyr": 133,
-          "latin_ratio": 0.213,
-          "cyr_ratio": 0.787
-        }
-      },
-      {
-        "block_id": "p31_b6",
-        "page": 31,
-        "order": 470,
-        "type": "suspect_terms_en_in_ru",
-        "severity": "low",
-        "message": "English acupuncture-related terms found in Russian translation.",
-        "meta": {
-          "terms": [
-            "fascia"
-          ]
-        }
-      },
-      {
-        "block_id": "p31_b7",
-        "page": 31,
-        "order": 471,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p31_b8",
-        "page": 31,
-        "order": 472,
-        "type": "repeated_tokens",
-        "severity": "low",
-        "message": "Repeated tokens detected in translated text.",
-        "meta": {
-          "tokens": [
-            "176180"
-          ]
-        }
-      },
-      {
-        "block_id": "p31_b9",
-        "page": 31,
-        "order": 473,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p32_b14",
-        "page": 32,
-        "order": 494,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 34,
-          "cyr": 124,
-          "latin_ratio": 0.215,
-          "cyr_ratio": 0.785
-        }
-      },
-      {
-        "block_id": "p32_b2",
-        "page": 32,
-        "order": 482,
-        "type": "repeated_tokens",
-        "severity": "low",
-        "message": "Repeated tokens detected in translated text.",
-        "meta": {
-          "tokens": [
-            "183192"
-          ]
-        }
-      },
-      {
-        "block_id": "p32_b4",
-        "page": 32,
-        "order": 484,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 58,
-          "cyr": 78,
-          "latin_ratio": 0.426,
-          "cyr_ratio": 0.574
-        }
-      },
-      {
-        "block_id": "p32_b7",
-        "page": 32,
-        "order": 487,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p33_b12",
-        "page": 33,
-        "order": 508,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 32,
-          "cyr": 116,
-          "latin_ratio": 0.216,
-          "cyr_ratio": 0.784
-        }
-      },
-      {
-        "block_id": "p33_b14",
-        "page": 33,
-        "order": 510,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 23,
-          "cyr": 70,
-          "latin_ratio": 0.247,
-          "cyr_ratio": 0.753
-        }
-      },
-      {
-        "block_id": "p33_b15",
-        "page": 33,
-        "order": 511,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p33_b2",
-        "page": 33,
-        "order": 498,
-        "type": "concatenated_scripts",
-        "severity": "medium",
-        "message": "Tokens contain both Latin and Cyrillic characters without separation.",
-        "meta": {
-          "tokens": [
-            "W.-С."
-          ]
-        }
-      },
-      {
-        "block_id": "p33_b2",
-        "page": 33,
-        "order": 498,
-        "type": "repeated_tokens",
-        "severity": "low",
-        "message": "Repeated tokens detected in translated text.",
-        "meta": {
-          "tokens": [
-            "с",
-            "ян"
-          ]
-        }
-      },
-      {
-        "block_id": "p33_b5",
-        "page": 33,
-        "order": 501,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p34_b5",
-        "page": 34,
-        "order": 517,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p35_b7",
-        "page": 35,
-        "order": 535,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p35_b8",
-        "page": 35,
-        "order": 536,
-        "type": "suspect_terms_en_in_ru",
-        "severity": "low",
-        "message": "English acupuncture-related terms found in Russian translation.",
-        "meta": {
-          "terms": [
-            "fascia"
-          ]
-        }
-      },
-      {
-        "block_id": "p36_b11",
-        "page": 36,
-        "order": 554,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 28,
-          "cyr": 94,
-          "latin_ratio": 0.23,
-          "cyr_ratio": 0.77
-        }
-      },
-      {
-        "block_id": "p36_b12",
-        "page": 36,
-        "order": 555,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p36_b13",
-        "page": 36,
-        "order": 556,
-        "type": "concatenated_scripts",
-        "severity": "medium",
-        "message": "Tokens contain both Latin and Cyrillic characters without separation.",
-        "meta": {
-          "tokens": [
-            "H.-У.",
-            "У.-H."
-          ]
-        }
-      },
-      {
-        "block_id": "p36_b8",
-        "page": 36,
-        "order": 551,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p37_b0",
-        "page": 37,
-        "order": 558,
-        "type": "repeated_tokens",
-        "severity": "low",
-        "message": "Repeated tokens detected in translated text.",
-        "meta": {
-          "tokens": [
-            "611618"
-          ]
-        }
-      },
-      {
-        "block_id": "p37_b6",
-        "page": 37,
-        "order": 564,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 65,
-          "cyr": 91,
-          "latin_ratio": 0.417,
-          "cyr_ratio": 0.583
-        }
-      },
-      {
-        "block_id": "p38_b0",
-        "page": 38,
-        "order": 574,
-        "type": "suspect_terms_en_in_ru",
-        "severity": "low",
-        "message": "English acupuncture-related terms found in Russian translation.",
-        "meta": {
-          "terms": [
-            "fascia"
-          ]
-        }
-      },
-      {
-        "block_id": "p38_b10",
-        "page": 38,
-        "order": 584,
-        "type": "suspect_terms_en_in_ru",
-        "severity": "low",
-        "message": "English acupuncture-related terms found in Russian translation.",
-        "meta": {
-          "terms": [
-            "fascia"
-          ]
-        }
-      },
-      {
-        "block_id": "p38_b14",
-        "page": 38,
-        "order": 588,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 36,
-          "cyr": 132,
-          "latin_ratio": 0.214,
-          "cyr_ratio": 0.786
-        }
-      },
-      {
-        "block_id": "p38_b8",
-        "page": 38,
-        "order": 582,
-        "type": "repeated_tokens",
-        "severity": "low",
-        "message": "Repeated tokens detected in translated text.",
-        "meta": {
-          "tokens": [
-            "ян"
-          ]
-        }
-      },
-      {
-        "block_id": "p39_b13",
-        "page": 39,
-        "order": 602,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 56,
-          "cyr": 152,
-          "latin_ratio": 0.269,
-          "cyr_ratio": 0.731
-        }
-      },
-      {
-        "block_id": "p39_b13",
-        "page": 39,
-        "order": 602,
-        "type": "repeated_tokens",
-        "severity": "low",
-        "message": "Repeated tokens detected in translated text.",
-        "meta": {
-          "tokens": [
-            "20392050"
-          ]
-        }
-      },
-      {
-        "block_id": "p39_b7",
-        "page": 39,
-        "order": 596,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 43,
-          "cyr": 142,
-          "latin_ratio": 0.232,
-          "cyr_ratio": 0.768
-        }
-      },
-      {
-        "block_id": "p39_b9",
-        "page": 39,
-        "order": 598,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 39,
-          "cyr": 62,
-          "latin_ratio": 0.386,
-          "cyr_ratio": 0.614
-        }
-      },
-      {
-        "block_id": "p3_b15",
-        "page": 3,
-        "order": 45,
-        "type": "potential_break",
-        "severity": "low",
-        "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-        "meta": {
-          "src_len": 81
-        }
-      },
-      {
-        "block_id": "p3_b17",
-        "page": 3,
-        "order": 47,
-        "type": "potential_break",
-        "severity": "low",
-        "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-        "meta": {
-          "src_len": 180
-        }
-      },
-      {
-        "block_id": "p3_b6",
-        "page": 3,
-        "order": 36,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 4,
-          "cyr": 16,
-          "latin_ratio": 0.2,
-          "cyr_ratio": 0.8
-        }
-      },
-      {
-        "block_id": "p40_b0",
-        "page": 40,
-        "order": 604,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 45,
-          "cyr": 48,
-          "latin_ratio": 0.484,
-          "cyr_ratio": 0.516
-        }
-      },
-      {
-        "block_id": "p40_b14",
-        "page": 40,
-        "order": 618,
-        "type": "potential_break",
-        "severity": "low",
-        "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-        "meta": {
-          "src_len": 188
-        }
-      },
-      {
-        "block_id": "p40_b14",
-        "page": 40,
-        "order": 618,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 43,
-          "cyr": 97,
-          "latin_ratio": 0.307,
-          "cyr_ratio": 0.693
-        }
-      },
-      {
-        "block_id": "p40_b4",
-        "page": 40,
-        "order": 608,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 49,
-          "cyr": 118,
-          "latin_ratio": 0.293,
-          "cyr_ratio": 0.707
-        }
-      },
-      {
-        "block_id": "p40_b6",
-        "page": 40,
-        "order": 610,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 44,
-          "cyr": 100,
-          "latin_ratio": 0.306,
-          "cyr_ratio": 0.694
-        }
-      },
-      {
-        "block_id": "p40_b6",
-        "page": 40,
-        "order": 610,
-        "type": "repeated_tokens",
-        "severity": "low",
-        "message": "Repeated tokens detected in translated text.",
-        "meta": {
-          "tokens": [
-            "729737"
-          ]
-        }
-      },
-      {
-        "block_id": "p40_b8",
-        "page": 40,
-        "order": 612,
-        "type": "concatenated_scripts",
-        "severity": "medium",
-        "message": "Tokens contain both Latin and Cyrillic characters without separation.",
-        "meta": {
-          "tokens": [
-            "К.-N."
-          ]
-        }
-      },
-      {
-        "block_id": "p40_b8",
-        "page": 40,
-        "order": 612,
-        "type": "suspect_terms_en_in_ru",
-        "severity": "low",
-        "message": "English acupuncture-related terms found in Russian translation.",
-        "meta": {
-          "terms": [
-            "fascia",
-            "chi"
-          ]
-        }
-      },
-      {
-        "block_id": "p41_b0",
-        "page": 41,
-        "order": 619,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 18,
-          "cyr": 21,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p41_b10",
-        "page": 41,
-        "order": 629,
-        "type": "suspect_terms_en_in_ru",
-        "severity": "low",
-        "message": "English acupuncture-related terms found in Russian translation.",
-        "meta": {
-          "terms": [
-            "fascia"
-          ]
-        }
-      },
-      {
-        "block_id": "p42_b0",
-        "page": 42,
-        "order": 635,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 58,
-          "cyr": 165,
-          "latin_ratio": 0.26,
-          "cyr_ratio": 0.74
-        }
-      },
-      {
-        "block_id": "p42_b0",
-        "page": 42,
-        "order": 635,
-        "type": "concatenated_scripts",
-        "severity": "medium",
-        "message": "Tokens contain both Latin and Cyrillic characters without separation.",
-        "meta": {
-          "tokens": [
-            "H.-У."
-          ]
-        }
-      },
-      {
-        "block_id": "p42_b10",
-        "page": 42,
-        "order": 645,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 36,
-          "cyr": 45,
-          "latin_ratio": 0.444,
-          "cyr_ratio": 0.556
-        }
-      },
-      {
-        "block_id": "p42_b11",
-        "page": 42,
-        "order": 646,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p42_b14",
-        "page": 42,
-        "order": 649,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 61,
-          "cyr": 70,
-          "latin_ratio": 0.466,
-          "cyr_ratio": 0.534
-        }
-      },
-      {
-        "block_id": "p43_b10",
-        "page": 43,
-        "order": 660,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p43_b13",
-        "page": 43,
-        "order": 663,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 36,
-          "cyr": 65,
-          "latin_ratio": 0.356,
-          "cyr_ratio": 0.644
-        }
-      },
-      {
-        "block_id": "p43_b2",
-        "page": 43,
-        "order": 652,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p43_b5",
-        "page": 43,
-        "order": 655,
-        "type": "repeated_tokens",
-        "severity": "low",
-        "message": "Repeated tokens detected in translated text.",
-        "meta": {
-          "tokens": [
-            "e1024"
-          ]
-        }
-      },
-      {
-        "block_id": "p43_b8",
-        "page": 43,
-        "order": 658,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p44_b11",
-        "page": 44,
-        "order": 677,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 79,
-          "cyr": 183,
-          "latin_ratio": 0.302,
-          "cyr_ratio": 0.698
-        }
-      },
-      {
-        "block_id": "p44_b11",
-        "page": 44,
-        "order": 677,
-        "type": "suspect_terms_en_in_ru",
-        "severity": "low",
-        "message": "English acupuncture-related terms found in Russian translation.",
-        "meta": {
-          "terms": [
-            "chi"
-          ]
-        }
-      },
-      {
-        "block_id": "p44_b3",
-        "page": 44,
-        "order": 669,
-        "type": "repeated_tokens",
-        "severity": "low",
-        "message": "Repeated tokens detected in translated text.",
-        "meta": {
-          "tokens": [
-            "273284"
-          ]
-        }
-      },
-      {
-        "block_id": "p44_b7",
-        "page": 44,
-        "order": 673,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 21,
-          "cyr": 67,
-          "latin_ratio": 0.239,
-          "cyr_ratio": 0.761
-        }
-      },
-      {
-        "block_id": "p44_b8",
-        "page": 44,
-        "order": 674,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p45_b4",
-        "page": 45,
-        "order": 685,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 28,
-          "cyr": 85,
-          "latin_ratio": 0.248,
-          "cyr_ratio": 0.752
-        }
-      },
-      {
-        "block_id": "p46_b0",
-        "page": 46,
-        "order": 697,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 53,
-          "cyr": 193,
-          "latin_ratio": 0.215,
-          "cyr_ratio": 0.785
-        }
-      },
-      {
-        "block_id": "p46_b0",
-        "page": 46,
-        "order": 697,
-        "type": "suspect_terms_en_in_ru",
-        "severity": "low",
-        "message": "English acupuncture-related terms found in Russian translation.",
-        "meta": {
-          "terms": [
-            "chi"
-          ]
-        }
-      },
-      {
-        "block_id": "p46_b2",
-        "page": 46,
-        "order": 699,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 70,
-          "cyr": 220,
-          "latin_ratio": 0.241,
-          "cyr_ratio": 0.759
-        }
-      },
-      {
-        "block_id": "p46_b4",
-        "page": 46,
-        "order": 701,
-        "type": "repeated_tokens",
-        "severity": "low",
-        "message": "Repeated tokens detected in translated text.",
-        "meta": {
-          "tokens": [
-            "л"
-          ]
-        }
-      },
-      {
-        "block_id": "p46_b8",
-        "page": 46,
-        "order": 705,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 40,
-          "cyr": 71,
-          "latin_ratio": 0.36,
-          "cyr_ratio": 0.64
-        }
-      },
-      {
-        "block_id": "p47_b14",
-        "page": 47,
-        "order": 726,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 30,
-          "cyr": 113,
-          "latin_ratio": 0.21,
-          "cyr_ratio": 0.79
-        }
-      },
-      {
-        "block_id": "p47_b2",
-        "page": 47,
-        "order": 714,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 57,
-          "cyr": 185,
-          "latin_ratio": 0.236,
-          "cyr_ratio": 0.764
-        }
-      },
-      {
-        "block_id": "p47_b6",
-        "page": 47,
-        "order": 718,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 35,
-          "cyr": 121,
-          "latin_ratio": 0.224,
-          "cyr_ratio": 0.776
-        }
-      },
-      {
-        "block_id": "p47_b8",
-        "page": 47,
-        "order": 720,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 46,
-          "cyr": 73,
-          "latin_ratio": 0.387,
-          "cyr_ratio": 0.613
-        }
-      },
-      {
-        "block_id": "p48_b1",
-        "page": 48,
-        "order": 728,
-        "type": "suspect_terms_en_in_ru",
-        "severity": "low",
-        "message": "English acupuncture-related terms found in Russian translation.",
-        "meta": {
-          "terms": [
-            "fascia"
-          ]
-        }
-      },
-      {
-        "block_id": "p48_b15",
-        "page": 48,
-        "order": 742,
-        "type": "potential_break",
-        "severity": "low",
-        "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-        "meta": {
-          "src_len": 184
-        }
-      },
-      {
-        "block_id": "p48_b15",
-        "page": 48,
-        "order": 742,
-        "type": "repeated_tokens",
-        "severity": "low",
-        "message": "Repeated tokens detected in translated text.",
-        "meta": {
-          "tokens": [
-            "лечению"
-          ]
-        }
-      },
-      {
-        "block_id": "p48_b7",
-        "page": 48,
-        "order": 734,
-        "type": "repeated_tokens",
-        "severity": "low",
-        "message": "Repeated tokens detected in translated text.",
-        "meta": {
-          "tokens": [
-            "401410"
-          ]
-        }
-      },
-      {
-        "block_id": "p48_b9",
-        "page": 48,
-        "order": 736,
-        "type": "repeated_tokens",
-        "severity": "low",
-        "message": "Repeated tokens detected in translated text.",
-        "meta": {
-          "tokens": [
-            "суматриптаном"
-          ]
-        }
-      },
-      {
-        "block_id": "p49_b10",
-        "page": 49,
-        "order": 753,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 54,
-          "cyr": 105,
-          "latin_ratio": 0.34,
-          "cyr_ratio": 0.66
-        }
-      },
-      {
-        "block_id": "p49_b12",
-        "page": 49,
-        "order": 755,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 37,
-          "cyr": 67,
-          "latin_ratio": 0.356,
-          "cyr_ratio": 0.644
-        }
-      },
-      {
-        "block_id": "p49_b7",
-        "page": 49,
-        "order": 750,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p50_b2",
-        "page": 50,
-        "order": 761,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 58,
-          "cyr": 115,
-          "latin_ratio": 0.335,
-          "cyr_ratio": 0.665
-        }
-      },
-      {
-        "block_id": "p50_b2",
-        "page": 50,
-        "order": 761,
-        "type": "concatenated_scripts",
-        "severity": "medium",
-        "message": "Tokens contain both Latin and Cyrillic characters without separation.",
-        "meta": {
-          "tokens": [
-            "С.-Z."
-          ]
-        }
-      },
-      {
-        "block_id": "p50_b2",
-        "page": 50,
-        "order": 761,
-        "type": "repeated_tokens",
-        "severity": "low",
-        "message": "Repeated tokens detected in translated text.",
-        "meta": {
-          "tokens": [
-            "с"
-          ]
-        }
-      },
-      {
-        "block_id": "p50_b4",
-        "page": 50,
-        "order": 763,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 45,
-          "cyr": 154,
-          "latin_ratio": 0.226,
-          "cyr_ratio": 0.774
-        }
-      },
-      {
-        "block_id": "p50_b6",
-        "page": 50,
-        "order": 765,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 81,
-          "cyr": 112,
-          "latin_ratio": 0.42,
-          "cyr_ratio": 0.58
-        }
-      },
-      {
-        "block_id": "p50_b8",
-        "page": 50,
-        "order": 767,
-        "type": "concatenated_scripts",
-        "severity": "medium",
-        "message": "Tokens contain both Latin and Cyrillic characters without separation.",
-        "meta": {
-          "tokens": [
-            "У.-L.",
-            "W.-Р.",
-            "Q.-М.",
-            "У.-J."
-          ]
-        }
-      },
-      {
-        "block_id": "p51_b0",
-        "page": 51,
-        "order": 773,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 55,
-          "cyr": 157,
-          "latin_ratio": 0.259,
-          "cyr_ratio": 0.741
-        }
-      },
-      {
-        "block_id": "p51_b4",
-        "page": 51,
-        "order": 777,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 38,
-          "cyr": 120,
-          "latin_ratio": 0.241,
-          "cyr_ratio": 0.759
-        }
-      },
-      {
-        "block_id": "p51_b6",
-        "page": 51,
-        "order": 779,
-        "type": "suspect_terms_en_in_ru",
-        "severity": "low",
-        "message": "English acupuncture-related terms found in Russian translation.",
-        "meta": {
-          "terms": [
-            "fascia"
-          ]
-        }
-      },
-      {
-        "block_id": "p51_b7",
-        "page": 51,
-        "order": 780,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p52_b12",
-        "page": 52,
-        "order": 799,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 34,
-          "cyr": 56,
-          "latin_ratio": 0.378,
-          "cyr_ratio": 0.622
-        }
-      },
-      {
-        "block_id": "p52_b14",
-        "page": 52,
-        "order": 801,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 34,
-          "cyr": 127,
-          "latin_ratio": 0.211,
-          "cyr_ratio": 0.789
-        }
-      },
-      {
-        "block_id": "p52_b4",
-        "page": 52,
-        "order": 791,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 46,
-          "cyr": 143,
-          "latin_ratio": 0.243,
-          "cyr_ratio": 0.757
-        }
-      },
-      {
-        "block_id": "p52_b4",
-        "page": 52,
-        "order": 791,
-        "type": "suspect_terms_en_in_ru",
-        "severity": "low",
-        "message": "English acupuncture-related terms found in Russian translation.",
-        "meta": {
-          "terms": [
-            "chi"
-          ]
-        }
-      },
-      {
-        "block_id": "p52_b6",
-        "page": 52,
-        "order": 793,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 39,
-          "cyr": 156,
-          "latin_ratio": 0.2,
-          "cyr_ratio": 0.8
-        }
-      },
-      {
-        "block_id": "p53_b1",
-        "page": 53,
-        "order": 803,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p53_b12",
-        "page": 53,
-        "order": 814,
-        "type": "concatenated_scripts",
-        "severity": "medium",
-        "message": "Tokens contain both Latin and Cyrillic characters without separation.",
-        "meta": {
-          "tokens": [
-            "Q.-М."
-          ]
-        }
-      },
-      {
-        "block_id": "p53_b14",
-        "page": 53,
-        "order": 816,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 105,
-          "cyr": 129,
-          "latin_ratio": 0.449,
-          "cyr_ratio": 0.551
-        }
-      },
-      {
-        "block_id": "p53_b7",
-        "page": 53,
-        "order": 809,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p54_b0",
-        "page": 54,
-        "order": 818,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 65,
-          "cyr": 97,
-          "latin_ratio": 0.401,
-          "cyr_ratio": 0.599
-        }
-      },
-      {
-        "block_id": "p54_b1",
-        "page": 54,
-        "order": 819,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p54_b14",
-        "page": 54,
-        "order": 832,
-        "type": "potential_break",
-        "severity": "low",
-        "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-        "meta": {
-          "src_len": 187
-        }
-      },
-      {
-        "block_id": "p54_b2",
-        "page": 54,
-        "order": 820,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 42,
-          "cyr": 135,
-          "latin_ratio": 0.237,
-          "cyr_ratio": 0.763
-        }
-      },
-      {
-        "block_id": "p54_b4",
-        "page": 54,
-        "order": 822,
-        "type": "concatenated_scripts",
-        "severity": "medium",
-        "message": "Tokens contain both Latin and Cyrillic characters without separation.",
-        "meta": {
-          "tokens": [
-            "У.-H."
-          ]
-        }
-      },
-      {
-        "block_id": "p54_b7",
-        "page": 54,
-        "order": 825,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p55_b12",
-        "page": 55,
-        "order": 845,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 30,
-          "cyr": 110,
-          "latin_ratio": 0.214,
-          "cyr_ratio": 0.786
-        }
-      },
-      {
-        "block_id": "p55_b14",
-        "page": 55,
-        "order": 847,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 43,
-          "cyr": 91,
-          "latin_ratio": 0.321,
-          "cyr_ratio": 0.679
-        }
-      },
-      {
-        "block_id": "p55_b4",
-        "page": 55,
-        "order": 837,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 43,
-          "cyr": 133,
-          "latin_ratio": 0.244,
-          "cyr_ratio": 0.756
-        }
-      },
-      {
-        "block_id": "p55_b7",
-        "page": 55,
-        "order": 840,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p55_b8",
-        "page": 55,
-        "order": 841,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 41,
-          "cyr": 161,
-          "latin_ratio": 0.203,
-          "cyr_ratio": 0.797
-        }
-      },
-      {
-        "block_id": "p56_b13",
-        "page": 56,
-        "order": 861,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 32,
-          "cyr": 119,
-          "latin_ratio": 0.212,
-          "cyr_ratio": 0.788
-        }
-      },
-      {
-        "block_id": "p56_b14",
-        "page": 56,
-        "order": 862,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p56_b5",
-        "page": 56,
-        "order": 853,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 52,
-          "cyr": 135,
-          "latin_ratio": 0.278,
-          "cyr_ratio": 0.722
-        }
-      },
-      {
-        "block_id": "p56_b5",
-        "page": 56,
-        "order": 853,
-        "type": "suspect_terms_en_in_ru",
-        "severity": "low",
-        "message": "English acupuncture-related terms found in Russian translation.",
-        "meta": {
-          "terms": [
-            "qi"
-          ]
-        }
-      },
-      {
-        "block_id": "p56_b6",
-        "page": 56,
-        "order": 854,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p57_b13",
-        "page": 57,
-        "order": 876,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p57_b6",
-        "page": 57,
-        "order": 869,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 27,
-          "cyr": 82,
-          "latin_ratio": 0.248,
-          "cyr_ratio": 0.752
-        }
-      },
-      {
-        "block_id": "p58_b12",
-        "page": 58,
-        "order": 889,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 40,
-          "cyr": 133,
-          "latin_ratio": 0.231,
-          "cyr_ratio": 0.769
-        }
-      },
-      {
         "block_id": "p58_b13",
         "page": 58,
         "order": 890,
@@ -2362,104 +2261,20 @@
         "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
         "meta": {
           "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p58_b2",
-        "page": 58,
-        "order": 879,
-        "type": "concatenated_scripts",
-        "severity": "medium",
-        "message": "Tokens contain both Latin and Cyrillic characters without separation.",
-        "meta": {
-          "tokens": [
-            "С.-J."
-          ]
-        }
-      },
-      {
-        "block_id": "p58_b4",
-        "page": 58,
-        "order": 881,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 37,
-          "cyr": 137,
-          "latin_ratio": 0.213,
-          "cyr_ratio": 0.787
-        }
-      },
-      {
-        "block_id": "p58_b6",
-        "page": 58,
-        "order": 883,
-        "type": "concatenated_scripts",
-        "severity": "medium",
-        "message": "Tokens contain both Latin and Cyrillic characters without separation.",
-        "meta": {
-          "tokens": [
-            "G.-У.",
-            "D.-С."
-          ]
-        }
-      },
-      {
-        "block_id": "p59_b10",
-        "page": 59,
-        "order": 901,
-        "type": "concatenated_scripts",
-        "severity": "medium",
-        "message": "Tokens contain both Latin and Cyrillic characters without separation.",
-        "meta": {
-          "tokens": [
-            "Х.-F."
-          ]
-        }
-      },
-      {
-        "block_id": "p59_b10",
-        "page": 59,
-        "order": 901,
-        "type": "repeated_tokens",
-        "severity": "low",
-        "message": "Repeated tokens detected in translated text.",
-        "meta": {
-          "tokens": [
-            "в"
-          ]
+          "cyr": 6,
+          "latin_ratio": 0.5,
+          "cyr_ratio": 0.5
         }
       },
       {
         "block_id": "p59_b13",
         "page": 59,
         "order": 904,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "type": "potential_break",
+        "severity": "low",
+        "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
         "meta": {
-          "latin": 6,
-          "cyr": 7,
-          "latin_ratio": 0.462,
-          "cyr_ratio": 0.538
-        }
-      },
-      {
-        "block_id": "p59_b8",
-        "page": 59,
-        "order": 899,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 72,
-          "cyr": 151,
-          "latin_ratio": 0.323,
-          "cyr_ratio": 0.677
+          "src_len": 395
         }
       },
       {
@@ -2476,81 +2291,16 @@
         }
       },
       {
-        "block_id": "p5_b7",
-        "page": 5,
-        "order": 63,
-        "type": "potential_break",
+        "block_id": "p7_b5",
+        "page": 7,
+        "order": 78,
+        "type": "repeated_tokens",
         "severity": "low",
-        "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
+        "message": "Repeated tokens detected in translated text.",
         "meta": {
-          "src_len": 180
-        }
-      },
-      {
-        "block_id": "p60_b0",
-        "page": 60,
-        "order": 905,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 3,
-          "cyr": 7,
-          "latin_ratio": 0.3,
-          "cyr_ratio": 0.7
-        }
-      },
-      {
-        "block_id": "p60_b19",
-        "page": 60,
-        "order": 924,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 16,
-          "cyr": 38,
-          "latin_ratio": 0.296,
-          "cyr_ratio": 0.704
-        }
-      },
-      {
-        "block_id": "p60_b5",
-        "page": 60,
-        "order": 910,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 6,
-          "cyr": 17,
-          "latin_ratio": 0.261,
-          "cyr_ratio": 0.739
-        }
-      },
-      {
-        "block_id": "p60_b7",
-        "page": 60,
-        "order": 912,
-        "type": "mixed_alphabet",
-        "severity": "medium",
-        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-        "meta": {
-          "latin": 11,
-          "cyr": 33,
-          "latin_ratio": 0.25,
-          "cyr_ratio": 0.75
-        }
-      },
-      {
-        "block_id": "p6_b8",
-        "page": 6,
-        "order": 72,
-        "type": "potential_break",
-        "severity": "low",
-        "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-        "meta": {
-          "src_len": 612
+          "tokens": [
+            "2"
+          ]
         }
       },
       {
@@ -2565,39 +2315,35 @@
             "4"
           ]
         }
-      },
-      {
-        "block_id": "p8_b6",
-        "page": 8,
-        "order": 87,
-        "type": "potential_break",
-        "severity": "low",
-        "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-        "meta": {
-          "src_len": 260
-        }
       }
     ],
     "summary": {
-      "total_blocks": 925,
-      "checked": 925,
-      "issues_total": 191,
+      "total_blocks": 635,
+      "checked": 403,
+      "issues_total": 249,
       "issues_by_type": {
-        "mixed_alphabet": 109,
-        "potential_break": 20,
-        "repeated_tokens": 29,
-        "concatenated_scripts": 18,
-        "suspect_terms_en_in_ru": 15
+        "lost_block": 232,
+        "potential_break": 5,
+        "repeated_tokens": 10,
+        "concatenated_scripts": 1,
+        "mixed_alphabet": 1
       },
       "issues_by_severity": {
-        "medium": 127,
-        "low": 64
+        "high": 232,
+        "low": 15,
+        "medium": 2
       },
       "roles_count": {
-        "heading1": 9,
-        "heading2": 361,
-        "body": 555
+        "body": 348,
+        "heading1": 8,
+        "heading2": 279
       }
+    },
+    "translation_metrics": {
+      "average_length_ratio": 0.9324487971014569,
+      "min_length_ratio": 0.3888888888888889,
+      "max_length_ratio": 1.5,
+      "blocks_analyzed": 403
     }
   },
   "layers": {
