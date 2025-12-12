@@ -23,6 +23,7 @@
             "font": "LinBiolinumTB",
             "protected_tokens": [],
             "role": "body",
+            "cache_hit": true,
             "quality_pass": "heuristic_v1",
             "editor_pass": "heuristic_v1"
           },
@@ -57,6 +58,7 @@
               "to (E)"
             ],
             "role": "body",
+            "cache_hit": true,
             "editor_pass": "heuristic_v1"
           },
           "block_id": "p1_b16",
@@ -82,7 +84,8 @@
             "font": "LinLibertineTB",
             "protected_tokens": [],
             "heading_preprocessed": true,
-            "role": "heading1"
+            "role": "heading1",
+            "cache_hit": true
           },
           "block_id": "p1_b17",
           "normalized_text": "АННОТАЦИЯ",
@@ -113,11 +116,13 @@
               "author(s)"
             ],
             "role": "body",
-            "quality_pass": "heuristic_v1"
+            "cache_hit": true,
+            "quality_pass": "heuristic_v1",
+            "editor_pass": "heuristic_v1"
           },
           "block_id": "p1_b18",
           "normalized_text": "The integration of generative AI in the field of education is actively\nbeing explored. In particular, ChatGPT has garnered significant\ninterest, offering an opportunity to examine its effectiveness in ∗Authors contributed equally.\n†Corresponding authors Permission to make digital or hard copies of all or part of this work for personal or\nclassroom use is granted without fee provided that copies are not made or distributed\nfor profit or commercial advantage and that copies bear this notice and the full citation\non the first page. Copyrights for components of this work owned by others than the\nauthor(s) must be honored. Abstracting with credit is permitted. To copy otherwise, or\nrepublish, to post on servers or to redistribute to lists, requires prior specific permission\nand/or a fee. Request permissions from permissions@acm.org.\nL@S ’23, July 20–22, 2023, Copenhagen, Denmark.\n© 2023 Copyright held by the owner/author(s). Publication rights licensed to ACM.\nACM ISBN 979-8-4007-0025-5/23/07...$15.00\nhttps://doi.org/10.1145/3573051.3596200",
-          "translated_text": "Интеграция генерирующего ИИ в области образования активно исследуется.В частности, ChatGPT вызвала значительный интерес, предлагая возможность изучить его эффективность в Авторы, вносившие равное вклад. †Отчеты-авторы Разрешение на создание цифровых или бумажных копий всей или части этой работы для личного или классового использования предоставляется бесплатно при условии, что копии не делаются или не распространяются с целью получения прибыли или коммерческой выгоды, и что копии содержат это уведомление и полную цитату на первой странице. Авторские права на составляющие этого произведения, принадлежащие не авторам, должны быть соблюдены. Допускается абстрагирование с кредитом. Для копирования или переиздания, размещения на серверах или перераспределения в списках требуется предварительное разрешение и/или плата. L@S 23, 2022 июля 2023, Копенгаген, Дания. © 2023 Авторские права владельца/автора."
+          "translated_text": "Интеграция генерирующего ИИ в области образования активно исследуется. В частности, ChatGPT вызвала значительный интерес, предлагая возможность изучить его эффективность в Авторы, вносившие равное вклад. †Отчеты-авторы Разрешение на создание цифровых или бумажных копий всей или части этой работы для личного или классового использования предоставляется бесплатно при условии, что копии не делаются или не распространяются с целью получения прибыли или коммерческой выгоды, и что копии содержат это уведомление и полную цитату на первой странице. Авторские права на составляющие этого произведения, принадлежащие не авторам, должны быть соблюдены. Допускается абстрагирование с кредитом. Для копирования или переиздания, размещения на серверах или перераспределения в списках требуется предварительное разрешение и/или плата. L@S 23, 2022 июля 2023, Копенгаген, Дания. © 2023 Авторские права владельца/автора."
         },
         {
           "id": "p1_b21",
@@ -140,6 +145,7 @@
               "foreign language (EFL)"
             ],
             "role": "body",
+            "cache_hit": true,
             "quality_pass": "heuristic_v1"
           },
           "block_id": "p1_b21",
@@ -164,11 +170,13 @@
             "is_italic": false,
             "font": "Times-Roman",
             "protected_tokens": [],
-            "role": "body"
+            "role": "body",
+            "cache_hit": true,
+            "editor_pass": "heuristic_v1"
           },
           "block_id": "p1_b22",
           "normalized_text": "arXiv:2305.11583v1 [cs.HC] 19 May 2023 L@S ’23, July 20–22, 2023, Copenhagen, Denmark.\nHan et al.",
-          "translated_text": "arXiv:2305.11583v1 [cs.HC] 19 мая 2023 L@S 23, 20 июля 2023 22, Копенгаген, Дания."
+          "translated_text": "arXiv:2305.11583v1 [cs. HC] 19 мая 2023 L@S 23, 20 июля 2023 22, Копенгаген, Дания."
         }
       ],
       "images": [
@@ -207,7 +215,8 @@
             "is_italic": false,
             "font": "LinLibertineTB",
             "protected_tokens": [],
-            "role": "heading2"
+            "role": "heading2",
+            "cache_hit": true
           },
           "block_id": "p2_b1",
           "normalized_text": "CCS CONCEPTS",
@@ -231,7 +240,8 @@
             "is_italic": false,
             "font": "LinLibertineT",
             "protected_tokens": [],
-            "role": "body"
+            "role": "body",
+            "cache_hit": true
           },
           "block_id": "p2_b2",
           "normalized_text": "• Applied computing →Interactive learning environments;\n• Human-centered computing →User centered design.",
@@ -255,7 +265,8 @@
             "is_italic": false,
             "font": "LinLibertineTB",
             "protected_tokens": [],
-            "role": "heading2"
+            "role": "heading2",
+            "cache_hit": true
           },
           "block_id": "p2_b3",
           "normalized_text": "KEYWORDS",
@@ -265,7 +276,7 @@
           "id": "p2_b4",
           "page": 2,
           "order": 27,
-          "text": "Generative AI, ChatGPT, Learner-ChatGPT Interaction, Essay Writ-\ning, EFL Learners\n",
+          "text": "Generative AI, ChatGPT, Learner-ChatGPT Interaction, Essay Writing, EFL Learners ACM Reference Format:\nJieun Han, Haneul Yoo, Yoonsu Kim, Junho Myung, Minsun Kim, Hyunseung\nLim, Juho Kim, Tak Yeon Lee, Hwajung Hong, So-Yeon Ahn, and Alice Oh.\n2023. RECIPE: How to Integrate ChatGPT into EFL Writing Education. In\nProceedings of the Tenth ACM Conference on Learning @ Scale (L@S ’23),\nJuly 20–22, 2023, Copenhagen, Denmark. ACM, New York, NY, USA, 8 pages.\nhttps://doi.org/10.1145/3573051.3596200 1\nINTRODUCTION In the context of English as a foreign language (EFL) education, the\nintegration of artificial intelligence (AI) technology has been shown\nto enhance students’ learning experience. The use of AI-based tools,\nincluding Grammarly 1 and Quillbots 2, has resulted in significant\nimprovement in EFL learners’ writing abilities. Moreover, learners\nhave exhibited positive perceptions towards the use of these tools\nin their writing class [1, 4].\nChatGPT 3, a large language model (LLM)-driven chatbot by\nOpenAI, has made a significant breakthrough in the domain of\nlanguage learning. While earlier chatbots were unnatural and incapable of engaging language learners [5], ChatGPT can generate\nnatural and personalized responses, which make students’ learning\nexperience more interactive and engaging [8, 9]. Recent studies\nhave suggested the potential educational benefits of incorporating\ngenerative AI into education [6]. Hence many online educational\nplatforms such as Khan Academy 4 and Duolingo 5 have already\nstarted integrating ChatGPT to their functionalities.\nDespite such suggestions and attempts to incorporate ChatGPT\ninto language education, only episodic and anecdotal knowledge\nhas been shared rather than systematic investigation [2, 7]. Therefore, we need to examine the effective use of ChatGPT in higher\neducation and identify its learning effect. In order to effectively integrate ChatGPT into EFL writing courses, it is crucial to investigate\nthe specific design of the integration, considering learners’ perceptions and usage of ChatGPT in higher education. In this regard,\nwe introduce an interactive learning platform, RECIPE (Revising an\nEssay with ChatGPT on an Interactive Platform with EFL learners),\naiming to leverage the data collected from our platform to guide\nlearners towards a more effective and engaging learning experience.\nThe main contributions of this work are as follows: (1) We analyze the perception and usage of ChatGPT in the\ncontext of EFL among learners and instructors.\n(2) We introduce RECIPE (Revising an Essay with ChatGPT on\nan Interactive Platform with EFL learners), a learning platform designed to integrate ChatGPT with underlying two\ntypes of prompts for students’ better learning experience.",
           "type": "text",
           "bbox": {
             "x0": 53.79800033569336,
@@ -278,30 +289,6 @@
             "is_bold": false,
             "is_italic": false,
             "font": "LinLibertineT",
-            "protected_tokens": [],
-            "role": "body"
-          },
-          "block_id": "p2_b4",
-          "normalized_text": "Generative AI, ChatGPT, Learner-ChatGPT Interaction, Essay Writing, EFL Learners",
-          "translated_text": "Генеративный ИИ, ЧатГПТ, взаимодействие Ученика-ЧатГПТ, написание эссе, Ученики EFL"
-        },
-        {
-          "id": "p2_b5",
-          "page": 2,
-          "order": 28,
-          "text": "ACM Reference Format:\nJieun Han, Haneul Yoo, Yoonsu Kim, Junho Myung, Minsun Kim, Hyunseung\nLim, Juho Kim, Tak Yeon Lee, Hwajung Hong, So-Yeon Ahn, and Alice Oh.\n2023. RECIPE: How to Integrate ChatGPT into EFL Writing Education. In\nProceedings of the Tenth ACM Conference on Learning @ Scale (L@S ’23),\nJuly 20–22, 2023, Copenhagen, Denmark. ACM, New York, NY, USA, 8 pages.\nhttps://doi.org/10.1145/3573051.3596200 1\nINTRODUCTION In the context of English as a foreign language (EFL) education, the\nintegration of artificial intelligence (AI) technology has been shown\nto enhance students’ learning experience. The use of AI-based tools,\nincluding Grammarly 1 and Quillbots 2, has resulted in significant\nimprovement in EFL learners’ writing abilities. Moreover, learners\nhave exhibited positive perceptions towards the use of these tools\nin their writing class [1, 4].\nChatGPT 3, a large language model (LLM)-driven chatbot by\nOpenAI, has made a significant breakthrough in the domain of\nlanguage learning. While earlier chatbots were unnatural and incapable of engaging language learners [5], ChatGPT can generate\nnatural and personalized responses, which make students’ learning\nexperience more interactive and engaging [8, 9]. Recent studies\nhave suggested the potential educational benefits of incorporating\ngenerative AI into education [6]. Hence many online educational\nplatforms such as Khan Academy 4 and Duolingo 5 have already\nstarted integrating ChatGPT to their functionalities.\nDespite such suggestions and attempts to incorporate ChatGPT\ninto language education, only episodic and anecdotal knowledge\nhas been shared rather than systematic investigation [2, 7]. Therefore, we need to examine the effective use of ChatGPT in higher\neducation and identify its learning effect. In order to effectively integrate ChatGPT into EFL writing courses, it is crucial to investigate\nthe specific design of the integration, considering learners’ perceptions and usage of ChatGPT in higher education. In this regard,\nwe introduce an interactive learning platform, RECIPE (Revising an\nEssay with ChatGPT on an Interactive Platform with EFL learners),\naiming to leverage the data collected from our platform to guide\nlearners towards a more effective and engaging learning experience.\nThe main contributions of this work are as follows: (1) We analyze the perception and usage of ChatGPT in the\ncontext of EFL among learners and instructors.\n(2) We introduce RECIPE (Revising an Essay with ChatGPT on\nan Interactive Platform with EFL learners), a learning platform designed to integrate ChatGPT with underlying two\ntypes of prompts for students’ better learning experience.",
-          "type": "text",
-          "bbox": {
-            "x0": 53.50300216674805,
-            "y0": 172.149169921875,
-            "x1": 295.271728515625,
-            "y1": 237.9819793701172
-          },
-          "metadata": {
-            "font_size": 7.970099925994873,
-            "is_bold": true,
-            "is_italic": false,
-            "font": "LinLibertineTB",
             "protected_tokens": [
               "10.1145/3573051.3596200",
               "https://doi.org/10.1145/3573051.3596200",
@@ -315,12 +302,13 @@
               "large language model (LLM)"
             ],
             "role": "body",
+            "cache_hit": true,
             "quality_pass": "heuristic_v1",
             "editor_pass": "heuristic_v1"
           },
-          "block_id": "p2_b5",
-          "normalized_text": "ACM Reference Format:\nJieun Han, Haneul Yoo, Yoonsu Kim, Junho Myung, Minsun Kim, Hyunseung\nLim, Juho Kim, Tak Yeon Lee, Hwajung Hong, So-Yeon Ahn, and Alice Oh.\n2023. RECIPE: How to Integrate ChatGPT into EFL Writing Education. In\nProceedings of the Tenth ACM Conference on Learning @ Scale (L@S ’23),\nJuly 20–22, 2023, Copenhagen, Denmark. ACM, New York, NY, USA, 8 pages.\nhttps://doi.org/10.1145/3573051.3596200 1\nINTRODUCTION In the context of English as a foreign language (EFL) education, the\nintegration of artificial intelligence (AI) technology has been shown\nto enhance students’ learning experience. The use of AI-based tools,\nincluding Grammarly 1 and Quillbots 2, has resulted in significant\nimprovement in EFL learners’ writing abilities. Moreover, learners\nhave exhibited positive perceptions towards the use of these tools\nin their writing class [1, 4].\nChatGPT 3, a large language model (LLM)-driven chatbot by\nOpenAI, has made a significant breakthrough in the domain of\nlanguage learning. While earlier chatbots were unnatural and incapable of engaging language learners [5], ChatGPT can generate\nnatural and personalized responses, which make students’ learning\nexperience more interactive and engaging [8, 9]. Recent studies\nhave suggested the potential educational benefits of incorporating\ngenerative AI into education [6]. Hence many online educational\nplatforms such as Khan Academy 4 and Duolingo 5 have already\nstarted integrating ChatGPT to their functionalities.\nDespite such suggestions and attempts to incorporate ChatGPT\ninto language education, only episodic and anecdotal knowledge\nhas been shared rather than systematic investigation [2, 7]. Therefore, we need to examine the effective use of ChatGPT in higher\neducation and identify its learning effect. In order to effectively integrate ChatGPT into EFL writing courses, it is crucial to investigate\nthe specific design of the integration, considering learners’ perceptions and usage of ChatGPT in higher education. In this regard,\nwe introduce an interactive learning platform, RECIPE (Revising an\nEssay with ChatGPT on an Interactive Platform with EFL learners),\naiming to leverage the data collected from our platform to guide\nlearners towards a more effective and engaging learning experience.\nThe main contributions of this work are as follows: (1) We analyze the perception and usage of ChatGPT in the\ncontext of EFL among learners and instructors.\n(2) We introduce RECIPE (Revising an Essay with ChatGPT on\nan Interactive Platform with EFL learners), a learning platform designed to integrate ChatGPT with underlying two\ntypes of prompts for students’ better learning experience.",
-          "translated_text": "Справочный формат ACM: Jieun Han, Haneul Yoo, Yoonsu Kim, Junho Myung, Minsun Kim, Hyunseung Lim, Juho Kim, Tak Yeon Lee, Hwajung Hong, So-Yeon Ahn, и Alice Oh. 2023. ACM, Нью-Йорк, США, 8 страниц. https://doi.org/10.1145/3573051.3596200 1 Введение В контексте обучения английскому языку как иностранному языку (EFL) показано, что интеграция технологии искусственного интеллекта (ИИ) улучшает опыт обучения студентов. Использование инструментов на базе ИИ, включая Grammarly 1 и Quillbots 2, привело к значительному улучшению навыков письма учащихся EFL. Кроме того, учащиеся продемонстрировали положительное восприятие использования этих инструментов в своем классе письма [1, 4]. ChatGPT 3, чат-бот, основанный на больших языковых моделях (LLM) от OpenAI, сделал значительный прорыв в области изучения языков. В то время как более ранние чат-боты были неестественными и неспособными привлекать учащихся языков [5], ChatGPT может генерировать естественные и персонализированные ответы, которые делают обучение студентов более интерактивным и привлекательным [8, 9]. Недавние исследования показали потенциальные образовательные преимущества включения генерирующего ИИ в образование [6]. Поэтому многие онлайн-образовательные платформы, такие как Khan Academy 4 и Duolingo 5, уже начали интегрировать ChatGPT в свои функциональные возможности. Поэтому необходимо изучить эффективное использование ChatGPT в высшем образовании и определить его эффективность в обучении. Для того, чтобы эффективно интегрировать ChatGPT в курсы написания EFL, крайне важно исследовать конкретный дизайн интеграции, учитывая восприятие и использование ChatGPT учащимися в высшем образовании. В связи с этим мы внедряем интерактивную платформу обучения, RECIPE (Revising an Essay with ChatGPT on an Interactive Platform with EFL learners), направленную на использование данных, собранных с нашей платформы, для направления учащихся на более эффективный и привлекательный опыт обучения. Основные вклады этой работы следуют: (1) Мы анализируем восприятие и использование ChatGPT в контексте EFL среди учащихся и преподавателей. (2) Внедряем RECIPE (Revising an Essay with ChatGPT on an Interactive Platform with EFL learners), учебную платформу, предназначенную для интеграции ChatGPT с двумя основными типами запросов для студентов лучшего опыта обучения."
+          "block_id": "p2_b4",
+          "normalized_text": "Generative AI, ChatGPT, Learner-ChatGPT Interaction, Essay Writing, EFL Learners ACM Reference Format:\nJieun Han, Haneul Yoo, Yoonsu Kim, Junho Myung, Minsun Kim, Hyunseung\nLim, Juho Kim, Tak Yeon Lee, Hwajung Hong, So-Yeon Ahn, and Alice Oh.\n2023. RECIPE: How to Integrate ChatGPT into EFL Writing Education. In\nProceedings of the Tenth ACM Conference on Learning @ Scale (L@S ’23),\nJuly 20–22, 2023, Copenhagen, Denmark. ACM, New York, NY, USA, 8 pages.\nhttps://doi.org/10.1145/3573051.3596200 1\nINTRODUCTION In the context of English as a foreign language (EFL) education, the\nintegration of artificial intelligence (AI) technology has been shown\nto enhance students’ learning experience. The use of AI-based tools,\nincluding Grammarly 1 and Quillbots 2, has resulted in significant\nimprovement in EFL learners’ writing abilities. Moreover, learners\nhave exhibited positive perceptions towards the use of these tools\nin their writing class [1, 4].\nChatGPT 3, a large language model (LLM)-driven chatbot by\nOpenAI, has made a significant breakthrough in the domain of\nlanguage learning. While earlier chatbots were unnatural and incapable of engaging language learners [5], ChatGPT can generate\nnatural and personalized responses, which make students’ learning\nexperience more interactive and engaging [8, 9]. Recent studies\nhave suggested the potential educational benefits of incorporating\ngenerative AI into education [6]. Hence many online educational\nplatforms such as Khan Academy 4 and Duolingo 5 have already\nstarted integrating ChatGPT to their functionalities.\nDespite such suggestions and attempts to incorporate ChatGPT\ninto language education, only episodic and anecdotal knowledge\nhas been shared rather than systematic investigation [2, 7]. Therefore, we need to examine the effective use of ChatGPT in higher\neducation and identify its learning effect. In order to effectively integrate ChatGPT into EFL writing courses, it is crucial to investigate\nthe specific design of the integration, considering learners’ perceptions and usage of ChatGPT in higher education. In this regard,\nwe introduce an interactive learning platform, RECIPE (Revising an\nEssay with ChatGPT on an Interactive Platform with EFL learners),\naiming to leverage the data collected from our platform to guide\nlearners towards a more effective and engaging learning experience.\nThe main contributions of this work are as follows: (1) We analyze the perception and usage of ChatGPT in the\ncontext of EFL among learners and instructors.\n(2) We introduce RECIPE (Revising an Essay with ChatGPT on\nan Interactive Platform with EFL learners), a learning platform designed to integrate ChatGPT with underlying two\ntypes of prompts for students’ better learning experience.",
+          "translated_text": "Генерирующий ИИ, ЧатГПТ, Взаимодействие Учитель-ЧатГПТ, Сочинение эссе, EFL обучающиеся ACM Справочный формат: Jieun Han, Haneul Yoo, Yoonsu Kim, Junho Myung, Minsun Kim, Hyunseung Lim, Juho Kim, Tak Yeon Lee, Hwajung Hong, So-Yeon Ahn и Alice Oh. 2023. В работе десятой конференции ACM по обучению @ Scale (L@S 23), 2022 июля 2023 года, Копенгаген, Дания. ACM, Нью-Йорк, США, 8 страниц. https://doi.org/10.1145/3573051.3596200 1 Введение В контексте обучения английскому языку как иностранному языку (EFL) показано, что интеграция технологии искусственного интеллекта (AI) улучшает опыт обучения студентов. Использование инструментов на базе ИИ, включая Grammarly 1 и Quillbots 2, привело к значительному улучшению навыков письма учащихся EFL. Кроме того, учащиеся продемонстрировали положительное восприятие использования этих инструментов в своем классе письма [1, 4]. ChatGPT 3, чат-бот, основанный на больших языковых моделях (LLM) от OpenAI, сделал значительный прорыв в области изучения языков. В то время как более ранние чат-боты были неестественными и неспособными привлекать учащихся языков [5], ChatGPT может генерировать естественные и персонализированные ответы, которые делают обучение студентов более интерактивным и привлекательным [8, 9]. Недавние исследования показали потенциальные образовательные преимущества включения генерирующего ИИ в образование [6]. Поэтому многие онлайн-образовательные платформы, такие как Khan Academy 4 и Duolingo 5, уже начали интегрировать ChatGPT в свои функциональные возможности. Поэтому необходимо изучить эффективное использование ChatGPT в высшем образовании и определить его эффективность в обучении. Для того, чтобы эффективно интегрировать ChatGPT в курсы написания EFL, крайне важно исследовать конкретный дизайн интеграции, учитывая восприятие и использование ChatGPT учащимися в высшем образовании. В связи с этим мы внедряем интерактивную платформу обучения, RECIPE (Revising an Essay with ChatGPT on an Interactive Platform with EFL learners), направленную на использование данных, собранных с нашей платформы, для направления учащихся на более эффективный и привлекательный опыт обучения. Основные вклады этой работы следуют: (1) Мы анализируем восприятие и использование ChatGPT в контексте EFL среди учащихся и преподавателей. (2) Внедряем RECIPE (Revising an Essay with ChatGPT on an Interactive Platform with EFL learners), учебную платформу, предназначенную для интеграции ChatGPT с двумя основными типами запросов для студентов лучшего опыта обучения."
         },
         {
           "id": "p2_b9",
@@ -346,7 +334,8 @@
               "https://www.khanacademy.org/",
               "https://www.duolingo.com/"
             ],
-            "role": "body"
+            "role": "body",
+            "cache_hit": true
           },
           "block_id": "p2_b9",
           "normalized_text": "1https://www.grammarly.com/\n2https://quillbot.com/\n3https://chat.openai.com/\n4https://www.khanacademy.org/\n5https://www.duolingo.com/ (3) We collect students’ interaction data on their perception\nand ChatGPT usage through RECIPE to investigate further\ndevelopment of our platform.",
@@ -374,6 +363,7 @@
               "graduate\nstudents were enrolled in Scientific Writing (SW)"
             ],
             "role": "body",
+            "cache_hit": true,
             "quality_pass": "heuristic_v1"
           },
           "block_id": "p2_b11",
@@ -398,7 +388,8 @@
             "is_italic": false,
             "font": "LinLibertineTB",
             "protected_tokens": [],
-            "role": "body"
+            "role": "body",
+            "cache_hit": true
           },
           "block_id": "p2_b13",
           "normalized_text": "2.1\nPerception and Usage of ChatGPT",
@@ -408,7 +399,7 @@
           "id": "p2_b14",
           "page": 2,
           "order": 37,
-          "text": "The majority of students reported a positive user experience with\nChatGPT across all seven factors described above. Specifically, 85%\nof students with ChatGPT exposure used the tool in their academic\nwork, indicating a potential for leveraging and developing the technology for educational purposes. Moreover, less than half of the\nstudents used ChatGPT to improve their English writing skills,\nhighlighting an opportunity and a need for research on integrating\nChatGPT into EFL education. These students also relied on other\nwidely available AI tools including Grammarly1, Turnitin 7, and\nGoogle Translate 8, Papago 9, Wordtune 10, ExplainPaper 11, and\nElicit 12 for help with English writing (90.4%) most, followed by\nreading (61.6%), grammar (57.1%), speaking (27.8%), and listening\n(12.6%) skills.\nThis questionnaire also underscores the need for comprehensive\nand well-guided instructions for effectively and efficiently integrating ChatGPT into EFL writing courses, rather than implementing\nan LLM-agnostic class policy and allowing students to use ChatGPT\non their own discretion.\nStudents with prior experience and knowledge of LLMs expressed higher levels of satisfaction and expectations of using ChatGPT in the courses they enrolled. In particular, those who had low\nLLM understanding and enrolled in IRW and AW, expected that\nChatGPT would be useful for asking questions about the lecture\nand finding sources to support their writing, which are notable limitations of ChatGPT with hallucination [3]. Whereas students with a 6to what extent they would recommend others to adopt ChatGPT\n7https://www.turnitin.com/\n8https://translate.google.com/\n9https://papago.naver.com/\n10https://www.wordtune.com/\n11https://www.explainpaper.com/\n12https://elicit.org/",
+          "text": "The majority of students reported a positive user experience with\nChatGPT across all seven factors described above. Specifically, 85%\nof students with ChatGPT exposure used the tool in their academic\nwork, indicating a potential for leveraging and developing the technology for educational purposes. Moreover, less than half of the\nstudents used ChatGPT to improve their English writing skills,\nhighlighting an opportunity and a need for research on integrating\nChatGPT into EFL education. These students also relied on other\nwidely available AI tools including Grammarly1, Turnitin 7, and\nGoogle Translate 8, Papago 9, Wordtune 10, ExplainPaper 11, and\nElicit 12 for help with English writing (90.4%) most, followed by\nreading (61.6%), grammar (57.1%), speaking (27.8%), and listening\n(12.6%) skills.\nThis questionnaire also underscores the need for comprehensive\nand well-guided instructions for effectively and efficiently integrating ChatGPT into EFL writing courses, rather than implementing\nan LLM-agnostic class policy and allowing students to use ChatGPT\non their own discretion.\nStudents with prior experience and knowledge of LLMs expressed higher levels of satisfaction and expectations of using ChatGPT in the courses they enrolled. In particular, those who had low\nLLM understanding and enrolled in IRW and AW, expected that\nChatGPT would be useful for asking questions about the lecture\nand finding sources to support their writing, which are notable limitations of ChatGPT with hallucination [3]. Whereas students with a 6to what extent they would recommend others to adopt ChatGPT\n7https://www.turnitin.com/\n8https://translate.google.com/\n9https://papago.naver.com/\n10https://www.wordtune.com/\n11https://www.explainpaper.com/\n12https://elicit.org/ RECIPE: How to Integrate ChatGPT into EFL Writing Education\nL@S ’23, July 20–22, 2023, Copenhagen, Denmark.",
           "type": "text",
           "bbox": {
             "x0": 317.62298583984375,
@@ -431,11 +422,12 @@
               "https://elicit.org/"
             ],
             "role": "body",
+            "cache_hit": true,
             "quality_pass": "heuristic_v1"
           },
           "block_id": "p2_b14",
-          "normalized_text": "The majority of students reported a positive user experience with\nChatGPT across all seven factors described above. Specifically, 85%\nof students with ChatGPT exposure used the tool in their academic\nwork, indicating a potential for leveraging and developing the technology for educational purposes. Moreover, less than half of the\nstudents used ChatGPT to improve their English writing skills,\nhighlighting an opportunity and a need for research on integrating\nChatGPT into EFL education. These students also relied on other\nwidely available AI tools including Grammarly1, Turnitin 7, and\nGoogle Translate 8, Papago 9, Wordtune 10, ExplainPaper 11, and\nElicit 12 for help with English writing (90.4%) most, followed by\nreading (61.6%), grammar (57.1%), speaking (27.8%), and listening\n(12.6%) skills.\nThis questionnaire also underscores the need for comprehensive\nand well-guided instructions for effectively and efficiently integrating ChatGPT into EFL writing courses, rather than implementing\nan LLM-agnostic class policy and allowing students to use ChatGPT\non their own discretion.\nStudents with prior experience and knowledge of LLMs expressed higher levels of satisfaction and expectations of using ChatGPT in the courses they enrolled. In particular, those who had low\nLLM understanding and enrolled in IRW and AW, expected that\nChatGPT would be useful for asking questions about the lecture\nand finding sources to support their writing, which are notable limitations of ChatGPT with hallucination [3]. Whereas students with a 6to what extent they would recommend others to adopt ChatGPT\n7https://www.turnitin.com/\n8https://translate.google.com/\n9https://papago.naver.com/\n10https://www.wordtune.com/\n11https://www.explainpaper.com/\n12https://elicit.org/",
-          "translated_text": "Большинство студентов сообщили о положительном опыте пользователя ChatGPT по всем семи факторам, описанным выше. Более того, менее половины студентов использовали ChatGPT для улучшения своих навыков письма на английском языке, подчеркивая возможность и необходимость исследований по интеграции ChatGPT в образование по EFL. Эти студенты также полагались на другие широко доступные инструменты ИИ, включая Grammarly1, Turnitin 7 и Google Translate 8, Papago 9, Wordtune 10, ExplainPaper 11 и Elicit 12 для помощи в английском письме (90,4%), а затем на чтение (61,6%), грамматику (57,1%), разговор (27,8%), и слушание (12,6%). В этом вопроснике также подчеркивается необходимость предоставления всеобъемлющих и хорошо руководствующихся инструкций для эффективной и эффективной интеграции ChatGPT в курсы написания EFL, а не внедрения политики агностики LLM в классах и предоставления студентам возможности использовать ChatGPT по своему усмотрению. Студенты с предварительным опытом и знаниями LLM выразили более высокий уровень удовлетворенности и ожиданий от использования ChatGPT в курсах, которые они записались. В частности, те, кто имел низкое понимание LLM и записался в IRW и AW, ожидали, что ChatGPT будет полезным для задания вопросов о лекции и поиска источников, чтобы поддержать их письмо, которые являются заметными ограничениями ChatGPT с галлюцинацией [3]. В то время как студенты с 6 в какой степени они рекомендовали бы другим принять ChatGPT 7https://www.turnitin.com/ 8https://translate.google.com/ 9https://papago.naver.com/ 10https://www.wordtune.com/ 11https://www.explainpaper.com/ 12https://elicit.org/"
+          "normalized_text": "The majority of students reported a positive user experience with\nChatGPT across all seven factors described above. Specifically, 85%\nof students with ChatGPT exposure used the tool in their academic\nwork, indicating a potential for leveraging and developing the technology for educational purposes. Moreover, less than half of the\nstudents used ChatGPT to improve their English writing skills,\nhighlighting an opportunity and a need for research on integrating\nChatGPT into EFL education. These students also relied on other\nwidely available AI tools including Grammarly1, Turnitin 7, and\nGoogle Translate 8, Papago 9, Wordtune 10, ExplainPaper 11, and\nElicit 12 for help with English writing (90.4%) most, followed by\nreading (61.6%), grammar (57.1%), speaking (27.8%), and listening\n(12.6%) skills.\nThis questionnaire also underscores the need for comprehensive\nand well-guided instructions for effectively and efficiently integrating ChatGPT into EFL writing courses, rather than implementing\nan LLM-agnostic class policy and allowing students to use ChatGPT\non their own discretion.\nStudents with prior experience and knowledge of LLMs expressed higher levels of satisfaction and expectations of using ChatGPT in the courses they enrolled. In particular, those who had low\nLLM understanding and enrolled in IRW and AW, expected that\nChatGPT would be useful for asking questions about the lecture\nand finding sources to support their writing, which are notable limitations of ChatGPT with hallucination [3]. Whereas students with a 6to what extent they would recommend others to adopt ChatGPT\n7https://www.turnitin.com/\n8https://translate.google.com/\n9https://papago.naver.com/\n10https://www.wordtune.com/\n11https://www.explainpaper.com/\n12https://elicit.org/ RECIPE: How to Integrate ChatGPT into EFL Writing Education\nL@S ’23, July 20–22, 2023, Copenhagen, Denmark.",
+          "translated_text": "Большинство студентов сообщили о положительном опыте пользователя ChatGPT по всем семи факторам, описанным выше. Более того, менее половины студентов использовали ChatGPT для улучшения своих навыков письма на английском языке, подчеркивая возможность и необходимость исследований по интеграции ChatGPT в образование по EFL. Эти студенты также полагались на другие широко доступные инструменты ИИ, включая Grammarly1, Turnitin 7 и Google Translate 8, Papago 9, Wordtune 10, ExplainPaper 11 и Elicit 12 для помощи в английском письме (90,4%), а затем на чтение (61,6%), грамматику (57,1%), разговор (27,8%), и слушание (12,6%). В этом вопроснике также подчеркивается необходимость предоставления всеобъемлющих и хорошо руководствующихся инструкций для эффективной и эффективной интеграции ChatGPT в курсы написания EFL, а не внедрения политики агностики LLM в классах и предоставления студентам возможности использовать ChatGPT по своему усмотрению. Студенты с предварительным опытом и знаниями LLM выразили более высокий уровень удовлетворенности и ожиданий от использования ChatGPT в курсах, которые они записались. В частности, те, кто имел низкое понимание LLM и записался в IRW и AW, ожидали, что ChatGPT будет полезным для задания вопросов о лекции и поиска источников, чтобы поддержать их письмо, которые являются заметными ограничениями ChatGPT с галлюцинацией [3]. В то время как студенты с 6 до какой степени они рекомендовали бы другим принять ChatGPT 7https://www.turnitin.com/ 8https://translate.google.com/ 9https://papago.naver.com/ 10https://www.wordtune.com/ 11https://www.explainpaper.com/ 12https://elicit.org/ RECIPE: Как интегрировать ChatGPT в EFL Writing Education L@S 23, 2022, 2023, Копенгаген, Дания."
         }
       ]
     },
@@ -461,6 +453,7 @@
             "font": "LinLibertineT",
             "protected_tokens": [],
             "role": "body",
+            "cache_hit": true,
             "quality_pass": "heuristic_v1"
           },
           "block_id": "p3_b1",
@@ -488,6 +481,7 @@
               "Table 1"
             ],
             "role": "body",
+            "cache_hit": true,
             "quality_pass": "heuristic_v1"
           },
           "block_id": "p3_b2",
@@ -512,7 +506,8 @@
             "is_italic": false,
             "font": "LinLibertineTB",
             "protected_tokens": [],
-            "role": "body"
+            "role": "body",
+            "cache_hit": true
           },
           "block_id": "p3_b4",
           "normalized_text": "3.1\nPre-survey",
@@ -539,6 +534,7 @@
               "Table 6"
             ],
             "role": "body",
+            "cache_hit": true,
             "quality_pass": "heuristic_v1"
           },
           "block_id": "p3_b5",
@@ -563,7 +559,8 @@
             "is_italic": false,
             "font": "LinLibertineTB",
             "protected_tokens": [],
-            "role": "body"
+            "role": "body",
+            "cache_hit": true
           },
           "block_id": "p3_b6",
           "normalized_text": "3.2\nWriting Exercise",
@@ -592,6 +589,7 @@
               "and (b)"
             ],
             "role": "body",
+            "cache_hit": true,
             "quality_pass": "heuristic_v1",
             "editor_pass": "heuristic_v1"
           },
@@ -617,7 +615,8 @@
             "is_italic": false,
             "font": "LinLibertineTB",
             "protected_tokens": [],
-            "role": "body"
+            "role": "body",
+            "cache_hit": true
           },
           "block_id": "p3_b9",
           "normalized_text": "3.3\nPost-survey",
@@ -642,6 +641,7 @@
             "font": "LinLibertineT",
             "protected_tokens": [],
             "role": "body",
+            "cache_hit": true,
             "quality_pass": "heuristic_v1"
           },
           "block_id": "p3_b10",
@@ -666,7 +666,8 @@
             "is_italic": false,
             "font": "LinLibertineTB",
             "protected_tokens": [],
-            "role": "body"
+            "role": "body",
+            "cache_hit": true
           },
           "block_id": "p3_b11",
           "normalized_text": "3.4\nUser Scenario",
@@ -694,6 +695,7 @@
               "and graduate courses (SW)"
             ],
             "role": "body",
+            "cache_hit": true,
             "quality_pass": "heuristic_v1",
             "editor_pass": "heuristic_v1"
           },
@@ -726,7 +728,8 @@
             "protected_tokens": [
               "Table 1"
             ],
-            "role": "body"
+            "role": "body",
+            "cache_hit": true
           },
           "block_id": "p4_b1",
           "normalized_text": "Table 1: Data collected during each phase of the platform.",
@@ -750,7 +753,8 @@
             "is_italic": false,
             "font": "LinLibertineT",
             "protected_tokens": [],
-            "role": "heading2"
+            "role": "heading2",
+            "cache_hit": true
           },
           "block_id": "p4_b2",
           "normalized_text": "Pre-survey\nWriting Exercise\nPost-survey",
@@ -760,7 +764,7 @@
           "id": "p4_b3",
           "page": 4,
           "order": 55,
-          "text": "(a) Essay\n• Students’ original essay\n• Student’s edited essay and its revision\nhistory • Reason not to revise essay\n• Confidence on students’ essay (b) ChatGPT\n• Conversation log data\n• Helpfulness of each ChatGPT response • Topics discussed with ChatGPT\n• Overall satisfaction towards\nChatGPT responses (c) Student\n• Expected help for the session\n• Comprehension level about course\ntopics",
+          "text": "(a) Essay\n• Students’ original essay\n• Student’s edited essay and its revision\nhistory • Reason not to revise essay\n• Confidence on students’ essay (b) ChatGPT\n• Conversation log data\n• Helpfulness of each ChatGPT response • Topics discussed with ChatGPT\n• Overall satisfaction towards\nChatGPT responses (c) Student\n• Expected help for the session\n• Comprehension level about course\ntopics • Timestamp of each sent message\n• Actual help through the session\n• Improvements in comprehension\nlevel after writing exercise Table 2: Initial prompts at writing exercise (a) Hidden prompt for ChatGPT\n(b) Open prompt for students",
           "type": "text",
           "bbox": {
             "x0": 53.79800033569336,
@@ -773,40 +777,18 @@
             "is_bold": false,
             "is_italic": false,
             "font": "LinLibertineT",
-            "protected_tokens": [],
-            "role": "body",
-            "editor_pass": "heuristic_v1"
-          },
-          "block_id": "p4_b3",
-          "normalized_text": "(a) Essay\n• Students’ original essay\n• Student’s edited essay and its revision\nhistory • Reason not to revise essay\n• Confidence on students’ essay (b) ChatGPT\n• Conversation log data\n• Helpfulness of each ChatGPT response • Topics discussed with ChatGPT\n• Overall satisfaction towards\nChatGPT responses (c) Student\n• Expected help for the session\n• Comprehension level about course\ntopics",
-          "translated_text": "(а) Реферат • Студенты оригинальный реферат • Редактированный реферат студента и его история пересмотра • Причина не пересмотра реферат • Уверенность в студентов Реферат (в) ЧатГПТ • Данные дневника разговоров • Полезность каждого ответа ЧатГПТ • Темы, обсужденные с ЧатГПТ • Общее удовлетворение ответами ЧатГПТ (с) Студент • Ожидаемая помощь для сессии • Уровень понимания тематики курса"
-        },
-        {
-          "id": "p4_b8",
-          "page": 4,
-          "order": 60,
-          "text": "• Timestamp of each sent message\n• Actual help through the session\n• Improvements in comprehension\nlevel after writing exercise Table 2: Initial prompts at writing exercise (a) Hidden prompt for ChatGPT\n(b) Open prompt for students",
-          "type": "text",
-          "bbox": {
-            "x0": 262.0589904785156,
-            "y0": 192.1709442138672,
-            "x1": 541.177001953125,
-            "y1": 223.05531311035156
-          },
-          "metadata": {
-            "font_size": 8.966400146484375,
-            "is_bold": false,
-            "is_italic": false,
-            "font": "LinLibertineT",
             "protected_tokens": [
               "Table 2",
               "Hidden prompt for ChatGPT\n(b)"
             ],
-            "role": "body"
+            "role": "body",
+            "cache_hit": true,
+            "quality_pass": "heuristic_v1",
+            "editor_pass": "heuristic_v1"
           },
-          "block_id": "p4_b8",
-          "normalized_text": "• Timestamp of each sent message\n• Actual help through the session\n• Improvements in comprehension\nlevel after writing exercise Table 2: Initial prompts at writing exercise (a) Hidden prompt for ChatGPT\n(b) Open prompt for students",
-          "translated_text": "• Временный отпечаток каждого отправленного сообщения • Фактическая помощь в ходе сессии • Улучшение уровня понимания после написания упражнения Таблица 2: Первоначальные запросы при написании упражнения (а) Скрытый запрос для ChatGPT (б) Открытый запрос для студентов"
+          "block_id": "p4_b3",
+          "normalized_text": "(a) Essay\n• Students’ original essay\n• Student’s edited essay and its revision\nhistory • Reason not to revise essay\n• Confidence on students’ essay (b) ChatGPT\n• Conversation log data\n• Helpfulness of each ChatGPT response • Topics discussed with ChatGPT\n• Overall satisfaction towards\nChatGPT responses (c) Student\n• Expected help for the session\n• Comprehension level about course\ntopics • Timestamp of each sent message\n• Actual help through the session\n• Improvements in comprehension\nlevel after writing exercise Table 2: Initial prompts at writing exercise (a) Hidden prompt for ChatGPT\n(b) Open prompt for students",
+          "translated_text": "(а) Реферат • Студенты оригинальный реферат • Редактированный реферат студента и его история пересмотра • Причина не пересмотра реферат • Уверенность в студентов Реферат (в) ЧатГПТ • Данные дневника разговоров • Полезность каждого ответа ЧатГПТ • Темы, обсужденные с ЧатГПТ • Общее удовлетворение ответами ЧатГПТ (с) Студент • Ожидаемая помощь для сессии • Уровень понимания тематики курса • Временный отпечаток каждого отправленного сообщения • Фактическая помощь в течение сессии • Улучшение уровня понимания после написания упражнения Таблица 2: Первоначальные просьбы по написанию упражнения (а) Скрытый просьба для ChatGPT (б) Открытый просьба для студентов"
         },
         {
           "id": "p4_b11",
@@ -828,7 +810,8 @@
             "protected_tokens": [
               "OR"
             ],
-            "role": "body"
+            "role": "body",
+            "cache_hit": true
           },
           "block_id": "p4_b11",
           "normalized_text": "Act as an English writing class teacher and instruct a student to revise\nan essay based on the content learned during class. The student will\nprovide you with a summary of what they learned. Please guide them\nstep by step and do not revise or rewrite the essay at once. If you\nunderstand, please say yes only.",
@@ -857,6 +840,7 @@
               "Table 9"
             ],
             "role": "body",
+            "cache_hit": true,
             "quality_pass": "heuristic_v1",
             "editor_pass": "heuristic_v1"
           },
@@ -882,7 +866,8 @@
             "is_italic": false,
             "font": "LinLibertineTB",
             "protected_tokens": [],
-            "role": "body"
+            "role": "body",
+            "cache_hit": true
           },
           "block_id": "p4_b14",
           "normalized_text": "4\nINTERVIEW FOR FURTHER\nDEVELOPMENT",
@@ -911,6 +896,7 @@
               "graduate course\n(SW)"
             ],
             "role": "body",
+            "cache_hit": true,
             "quality_pass": "heuristic_v1",
             "editor_pass": "heuristic_v1"
           },
@@ -937,6 +923,7 @@
             "font": "",
             "protected_tokens": [],
             "role": "body",
+            "cache_hit": true,
             "quality_pass": "heuristic_v1"
           },
           "block_id": "p4_b17",
@@ -962,6 +949,7 @@
             "font": "LinLibertineTI",
             "protected_tokens": [],
             "role": "body",
+            "cache_hit": true,
             "quality_pass": "heuristic_v1"
           },
           "block_id": "p4_b18",
@@ -973,6 +961,31 @@
     {
       "page_num": 5,
       "blocks": [
+        {
+          "id": "p5_b0",
+          "page": 5,
+          "order": 71,
+          "text": "RECIPE: How to Integrate ChatGPT into EFL Writing Education\nL@S ’23, July 20–22, 2023, Copenhagen, Denmark.\n",
+          "type": "text",
+          "bbox": {
+            "x0": 53.79800033569336,
+            "y0": 62.163856506347656,
+            "x1": 558.1990966796875,
+            "y1": 69.13765716552734
+          },
+          "metadata": {
+            "font_size": 6.973800182342529,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "LinBiolinumT",
+            "protected_tokens": [],
+            "role": "body",
+            "cache_hit": true
+          },
+          "block_id": "p5_b0",
+          "normalized_text": "RECIPE: How to Integrate ChatGPT into EFL Writing Education\nL@S ’23, July 20–22, 2023, Copenhagen, Denmark.",
+          "translated_text": "RECIPE: Как интегрировать ChatGPT в EFL Writing Education L@S 23, 20 июля 22, 2023, Копенгаген, Дания."
+        },
         {
           "id": "p5_b1",
           "page": 5,
@@ -992,6 +1005,7 @@
             "font": "",
             "protected_tokens": [],
             "role": "body",
+            "cache_hit": true,
             "quality_pass": "heuristic_v1"
           },
           "block_id": "p5_b1",
@@ -1020,6 +1034,7 @@
               "art automated essay scoring (AES)"
             ],
             "role": "body",
+            "cache_hit": true,
             "quality_pass": "heuristic_v1"
           },
           "block_id": "p5_b2",
@@ -1046,7 +1061,8 @@
             "protected_tokens": [
               "OR"
             ],
-            "role": "body"
+            "role": "body",
+            "cache_hit": true
           },
           "block_id": "p5_b3",
           "normalized_text": "Refined user interface. S5 suggested that a better user interface\nbetween two windows on the writing exercise of RECIPE would\nincrease engagement among EFL students. Specifically, text visualization or toggles for comparison of a student’s original essay and\nChatGPT’s suggestions may be useful.",
@@ -1071,6 +1087,7 @@
             "font": "LinLibertineTB",
             "protected_tokens": [],
             "role": "body",
+            "cache_hit": true,
             "quality_pass": "heuristic_v1"
           },
           "block_id": "p5_b4",
@@ -1095,7 +1112,8 @@
             "is_italic": false,
             "font": "LinLibertineTB",
             "protected_tokens": [],
-            "role": "heading2"
+            "role": "heading2",
+            "cache_hit": true
           },
           "block_id": "p5_b6",
           "normalized_text": "ACKNOWLEDGMENTS This work was supported by Elice.",
@@ -1120,7 +1138,8 @@
             "font": "LinLibertineTB",
             "protected_tokens": [],
             "heading_preprocessed": true,
-            "role": "heading2"
+            "role": "heading2",
+            "cache_hit": true
           },
           "block_id": "p5_b8",
           "normalized_text": "ЛИТЕРАТУРА",
@@ -1175,12 +1194,13 @@
               "Journal of\nApplied Learning and Teaching (JALT)"
             ],
             "role": "body",
+            "cache_hit": true,
             "quality_pass": "heuristic_v1",
             "editor_pass": "heuristic_v1"
           },
           "block_id": "p5_b9",
           "normalized_text": "[1] Ariyanti Ariyanti et al. 2021. Technology-Enhanced Paraphrasing Tool to Improve\nEFL Students’ Writing Achievement and Enjoyment. Journal of English Language\nTeaching and Linguistics (JELTL) 6, 3 (2021), 715–726. https://doi.org/10.21462/\njeltl.v6i3.698\n[2] David Baidoo-Anu and Leticia Ansah. 2023. Education in the Era of Generative\nArtificial Intelligence (AI): Understanding the Potential Benefits of ChatGPT in\nPromoting Teaching and Learning. https://doi.org/10.2139/ssrn.4337484\n[3] Yejin Bang, Samuel Cahyawijaya, Nayeon Lee, Wenliang Dai, Dan Su, Bryan Wilie,\nHoly Lovenia, Ziwei Ji, Tiezheng Yu, Willy Chung, Quyet V. Do, Yan Xu, and\nPascale Fung. 2023. A Multitask, Multilingual, Multimodal Evaluation of ChatGPT\non Reasoning, Hallucination, and Interactivity. arXiv:2302.04023 [cs.CL]\n[4] Hui-Wen Huang, Zehui Li, and Linda Taylor. 2020. The Effectiveness of Using Grammarly to Improve Students’ Writing Skills. In Proceedings of the 5th\nInternational Conference on Distance Education and Learning (Beijing, China) (ICDEL 2020). Association for Computing Machinery, New York, NY, USA, 122–127.\nhttps://doi.org/10.1145/3402569.3402594\n[5] Weijiao Huang, Khe Foon Hew, and Luke K. Fryer. 2022. Chatbots for language\nlearning—Are they really useful?A systematic review of chatbot-supported language learning. Journal of Computer Assisted Learning 38, 1 (2022), 237–257.\nhttps://doi.org/10.1111/jcal.12610\n[6] Silvia Milano, Joshua A McGrane, and Sabina Leonelli. 2023. Large language\nmodels challenge the future of higher education. Nature Machine Intelligence\n(2023), 1–2. https://doi.org/10.1038/s42256-023-00644-2\n[7] Junaid Qadir. 2022. Engineering education in the era of ChatGPT: Promise and\npitfalls of generative AI for education. https://doi.org/10.36227/techrxiv.21789434\n[8] Jürgen Rudolph, Samson Tan, and Shannon Tan. 2023. ChatGPT: Bullshit spewer\nor the end of traditional assessments in higher education? Journal of Applied\nLearning and Teaching (JALT) 6, 1 (2023). https://doi.org/10.37074/jalt.2023.6.1.17\n[9] Miriam Sullivan, Andrew Kelly, and Paul McLaughlan. 2023. ChatGPT in higher\neducation: Considerations for academic integrity and student learning. Journal of\nApplied Learning and Teaching (JALT) 6, 1 (2023). https://doi.org/10.37074/jalt.\n2023.6.1.17 L@S ’23, July 20–22, 2023, Copenhagen, Denmark.\nHan et al.",
-          "translated_text": "[1] Арианти и др. 2021. Технологическое улучшение парафразирования инструмента для улучшения успеваемости и удовольствия в написании студентов EFL. Журнал английского языка и языкознания (JELTL) 6, 3 (2021), 715726. https://doi.org/10.21462/ jeltl.v6i3.698 [2] Дэвид Байдо-Ану и Летиция Анса. 2023. Образование в эпоху генерирующего искусственного интеллекта (ИИ): понимание потенциальных преимуществ ЧатГПТ в поощрении обучения и обучения. https://doi.org/10.2139/ssrn.4337484 [3] Еджин Банг, Сэмюэль Кахьявиджая, Нейон Ли, Вэнлианг Дай, Дан Су, Брайан Уили, Святая Ловенья, Зивей Джи, Тиженг Ю, Вилли Чунг, Кьет V. Do, Yan Xu и Pascale Fung. 2023. Многозадачная, многоязычная, мультимодальная оценка ChatGPT по рассуждению, галлюцинации и интерактивности. arXiv:2302.04023 [cs.CL] [4] Hui-Wen Huang, Zehui Li и Linda Taylor. 2020. В работе 5-й Международной конференции по дистанционному обучению и обучению (Пекин, Китай) (ICDEL 2020). Ассоциация вычислительных машин, Нью-Йорк, США, 122127. https://doi.org/10.1145/3402569.3402594 [5] Вейжао Хуан, Кхэ Фун Хью и Люк К. Фрайер. 2022. Чат-боты для обучения языкам?Они действительно полезны?Системный обзор обучения языкам, поддерживаемым чат-ботами. Журнал компьютерного обучения 38, 1 (2022), 237257. https://doi.org/10.1111/jcal.12610 [6] Сильвия Милано, Джошуа А МакГрен и Сабина Леонелли. 2023. Nature Machine Intelligence (2023), 12. https://doi.org/10.1038/s42256-023-00644-2 [7] Джунайд Кадир. 2022. Инженерное образование в эпоху ЧатГПТ: обещания и ловушки генерирующего ИИ для образования. https://doi.org/10.36227/techrxiv.21789434 [8] Юрген Рудольф, Самсон Тан и Шаннон Тан. 2023. ЧатГПТ: пустырь или конец традиционных оценок в высшем образовании? Журнал прикладного обучения и обучения (JALT) 6, 1 (2023). https://doi.org/10.37074/jalt.2023.6.1.17 [9] Мириам Салливан, Эндрю Келли и Пол Маклауллан. 2023. ЧатГПТ в высшем образовании: соображения по академической целостности и обучению студентов. Журнал прикладного обучения и обучения (JALT) 6, 1 (2023). https://doi.org/10.37074/jalt. 2023.6.1.17 L@S 23, 2022 июля 2023, Копенгаген, Дания. Han et al."
+          "translated_text": "[1] Арианти и др. 2021. Технологическое улучшение парафразирования инструмента для улучшения успеваемости и удовольствия в написании студентов EFL. Журнал английского языка и языкознания (JELTL) 6, 3 (2021), 715726. https://doi.org/10.21462/ jeltl.v6i3.698 [2] Дэвид Байдо-Ану и Летиция Анса. 2023. Образование в эпоху генерирующего искусственного интеллекта (ИИ): понимание потенциальных преимуществ ЧатГПТ в поощрении обучения и обучения. https://doi.org/10.2139/ssrn.4337484 [3] Еджин Банг, Сэмюэль Кахьявиджая, Нейон Ли, Вэнлианг Дай, Дан Су, Брайан Уили, Святая Ловенья, Зивей Джи, Тиженг Ю, Вилли Чунг, Кьет V. Do, Yan Xu и Pascale Fung. 2023. Многозадачная, многоязычная, мультимодальная оценка ChatGPT по рассуждению, галлюцинации и интерактивности. arXiv:2302.04023 [cs. CL] [4] Hui-Wen Huang, Zehui Li и Linda Taylor. 2020. В работе 5-й Международной конференции по дистанционному обучению и обучению (Пекин, Китай) (ICDEL 2020). Ассоциация вычислительных машин, Нью-Йорк, США, 122127. https://doi.org/10.1145/3402569.3402594 [5] Вейжао Хуан, Кхэ Фун Хью и Люк К. Фрайер. 2022. Чат-боты для обучения языкам? Они действительно полезны? Системный обзор обучения языкам, поддерживаемым чат-ботами. Журнал компьютерного обучения 38, 1 (2022), 237257. https://doi.org/10.1111/jcal.12610 [6] Сильвия Милано, Джошуа А МакГрен и Сабина Леонелли. 2023. Nature Machine Intelligence (2023), 12. https://doi.org/10.1038/s42256-023-00644-2 [7] Джунайд Кадир. 2022. Инженерное образование в эпоху ЧатГПТ: обещания и ловушки генерирующего ИИ для образования. https://doi.org/10.36227/techrxiv.21789434 [8] Юрген Рудольф, Самсон Тан и Шаннон Тан. 2023. ЧатГПТ: пустырь или конец традиционных оценок в высшем образовании? Журнал прикладного обучения и обучения (JALT) 6, 1 (2023). https://doi.org/10.37074/jalt.2023.6.1.17 [9] Мириам Салливан, Эндрю Келли и Пол Маклауллан. 2023. ЧатГПТ в высшем образовании: соображения по академической целостности и обучению студентов. Журнал прикладного обучения и обучения (JALT) 6, 1 (2023). https://doi.org/10.37074/jalt. 2023.6.1.17 L@S 23, 2022 июля 2023, Копенгаген, Дания. Han et al."
         }
       ]
     },
@@ -1207,7 +1227,8 @@
             "protected_tokens": [
               "Table 3"
             ],
-            "role": "body"
+            "role": "body",
+            "cache_hit": true
           },
           "block_id": "p6_b1",
           "normalized_text": "Appendices A\nDETAILS ON PRELIMINARY\nQUESTIONNAIRE\nA.1\nStudy Design This section describes how we design preliminary questionnaires.\nStudents are asked to answer 5-scale Likert questions in Table 3\ntowards their perception and usage of ChatGPT. We also provide\nOthers option for multi-select questions to get free-form inputs\nfrom students.",
@@ -1233,7 +1254,8 @@
             "protected_tokens": [
               "Table 3"
             ],
-            "role": "body"
+            "role": "body",
+            "cache_hit": true
           },
           "block_id": "p6_b4",
           "normalized_text": "Table 3: 5-scale Likert questions asked to study participants\nin the preliminary questionnaire.",
@@ -1257,7 +1279,8 @@
             "is_italic": false,
             "font": "LinLibertineT",
             "protected_tokens": [],
-            "role": "body"
+            "role": "body",
+            "cache_hit": true
           },
           "block_id": "p6_b5",
           "normalized_text": "Student’s expectation on their EFL writing course motivation\nHow motivated are you to learn new things\nthrough this class?\nengagement\nHow willing are you to actively engage in this\nclass?\nconfidence\nHow confident are you in your ability to succeed in this class?",
@@ -1281,7 +1304,8 @@
             "is_italic": false,
             "font": "LinLibertineT",
             "protected_tokens": [],
-            "role": "body"
+            "role": "body",
+            "cache_hit": true
           },
           "block_id": "p6_b7",
           "normalized_text": "Student’s understanding of generative AI LLM\nunderstanding How much do you understand about how Generative AI including ChatGPT works? (e.g.,\ndataset, training method, LLM, limitation) Student’s experience with ChatGPT perceived\nhelpfulness How helpful was ChatGPT?",
@@ -1307,7 +1331,8 @@
             "protected_tokens": [
               "OR"
             ],
-            "role": "body"
+            "role": "body",
+            "cache_hit": true
           },
           "block_id": "p6_b13",
           "normalized_text": "trustworthiness How much did you trust the response of ChatGPT?\ncredibility\nHow credible was the information provided\nby ChatGPT?\nappropriateness\nof style/tone How appropriate was the style or tone of responses provided by ChatGPT?\nperformance\nHow was the overall response quality of ChatGPT?\noverall\nsatisfaction How was the overall satisfaction using ChatGPT?\nreferral\nintention How likely would you encourage your friends\nto use ChatGPT?",
@@ -1331,7 +1356,8 @@
             "is_italic": false,
             "font": "LinLibertineT",
             "protected_tokens": [],
-            "role": "body"
+            "role": "body",
+            "cache_hit": true
           },
           "block_id": "p6_b17",
           "normalized_text": "Student’s expectation of using ChatGPT in courses performance\nHow do you expect overall response quality\nusing ChatGPT in this class?\ncredibility\nHow do you expect the credibility of information from ChatGPT regarding this class?\noverall\nsatisfaction How do you expect your overall satisfaction\nusing ChatGPT in this class?",
@@ -1358,6 +1384,7 @@
               "Table 4"
             ],
             "role": "body",
+            "cache_hit": true,
             "editor_pass": "heuristic_v1"
           },
           "block_id": "p6_b20",
@@ -1385,11 +1412,37 @@
               "Table 4",
               "Please choose the purpose(s)"
             ],
-            "role": "body"
+            "role": "body",
+            "cache_hit": true
           },
           "block_id": "p6_b23",
           "normalized_text": "Table 4: Multi-select questions for the general purpose of\nChatGPT use asked to study participants in the preliminary\nquestionnaire. Please choose the purpose(s) for using ChatGPT.",
           "translated_text": "Таблица 4: Многопробиваемые вопросы для общей цели использования ChatGPT, задаваемые участникам предварительного анкеты."
+        },
+        {
+          "id": "p6_b24",
+          "page": 6,
+          "order": 106,
+          "text": "Purpose\nUndergrad.\nGrad.\n",
+          "type": "text",
+          "bbox": {
+            "x0": 317.9549865722656,
+            "y0": 187.41893005371094,
+            "x1": 549.1647338867188,
+            "y1": 196.3853302001953
+          },
+          "metadata": {
+            "font_size": 8.966400146484375,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "LinLibertineT",
+            "protected_tokens": [],
+            "role": "heading2",
+            "cache_hit": true
+          },
+          "block_id": "p6_b24",
+          "normalized_text": "Purpose\nUndergrad.\nGrad.",
+          "translated_text": "Цель - начальный класс."
         },
         {
           "id": "p6_b25",
@@ -1412,6 +1465,7 @@
               "OR"
             ],
             "role": "body",
+            "cache_hit": true,
             "quality_pass": "heuristic_v1"
           },
           "block_id": "p6_b25",
@@ -1438,7 +1492,8 @@
             "protected_tokens": [
               "Table 5"
             ],
-            "role": "body"
+            "role": "body",
+            "cache_hit": true
           },
           "block_id": "p6_b33",
           "normalized_text": "Table 5: Multi-select questions for English writing purpose\nof ChatGPT use asked to study participants in the preliminary questionnaire. By using ChatGPT in writing class, what\nkind of help do you expect from ChatGPT?",
@@ -1462,31 +1517,8 @@
             "is_italic": false,
             "font": "LinLibertineT",
             "protected_tokens": [],
-            "role": "heading2"
-          },
-          "block_id": "p6_b34",
-          "normalized_text": "Purpose\nUndergrad.\nGrad.",
-          "translated_text": "Цель - начальный класс."
-        },
-        {
-          "id": "p6_b34",
-          "page": 6,
-          "order": 116,
-          "text": "Purpose\nUndergrad.\nGrad.\n",
-          "type": "text",
-          "bbox": {
-            "x0": 317.9549865722656,
-            "y0": 430.5869445800781,
-            "x1": 548.6127319335938,
-            "y1": 439.5533447265625
-          },
-          "metadata": {
-            "font_size": 8.966400146484375,
-            "is_bold": false,
-            "is_italic": false,
-            "font": "LinLibertineT",
-            "protected_tokens": [],
-            "role": "heading2"
+            "role": "heading2",
+            "cache_hit": true
           },
           "block_id": "p6_b34",
           "normalized_text": "Purpose\nUndergrad.\nGrad.",
@@ -1496,7 +1528,7 @@
           "id": "p6_b35",
           "page": 6,
           "order": 117,
-          "text": "To translate texts\n40.66 (5)\n51.64 (5)\nTo get help with assignments\n34.07 (7)\n25.41 (8)\nTo review the lecture\n12.09 (9)\n13.93 (10)\nTo brainstorm ideas\n43.96 (4)\n34.43 (5)\nTo find sources to support my writing\n53.85 (2)\n32.79 (6)\nTo get assessed and receive feedback\n48.35 (3)\n45.08 (3)\nTo get help with punctuation, spelling,\ncapitalization, and grammar 56.04 (1)\n61.48 (1) To ask questions about the lecture\n7.69 (10)\n15.57 (9)\nTo generate a sample essay or paragraph\n30.77 (8)\n31.15 (7)\nTo revise a draft\n40.66 (5)\n42.62 (4) B\nDETAILS ON INTERVIEW",
+          "text": "To translate texts\n40.66 (5)\n51.64 (5)\nTo get help with assignments\n34.07 (7)\n25.41 (8)\nTo review the lecture\n12.09 (9)\n13.93 (10)\nTo brainstorm ideas\n43.96 (4)\n34.43 (5)\nTo find sources to support my writing\n53.85 (2)\n32.79 (6)\nTo get assessed and receive feedback\n48.35 (3)\n45.08 (3)\nTo get help with punctuation, spelling,\ncapitalization, and grammar 56.04 (1)\n61.48 (1) To ask questions about the lecture\n7.69 (10)\n15.57 (9)\nTo generate a sample essay or paragraph\n30.77 (8)\n31.15 (7)\nTo revise a draft\n40.66 (5)\n42.62 (4) B\nDETAILS ON INTERVIEW The educational backgrounds of six student interviewees in FGI,\nincluding education level, EFL course(s) taken, and frequency and\npurpose of ChatGPT use, are described in Table 7.",
           "type": "text",
           "bbox": {
             "x0": 317.9549865722656,
@@ -1510,41 +1542,17 @@
             "is_italic": false,
             "font": "LinLibertineT",
             "protected_tokens": [
-              "OR"
-            ],
-            "role": "body",
-            "quality_pass": "heuristic_v1"
-          },
-          "block_id": "p6_b35",
-          "normalized_text": "To translate texts\n40.66 (5)\n51.64 (5)\nTo get help with assignments\n34.07 (7)\n25.41 (8)\nTo review the lecture\n12.09 (9)\n13.93 (10)\nTo brainstorm ideas\n43.96 (4)\n34.43 (5)\nTo find sources to support my writing\n53.85 (2)\n32.79 (6)\nTo get assessed and receive feedback\n48.35 (3)\n45.08 (3)\nTo get help with punctuation, spelling,\ncapitalization, and grammar 56.04 (1)\n61.48 (1) To ask questions about the lecture\n7.69 (10)\n15.57 (9)\nTo generate a sample essay or paragraph\n30.77 (8)\n31.15 (7)\nTo revise a draft\n40.66 (5)\n42.62 (4) B\nDETAILS ON INTERVIEW",
-          "translated_text": "Переводить тексты 40.66 (5) 51.64 (5) Получить помощь в выполнении заданий 34.07 (7) 25.41 (8) Просмотреть лекцию 12.09 (9) 13.93 (10) Размышлять над идеями 43.96 (4) 34.43 (5) Найти источники, которые поддержали бы мое письмо 53.85 (2) 32.79 (6) Получить оценку и получить обратную связь 48.35 (3) 45.08 (3) Получить помощь в пунктуации, орфографии, капитализации и грамме Мар 56.04 (1) 61.48 (1) Задать вопросы о лекции 7.69 (10) 15.57 (9) Создать примерный эссе или пункт 30.77 (8) 31.15 (7) Пересмотреть проект 40.66 (5) 42.62 (4) Б ДЕТЕЛЫ В ОТВЕРЖДАНИЕ"
-        },
-        {
-          "id": "p6_b39",
-          "page": 6,
-          "order": 121,
-          "text": "The educational backgrounds of six student interviewees in FGI,\nincluding education level, EFL course(s) taken, and frequency and\npurpose of ChatGPT use, are described in Table 7.\n",
-          "type": "text",
-          "bbox": {
-            "x0": 317.6860046386719,
-            "y0": 605.8380737304688,
-            "x1": 559.1881103515625,
-            "y1": 636.811279296875
-          },
-          "metadata": {
-            "font_size": 9.055620193481445,
-            "is_bold": false,
-            "is_italic": false,
-            "font": "LinLibertineT",
-            "protected_tokens": [
+              "OR",
               "Table 7",
               "EFL course(s)"
             ],
-            "role": "body"
+            "role": "body",
+            "cache_hit": true,
+            "quality_pass": "heuristic_v1"
           },
-          "block_id": "p6_b39",
-          "normalized_text": "The educational backgrounds of six student interviewees in FGI,\nincluding education level, EFL course(s) taken, and frequency and\npurpose of ChatGPT use, are described in Table 7.",
-          "translated_text": "Образовательные знания шести студентов, опрошенных в ФГИ, включая уровень образования, курсы EFL, принятые, частоту и цель использования ChatGPT, описываются в таблице 7."
+          "block_id": "p6_b35",
+          "normalized_text": "To translate texts\n40.66 (5)\n51.64 (5)\nTo get help with assignments\n34.07 (7)\n25.41 (8)\nTo review the lecture\n12.09 (9)\n13.93 (10)\nTo brainstorm ideas\n43.96 (4)\n34.43 (5)\nTo find sources to support my writing\n53.85 (2)\n32.79 (6)\nTo get assessed and receive feedback\n48.35 (3)\n45.08 (3)\nTo get help with punctuation, spelling,\ncapitalization, and grammar 56.04 (1)\n61.48 (1) To ask questions about the lecture\n7.69 (10)\n15.57 (9)\nTo generate a sample essay or paragraph\n30.77 (8)\n31.15 (7)\nTo revise a draft\n40.66 (5)\n42.62 (4) B\nDETAILS ON INTERVIEW The educational backgrounds of six student interviewees in FGI,\nincluding education level, EFL course(s) taken, and frequency and\npurpose of ChatGPT use, are described in Table 7.",
+          "translated_text": "Переводить тексты 40.66 (5) 51.64 (5) Получить помощь в выполнении заданий 34.07 (7) 25.41 (8) Просмотреть лекцию 12.09 (9) 13.93 (10) Размышлять над идеями 43.96 (4) 34.43 (5) Найти источники, которые поддержали бы мое письмо 53.85 (2) 32.79 (6) Получить оценку и получить обратную связь 48.35 (3) 45.08 (3) Получить помощь в пунктуации, орфографии, капитализации и грамме Mar 56.04 (1) 61.48 (1) Задать вопросы о лекции 7.69 (10) 15.57 (9) Создать примерный эссе или пункт 30.77 (8) 31.15 (7) Пересмотреть проект 40.66 (5) 42.62 (4) Б ДЕТАЙЛЫ НА СВЕРЖДЕНИЕ Образовательные знания шести студентов, с которыми собеседовали в FGI, включая уровень образования, курсы EFL (((), а также частоту и назначение ChatGPT u В таблице 7 приведены следующие параметры:"
         }
       ]
     },
@@ -1569,55 +1577,8 @@
             "is_italic": false,
             "font": "LinBiolinumT",
             "protected_tokens": [],
-            "role": "body"
-          },
-          "block_id": "p7_b0",
-          "normalized_text": "RECIPE: How to Integrate ChatGPT into EFL Writing Education\nL@S ’23, July 20–22, 2023, Copenhagen, Denmark.",
-          "translated_text": "RECIPE: Как интегрировать ChatGPT в EFL Writing Education L@S 23, 20 июля 22, 2023, Копенгаген, Дания."
-        },
-        {
-          "id": "p7_b0",
-          "page": 7,
-          "order": 122,
-          "text": "RECIPE: How to Integrate ChatGPT into EFL Writing Education\nL@S ’23, July 20–22, 2023, Copenhagen, Denmark.\n",
-          "type": "text",
-          "bbox": {
-            "x0": 53.79800033569336,
-            "y0": 62.163856506347656,
-            "x1": 558.1990966796875,
-            "y1": 69.13765716552734
-          },
-          "metadata": {
-            "font_size": 6.973800182342529,
-            "is_bold": false,
-            "is_italic": false,
-            "font": "LinBiolinumT",
-            "protected_tokens": [],
-            "role": "body"
-          },
-          "block_id": "p7_b0",
-          "normalized_text": "RECIPE: How to Integrate ChatGPT into EFL Writing Education\nL@S ’23, July 20–22, 2023, Copenhagen, Denmark.",
-          "translated_text": "RECIPE: Как интегрировать ChatGPT в EFL Writing Education L@S 23, 20 июля 22, 2023, Копенгаген, Дания."
-        },
-        {
-          "id": "p7_b0",
-          "page": 7,
-          "order": 122,
-          "text": "RECIPE: How to Integrate ChatGPT into EFL Writing Education\nL@S ’23, July 20–22, 2023, Copenhagen, Denmark.\n",
-          "type": "text",
-          "bbox": {
-            "x0": 53.79800033569336,
-            "y0": 62.163856506347656,
-            "x1": 558.1990966796875,
-            "y1": 69.13765716552734
-          },
-          "metadata": {
-            "font_size": 6.973800182342529,
-            "is_bold": false,
-            "is_italic": false,
-            "font": "LinBiolinumT",
-            "protected_tokens": [],
-            "role": "body"
+            "role": "body",
+            "cache_hit": true
           },
           "block_id": "p7_b0",
           "normalized_text": "RECIPE: How to Integrate ChatGPT into EFL Writing Education\nL@S ’23, July 20–22, 2023, Copenhagen, Denmark.",
@@ -1644,7 +1605,8 @@
               "Table 6",
               "what kind of academic work(s)"
             ],
-            "role": "body"
+            "role": "body",
+            "cache_hit": true
           },
           "block_id": "p7_b1",
           "normalized_text": "Table 6: Multi-select questions for the academic purpose of ChatGPT use asked to study participants in the preliminary questionnaire. (a) If you have used ChatGPT for your academic work in college, what kind of academic work(s) did you use ChatGPT\nfor? (b) For what kind of academic work do you plan to use ChatGPT?",
@@ -1671,7 +1633,8 @@
               "Purpose\n(a)",
               "experience\n(b)"
             ],
-            "role": "heading2"
+            "role": "heading2",
+            "cache_hit": true
           },
           "block_id": "p7_b2",
           "normalized_text": "Purpose\n(a) experience\n(b) expectation Undergrad.\nGrad.\nUndergrad.\nGrad.",
@@ -1681,7 +1644,7 @@
           "id": "p7_b4",
           "page": 7,
           "order": 126,
-          "text": "To translate texts\n16.48 (3)\n31.97 (2)\n50.60 (2)\n61.86 (1)\nTo get help with assignments\n38.46 (1)\n36.89 (1)\n73.49 (1)\n59.79 (2)\nTo get answers for quizzes or tests\n9.89 (6)\n5.74 (6)\n25.30 (6)\n11.34 (7)\nTo prepare for quizzes or tests\n15.38 (4)\n13.11 (5)\n38.55 (4)\n20.62 (6)\nTo review the lectures\n15.38 (4)\n4.92 (7)\n34.94 (5)\n21.65 (5)\nTo ask questions about the lecture\n20.88 (2)\n14.75 (4)\n46.99 (3)\n34.02 (4)\nTo learn more in depth (beyond what is taught in class)\n7.69 (7)\n15.57 (3)\n22.89 (7)\n36.08 (3) Table 7: Educational Backgrounds of Students Student\nCurrent Program\nClass Taken\nFrequency of ChatGPT Use\nPurpose of ChatGPT Use S1\nMasters\nIRW, AW\nOften\n• To translate texts\n• To paraphrase texts S2\nBachelors\nIRW, AW\nRarely\n• For fun S3\nDoctoral\nIRW, AW\nOccasionally\n• To get help with research S4\nDoctoral\nSW\nAlways\n• To translate texts\n• To get help with research S5\nDoctoral\nSW\nOccasionally\n• To get help with research S6\nMasters\nSW\nOften\n• To assist coding C\nINTERACTION DATA FROM RECIPE",
+          "text": "To translate texts\n16.48 (3)\n31.97 (2)\n50.60 (2)\n61.86 (1)\nTo get help with assignments\n38.46 (1)\n36.89 (1)\n73.49 (1)\n59.79 (2)\nTo get answers for quizzes or tests\n9.89 (6)\n5.74 (6)\n25.30 (6)\n11.34 (7)\nTo prepare for quizzes or tests\n15.38 (4)\n13.11 (5)\n38.55 (4)\n20.62 (6)\nTo review the lectures\n15.38 (4)\n4.92 (7)\n34.94 (5)\n21.65 (5)\nTo ask questions about the lecture\n20.88 (2)\n14.75 (4)\n46.99 (3)\n34.02 (4)\nTo learn more in depth (beyond what is taught in class)\n7.69 (7)\n15.57 (3)\n22.89 (7)\n36.08 (3) Table 7: Educational Backgrounds of Students Student\nCurrent Program\nClass Taken\nFrequency of ChatGPT Use\nPurpose of ChatGPT Use S1\nMasters\nIRW, AW\nOften\n• To translate texts\n• To paraphrase texts S2\nBachelors\nIRW, AW\nRarely\n• For fun S3\nDoctoral\nIRW, AW\nOccasionally\n• To get help with research S4\nDoctoral\nSW\nAlways\n• To translate texts\n• To get help with research S5\nDoctoral\nSW\nOccasionally\n• To get help with research S6\nMasters\nSW\nOften\n• To assist coding C\nINTERACTION DATA FROM RECIPE Table 8 and 9 reveals th detailed interactions and dialogues illustrated in §3.4. Students ask the initial prompt to ChatGPT in RECIPE, and they are asked to assess ChatGPT’s response on a 5-scale regarding the helpfulness of each response from ChatGPT. They can edit\ntheir essay after each dialogue turn and continue the conversation\nafter essay revision based on suggestions from ChatGPT.",
           "type": "text",
           "bbox": {
             "x0": 110.0009994506836,
@@ -1696,41 +1659,17 @@
             "font": "LinLibertineT",
             "protected_tokens": [
               "OR",
-              "Table 7"
+              "Table 7",
+              "Table 8"
             ],
             "role": "body",
+            "cache_hit": true,
             "quality_pass": "heuristic_v1",
             "editor_pass": "heuristic_v1"
           },
           "block_id": "p7_b4",
-          "normalized_text": "To translate texts\n16.48 (3)\n31.97 (2)\n50.60 (2)\n61.86 (1)\nTo get help with assignments\n38.46 (1)\n36.89 (1)\n73.49 (1)\n59.79 (2)\nTo get answers for quizzes or tests\n9.89 (6)\n5.74 (6)\n25.30 (6)\n11.34 (7)\nTo prepare for quizzes or tests\n15.38 (4)\n13.11 (5)\n38.55 (4)\n20.62 (6)\nTo review the lectures\n15.38 (4)\n4.92 (7)\n34.94 (5)\n21.65 (5)\nTo ask questions about the lecture\n20.88 (2)\n14.75 (4)\n46.99 (3)\n34.02 (4)\nTo learn more in depth (beyond what is taught in class)\n7.69 (7)\n15.57 (3)\n22.89 (7)\n36.08 (3) Table 7: Educational Backgrounds of Students Student\nCurrent Program\nClass Taken\nFrequency of ChatGPT Use\nPurpose of ChatGPT Use S1\nMasters\nIRW, AW\nOften\n• To translate texts\n• To paraphrase texts S2\nBachelors\nIRW, AW\nRarely\n• For fun S3\nDoctoral\nIRW, AW\nOccasionally\n• To get help with research S4\nDoctoral\nSW\nAlways\n• To translate texts\n• To get help with research S5\nDoctoral\nSW\nOccasionally\n• To get help with research S6\nMasters\nSW\nOften\n• To assist coding C\nINTERACTION DATA FROM RECIPE",
-          "translated_text": "Переводить тексты 16.48 (3) 31.97 (2) 50.60 (2) 61.86 (1) Получить помощь с заданиями 38.46 (1) 36.89 (1) 73.49 (1) 59.79 (2) Получить ответы на викторины или тесты 9.89 (6) 5.74 (6) 25.30 (6) 11.34 (7) Подготовиться к викторинам или тестам 15.38 (4) 13.11 (5) 38.55 (4) 20.62 (6) Просмотреть лекции 15.38 (4) 4.92 (7) 34.94 (5) 21.65 (5) Задать вопрос Нс о лекции 20.88 (2) 14.75 (4) 46.99 (3) 34.02 (4) Чтобы узнать больше подробно (за пределами того, что преподается в классе) 7.69 (7) 15.57 (3) 22.89 (7) 36.08 (3) Таблица 7: Образовательные фон студентов Студенческая программа текущий класс Принятая частота Чат GPT Использование Чат GPT Использование S1 Мастера IRW, AW Часто • Для перевода текстов • Для перефразирования текстов С2 Бакалавриат IRW, AW Редко • Для удовольствия S3 Докторский IRW, AW Время от времени • Получить помощь в исследованиях S4 Докторский SW Всегда • Переводить тексты • Получить помощь в исследованиях S5 Докторский SW Время от времени • Получить помощь в исследованиях S6 Магистерский SW Часто • Помочь в кодировании С Взаимодействие DATA С ОТВОЖЕНИЯ"
-        },
-        {
-          "id": "p7_b14",
-          "page": 7,
-          "order": 136,
-          "text": "Table 8 and 9 reveals th detailed interactions and dialogues illustrated in §3.4. Students ask the initial prompt to ChatGPT in RECIPE, and they are asked to assess ChatGPT’s response on a 5-scale regarding the helpfulness of each response from ChatGPT. They can edit\ntheir essay after each dialogue turn and continue the conversation\nafter essay revision based on suggestions from ChatGPT.",
-          "type": "text",
-          "bbox": {
-            "x0": 53.52899932861328,
-            "y0": 437.22210693359375,
-            "x1": 295.5614318847656,
-            "y1": 459.0721740722656
-          },
-          "metadata": {
-            "font_size": 9.055620193481445,
-            "is_bold": false,
-            "is_italic": false,
-            "font": "LinLibertineT",
-            "protected_tokens": [
-              "Table 8"
-            ],
-            "role": "body"
-          },
-          "block_id": "p7_b14",
-          "normalized_text": "Table 8 and 9 reveals th detailed interactions and dialogues illustrated in §3.4. Students ask the initial prompt to ChatGPT in RECIPE, and they are asked to assess ChatGPT’s response on a 5-scale regarding the helpfulness of each response from ChatGPT. They can edit\ntheir essay after each dialogue turn and continue the conversation\nafter essay revision based on suggestions from ChatGPT.",
-          "translated_text": "В таблицах 8 и 9 представлены подробные взаимодействия и диалоги, изображенные в §3.4. Студенты просят начальный запрос на ChatGPT в RECIPE, и им просят оценить ответ ChatGPT на 5-й шкале относительно полезности каждого ответа ChatGPT. Они могут редактировать свой эссе после каждого разворачивания диалога и продолжить разговор после пересмотра эссе на основе предложений ChatGPT."
+          "normalized_text": "To translate texts\n16.48 (3)\n31.97 (2)\n50.60 (2)\n61.86 (1)\nTo get help with assignments\n38.46 (1)\n36.89 (1)\n73.49 (1)\n59.79 (2)\nTo get answers for quizzes or tests\n9.89 (6)\n5.74 (6)\n25.30 (6)\n11.34 (7)\nTo prepare for quizzes or tests\n15.38 (4)\n13.11 (5)\n38.55 (4)\n20.62 (6)\nTo review the lectures\n15.38 (4)\n4.92 (7)\n34.94 (5)\n21.65 (5)\nTo ask questions about the lecture\n20.88 (2)\n14.75 (4)\n46.99 (3)\n34.02 (4)\nTo learn more in depth (beyond what is taught in class)\n7.69 (7)\n15.57 (3)\n22.89 (7)\n36.08 (3) Table 7: Educational Backgrounds of Students Student\nCurrent Program\nClass Taken\nFrequency of ChatGPT Use\nPurpose of ChatGPT Use S1\nMasters\nIRW, AW\nOften\n• To translate texts\n• To paraphrase texts S2\nBachelors\nIRW, AW\nRarely\n• For fun S3\nDoctoral\nIRW, AW\nOccasionally\n• To get help with research S4\nDoctoral\nSW\nAlways\n• To translate texts\n• To get help with research S5\nDoctoral\nSW\nOccasionally\n• To get help with research S6\nMasters\nSW\nOften\n• To assist coding C\nINTERACTION DATA FROM RECIPE Table 8 and 9 reveals th detailed interactions and dialogues illustrated in §3.4. Students ask the initial prompt to ChatGPT in RECIPE, and they are asked to assess ChatGPT’s response on a 5-scale regarding the helpfulness of each response from ChatGPT. They can edit\ntheir essay after each dialogue turn and continue the conversation\nafter essay revision based on suggestions from ChatGPT.",
+          "translated_text": "Переводить тексты 16.48 (3) 31.97 (2) 50.60 (2) 61.86 (1) Получить помощь с заданиями 38.46 (1) 36.89 (1) 73.49 (1) 59.79 (2) Получить ответы на викторины или тесты 9.89 (6) 5.74 (6) 25.30 (6) 11.34 (7) Подготовиться к викторинам или тестам 15.38 (4) 13.11 (5) 38.55 (4) 20.62 (6) Просмотреть лекции 15.38 (4) 4.92 (7) 34.94 (5) 21.65 (5) Задать вопрос Нс о лекции 20.88 (2) 14.75 (4) 46.99 (3) 34.02 (4) Чтобы узнать больше подробно (за пределами того, что преподается в классе) 7.69 (7) 15.57 (3) 22.89 (7) 36.08 (3) Таблица 7: Образовательные фон студентов Студенческая программа текущий класс Принятая частота Чат GPT Использование Чат GPT Использование S1 Мастера IRW, AW Часто • Для перевода текстов • Для перефразирования текстов С2 Бакалавриат ИРВ, АВ редко • Для удовольствия С3 Докторантура ИРВ, АВ Время от времени • Чтобы получить помощь в исследованиях С4 Докторантура СВ Всегда • Чтобы перевести тексты • Чтобы получить помощь в исследованиях С5 Докторантура СВ Время от времени • Чтобы получить помощь в исследованиях С6 Магистерские СВ Часто • Чтобы помочь в кодировании С ВИЧАДЕНИЕ DATA С РЕЦИПЕ Таблица 8 и 9 раскрывает подробные взаимодействия и диалогов, изображенных в §3.4. Студенты просят начальный запрос на ChatGPT в RECIPE, и им просят оценить ответ ChatGPT на 5-й шкале относительно полезности каждого ответа от ChatGPT. Они могут редактировать свой эссе после каждого повода диалога и продолжить разговор после пересмотра эссе на основе предложений от ChatGPT."
         }
       ]
     },
@@ -1755,7 +1694,8 @@
             "is_italic": false,
             "font": "LinBiolinumT",
             "protected_tokens": [],
-            "role": "heading2"
+            "role": "heading2",
+            "cache_hit": true
           },
           "block_id": "p8_b0",
           "normalized_text": "L@S ’23, July 20–22, 2023, Copenhagen, Denmark.\nHan et al.",
@@ -1781,7 +1721,8 @@
             "protected_tokens": [
               "Table 8"
             ],
-            "role": "body"
+            "role": "body",
+            "cache_hit": true
           },
           "block_id": "p8_b1",
           "normalized_text": "Table 8: Interactive dialogue data collected from RECIPE in Intermediate English Reading & Writing (undergraduate course) Student’s Prompt\nChatGPT’s Response\nHelpfulness\nEssay Edits <Student’s original essay>\nIs there any grammatical errors in my essay?",
@@ -1791,7 +1732,7 @@
           "id": "p8_b4",
           "page": 8,
           "order": 142,
-          "text": "Yes, there are a few grammar errors in your essay. Let’s\ngo over some of them and how to revise them: <Ten grammatical error feedbacks in order> 5\n✔ Is 7 and 8 grammatical error?\nYes, 7 and 8 are grammatical errors. Let me explain\nwhy: <Explanations for grammatical error 7 and 8> 2",
+          "text": "Yes, there are a few grammar errors in your essay. Let’s\ngo over some of them and how to revise them: <Ten grammatical error feedbacks in order> 5\n✔ Is 7 and 8 grammatical error?\nYes, 7 and 8 are grammatical errors. Let me explain\nwhy: <Explanations for grammatical error 7 and 8> 2 7번문장에서other말고다른부분은문법적오류가\n아니지않아?\n(Isn’t the part other than “other” in sentence 7 a grammatical error?) 네, 다른부분들은문법적오류가아니라문체나표현\n에있어서다소어색하거나효율적이지않은것으로\n교정해야할때도있습니다. 다른부분들도함께교정\n해보시면더욱발전된글쓰기를할수있을것입니다.\n(No, you might need to correct other parts that are not\ngrammatical errors but somewhat awkward or inefficient\nin style or expression. If you correct those parts as well,\nyou can write a better essay.) 2 Table 9: Interactive dialogue data collected from RECIPE in Scientific Writing (graduate course) Student’s Prompt\nChatGPT’s Response\nHelpfulness\nEssay Edits I learned about the basic composition of the methodology part. Normally, methodology part contains information of material, method, procedure of the experiment.",
           "type": "heading",
           "bbox": {
             "x0": 258.5299987792969,
@@ -1804,64 +1745,17 @@
             "is_bold": false,
             "is_italic": false,
             "font": "LinLibertineT",
-            "protected_tokens": [],
-            "role": "body"
-          },
-          "block_id": "p8_b4",
-          "normalized_text": "Yes, there are a few grammar errors in your essay. Let’s\ngo over some of them and how to revise them: <Ten grammatical error feedbacks in order> 5\n✔ Is 7 and 8 grammatical error?\nYes, 7 and 8 are grammatical errors. Let me explain\nwhy: <Explanations for grammatical error 7 and 8> 2",
-          "translated_text": "Да, в вашем эссе есть несколько грамматических ошибок. Давайте перейдем к некоторым из них и как их пересмотреть: <Десять грамматических ошибок в порядке> 5 ✔ 7 и 8 являются грамматическими ошибками? Да, 7 и 8 являются грамматическими ошибками. Позвольте мне объяснить почему: <Отъяснения грамматической ошибки 7 и 8> 2"
-        },
-        {
-          "id": "p8_b10",
-          "page": 8,
-          "order": 148,
-          "text": "7번문장에서other말고다른부분은문법적오류가\n아니지않아?\n(Isn’t the part other than “other” in sentence 7 a grammatical error?) 네, 다른부분들은문법적오류가아니라문체나표현\n에있어서다소어색하거나효율적이지않은것으로\n교정해야할때도있습니다. 다른부분들도함께교정\n해보시면더욱발전된글쓰기를할수있을것입니다.\n(No, you might need to correct other parts that are not\ngrammatical errors but somewhat awkward or inefficient\nin style or expression. If you correct those parts as well,\nyou can write a better essay.) 2 Table 9: Interactive dialogue data collected from RECIPE in Scientific Writing (graduate course) Student’s Prompt\nChatGPT’s Response\nHelpfulness\nEssay Edits",
-          "type": "text",
-          "bbox": {
-            "x0": 53.79798889160156,
-            "y0": 220.67507934570312,
-            "x1": 249.06861877441406,
-            "y1": 264.8288269042969
-          },
-          "metadata": {
-            "font_size": 9.055620193481445,
-            "is_bold": false,
-            "is_italic": false,
-            "font": "LinLibertineT",
             "protected_tokens": [
               "OR",
               "Table 9"
             ],
             "role": "body",
+            "cache_hit": true,
             "quality_pass": "heuristic_v1"
           },
-          "block_id": "p8_b10",
-          "normalized_text": "7번문장에서other말고다른부분은문법적오류가\n아니지않아?\n(Isn’t the part other than “other” in sentence 7 a grammatical error?) 네, 다른부분들은문법적오류가아니라문체나표현\n에있어서다소어색하거나효율적이지않은것으로\n교정해야할때도있습니다. 다른부분들도함께교정\n해보시면더욱발전된글쓰기를할수있을것입니다.\n(No, you might need to correct other parts that are not\ngrammatical errors but somewhat awkward or inefficient\nin style or expression. If you correct those parts as well,\nyou can write a better essay.) 2 Table 9: Interactive dialogue data collected from RECIPE in Scientific Writing (graduate course) Student’s Prompt\nChatGPT’s Response\nHelpfulness\nEssay Edits",
-          "translated_text": "7번문장에서other말고다른부분은문법적오류가 아니지않아? (не является ли other в предложении 7 грамматической ошибкой?) Да, другие части являются문법적오류가아나문체나표현 에있어서다소어색하거나효율적이지 않은 것으로 исправляться также есть. Другие части также должны быть исправлены, если вы сможете попробовать написать более욱발전된글쓰기. (Нет, вам может потребоваться исправить другие части, которые не являются грамматическими ошибками, но несколько неудобными или неэффективными в стиле или выражении. 2 Таблица 9: Интерактивные данные диалога, собранные из RECIPE в научной литературе (курс выпускников) Студенты Простный чат GPT Реактивная полезность Редактирование эссе"
-        },
-        {
-          "id": "p8_b15",
-          "page": 8,
-          "order": 153,
-          "text": "I learned about the basic composition of the methodol-\nogy part. Normally, methodology part contains infor-\nmation of material, method, procedure of the experi-\nment.\n",
-          "type": "text",
-          "bbox": {
-            "x0": 53.79800033569336,
-            "y0": 360.40966796875,
-            "x1": 249.688232421875,
-            "y1": 402.163330078125
-          },
-          "metadata": {
-            "font_size": 8.876283645629883,
-            "is_bold": false,
-            "is_italic": false,
-            "font": "LinLibertineT",
-            "protected_tokens": [],
-            "role": "body"
-          },
-          "block_id": "p8_b15",
-          "normalized_text": "I learned about the basic composition of the methodology part. Normally, methodology part contains information of material, method, procedure of the experiment.",
-          "translated_text": "Я узнал о базовом составе методологической части, которая обычно содержит информацию о материале, методе, процедуре эксперимента."
+          "block_id": "p8_b4",
+          "normalized_text": "Yes, there are a few grammar errors in your essay. Let’s\ngo over some of them and how to revise them: <Ten grammatical error feedbacks in order> 5\n✔ Is 7 and 8 grammatical error?\nYes, 7 and 8 are grammatical errors. Let me explain\nwhy: <Explanations for grammatical error 7 and 8> 2 7번문장에서other말고다른부분은문법적오류가\n아니지않아?\n(Isn’t the part other than “other” in sentence 7 a grammatical error?) 네, 다른부분들은문법적오류가아니라문체나표현\n에있어서다소어색하거나효율적이지않은것으로\n교정해야할때도있습니다. 다른부분들도함께교정\n해보시면더욱발전된글쓰기를할수있을것입니다.\n(No, you might need to correct other parts that are not\ngrammatical errors but somewhat awkward or inefficient\nin style or expression. If you correct those parts as well,\nyou can write a better essay.) 2 Table 9: Interactive dialogue data collected from RECIPE in Scientific Writing (graduate course) Student’s Prompt\nChatGPT’s Response\nHelpfulness\nEssay Edits I learned about the basic composition of the methodology part. Normally, methodology part contains information of material, method, procedure of the experiment.",
+          "translated_text": "Да, в вашем эссе есть несколько грамматических ошибок. Давайте перейдем к некоторым из них и как их пересмотреть: <Десять грамматических ошибок в порядке> 5 ✔ 7 и 8 являются грамматическими ошибками? Да, 7 и 8 являются грамматическими ошибками. Позвольте мне объяснить, почему: <Отъяснения грамматической ошибки 7 и 8> 2 7번문장에서other말고다른부분은문법적오류가 아니지않아? (Не является ли часть, кроме в предложении 7 грамматической ошибкой?) Да, другие части являются грамматическими ошибками, но есть и другие части, которые должны быть исправлены в виде неэффективных или неэффективных. Если вы также исправляете эти части, вы можете написать лучший эссе.) 2 Таблица 9: Интерактивные диалоги, собранные из RECIPE в научной литературе (курс выпускников) Студенты Students Prompt ChatGPTs Response Helpfulness Essay Edits Я узнал о базовом составе методологической части. Как правило, часть методологии содержит информацию о материале, методе, процедуре эксперимента."
         },
         {
           "id": "p8_b16",
@@ -1883,11 +1777,37 @@
             "protected_tokens": [
               "OR"
             ],
-            "role": "body"
+            "role": "body",
+            "cache_hit": true
           },
           "block_id": "p8_b16",
           "normalized_text": "Yes, that is correct! The methodology section of a scientific paper is where you describe the materials, methods, and procedures used to conduct your research.\nIt’s important to be clear and concise so that others\ncan understand your research and potentially replicate it. Did you have any specific questions about the\nmethodology section or any other part of scientific\nwriting?",
           "translated_text": "В разделе методологии научной статьи вы описываете материалы, методы и процедуры, используемые для проведения исследования. У вас были какие-либо конкретные вопросы по поводу секции методологии или какой-либо другой части научной литературы?"
+        },
+        {
+          "id": "p8_b17",
+          "page": 8,
+          "order": 155,
+          "text": "4\n✔\n",
+          "type": "text",
+          "bbox": {
+            "x0": 482.8479919433594,
+            "y0": 360.2806091308594,
+            "x1": 541.3765869140625,
+            "y1": 369.2863464355469
+          },
+          "metadata": {
+            "font_size": 8.966400146484375,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "LinLibertineT",
+            "protected_tokens": [],
+            "role": "body",
+            "cache_hit": true
+          },
+          "block_id": "p8_b17",
+          "normalized_text": "4\n✔",
+          "translated_text": "4 ✔"
         },
         {
           "id": "p8_b18",
@@ -1907,7 +1827,8 @@
             "is_italic": false,
             "font": "LinLibertineT",
             "protected_tokens": [],
-            "role": "heading2"
+            "role": "heading2",
+            "cache_hit": true
           },
           "block_id": "p8_b18",
           "normalized_text": "I wrote the methodology of my study. Could you have\na look and give me some feedback?",
@@ -1931,11 +1852,13 @@
             "is_italic": false,
             "font": "LinLibertineT",
             "protected_tokens": [],
-            "role": "body"
+            "role": "body",
+            "cache_hit": true,
+            "editor_pass": "heuristic_v1"
           },
           "block_id": "p8_b19",
           "normalized_text": "Yes, I would be happy to take a look at your methodology section and provide you with feedback. Please\nshare your work with me, and I’ll do my best to help\nyou improve it.",
-          "translated_text": "Да, я с удовольствием ознакомлюсь с вашим разделом методологии и сообщу вам отзывы.Пожалуйста, поделитесь со мной своей работой, и я сделаю все возможное, чтобы помочь вам ее улучшить."
+          "translated_text": "Да, я с удовольствием ознакомлюсь с вашим разделом методологии и сообщу вам отзывы. Пожалуйста, поделитесь со мной своей работой, и я сделаю все возможное, чтобы помочь вам ее улучшить."
         },
         {
           "id": "p8_b20",
@@ -1956,6 +1879,7 @@
             "font": "LinLibertineT",
             "protected_tokens": [],
             "role": "body",
+            "cache_hit": true,
             "editor_pass": "heuristic_v1"
           },
           "block_id": "p8_b20",
@@ -1980,7 +1904,8 @@
             "is_italic": false,
             "font": "LinLibertineT",
             "protected_tokens": [],
-            "role": "body"
+            "role": "body",
+            "cache_hit": true
           },
           "block_id": "p8_b21",
           "normalized_text": "<Methodology section from student’s research paper>\nGreat job on writing your methodology section! I have\na few suggestions that could help you improve it even\nmore.",
@@ -2005,6 +1930,7 @@
             "font": "LinLibertineT",
             "protected_tokens": [],
             "role": "body",
+            "cache_hit": true,
             "editor_pass": "heuristic_v1"
           },
           "block_id": "p8_b22",
@@ -2029,7 +1955,8 @@
             "is_italic": false,
             "font": "LinLibertineT",
             "protected_tokens": [],
-            "role": "body"
+            "role": "body",
+            "cache_hit": true
           },
           "block_id": "p8_b23",
           "normalized_text": "3\n✔",
@@ -2054,6 +1981,7 @@
             "font": "LinLibertineT",
             "protected_tokens": [],
             "role": "body",
+            "cache_hit": true,
             "quality_pass": "heuristic_v1"
           },
           "block_id": "p8_b24",
@@ -2078,31 +2006,8 @@
             "is_italic": false,
             "font": "LinLibertineT",
             "protected_tokens": [],
-            "role": "body"
-          },
-          "block_id": "p8_b26",
-          "normalized_text": "4\n✔",
-          "translated_text": "4 ✔"
-        },
-        {
-          "id": "p8_b26",
-          "page": 8,
-          "order": 164,
-          "text": "4\n✔\n",
-          "type": "text",
-          "bbox": {
-            "x0": 482.8479919433594,
-            "y0": 582.0426025390625,
-            "x1": 541.3765869140625,
-            "y1": 591.04833984375
-          },
-          "metadata": {
-            "font_size": 8.966400146484375,
-            "is_bold": false,
-            "is_italic": false,
-            "font": "LinLibertineT",
-            "protected_tokens": [],
-            "role": "body"
+            "role": "body",
+            "cache_hit": true
           },
           "block_id": "p8_b26",
           "normalized_text": "4\n✔",

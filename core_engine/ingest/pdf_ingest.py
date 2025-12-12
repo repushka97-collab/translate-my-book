@@ -1,6 +1,8 @@
 from dataclasses import dataclass
 from typing import List, Dict, Any
 from pathlib import Path
+import os
+import base64
 
 from core_engine.normalize.text_cleaner import normalize_document
 from core_engine.core.models import BookDocument, Page, Block
@@ -11,6 +13,7 @@ from core_engine.ingest.pdf_reader import (
     extract_blocks,
     extract_images,
 )
+from core_engine.ingest.rasterizer import rasterize_pdf_pages
 
 
 # ====== v3 Result Structure ======
@@ -84,12 +87,30 @@ def ingest_pdf(source_path: str) -> IngestResult:
     except Exception:
         pass
 
-    # 5. Собираем BookDocument
+    # 5. (Опционально) Растровые превью страниц для анализа фона/водяных знаков.
+    #    Управляется env-переменной INGEST_RASTER_PREVIEW=1, по умолчанию выключено,
+    #    чтобы не раздувать память/manifest.
+    raster_previews_b64: List[str] = []
+    if os.getenv("INGEST_RASTER_PREVIEW", "0") == "1":
+        previews = rasterize_pdf_pages(str(pdf_path), dpi=200)
+        for p in previews:
+            if p:
+                raster_previews_b64.append(base64.b64encode(p).decode("ascii"))
+            else:
+                raster_previews_b64.append("")
+
+    # 6. Собираем BookDocument
     doc = BookDocument(
         source_path=str(pdf_path),
         pages=pages,
         metadata=info["metadata"],
     )
+
+    # Добавляем растровые превью в метаданные страниц (если включено)
+    if raster_previews_b64:
+        for idx, page in enumerate(doc.pages):
+            if idx < len(raster_previews_b64):
+                page.metadata["raster_preview_png_b64"] = raster_previews_b64[idx]
 
     # Нормализуем документ на уровне BookDocument:
     # - заполняем normalized_text

@@ -139,11 +139,37 @@ def extract_blocks(path, pages: List[Page]) -> List[Block]:
 
 
 def extract_images(path, pages: List[Page]) -> List[ImageObject]:
+    """
+    Извлекаем изображения с реальными bbox через page.get_text("dict") (type == 1).
+    Фолбэк: если bbox не найден, всё равно сохраняем изображение без падения ingest.
+    """
     images: List[ImageObject] = []
 
     with fitz.open(str(path)) as doc:
         for i, page in enumerate(doc):
-            for idx, img in enumerate(page.get_images(full=True)):
+            # Сначала собираем информацию о изображениях с bbox
+            images_with_bbox = []
+            try:
+                text_dict = page.get_text("dict")
+                for block in text_dict.get("blocks", []):
+                    if block.get("type") == 1 and "image" in block:
+                        bbox = block.get("bbox", [0, 0, 0, 0])
+                        xref = block.get("image")
+                        images_with_bbox.append((xref, bbox))
+            except Exception:
+                images_with_bbox = []
+
+            # Фолбэк: список всех изображений (может содержать больше, чем dict)
+            raw_images = page.get_images(full=True)
+
+            # Маппим xref -> bbox если есть, иначе bbox None
+            xref_to_bbox = {}
+            for xref, bbox in images_with_bbox:
+                if bbox and len(bbox) == 4:
+                    xref_to_bbox[xref] = bbox
+
+            # Извлекаем пиксмапы
+            for idx, img in enumerate(raw_images):
                 xref = img[0]
                 try:
                     pix = fitz.Pixmap(doc, xref)
@@ -161,7 +187,14 @@ def extract_images(path, pages: List[Page]) -> List[ImageObject]:
                     # Best-effort: do not fail ingest because of an unsupported image
                     continue
 
-                bbox = BBox(0, 0, 0, 0)  # пока не извлекаем bbox изображений (сложно)
+                bbox_list = xref_to_bbox.get(xref, [0, 0, 0, 0])
+                bbox = BBox(
+                    bbox_list[0] if len(bbox_list) > 0 else 0,
+                    bbox_list[1] if len(bbox_list) > 1 else 0,
+                    bbox_list[2] if len(bbox_list) > 2 else 0,
+                    bbox_list[3] if len(bbox_list) > 3 else 0,
+                )
+
                 im = ImageObject(
                     id=f"p{i+1}_img{idx}",
                     page_number=i + 1,

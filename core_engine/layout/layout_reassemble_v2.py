@@ -48,6 +48,11 @@ def _split_structural_heading(text: str) -> tuple[str, str, str]:
     if part_broken:
         return f"PART {part_broken.group(2).upper()}", "", "heading1"
     
+    # "1 I Р А R Т" → "PART I" (разорванный PART в начале)
+    part_broken_start = re.match(r"^(\d+)\s+([I1])\s+([РP]\s+[АA]\s+[RР]\s+[ТT])", t_normalized, re.IGNORECASE)
+    if part_broken_start:
+        return f"PART {part_broken_start.group(2).upper()}", "", "heading1"
+    
     # Также обрабатываем "Р А R Т" без номера (может быть на отдельной строке)
     if re.match(r"^[РP]\s+[АA]\s+[RР]\s+[ТT]\s*$", t_normalized, re.IGNORECASE):
         # Ищем номер в следующем блоке или используем "I" по умолчанию
@@ -745,6 +750,11 @@ def build_paragraph_stream(book: Dict[str, Any]) -> List[Dict[str, Any]]:
             fig_id += 1
 
     print(f"[LAYOUT v2.1] paragraphs built: {len(result)}")
+    
+    # Разделяем смешанные параграфы (заголовки + текст)
+    from core_engine.layout.paragraph_splitter import split_paragraphs_with_headings
+    result = split_paragraphs_with_headings(result)
+    print(f"[LAYOUT v2.1] after splitting mixed paragraphs: {len(result)}")
     
     # Улучшенное слияние разорванных предложений
     from core_engine.layout.sentence_merger import merge_paragraphs_in_stream
