@@ -59,32 +59,32 @@ def _normalize_terms(text: str) -> str:
         flags=re.IGNORECASE,
     )
 
-    # Qi / Chi → ци
+    # Qi / Chi → ци (Qi)
     s = re.sub(
         r"\bQi\b",
-        "ци",
+        "ци (Qi)",
         s,
         flags=re.IGNORECASE,
     )
     s = re.sub(
         r"\bChi\b",
-        "ци",
+        "ци (Qi)",
         s,
         flags=re.IGNORECASE,
     )
 
-    # Yin → Инь
+    # Yin → Инь (Yin)
     s = re.sub(
         r"\bYin\b",
-        "Инь",
+        "Инь (Yin)",
         s,
         flags=re.IGNORECASE,
     )
 
-    # Yang → Ян
+    # Yang → Ян (Yang)
     s = re.sub(
         r"\bYang\b",
-        "Ян",
+        "Ян (Yang)",
         s,
         flags=re.IGNORECASE,
     )

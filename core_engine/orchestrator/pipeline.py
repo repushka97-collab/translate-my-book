@@ -12,6 +12,7 @@ from core_engine.normalize.text_cleaner import normalize_blocks
 from core_engine.translate.llm_adapter import translate_blocks
 from core_engine.layout.block_reassemble import build_layout_model
 from core_engine.layout.heading_detector import detect_headings
+from core_engine.layout.chapter_detector import detect_chapter_structure
 from core_engine.layout.layout_reassemble_v2 import build_paragraph_stream
 from core_engine.export.export_json import export_json_bundle
 from core_engine.export.docx_exporter import export_docx
@@ -90,6 +91,7 @@ def _normalize_ingest_result(raw: Any) -> Dict[str, Any]:
 def run_book_pipeline(
     source_path: str | Path,
     mode: str | None = None,
+    progress_callback: callable | None = None,
 ) -> Dict[str, Any]:
 
     source = Path(source_path)
@@ -97,7 +99,15 @@ def run_book_pipeline(
         raise FileNotFoundError(f"Source PDF not found: {source}")
 
     # --------------------------------------------------------
-    print("[1/9] Ingest PDF...")
+    stage = 1
+    total_stages = 9
+    
+    def _progress(stage_name: str, progress: float = None):
+        if progress_callback:
+            progress_callback(stage, total_stages, stage_name, progress)
+        print(f"[{stage}/{total_stages}] {stage_name}...")
+    
+    _progress("Ingest PDF")
     try:
         ingest_raw = ingest_pdf(source)
         ingest = _normalize_ingest_result(ingest_raw)
@@ -105,21 +115,26 @@ def run_book_pipeline(
         book_id = ingest["book_id"]
         if not ingest.get("blocks"):
             raise RuntimeError("Ingest produced no blocks - PDF may be empty or corrupted")
+        _progress("Ingest PDF", 1.0)
     except Exception as e:
         raise RuntimeError(f"Ingest failed for {source}: {e}") from e
 
     # --------------------------------------------------------
-    print("[2/9] Normalize blocks...")
+    stage += 1
+    _progress("Normalize blocks")
     try:
         normalized = normalize_blocks(ingest["blocks"])
         normalized = detect_headings(normalized)
+        normalized = detect_chapter_structure(normalized)
         validate_blocks_structure(normalized, stage="normalize")
         print(f"      Normalized {len(normalized)} blocks")
+        _progress("Normalize blocks", 1.0)
     except Exception as e:
         raise RuntimeError(f"Normalize failed: {e}") from e
 
     # --------------------------------------------------------
-    print("[3/9] Translate blocks...")
+    stage += 1
+    _progress("Translate blocks")
     try:
         translated = translate_blocks(
             normalized,
@@ -131,11 +146,13 @@ def run_book_pipeline(
         # Подсчитываем переведенные блоки
         translated_count = sum(1 for b in translated if (b.get("translated_text") or "").strip())
         print(f"      Translated {translated_count}/{len(translated)} blocks")
+        _progress("Translate blocks", 1.0)
     except Exception as e:
         raise RuntimeError(f"Translation failed: {e}") from e
 
     # --------------------------------------------------------
-    print("[4/9] QA check...")
+    stage += 1
+    _progress("QA check")
     qa_report = qa_check_blocks(normalized, translated)
 
     # prepare output folder
@@ -152,7 +169,8 @@ def run_book_pipeline(
         # raise RuntimeError("QA failed: critical translation mismatch")
 
     # --------------------------------------------------------
-    print("[5/9] Build layout model...")
+    stage += 1
+    _progress("Build layout model")
     try:
         layout_model = build_layout_model(book_id, translated)
         # Добавляем изображения из ingest_result.doc
@@ -183,14 +201,16 @@ def run_book_pipeline(
         raise RuntimeError(f"Layout model build failed: {e}") from e
 
     # --------------------------------------------------------
-    print("[6/9] Save JSON bundle...")
+    stage += 1
+    _progress("Save JSON bundle")
     try:
         json_paths = export_json_bundle(layout_model, book_id)
     except Exception as e:
         raise RuntimeError(f"JSON export failed: {e}") from e
 
     # --------------------------------------------------------
-    print("[7/9] Build paragraph_stream (Layout v2.1)...")
+    stage += 1
+    _progress("Build paragraph_stream (Layout v2.1)")
     try:
         paragraphs = build_paragraph_stream(layout_model)
     except Exception as e:
@@ -220,7 +240,8 @@ def run_book_pipeline(
         json.dump(paragraphs_for_json, f, ensure_ascii=False, indent=2)
 
     # --------------------------------------------------------
-    print("[8/9] Export DOCX...")
+    stage += 1
+    _progress("Export DOCX")
     try:
         docx_path = out_dir / "book_ru.docx"
         # Восстанавливаем image_bytes для DOCX из images_by_page
@@ -265,7 +286,8 @@ def run_book_pipeline(
         raise RuntimeError(f"DOCX export failed: {e}") from e
 
     # --------------------------------------------------------
-    print("[9/9] Register in library...")
+    stage += 1
+    _progress("Register in library")
     try:
         library_record = register_book_in_library(
             ingest_raw,

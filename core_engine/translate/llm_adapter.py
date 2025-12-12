@@ -156,6 +156,15 @@ class PlaceholderBackend(LLMBackend):
 def make_backend(profile: Dict[str, Any]) -> LLMBackend:
     backend = str(profile.get("backend", "nllb")).lower()
 
+    # Проверяем, нужен ли кэш
+    if profile.get("cache_enabled", False):
+        from core_engine.translate.cached_backend import CachedBackend
+        return CachedBackend(profile)
+
+    if backend == "hybrid":
+        # Ленивый импорт для избежания циклических зависимостей
+        from core_engine.translate.hybrid_backend import HybridBackend
+        return HybridBackend(profile)
     if backend == "nllb":
         return NLLBBackend(profile)
     if backend == "ollama":

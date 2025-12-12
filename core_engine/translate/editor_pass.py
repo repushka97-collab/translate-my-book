@@ -115,6 +115,15 @@ def _apply_custom_fixes(text: str) -> str:
     
     # Исправляем артефакты типа "а а" → "а" (одиночные буквы дублируются)
     s = re.sub(r"\b([а-яё])\s+\1\b", r"\1", s, flags=re.IGNORECASE)
+    
+    # Исправляем кириллическую "а" в английских словах (часто артефакт NLLB)
+    # "а therapist" → "a therapist", но только если перед ней пробел или начало строки
+    s = re.sub(r"\bа\s+([a-z])", r"a \1", s, flags=re.IGNORECASE)
+    s = re.sub(r"([a-z])\s+а\s+", r"\1 a ", s, flags=re.IGNORECASE)
+    
+    # Исправляем "а " в начале предложения (если это английский текст)
+    # Но только если следующее слово на латинице
+    s = re.sub(r"^а\s+([a-z])", r"a \1", s, flags=re.IGNORECASE | re.MULTILINE)
 
     return s
 
@@ -122,33 +131,44 @@ def _apply_custom_fixes(text: str) -> str:
 def _dedupe_repeated_tokens(text: str) -> str:
     """
     Убираем подряд идущие дублирующиеся токены (регистр нечувствителен).
+    Улучшенная версия: лучше обрабатывает числа и знаки препинания.
     """
-    tokens = re.findall(r"\S+", text)
-    if len(tokens) < 2:
+    # Разбиваем на слова и знаки препинания
+    parts = re.findall(r"\S+", text)
+    if len(parts) < 2:
         return text
 
     out = []
     prev = None
-    for t in tokens:
+    for t in parts:
+        # Нормализуем: убираем знаки препинания для сравнения
         norm = re.sub(r"^[\W_]+|[\W_]+$", "", t).lower()
         prev_norm = re.sub(r"^[\W_]+|[\W_]+$", "", prev).lower() if prev else None
 
+        # Пропускаем повтор, но только если это не число и не очень короткое слово
         if prev is not None and norm and prev_norm and norm == prev_norm:
-            # пропускаем повтор
-            continue
+            # Исключения: не удаляем если это число или очень короткое слово (может быть частью структуры)
+            if len(norm) > 1 and not norm.isdigit():
+                continue
         out.append(t)
         prev = t
 
-    if not out:
+    if not out or len(out) == len(parts):
         return text
 
-    out_iter = iter(out)
-
-    return re.sub(
-        r"\S+",
-        lambda m: next(out_iter, m.group(0)),
-        text,
-    )
+    # Восстанавливаем текст из отфильтрованных токенов
+    # Сохраняем пробелы между токенами
+    result = []
+    out_idx = 0
+    for part in parts:
+        if out_idx < len(out) and part == out[out_idx]:
+            result.append(part)
+            out_idx += 1
+        elif out_idx < len(out):
+            # Пропущенный токен - не добавляем
+            pass
+    
+    return " ".join(result) if result else text
 
 
 def _normalize_acu_terms(text: str) -> str:

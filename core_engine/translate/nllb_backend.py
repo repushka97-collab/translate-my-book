@@ -163,12 +163,19 @@ def translate_with_nllb(
         ).to(model.device)
 
         with torch.no_grad():
-            outputs = model.generate(
-                **inputs,
-                forced_bos_token_id=forced_bos_token_id,
-                max_length=max_length,
-                num_beams=4,
-            )
+            # Оптимизация для GPU: используем более быстрые параметры генерации
+            generation_kwargs = {
+                "forced_bos_token_id": forced_bos_token_id,
+                "max_length": max_length,
+                "num_beams": 4,
+            }
+            
+            # Для больших батчей используем более быструю генерацию
+            if batch_size >= 16:
+                generation_kwargs["num_beams"] = 2  # Меньше лучей = быстрее
+                generation_kwargs["do_sample"] = False  # Детерминированная генерация
+            
+            outputs = model.generate(**inputs, **generation_kwargs)
 
         decoded = tokenizer.batch_decode(outputs, skip_special_tokens=True)
 

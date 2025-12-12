@@ -172,13 +172,25 @@ def _looks_like_footnote(text: str) -> bool:
     if not t or len(t) > 200:  # Сноски обычно короткие
         return False
     
+    # Исключаем заголовки и длинные тексты
+    if len(t) > 100:  # Сноски короткие
+        return False
+    
+    # Исключаем если это похоже на заголовок (много заглавных букв)
+    if len(t) > 20:
+        upper_ratio = sum(1 for c in t if c.isupper()) / max(len([c for c in t if c.isalpha()]), 1)
+        if upper_ratio > 0.5:  # Больше 50% заглавных - это заголовок, не сноска
+            return False
+    
     # Паттерны сносок: "1)", "1.", "*", "a)", "[1]", "¹"
+    # Но только если это действительно короткая строка
     footnote_patterns = [
-        r"^\d+[\.\)\]\}]",  # "1)", "1.", "1]", "1}"
-        r"^[a-z][\.\)\]\}]",  # "a)", "a."
-        r"^[\*\†\‡\§]",  # "*", "†", "‡", "§"
-        r"^\[?\d+\]?",  # "[1]", "1"
-        r"^[¹²³⁴⁵⁶⁷⁸⁹⁰]",  # Верхние индексы
+        r"^\d+[\.\)\]\}]$",  # "1)", "1.", "1]", "1}" - только если это вся строка
+        r"^\d+[\.\)\]\}]\s+",  # "1) текст" - начинается с номера и скобки
+        r"^[a-z][\.\)\]\}]$",  # "a)", "a." - только если это вся строка
+        r"^[\*\†\‡\§]\s+",  # "* текст" - начинается со символа
+        r"^\[?\d+\]?\s+",  # "[1] текст" или "1 текст"
+        r"^[¹²³⁴⁵⁶⁷⁸⁹⁰]\s+",  # Верхние индексы с текстом
     ]
     
     for pattern in footnote_patterns:
@@ -474,6 +486,12 @@ def _block_to_paragraphs(block: Dict[str, Any], page: int) -> List[Dict[str, Any
     text = (block.get("translated_text") or "").strip()
     if not text:
         return []
+    
+    # Нормализуем переносы строк внутри текста: заменяем \n на пробелы в параграфах
+    # (но сохраняем для списков и других специальных типов)
+    text = re.sub(r"\n+", " ", text)  # Множественные переносы → один пробел
+    text = re.sub(r"\s+", " ", text)  # Множественные пробелы → один
+    text = text.strip()
 
     if _looks_like_page_header_footer(text):
         return []
@@ -666,9 +684,40 @@ def build_paragraph_stream(book: Dict[str, Any]) -> List[Dict[str, Any]]:
                     # Проверяем что у обоих есть текст
                     p_text = (p.get("text") or "").strip()
                     prev_text = (result[-1].get("text") or "").strip()
-                    if len(p_text) < 40 and len(prev_text) < 90:
-                        # Слияние коротких параграфов
-                        result[-1]["text"] = prev_text + " " + p_text
+                    
+                    if not p_text or not prev_text:
+                        result.append(p)
+                        continue
+                    
+                    # Улучшенная логика слияния разорванных предложений
+                    prev_ends_punct = prev_text and prev_text[-1] in ".!?;:"
+                    prev_ends_comma = prev_text and prev_text[-1] in ","
+                    p_starts_lower = p_text and p_text[0].islower()
+                    p_starts_upper = p_text and p_text[0].isupper()
+                    
+                    # Признаки разорванного предложения:
+                    # 1. Предыдущий текст не заканчивается точкой/восклицательным/вопросительным
+                    # 2. Текущий текст начинается с маленькой буквы (продолжение)
+                    # 3. Или текущий текст очень короткий (< 40 символов)
+                    should_merge = False
+                    
+                    if not prev_ends_punct:
+                        if p_starts_lower:
+                            # Продолжение предложения (начинается с маленькой буквы)
+                            should_merge = True
+                        elif len(p_text) < 40 and len(prev_text) < 200:
+                            # Короткий фрагмент после незавершенного предложения
+                            should_merge = True
+                        elif prev_ends_comma and len(p_text) < 60:
+                            # После запятой короткий фрагмент - скорее всего продолжение
+                            should_merge = True
+                    
+                    if should_merge:
+                        # Слияние с правильным пробелом
+                        if prev_text[-1] in ",;:":
+                            result[-1]["text"] = prev_text + " " + p_text
+                        else:
+                            result[-1]["text"] = prev_text + " " + p_text
                     else:
                         result.append(p)
                 else:

@@ -9,11 +9,14 @@ profiles:
     backend: nllb
     model_name: facebook/nllb-200-distilled-600M
     device: cuda
-    # RTX 5080 / 64GB RAM: можно выше батч для скорости; если поймаешь OOM — снизь до 8/12.
-    batch_size: 16
+    # RTX 5080 / 64GB RAM: оптимизировано для максимальной производительности
+    batch_size: 32  # Увеличено для RTX 5080
     max_length: 640
     source_lang: en
     target_lang: ru
+    # Кэширование переводов для ускорения повторных запусков
+    cache_enabled: true
+    cache_dir: cache/translations
 
   full:
     backend: nllb
@@ -21,5 +24,21 @@ profiles:
     device: cpu
     batch_size: 4
     max_length: 640
+    source_lang: en
+    target_lang: ru
+
+  hybrid:
+    backend: hybrid
+    # NLLB параметры
+    nllb_model_name: facebook/nllb-200-distilled-600M
+    nllb_device: cuda
+    nllb_batch_size: 16
+    nllb_max_length: 640
+    # LLM refine параметры
+    refine_enabled: true
+    refine_min_length: 200  # Минимальная длина блока для улучшения
+    refine_important_types: [heading1, heading2, caption]  # Типы для обязательного улучшения
+    ollama_endpoint: http://127.0.0.1:11434
+    ollama_model: qwen2.5:7b
     source_lang: en
     target_lang: ru
