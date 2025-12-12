@@ -161,6 +161,70 @@ def _looks_like_page_number(text: str) -> bool:
     return False
 
 
+def _looks_like_footnote(text: str) -> bool:
+    """
+    Детектирует сноски:
+    - Короткий текст внизу страницы
+    - Начинается с цифры/звездочки/буквы и скобки
+    - Очень маленький шрифт (если есть metadata)
+    """
+    t = text.strip()
+    if not t or len(t) > 200:  # Сноски обычно короткие
+        return False
+    
+    # Паттерны сносок: "1)", "1.", "*", "a)", "[1]", "¹"
+    footnote_patterns = [
+        r"^\d+[\.\)\]\}]",  # "1)", "1.", "1]", "1}"
+        r"^[a-z][\.\)\]\}]",  # "a)", "a."
+        r"^[\*\†\‡\§]",  # "*", "†", "‡", "§"
+        r"^\[?\d+\]?",  # "[1]", "1"
+        r"^[¹²³⁴⁵⁶⁷⁸⁹⁰]",  # Верхние индексы
+    ]
+    
+    for pattern in footnote_patterns:
+        if re.match(pattern, t, re.IGNORECASE):
+            return True
+    
+    return False
+
+
+def _looks_like_formula(text: str) -> bool:
+    """
+    Детектирует математические формулы:
+    - Содержит математические символы (∑, ∫, √, ≤, ≥, ≠, ≈, etc.)
+    - Содержит индексы/степени
+    - Содержит дроби (a/b, \frac)
+    - Содержит греческие буквы в математическом контексте
+    """
+    t = text.strip()
+    if not t or len(t) < 3:
+        return False
+    
+    # Математические символы
+    math_symbols = r"[∑∫√≤≥≠≈±×÷∞∈∉⊂⊃∪∩∅→←⇒⇐]"
+    if re.search(math_symbols, t):
+        return True
+    
+    # Верхние/нижние индексы
+    if re.search(r"[¹²³⁴⁵⁶⁷⁸⁹⁰₀₁₂₃₄₅₆₇₈₉]", t):
+        return True
+    
+    # Дроби вида a/b или \frac
+    if re.search(r"\b\d+/\d+\b", t) or "\\frac" in t:
+        return True
+    
+    # Греческие буквы в математическом контексте (α, β, γ, δ, etc.)
+    greek_letters = r"[αβγδεζηθικλμνξοπρστυφχψωΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ]"
+    if re.search(greek_letters, t) and len(t) < 100:  # Короткие формулы
+        return True
+    
+    # LaTeX-подобные команды
+    if re.search(r"\\[a-zA-Z]+\{", t):
+        return True
+    
+    return False
+
+
 def _looks_like_license_or_publisher_note(text: str) -> bool:
     t = text.lower().strip()
     if "creative commons" in t:
@@ -243,23 +307,98 @@ def _is_list_continuation(prev: str, now: str) -> bool:
 # ============================================================
 
 def _looks_like_table_block(text: str) -> bool:
+    """
+    Улучшенная детекция таблиц:
+    - Таблицы с разделителями |
+    - Markdown-style таблицы
+    - Таблицы с множеством табуляций/пробелов
+    - Таблицы с числами в колонках
+    """
+    if not text or len(text.strip()) < 10:
+        return False
+    
+    lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
+    if len(lines) < 2:
+        return False
+    
+    # Таблицы с разделителями |
     if "|" in text:
-        lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
-        return len(lines) >= 2 and all("|" in ln for ln in lines)
-    # markdown style
+        pipe_lines = sum(1 for ln in lines if "|" in ln)
+        if pipe_lines >= 2 and pipe_lines >= len(lines) * 0.7:  # 70%+ строк с |
+            return True
+    
+    # Markdown-style таблицы
     if re.search(r"^-{2,}\s+-{2,}", text, flags=re.MULTILINE):
         return True
+    
+    # Таблицы с множеством табуляций (TSV-style)
+    tab_lines = sum(1 for ln in lines if "\t" in ln and ln.count("\t") >= 2)
+    if tab_lines >= 2 and tab_lines >= len(lines) * 0.6:
+        return True
+    
+    # Таблицы с множеством пробелов между колонками (фиксированная ширина)
+    space_separated = 0
+    for ln in lines:
+        # Ищем строки с множеством последовательных пробелов (>= 3)
+        if re.search(r"\s{3,}", ln):
+            parts = re.split(r"\s{3,}", ln)
+            if len(parts) >= 3:  # Минимум 3 колонки
+                space_separated += 1
+    if space_separated >= 2 and space_separated >= len(lines) * 0.5:
+        return True
+    
     return False
 
 
 def _parse_table_rows(text: str) -> List[List[str]]:
+    """
+    Парсит таблицу в список строк.
+    Поддерживает разные форматы: | разделители, табуляции, пробелы.
+    """
     rows = []
-    for ln in text.splitlines():
-        ln = ln.strip()
-        if not ln:
+    lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
+    
+    if not lines:
+        return rows
+    
+    # Определяем формат таблицы
+    has_pipes = any("|" in ln for ln in lines)
+    has_tabs = any("\t" in ln for ln in lines)
+    
+    for ln in lines:
+        # Пропускаем markdown разделители
+        if re.match(r"^-{2,}\s+-{2,}", ln):
             continue
-        parts = [c.strip() for c in ln.split("|")]
-        rows.append(parts)
+        
+        if has_pipes:
+            # Таблица с | разделителями
+            parts = [c.strip() for c in ln.split("|")]
+            # Убираем пустые элементы в начале/конце (от разделителей)
+            if parts and not parts[0]:
+                parts = parts[1:]
+            if parts and not parts[-1]:
+                parts = parts[:-1]
+            if parts:
+                rows.append(parts)
+        elif has_tabs:
+            # TSV-style таблица
+            parts = [c.strip() for c in ln.split("\t")]
+            if parts:
+                rows.append(parts)
+        else:
+            # Таблица с множеством пробелов
+            parts = re.split(r"\s{3,}", ln)
+            parts = [c.strip() for c in parts if c.strip()]
+            if parts:
+                rows.append(parts)
+    
+    # Нормализуем количество колонок (дополняем пустыми строками)
+    if rows:
+        max_cols = max(len(r) for r in rows)
+        for row in rows:
+            while len(row) < max_cols:
+                row.append("")
+    
     return rows
 
 
@@ -268,6 +407,12 @@ def _parse_table_rows(text: str) -> List[List[str]]:
 # ============================================================
 
 def _order_blocks_two_columns(blocks: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """
+    Улучшенная двухколоночная верстка:
+    - Определяет есть ли две колонки
+    - Чередует блоки из левой и правой колонок по y-позиции
+    - Сохраняет правильный порядок чтения (слева направо, сверху вниз)
+    """
     with_bbox = [b for b in blocks if b.get("bbox")]
     no_bbox = [b for b in blocks if not b.get("bbox")]
 
@@ -278,8 +423,10 @@ def _order_blocks_two_columns(blocks: List[Dict[str, Any]]) -> List[Dict[str, An
     spread = max(xs) - min(xs)
 
     if spread < 120:
+        # Одна колонка - просто сортируем по y
         ordered = sorted(with_bbox, key=lambda b: (b["bbox"]["y0"], b.get("order", 0)))
     else:
+        # Две колонки - определяем границу
         mid = sorted(xs)[len(xs) // 2]
         left = sorted(
             [b for b in with_bbox if b["bbox"]["x0"] <= mid],
@@ -289,7 +436,31 @@ def _order_blocks_two_columns(blocks: List[Dict[str, Any]]) -> List[Dict[str, An
             [b for b in with_bbox if b["bbox"]["x0"] > mid],
             key=lambda b: (b["bbox"]["y0"], b.get("order", 0)),
         )
-        ordered = left + right
+        
+        # Чередуем блоки из левой и правой колонок по y-позиции
+        ordered = []
+        left_idx = 0
+        right_idx = 0
+        
+        while left_idx < len(left) or right_idx < len(right):
+            # Определяем какой блок идет следующим по y-позиции
+            left_y = left[left_idx]["bbox"]["y0"] if left_idx < len(left) else float('inf')
+            right_y = right[right_idx]["bbox"]["y0"] if right_idx < len(right) else float('inf')
+            
+            # Если блоки близко по y (в пределах 50px), берем левый первым
+            if abs(left_y - right_y) < 50:
+                if left_idx < len(left):
+                    ordered.append(left[left_idx])
+                    left_idx += 1
+                if right_idx < len(right):
+                    ordered.append(right[right_idx])
+                    right_idx += 1
+            elif left_y < right_y:
+                ordered.append(left[left_idx])
+                left_idx += 1
+            else:
+                ordered.append(right[right_idx])
+                right_idx += 1
 
     tail = sorted(no_bbox, key=lambda b: b.get("order", 0))
     return ordered + tail
@@ -318,6 +489,14 @@ def _block_to_paragraphs(block: Dict[str, Any], page: int) -> List[Dict[str, Any
     # Используем metadata.role из heading_detector если есть
     metadata = block.get("metadata", {})
     role = metadata.get("role", "")
+    
+    # FOOTNOTE
+    if _looks_like_footnote(text) or role == "footnote":
+        return [{"type": "footnote", "text": text, "page": page}]
+    
+    # FORMULA
+    if _looks_like_formula(text):
+        return [{"type": "formula", "text": text, "page": page}]
     
     # Font signals для улучшения детекции заголовков
     font_size = metadata.get("font_size", 0)
@@ -421,6 +600,7 @@ def build_paragraph_stream(book: Dict[str, Any]) -> List[Dict[str, Any]]:
     for page in sorted(pages, key=lambda p: p.get("page_num", 0)):
         page_num = page.get("page_num", 0)
         blocks = page.get("blocks", [])
+        images = page.get("images", [])  # Изображения из layout_model
 
         # Page break между страницами (кроме первой)
         if prev_page > 0 and page_num != prev_page:
@@ -428,6 +608,11 @@ def build_paragraph_stream(book: Dict[str, Any]) -> List[Dict[str, Any]]:
         prev_page = page_num
 
         ordered = _order_blocks_two_columns(blocks)
+
+        # Добавляем изображения в правильном порядке (по позиции y0)
+        # Сортируем изображения по позиции на странице
+        images_sorted = sorted(images, key=lambda img: img.get("bbox", {}).get("y0", 0))
+        image_idx = 0
 
         if _page_has_graphical_abstract(blocks):
             result.append(
@@ -441,6 +626,26 @@ def build_paragraph_stream(book: Dict[str, Any]) -> List[Dict[str, Any]]:
 
         # Блок → параграфы
         for b in ordered:
+            # Проверяем, нужно ли вставить изображение перед этим блоком
+            block_y0 = b.get("bbox", {}).get("y0", 0) if isinstance(b.get("bbox"), dict) else 0
+            
+            # Вставляем изображения, которые находятся выше текущего блока
+            while image_idx < len(images_sorted):
+                img = images_sorted[image_idx]
+                img_y0 = img.get("bbox", {}).get("y0", 0)
+                if img_y0 < block_y0 or block_y0 == 0:
+                    # НЕ добавляем image_bytes здесь - он будет восстановлен в pipeline из images_by_page
+                    result.append({
+                        "type": "image",
+                        "image_id": img.get("id", f"img_{fig_id}"),
+                        "label": img.get("label"),
+                        "page": page_num,
+                    })
+                    image_idx += 1
+                    fig_id += 1
+                else:
+                    break
+            
             out = _block_to_paragraphs(b, page_num)
 
             # Авто-слияние коротких абзацев
@@ -468,6 +673,19 @@ def build_paragraph_stream(book: Dict[str, Any]) -> List[Dict[str, Any]]:
                         result.append(p)
                 else:
                     result.append(p)
+        
+        # Добавляем оставшиеся изображения в конце страницы
+        while image_idx < len(images_sorted):
+            img = images_sorted[image_idx]
+            # НЕ добавляем image_bytes здесь - он будет восстановлен в pipeline из images_by_page
+            result.append({
+                "type": "image",
+                "image_id": img.get("id", f"img_{fig_id}"),
+                "label": img.get("label"),
+                "page": page_num,
+            })
+            image_idx += 1
+            fig_id += 1
 
     print(f"[LAYOUT v2.1] paragraphs built: {len(result)}")
     return result

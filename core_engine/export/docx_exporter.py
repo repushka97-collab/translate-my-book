@@ -1,6 +1,7 @@
 from pathlib import Path
 from typing import Any, Dict, List, Mapping, Union
 import re
+from io import BytesIO
 
 from docx import Document
 from docx.enum.text import WD_ALIGN_PARAGRAPH
@@ -28,6 +29,8 @@ LIST_TYPES = {"list_item"}
 CAPTION_TYPES = {"caption"}
 FIGURE_TYPES = {"figure"}
 TABLE_TYPES = {"table"}
+FOOTNOTE_TYPES = {"footnote"}
+FORMULA_TYPES = {"formula"}
 
 
 # ================================
@@ -134,11 +137,80 @@ def _add_caption(doc: Document, text: str) -> None:
     para.alignment = WD_ALIGN_PARAGRAPH.CENTER
 
 
+def _add_footnote(doc: Document, text: str) -> None:
+    """
+    Добавляет сноску в DOCX.
+    Используем обычный параграф с меньшим шрифтом и отступом.
+    """
+    para = doc.add_paragraph()
+    run = para.add_run(text)
+    run.font.size = Pt(9)  # Меньший шрифт для сносок
+    para.paragraph_format.left_indent = Inches(0.5)  # Отступ слева
+    para.paragraph_format.space_before = Pt(3)
+    para.paragraph_format.space_after = Pt(3)
+
+
+def _add_formula(doc: Document, text: str) -> None:
+    """
+    Добавляет формулу в DOCX.
+    Используем моноширинный шрифт и центрирование.
+    """
+    para = doc.add_paragraph()
+    para.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    run = para.add_run(text)
+    # Моноширинный шрифт для формул (если доступен)
+    try:
+        run.font.name = "Courier New"
+    except Exception:
+        pass
+    para.paragraph_format.space_before = Pt(6)
+    para.paragraph_format.space_after = Pt(6)
+
+
 def _add_figure(doc: Document, text: str) -> None:
     para = doc.add_paragraph()
     run = para.add_run(text)
     run.bold = True
     para.alignment = WD_ALIGN_PARAGRAPH.CENTER
+
+
+def _add_image(doc: Document, image_bytes: bytes, label: str = None) -> None:
+    """
+    Вставляет изображение в DOCX из bytes.
+    """
+    if not image_bytes:
+        para = doc.add_paragraph()
+        para.add_run(f"[IMAGE MISSING: {label or 'unknown'}]")
+        return
+    
+    try:
+        # Проверяем что это валидные PNG/JPEG bytes
+        if len(image_bytes) < 10:
+            para = doc.add_paragraph()
+            para.add_run(f"[IMAGE TOO SMALL: {label or 'unknown'}]")
+            return
+        
+        # Добавляем параграф для изображения
+        para = doc.add_paragraph()
+        para.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        
+        # Вставляем изображение
+        image_stream = BytesIO(image_bytes)
+        run = para.add_run()
+        # python-docx использует add_picture для вставки изображений
+        # Автоматически определяет формат по содержимому
+        run.add_picture(image_stream, width=Inches(5))  # Ширина 5 дюймов (можно настроить)
+        
+        # Добавляем подпись если есть
+        if label:
+            caption_para = doc.add_paragraph()
+            caption_run = caption_para.add_run(label)
+            caption_run.italic = True
+            caption_para.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    except Exception as e:
+        # Fallback: если не удалось вставить изображение, добавляем текст
+        para = doc.add_paragraph()
+        para.add_run(f"[IMAGE ERROR: {label or 'unknown'} - {str(e)[:50]}]")
 
 
 # ================================
@@ -236,7 +308,8 @@ def export_docx(paragraphs: Any, output_path: PathLike) -> str:
             prev_page = page
             continue
 
-        if not text and p_type not in TABLE_TYPES:
+        # Пропускаем элементы без текста, кроме таблиц и изображений
+        if not text and p_type not in TABLE_TYPES and p_type != "image":
             continue
 
         # ---------------------
@@ -269,10 +342,38 @@ def export_docx(paragraphs: Any, output_path: PathLike) -> str:
         # ---------------------
         if p_type in CAPTION_TYPES:
             _add_caption(doc, text)
+            prev_page = page
+            continue
+
+        # ---------------------
+        #      Сноски
+        # ---------------------
+        if p_type in FOOTNOTE_TYPES:
+            _add_footnote(doc, text)
+            prev_page = page
+            continue
+
+        # ---------------------
+        #      Формулы
+        # ---------------------
+        if p_type in FORMULA_TYPES:
+            _add_formula(doc, text)
+            prev_page = page
             continue
 
         if p_type in FIGURE_TYPES:
             _add_figure(doc, text)
+            prev_page = page
+            continue
+
+        # ---------------------
+        #      Изображения
+        # ---------------------
+        if p_type == "image":
+            image_bytes = p.get("image_bytes")
+            label = p.get("label") or p.get("image_id", "Figure")
+            _add_image(doc, image_bytes, label)
+            prev_page = page
             continue
 
         # ---------------------

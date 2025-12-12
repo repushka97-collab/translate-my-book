@@ -27,6 +27,46 @@ from core_engine.utils.contracts import (
 #                САНИТИ для ingest-результата
 # ============================================================
 
+def _add_images_to_layout_model(layout_model: Dict[str, Any], doc: Any) -> None:
+    """
+    Добавляет изображения из BookDocument в layout_model.
+    НЕ добавляет image_bytes (не сериализуется в JSON), только метаданные.
+    """
+    if not hasattr(doc, "pages"):
+        return
+    
+    # Создаем словарь страниц для быстрого доступа
+    pages_dict = {p.get("page_num"): p for p in layout_model.get("pages", [])}
+    
+    for page in doc.pages:
+        page_num = page.number
+        if page_num not in pages_dict:
+            continue
+        
+        # Добавляем изображения в страницу layout_model (без image_bytes)
+        if not hasattr(page, "images") or not page.images:
+            continue
+        
+        images_list = []
+        for img in page.images:
+            # Конвертируем ImageObject в dict, БЕЗ image_bytes (для JSON)
+            img_dict = {
+                "id": img.id,
+                "page_number": img.page_number,
+                "bbox": {
+                    "x0": img.bbox.x0,
+                    "y0": img.bbox.y0,
+                    "x1": img.bbox.x1,
+                    "y1": img.bbox.y1,
+                },
+                "mime_type": img.mime_type,
+                "label": img.label,
+            }
+            images_list.append(img_dict)
+        
+        pages_dict[page_num]["images"] = images_list
+
+
 def _normalize_ingest_result(raw: Any) -> Dict[str, Any]:
     if isinstance(raw, dict):
         return raw
@@ -63,6 +103,8 @@ def run_book_pipeline(
         ingest = _normalize_ingest_result(ingest_raw)
         validate_ingest_result(ingest)
         book_id = ingest["book_id"]
+        if not ingest.get("blocks"):
+            raise RuntimeError("Ingest produced no blocks - PDF may be empty or corrupted")
     except Exception as e:
         raise RuntimeError(f"Ingest failed for {source}: {e}") from e
 
@@ -113,6 +155,30 @@ def run_book_pipeline(
     print("[5/9] Build layout model...")
     try:
         layout_model = build_layout_model(book_id, translated)
+        # Добавляем изображения из ingest_result.doc
+        images_by_page = {}
+        if hasattr(ingest_raw, "doc") and ingest_raw.doc:
+            _add_images_to_layout_model(layout_model, ingest_raw.doc)
+            # Сохраняем изображения отдельно для передачи в export_docx (с image_bytes)
+            for page in ingest_raw.doc.pages:
+                if hasattr(page, "images") and page.images:
+                    images_by_page[page.number] = [
+                        {
+                            "id": img.id,
+                            "image_bytes": img.image_bytes,  # Сохраняем bytes для DOCX
+                            "label": img.label,
+                            "bbox": {
+                                "x0": img.bbox.x0,
+                                "y0": img.bbox.y0,
+                                "x1": img.bbox.x1,
+                                "y1": img.bbox.y1,
+                            },
+                        }
+                        for img in page.images
+                    ]
+            total_images = sum(len(imgs) for imgs in images_by_page.values())
+            if total_images > 0:
+                print(f"      Found {total_images} images across {len(images_by_page)} pages")
     except Exception as e:
         raise RuntimeError(f"Layout model build failed: {e}") from e
 
@@ -140,15 +206,60 @@ def run_book_pipeline(
     if not non_empty:
         raise RuntimeError("Layout v2.1 produced paragraphs with empty text only")
 
-    # save debug version
+    # save debug version (без image_bytes - не сериализуется в JSON)
+    paragraphs_for_json = []
+    for p in paragraphs:
+        p_copy = dict(p)
+        if p_copy.get("type") == "image":
+            # Убираем image_bytes если есть (не сериализуется в JSON)
+            if "image_bytes" in p_copy:
+                p_copy["image_bytes"] = None
+        paragraphs_for_json.append(p_copy)
+    
     with (out_dir / "paragraph_stream.json").open("w", encoding="utf-8") as f:
-        json.dump(paragraphs, f, ensure_ascii=False, indent=2)
+        json.dump(paragraphs_for_json, f, ensure_ascii=False, indent=2)
 
     # --------------------------------------------------------
     print("[8/9] Export DOCX...")
     try:
         docx_path = out_dir / "book_ru.docx"
-        export_docx_path = export_docx(paragraphs, docx_path)
+        # Восстанавливаем image_bytes для DOCX из images_by_page
+        paragraphs_with_images = []
+        images_restored = 0
+        for p in paragraphs:
+            p_copy = dict(p)
+            if p_copy.get("type") == "image":
+                # Восстанавливаем image_bytes из images_by_page
+                page_num = p_copy.get("page", 0)
+                image_id = p_copy.get("image_id", "")
+                if page_num in images_by_page:
+                    # Ищем изображение по ID
+                    found = False
+                    for img in images_by_page[page_num]:
+                        # Сравниваем ID: может быть "p2_img0" vs "p2_img0" или частичное совпадение
+                        if img["id"] == image_id:
+                            p_copy["image_bytes"] = img["image_bytes"]
+                            found = True
+                            images_restored += 1
+                            break
+                        # Fallback: сравниваем по последней части ID (например "img0" из "p2_img0")
+                        if "_" in image_id and "_" in img["id"]:
+                            img_suffix = img["id"].split("_")[-1]  # "img0"
+                            if image_id.endswith(img_suffix):
+                                p_copy["image_bytes"] = img["image_bytes"]
+                                found = True
+                                images_restored += 1
+                                break
+                    if not found:
+                        print(f"[WARN] Image {image_id} on page {page_num} not found in images_by_page")
+                else:
+                    print(f"[WARN] No images found for page {page_num}")
+            paragraphs_with_images.append(p_copy)
+        
+        if images_restored > 0:
+            print(f"      Restored {images_restored} images for DOCX export")
+        
+        export_docx_path = export_docx(paragraphs_with_images, docx_path)
         export_paths = {**json_paths, "docx_main": export_docx_path}
     except Exception as e:
         raise RuntimeError(f"DOCX export failed: {e}") from e
