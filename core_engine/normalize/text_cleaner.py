@@ -194,6 +194,8 @@ def normalize_blocks(blocks: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     Если в блоке уже есть normalized_text / protected_tokens
     (после normalize_document), просто прокидываем их дальше.
     Если нет — считаем по _normalize_block_text().
+    
+    После нормализации применяет слияние разорванных предложений между блоками.
     """
     normalized: List[Dict[str, Any]] = []
 
@@ -228,6 +230,14 @@ def normalize_blocks(blocks: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         new_blk["metadata"] = existing_meta
 
         normalized.append(new_blk)
+
+    # Применяем слияние разорванных предложений между блоками
+    from core_engine.normalize.sentence_merger import merge_blocks_sentences
+    normalized = merge_blocks_sentences(normalized)
+    
+    # Pre-processing заголовков: применяем словарь ДО перевода
+    from core_engine.normalize.heading_preprocessor import preprocess_headings_in_blocks
+    normalized = preprocess_headings_in_blocks(normalized)
 
     return normalized
 

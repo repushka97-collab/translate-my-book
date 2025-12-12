@@ -14,3 +14,4 @@ pypdf
 # Export
 python-docx
 PyYAML
+Pillow  # Для обработки изображений

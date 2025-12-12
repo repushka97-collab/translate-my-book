@@ -87,14 +87,17 @@ def _add_heading(doc: Document, text: str, level: int = 2) -> None:
     # Улучшенные стили для заголовков
     para_format = para.paragraph_format
     if level == 1:
-        para_format.space_before = Pt(12)
-        para_format.space_after = Pt(6)
+        para_format.space_before = Pt(18)  # Больше отступ перед heading1
+        para_format.space_after = Pt(12)   # Больше отступ после
+        para_format.keep_with_next = True  # Заголовок не отрывается от следующего параграфа
     elif level == 2:
-        para_format.space_before = Pt(10)
-        para_format.space_after = Pt(4)
+        para_format.space_before = Pt(14)
+        para_format.space_after = Pt(8)
+        para_format.keep_with_next = True
     else:
-        para_format.space_before = Pt(8)
-        para_format.space_after = Pt(4)
+        para_format.space_before = Pt(10)
+        para_format.space_after = Pt(6)
+        para_format.keep_with_next = True
 
 
 def _add_list_item(doc: Document, text: str) -> None:
@@ -199,7 +202,25 @@ def _add_image(doc: Document, image_bytes: bytes, label: str = None) -> None:
         run = para.add_run()
         # python-docx использует add_picture для вставки изображений
         # Автоматически определяет формат по содержимому
-        run.add_picture(image_stream, width=Inches(5))  # Ширина 5 дюймов (можно настроить)
+        # Оптимальный размер для DOCX: ширина страницы минус поля (примерно 6 дюймов)
+        # Сохраняем пропорции
+        from PIL import Image
+        try:
+            img = Image.open(image_stream)
+            img_width, img_height = img.size
+            aspect_ratio = img_height / img_width if img_width > 0 else 1
+            
+            # Максимальная ширина: 6 дюймов (с учетом полей)
+            max_width = Inches(6)
+            width = min(max_width, Inches(img_width / 96))  # 96 DPI по умолчанию
+            
+            # Восстанавливаем stream для повторного использования
+            image_stream.seek(0)
+            run.add_picture(image_stream, width=width)
+        except Exception:
+            # Fallback: фиксированный размер
+            image_stream.seek(0)
+            run.add_picture(image_stream, width=Inches(5))
         
         # Добавляем подпись если есть
         if label:
@@ -234,6 +255,10 @@ def _add_table(doc: Document, rows: List[List[str]]) -> None:
 
     table = doc.add_table(rows=len(rows), cols=max_cols)
     table.style = "Table Grid"
+    
+    # Улучшенное форматирование таблицы
+    table.autofit = True  # Автоматическая подгонка ширины колонок
+    table.allow_autofit = True
 
     for r_idx, row in enumerate(rows):
         for c_idx in range(max_cols):
@@ -263,8 +288,11 @@ def _add_normal_paragraph(doc: Document, text: str) -> None:
     para.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
     # Улучшенные стили: отступы и интервалы
     para_format = para.paragraph_format
-    para_format.space_after = Pt(6)  # Небольшой отступ после параграфа
+    para_format.space_after = Pt(8)  # Увеличен отступ после параграфа
+    para_format.space_before = Pt(0)  # Без отступа перед
     para_format.first_line_indent = Inches(0)  # Без красной строки (как в научных статьях)
+    para_format.line_spacing = 1.15  # Небольшой межстрочный интервал для читаемости
+    para_format.widow_control = True  # Контроль висячих строк
 
 
 # ================================

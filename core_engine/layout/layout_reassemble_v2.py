@@ -577,6 +577,14 @@ def _block_to_paragraphs(block: Dict[str, Any], page: int) -> List[Dict[str, Any
             return [{"type": "heading2", "text": text, "page": page}]
         elif font_size >= 11 and is_bold:
             return [{"type": "heading3", "text": text, "page": page}]
+    
+    # Детекция обрывков заголовков: короткий текст с числом в конце
+    # "в Физической терапии 5" - вероятно обрывок заголовка
+    if len(text) < 50 and re.search(r"\s+\d+\s*$", text):
+        # Проверяем что это не просто номер страницы
+        if not re.match(r"^\d+$", text.strip()):
+            # Вероятно обрывок заголовка - помечаем как heading2
+            return [{"type": "heading2", "text": text, "page": page}]
 
     # SOFT HEADING (эвристика по тексту)
     if _looks_like_heading(text):
@@ -737,4 +745,10 @@ def build_paragraph_stream(book: Dict[str, Any]) -> List[Dict[str, Any]]:
             fig_id += 1
 
     print(f"[LAYOUT v2.1] paragraphs built: {len(result)}")
+    
+    # Улучшенное слияние разорванных предложений
+    from core_engine.layout.sentence_merger import merge_paragraphs_in_stream
+    result = merge_paragraphs_in_stream(result)
+    
+    print(f"[LAYOUT v2.1] after sentence merging: {len(result)}")
     return result

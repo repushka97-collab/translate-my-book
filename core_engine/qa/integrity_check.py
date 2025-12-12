@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from collections import Counter
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
 import re
 
 Block = Dict[str, Any]
@@ -414,7 +414,35 @@ def qa_check_blocks(normalized_blocks: List[Block], translated_blocks: List[Bloc
         role = meta.get("role", "unknown")
         role_counter[str(role)] += 1
 
-    # --- 4. Итоговый статус ---
+    # --- 4. Метрики качества перевода ---
+    translation_metrics = {}
+    try:
+        from core_engine.qa.translation_metrics import (
+            analyze_translation_quality,
+            calculate_length_ratio,
+        )
+        
+        # Собираем метрики по всем блокам
+        length_ratios = []
+        for src_block, tgt_block in paired_blocks:
+            src_text = _safe_text(src_block.get("normalized_text") or src_block.get("text"))
+            tgt_text = _safe_text(tgt_block.get("translated_text"))
+            if src_text and tgt_text:
+                ratio = calculate_length_ratio(src_text, tgt_text)
+                length_ratios.append(ratio)
+        
+        if length_ratios:
+            translation_metrics = {
+                "average_length_ratio": sum(length_ratios) / len(length_ratios),
+                "min_length_ratio": min(length_ratios),
+                "max_length_ratio": max(length_ratios),
+                "blocks_analyzed": len(length_ratios),
+            }
+    except Exception as e:
+        # Если метрики не доступны - пропускаем
+        translation_metrics = {"error": str(e)}
+
+    # --- 5. Итоговый статус ---
     severity_counts = Counter(issue["severity"] for issue in issues)
     if severity_counts.get("high", 0) > 0:
         status = "error"
@@ -436,6 +464,7 @@ def qa_check_blocks(normalized_blocks: List[Block], translated_blocks: List[Bloc
             "issues_by_severity": dict(severity_counts),
             "roles_count": dict(role_counter),
         },
+        "translation_metrics": translation_metrics,
     }
 
     return report

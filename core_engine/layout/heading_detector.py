@@ -17,12 +17,14 @@ def _looks_like_list_item(text: str) -> bool:
     return bool(_LIST_RE.match(text.lstrip()))
 
 
-def _classify_heading_level(text: str, page: int, order: int) -> str:
+def _classify_heading_level(text: str, page: int, order: int, font_size: float = 0, is_bold: bool = False) -> str:
     """
     Определяем уровень заголовка:
-    - heading1: короткий, без точки, вверху страницы / сильно заглавный
+    - heading1: короткий, без точки, вверху страницы / сильно заглавный / большой шрифт
     - heading2: остальное «заголовочное»
     - paragraph: обычный текст
+    
+    Улучшенная версия: использует font signals более агрессивно.
     """
     if not text:
         return "paragraph"
@@ -34,11 +36,12 @@ def _classify_heading_level(text: str, page: int, order: int) -> str:
     length = len(s)
 
     # Очень длинные строки редко бывают заголовками
-    if length > 120:
+    if length > 150:
         return "paragraph"
 
-    # Если заканчивается на точку — почти всегда обычный текст
-    if s.endswith("."):
+    # Если заканчивается на точку — почти всегда обычный текст (но не всегда!)
+    # Исключение: очень короткие строки могут быть заголовками даже с точкой
+    if s.endswith(".") and length > 50:
         return "paragraph"
 
     # Верх страницы: первый/второй блок на странице — кандидат в heading1
@@ -50,18 +53,32 @@ def _classify_heading_level(text: str, page: int, order: int) -> str:
     # Полный КАПС (но не слишком длинный) — тоже часто заголовок
     is_caps = s.isupper() and length <= 80
 
+    # Font signals: большой шрифт + bold = заголовок
+    if font_size > 0:
+        if font_size >= 16 and is_bold:
+            return "heading1"
+        elif font_size >= 12 and is_bold:
+            return "heading2"
+        elif font_size >= 14:  # Даже без bold, большой шрифт - заголовок
+            return "heading2"
+
     # Не начинаем с цифры (типа "1. Введение") — такие лучше отдаём на layout как обычный параграф/список
-    if s[0].isdigit():
+    # Но если большой шрифт - все равно заголовок
+    if s[0].isdigit() and font_size < 12:
         return "paragraph"
 
     # Одно короткое слово с заглавной — почти всегда заголовок
     if " " not in s and length <= 40 and has_upper:
-        return "heading1" if is_top_of_page or is_caps else "heading2"
+        return "heading1" if (is_top_of_page or is_caps or font_size >= 14) else "heading2"
 
     # Короткая фраза без точки, с заглавными — heading
-    if length <= 70 and has_upper:
-        if is_top_of_page or is_caps:
+    if length <= 80 and has_upper:
+        if is_top_of_page or is_caps or font_size >= 14:
             return "heading1"
+        return "heading2"
+    
+    # Средняя длина, но большой шрифт - heading2
+    if length <= 100 and font_size >= 12:
         return "heading2"
 
     return "paragraph"
@@ -81,6 +98,10 @@ def detect_headings(blocks: List[Block]) -> List[Block]:
 
         text = b.get("translated_text") or b.get("text") or ""
         meta = b.get("metadata") or {}
+        
+        # Извлекаем font signals из metadata
+        font_size = meta.get("font_size", 0)
+        is_bold = meta.get("is_bold", False)
 
         role = "body"
 
@@ -89,7 +110,7 @@ def detect_headings(blocks: List[Block]) -> List[Block]:
         elif _looks_like_list_item(text):
             role = "list_item"
         else:
-            level = _classify_heading_level(text, page, order)
+            level = _classify_heading_level(text, page, order, font_size, is_bold)
             if level.startswith("heading"):
                 role = level
             else:

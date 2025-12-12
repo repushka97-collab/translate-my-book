@@ -12,6 +12,7 @@ from core_engine.translate.nllb_backend import translate_with_nllb
 from core_engine.translate.quality_pass import run_quality_pass
 from core_engine.translate.editor_pass import run_editor_pass
 from core_engine.translate.term_normalizer import run_term_normalizer
+from core_engine.translate.heading_translator import process_headings_in_blocks
 
 
 # =========================
@@ -221,5 +222,8 @@ def translate_blocks(
 
     # Term-normalizer v1: приведение терминов
     translated = run_term_normalizer(translated)
+    
+    # Heading-translator: специальная обработка заголовков
+    translated = process_headings_in_blocks(translated)
 
     return translated
