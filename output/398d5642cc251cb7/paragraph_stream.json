@@ -5,6 +5,11 @@
     "page": 1
   },
   {
+    "type": "heading2",
+    "text": "Innovations in акупунктура and Medicine",
+    "page": 1
+  },
+  {
     "type": "paragraph",
     "text": "А Narrative Review of Effects and Underlying\nMechanisms of Needling Therapy for Treating\nMyofascial Pain and Musculoskeletal Disorders",
     "page": 1
@@ -12,16 +17,6 @@
   {
     "type": "heading2",
     "text": "Cheuk Ming Tong1*",
-    "page": 1
-  },
-  {
-    "type": "list_item",
-    "text": "*Correspondence:\nCheuk Ming Tong\ncheukming.tong@nhs.net",
-    "page": 1
-  },
-  {
-    "type": "heading2",
-    "text": "Innovations in акупунктура and Medicine",
     "page": 1
   },
   {
@@ -35,6 +30,11 @@
     "page": 1
   },
   {
+    "type": "list_item",
+    "text": "*Correspondence:\nCheuk Ming Tong\ncheukming.tong@nhs.net",
+    "page": 1
+  },
+  {
     "type": "page_break",
     "page": 2
   },
@@ -42,6 +42,14 @@
     "type": "figure",
     "text": "Graphical Abstract — Figure 1",
     "page": 2
+  },
+  {
+    "type": "image",
+    "image_bytes": null,
+    "image_id": "p2_img0",
+    "label": null,
+    "page": 2,
+    "_has_image": true
   },
   {
     "type": "heading2",
@@ -61,6 +69,14 @@
   {
     "type": "page_break",
     "page": 3
+  },
+  {
+    "type": "image",
+    "image_bytes": null,
+    "image_id": "p3_img0",
+    "label": null,
+    "page": 3,
+    "_has_image": true
   },
   {
     "type": "paragraph",
@@ -92,18 +108,32 @@
     "page": 4
   },
   {
+    "type": "image",
+    "image_bytes": null,
+    "image_id": "p4_img0",
+    "label": null,
+    "page": 4,
+    "_has_image": true
+  },
+  {
+    "type": "image",
+    "image_bytes": null,
+    "image_id": "p4_img1",
+    "label": null,
+    "page": 4,
+    "_has_image": true
+  },
+  {
+    "type": "image",
+    "image_bytes": null,
+    "image_id": "p4_img2",
+    "label": null,
+    "page": 4,
+    "_has_image": true
+  },
+  {
     "type": "paragraph",
     "text": "reviews and meta-analyses, but the source types were limited to academic journals only. The studies were only selected if they have reported and mentioned any effects or mechanisms of NT for treating myofascial pain or опорно-двигательный аппарат (MSK) disorders. There were 27 studies being identified in total (Fig. 2), including 1 randomized control trial (RCT) [21], 4 nonrandomized control trials (NRCTs) [22–25], 11 narrative reviews [26–36], 6 theoretical articles [37–42], 1 observational study [43], 3 other experimental studies [44–46] and 1 expert opinion [47]. Quality appraisal was completed for the identified RCTs, NRCTs and narrative reviews. Centre for Evidence-Based Medicine (CEBM)",
-    "page": 4
-  },
-  {
-    "type": "heading2",
-    "text": "Fig. 2  Study screen flow diagram",
-    "page": 4
-  },
-  {
-    "type": "heading2",
-    "text": "Fig. 3  Pathophysiology of TrP",
     "page": 4
   },
   {
@@ -123,7 +153,17 @@
   },
   {
     "type": "heading2",
+    "text": "Fig. 2  Study screen flow diagram",
+    "page": 4
+  },
+  {
+    "type": "heading2",
     "text": "Fig. 4  Dysfunctioned motor end plate activity",
+    "page": 4
+  },
+  {
+    "type": "heading2",
+    "text": "Fig. 3  Pathophysiology of TrP",
     "page": 4
   },
   {
@@ -131,8 +171,37 @@
     "page": 5
   },
   {
+    "type": "image",
+    "image_bytes": null,
+    "image_id": "p5_img0",
+    "label": null,
+    "page": 5,
+    "_has_image": true
+  },
+  {
+    "type": "image",
+    "image_bytes": null,
+    "image_id": "p5_img1",
+    "label": null,
+    "page": 5,
+    "_has_image": true
+  },
+  {
+    "type": "image",
+    "image_bytes": null,
+    "image_id": "p5_img2",
+    "label": null,
+    "page": 5,
+    "_has_image": true
+  },
+  {
     "type": "heading2",
     "text": "Fig. 5  Muscle sliding filament theory—actin and myosin filament",
+    "page": 5
+  },
+  {
+    "type": "paragraph",
+    "text": "released from SR, causing the myosin binding sites constantly to expose themselves to form the constant crossbridge. Since actin and myosin filaments slide one pass each other, sarcomere is then shortened sustainably, causing prolonged muscle fibre contraction. Eventually, contraction knots (i.е., TrP) are formed [43] (Fig. 4). Sustained muscle fibre contraction not only enhances metabolic demand, but also may cause ischemia [28, 29]. Since oxygen is required to create adenosine triphosphate (ATP), ischemia depletes ATP. is needed to release myosin head from binding to actin to break the crossbridge according to the muscle sliding filament theory [51], so а lack of ATP means crossbridge forms constantly. As long as there is crossbridge formation, the reuptake of Ca2 + back to the SR is paused as Ca2 + is required to form the crossbridge; therefore, the constant crossbridge formation leads to shortened sarcomere and sustained muscle fibre contraction, eventually forming TrP [43]. NT works by breaking this envious cycle (Fig. 7). This is known as myofascial effect. There are three sub mechanisms to explain how myofascial effect works. First, NT may suppress the motor end plate activity (i.е., depleting ACh level) [21, 30]. It is found that this suppression effect is more pronounced when rapid dry needling is applied to elicit multiple lateral twitch responses (LTRs), which which",
     "page": 5
   },
   {
@@ -151,17 +220,25 @@
     "page": 5
   },
   {
-    "type": "paragraph",
-    "text": "released from SR, causing the myosin binding sites constantly to expose themselves to form the constant crossbridge. Since actin and myosin filaments slide one pass each other, sarcomere is then shortened sustainably, causing prolonged muscle fibre contraction. Eventually, contraction knots (i.е., TrP) are formed [43] (Fig. 4). Sustained muscle fibre contraction not only enhances metabolic demand, but also may cause ischemia [28, 29]. Since oxygen is required to create adenosine triphosphate (ATP), ischemia depletes ATP. is needed to release myosin head from binding to actin to break the crossbridge according to the muscle sliding filament theory [51], so а lack of ATP means crossbridge forms constantly. As long as there is crossbridge formation, the reuptake of Ca2 + back to the SR is paused as Ca2 + is required to form the crossbridge; therefore, the constant crossbridge formation leads to shortened sarcomere and sustained muscle fibre contraction, eventually forming TrP [43]. NT works by breaking this envious cycle (Fig. 7). This is known as myofascial effect. There are three sub mechanisms to explain how myofascial effect works. First, NT may suppress the motor end plate activity (i.е., depleting ACh level) [21, 30]. It is found that this suppression effect is more pronounced when rapid dry needling is applied to elicit multiple lateral twitch responses (LTRs), which which",
-    "page": 5
-  },
-  {
     "type": "page_break",
     "page": 6
   },
   {
+    "type": "image",
+    "image_bytes": null,
+    "image_id": "p6_img0",
+    "label": null,
+    "page": 6,
+    "_has_image": true
+  },
+  {
     "type": "paragraph",
     "text": "can deplete more ACh in the motor end plate [30]. Second, NT may lower the level of calcitonin gene-related peptide (CGRP). Shah, et al. [29] found that the level of CGRP reduced significantly in the intervention group after dry needling treatments with LTRs. CGRP is а neuropeptide released from nociceptor neurons when they are depolarised [38, 44] and is found increased significantly in amount near the sites of TrP [29]. Since CGRP serves as а facilitator for realising ACh [38], it is responsible for the increased level of ACh in the motor end plate, thus causing muscle fibre contraction. The reduction of CGRP level can, therefore, reduce the amount of ACh released in the motor end plate, hence releasing the tight knot. Third, NT may increase circulation. Local circulation is created near the site of needle insertion, facilitating “wash out effect” for CGRP, which in turn can lower the amount of ACh in the motor end plate to release the tight knot [29, 30].",
+    "page": 6
+  },
+  {
+    "type": "paragraph",
+    "text": "human body, and descending inhibitory system is the underlying mechanism. Han [47] found that there is а link between акупунктура analgesia and the release of opioid in the central nerve system. In human body, opioid can be generated endogenously through the descending inhibitory system [31]. Descending inhibition system is а neural pathway originating in the brain (supraspinally) that sends signal down and along the spinal cord to modulate pain [22]. NT appears to reduce опорно-двигательный аппарат (MSK) pain by activating the descending inhibitory system [23]. Nociceptive input travels along the spinothalamic tract ascending into the sensory cortex to perceive pain. There are two sensory fibres forming the spinothalamic tract picking up nociceptive signals: 1) А-delta (Aδ) fibres and С fibres. While Aδ fibres are high threshold afferent fibres; С fibres are of low threshold [52]. Therefore, any low intensity nociceptive inputs will stimulate С fibres. Since input from NS is of high intensity comparatively, it will stimulate Aδ fibres. In terms of myelination and conduction velocity, Aδ fibres are moderately myelinated with conduction velocity between 1 and 4 м/s; С fibres are non-myelinated with maximum conduction velocity to be less than 1 м/s [24]. Therefore, any input travelling",
     "page": 6
   },
   {
@@ -175,11 +252,6 @@
     "page": 6
   },
   {
-    "type": "paragraph",
-    "text": "human body, and descending inhibitory system is the underlying mechanism. Han [47] found that there is а link between акупунктура analgesia and the release of opioid in the central nerve system. In human body, opioid can be generated endogenously through the descending inhibitory system [31]. Descending inhibition system is а neural pathway originating in the brain (supraspinally) that sends signal down and along the spinal cord to modulate pain [22]. NT appears to reduce опорно-двигательный аппарат (MSK) pain by activating the descending inhibitory system [23]. Nociceptive input travels along the spinothalamic tract ascending into the sensory cortex to perceive pain. There are two sensory fibres forming the spinothalamic tract picking up nociceptive signals: 1) А-delta (Aδ) fibres and С fibres. While Aδ fibres are high threshold afferent fibres; С fibres are of low threshold [52]. Therefore, any low intensity nociceptive inputs will stimulate С fibres. Since input from NS is of high intensity comparatively, it will stimulate Aδ fibres. In terms of myelination and conduction velocity, Aδ fibres are moderately myelinated with conduction velocity between 1 and 4 м/s; С fibres are non-myelinated with maximum conduction velocity to be less than 1 м/s [24]. Therefore, any input travelling",
-    "page": 6
-  },
-  {
     "type": "heading2",
     "text": "Fig. 8  Descending inhibitory system",
     "page": 6
@@ -187,6 +259,14 @@
   {
     "type": "page_break",
     "page": 7
+  },
+  {
+    "type": "image",
+    "image_bytes": null,
+    "image_id": "p7_img0",
+    "label": null,
+    "page": 7,
+    "_has_image": true
   },
   {
     "type": "paragraph",
@@ -199,13 +279,13 @@
     "page": 7
   },
   {
-    "type": "paragraph",
-    "text": "3.3 Spinal Effect and Control Gate Mechanism The third effect attributed to NT in the treatment of опорно-двигательный аппарат (MSK) pain is spinal effect which can be explained by gate control mechanism [40]. The key concept of gate control mechanism is presynaptic inhibition through which the “pain gate” is closed, hence causing analgesic effect (Fig. 9). There are two main tracts involved in gate control mechanism: spinothalamic tract (STT) and dorsal column-medial lemniscus (DCML) pathway. SST transmits nociceptive signals from either Aδ fibres or С fibres all the way to the sensory cortex, while DCML transmits non-nociceptive signals from А-beta (Aβ) fibres all the way to the sensory cortex [55]. In the spinothalamic tract, either Aδ or С fibre picks up the nociceptive input, and SP acts as neurotransmitter to carry this nociceptive signal from the 1st order neuron to the 2nd order neuron in the dorsal horn. Once the nociceptive input reaches cortex, pain is perceived. The synapse between the 1st and 2nd order neurons is where the pain gate located. As long as this gate is closed, SP will be limited to travel through. Although it is impossible to fully close this gate, it conveys an idea that how the interruption of the transmission of SP within the synapse can lower pain perception",
+    "type": "heading2",
+    "text": "Fig. 9  Control gate mechanism—presynatic inhibition",
     "page": 7
   },
   {
-    "type": "heading2",
-    "text": "Fig. 9  Control gate mechanism—presynatic inhibition",
+    "type": "paragraph",
+    "text": "3.3 Spinal Effect and Control Gate Mechanism The third effect attributed to NT in the treatment of опорно-двигательный аппарат (MSK) pain is spinal effect which can be explained by gate control mechanism [40]. The key concept of gate control mechanism is presynaptic inhibition through which the “pain gate” is closed, hence causing analgesic effect (Fig. 9). There are two main tracts involved in gate control mechanism: spinothalamic tract (STT) and dorsal column-medial lemniscus (DCML) pathway. SST transmits nociceptive signals from either Aδ fibres or С fibres all the way to the sensory cortex, while DCML transmits non-nociceptive signals from А-beta (Aβ) fibres all the way to the sensory cortex [55]. In the spinothalamic tract, either Aδ or С fibre picks up the nociceptive input, and SP acts as neurotransmitter to carry this nociceptive signal from the 1st order neuron to the 2nd order neuron in the dorsal horn. Once the nociceptive input reaches cortex, pain is perceived. The synapse between the 1st and 2nd order neurons is where the pain gate located. As long as this gate is closed, SP will be limited to travel through. Although it is impossible to fully close this gate, it conveys an idea that how the interruption of the transmission of SP within the synapse can lower pain perception",
     "page": 7
   },
   {
@@ -215,6 +295,19 @@
   },
   {
     "type": "page_break",
+    "page": 8
+  },
+  {
+    "type": "image",
+    "image_bytes": null,
+    "image_id": "p8_img0",
+    "label": null,
+    "page": 8,
+    "_has_image": true
+  },
+  {
+    "type": "paragraph",
+    "text": "Although the study selection was not limited to RCTs, systematic review and meta-analyses which are of high standard for effective research [57], there were no systematic review and meta-analysis identified in this review, and only 1 RCT study was identified; the rest types of studies are of the lower hierarchy of evidence [57]. In addition, 1 identified NRCT [24] and 2 other experimental studies [35 & 54] were animal trials (rats); however, laboratory rats are ideal animal models for biomedical research as about 95% of their genes are shared with humans [58]. Furthermore, this review focuses only on two common forms of NT (акупунктура and сухое иглоукалывание (DN)), while wet needling which involves the addition of an injection of analgesic substance [59] is not explored in this review. One final limitation of this review is that this review explores and documents the effects and mechanisms of NT (including акупунктура) in western scientific terminology. The results of this review might not be compatible with or transferable to the традиционная китайская медицина (ТКМ) literature, which, however, might cause controversy or conflicting ideology for traditional традиционная китайская медицина (ТКМ) practitioners who perform the modality. However, this review does not intend to reach consensus, change the theory ingrained in традиционная китайская медицина (ТКМ) nor change the ideology of those традиционная китайская медицина (ТКМ) practitioners who perform the modality but opens an alternative way of thinking for the practitioners to justify their selection of the modality.",
     "page": 8
   },
   {
@@ -229,21 +322,6 @@
   },
   {
     "type": "heading2",
-    "text": "4 Limitations One limitation of this narrative review is that",
-    "page": 8
-  },
-  {
-    "type": "paragraph",
-    "text": "it was conducted by single screening approach for study selection due to limited resource, so it might be prone to bias; however, it requires fewer resources to conduct, offering potential shortcuts for rapid reviews [56]. To minimise the effect due to single screening approach, different quality appraisal tools were applied to assess the quality of studies of different types. However, only three types of study (RCTs, NRCTs and narrative reviews) were appraised as there are no appraisal tools available for other types of studies. All the judging criteria, scoring and results are tabulated in Appendix 2, 3, 4.",
-    "page": 8
-  },
-  {
-    "type": "paragraph",
-    "text": "Although the study selection was not limited to RCTs, systematic review and meta-analyses which are of high standard for effective research [57], there were no systematic review and meta-analysis identified in this review, and only 1 RCT study was identified; the rest types of studies are of the lower hierarchy of evidence [57]. In addition, 1 identified NRCT [24] and 2 other experimental studies [35 & 54] were animal trials (rats); however, laboratory rats are ideal animal models for biomedical research as about 95% of their genes are shared with humans [58]. Furthermore, this review focuses only on two common forms of NT (акупунктура and сухое иглоукалывание (DN)), while wet needling which involves the addition of an injection of analgesic substance [59] is not explored in this review. One final limitation of this review is that this review explores and documents the effects and mechanisms of NT (including акупунктура) in western scientific terminology. The results of this review might not be compatible with or transferable to the традиционная китайская медицина (ТКМ) literature, which, however, might cause controversy or conflicting ideology for traditional традиционная китайская медицина (ТКМ) practitioners who perform the modality. However, this review does not intend to reach consensus, change the theory ingrained in традиционная китайская медицина (ТКМ) nor change the ideology of those традиционная китайская медицина (ТКМ) practitioners who perform the modality but opens an alternative way of thinking for the practitioners to justify their selection of the modality.",
-    "page": 8
-  },
-  {
-    "type": "heading2",
     "text": "5 Conclusion This review summarised and categorised four main",
     "page": 8
   },
@@ -253,8 +331,34 @@
     "page": 8
   },
   {
+    "type": "heading2",
+    "text": "4 Limitations One limitation of this narrative review is that",
+    "page": 8
+  },
+  {
+    "type": "paragraph",
+    "text": "it was conducted by single screening approach for study selection due to limited resource, so it might be prone to bias; however, it requires fewer resources to conduct, offering potential shortcuts for rapid reviews [56]. To minimise the effect due to single screening approach, different quality appraisal tools were applied to assess the quality of studies of different types. However, only three types of study (RCTs, NRCTs and narrative reviews) were appraised as there are no appraisal tools available for other types of studies. All the judging criteria, scoring and results are tabulated in Appendix 2, 3, 4.",
+    "page": 8
+  },
+  {
     "type": "page_break",
     "page": 9
+  },
+  {
+    "type": "image",
+    "image_bytes": null,
+    "image_id": "p9_img0",
+    "label": null,
+    "page": 9,
+    "_has_image": true
+  },
+  {
+    "type": "image",
+    "image_bytes": null,
+    "image_id": "p9_img1",
+    "label": null,
+    "page": 9,
+    "_has_image": true
   },
   {
     "type": "paragraph",
@@ -321,6 +425,14 @@
     "page": 10
   },
   {
+    "type": "image",
+    "image_bytes": null,
+    "image_id": "p10_img0",
+    "label": null,
+    "page": 10,
+    "_has_image": true
+  },
+  {
     "type": "heading2",
     "text": "Table 4  Quality appraisal result (SANRA for Narrative reviews)",
     "page": 10
@@ -328,6 +440,16 @@
   {
     "type": "paragraph",
     "text": "Abbreviations ACh Acetylcholine ATP Adenosine triphosphate CEBM Centre for evidence-based medicine CGRP Calcitonin gene-related peptide DCML Dorsal column-medial lemniscus DT Dry needling GABA Gamma-aminobutyric acid HA Histamine LBP Low back pain LTR Lateral twitch responses MINORS Methodological items for non-randomized studies опорно-двигательный аппарат (MSK) Musculoskeletal NT Needling therapy PAG Periaqueductal gray RVM Rostral ventromedial medulla SARN Scale for the assessment of narrative review articles SP Substance Р SR Sarcoplasmic reticulum STT Spinothalamic tract традиционная китайская медицина (ТКМ) Traditional Chinese Medicine TrP Trigger point 5-HT Serotonin",
+    "page": 10
+  },
+  {
+    "type": "paragraph",
+    "text": "Author details\n1 London Northwest University Healthcare NHS Trust, National Health Service\n(NHS) England, London, UK.",
+    "page": 10
+  },
+  {
+    "type": "paragraph",
+    "text": "References 1. Smith Е, Hoy DG, Cross М, Vos Т, Naghavi М, Buchbinder R, Woolf AD, March L. The global burden of other musculoskeletal disorders: estimates from the Global Burden of Disease 2010 study. Ann Rheum Dis. 2014;73(8):1462–9. 2. Cieza А, Causey К, Kamenov К, Hanson SW, Chatterji S, Vos Т. Global estimates of the need for rehabilitation based on the Global Burden of Disease study 2019: а systematic analysis for the Global Burden of Disease Study 2019. The Lancet. 2020;396(10267):2006–17. 3. Versus Arthritis. The state of musculoskeletal health 2024—arthritis and other musculoskeletal conditions in numbers [Internet]. 2024 (cited 2025 Apr 13). Available from: https://versusarthritis.org/about-arthritis/data- and-statistics/the-state-of-musculoskeletal-health/ 4. World Health Organisation. Musculoskeletal Health [Internet]. 2022 [cited 2025 Apr 13]. Available from: https://www.who.int/news-room/fact- sheets/detail/musculoskeletal-conditions 5. Lam С, Francio VT, Gustafson К, Carroll М, York А, Chadwick AL. Myofascial pain—а major player in musculoskeletal pain. Best Pract Res Clin Rheumatol. 2024;21:101944. 6. Tantanatip А, Chang KV. Myofascial pain syndrome. Europe PMC. 2023 7. Babatunde OO, Jordan JL, Van der Windt DA, Hill JC, Foster NE, Protheroe J. Effective treatment options for musculoskeletal pain in primary care: а systematic overview of current evidence. PLoS ONE. 2017;12(6):e0178621. 8. Mansfield CJ, Vanetten L, Willy R, Di Stasi S, Magnussen R, Briggs М. The effects of needling therapies on muscle force production: а systematic review and meta-analysis. J Orthop Sports Phys Ther. 2019;49(3):154–70. 9. American Physical Therapy Association, American Physical Therapy Association. Description of dry needling in clinical practice: an educational resource paper. Alexandria: American Physical Therapy Association. 2013. 10. Van Hal М, Dydyk AM, Green MS. акупунктура. National Library of Medicine. 2023. Available from https://www.ncbi.nlm.nih.gov/books/NBK53 2287/ 11. Mao Х, He H, Ding J. Efficacy of laser акупунктура for treatment of chronic low back pain: а systematic review and meta-analysis. Pain management nursing. 2024. 12. Yu H, Wang D, Verville L, Southerst D, Bussières А, Gross DP, Pereira Р, Mior S, Tricco AC, Cedraschi С, Brunton G. Systematic review to inform а World Health Organization (WHO) clinical practice guideline: benefits and harms of needling therapies for chronic primary low back pain in adults. J Occup Rehabil. 2023;33(4):661–72. 13. Guzmán-Pavón MJ, Torres-Costoso AI, Cavero-Redondo I, Reina-Gutiérrez S, Lorenzo-García Р, Álvarez-Bueno С. Effectiveness of deep dry needling combined with stretching for the treatment of pain in patients with",
     "page": 10
   },
   {
@@ -363,16 +485,6 @@
   {
     "type": "paragraph",
     "text": "Clinical Trial Number\nNot applicable.",
-    "page": 10
-  },
-  {
-    "type": "paragraph",
-    "text": "Author details\n1 London Northwest University Healthcare NHS Trust, National Health Service\n(NHS) England, London, UK.",
-    "page": 10
-  },
-  {
-    "type": "paragraph",
-    "text": "References 1. Smith Е, Hoy DG, Cross М, Vos Т, Naghavi М, Buchbinder R, Woolf AD, March L. The global burden of other musculoskeletal disorders: estimates from the Global Burden of Disease 2010 study. Ann Rheum Dis. 2014;73(8):1462–9. 2. Cieza А, Causey К, Kamenov К, Hanson SW, Chatterji S, Vos Т. Global estimates of the need for rehabilitation based on the Global Burden of Disease study 2019: а systematic analysis for the Global Burden of Disease Study 2019. The Lancet. 2020;396(10267):2006–17. 3. Versus Arthritis. The state of musculoskeletal health 2024—arthritis and other musculoskeletal conditions in numbers [Internet]. 2024 (cited 2025 Apr 13). Available from: https://versusarthritis.org/about-arthritis/data- and-statistics/the-state-of-musculoskeletal-health/ 4. World Health Organisation. Musculoskeletal Health [Internet]. 2022 [cited 2025 Apr 13]. Available from: https://www.who.int/news-room/fact- sheets/detail/musculoskeletal-conditions 5. Lam С, Francio VT, Gustafson К, Carroll М, York А, Chadwick AL. Myofascial pain—а major player in musculoskeletal pain. Best Pract Res Clin Rheumatol. 2024;21:101944. 6. Tantanatip А, Chang KV. Myofascial pain syndrome. Europe PMC. 2023 7. Babatunde OO, Jordan JL, Van der Windt DA, Hill JC, Foster NE, Protheroe J. Effective treatment options for musculoskeletal pain in primary care: а systematic overview of current evidence. PLoS ONE. 2017;12(6):e0178621. 8. Mansfield CJ, Vanetten L, Willy R, Di Stasi S, Magnussen R, Briggs М. The effects of needling therapies on muscle force production: а systematic review and meta-analysis. J Orthop Sports Phys Ther. 2019;49(3):154–70. 9. American Physical Therapy Association, American Physical Therapy Association. Description of dry needling in clinical practice: an educational resource paper. Alexandria: American Physical Therapy Association. 2013. 10. Van Hal М, Dydyk AM, Green MS. акупунктура. National Library of Medicine. 2023. Available from https://www.ncbi.nlm.nih.gov/books/NBK53 2287/ 11. Mao Х, He H, Ding J. Efficacy of laser акупунктура for treatment of chronic low back pain: а systematic review and meta-analysis. Pain management nursing. 2024. 12. Yu H, Wang D, Verville L, Southerst D, Bussières А, Gross DP, Pereira Р, Mior S, Tricco AC, Cedraschi С, Brunton G. Systematic review to inform а World Health Organization (WHO) clinical practice guideline: benefits and harms of needling therapies for chronic primary low back pain in adults. J Occup Rehabil. 2023;33(4):661–72. 13. Guzmán-Pavón MJ, Torres-Costoso AI, Cavero-Redondo I, Reina-Gutiérrez S, Lorenzo-García Р, Álvarez-Bueno С. Effectiveness of deep dry needling combined with stretching for the treatment of pain in patients with",
     "page": 10
   },
   {

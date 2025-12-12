@@ -578,6 +578,20 @@
           "normalized_text": "arXiv:2305.11583v1 [cs.HC] 19 May 2023",
           "translated_text": "arXiv:2305.11583v1 [cs.HC] 19 May 2023"
         }
+      ],
+      "images": [
+        {
+          "id": "p1_img0",
+          "page_number": 1,
+          "bbox": {
+            "x0": 0,
+            "y0": 0,
+            "x1": 0,
+            "y1": 0
+          },
+          "mime_type": "image/png",
+          "label": null
+        }
       ]
     },
     {

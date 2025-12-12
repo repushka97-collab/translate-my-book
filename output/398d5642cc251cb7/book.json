@@ -346,6 +346,20 @@
           "normalized_text": "practised modalities appear to be insufficient to lower\nthe high prevalence of MSK disorders.\nNeedling therapy (NT), therefore, starts to gain its\npopularity as a new modality to treat MSK disorders\ndue to growing evidence to prove its efficacy. NT is an\numbrella term for any modality involving the use of needles inserting into the soft tissue to treat MSK pain and\nconditions [8]. There are two common forms of NT: acupuncture and dry needling (DT). While DT is defined by\nthe American Physical Therapy Association (APTA) as a\nskilled intervention involving the use of a filiform needle to penetrate the skin to stimulate underlying myofascial points, muscular and connective tissues to treat\nMSK pain and movement impairments [9], acupuncture\n(translated as needle penetration) is defined in TCM as\nthe use of small needles inserted into the specific points\nof the body (acupoints points) to treat bodily problems\n[10]. Two systematic reviews have shown effectiveness",
           "translated_text": "practised modalities appear to be insufficient to lower the high prevalence of опорно-двигательный аппарат (MSK) disorders. Needling therapy (NT), therefore, starts to gain its popularity as а new modality to treat опорно-двигательный аппарат (MSK) disorders due to growing evidence to prove its efficacy. NT is an umbrella term for any modality involving the use of needles inserting into the soft tissue to treat опорно-двигательный аппарат (MSK) pain and conditions [8]. There are two common forms of NT: акупунктура and dry needling (DT). While DT is defined by the American Physical Therapy Association (APTA) as а skilled intervention involving the use of а filiform needle to penetrate the skin to stimulate underlying myofascial points, muscular and connective tissues to treat опорно-двигательный аппарат (MSK) pain and movement impairments [9], акупунктура (translated as needle penetration) is defined in традиционная китайская медицина (ТКМ) as the use of small needles inserted into the specific points of the body (acupoints points) to treat bodily problems [10]. Two systematic reviews have shown effectiveness"
         }
+      ],
+      "images": [
+        {
+          "id": "p2_img0",
+          "page_number": 2,
+          "bbox": {
+            "x0": 0,
+            "y0": 0,
+            "x1": 0,
+            "y1": 0
+          },
+          "mime_type": "image/png",
+          "label": null
+        }
       ]
     },
     {
@@ -504,6 +518,20 @@
           "block_id": "p3_b4",
           "normalized_text": "Fig. 1  State of internal harmony with concept of Yin and Yang\naccording to TCM",
           "translated_text": "Fig. 1  State of internal harmony with concept of Инь (Инь) and Ян (Ян)\naccording to традиционная китайская медицина (ТКМ)"
+        }
+      ],
+      "images": [
+        {
+          "id": "p3_img0",
+          "page_number": 3,
+          "bbox": {
+            "x0": 0,
+            "y0": 0,
+            "x1": 0,
+            "y1": 0
+          },
+          "mime_type": "image/png",
+          "label": null
         }
       ]
     },
@@ -715,6 +743,44 @@
           "normalized_text": "Fig. 4  Dysfunctioned motor end plate activity",
           "translated_text": "Fig. 4  Dysfunctioned motor end plate activity"
         }
+      ],
+      "images": [
+        {
+          "id": "p4_img0",
+          "page_number": 4,
+          "bbox": {
+            "x0": 0,
+            "y0": 0,
+            "x1": 0,
+            "y1": 0
+          },
+          "mime_type": "image/png",
+          "label": null
+        },
+        {
+          "id": "p4_img1",
+          "page_number": 4,
+          "bbox": {
+            "x0": 0,
+            "y0": 0,
+            "x1": 0,
+            "y1": 0
+          },
+          "mime_type": "image/png",
+          "label": null
+        },
+        {
+          "id": "p4_img2",
+          "page_number": 4,
+          "bbox": {
+            "x0": 0,
+            "y0": 0,
+            "x1": 0,
+            "y1": 0
+          },
+          "mime_type": "image/png",
+          "label": null
+        }
       ]
     },
     {
@@ -889,6 +955,44 @@
           "normalized_text": "Fig. 7  Breaking the envious cycle—reducing release of ACh at the motor endplate",
           "translated_text": "Fig. 7  Breaking the envious cycle—reducing release of ACh at the motor endplate"
         }
+      ],
+      "images": [
+        {
+          "id": "p5_img0",
+          "page_number": 5,
+          "bbox": {
+            "x0": 0,
+            "y0": 0,
+            "x1": 0,
+            "y1": 0
+          },
+          "mime_type": "image/png",
+          "label": null
+        },
+        {
+          "id": "p5_img1",
+          "page_number": 5,
+          "bbox": {
+            "x0": 0,
+            "y0": 0,
+            "x1": 0,
+            "y1": 0
+          },
+          "mime_type": "image/png",
+          "label": null
+        },
+        {
+          "id": "p5_img2",
+          "page_number": 5,
+          "bbox": {
+            "x0": 0,
+            "y0": 0,
+            "x1": 0,
+            "y1": 0
+          },
+          "mime_type": "image/png",
+          "label": null
+        }
       ]
     },
     {
@@ -1041,6 +1145,20 @@
           "block_id": "p6_b4",
           "normalized_text": "Fig. 8  Descending inhibitory system",
           "translated_text": "Fig. 8  Descending inhibitory system"
+        }
+      ],
+      "images": [
+        {
+          "id": "p6_img0",
+          "page_number": 6,
+          "bbox": {
+            "x0": 0,
+            "y0": 0,
+            "x1": 0,
+            "y1": 0
+          },
+          "mime_type": "image/png",
+          "label": null
         }
       ]
     },
@@ -1226,6 +1344,20 @@
           "normalized_text": "Fig. 9  Control gate mechanism—presynatic inhibition",
           "translated_text": "Fig. 9  Control gate mechanism—presynatic inhibition"
         }
+      ],
+      "images": [
+        {
+          "id": "p7_img0",
+          "page_number": 7,
+          "bbox": {
+            "x0": 0,
+            "y0": 0,
+            "x1": 0,
+            "y1": 0
+          },
+          "mime_type": "image/png",
+          "label": null
+        }
       ]
     },
     {
@@ -1406,6 +1538,20 @@
           "block_id": "p8_b5",
           "normalized_text": "Fig. 10  Local effects",
           "translated_text": "Fig. 10  Local effects"
+        }
+      ],
+      "images": [
+        {
+          "id": "p8_img0",
+          "page_number": 8,
+          "bbox": {
+            "x0": 0,
+            "y0": 0,
+            "x1": 0,
+            "y1": 0
+          },
+          "mime_type": "image/png",
+          "label": null
         }
       ]
     },
@@ -1745,6 +1891,32 @@
           "block_id": "p9_b12",
           "normalized_text": "Appendix 4\nSee Table 4.",
           "translated_text": "Appendix 4\nSee Table 4."
+        }
+      ],
+      "images": [
+        {
+          "id": "p9_img0",
+          "page_number": 9,
+          "bbox": {
+            "x0": 0,
+            "y0": 0,
+            "x1": 0,
+            "y1": 0
+          },
+          "mime_type": "image/png",
+          "label": null
+        },
+        {
+          "id": "p9_img1",
+          "page_number": 9,
+          "bbox": {
+            "x0": 0,
+            "y0": 0,
+            "x1": 0,
+            "y1": 0
+          },
+          "mime_type": "image/png",
+          "label": null
         }
       ]
     },
@@ -2107,6 +2279,20 @@
           "block_id": "p10_b13",
           "normalized_text": "Table 4  Quality appraisal result (SANRA for Narrative reviews)",
           "translated_text": "Table 4  Quality appraisal result (SANRA for Narrative reviews)"
+        }
+      ],
+      "images": [
+        {
+          "id": "p10_img0",
+          "page_number": 10,
+          "bbox": {
+            "x0": 0,
+            "y0": 0,
+            "x1": 0,
+            "y1": 0
+          },
+          "mime_type": "image/png",
+          "label": null
         }
       ]
     },

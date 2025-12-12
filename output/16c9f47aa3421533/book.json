@@ -885,6 +885,20 @@
           "normalized_text": "FIGURE 1.1 Interrelated aspects of physical function.",
           "translated_text": "FIGURE 1.1 Interrelated aspects of physical function."
         }
+      ],
+      "images": [
+        {
+          "id": "p2_img0",
+          "page_number": 2,
+          "bbox": {
+            "x0": 0,
+            "y0": 0,
+            "x1": 0,
+            "y1": 0
+          },
+          "mime_type": "image/png",
+          "label": null
+        }
       ]
     },
     {
@@ -1257,7 +1271,7 @@
           },
           "block_id": "p3_b13",
           "normalized_text": "N O T E : Although joint mobilization techniques are often\nclassified as manual therapy procedures, not therapeutic\nexercise,2 the authors of this textbook have chosen to\ninclude joint mobilization procedures under the broad",
-          "translated_text": "N О Т Е : Although joint mobilization techniques are often\nclassified as manual therapy procedures, not therapeutic\nexercise,2 the authors of this textbook have chosen to\ninclude joint mobilization procedures under the broad"
+          "translated_text": "N О Т Е: Although joint mobilization techniques are often\nclassified as manual therapy procedures, not therapeutic\nexercise,2 the authors of this textbook have chosen to\ninclude joint mobilization procedures under the broad"
         },
         {
           "id": "p3_b14",
@@ -1903,6 +1917,20 @@
           "block_id": "p4_b17",
           "normalized_text": "4\nPROCESS AND MODELS OF DISABLEMENT",
           "translated_text": "4\nPROCESS AND MODELS OF DISABLEMENT"
+        }
+      ],
+      "images": [
+        {
+          "id": "p4_img0",
+          "page_number": 4,
+          "bbox": {
+            "x0": 0,
+            "y0": 0,
+            "x1": 0,
+            "y1": 0
+          },
+          "mime_type": "image/png",
+          "label": null
         }
       ]
     },
@@ -2950,6 +2978,20 @@
           "normalized_text": "Equally crucial for the effective management of a\npatient’s dysfunction is the need to analyze and determine,\nor at least infer and certainly not ignore, the underlying\ncauses of the identified physical impairments, particularly\nthose related to impaired movement.117,118 For example,\nare biomechanical abnormalities of soft tissues the source\nof restricted ROM? If so, which soft tissues are restricted,\nand why are they restricted? This information assists the\ntherapist in the selection of appropriate, effective therapeutic interventions that target the underlying causes of\nthe impairments, the impairments themselves, and the\nresulting functional limitations.",
           "translated_text": "Equally crucial for the effective management of а patient’s dysfunction is the need to analyze and determine, or at least infer and certainly not ignore, the underlying causes of the identified physical impairments, particularly those related to impaired movement.117,118 For example, are biomechanical abnormalities of soft tissues the source of restricted ROM? If so, which soft tissues are restricted, and why are they restricted? This information assists the therapist in the selection of appropriate, effective therapeutic interventions that target the underlying causes of the impairments, the impairments themselves, and the resulting functional limitations."
         }
+      ],
+      "images": [
+        {
+          "id": "p7_img1",
+          "page_number": 7,
+          "bbox": {
+            "x0": 0,
+            "y0": 0,
+            "x1": 0,
+            "y1": 0
+          },
+          "mime_type": "image/png",
+          "label": null
+        }
       ]
     },
     {
@@ -3037,7 +3079,7 @@
           },
           "block_id": "p8_b2",
           "normalized_text": "N O T E : The term now used by the WHO to denote functional limitation is “ability limitation,” as defined in the ICF\nmodel of functioning and disability21,52,131-133 (see Table 1.1).",
-          "translated_text": "N О Т Е : The term now used by the WHO to denote functional limitation is “ability limitation,” as defined in the ICF\nmodel of functioning and disability21,52,131-133 (see Table 1.1)."
+          "translated_text": "N О Т Е: The term now used by the WHO to denote functional limitation is “ability limitation,” as defined in the ICF\nmodel of functioning and disability21,52,131-133 (see Table 1.1)."
         },
         {
           "id": "p8_b3",
@@ -3245,6 +3287,20 @@
           "block_id": "p8_b10",
           "normalized_text": "• Reaching and grasping\n• Lifting and carrying\n• Pushing and pulling\n• Bending and stooping\n• Turning and twisting\n• Throwing and catching\n• Rolling\n• Standing\n• Squatting and kneeling\n• Standing up and sitting down\n• Getting in and out of bed\n• Crawling, walking, running\n• Ascending and descending stairs\n• Hopping and jumping\n• Kicking",
           "translated_text": "• Reaching and grasping\n• Lifting and carrying\n• Pushing and pulling\n• Bending and stooping\n• Turning and twisting\n• Throwing and catching\n• Rolling\n• Standing\n• Squatting and kneeling\n• Standing up and sitting down\n• Getting in and out of bed\n• Crawling, walking, running\n• Ascending and descending stairs\n• Hopping and jumping\n• Kicking"
+        }
+      ],
+      "images": [
+        {
+          "id": "p8_img0",
+          "page_number": 8,
+          "bbox": {
+            "x0": 0,
+            "y0": 0,
+            "x1": 0,
+            "y1": 0
+          },
+          "mime_type": "image/png",
+          "label": null
         }
       ]
     }

@@ -664,6 +664,56 @@
           "normalized_text": "Biofilter 1 enclosure\nEnclosure 2",
           "translated_text": "Biofilter 1 enclosure\n2 2"
         }
+      ],
+      "images": [
+        {
+          "id": "p3_img0",
+          "page_number": 3,
+          "bbox": {
+            "x0": 0,
+            "y0": 0,
+            "x1": 0,
+            "y1": 0
+          },
+          "mime_type": "image/png",
+          "label": null
+        },
+        {
+          "id": "p3_img1",
+          "page_number": 3,
+          "bbox": {
+            "x0": 0,
+            "y0": 0,
+            "x1": 0,
+            "y1": 0
+          },
+          "mime_type": "image/png",
+          "label": null
+        },
+        {
+          "id": "p3_img2",
+          "page_number": 3,
+          "bbox": {
+            "x0": 0,
+            "y0": 0,
+            "x1": 0,
+            "y1": 0
+          },
+          "mime_type": "image/png",
+          "label": null
+        },
+        {
+          "id": "p3_img3",
+          "page_number": 3,
+          "bbox": {
+            "x0": 0,
+            "y0": 0,
+            "x1": 0,
+            "y1": 0
+          },
+          "mime_type": "image/png",
+          "label": null
+        }
       ]
     },
     {
@@ -1061,6 +1111,20 @@
           "block_id": "p4_b15",
           "normalized_text": "Internal layout of production buildings",
           "translated_text": "Internal layout of production buildings"
+        }
+      ],
+      "images": [
+        {
+          "id": "p4_img0",
+          "page_number": 4,
+          "bbox": {
+            "x0": 0,
+            "y0": 0,
+            "x1": 0,
+            "y1": 0
+          },
+          "mime_type": "image/png",
+          "label": null
         }
       ]
     },

@@ -139,6 +139,38 @@
     "page": 3
   },
   {
+    "type": "image",
+    "image_bytes": null,
+    "image_id": "p3_img0",
+    "label": null,
+    "page": 3,
+    "_has_image": true
+  },
+  {
+    "type": "image",
+    "image_bytes": null,
+    "image_id": "p3_img1",
+    "label": null,
+    "page": 3,
+    "_has_image": true
+  },
+  {
+    "type": "image",
+    "image_bytes": null,
+    "image_id": "p3_img2",
+    "label": null,
+    "page": 3,
+    "_has_image": true
+  },
+  {
+    "type": "image",
+    "image_bytes": null,
+    "image_id": "p3_img3",
+    "label": null,
+    "page": 3,
+    "_has_image": true
+  },
+  {
     "type": "paragraph",
     "text": "Both hangars are designed so that they can function independently of each other.",
     "page": 3
@@ -156,6 +188,14 @@
   {
     "type": "page_break",
     "page": 4
+  },
+  {
+    "type": "image",
+    "image_bytes": null,
+    "image_id": "p4_img0",
+    "label": null,
+    "page": 4,
+    "_has_image": true
   },
   {
     "type": "heading2",
@@ -396,6 +436,11 @@
     "page": 6
   },
   {
+    "type": "list_item",
+    "text": "- The use of SPCRs that by, specialised feed and quality eggs.\n- Confirmed by already signed letters of intent for future deliveries.",
+    "page": 6
+  },
+  {
     "type": "heading2",
     "text": "3. Ready infrastructure and",
     "page": 6
@@ -403,6 +448,11 @@
   {
     "type": "paragraph",
     "text": "team:",
+    "page": 6
+  },
+  {
+    "type": "list_item",
+    "text": "- Much of the construction work has already been completed.\n- An experienced team of specialists ensures the stability and efficiency of production processes.",
     "page": 6
   },
   {
@@ -416,6 +466,11 @@
     "page": 6
   },
   {
+    "type": "list_item",
+    "text": "- Subsidy opportunities up to 40% of capital costs.\n- Preferential lending at 7.5 per cent significantly reduces the financial burden.",
+    "page": 6
+  },
+  {
     "type": "heading2",
     "text": "5. Project",
     "page": 6
@@ -423,6 +478,11 @@
   {
     "type": "paragraph",
     "text": "Control:",
+    "page": 6
+  },
+  {
+    "type": "list_item",
+    "text": "- The use of an in-house contractor allows the investor to influence project estimates,",
     "page": 6
   },
   {
@@ -437,12 +497,27 @@
   },
   {
     "type": "paragraph",
+    "text": "minimising risks and improving management efficiency.",
+    "page": 6
+  },
+  {
+    "type": "paragraph",
     "text": "quickly start generating revenue and strengthen our market position.\nTo demonstrate the economic efficiency of the project, we propose to consider an example of CPI\ncalculation, both as а stand-alone enterprise and as part of а fish farming enterprise engaged in the\nproduction of commercial trout.\nPrices are for the beginning of 2024.",
     "page": 6
   },
   {
     "type": "list_item",
+    "text": "- The possibility of receiving the first batch of RPM as early as autumn 2025 allows us to",
+    "page": 6
+  },
+  {
+    "type": "list_item",
     "text": "2. basis for calculation: production and sales\nforecasts",
+    "page": 6
+  },
+  {
+    "type": "heading2",
+    "text": "Separate enterprise\nAs part of the group of\ncompanies",
     "page": 6
   },
   {
@@ -452,7 +527,17 @@
   },
   {
     "type": "heading2",
+    "text": "kg\nPrice rub per 1 unit\nTotal cost, RUB",
+    "page": 6
+  },
+  {
+    "type": "heading2",
     "text": "Sales price, RUB/piece\n49 ₽",
+    "page": 6
+  },
+  {
+    "type": "paragraph",
+    "text": "thousand",
     "page": 6
   },
   {
@@ -496,53 +581,13 @@
     "page": 6
   },
   {
+    "type": "paragraph",
+    "text": "47 %\n30 %",
+    "page": 6
+  },
+  {
     "type": "heading2",
     "text": "Operating profit, RUB thousand\n93 055 ₽\n44 055 ₽",
-    "page": 6
-  },
-  {
-    "type": "list_item",
-    "text": "- The use of SPCRs that by, specialised feed and quality eggs.\n- Confirmed by already signed letters of intent for future deliveries.",
-    "page": 6
-  },
-  {
-    "type": "list_item",
-    "text": "- Much of the construction work has already been completed.\n- An experienced team of specialists ensures the stability and efficiency of production processes.",
-    "page": 6
-  },
-  {
-    "type": "list_item",
-    "text": "- Subsidy opportunities up to 40% of capital costs.\n- Preferential lending at 7.5 per cent significantly reduces the financial burden.",
-    "page": 6
-  },
-  {
-    "type": "list_item",
-    "text": "- The use of an in-house contractor allows the investor to influence project estimates,",
-    "page": 6
-  },
-  {
-    "type": "paragraph",
-    "text": "minimising risks and improving management efficiency.",
-    "page": 6
-  },
-  {
-    "type": "list_item",
-    "text": "- The possibility of receiving the first batch of RPM as early as autumn 2025 allows us to",
-    "page": 6
-  },
-  {
-    "type": "heading2",
-    "text": "Separate enterprise\nAs part of the group of\ncompanies",
-    "page": 6
-  },
-  {
-    "type": "heading2",
-    "text": "kg\nPrice rub per 1 unit\nTotal cost, RUB",
-    "page": 6
-  },
-  {
-    "type": "paragraph",
-    "text": "thousand 47 %\n30 %",
     "page": 6
   },
   {
@@ -567,6 +612,11 @@
   {
     "type": "paragraph",
     "text": "Unlike open ponds, where fish are prone to disease and parasites, ROMs provide а controlled and\nsafe environment for rearing RPMs. This is especially important in the first stages of fry rearing.",
+    "page": 7
+  },
+  {
+    "type": "heading2",
+    "text": "Parameters of the 2-year production cycle",
     "page": 7
   },
   {
@@ -610,8 +660,23 @@
     "page": 7
   },
   {
+    "type": "heading1",
+    "text": "2 Base for calculation: feed costs",
+    "page": 7
+  },
+  {
+    "type": "paragraph",
+    "text": "Quantity, pcs/",
+    "page": 7
+  },
+  {
     "type": "heading2",
     "text": "Caviar production (10%), kg\n108 202",
+    "page": 7
+  },
+  {
+    "type": "heading2",
+    "text": "kg\nPrice rub per 1 unit\nTotal, thousand rubles",
     "page": 7
   },
   {
@@ -621,7 +686,22 @@
   },
   {
     "type": "heading2",
+    "text": "Feed, kg\n1 940 460\n209 ₽\n405 556 ₽",
+    "page": 7
+  },
+  {
+    "type": "heading2",
+    "text": "Subsidies for fodder (15%), RUB ths.\n60 833 ₽",
+    "page": 7
+  },
+  {
+    "type": "heading2",
     "text": "Cost of fry rub/piece\n49 ₽\n26 ₽",
+    "page": 7
+  },
+  {
+    "type": "heading2",
+    "text": "CPI within the group of\ncompanies",
     "page": 7
   },
   {
@@ -650,6 +730,11 @@
     "page": 7
   },
   {
+    "type": "paragraph",
+    "text": "56 %\n64 %",
+    "page": 7
+  },
+  {
     "type": "heading2",
     "text": "Operating profit, RUB thousand\n501 277 ₽\n672 257 ₽",
     "page": 7
@@ -657,46 +742,6 @@
   {
     "type": "heading2",
     "text": "These calculations are preliminary and aggregated, the revenue depends on the marketing\nstrategy and policies of the company.",
-    "page": 7
-  },
-  {
-    "type": "heading2",
-    "text": "Parameters of the 2-year production cycle",
-    "page": 7
-  },
-  {
-    "type": "heading1",
-    "text": "2 Base for calculation: feed costs",
-    "page": 7
-  },
-  {
-    "type": "paragraph",
-    "text": "Quantity, pcs/",
-    "page": 7
-  },
-  {
-    "type": "heading2",
-    "text": "kg\nPrice rub per 1 unit\nTotal, thousand rubles",
-    "page": 7
-  },
-  {
-    "type": "heading2",
-    "text": "Feed, kg\n1 940 460\n209 ₽\n405 556 ₽",
-    "page": 7
-  },
-  {
-    "type": "heading2",
-    "text": "Subsidies for fodder (15%), RUB ths.\n60 833 ₽",
-    "page": 7
-  },
-  {
-    "type": "heading2",
-    "text": "CPI within the group of\ncompanies",
-    "page": 7
-  },
-  {
-    "type": "paragraph",
-    "text": "56 %\n64 %",
     "page": 7
   },
   {
