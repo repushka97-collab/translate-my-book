@@ -67,7 +67,12 @@ def ingest_pdf(source_path: str) -> IngestResult:
     blocks: List[Block] = extract_blocks(pdf_path, pages)
 
     # 4. Изображения
-    extract_images(pdf_path, pages)
+    # Best-effort: some PDFs contain images that can't be rasterized/encoded cleanly.
+    # Ingest must not fail because of that.
+    try:
+        extract_images(pdf_path, pages)
+    except Exception:
+        pass
 
     # 5. Собираем BookDocument
     doc = BookDocument(
@@ -89,15 +94,23 @@ def ingest_pdf(source_path: str) -> IngestResult:
     #    Здесь мы ЖЁСТКО соблюдаем контракт:
     #    "id", "page", "order", "text" — обязательные ключи.
     blocks_dict: List[Dict[str, Any]] = []
-    for idx, blk in enumerate(blocks):
+    order = 0
+    for blk in blocks:
         blk_id = blk.id  # уже уникальный ID блока из core.models
+        raw_text = blk.raw_text or ""
+
+        # Контракт A1: ingest blocks must have non-empty text.
+        # Для PDF с мусорными/пустыми блоками — просто пропускаем их,
+        # чтобы не валить весь прогон книги.
+        if not raw_text.strip():
+            continue
 
         block_dict: Dict[str, Any] = {
             # контрактные поля
             "id": blk_id,
             "page": blk.page_number,
-            "order": idx,
-            "text": blk.raw_text,
+            "order": order,
+            "text": raw_text,
             # расширения (для layout/аналитики и будущих мозгов)
             "type": blk.type.value,
             "bbox": {
@@ -114,6 +127,7 @@ def ingest_pdf(source_path: str) -> IngestResult:
         block_dict["block_id"] = blk_id
 
         blocks_dict.append(block_dict)
+        order += 1
 
     # 8. Метаданные ingest-результата
     meta: Dict[str, Any] = {

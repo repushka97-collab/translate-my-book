@@ -1,0 +1,161 @@
+{
+  "mode": "dev",
+  "env": {
+    "repo_root": "I:\\PROJECTS\\Translate-my-book\\translate-my-book",
+    "python_executable": "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "git_head": "f7a44fab30875d9be1fe6f7835a910bf9f037393",
+    "torch_cuda_available": false
+  },
+  "runs": [
+    {
+      "source_pdf": "input.pdf",
+      "mode": "dev",
+      "ok": false,
+      "book_id": "",
+      "output_dir": "",
+      "export_paths": {},
+      "qa_status": "",
+      "qa_issues_total": 0,
+      "qa_issues_by_type": {},
+      "qa_issues_by_severity": {},
+      "paragraph_count": 0,
+      "docx_size_bytes": null,
+      "json_size_bytes": null,
+      "error": "RuntimeError(\"Paragraph stream build failed: 'text'\")",
+      "duration_sec": null
+    },
+    {
+      "source_pdf": "ingest\\Book1.pdf",
+      "mode": "dev",
+      "ok": false,
+      "book_id": "",
+      "output_dir": "",
+      "export_paths": {},
+      "qa_status": "",
+      "qa_issues_total": 0,
+      "qa_issues_by_type": {},
+      "qa_issues_by_severity": {},
+      "paragraph_count": 0,
+      "docx_size_bytes": null,
+      "json_size_bytes": null,
+      "error": "RuntimeError(\"Paragraph stream build failed: 'text'\")",
+      "duration_sec": null
+    },
+    {
+      "source_pdf": "ingest\\Основы фитнес тренировки.pdf",
+      "mode": "dev",
+      "ok": false,
+      "book_id": "",
+      "output_dir": "",
+      "export_paths": {},
+      "qa_status": "",
+      "qa_issues_total": 0,
+      "qa_issues_by_type": {},
+      "qa_issues_by_severity": {},
+      "paragraph_count": 0,
+      "docx_size_bytes": null,
+      "json_size_bytes": null,
+      "error": "RuntimeError(\"Paragraph stream build failed: 'text'\")",
+      "duration_sec": null
+    },
+    {
+      "source_pdf": "For test\\30-38.pdf",
+      "mode": "dev",
+      "ok": true,
+      "book_id": "16c9f47aa3421533",
+      "output_dir": "output\\16c9f47aa3421533",
+      "export_paths": {
+        "json": "output\\16c9f47aa3421533\\book.json",
+        "docx_main": "output\\16c9f47aa3421533\\book_ru.docx"
+      },
+      "qa_status": "warn",
+      "qa_issues_total": 51,
+      "qa_issues_by_type": {
+        "potential_break": 42,
+        "repeated_tokens": 4,
+        "suspect_terms_en_in_ru": 4,
+        "concatenated_scripts": 1
+      },
+      "qa_issues_by_severity": {
+        "low": 50,
+        "medium": 1
+      },
+      "paragraph_count": 126,
+      "docx_size_bytes": 48888,
+      "json_size_bytes": 195341,
+      "error": null,
+      "duration_sec": 0.204
+    },
+    {
+      "source_pdf": "For test\\GPT.pdf",
+      "mode": "dev",
+      "ok": true,
+      "book_id": "d247362f641f5add",
+      "output_dir": "output\\d247362f641f5add",
+      "export_paths": {
+        "json": "output\\d247362f641f5add\\book.json",
+        "docx_main": "output\\d247362f641f5add\\book_ru.docx"
+      },
+      "qa_status": "warn",
+      "qa_issues_total": 28,
+      "qa_issues_by_type": {
+        "potential_break": 22,
+        "suspect_terms_en_in_ru": 2,
+        "repeated_tokens": 3,
+        "concatenated_scripts": 1
+      },
+      "qa_issues_by_severity": {
+        "low": 27,
+        "medium": 1
+      },
+      "paragraph_count": 171,
+      "docx_size_bytes": 50253,
+      "json_size_bytes": 226527,
+      "error": null,
+      "duration_sec": 0.417
+    },
+    {
+      "source_pdf": "For test\\KIDCITY.pdf",
+      "mode": "dev",
+      "ok": true,
+      "book_id": "a7e2c751b5e6db65",
+      "output_dir": "output\\a7e2c751b5e6db65",
+      "export_paths": {
+        "json": "output\\a7e2c751b5e6db65\\book.json",
+        "docx_main": "output\\a7e2c751b5e6db65\\book_ru.docx"
+      },
+      "qa_status": "warn",
+      "qa_issues_total": 30,
+      "qa_issues_by_type": {
+        "potential_break": 24,
+        "repeated_tokens": 4,
+        "suspect_terms_en_in_ru": 2
+      },
+      "qa_issues_by_severity": {
+        "low": 30
+      },
+      "paragraph_count": 150,
+      "docx_size_bytes": 42183,
+      "json_size_bytes": 123804,
+      "error": null,
+      "duration_sec": 1.416
+    },
+    {
+      "source_pdf": "For test\\Myofascial.pdf",
+      "mode": "dev",
+      "ok": false,
+      "book_id": "",
+      "output_dir": "",
+      "export_paths": {},
+      "qa_status": "",
+      "qa_issues_total": 0,
+      "qa_issues_by_type": {},
+      "qa_issues_by_severity": {},
+      "paragraph_count": 0,
+      "docx_size_bytes": null,
+      "json_size_bytes": null,
+      "error": "RuntimeError(\"Paragraph stream build failed: 'text'\")",
+      "duration_sec": null
+    }
+  ]
+}

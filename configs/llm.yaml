@@ -9,7 +9,8 @@ profiles:
     backend: nllb
     model_name: facebook/nllb-200-distilled-600M
     device: cuda
-    batch_size: 8
+    # RTX 5080 / 64GB RAM: можно выше батч для скорости; если поймаешь OOM — снизь до 8/12.
+    batch_size: 16
     max_length: 640
     source_lang: en
     target_lang: ru

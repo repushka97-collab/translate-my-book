@@ -1,0 +1,150 @@
+{
+  "mode": "fast",
+  "runs": [
+    {
+      "source_pdf": "input.pdf",
+      "mode": "fast",
+      "ok": true,
+      "book_id": "398d5642cc251cb7",
+      "output_dir": "output\\398d5642cc251cb7",
+      "export_paths": {
+        "json": "output\\398d5642cc251cb7\\book.json",
+        "docx_main": "output\\398d5642cc251cb7\\book_ru.docx"
+      },
+      "qa_status": "warn",
+      "qa_issues_total": 29,
+      "qa_issues_by_type": {
+        "potential_break": 18,
+        "mixed_alphabet": 2,
+        "repeated_tokens": 6,
+        "suspect_terms_en_in_ru": 3
+      },
+      "qa_issues_by_severity": {
+        "low": 27,
+        "medium": 2
+      },
+      "paragraph_count": 68,
+      "docx_size_bytes": 52906,
+      "json_size_bytes": 188611,
+      "error": null
+    },
+    {
+      "source_pdf": "ingest\\Book1.pdf",
+      "mode": "fast",
+      "ok": false,
+      "book_id": "",
+      "output_dir": "",
+      "export_paths": {},
+      "qa_status": "",
+      "qa_issues_total": 0,
+      "qa_issues_by_type": {},
+      "qa_issues_by_severity": {},
+      "paragraph_count": 0,
+      "docx_size_bytes": null,
+      "json_size_bytes": null,
+      "error": "ValueError('Block.text is empty/None at stage=ingest, index=1342')"
+    },
+    {
+      "source_pdf": "ingest\\Основы фитнес тренировки.pdf",
+      "mode": "fast",
+      "ok": false,
+      "book_id": "",
+      "output_dir": "",
+      "export_paths": {},
+      "qa_status": "",
+      "qa_issues_total": 0,
+      "qa_issues_by_type": {},
+      "qa_issues_by_severity": {},
+      "paragraph_count": 0,
+      "docx_size_bytes": null,
+      "json_size_bytes": null,
+      "error": "ValueError('Block.text is empty/None at stage=ingest, index=76')"
+    },
+    {
+      "source_pdf": "For test\\30-38.pdf",
+      "mode": "fast",
+      "ok": false,
+      "book_id": "",
+      "output_dir": "",
+      "export_paths": {},
+      "qa_status": "",
+      "qa_issues_total": 0,
+      "qa_issues_by_type": {},
+      "qa_issues_by_severity": {},
+      "paragraph_count": 0,
+      "docx_size_bytes": null,
+      "json_size_bytes": null,
+      "error": "<pymupdf.mupdf.FzErrorArgument; proxy of <Swig Object of type 'mupdf::FzErrorArgument *' at 0x00000188422B5030> >"
+    },
+    {
+      "source_pdf": "For test\\GPT.pdf",
+      "mode": "fast",
+      "ok": false,
+      "book_id": "",
+      "output_dir": "",
+      "export_paths": {},
+      "qa_status": "",
+      "qa_issues_total": 0,
+      "qa_issues_by_type": {},
+      "qa_issues_by_severity": {},
+      "paragraph_count": 0,
+      "docx_size_bytes": null,
+      "json_size_bytes": null,
+      "error": "RuntimeError('QA failed: critical translation mismatch')"
+    },
+    {
+      "source_pdf": "For test\\KIDCITY.pdf",
+      "mode": "fast",
+      "ok": true,
+      "book_id": "a7e2c751b5e6db65",
+      "output_dir": "output\\a7e2c751b5e6db65",
+      "export_paths": {
+        "json": "output\\a7e2c751b5e6db65\\book.json",
+        "docx_main": "output\\a7e2c751b5e6db65\\book_ru.docx"
+      },
+      "qa_status": "warn",
+      "qa_issues_total": 31,
+      "qa_issues_by_type": {
+        "mixed_alphabet": 1,
+        "potential_break": 24,
+        "repeated_tokens": 6
+      },
+      "qa_issues_by_severity": {
+        "medium": 1,
+        "low": 30
+      },
+      "paragraph_count": 126,
+      "docx_size_bytes": 42680,
+      "json_size_bytes": 112397,
+      "error": null
+    },
+    {
+      "source_pdf": "For test\\Myofascial.pdf",
+      "mode": "fast",
+      "ok": true,
+      "book_id": "e4d0e0712aeb4be1",
+      "output_dir": "output\\e4d0e0712aeb4be1",
+      "export_paths": {
+        "json": "output\\e4d0e0712aeb4be1\\book.json",
+        "docx_main": "output\\e4d0e0712aeb4be1\\book_ru.docx"
+      },
+      "qa_status": "warn",
+      "qa_issues_total": 191,
+      "qa_issues_by_type": {
+        "mixed_alphabet": 109,
+        "potential_break": 20,
+        "repeated_tokens": 29,
+        "concatenated_scripts": 18,
+        "suspect_terms_en_in_ru": 15
+      },
+      "qa_issues_by_severity": {
+        "medium": 127,
+        "low": 64
+      },
+      "paragraph_count": 799,
+      "docx_size_bytes": 89863,
+      "json_size_bytes": 986351,
+      "error": null
+    }
+  ]
+}

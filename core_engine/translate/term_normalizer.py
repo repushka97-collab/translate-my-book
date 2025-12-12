@@ -126,6 +126,54 @@ def _normalize_terms(text: str) -> str:
         s,
         flags=re.IGNORECASE,
     )
+    
+    # Acupuncture / Acupuncturist
+    s = re.sub(
+        r"\bacupuncture\b",
+        "акупунктура",
+        s,
+        flags=re.IGNORECASE,
+    )
+    s = re.sub(
+        r"\bacupuncturist\b",
+        "акупунктурист",
+        s,
+        flags=re.IGNORECASE,
+    )
+    
+    # Channel / Channels
+    s = re.sub(
+        r"\bchannels\b",
+        "каналы",
+        s,
+        flags=re.IGNORECASE,
+    )
+    s = re.sub(
+        r"\bchannel\b",
+        "канал",
+        s,
+        flags=re.IGNORECASE,
+    )
+    
+    # Fascia / Fascial
+    s = re.sub(
+        r"\bfascia\b",
+        "фасция",
+        s,
+        flags=re.IGNORECASE,
+    )
+    s = re.sub(
+        r"\bfascias\b",
+        "фасции",
+        s,
+        flags=re.IGNORECASE,
+    )
+    s = re.sub(
+        r"\bfascial\b",
+        "фасциальный",
+        s,
+        flags=re.IGNORECASE,
+    )
 
     # ============================
     #  ВОССТАНОВЛЕНИЕ ПЛЕЙСХОЛДЕРОВ

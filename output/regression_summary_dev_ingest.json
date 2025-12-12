@@ -1,0 +1,62 @@
+{
+  "mode": "dev",
+  "runs": [
+    {
+      "source_pdf": "ingest\\Book1.pdf",
+      "mode": "dev",
+      "ok": true,
+      "book_id": "0c7daf4499e5620f",
+      "output_dir": "output\\0c7daf4499e5620f",
+      "export_paths": {
+        "json": "output\\0c7daf4499e5620f\\book.json",
+        "docx_main": "output\\0c7daf4499e5620f\\book_ru.docx"
+      },
+      "qa_status": "warn",
+      "qa_issues_total": 127,
+      "qa_issues_by_type": {
+        "potential_break": 101,
+        "mixed_alphabet": 8,
+        "repeated_tokens": 14,
+        "concatenated_scripts": 2,
+        "length_mismatch": 1,
+        "empty_translation": 1
+      },
+      "qa_issues_by_severity": {
+        "low": 115,
+        "medium": 12
+      },
+      "paragraph_count": 1194,
+      "docx_size_bytes": 130125,
+      "json_size_bytes": 1909489,
+      "error": null
+    },
+    {
+      "source_pdf": "ingest\\Основы фитнес тренировки.pdf",
+      "mode": "dev",
+      "ok": true,
+      "book_id": "f4c13fdec42b7d46",
+      "output_dir": "output\\f4c13fdec42b7d46",
+      "export_paths": {
+        "json": "output\\f4c13fdec42b7d46\\book.json",
+        "docx_main": "output\\f4c13fdec42b7d46\\book_ru.docx"
+      },
+      "qa_status": "warn",
+      "qa_issues_total": 523,
+      "qa_issues_by_type": {
+        "potential_break": 262,
+        "repeated_tokens": 123,
+        "mixed_alphabet": 17,
+        "concatenated_scripts": 67,
+        "suspect_terms_en_in_ru": 54
+      },
+      "qa_issues_by_severity": {
+        "low": 439,
+        "medium": 84
+      },
+      "paragraph_count": 5165,
+      "docx_size_bytes": 451909,
+      "json_size_bytes": 7743575,
+      "error": null
+    }
+  ]
+}

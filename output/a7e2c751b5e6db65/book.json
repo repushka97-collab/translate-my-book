@@ -1,0 +1,3211 @@
+{
+  "book_id": "a7e2c751b5e6db65",
+  "pages": [
+    {
+      "page_num": 2,
+      "blocks": [
+        {
+          "id": "p2_b0",
+          "page": 2,
+          "order": 0,
+          "text": "The KIDCITY project includes two ventures: \n",
+          "type": "heading",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 58.70001220703125,
+            "x1": 280.8805847167969,
+            "y1": 70.70001220703125
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "heading1"
+          },
+          "block_id": "p2_b0",
+          "normalized_text": "The KIDCITY project includes two ventures:",
+          "translated_text": "The KIDCITY project includes two ventures:"
+        },
+        {
+          "id": "p2_b1",
+          "page": 2,
+          "order": 1,
+          "text": "- Kidcity Ltd TIN 7813557792 - specialising in the rearing of rainbow trout fry.\n",
+          "type": "text",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 84.20001220703125,
+            "x1": 445.04840087890625,
+            "y1": 98.70001220703125
+          },
+          "metadata": {
+            "font_size": 14.5,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p2_b1",
+          "normalized_text": "- Kidcity Ltd TIN 7813557792 - specialising in the rearing of rainbow trout fry.",
+          "translated_text": "- Kidcity Ltd TIN 7813557792 - specialising in the rearing of rainbow trout fry."
+        },
+        {
+          "id": "p2_b2",
+          "page": 2,
+          "order": 2,
+          "text": "- LLC \"UNR-90\" INN 7814821626 - construction organisation, general contractor of the project.\n",
+          "type": "text",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 108.20001220703125,
+            "x1": 528.2550659179688,
+            "y1": 122.70001220703125
+          },
+          "metadata": {
+            "font_size": 14.5,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p2_b2",
+          "normalized_text": "- LLC \"UNR-90\" INN 7814821626 - construction organisation, general contractor of the project.",
+          "translated_text": "- LLC \"UNR-90\" INN 7814821626 - construction organisation, general contractor of the project."
+        },
+        {
+          "id": "p2_b3",
+          "page": 2,
+          "order": 3,
+          "text": "Project prerequisites \n",
+          "type": "text",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 134.70001220703125,
+            "x1": 181.1550750732422,
+            "y1": 148.70001220703125
+          },
+          "metadata": {
+            "font_size": 13.0,
+            "is_bold": true,
+            "is_italic": false,
+            "font": "Times-Bold",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p2_b3",
+          "normalized_text": "Project prerequisites",
+          "translated_text": "Project prerequisites"
+        },
+        {
+          "id": "p2_b4",
+          "page": 2,
+          "order": 4,
+          "text": "1.\nGovernment support:\n",
+          "type": "heading",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 161.70001220703125,
+            "x1": 188.01242065429688,
+            "y1": 173.70001220703125
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": true,
+            "is_italic": false,
+            "font": "Times-Bold",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p2_b4",
+          "normalized_text": "1.\nGovernment support:",
+          "translated_text": "1.\nGovernment support:"
+        },
+        {
+          "id": "p2_b5",
+          "page": 2,
+          "order": 5,
+          "text": "The state actively supports the implementation of such projects and provides the following support \nmeasures:\n",
+          "type": "heading",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 189.75,
+            "x1": 541.2922973632812,
+            "y1": 215.75
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p2_b5",
+          "normalized_text": "The state actively supports the implementation of such projects and provides the following support\nmeasures:",
+          "translated_text": "The state actively supports the implementation of such projects and provides the following support\nmeasures:"
+        },
+        {
+          "id": "p2_b6",
+          "page": 2,
+          "order": 6,
+          "text": "- Subsidies for construction and equipment purchase account for up to 40 per cent of capital \n",
+          "type": "text",
+          "bbox": {
+            "x0": 68.69999694824219,
+            "y0": 229.25,
+            "x1": 541.297119140625,
+            "y1": 243.75
+          },
+          "metadata": {
+            "font_size": 14.5,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p2_b6",
+          "normalized_text": "- Subsidies for construction and equipment purchase account for up to 40 per cent of capital",
+          "translated_text": "- Subsidies for construction and equipment purchase account for up to 40 per cent of capital"
+        },
+        {
+          "id": "p2_b7",
+          "page": 2,
+          "order": 7,
+          "text": "costs. 1\n- Subsidies for fodder purchase up to 15%2\n- Preferential VAT rate of 10% 3\n",
+          "type": "text",
+          "bbox": {
+            "x0": 68.69999694824219,
+            "y0": 243.75,
+            "x1": 281.0929870605469,
+            "y1": 285.75
+          },
+          "metadata": {
+            "font_size": 0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p2_b7",
+          "normalized_text": "costs. 1\n- Subsidies for fodder purchase up to 15%2\n- Preferential VAT rate of 10% 3",
+          "translated_text": "costs. 1\n- Subsidies for fodder purchase up to 15%2\n- Preferential VAT rate of 10% 3"
+        },
+        {
+          "id": "p2_b8",
+          "page": 2,
+          "order": 8,
+          "text": "2. Growth of aquaculture in the world and Russia:\n",
+          "type": "heading",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 299.75,
+            "x1": 320.6399841308594,
+            "y1": 311.75
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": true,
+            "is_italic": false,
+            "font": "Times-Bold",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p2_b8",
+          "normalized_text": "2. Growth of aquaculture in the world and Russia:",
+          "translated_text": "2. Growth of aquaculture in the world and Russia:"
+        },
+        {
+          "id": "p2_b9",
+          "page": 2,
+          "order": 9,
+          "text": "- Commercial aquaculture is the most economical way to produce protein in the world.\n- Since 1980, the amount of fish farmed has equalled the amount of fish caught from natural \n",
+          "type": "text",
+          "bbox": {
+            "x0": 68.69999694824219,
+            "y0": 320.25,
+            "x1": 541.2976684570312,
+            "y1": 348.75
+          },
+          "metadata": {
+            "font_size": 14.5,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p2_b9",
+          "normalized_text": "- Commercial aquaculture is the most economical way to produce protein in the world.\n- Since 1980, the amount of fish farmed has equalled the amount of fish caught from natural",
+          "translated_text": "- Commercial aquaculture is the most economical way to produce protein in the world.\n- Since 1980, the amount of fish farmed has equalled the amount of fish caught from natural"
+        },
+        {
+          "id": "p2_b10",
+          "page": 2,
+          "order": 10,
+          "text": "water bodies, and by 2022, more than doubled.\n- Domestic production received a significant boost after the introduction of counter-sanctions in \n",
+          "type": "text",
+          "bbox": {
+            "x0": 68.69999694824219,
+            "y0": 348.75,
+            "x1": 541.2921142578125,
+            "y1": 376.75
+          },
+          "metadata": {
+            "font_size": 0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "",
+            "protected_tokens": [],
+            "role": "body",
+            "editor_pass": "heuristic_v1"
+          },
+          "block_id": "p2_b10",
+          "normalized_text": "water bodies, and by 2022, more than doubled.\n- Domestic production received a significant boost after the introduction of counter-sanctions in",
+          "translated_text": "water bodies, and by 2022, more than doubled.\n- Domestic production received а significant boost after the introduction of counter-sanctions in"
+        },
+        {
+          "id": "p2_b11",
+          "page": 2,
+          "order": 11,
+          "text": "2014. Currently, Russia produces more than 500 thousand tonnes of various fish species per \nyear, with plans to grow to 700 thousand tonnes by 2030.\n",
+          "type": "text",
+          "bbox": {
+            "x0": 81.80000305175781,
+            "y0": 376.75,
+            "x1": 541.2991333007812,
+            "y1": 402.75
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p2_b11",
+          "normalized_text": "2014. Currently, Russia produces more than 500 thousand tonnes of various fish species per\nyear, with plans to grow to 700 thousand tonnes by 2030.",
+          "translated_text": "2014. Currently, Russia produces more than 500 thousand tonnes of various fish species per\nyear, with plans to grow to 700 thousand tonnes by 2030."
+        },
+        {
+          "id": "p2_b12",
+          "page": 2,
+          "order": 12,
+          "text": "3. Market Needs:\n",
+          "type": "heading",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 418.75,
+            "x1": 151.005615234375,
+            "y1": 430.75
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": true,
+            "is_italic": false,
+            "font": "Times-Bold",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p2_b12",
+          "normalized_text": "3. Market Needs:",
+          "translated_text": "3. Market Needs:"
+        },
+        {
+          "id": "p2_b13",
+          "page": 2,
+          "order": 13,
+          "text": "- The industry is experiencing a chronic shortage of fish planting material (FPM). For 2023, the \n",
+          "type": "text",
+          "bbox": {
+            "x0": 68.69999694824219,
+            "y0": 444.25,
+            "x1": 541.2965698242188,
+            "y1": 458.75
+          },
+          "metadata": {
+            "font_size": 14.5,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [
+              "chronic shortage of fish planting material (FPM)"
+            ],
+            "role": "body",
+            "editor_pass": "heuristic_v1"
+          },
+          "block_id": "p2_b13",
+          "normalized_text": "- The industry is experiencing a chronic shortage of fish planting material (FPM). For 2023, the",
+          "translated_text": "- The industry is experiencing а chronic shortage of fish planting material (FPM). For 2023, the"
+        },
+        {
+          "id": "p2_b14",
+          "page": 2,
+          "order": 14,
+          "text": "figure was more than 20 million pieces per year.\n- The majority of rearing in the region is carried out by cage farms in open water bodies, where \n",
+          "type": "text",
+          "bbox": {
+            "x0": 68.69999694824219,
+            "y0": 458.75,
+            "x1": 541.2907104492188,
+            "y1": 486.75
+          },
+          "metadata": {
+            "font_size": 0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p2_b14",
+          "normalized_text": "figure was more than 20 million pieces per year.\n- The majority of rearing in the region is carried out by cage farms in open water bodies, where",
+          "translated_text": "figure was more than 20 million pieces per year.\n- The majority of rearing in the region is carried out by cage farms in open water bodies, where"
+        },
+        {
+          "id": "p2_b15",
+          "page": 2,
+          "order": 15,
+          "text": "the business model involves purchasing fry from third-party suppliers.\n- A large number of low-quality RPM due to the desire of unscrupulous suppliers to save money \n",
+          "type": "text",
+          "bbox": {
+            "x0": 68.69999694824219,
+            "y0": 486.75,
+            "x1": 541.2896118164062,
+            "y1": 514.75
+          },
+          "metadata": {
+            "font_size": 0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "",
+            "protected_tokens": [],
+            "role": "body",
+            "editor_pass": "heuristic_v1"
+          },
+          "block_id": "p2_b15",
+          "normalized_text": "the business model involves purchasing fry from third-party suppliers.\n- A large number of low-quality RPM due to the desire of unscrupulous suppliers to save money",
+          "translated_text": "the business model involves purchasing fry from third-party suppliers.\n- А large number of low-quality RPM due to the desire of unscrupulous suppliers to save money"
+        },
+        {
+          "id": "p2_b16",
+          "page": 2,
+          "order": 16,
+          "text": "when purchasing caviar and feed. This may lead to contamination of the whole farm of the \nbuyer.\n",
+          "type": "text",
+          "bbox": {
+            "x0": 81.80000305175781,
+            "y0": 514.75,
+            "x1": 541.2823486328125,
+            "y1": 540.75
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p2_b16",
+          "normalized_text": "when purchasing caviar and feed. This may lead to contamination of the whole farm of the\nbuyer.",
+          "translated_text": "when purchasing caviar and feed. This may lead to contamination of the whole farm of the\nbuyer."
+        },
+        {
+          "id": "p2_b17",
+          "page": 2,
+          "order": 17,
+          "text": "This project will meet part of the market demand with the prospect of further\ngrowth and the opportunity to expand production.\n",
+          "type": "text",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 556.75,
+            "x1": 426.23040771484375,
+            "y1": 582.75
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p2_b17",
+          "normalized_text": "This project will meet part of the market demand with the prospect of further\ngrowth and the opportunity to expand production.",
+          "translated_text": "This project will meet part of the market demand with the prospect of further\ngrowth and the opportunity to expand production."
+        },
+        {
+          "id": "p2_b18",
+          "page": 2,
+          "order": 18,
+          "text": "Current status of the project\n",
+          "type": "text",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 601.1500244140625,
+            "x1": 215.09461975097656,
+            "y1": 614.1500244140625
+          },
+          "metadata": {
+            "font_size": 13.0,
+            "is_bold": true,
+            "is_italic": false,
+            "font": "Times-Bold",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p2_b18",
+          "normalized_text": "Current status of the project",
+          "translated_text": "Current status of the project"
+        },
+        {
+          "id": "p2_b19",
+          "page": 2,
+          "order": 19,
+          "text": "The project is 45 per cent complete.\n",
+          "type": "text",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 629.1500244140625,
+            "x1": 243.31243896484375,
+            "y1": 642.1500244140625
+          },
+          "metadata": {
+            "font_size": 13.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p2_b19",
+          "normalized_text": "The project is 45 per cent complete.",
+          "translated_text": "The project is 45 per cent complete."
+        },
+        {
+          "id": "p2_b20",
+          "page": 2,
+          "order": 20,
+          "text": " Resolution of the Government of the Russian Federation No. 1413 of 24 November 2018\n1\n",
+          "type": "text",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 716.9819946289062,
+            "x1": 417.792724609375,
+            "y1": 727.4669799804688
+          },
+          "metadata": {
+            "font_size": 9.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "HelveticaNeue",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p2_b20",
+          "normalized_text": "Resolution of the Government of the Russian Federation No. 1413 of 24 November 2018\n1",
+          "translated_text": "Resolution of the Government of the Russian Federation No. 1413 of 24 November 2018\n1"
+        },
+        {
+          "id": "p2_b21",
+          "page": 2,
+          "order": 21,
+          "text": " Resolution of the Government of the Leningrad Region of 04.02.2014 N 15 \n2\n",
+          "type": "text",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 739.9819946289062,
+            "x1": 364.2877197265625,
+            "y1": 750.4669799804688
+          },
+          "metadata": {
+            "font_size": 9.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "HelveticaNeue",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p2_b21",
+          "normalized_text": "Resolution of the Government of the Leningrad Region of 04.02.2014 N 15\n2",
+          "translated_text": "Resolution of the Government of the Leningrad Region of 04.02.2014 N 15\n2"
+        },
+        {
+          "id": "p2_b22",
+          "page": 2,
+          "order": 22,
+          "text": "(ed. of 28.02.2024) \n",
+          "type": "text",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 751.8150024414062,
+            "x1": 134.406005859375,
+            "y1": 762.2999877929688
+          },
+          "metadata": {
+            "font_size": 9.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "HelveticaNeue",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p2_b22",
+          "normalized_text": "(ed. of 28.02.2024)",
+          "translated_text": "(ed. of 28.02.2024)"
+        },
+        {
+          "id": "p2_b23",
+          "page": 2,
+          "order": 23,
+          "text": " Article 164 of the Tax Code of the Russian Federation\n3\n",
+          "type": "text",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 773.9819946289062,
+            "x1": 277.23065185546875,
+            "y1": 784.4669799804688
+          },
+          "metadata": {
+            "font_size": 9.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "HelveticaNeue",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p2_b23",
+          "normalized_text": "Article 164 of the Tax Code of the Russian Federation\n3",
+          "translated_text": "Article 164 of the Tax Code of the Russian Federation\n3"
+        }
+      ]
+    },
+    {
+      "page_num": 3,
+      "blocks": [
+        {
+          "id": "p3_b0",
+          "page": 3,
+          "order": 24,
+          "text": "Satellite image of a plot of land in Maloye Zamośće village\n",
+          "type": "text",
+          "bbox": {
+            "x0": 60.692901611328125,
+            "y0": 796.7001953125,
+            "x1": 250.8496856689453,
+            "y1": 805.5562133789062
+          },
+          "metadata": {
+            "font_size": 8.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "TimesNewRomanPSMT",
+            "protected_tokens": [],
+            "role": "heading2",
+            "editor_pass": "heuristic_v1"
+          },
+          "block_id": "p3_b0",
+          "normalized_text": "Satellite image of a plot of land in Maloye Zamośće village",
+          "translated_text": "Satellite image of а plot of land in Maloye Zamośće village"
+        },
+        {
+          "id": "p3_b1",
+          "page": 3,
+          "order": 25,
+          "text": "Both hangars are designed so that they can function independently of each other.\n",
+          "type": "text",
+          "bbox": {
+            "x0": 59.12599182128906,
+            "y0": 206.6755828857422,
+            "x1": 317.0347595214844,
+            "y1": 215.53158569335938
+          },
+          "metadata": {
+            "font_size": 8.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "TimesNewRomanPSMT",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p3_b1",
+          "normalized_text": "Both hangars are designed so that they can function independently of each other.",
+          "translated_text": "Both hangars are designed so that they can function independently of each other."
+        },
+        {
+          "id": "p3_b2",
+          "page": 3,
+          "order": 26,
+          "text": "Biofilter 1 enclosure\nEnclosure 2\n",
+          "type": "text",
+          "bbox": {
+            "x0": 60.70000076293945,
+            "y0": 459.74151611328125,
+            "x1": 306.0054931640625,
+            "y1": 468.5975036621094
+          },
+          "metadata": {
+            "font_size": 8.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "TimesNewRomanPSMT",
+            "protected_tokens": [],
+            "role": "heading2",
+            "editor_pass": "heuristic_v1"
+          },
+          "block_id": "p3_b2",
+          "normalized_text": "Biofilter 1 enclosure\nEnclosure 2",
+          "translated_text": "Biofilter 1 enclosure\n2 2"
+        }
+      ]
+    },
+    {
+      "page_num": 4,
+      "blocks": [
+        {
+          "id": "p4_b0",
+          "page": 4,
+          "order": 27,
+          "text": "1.\nInfrastructure:\n",
+          "type": "heading",
+          "bbox": {
+            "x0": 67.69999694824219,
+            "y0": 266.70001220703125,
+            "x1": 170.46600341796875,
+            "y1": 278.70001220703125
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p4_b0",
+          "normalized_text": "1.\nInfrastructure:",
+          "translated_text": "1.\nInfrastructure:"
+        },
+        {
+          "id": "p4_b1",
+          "page": 4,
+          "order": 28,
+          "text": "- The production facility is located in the Leningrad region, Gatchina municipal district, Maloye \n",
+          "type": "text",
+          "bbox": {
+            "x0": 68.69999694824219,
+            "y0": 292.20001220703125,
+            "x1": 541.2822875976562,
+            "y1": 306.70001220703125
+          },
+          "metadata": {
+            "font_size": 14.5,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p4_b1",
+          "normalized_text": "- The production facility is located in the Leningrad region, Gatchina municipal district, Maloye",
+          "translated_text": "- The production facility is located in the Leningrad region, Gatchina municipal district, Maloye"
+        },
+        {
+          "id": "p4_b2",
+          "page": 4,
+          "order": 29,
+          "text": "Zamostye village, 8 km from the Kievskoye Highway exit.\n- Hangar 1 (cadastral number: 47:23:0439002:2296), area - 1,272 m². Works on pouring of \n",
+          "type": "text",
+          "bbox": {
+            "x0": 68.69999694824219,
+            "y0": 306.70001220703125,
+            "x1": 541.2989501953125,
+            "y1": 334.70001220703125
+          },
+          "metadata": {
+            "font_size": 0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "",
+            "protected_tokens": [
+              "__HAS_SUP_INDEX__"
+            ],
+            "role": "body"
+          },
+          "block_id": "p4_b2",
+          "normalized_text": "Zamostye village, 8 km from the Kievskoye Highway exit.\n- Hangar 1 (cadastral number: 47:23:0439002:2296), area - 1,272 m². Works on pouring of",
+          "translated_text": "Zamostye village, 8 km from the Kievskoye Highway exit.\n- Hangar 1 (cadastral number: 47:23:0439002:2296), area - 1,272 m². Works on pouring of"
+        },
+        {
+          "id": "p4_b3",
+          "page": 4,
+          "order": 30,
+          "text": "biofilter and concreting of floors were completed.\n- Hangar 2 (cadastral number: 47:23:0439002:2297), area - 1,161 m². The hangar is fully \n",
+          "type": "text",
+          "bbox": {
+            "x0": 68.69999694824219,
+            "y0": 334.70001220703125,
+            "x1": 541.2969360351562,
+            "y1": 362.70001220703125
+          },
+          "metadata": {
+            "font_size": 0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "",
+            "protected_tokens": [
+              "__HAS_SUP_INDEX__"
+            ],
+            "role": "body"
+          },
+          "block_id": "p4_b3",
+          "normalized_text": "biofilter and concreting of floors were completed.\n- Hangar 2 (cadastral number: 47:23:0439002:2297), area - 1,161 m². The hangar is fully",
+          "translated_text": "biofilter and concreting of floors were completed.\n- Hangar 2 (cadastral number: 47:23:0439002:2297), area - 1,161 m². The hangar is fully"
+        },
+        {
+          "id": "p4_b4",
+          "page": 4,
+          "order": 31,
+          "text": "constructed; earthworks have been completed, work on pouring biofilters, concreting floors \nand equipping with equipment is pending.\n- Land plot (cadastral number: 47:23:0439002:2115) with an area of 20,200 m².\n- Wells were drilled and laboratory results of water chemistry were obtained.\n- Electrification of the site.\n- Technical specifications for gasification are available at  .\n",
+          "type": "text",
+          "bbox": {
+            "x0": 68.69999694824219,
+            "y0": 362.70001220703125,
+            "x1": 541.3004150390625,
+            "y1": 446.70001220703125
+          },
+          "metadata": {
+            "font_size": 0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "",
+            "protected_tokens": [
+              "__HAS_SUP_INDEX__"
+            ],
+            "role": "body"
+          },
+          "block_id": "p4_b4",
+          "normalized_text": "constructed; earthworks have been completed, work on pouring biofilters, concreting floors\nand equipping with equipment is pending.\n- Land plot (cadastral number: 47:23:0439002:2115) with an area of 20,200 m².\n- Wells were drilled and laboratory results of water chemistry were obtained.\n- Electrification of the site.\n- Technical specifications for gasification are available at .",
+          "translated_text": "constructed; earthworks have been completed, work on pouring biofilters, concreting floors\nand equipping with equipment is pending.\n- Land plot (cadastral number: 47:23:0439002:2115) with an area of 20,200 m².\n- Wells were drilled and laboratory results of water chemistry were obtained.\n- Electrification of the site.\n- Technical specifications for gasification are available at ."
+        },
+        {
+          "id": "p4_b5",
+          "page": 4,
+          "order": 32,
+          "text": "2.\nDocumentation:\n",
+          "type": "heading",
+          "bbox": {
+            "x0": 67.69999694824219,
+            "y0": 460.70001220703125,
+            "x1": 175.3583984375,
+            "y1": 472.70001220703125
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p4_b5",
+          "normalized_text": "2.\nDocumentation:",
+          "translated_text": "2.\nDocumentation:"
+        },
+        {
+          "id": "p4_b6",
+          "page": 4,
+          "order": 33,
+          "text": "- The complete project documentation is ready.\n- A cultivation programme has been developed.\n- Prepared documents for obtaining a loan from Rosselkhozbank .4\n",
+          "type": "text",
+          "bbox": {
+            "x0": 68.69999694824219,
+            "y0": 486.20001220703125,
+            "x1": 394.7237854003906,
+            "y1": 528.7000122070312
+          },
+          "metadata": {
+            "font_size": 14.5,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body",
+            "editor_pass": "heuristic_v1"
+          },
+          "block_id": "p4_b6",
+          "normalized_text": "- The complete project documentation is ready.\n- A cultivation programme has been developed.\n- Prepared documents for obtaining a loan from Rosselkhozbank .4",
+          "translated_text": "- The complete project documentation is ready.\n- А cultivation programme has been developed.\n- Prepared documents for obtaining а loan from Rosselkhozbank .4"
+        },
+        {
+          "id": "p4_b7",
+          "page": 4,
+          "order": 34,
+          "text": "Project Features\n",
+          "type": "text",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 544.7000122070312,
+            "x1": 155.31040954589844,
+            "y1": 558.7000122070312
+          },
+          "metadata": {
+            "font_size": 14.0,
+            "is_bold": true,
+            "is_italic": false,
+            "font": "Times-Bold",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p4_b7",
+          "normalized_text": "Project Features",
+          "translated_text": "Project Features"
+        },
+        {
+          "id": "p4_b8",
+          "page": 4,
+          "order": 35,
+          "text": "1.\nUse of advanced technology:\n",
+          "type": "heading",
+          "bbox": {
+            "x0": 67.69999694824219,
+            "y0": 574.75,
+            "x1": 238.35842895507812,
+            "y1": 586.75
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p4_b8",
+          "normalized_text": "1.\nUse of advanced technology:",
+          "translated_text": "1.\nUse of advanced technology:"
+        },
+        {
+          "id": "p4_b9",
+          "page": 4,
+          "order": 36,
+          "text": "- The application of modern methods of cultivation in the UZV provides high production \n",
+          "type": "text",
+          "bbox": {
+            "x0": 68.69999694824219,
+            "y0": 600.25,
+            "x1": 541.280029296875,
+            "y1": 614.75
+          },
+          "metadata": {
+            "font_size": 14.5,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p4_b9",
+          "normalized_text": "- The application of modern methods of cultivation in the UZV provides high production",
+          "translated_text": "- The application of modern methods of cultivation in the UZV provides high production"
+        },
+        {
+          "id": "p4_b10",
+          "page": 4,
+          "order": 37,
+          "text": "efficiency.\n- The use of high quality eggs and specialised feeds ensures rapid growth and healthy fry.\n- The experience and qualification of the chief fishmonger of the staff ensures a consistent high \n",
+          "type": "text",
+          "bbox": {
+            "x0": 68.69999694824219,
+            "y0": 614.75,
+            "x1": 541.2982177734375,
+            "y1": 656.75
+          },
+          "metadata": {
+            "font_size": 0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "",
+            "protected_tokens": [],
+            "role": "body",
+            "editor_pass": "heuristic_v1"
+          },
+          "block_id": "p4_b10",
+          "normalized_text": "efficiency.\n- The use of high quality eggs and specialised feeds ensures rapid growth and healthy fry.\n- The experience and qualification of the chief fishmonger of the staff ensures a consistent high",
+          "translated_text": "efficiency.\n- The use of high quality eggs and specialised feeds ensures rapid growth and healthy fry.\n- The experience and qualification of the chief fishmonger of the staff ensures а consistent high"
+        },
+        {
+          "id": "p4_b11",
+          "page": 4,
+          "order": 38,
+          "text": "quality of products.\n- Agreements of intent for future deliveries have already been signed, indicating the high \n",
+          "type": "text",
+          "bbox": {
+            "x0": 68.69999694824219,
+            "y0": 656.75,
+            "x1": 541.2823486328125,
+            "y1": 684.75
+          },
+          "metadata": {
+            "font_size": 0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p4_b11",
+          "normalized_text": "quality of products.\n- Agreements of intent for future deliveries have already been signed, indicating the high",
+          "translated_text": "quality of products.\n- Agreements of intent for future deliveries have already been signed, indicating the high"
+        },
+        {
+          "id": "p4_b12",
+          "page": 4,
+          "order": 39,
+          "text": "demand for the products on the market.\n",
+          "type": "text",
+          "bbox": {
+            "x0": 81.80000305175781,
+            "y0": 684.75,
+            "x1": 270.7352294921875,
+            "y1": 696.75
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p4_b12",
+          "normalized_text": "demand for the products on the market.",
+          "translated_text": "demand for the products on the market."
+        },
+        {
+          "id": "p4_b13",
+          "page": 4,
+          "order": 40,
+          "text": " The loan amount under the 30/70 formula according to the current estimate is RUB 150 million, with a favourable \n4\n",
+          "type": "text",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 762.9819946289062,
+            "x1": 517.8276977539062,
+            "y1": 773.4669799804688
+          },
+          "metadata": {
+            "font_size": 9.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "HelveticaNeue",
+            "protected_tokens": [],
+            "role": "body",
+            "editor_pass": "heuristic_v1"
+          },
+          "block_id": "p4_b13",
+          "normalized_text": "The loan amount under the 30/70 formula according to the current estimate is RUB 150 million, with a favourable\n4",
+          "translated_text": "The loan amount under the 30/70 formula according to the current estimate is RUB 150 million, with а favourable\n4"
+        },
+        {
+          "id": "p4_b14",
+          "page": 4,
+          "order": 41,
+          "text": "interest rate of 7.5% per annum. \n",
+          "type": "text",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 774.8150024414062,
+            "x1": 189.4139862060547,
+            "y1": 785.2999877929688
+          },
+          "metadata": {
+            "font_size": 9.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "HelveticaNeue",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p4_b14",
+          "normalized_text": "interest rate of 7.5% per annum.",
+          "translated_text": "interest rate of 7.5% per annum."
+        },
+        {
+          "id": "p4_b15",
+          "page": 4,
+          "order": 42,
+          "text": "Internal layout of production buildings\n",
+          "type": "text",
+          "bbox": {
+            "x0": 35.04207992553711,
+            "y0": 238.24766540527344,
+            "x1": 159.01327514648438,
+            "y1": 247.10366821289062
+          },
+          "metadata": {
+            "font_size": 8.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "TimesNewRomanPSMT",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p4_b15",
+          "normalized_text": "Internal layout of production buildings",
+          "translated_text": "Internal layout of production buildings"
+        }
+      ]
+    },
+    {
+      "page_num": 5,
+      "blocks": [
+        {
+          "id": "p5_b0",
+          "page": 5,
+          "order": 43,
+          "text": "2.\nOwn contracting organisation - UNR-90 LLC:\n",
+          "type": "heading",
+          "bbox": {
+            "x0": 67.69999694824219,
+            "y0": 58.70001220703125,
+            "x1": 329.6951599121094,
+            "y1": 70.70001220703125
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p5_b0",
+          "normalized_text": "2.\nOwn contracting organisation - UNR-90 LLC:",
+          "translated_text": "2.\nOwn contracting organisation - UNR-90 LLC:"
+        },
+        {
+          "id": "p5_b1",
+          "page": 5,
+          "order": 44,
+          "text": "- Has SRO membership and authorisation to carry out construction works.\n- Transferred to the new owner together with Kidcity Ltd.\n- Ability to influence project estimates.\n",
+          "type": "text",
+          "bbox": {
+            "x0": 68.69999694824219,
+            "y0": 84.20001220703125,
+            "x1": 431.0648193359375,
+            "y1": 126.70001220703125
+          },
+          "metadata": {
+            "font_size": 14.5,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p5_b1",
+          "normalized_text": "- Has SRO membership and authorisation to carry out construction works.\n- Transferred to the new owner together with Kidcity Ltd.\n- Ability to influence project estimates.",
+          "translated_text": "- Has SRO membership and authorisation to carry out construction works.\n- Transferred to the new owner together with Kidcity Ltd.\n- Ability to influence project estimates."
+        },
+        {
+          "id": "p5_b2",
+          "page": 5,
+          "order": 45,
+          "text": "3.\nCompensation from the state:\n",
+          "type": "heading",
+          "bbox": {
+            "x0": 67.69999694824219,
+            "y0": 140.70001220703125,
+            "x1": 244.798828125,
+            "y1": 152.70001220703125
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p5_b2",
+          "normalized_text": "3.\nCompensation from the state:",
+          "translated_text": "3.\nCompensation from the state:"
+        },
+        {
+          "id": "p5_b3",
+          "page": 5,
+          "order": 46,
+          "text": "- Government reimbursement of up to 40% of capital costs has been agreed.\n- With the current estimate of 220 million rubles, the compensation will amount to 88 million \n",
+          "type": "text",
+          "bbox": {
+            "x0": 68.69999694824219,
+            "y0": 166.20001220703125,
+            "x1": 541.2994384765625,
+            "y1": 194.70001220703125
+          },
+          "metadata": {
+            "font_size": 14.5,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p5_b3",
+          "normalized_text": "- Government reimbursement of up to 40% of capital costs has been agreed.\n- With the current estimate of 220 million rubles, the compensation will amount to 88 million",
+          "translated_text": "- Government reimbursement of up to 40% of capital costs has been agreed.\n- With the current estimate of 220 million rubles, the compensation will amount to 88 million"
+        },
+        {
+          "id": "p5_b4",
+          "page": 5,
+          "order": 47,
+          "text": "rubles and may be received as early as next year.\n",
+          "type": "text",
+          "bbox": {
+            "x0": 81.80000305175781,
+            "y0": 194.70001220703125,
+            "x1": 318.369140625,
+            "y1": 206.70001220703125
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": true,
+            "is_italic": false,
+            "font": "Times-Bold",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p5_b4",
+          "normalized_text": "rubles and may be received as early as next year.",
+          "translated_text": "rubles and may be received as early as next year."
+        },
+        {
+          "id": "p5_b5",
+          "page": 5,
+          "order": 48,
+          "text": "4.\nPreferential lending:\n",
+          "type": "heading",
+          "bbox": {
+            "x0": 67.69999694824219,
+            "y0": 222.70001220703125,
+            "x1": 198.58322143554688,
+            "y1": 234.70001220703125
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p5_b5",
+          "normalized_text": "4.\nPreferential lending:",
+          "translated_text": "4.\nPreferential lending:"
+        },
+        {
+          "id": "p5_b6",
+          "page": 5,
+          "order": 49,
+          "text": "- Preliminarily approved a preferential lending rate of 7.5% in Rosselkhozbank.\n",
+          "type": "text",
+          "bbox": {
+            "x0": 68.69999694824219,
+            "y0": 248.20001220703125,
+            "x1": 459.353271484375,
+            "y1": 262.70001220703125
+          },
+          "metadata": {
+            "font_size": 14.5,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body",
+            "editor_pass": "heuristic_v1"
+          },
+          "block_id": "p5_b6",
+          "normalized_text": "- Preliminarily approved a preferential lending rate of 7.5% in Rosselkhozbank.",
+          "translated_text": "- Preliminarily approved а preferential lending rate of 7.5% in Rosselkhozbank."
+        },
+        {
+          "id": "p5_b7",
+          "page": 5,
+          "order": 50,
+          "text": "5.\nCompletion Timeline:\n",
+          "type": "heading",
+          "bbox": {
+            "x0": 67.69999694824219,
+            "y0": 276.70001220703125,
+            "x1": 204.59999084472656,
+            "y1": 288.70001220703125
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p5_b7",
+          "normalized_text": "5.\nCompletion Timeline:",
+          "translated_text": "5.\nCompletion Timeline:"
+        },
+        {
+          "id": "p5_b8",
+          "page": 5,
+          "order": 51,
+          "text": "- To fully complete the project, RUB 130-150 million is required (To complete construction \n",
+          "type": "text",
+          "bbox": {
+            "x0": 68.69999694824219,
+            "y0": 300.20001220703125,
+            "x1": 541.295166015625,
+            "y1": 314.70001220703125
+          },
+          "metadata": {
+            "font_size": 14.5,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p5_b8",
+          "normalized_text": "- To fully complete the project, RUB 130-150 million is required (To complete construction",
+          "translated_text": "- To fully complete the project, RUB 130-150 million is required (To complete construction"
+        },
+        {
+          "id": "p5_b9",
+          "page": 5,
+          "order": 52,
+          "text": "works and purchase equipment under the existing project).\n- Project completion date: 6 months of work.\n- The first batch of RPMs could be received as early as autumn 2025.\n",
+          "type": "text",
+          "bbox": {
+            "x0": 68.69999694824219,
+            "y0": 314.70001220703125,
+            "x1": 407.393798828125,
+            "y1": 356.70001220703125
+          },
+          "metadata": {
+            "font_size": 0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p5_b9",
+          "normalized_text": "works and purchase equipment under the existing project).\n- Project completion date: 6 months of work.\n- The first batch of RPMs could be received as early as autumn 2025.",
+          "translated_text": "works and purchase equipment under the existing project).\n- Project completion date: 6 months of work.\n- The first batch of RPMs could be received as early as autumn 2025."
+        },
+        {
+          "id": "p5_b10",
+          "page": 5,
+          "order": 53,
+          "text": "6.\nChief Fish Breeder: Elena Aleksandrovna Khanenko  \nElena Aleksandrovna Khanenko is a highly qualified fish breeder with more than 10 years of \nexperience. Over the past ten years, Elena Alexandrovna has held the position of Chief Fish \nBreeder at Promrybtorg and Trout Paradise.\n",
+          "type": "text",
+          "bbox": {
+            "x0": 67.69999694824219,
+            "y0": 370.70001220703125,
+            "x1": 541.2993774414062,
+            "y1": 424.70001220703125
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body",
+            "editor_pass": "heuristic_v1"
+          },
+          "block_id": "p5_b10",
+          "normalized_text": "6.\nChief Fish Breeder: Elena Aleksandrovna Khanenko\nElena Aleksandrovna Khanenko is a highly qualified fish breeder with more than 10 years of\nexperience. Over the past ten years, Elena Alexandrovna has held the position of Chief Fish\nBreeder at Promrybtorg and Trout Paradise.",
+          "translated_text": "6.\nChief Fish Breeder: Elena Aleksandrovna Khanenko\nElena Aleksandrovna Khanenko is а highly qualified fish breeder with more than 10 years of\nexperience. Over the past ten years, Elena Alexandrovna has held the position of Chief Fish\nBreeder at Promrybtorg and Trout Paradise."
+        },
+        {
+          "id": "p5_b11",
+          "page": 5,
+          "order": 54,
+          "text": "Willingness to deal\n",
+          "type": "text",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 440.70001220703125,
+            "x1": 169.24880981445312,
+            "y1": 454.70001220703125
+          },
+          "metadata": {
+            "font_size": 14.0,
+            "is_bold": true,
+            "is_italic": false,
+            "font": "Times-Bold",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p5_b11",
+          "normalized_text": "Willingness to deal",
+          "translated_text": "Willingness to deal"
+        },
+        {
+          "id": "p5_b12",
+          "page": 5,
+          "order": 55,
+          "text": "- Number of actual participants: \n",
+          "type": "heading",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 466.20001220703125,
+            "x1": 230.91481018066406,
+            "y1": 480.70001220703125
+          },
+          "metadata": {
+            "font_size": 14.5,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p5_b12",
+          "normalized_text": "- Number of actual participants:",
+          "translated_text": "- Number of actual participants:"
+        },
+        {
+          "id": "p5_b13",
+          "page": 5,
+          "order": 56,
+          "text": "• Kidcity LLC is a 100% individual.\n• LLC \"UNR-90\" - 100% physical entity.\n- Legal and financial cleanliness\n",
+          "type": "text",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 480.20001220703125,
+            "x1": 284.12127685546875,
+            "y1": 520.7000122070312
+          },
+          "metadata": {
+            "font_size": 0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "",
+            "protected_tokens": [],
+            "role": "body",
+            "editor_pass": "heuristic_v1"
+          },
+          "block_id": "p5_b13",
+          "normalized_text": "• Kidcity LLC is a 100% individual.\n• LLC \"UNR-90\" - 100% physical entity.\n- Legal and financial cleanliness",
+          "translated_text": "• Kidcity LLC is а 100% individual.\n• LLC \"UNR-90\" - 100% physical entity.\n- Legal and financial cleanliness"
+        },
+        {
+          "id": "p5_b14",
+          "page": 5,
+          "order": 57,
+          "text": "• Claims of tax authorities: None.\n• Claims under contractual obligations: None.\n• Accounts payable: None.\n",
+          "type": "text",
+          "bbox": {
+            "x0": 80.69999694824219,
+            "y0": 532.2000122070312,
+            "x1": 319.91900634765625,
+            "y1": 574.7000122070312
+          },
+          "metadata": {
+            "font_size": 14.5,
+            "is_bold": true,
+            "is_italic": false,
+            "font": "Times-Bold",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p5_b14",
+          "normalized_text": "• Claims of tax authorities: None.\n• Claims under contractual obligations: None.\n• Accounts payable: None.",
+          "translated_text": "• Claims of tax authorities: None.\n• Claims under contractual obligations: None.\n• Accounts payable: None."
+        },
+        {
+          "id": "p5_b15",
+          "page": 5,
+          "order": 58,
+          "text": "Terms of Sale\n",
+          "type": "text",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 590.7000122070312,
+            "x1": 137.84400939941406,
+            "y1": 604.7000122070312
+          },
+          "metadata": {
+            "font_size": 14.0,
+            "is_bold": true,
+            "is_italic": false,
+            "font": "Times-Bold",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p5_b15",
+          "normalized_text": "Terms of Sale",
+          "translated_text": "Terms of Sale"
+        },
+        {
+          "id": "p5_b16",
+          "page": 5,
+          "order": 59,
+          "text": "- The initial cost of the project is 200 million roubles\n- Sale of 100% of shares of OOO Kidcity and 100% of shares of OOO UNR-90 to a new buyer\n- Any form of payment is possible, the preferred form of payment is a letter of credit.\n",
+          "type": "text",
+          "bbox": {
+            "x0": 68.69999694824219,
+            "y0": 613.2000122070312,
+            "x1": 531.0296630859375,
+            "y1": 655.7000122070312
+          },
+          "metadata": {
+            "font_size": 14.5,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body",
+            "editor_pass": "heuristic_v1"
+          },
+          "block_id": "p5_b16",
+          "normalized_text": "- The initial cost of the project is 200 million roubles\n- Sale of 100% of shares of OOO Kidcity and 100% of shares of OOO UNR-90 to a new buyer\n- Any form of payment is possible, the preferred form of payment is a letter of credit.",
+          "translated_text": "- The initial cost of the project is 200 million roubles\n- Sale of 100% of shares of OOO Kidcity and 100% of shares of OOO UNR-90 to а new buyer\n- Any form of payment is possible, the preferred form of payment is а letter of credit."
+        },
+        {
+          "id": "p5_b17",
+          "page": 5,
+          "order": 60,
+          "text": "Advantages of the investment\n",
+          "type": "text",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 671.7000122070312,
+            "x1": 232.85643005371094,
+            "y1": 685.7000122070312
+          },
+          "metadata": {
+            "font_size": 14.0,
+            "is_bold": true,
+            "is_italic": false,
+            "font": "Times-Bold",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p5_b17",
+          "normalized_text": "Advantages of the investment",
+          "translated_text": "Advantages of the investment"
+        },
+        {
+          "id": "p5_b18",
+          "page": 5,
+          "order": 61,
+          "text": "1.\nReducing the cost of production:\n",
+          "type": "heading",
+          "bbox": {
+            "x0": 67.69999694824219,
+            "y0": 697.7000122070312,
+            "x1": 259.82281494140625,
+            "y1": 709.7000122070312
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p5_b18",
+          "normalized_text": "1.\nReducing the cost of production:",
+          "translated_text": "1.\nReducing the cost of production:"
+        },
+        {
+          "id": "p5_b19",
+          "page": 5,
+          "order": 62,
+          "text": "- Having our own hatchery and breeding complex (HBC) allows us to significantly reduce the \n",
+          "type": "text",
+          "bbox": {
+            "x0": 68.69999694824219,
+            "y0": 721.2000122070312,
+            "x1": 541.2946166992188,
+            "y1": 735.7000122070312
+          },
+          "metadata": {
+            "font_size": 14.5,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [
+              "Having our own hatchery and breeding complex (HBC)"
+            ],
+            "role": "body"
+          },
+          "block_id": "p5_b19",
+          "normalized_text": "- Having our own hatchery and breeding complex (HBC) allows us to significantly reduce the",
+          "translated_text": "- Having our own hatchery and breeding complex (HBC) allows us to significantly reduce the"
+        },
+        {
+          "id": "p5_b20",
+          "page": 5,
+          "order": 63,
+          "text": "cost of growing commercial fish, increasing the profitability and competitiveness of the \nbusiness.\n",
+          "type": "text",
+          "bbox": {
+            "x0": 81.80000305175781,
+            "y0": 735.7000122070312,
+            "x1": 541.2931518554688,
+            "y1": 761.7000122070312
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p5_b20",
+          "normalized_text": "cost of growing commercial fish, increasing the profitability and competitiveness of the\nbusiness.",
+          "translated_text": "cost of growing commercial fish, increasing the profitability and competitiveness of the\nbusiness."
+        }
+      ]
+    },
+    {
+      "page_num": 6,
+      "blocks": [
+        {
+          "id": "p6_b0",
+          "page": 6,
+          "order": 64,
+          "text": "2.\nHigh quality products:\n",
+          "type": "heading",
+          "bbox": {
+            "x0": 67.69999694824219,
+            "y0": 58.70001220703125,
+            "x1": 209.180419921875,
+            "y1": 70.70001220703125
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p6_b0",
+          "normalized_text": "2.\nHigh quality products:",
+          "translated_text": "2.\nHigh quality products:"
+        },
+        {
+          "id": "p6_b1",
+          "page": 6,
+          "order": 65,
+          "text": "- The use of SPCRs that by, specialised feed and quality eggs.\n- Confirmed by already signed letters of intent for future deliveries.\n",
+          "type": "text",
+          "bbox": {
+            "x0": 68.69999694824219,
+            "y0": 82.20001220703125,
+            "x1": 397.6968994140625,
+            "y1": 110.70001220703125
+          },
+          "metadata": {
+            "font_size": 14.5,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p6_b1",
+          "normalized_text": "- The use of SPCRs that by, specialised feed and quality eggs.\n- Confirmed by already signed letters of intent for future deliveries.",
+          "translated_text": "- The use of SPCRs that by, specialised feed and quality eggs.\n- Confirmed by already signed letters of intent for future deliveries."
+        },
+        {
+          "id": "p6_b2",
+          "page": 6,
+          "order": 66,
+          "text": "3.\nReady infrastructure and team:\n",
+          "type": "heading",
+          "bbox": {
+            "x0": 67.69999694824219,
+            "y0": 124.70001220703125,
+            "x1": 255.46202087402344,
+            "y1": 136.70001220703125
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p6_b2",
+          "normalized_text": "3.\nReady infrastructure and team:",
+          "translated_text": "3.\nReady infrastructure and team:"
+        },
+        {
+          "id": "p6_b3",
+          "page": 6,
+          "order": 67,
+          "text": "- Much of the construction work has already been completed.\n- An experienced team of specialists ensures the stability and efficiency of production processes.\n",
+          "type": "text",
+          "bbox": {
+            "x0": 68.69999694824219,
+            "y0": 148.20001220703125,
+            "x1": 537.9834594726562,
+            "y1": 176.70001220703125
+          },
+          "metadata": {
+            "font_size": 14.5,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p6_b3",
+          "normalized_text": "- Much of the construction work has already been completed.\n- An experienced team of specialists ensures the stability and efficiency of production processes.",
+          "translated_text": "- Much of the construction work has already been completed.\n- An experienced team of specialists ensures the stability and efficiency of production processes."
+        },
+        {
+          "id": "p6_b4",
+          "page": 6,
+          "order": 68,
+          "text": "4.\nGovernment support:\n",
+          "type": "heading",
+          "bbox": {
+            "x0": 67.69999694824219,
+            "y0": 190.70001220703125,
+            "x1": 204.3624267578125,
+            "y1": 202.70001220703125
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p6_b4",
+          "normalized_text": "4.\nGovernment support:",
+          "translated_text": "4.\nGovernment support:"
+        },
+        {
+          "id": "p6_b5",
+          "page": 6,
+          "order": 69,
+          "text": "- Subsidy opportunities up to 40% of capital costs.\n- Preferential lending at 7.5 per cent significantly reduces the financial burden.\n",
+          "type": "text",
+          "bbox": {
+            "x0": 68.69999694824219,
+            "y0": 214.20001220703125,
+            "x1": 454.13665771484375,
+            "y1": 242.70001220703125
+          },
+          "metadata": {
+            "font_size": 14.5,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p6_b5",
+          "normalized_text": "- Subsidy opportunities up to 40% of capital costs.\n- Preferential lending at 7.5 per cent significantly reduces the financial burden.",
+          "translated_text": "- Subsidy opportunities up to 40% of capital costs.\n- Preferential lending at 7.5 per cent significantly reduces the financial burden."
+        },
+        {
+          "id": "p6_b6",
+          "page": 6,
+          "order": 70,
+          "text": "5.\nProject Control:\n",
+          "type": "heading",
+          "bbox": {
+            "x0": 67.69999694824219,
+            "y0": 256.70001220703125,
+            "x1": 176.57040405273438,
+            "y1": 268.70001220703125
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p6_b6",
+          "normalized_text": "5.\nProject Control:",
+          "translated_text": "5.\nProject Control:"
+        },
+        {
+          "id": "p6_b7",
+          "page": 6,
+          "order": 71,
+          "text": "- The use of an in-house contractor allows the investor to influence project estimates, \n",
+          "type": "text",
+          "bbox": {
+            "x0": 68.69999694824219,
+            "y0": 280.20001220703125,
+            "x1": 541.2927856445312,
+            "y1": 294.70001220703125
+          },
+          "metadata": {
+            "font_size": 14.5,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p6_b7",
+          "normalized_text": "- The use of an in-house contractor allows the investor to influence project estimates,",
+          "translated_text": "- The use of an in-house contractor allows the investor to influence project estimates,"
+        },
+        {
+          "id": "p6_b8",
+          "page": 6,
+          "order": 72,
+          "text": "minimising risks and improving management efficiency.\n",
+          "type": "text",
+          "bbox": {
+            "x0": 81.80000305175781,
+            "y0": 294.70001220703125,
+            "x1": 352.30230712890625,
+            "y1": 306.70001220703125
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p6_b8",
+          "normalized_text": "minimising risks and improving management efficiency.",
+          "translated_text": "minimising risks and improving management efficiency."
+        },
+        {
+          "id": "p6_b9",
+          "page": 6,
+          "order": 73,
+          "text": "6.\nFast time to market:\n",
+          "type": "heading",
+          "bbox": {
+            "x0": 67.69999694824219,
+            "y0": 322.70001220703125,
+            "x1": 197.65679931640625,
+            "y1": 334.70001220703125
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p6_b9",
+          "normalized_text": "6.\nFast time to market:",
+          "translated_text": "6.\nFast time to market:"
+        },
+        {
+          "id": "p6_b10",
+          "page": 6,
+          "order": 74,
+          "text": "- The possibility of receiving the first batch of RPM as early as autumn 2025 allows us to \n",
+          "type": "text",
+          "bbox": {
+            "x0": 68.69999694824219,
+            "y0": 346.20001220703125,
+            "x1": 541.30029296875,
+            "y1": 360.70001220703125
+          },
+          "metadata": {
+            "font_size": 14.5,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p6_b10",
+          "normalized_text": "- The possibility of receiving the first batch of RPM as early as autumn 2025 allows us to",
+          "translated_text": "- The possibility of receiving the first batch of RPM as early as autumn 2025 allows us to"
+        },
+        {
+          "id": "p6_b11",
+          "page": 6,
+          "order": 75,
+          "text": "quickly start generating revenue and strengthen our market position.\nTo demonstrate the economic efficiency of the project, we propose to consider an example of CPI \ncalculation, both as a stand-alone enterprise and as part of a fish farming enterprise engaged in the \nproduction of commercial trout. \nPrices are for the beginning of 2024.\n",
+          "type": "text",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 360.70001220703125,
+            "x1": 541.2945556640625,
+            "y1": 428.70001220703125
+          },
+          "metadata": {
+            "font_size": 0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "",
+            "protected_tokens": [],
+            "role": "body",
+            "editor_pass": "heuristic_v1"
+          },
+          "block_id": "p6_b11",
+          "normalized_text": "quickly start generating revenue and strengthen our market position.\nTo demonstrate the economic efficiency of the project, we propose to consider an example of CPI\ncalculation, both as a stand-alone enterprise and as part of a fish farming enterprise engaged in the\nproduction of commercial trout.\nPrices are for the beginning of 2024.",
+          "translated_text": "quickly start generating revenue and strengthen our market position.\nTo demonstrate the economic efficiency of the project, we propose to consider an example of CPI\ncalculation, both as а stand-alone enterprise and as part of а fish farming enterprise engaged in the\nproduction of commercial trout.\nPrices are for the beginning of 2024."
+        },
+        {
+          "id": "p6_b12",
+          "page": 6,
+          "order": 76,
+          "text": "2. basis for calculation: production and sales \nforecasts \n",
+          "type": "text",
+          "bbox": {
+            "x0": 61.947608947753906,
+            "y0": 457.87158203125,
+            "x1": 253.26602172851562,
+            "y1": 479.94158935546875
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": true,
+            "is_italic": false,
+            "font": "TimesNewRomanPS-BoldMT",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p6_b12",
+          "normalized_text": "2. basis for calculation: production and sales\nforecasts",
+          "translated_text": "2. basis for calculation: production and sales\nforecasts"
+        },
+        {
+          "id": "p6_b13",
+          "page": 6,
+          "order": 77,
+          "text": "Separate enterprise \nAs part of the group of \ncompanies\n",
+          "type": "text",
+          "bbox": {
+            "x0": 262.2939147949219,
+            "y0": 457.87158203125,
+            "x1": 503.9073181152344,
+            "y1": 479.94158935546875
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": true,
+            "is_italic": false,
+            "font": "TimesNewRomanPS-BoldMT",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p6_b13",
+          "normalized_text": "Separate enterprise\nAs part of the group of\ncompanies",
+          "translated_text": "Separate enterprise\nAs part of the group of\ncompanies"
+        },
+        {
+          "id": "p6_b14",
+          "page": 6,
+          "order": 78,
+          "text": "Production volume (taking into account the \nreduction of fry during rearing by ~33%), incl.\n4 020 000\n",
+          "type": "text",
+          "bbox": {
+            "x0": 61.947608947753906,
+            "y0": 488.9715881347656,
+            "x1": 420.7161865234375,
+            "y1": 511.0415954589844
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "TimesNewRomanPSMT",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p6_b14",
+          "normalized_text": "Production volume (taking into account the\nreduction of fry during rearing by ~33%), incl.\n4 020 000",
+          "translated_text": "Production volume (taking into account the\nreduction of fry during rearing by ~33%), incl.\n4 020 000"
+        },
+        {
+          "id": "p6_b15",
+          "page": 6,
+          "order": 79,
+          "text": "Further cultivation, pcs\n0\n1 000 000\n",
+          "type": "text",
+          "bbox": {
+            "x0": 61.947608947753906,
+            "y0": 520.0715942382812,
+            "x1": 538.8886108398438,
+            "y1": 531.1415405273438
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "TimesNewRomanPSMT",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p6_b15",
+          "normalized_text": "Further cultivation, pcs\n0\n1 000 000",
+          "translated_text": "Further cultivation, pcs\n0\n1 000 000"
+        },
+        {
+          "id": "p6_b16",
+          "page": 6,
+          "order": 80,
+          "text": "Number of sales to the market, pcs\n4  020  000\n3 020 000\n",
+          "type": "text",
+          "bbox": {
+            "x0": 61.947608947753906,
+            "y0": 541.0216674804688,
+            "x1": 538.8886108398438,
+            "y1": 552.0916137695312
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "TimesNewRomanPSMT",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p6_b16",
+          "normalized_text": "Number of sales to the market, pcs\n4 020 000\n3 020 000",
+          "translated_text": "Number of sales to the market, pcs\n4 020 000\n3 020 000"
+        },
+        {
+          "id": "p6_b17",
+          "page": 6,
+          "order": 81,
+          "text": "Sales price, RUB/piece\n49 ₽\n",
+          "type": "text",
+          "bbox": {
+            "x0": 61.947608947753906,
+            "y0": 561.9716186523438,
+            "x1": 409.44122314453125,
+            "y1": 574.2615966796875
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "TimesNewRomanPSMT",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p6_b17",
+          "normalized_text": "Sales price, RUB/piece\n49 ₽",
+          "translated_text": "Sales price, RUB/piece\n49 ₽"
+        },
+        {
+          "id": "p6_b18",
+          "page": 6,
+          "order": 82,
+          "text": "1. basis for calculation: production costs \nQuantity, pcs/\n",
+          "type": "text",
+          "bbox": {
+            "x0": 61.822608947753906,
+            "y0": 582.796630859375,
+            "x1": 326.3764953613281,
+            "y1": 594.8665771484375
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": true,
+            "is_italic": false,
+            "font": "TimesNewRomanPS-BoldMT",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p6_b18",
+          "normalized_text": "1. basis for calculation: production costs\nQuantity, pcs/",
+          "translated_text": "1. basis for calculation: production costs\nQuantity, pcs/"
+        },
+        {
+          "id": "p6_b19",
+          "page": 6,
+          "order": 83,
+          "text": "kg\nPrice rub per 1 unit\nTotal cost, RUB \n",
+          "type": "text",
+          "bbox": {
+            "x0": 291.36480712890625,
+            "y0": 583.796630859375,
+            "x1": 524.2608642578125,
+            "y1": 605.8665771484375
+          },
+          "metadata": {
+            "font_size": 0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p6_b19",
+          "normalized_text": "kg\nPrice rub per 1 unit\nTotal cost, RUB",
+          "translated_text": "kg\nPrice rub per 1 unit\nTotal cost, RUB"
+        },
+        {
+          "id": "p6_b20",
+          "page": 6,
+          "order": 84,
+          "text": "thousand\n",
+          "type": "text",
+          "bbox": {
+            "x0": 468.4599914550781,
+            "y0": 594.796630859375,
+            "x1": 507.927978515625,
+            "y1": 605.8665771484375
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": true,
+            "is_italic": false,
+            "font": "TimesNewRomanPS-BoldMT",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p6_b20",
+          "normalized_text": "thousand",
+          "translated_text": "thousand"
+        },
+        {
+          "id": "p6_b21",
+          "page": 6,
+          "order": 85,
+          "text": "Purchase of caviar, pcs\n6 000 000\n2,4 ₽\n14  400 ₽\n",
+          "type": "text",
+          "bbox": {
+            "x0": 61.822608947753906,
+            "y0": 616.046630859375,
+            "x1": 539.0183715820312,
+            "y1": 627.3366088867188
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "TimesNewRomanPSMT",
+            "protected_tokens": [],
+            "role": "heading2",
+            "editor_pass": "heuristic_v1"
+          },
+          "block_id": "p6_b21",
+          "normalized_text": "Purchase of caviar, pcs\n6 000 000\n2,4 ₽\n14 400 ₽",
+          "translated_text": "Purchase of caviar, pcs\n6 000 2,4\n₽ 14\n400 ₽ ₽"
+        },
+        {
+          "id": "p6_b22",
+          "page": 6,
+          "order": 86,
+          "text": "Feed, kg\n120  600\n409 ₽\n49  325 ₽\n",
+          "type": "text",
+          "bbox": {
+            "x0": 61.822608947753906,
+            "y0": 638.296630859375,
+            "x1": 539.0183715820312,
+            "y1": 649.5866088867188
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "TimesNewRomanPSMT",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p6_b22",
+          "normalized_text": "Feed, kg\n120 600\n409 ₽\n49 325 ₽",
+          "translated_text": "Feed, kg\n120 600\n409 ₽\n49 325 ₽"
+        },
+        {
+          "id": "p6_b23",
+          "page": 6,
+          "order": 87,
+          "text": "Additional costs, per 1 pc\n10 ₽\n40  200 ₽\n",
+          "type": "text",
+          "bbox": {
+            "x0": 61.822608947753906,
+            "y0": 660.0966186523438,
+            "x1": 539.0183715820312,
+            "y1": 671.3865966796875
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "TimesNewRomanPSMT",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p6_b23",
+          "normalized_text": "Additional costs, per 1 pc\n10 ₽\n40 200 ₽",
+          "translated_text": "Additional costs, per 1 pc\n10 ₽\n40 200 ₽"
+        },
+        {
+          "id": "p6_b24",
+          "page": 6,
+          "order": 88,
+          "text": "Cost of cultivation\n25,85 ₽\n103  925 ₽\n",
+          "type": "text",
+          "bbox": {
+            "x0": 61.822608947753906,
+            "y0": 682.8369140625,
+            "x1": 539.0183715820312,
+            "y1": 694.1268920898438
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "TimesNewRomanPSMT",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p6_b24",
+          "normalized_text": "Cost of cultivation\n25,85 ₽\n103 925 ₽",
+          "translated_text": "Cost of cultivation\n25,85 ₽\n103 925 ₽"
+        },
+        {
+          "id": "p6_b25",
+          "page": 6,
+          "order": 89,
+          "text": "Total: estimate of the effect of realisation \nSeparate enterprise \nAs part of the group of \ncompanies\n",
+          "type": "text",
+          "bbox": {
+            "x0": 62.1002311706543,
+            "y0": 705.7021484375,
+            "x1": 504.0597229003906,
+            "y1": 727.7720947265625
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": true,
+            "is_italic": false,
+            "font": "TimesNewRomanPS-BoldMT",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p6_b25",
+          "normalized_text": "Total: estimate of the effect of realisation\nSeparate enterprise\nAs part of the group of\ncompanies",
+          "translated_text": "Total: estimate of the effect of realisation\nSeparate enterprise\nAs part of the group of\ncompanies"
+        },
+        {
+          "id": "p6_b26",
+          "page": 6,
+          "order": 90,
+          "text": "Expenses, thousand roubles\n103 925 ₽\n",
+          "type": "text",
+          "bbox": {
+            "x0": 62.1002311706543,
+            "y0": 736.27734375,
+            "x1": 420.9437255859375,
+            "y1": 747.5673217773438
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "TimesNewRomanPSMT",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p6_b26",
+          "normalized_text": "Expenses, thousand roubles\n103 925 ₽",
+          "translated_text": "Expenses, thousand roubles\n103 925 ₽"
+        },
+        {
+          "id": "p6_b27",
+          "page": 6,
+          "order": 91,
+          "text": "Gross income, RUB thousand\n196 980 ₽\n147 980 ₽\n",
+          "type": "text",
+          "bbox": {
+            "x0": 62.1002311706543,
+            "y0": 757.7273559570312,
+            "x1": 539.1410522460938,
+            "y1": 770.017333984375
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "TimesNewRomanPSMT",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p6_b27",
+          "normalized_text": "Gross income, RUB thousand\n196 980 ₽\n147 980 ₽",
+          "translated_text": "Gross income, RUB thousand\n196 980 ₽\n147 980 ₽"
+        },
+        {
+          "id": "p6_b28",
+          "page": 6,
+          "order": 92,
+          "text": "Operating profit, RUB thousand\n93  055 ₽\n44  055 ₽\n",
+          "type": "text",
+          "bbox": {
+            "x0": 62.1002311706543,
+            "y0": 778.6773071289062,
+            "x1": 539.1410522460938,
+            "y1": 789.96728515625
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "TimesNewRomanPSMT",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p6_b28",
+          "normalized_text": "Operating profit, RUB thousand\n93 055 ₽\n44 055 ₽",
+          "translated_text": "Operating profit, RUB thousand\n93 055 ₽\n44 055 ₽"
+        },
+        {
+          "id": "p6_b29",
+          "page": 6,
+          "order": 93,
+          "text": "47  %\n30  %\n",
+          "type": "text",
+          "bbox": {
+            "x0": 369.0636901855469,
+            "y0": 800.1951904296875,
+            "x1": 539.1409912109375,
+            "y1": 811.84521484375
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "HelveticaNeue",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p6_b29",
+          "normalized_text": "47 %\n30 %",
+          "translated_text": "47 %\n30 %"
+        }
+      ]
+    },
+    {
+      "page_num": 7,
+      "blocks": [
+        {
+          "id": "p7_b0",
+          "page": 7,
+          "order": 94,
+          "text": "This will allow you to assess the expected financial performance and make sure that the investment \nis attractive.\nIt should be noted that this calculation is made for market sales, without taking into account \nsubsidies for fodder purchase, which constitute the main item of expenditure.\n",
+          "type": "text",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 58.70001220703125,
+            "x1": 541.2838134765625,
+            "y1": 112.70001220703125
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p7_b0",
+          "normalized_text": "This will allow you to assess the expected financial performance and make sure that the investment\nis attractive.\nIt should be noted that this calculation is made for market sales, without taking into account\nsubsidies for fodder purchase, which constitute the main item of expenditure.",
+          "translated_text": "This will allow you to assess the expected financial performance and make sure that the investment\nis attractive.\nIt should be noted that this calculation is made for market sales, without taking into account\nsubsidies for fodder purchase, which constitute the main item of expenditure."
+        },
+        {
+          "id": "p7_b1",
+          "page": 7,
+          "order": 95,
+          "text": "It is critical to monitor the origin of the RPM and to know what feeds and eggs were used in its \nrearing, as this affects the growth rate and survival of the fish.\n",
+          "type": "text",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 128.70001220703125,
+            "x1": 541.2767333984375,
+            "y1": 154.70001220703125
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p7_b1",
+          "normalized_text": "It is critical to monitor the origin of the RPM and to know what feeds and eggs were used in its\nrearing, as this affects the growth rate and survival of the fish.",
+          "translated_text": "It is critical to monitor the origin of the RPM and to know what feeds and eggs were used in its\nrearing, as this affects the growth rate and survival of the fish."
+        },
+        {
+          "id": "p7_b2",
+          "page": 7,
+          "order": 96,
+          "text": "Strict control of environmental parameters promotes stable growth of fish and, most importantly, \nreduces the risk of disease. Diseases introduced from open water can spread quickly and cause \nirreparable damage to the customer's entire farm.\n",
+          "type": "text",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 168.8079833984375,
+            "x1": 541.2989501953125,
+            "y1": 209.14398193359375
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p7_b2",
+          "normalized_text": "Strict control of environmental parameters promotes stable growth of fish and, most importantly,\nreduces the risk of disease. Diseases introduced from open water can spread quickly and cause\nirreparable damage to the customer's entire farm.",
+          "translated_text": "Strict control of environmental parameters promotes stable growth of fish and, most importantly,\nreduces the risk of disease. Diseases introduced from open water can spread quickly and cause\nirreparable damage to the customer's entire farm."
+        },
+        {
+          "id": "p7_b3",
+          "page": 7,
+          "order": 97,
+          "text": "Unlike open ponds, where fish are prone to disease and parasites, ROMs provide a controlled and \nsafe environment for rearing RPMs. This is especially important in the first stages of fry rearing.\n",
+          "type": "text",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 223.14398193359375,
+            "x1": 541.2965698242188,
+            "y1": 249.14398193359375
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body",
+            "editor_pass": "heuristic_v1"
+          },
+          "block_id": "p7_b3",
+          "normalized_text": "Unlike open ponds, where fish are prone to disease and parasites, ROMs provide a controlled and\nsafe environment for rearing RPMs. This is especially important in the first stages of fry rearing.",
+          "translated_text": "Unlike open ponds, where fish are prone to disease and parasites, ROMs provide а controlled and\nsafe environment for rearing RPMs. This is especially important in the first stages of fry rearing."
+        },
+        {
+          "id": "p7_b4",
+          "page": 7,
+          "order": 98,
+          "text": "These calculations are preliminary and aggregated, the revenue depends on the marketing \nstrategy and policies of the company. \n",
+          "type": "text",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 742.7000122070312,
+            "x1": 541.3056030273438,
+            "y1": 768.7000122070312
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": true,
+            "is_italic": false,
+            "font": "Times-Bold",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p7_b4",
+          "normalized_text": "These calculations are preliminary and aggregated, the revenue depends on the marketing\nstrategy and policies of the company.",
+          "translated_text": "These calculations are preliminary and aggregated, the revenue depends on the marketing\nstrategy and policies of the company."
+        },
+        {
+          "id": "p7_b5",
+          "page": 7,
+          "order": 99,
+          "text": "1.Base for calculation: production cycle \nparameters\n",
+          "type": "text",
+          "bbox": {
+            "x0": 65.44966888427734,
+            "y0": 268.3348693847656,
+            "x1": 236.17568969726562,
+            "y1": 290.4048767089844
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": true,
+            "is_italic": false,
+            "font": "TimesNewRomanPS-BoldMT",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p7_b5",
+          "normalized_text": "1.Base for calculation: production cycle\nparameters",
+          "translated_text": "1.Base for calculation: production cycle\nparameters"
+        },
+        {
+          "id": "p7_b6",
+          "page": 7,
+          "order": 100,
+          "text": "Parameters of the 2-year production cycle\n",
+          "type": "text",
+          "bbox": {
+            "x0": 264.9988098144531,
+            "y0": 268.3348693847656,
+            "x1": 443.74285888671875,
+            "y1": 279.4048767089844
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": true,
+            "is_italic": false,
+            "font": "TimesNewRomanPS-BoldMT",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p7_b6",
+          "normalized_text": "Parameters of the 2-year production cycle",
+          "translated_text": "Parameters of the 2-year production cycle"
+        },
+        {
+          "id": "p7_b7",
+          "page": 7,
+          "order": 101,
+          "text": "Initial number of fry, pcs\n1 000 000\n",
+          "type": "text",
+          "bbox": {
+            "x0": 65.44966888427734,
+            "y0": 299.4349060058594,
+            "x1": 539.99755859375,
+            "y1": 310.5049133300781
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "TimesNewRomanPSMT",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p7_b7",
+          "normalized_text": "Initial number of fry, pcs\n1 000 000",
+          "translated_text": "Initial number of fry, pcs\n1 000 000"
+        },
+        {
+          "id": "p7_b8",
+          "page": 7,
+          "order": 102,
+          "text": "Final quantity, pcs\n707 200\n",
+          "type": "text",
+          "bbox": {
+            "x0": 65.44966888427734,
+            "y0": 320.8849182128906,
+            "x1": 539.99755859375,
+            "y1": 331.9549255371094
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "TimesNewRomanPSMT",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p7_b8",
+          "normalized_text": "Final quantity, pcs\n707 200",
+          "translated_text": "Final quantity, pcs\n707 200"
+        },
+        {
+          "id": "p7_b9",
+          "page": 7,
+          "order": 103,
+          "text": "Fry mortality per season, %\n29,28  %\n",
+          "type": "text",
+          "bbox": {
+            "x0": 65.44966888427734,
+            "y0": 341.83489990234375,
+            "x1": 539.9976196289062,
+            "y1": 352.9049072265625
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "TimesNewRomanPSMT",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p7_b9",
+          "normalized_text": "Fry mortality per season, %\n29,28 %",
+          "translated_text": "Fry mortality per season, %\n29,28 %"
+        },
+        {
+          "id": "p7_b10",
+          "page": 7,
+          "order": 104,
+          "text": "Initial weight of fry, kg\n0,02\n",
+          "type": "text",
+          "bbox": {
+            "x0": 65.44966888427734,
+            "y0": 362.7848815917969,
+            "x1": 539.9976196289062,
+            "y1": 373.8548889160156
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "TimesNewRomanPSMT",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p7_b10",
+          "normalized_text": "Initial weight of fry, kg\n0,02",
+          "translated_text": "Initial weight of fry, kg\n0,02"
+        },
+        {
+          "id": "p7_b11",
+          "page": 7,
+          "order": 105,
+          "text": "Final weight of fry, kg\n1,8\n",
+          "type": "text",
+          "bbox": {
+            "x0": 65.44966888427734,
+            "y0": 383.7348937988281,
+            "x1": 539.9976196289062,
+            "y1": 394.8049011230469
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "TimesNewRomanPSMT",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p7_b11",
+          "normalized_text": "Final weight of fry, kg\n1,8",
+          "translated_text": "Final weight of fry, kg\n1,8"
+        },
+        {
+          "id": "p7_b12",
+          "page": 7,
+          "order": 106,
+          "text": "Their total mass, kg\n1  272  960\n",
+          "type": "text",
+          "bbox": {
+            "x0": 65.44966888427734,
+            "y0": 404.6849060058594,
+            "x1": 539.99755859375,
+            "y1": 415.7549133300781
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "TimesNewRomanPSMT",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p7_b12",
+          "normalized_text": "Their total mass, kg\n1 272 960",
+          "translated_text": "Their total mass, kg\n1 272 960"
+        },
+        {
+          "id": "p7_b13",
+          "page": 7,
+          "order": 107,
+          "text": "Gutting losses (15%), kg\n190  944\n",
+          "type": "text",
+          "bbox": {
+            "x0": 65.44966888427734,
+            "y0": 425.6348876953125,
+            "x1": 539.99755859375,
+            "y1": 436.70489501953125
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "TimesNewRomanPSMT",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p7_b13",
+          "normalized_text": "Gutting losses (15%), kg\n190 944",
+          "translated_text": "Gutting losses (15%), kg\n190 944"
+        },
+        {
+          "id": "p7_b14",
+          "page": 7,
+          "order": 108,
+          "text": "Caviar production (10%), kg\n108 202\n",
+          "type": "text",
+          "bbox": {
+            "x0": 65.44966888427734,
+            "y0": 446.58489990234375,
+            "x1": 539.99755859375,
+            "y1": 457.6549072265625
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "TimesNewRomanPSMT",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p7_b14",
+          "normalized_text": "Caviar production (10%), kg\n108 202",
+          "translated_text": "Caviar production (10%), kg\n108 202"
+        },
+        {
+          "id": "p7_b15",
+          "page": 7,
+          "order": 109,
+          "text": "2 Base for calculation: feed costs\nQuantity, pcs/\n",
+          "type": "text",
+          "bbox": {
+            "x0": 65.57466888427734,
+            "y0": 467.6598815917969,
+            "x1": 328.94830322265625,
+            "y1": 478.7298889160156
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": true,
+            "is_italic": false,
+            "font": "TimesNewRomanPS-BoldMT",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p7_b15",
+          "normalized_text": "2 Base for calculation: feed costs\nQuantity, pcs/",
+          "translated_text": "2 Base for calculation: feed costs\nQuantity, pcs/"
+        },
+        {
+          "id": "p7_b16",
+          "page": 7,
+          "order": 110,
+          "text": "kg\nPrice rub per 1 unit\nTotal, thousand rubles\n",
+          "type": "text",
+          "bbox": {
+            "x0": 293.9366149902344,
+            "y0": 473.6598815917969,
+            "x1": 537.5684814453125,
+            "y1": 489.7298889160156
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": true,
+            "is_italic": false,
+            "font": "TimesNewRomanPS-BoldMT",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p7_b16",
+          "normalized_text": "kg\nPrice rub per 1 unit\nTotal, thousand rubles",
+          "translated_text": "kg\nPrice rub per 1 unit\nTotal, thousand rubles"
+        },
+        {
+          "id": "p7_b17",
+          "page": 7,
+          "order": 111,
+          "text": "Feed, kg\n1 940 460\n209 ₽\n405  556 ₽\n",
+          "type": "text",
+          "bbox": {
+            "x0": 65.57466888427734,
+            "y0": 497.985107421875,
+            "x1": 540.3726196289062,
+            "y1": 509.2751159667969
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "TimesNewRomanPSMT",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p7_b17",
+          "normalized_text": "Feed, kg\n1 940 460\n209 ₽\n405 556 ₽",
+          "translated_text": "Feed, kg\n1 940 460\n209 ₽\n405 556 ₽"
+        },
+        {
+          "id": "p7_b18",
+          "page": 7,
+          "order": 112,
+          "text": "Subsidies for fodder (15%), RUB ths.\n60  833 ₽\n",
+          "type": "text",
+          "bbox": {
+            "x0": 65.57466888427734,
+            "y0": 520.2351684570312,
+            "x1": 540.3726196289062,
+            "y1": 531.525146484375
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "TimesNewRomanPSMT",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p7_b18",
+          "normalized_text": "Subsidies for fodder (15%), RUB ths.\n60 833 ₽",
+          "translated_text": "Subsidies for fodder (15%), RUB ths.\n60 833 ₽"
+        },
+        {
+          "id": "p7_b19",
+          "page": 7,
+          "order": 113,
+          "text": "Total: estimate of the effect of realisation \nProcurement from third-party \nsuppliers\n",
+          "type": "text",
+          "bbox": {
+            "x0": 65.44966888427734,
+            "y0": 543.225341796875,
+            "x1": 396.54693603515625,
+            "y1": 565.2952880859375
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": true,
+            "is_italic": false,
+            "font": "TimesNewRomanPS-BoldMT",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p7_b19",
+          "normalized_text": "Total: estimate of the effect of realisation\nProcurement from third-party\nsuppliers",
+          "translated_text": "Total: estimate of the effect of realisation\nProcurement from third-party\nsuppliers"
+        },
+        {
+          "id": "p7_b20",
+          "page": 7,
+          "order": 114,
+          "text": "CPI within the group of \ncompanies\n",
+          "type": "text",
+          "bbox": {
+            "x0": 407.62939453125,
+            "y0": 543.225341796875,
+            "x1": 511.6253967285156,
+            "y1": 565.2952880859375
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": true,
+            "is_italic": false,
+            "font": "TimesNewRomanPS-BoldMT",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p7_b20",
+          "normalized_text": "CPI within the group of\ncompanies",
+          "translated_text": "CPI within the group of\ncompanies"
+        },
+        {
+          "id": "p7_b21",
+          "page": 7,
+          "order": 115,
+          "text": "Cost of fry rub/piece\n49 ₽\n26 ₽\n",
+          "type": "text",
+          "bbox": {
+            "x0": 65.44966888427734,
+            "y0": 574.3253173828125,
+            "x1": 539.9976196289062,
+            "y1": 586.543212890625
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "TimesNewRomanPSMT",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p7_b21",
+          "normalized_text": "Cost of fry rub/piece\n49 ₽\n26 ₽",
+          "translated_text": "Cost of fry rub/piece\n49 ₽\n26 ₽"
+        },
+        {
+          "id": "p7_b22",
+          "page": 7,
+          "order": 116,
+          "text": "Costs for purchase of fry, RUB ths.\n49 000 ₽\n26 000 ₽\n",
+          "type": "text",
+          "bbox": {
+            "x0": 65.44966888427734,
+            "y0": 595.5253295898438,
+            "x1": 539.9976196289062,
+            "y1": 607.7432250976562
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "TimesNewRomanPSMT",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p7_b22",
+          "normalized_text": "Costs for purchase of fry, RUB ths.\n49 000 ₽\n26 000 ₽",
+          "translated_text": "Costs for purchase of fry, RUB ths.\n49 000 ₽\n26 000 ₽"
+        },
+        {
+          "id": "p7_b23",
+          "page": 7,
+          "order": 117,
+          "text": "Raw material s/s\n393 723 ₽\n370 723 ₽\n",
+          "type": "text",
+          "bbox": {
+            "x0": 65.44966888427734,
+            "y0": 616.225341796875,
+            "x1": 539.9976196289062,
+            "y1": 628.4432373046875
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "TimesNewRomanPSMT",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p7_b23",
+          "normalized_text": "Raw material s/s\n393 723 ₽\n370 723 ₽",
+          "translated_text": "Raw material s/s\n393 723 ₽\n370 723 ₽"
+        },
+        {
+          "id": "p7_b24",
+          "page": 7,
+          "order": 118,
+          "text": "Sale of caviar, RUB thousand\n400 000 ₽\n",
+          "type": "text",
+          "bbox": {
+            "x0": 65.44966888427734,
+            "y0": 636.9253540039062,
+            "x1": 424.4023132324219,
+            "y1": 649.1431884765625
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "TimesNewRomanPSMT",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p7_b24",
+          "normalized_text": "Sale of caviar, RUB thousand\n400 000 ₽",
+          "translated_text": "Sale of caviar, RUB thousand\n400 000 ₽"
+        },
+        {
+          "id": "p7_b25",
+          "page": 7,
+          "order": 119,
+          "text": "Fish sales, RUB thousand\n495 000 ₽\n",
+          "type": "text",
+          "bbox": {
+            "x0": 65.44966888427734,
+            "y0": 657.6253051757812,
+            "x1": 424.4023132324219,
+            "y1": 669.8432006835938
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "TimesNewRomanPSMT",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p7_b25",
+          "normalized_text": "Fish sales, RUB thousand\n495 000 ₽",
+          "translated_text": "Fish sales, RUB thousand\n495 000 ₽"
+        },
+        {
+          "id": "p7_b26",
+          "page": 7,
+          "order": 120,
+          "text": "Gross income, RUB thousand\n895  000 ₽\n1  042  980 ₽\n",
+          "type": "text",
+          "bbox": {
+            "x0": 65.44966888427734,
+            "y0": 678.3253173828125,
+            "x1": 539.9976196289062,
+            "y1": 690.543212890625
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "TimesNewRomanPSMT",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p7_b26",
+          "normalized_text": "Gross income, RUB thousand\n895 000 ₽\n1 042 980 ₽",
+          "translated_text": "Gross income, RUB thousand\n895 000 ₽\n1 042 980 ₽"
+        },
+        {
+          "id": "p7_b27",
+          "page": 7,
+          "order": 121,
+          "text": "Operating profit, RUB thousand\n501  277 ₽\n672  257 ₽\n",
+          "type": "text",
+          "bbox": {
+            "x0": 65.44966888427734,
+            "y0": 699.0253295898438,
+            "x1": 539.9976196289062,
+            "y1": 711.2432250976562
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "TimesNewRomanPSMT",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p7_b27",
+          "normalized_text": "Operating profit, RUB thousand\n501 277 ₽\n672 257 ₽",
+          "translated_text": "Operating profit, RUB thousand\n501 277 ₽\n672 257 ₽"
+        },
+        {
+          "id": "p7_b28",
+          "page": 7,
+          "order": 122,
+          "text": "56  %\n64  %\n",
+          "type": "text",
+          "bbox": {
+            "x0": 372.44940185546875,
+            "y0": 720.293212890625,
+            "x1": 539.9976196289062,
+            "y1": 731.9432373046875
+          },
+          "metadata": {
+            "font_size": 10.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "HelveticaNeue",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p7_b28",
+          "normalized_text": "56 %\n64 %",
+          "translated_text": "56 %\n64 %"
+        }
+      ]
+    },
+    {
+      "page_num": 8,
+      "blocks": [
+        {
+          "id": "p8_b0",
+          "page": 8,
+          "order": 123,
+          "text": "Conclusion\n",
+          "type": "text",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 58.70001220703125,
+            "x1": 114.05039978027344,
+            "y1": 70.70001220703125
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": true,
+            "is_italic": false,
+            "font": "Times-Bold",
+            "protected_tokens": [],
+            "role": "heading2"
+          },
+          "block_id": "p8_b0",
+          "normalized_text": "Conclusion",
+          "translated_text": "Conclusion"
+        },
+        {
+          "id": "p8_b1",
+          "page": 8,
+          "order": 124,
+          "text": "The Fry City project is aimed at creating the largest hatchery complex in the Leningrad Region for \nraising rainbow trout fry. It is designed to solve the problem of rainbow trout RPM deficit, which is \nparticularly acute for the North-West region. \n",
+          "type": "text",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 86.70001220703125,
+            "x1": 541.297119140625,
+            "y1": 126.70001220703125
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p8_b1",
+          "normalized_text": "The Fry City project is aimed at creating the largest hatchery complex in the Leningrad Region for\nraising rainbow trout fry. It is designed to solve the problem of rainbow trout RPM deficit, which is\nparticularly acute for the North-West region.",
+          "translated_text": "The Fry City project is aimed at creating the largest hatchery complex in the Leningrad Region for\nraising rainbow trout fry. It is designed to solve the problem of rainbow trout RPM deficit, which is\nparticularly acute for the North-West region."
+        },
+        {
+          "id": "p8_b2",
+          "page": 8,
+          "order": 125,
+          "text": "Despite the fact that 90 per cent of the country's rainbow trout are produced here, the region lacks \nits own planting material. This leads to the need to purchase RPM from other regions, which \nsignificantly increases the cost of production, and also carries additional risks both during transport \nand during subsequent rearing, as the fish experience tremendous stress during transport.\n",
+          "type": "text",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 142.70001220703125,
+            "x1": 541.2885131835938,
+            "y1": 196.70001220703125
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p8_b2",
+          "normalized_text": "Despite the fact that 90 per cent of the country's rainbow trout are produced here, the region lacks\nits own planting material. This leads to the need to purchase RPM from other regions, which\nsignificantly increases the cost of production, and also carries additional risks both during transport\nand during subsequent rearing, as the fish experience tremendous stress during transport.",
+          "translated_text": "Despite the fact that 90 per cent of the country's rainbow trout are produced here, the region lacks\nits own planting material. This leads to the need to purchase RPM from other regions, which\nsignificantly increases the cost of production, and also carries additional risks both during transport\nand during subsequent rearing, as the fish experience tremendous stress during transport."
+        },
+        {
+          "id": "p8_b3",
+          "page": 8,
+          "order": 126,
+          "text": "The project aims to localise the production of fish planting material, reduce dependence on external \nsupplies and create new jobs. \nTogether, this will improve food security and strengthen the economic health of the region.\n",
+          "type": "text",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 212.70001220703125,
+            "x1": 541.2866821289062,
+            "y1": 252.70001220703125
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p8_b3",
+          "normalized_text": "The project aims to localise the production of fish planting material, reduce dependence on external\nsupplies and create new jobs.\nTogether, this will improve food security and strengthen the economic health of the region.",
+          "translated_text": "The project aims to localise the production of fish planting material, reduce dependence on external\nsupplies and create new jobs.\nTogether, this will improve food security and strengthen the economic health of the region."
+        },
+        {
+          "id": "p8_b4",
+          "page": 8,
+          "order": 127,
+          "text": "The availability of a ready infrastructure, professional team and in-house contracting organisation \nguarantees efficient project management and quick market entry.\n",
+          "type": "text",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 268.70001220703125,
+            "x1": 541.2814331054688,
+            "y1": 294.70001220703125
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body",
+            "editor_pass": "heuristic_v1"
+          },
+          "block_id": "p8_b4",
+          "normalized_text": "The availability of a ready infrastructure, professional team and in-house contracting organisation\nguarantees efficient project management and quick market entry.",
+          "translated_text": "The availability of а ready infrastructure, professional team and in-house contracting organisation\nguarantees efficient project management and quick market entry."
+        },
+        {
+          "id": "p8_b5",
+          "page": 8,
+          "order": 128,
+          "text": "In addition, the use of CPI in the infrastructure of a company engaged in the production of \ncommercial trout for the subsequent cultivation of commercial fish and caviar will save about 25 \nmillion rubles annually, based on the need for fish planting material of 1,000,000 pieces. \nThis will significantly reduce costs and increase the profitability of current production volumes.\n",
+          "type": "text",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 310.70001220703125,
+            "x1": 541.2970581054688,
+            "y1": 364.70001220703125
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body",
+            "editor_pass": "heuristic_v1"
+          },
+          "block_id": "p8_b5",
+          "normalized_text": "In addition, the use of CPI in the infrastructure of a company engaged in the production of\ncommercial trout for the subsequent cultivation of commercial fish and caviar will save about 25\nmillion rubles annually, based on the need for fish planting material of 1,000,000 pieces.\nThis will significantly reduce costs and increase the profitability of current production volumes.",
+          "translated_text": "In addition, the use of CPI in the infrastructure of а company engaged in the production of\ncommercial trout for the subsequent cultivation of commercial fish and caviar will save about 25\nmillion rubles annually, based on the need for fish planting material of 1,000,000 pieces.\nThis will significantly reduce costs and increase the profitability of current production volumes."
+        },
+        {
+          "id": "p8_b6",
+          "page": 8,
+          "order": 129,
+          "text": "In addition, the opportunity to receive government compensation of 40 per cent of capital costs and \nsignificantly reduce operating costs in aquaculture will accelerate the payback period of the project.\n",
+          "type": "text",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 380.70001220703125,
+            "x1": 541.283935546875,
+            "y1": 406.70001220703125
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p8_b6",
+          "normalized_text": "In addition, the opportunity to receive government compensation of 40 per cent of capital costs and\nsignificantly reduce operating costs in aquaculture will accelerate the payback period of the project.",
+          "translated_text": "In addition, the opportunity to receive government compensation of 40 per cent of capital costs and\nsignificantly reduce operating costs in aquaculture will accelerate the payback period of the project."
+        },
+        {
+          "id": "p8_b7",
+          "page": 8,
+          "order": 130,
+          "text": "On request we are ready to provide all documentation necessary for the evaluation of the \ntransaction. \n",
+          "type": "text",
+          "bbox": {
+            "x0": 56.70000076293945,
+            "y0": 422.70001220703125,
+            "x1": 541.279052734375,
+            "y1": 448.70001220703125
+          },
+          "metadata": {
+            "font_size": 12.0,
+            "is_bold": false,
+            "is_italic": false,
+            "font": "Times-Roman",
+            "protected_tokens": [],
+            "role": "body"
+          },
+          "block_id": "p8_b7",
+          "normalized_text": "On request we are ready to provide all documentation necessary for the evaluation of the\ntransaction.",
+          "translated_text": "On request we are ready to provide all documentation necessary for the evaluation of the\ntransaction."
+        }
+      ]
+    }
+  ]
+}

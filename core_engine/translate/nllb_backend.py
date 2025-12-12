@@ -11,7 +11,7 @@ _TOKENIZER_CACHE: Dict[str, Any] = {}
 
 def _load_nllb_model(model_name: str, device: str = "cuda"):
     """
-    Загружаем NLLB с кэшем и поддержкой CUDA/CPU.
+    Р—Р°РіСЂСѓР¶Р°РµРј NLLB СЃ РєСЌС€РµРј Рё РїРѕРґРґРµСЂР¶РєРѕР№ CUDA/CPU.
     """
     if model_name in _MODEL_CACHE:
         return _TOKENIZER_CACHE[model_name], _MODEL_CACHE[model_name]
@@ -21,14 +21,29 @@ def _load_nllb_model(model_name: str, device: str = "cuda"):
     tokenizer = AutoTokenizer.from_pretrained(model_name)
 
     if device == "cuda" and torch.cuda.is_available():
+        # Speed knobs (safe defaults). TF32 can significantly speed up matmul on modern NVIDIA GPUs.
+        try:
+            torch.set_float32_matmul_precision("high")
+        except Exception:
+            pass
+        try:
+            torch.backends.cuda.matmul.allow_tf32 = True
+        except Exception:
+            pass
+
         model = AutoModelForSeq2SeqLM.from_pretrained(
             model_name,
             torch_dtype=torch.float16,
             device_map="auto",
         )
     else:
-        print("[NLLB][WARN] CUDA not available → using CPU")
+        print("[NLLB][WARN] CUDA not available -> using CPU")
         model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
+
+    try:
+        model.eval()
+    except Exception:
+        pass
 
     _MODEL_CACHE[model_name] = model
     _TOKENIZER_CACHE[model_name] = tokenizer
@@ -40,7 +55,7 @@ def _sanitize_output(text: str, src_text: str) -> str:
         return src_text
 
     cleaned = re.sub(r"[\u0600-\u06FF]+", "", text)
-    cleaned = cleaned.replace("©", "").strip()
+    cleaned = cleaned.replace("В©", "").strip()
 
     if len(cleaned) < 3:
         return src_text
@@ -53,7 +68,7 @@ def _split_into_chunks(text: str, max_chars: int = 350) -> List[str]:
     if len(s) <= max_chars:
         return [s]
 
-    sentences = re.split(r'(?<=[.!?…])\s+', s)
+    sentences = re.split(r'(?<=[.!?вЂ¦])\s+', s)
     chunks: List[str] = []
     current = ""
 
@@ -86,14 +101,14 @@ def _split_into_chunks(text: str, max_chars: int = 350) -> List[str]:
 
 def _resolve_lang_token(target_lang: str) -> str:
     """
-    Маппинг "ru"/"en" → спец-токены NLLB.
+    РњР°РїРїРёРЅРі "ru"/"en" в†’ СЃРїРµС†-С‚РѕРєРµРЅС‹ NLLB.
     """
     tl = (target_lang or "").lower()
     if tl.startswith("ru"):
         return "rus_Cyrl"
     if tl.startswith("en"):
         return "eng_Latn"
-    # дефолт — русский, чтобы не прилетал рандомный язык
+    # РґРµС„РѕР»С‚ вЂ” СЂСѓСЃСЃРєРёР№, С‡С‚РѕР±С‹ РЅРµ РїСЂРёР»РµС‚Р°Р» СЂР°РЅРґРѕРјРЅС‹Р№ СЏР·С‹Рє
     return "rus_Cyrl"
 
 
@@ -107,7 +122,7 @@ def translate_with_nllb(
     device: str = "cuda",
 ) -> List[Dict[str, Any]]:
     """
-    Универсальный переводчик NLLB (600M / 1.3B, CUDA/CPU, батчи).
+    РЈРЅРёРІРµСЂСЃР°Р»СЊРЅС‹Р№ РїРµСЂРµРІРѕРґС‡РёРє NLLB (600M / 1.3B, CUDA/CPU, Р±Р°С‚С‡Рё).
     """
     tokenizer, model = _load_nllb_model(model_name, device=device)
 
@@ -157,7 +172,7 @@ def translate_with_nllb(
 
         decoded = tokenizer.batch_decode(outputs, skip_special_tokens=True)
 
-        # склеиваем чанки обратно по блокам
+        # СЃРєР»РµРёРІР°РµРј С‡Р°РЅРєРё РѕР±СЂР°С‚РЅРѕ РїРѕ Р±Р»РѕРєР°Рј
         combo: Dict[int, List[str]] = {}
         for (bi, _), out in zip(chunk_map, decoded):
             combo.setdefault(bi, []).append(out)
@@ -171,3 +186,5 @@ def translate_with_nllb(
             translated_blocks.append({**b, "translated_text": merged})
 
     return translated_blocks
+
+

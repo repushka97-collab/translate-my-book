@@ -1,0 +1,111 @@
+{
+  "mode": "dev",
+  "env": {
+    "repo_root": "I:\\PROJECTS\\Translate-my-book\\translate-my-book",
+    "python_executable": "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "git_head": "f7a44fab30875d9be1fe6f7835a910bf9f037393",
+    "torch_cuda_available": false
+  },
+  "runs": [
+    {
+      "source_pdf": "For test\\30-38.pdf",
+      "mode": "dev",
+      "ok": true,
+      "book_id": "16c9f47aa3421533",
+      "output_dir": "output\\16c9f47aa3421533",
+      "export_paths": {
+        "json": "output\\16c9f47aa3421533\\book.json",
+        "docx_main": "output\\16c9f47aa3421533\\book_ru.docx"
+      },
+      "qa_status": "warn",
+      "qa_issues_total": 67,
+      "qa_issues_by_type": {
+        "potential_break": 42,
+        "suspect_terms_en_in_ru": 14,
+        "mixed_alphabet": 2,
+        "repeated_tokens": 7,
+        "concatenated_scripts": 2
+      },
+      "qa_issues_by_severity": {
+        "low": 63,
+        "medium": 4
+      },
+      "paragraph_count": 122,
+      "docx_size_bytes": 48881,
+      "json_size_bytes": 192421,
+      "error": null,
+      "duration_sec": 0.203
+    },
+    {
+      "source_pdf": "For test\\GPT.pdf",
+      "mode": "dev",
+      "ok": true,
+      "book_id": "d247362f641f5add",
+      "output_dir": "output\\d247362f641f5add",
+      "export_paths": {
+        "json": "output\\d247362f641f5add\\book.json",
+        "docx_main": "output\\d247362f641f5add\\book_ru.docx"
+      },
+      "qa_status": "warn",
+      "qa_issues_total": 52,
+      "qa_issues_by_type": {
+        "repeated_tokens": 7,
+        "potential_break": 34,
+        "suspect_terms_en_in_ru": 5,
+        "concatenated_scripts": 6
+      },
+      "qa_issues_by_severity": {
+        "low": 46,
+        "medium": 6
+      },
+      "paragraph_count": 166,
+      "docx_size_bytes": 50233,
+      "json_size_bytes": 224488,
+      "error": null,
+      "duration_sec": 0.432
+    },
+    {
+      "source_pdf": "For test\\KIDCITY.pdf",
+      "mode": "dev",
+      "ok": true,
+      "book_id": "a7e2c751b5e6db65",
+      "output_dir": "output\\a7e2c751b5e6db65",
+      "export_paths": {
+        "json": "output\\a7e2c751b5e6db65\\book.json",
+        "docx_main": "output\\a7e2c751b5e6db65\\book_ru.docx"
+      },
+      "qa_status": "warn",
+      "qa_issues_total": 33,
+      "qa_issues_by_type": {
+        "potential_break": 24,
+        "repeated_tokens": 6,
+        "suspect_terms_en_in_ru": 3
+      },
+      "qa_issues_by_severity": {
+        "low": 33
+      },
+      "paragraph_count": 131,
+      "docx_size_bytes": 42117,
+      "json_size_bytes": 123642,
+      "error": null,
+      "duration_sec": 1.352
+    },
+    {
+      "source_pdf": "For test\\Myofascial.pdf",
+      "mode": "dev",
+      "ok": false,
+      "book_id": "",
+      "output_dir": "",
+      "export_paths": {},
+      "qa_status": "",
+      "qa_issues_total": 0,
+      "qa_issues_by_type": {},
+      "qa_issues_by_severity": {},
+      "paragraph_count": 0,
+      "docx_size_bytes": null,
+      "json_size_bytes": null,
+      "error": "KeyError('text')",
+      "duration_sec": null
+    }
+  ]
+}

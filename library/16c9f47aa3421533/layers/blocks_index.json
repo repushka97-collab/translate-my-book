@@ -1,0 +1,1005 @@
+{
+  "book_id": "16c9f47aa3421533",
+  "blocks": [
+    {
+      "id": "p1_b0",
+      "page_number": 1,
+      "type": "text",
+      "raw_text": "1\n",
+      "normalized_text": "1",
+      "translated_text": ""
+    },
+    {
+      "id": "p1_b1",
+      "page_number": 1,
+      "type": "text",
+      "raw_text": "I\n",
+      "normalized_text": "I",
+      "translated_text": ""
+    },
+    {
+      "id": "p1_b2",
+      "page_number": 1,
+      "type": "text",
+      "raw_text": "P A R T\n",
+      "normalized_text": "P A R T",
+      "translated_text": ""
+    },
+    {
+      "id": "p1_b3",
+      "page_number": 1,
+      "type": "text",
+      "raw_text": "General Concepts\n",
+      "normalized_text": "General Concepts",
+      "translated_text": ""
+    },
+    {
+      "id": "p1_b4",
+      "page_number": 1,
+      "type": "text",
+      "raw_text": "Therapeutic Exercise:\nFoundational Concepts\n",
+      "normalized_text": "Therapeutic Exercise:\nFoundational Concepts",
+      "translated_text": ""
+    },
+    {
+      "id": "p1_b5",
+      "page_number": 1,
+      "type": "text",
+      "raw_text": "C H A P T E R\n1\n",
+      "normalized_text": "C H A P T E R\n1",
+      "translated_text": ""
+    },
+    {
+      "id": "p1_b6",
+      "page_number": 1,
+      "type": "text",
+      "raw_text": "THERAPEUTIC EXERCISE: IMPACT ON\nPHYSICAL FUNCTION 2\nDefinition of Therapeutic Exercise  2\nAspects of Physical Function: Definition\n",
+      "normalized_text": "THERAPEUTIC EXERCISE: IMPACT ON\nPHYSICAL FUNCTION 2\nDefinition of Therapeutic Exercise 2\nAspects of Physical Function: Definition",
+      "translated_text": ""
+    },
+    {
+      "id": "p1_b7",
+      "page_number": 1,
+      "type": "text",
+      "raw_text": "of Key Terms  2\nTypes of Therapeutic Exercise Intervention  3\nExercise Safety  3\n",
+      "normalized_text": "of Key Terms 2\nTypes of Therapeutic Exercise Intervention 3\nExercise Safety 3",
+      "translated_text": ""
+    },
+    {
+      "id": "p1_b8",
+      "page_number": 1,
+      "type": "text",
+      "raw_text": "PROCESS AND MODELS OF DISABLEMENT 4\nThe Disablement Process  4\nModels of Disablement  4\nUse of Disablement Models and Classifications\n",
+      "normalized_text": "PROCESS AND MODELS OF DISABLEMENT 4\nThe Disablement Process 4\nModels of Disablement 4\nUse of Disablement Models and Classifications",
+      "translated_text": ""
+    },
+    {
+      "id": "p1_b9",
+      "page_number": 1,
+      "type": "text",
+      "raw_text": "in Physical Therapy  5\n",
+      "normalized_text": "in Physical Therapy 5",
+      "translated_text": ""
+    },
+    {
+      "id": "p1_b10",
+      "page_number": 1,
+      "type": "text",
+      "raw_text": "PATIENT MANAGEMENT AND CLINICAL DECISION\nMAKING: AN INTERACTIVE RELATIONSHIP 11\nClinical Decision Making  11\nEvidence-Based Practice  11\nA Patient Management Model  12\n",
+      "normalized_text": "PATIENT MANAGEMENT AND CLINICAL DECISION\nMAKING: AN INTERACTIVE RELATIONSHIP 11\nClinical Decision Making 11\nEvidence-Based Practice 11\nA Patient Management Model 12",
+      "translated_text": ""
+    },
+    {
+      "id": "p1_b11",
+      "page_number": 1,
+      "type": "text",
+      "raw_text": "STRATEGIES FOR EFFECTIVE EXERCISE AND\nTASK-SPECIFIC INSTRUCTION 24\nPreparation for Exercise Instruction  24\nConcepts of Motor Learning: A Foundation\n",
+      "normalized_text": "STRATEGIES FOR EFFECTIVE EXERCISE AND\nTASK-SPECIFIC INSTRUCTION 24\nPreparation for Exercise Instruction 24\nConcepts of Motor Learning: A Foundation",
+      "translated_text": ""
+    },
+    {
+      "id": "p1_b12",
+      "page_number": 1,
+      "type": "text",
+      "raw_text": "of Exercise and Task-Specific Instruction  24\nAdherence to Exercise  31\n",
+      "normalized_text": "of Exercise and Task-Specific Instruction 24\nAdherence to Exercise 31",
+      "translated_text": ""
+    },
+    {
+      "id": "p1_b13",
+      "page_number": 1,
+      "type": "text",
+      "raw_text": "INDEPENDENT LEARNING ACTIVITIES 33\n",
+      "normalized_text": "INDEPENDENT LEARNING ACTIVITIES 33",
+      "translated_text": ""
+    },
+    {
+      "id": "p1_b14",
+      "page_number": 1,
+      "type": "text",
+      "raw_text": "Almost everyone, regardless of age, values the ability to\nfunction as independently as possible during everyday life.\nHealth-care consumers (patients and clients) typically seek\nout or are referred for physical therapy services because of\nphysical impairments associated with movement disorders\ncaused by injury, disease, or health-related conditions that\ninterfere with their ability to perform or pursue any num-\nber of activities that are necessary or important to them.\nPhysical therapy services may also be sought by individu-\nals who have no impairment but who wish to improve their\noverall level of fitness or reduce the risk of injury or dis-\nease. An individually designed therapeutic exercise pro-\ngram is almost always a fundamental component of the\nphysical therapy services provided. This stands to reason\nbecause the ultimate goal of a therapeutic exercise program\nis the achievement of an optimal level of symptom-free\nmovement during basic to complex physical activities.\n",
+      "normalized_text": "Almost everyone, regardless of age, values the ability to\nfunction as independently as possible during everyday life.\nHealth-care consumers (patients and clients) typically seek\nout or are referred for physical therapy services because of\nphysical impairments associated with movement disorders\ncaused by injury, disease, or health-related conditions that\ninterfere with their ability to perform or pursue any number of activities that are necessary or important to them.\nPhysical therapy services may also be sought by individuals who have no impairment but who wish to improve their\noverall level of fitness or reduce the risk of injury or disease. An individually designed therapeutic exercise program is almost always a fundamental component of the\nphysical therapy services provided. This stands to reason\nbecause the ultimate goal of a therapeutic exercise program\nis the achievement of an optimal level of symptom-free\nmovement during basic to complex physical activities.",
+      "translated_text": ""
+    },
+    {
+      "id": "p1_b15",
+      "page_number": 1,
+      "type": "text",
+      "raw_text": "To develop and implement effective exercise interven-\ntions, a therapist must understand how the many forms of\n",
+      "normalized_text": "To develop and implement effective exercise interventions, a therapist must understand how the many forms of",
+      "translated_text": ""
+    },
+    {
+      "id": "p1_b16",
+      "page_number": 1,
+      "type": "text",
+      "raw_text": "exercise affect tissues of the body and body systems and\nhow those exercise-induced effects have an impact on key\naspects of physical function. A therapist must also integrate\nand apply knowledge of anatomy, physiology, kinesiology,\npathology, and the behavioral sciences across the continu-\num of patient/client management from the initial examina-\ntion to discharge planning. To develop therapeutic exercise\nprograms that culminate in positive and meaningful func-\ntional outcomes for patients and clients, a therapist must\nunderstand the relationship between physical function and\ndisability and appreciate how the application of the process\nof disablement to patient/client management facilitates the\nprovision of effective and efficient health-care services.\nFinally, a therapist, as a patient/client educator, must know\nand apply principles of motor learning and motor skill\nacquisition to exercise instruction and functional training.\nTherefore, the purpose of this chapter is to present an\noverview of the scope of therapeutic exercise interven-\ntions used by physical therapists. We discuss models of\n",
+      "normalized_text": "exercise affect tissues of the body and body systems and\nhow those exercise-induced effects have an impact on key\naspects of physical function. A therapist must also integrate\nand apply knowledge of anatomy, physiology, kinesiology,\npathology, and the behavioral sciences across the continuum of patient/client management from the initial examination to discharge planning. To develop therapeutic exercise\nprograms that culminate in positive and meaningful functional outcomes for patients and clients, a therapist must\nunderstand the relationship between physical function and\ndisability and appreciate how the application of the process\nof disablement to patient/client management facilitates the\nprovision of effective and efficient health-care services.\nFinally, a therapist, as a patient/client educator, must know\nand apply principles of motor learning and motor skill\nacquisition to exercise instruction and functional training.\nTherefore, the purpose of this chapter is to present an\noverview of the scope of therapeutic exercise interventions used by physical therapists. We discuss models of",
+      "translated_text": ""
+    },
+    {
+      "id": "p2_b0",
+      "page_number": 2,
+      "type": "text",
+      "raw_text": "disablement and patient/client management as they relate\nto therapeutic exercise and explore strategies for teaching\nand progressing exercises and functional motor skills\nbased on principles of motor learning.\n",
+      "normalized_text": "disablement and patient/client management as they relate\nto therapeutic exercise and explore strategies for teaching\nand progressing exercises and functional motor skills\nbased on principles of motor learning.",
+      "translated_text": ""
+    },
+    {
+      "id": "p2_b1",
+      "page_number": 2,
+      "type": "text",
+      "raw_text": "THERAPEUTIC EXERCISE: IMPACT\nON PHYSICAL FUNCTION\n",
+      "normalized_text": "THERAPEUTIC EXERCISE: IMPACT\nON PHYSICAL FUNCTION",
+      "translated_text": ""
+    },
+    {
+      "id": "p2_b2",
+      "page_number": 2,
+      "type": "text",
+      "raw_text": "Of the many procedures used by physical therapists in\nthe continuum of care of patients and clients, therapeu-\ntic exercise takes its place as one of the key elements\nthat lies at the center of programs designed to improve\nor restore an individual’s function or to prevent dys-\nfunction.2\n",
+      "normalized_text": "Of the many procedures used by physical therapists in\nthe continuum of care of patients and clients, therapeutic exercise takes its place as one of the key elements\nthat lies at the center of programs designed to improve\nor restore an individual’s function or to prevent dysfunction.2",
+      "translated_text": ""
+    },
+    {
+      "id": "p2_b3",
+      "page_number": 2,
+      "type": "text",
+      "raw_text": "Definition of Therapeutic Exercise\n",
+      "normalized_text": "Definition of Therapeutic Exercise",
+      "translated_text": ""
+    },
+    {
+      "id": "p2_b4",
+      "page_number": 2,
+      "type": "text",
+      "raw_text": "Therapeutic exercise2 is the systematic, planned per-\nformance of bodily movements, postures, or physical\nactivities intended to provide a patient/client with the\nmeans to\n",
+      "normalized_text": "Therapeutic exercise2 is the systematic, planned performance of bodily movements, postures, or physical\nactivities intended to provide a patient/client with the\nmeans to",
+      "translated_text": ""
+    },
+    {
+      "id": "p2_b5",
+      "page_number": 2,
+      "type": "text",
+      "raw_text": "Remediate or prevent impairments\nImprove, restore, or enhance physical function\nPrevent or reduce health-related risk factors\nOptimize overall health status, fitness, or sense of\nwell-being\n",
+      "normalized_text": "Remediate or prevent impairments\nImprove, restore, or enhance physical function\nPrevent or reduce health-related risk factors\nOptimize overall health status, fitness, or sense of\nwell-being",
+      "translated_text": ""
+    },
+    {
+      "id": "p2_b6",
+      "page_number": 2,
+      "type": "text",
+      "raw_text": "Therapeutic exercise programs designed by physical\ntherapists are individualized to the unique needs of each\npatient or client. A patient is an individual with impair-\nments and functional limitations diagnosed by a physical\ntherapist who is receiving physical therapy care to improve\nfunction and prevent disability.2 A client is an individual\nwithout diagnosed dysfunction who engages in physical\ntherapy services to promote health and wellness and to\nprevent dysfunction.2 Because the focus of this textbook\nis on management of individuals with physical impair-\nments and functional limitations, the authors have\nchosen to use the term “patient” rather than “client” or\n“patient/client” throughout this text. We believe that all\nindividuals receiving physical therapy services must be\nactive participants rather than passive recipients in the\nrehabilitation process to learn how to self-manage their\nhealth needs.\n",
+      "normalized_text": "Therapeutic exercise programs designed by physical\ntherapists are individualized to the unique needs of each\npatient or client. A patient is an individual with impairments and functional limitations diagnosed by a physical\ntherapist who is receiving physical therapy care to improve\nfunction and prevent disability.2 A client is an individual\nwithout diagnosed dysfunction who engages in physical\ntherapy services to promote health and wellness and to\nprevent dysfunction.2 Because the focus of this textbook\nis on management of individuals with physical impairments and functional limitations, the authors have\nchosen to use the term “patient” rather than “client” or\n“patient/client” throughout this text. We believe that all\nindividuals receiving physical therapy services must be\nactive participants rather than passive recipients in the\nrehabilitation process to learn how to self-manage their\nhealth needs.",
+      "translated_text": ""
+    },
+    {
+      "id": "p2_b7",
+      "page_number": 2,
+      "type": "text",
+      "raw_text": "Aspects of Physical Function:\nDefinition of Key Terms\n",
+      "normalized_text": "Aspects of Physical Function:\nDefinition of Key Terms",
+      "translated_text": ""
+    },
+    {
+      "id": "p2_b8",
+      "page_number": 2,
+      "type": "text",
+      "raw_text": "The ability to function independently at home, in the\nworkplace, within the community, or during leisure and\nrecreational activities is contingent upon physical as well\nas psychological and social function. The multidimensio-\nnal aspects of physical function encompass the diverse\nyet interrelated areas of performance that are depicted in\nFigure 1.1. These aspects of function are characterized\nby the following definitions.\n",
+      "normalized_text": "The ability to function independently at home, in the\nworkplace, within the community, or during leisure and\nrecreational activities is contingent upon physical as well\nas psychological and social function. The multidimensional aspects of physical function encompass the diverse\nyet interrelated areas of performance that are depicted in\nFigure 1.1. These aspects of function are characterized\nby the following definitions.",
+      "translated_text": ""
+    },
+    {
+      "id": "p2_b9",
+      "page_number": 2,
+      "type": "text",
+      "raw_text": "Balance. The ability to align body segments against gravi-\nty to maintain or move the body (center of mass) within\nthe available base of support without falling; the ability to\nmove the body in equilibrium with gravity via interaction\nof the sensory and motor systems.2,66,74,88,124,127,128\n",
+      "normalized_text": "Balance. The ability to align body segments against gravity to maintain or move the body (center of mass) within\nthe available base of support without falling; the ability to\nmove the body in equilibrium with gravity via interaction\nof the sensory and motor systems.2,66,74,88,124,127,128",
+      "translated_text": ""
+    },
+    {
+      "id": "p2_b10",
+      "page_number": 2,
+      "type": "text",
+      "raw_text": "Cardiopulmonary fitness. The ability to perform low-\nintensity, repetitive, total body movements (walking, jog-\nging, cycling, swimming) over an extended period of\ntime1,81; a synonymous term is cardiopulmonary endurance.\n",
+      "normalized_text": "Cardiopulmonary fitness. The ability to perform lowintensity, repetitive, total body movements (walking, jogging, cycling, swimming) over an extended period of\ntime1,81; a synonymous term is cardiopulmonary endurance.",
+      "translated_text": ""
+    },
+    {
+      "id": "p2_b11",
+      "page_number": 2,
+      "type": "text",
+      "raw_text": "Coordination. The correct timing and sequencing of mus-\ncle firing combined with the appropriate intensity of mus-\ncular contraction leading to the effective initiation, guiding,\nand grading of movement. It is the basis of smooth, accu-\nrate, efficient movement and occurs at a conscious or auto-\nmatic level.123,127\n",
+      "normalized_text": "Coordination. The correct timing and sequencing of muscle firing combined with the appropriate intensity of muscular contraction leading to the effective initiation, guiding,\nand grading of movement. It is the basis of smooth, accurate, efficient movement and occurs at a conscious or automatic level.123,127",
+      "translated_text": ""
+    },
+    {
+      "id": "p2_b12",
+      "page_number": 2,
+      "type": "text",
+      "raw_text": "Flexibility. The ability to move freely, without restriction;\nused interchangeably with mobility.\n",
+      "normalized_text": "Flexibility. The ability to move freely, without restriction;\nused interchangeably with mobility.",
+      "translated_text": ""
+    },
+    {
+      "id": "p2_b13",
+      "page_number": 2,
+      "type": "text",
+      "raw_text": "Mobility. The ability of structures or segments of the body\nto move or be moved in order to allow the occurrence of\nrange of motion (ROM) for functional activities (functional\nROM).2,134 Passive mobility is dependent on soft tissue\n(contractile and noncontractile) extensibility; in addition,\nactive mobility requires neuromuscular activation.\n",
+      "normalized_text": "Mobility. The ability of structures or segments of the body\nto move or be moved in order to allow the occurrence of\nrange of motion (ROM) for functional activities (functional\nROM).2,134 Passive mobility is dependent on soft tissue\n(contractile and noncontractile) extensibility; in addition,\nactive mobility requires neuromuscular activation.",
+      "translated_text": ""
+    },
+    {
+      "id": "p2_b14",
+      "page_number": 2,
+      "type": "text",
+      "raw_text": "Muscle performance. The capacity of muscle to produce\ntension and do physical work. Muscle performance encom-\npasses strength, power, and muscular endurance.2\n",
+      "normalized_text": "Muscle performance. The capacity of muscle to produce\ntension and do physical work. Muscle performance encompasses strength, power, and muscular endurance.2",
+      "translated_text": ""
+    },
+    {
+      "id": "p2_b15",
+      "page_number": 2,
+      "type": "text",
+      "raw_text": "Neuromuscular control. Interaction of the sensory and\nmotor systems that enables synergists, agonists and antago-\nnists, as well as stabilizers and neutralizers to anticipate or\n",
+      "normalized_text": "Neuromuscular control. Interaction of the sensory and\nmotor systems that enables synergists, agonists and antagonists, as well as stabilizers and neutralizers to anticipate or",
+      "translated_text": ""
+    },
+    {
+      "id": "p2_b16",
+      "page_number": 2,
+      "type": "text",
+      "raw_text": "2\nTHERAPEUTIC EXERCISE: IMPACT ON PHYSICAL FUNCTION\n",
+      "normalized_text": "2\nTHERAPEUTIC EXERCISE: IMPACT ON PHYSICAL FUNCTION",
+      "translated_text": ""
+    },
+    {
+      "id": "p2_b17",
+      "page_number": 2,
+      "type": "text",
+      "raw_text": "FIGURE 1.1 Interrelated aspects of physical function.\n",
+      "normalized_text": "FIGURE 1.1 Interrelated aspects of physical function.",
+      "translated_text": ""
+    },
+    {
+      "id": "p3_b0",
+      "page_number": 3,
+      "type": "text",
+      "raw_text": "definition of therapeutic exercise to address the full\nscope of soft tissue stretching techniques.\n",
+      "normalized_text": "definition of therapeutic exercise to address the full\nscope of soft tissue stretching techniques.",
+      "translated_text": ""
+    },
+    {
+      "id": "p3_b1",
+      "page_number": 3,
+      "type": "text",
+      "raw_text": "Exercise Safety\n",
+      "normalized_text": "Exercise Safety",
+      "translated_text": ""
+    },
+    {
+      "id": "p3_b2",
+      "page_number": 3,
+      "type": "text",
+      "raw_text": "Regardless of the type of therapeutic exercise interventions\nin a patient’s exercise program, safety is a fundamental\nconsideration in every aspect of the program whether the\nexercises are performed independently or under a thera-\npist’s supervision. Patient safety, of course, is paramount;\nnonetheless, the safety of the therapist must also be consid-\nered, particularly when the therapist is directly involved\nin the application of an exercise procedure or a manual\ntherapy technique.\n",
+      "normalized_text": "Regardless of the type of therapeutic exercise interventions\nin a patient’s exercise program, safety is a fundamental\nconsideration in every aspect of the program whether the\nexercises are performed independently or under a therapist’s supervision. Patient safety, of course, is paramount;\nnonetheless, the safety of the therapist must also be considered, particularly when the therapist is directly involved\nin the application of an exercise procedure or a manual\ntherapy technique.",
+      "translated_text": ""
+    },
+    {
+      "id": "p3_b3",
+      "page_number": 3,
+      "type": "text",
+      "raw_text": "Many factors can influence a patient’s safety during\nexercise. Prior to engaging in exercise, a patient’s health\nhistory and current health status must be explored. A\npatient unaccustomed to physical exertion may be at risk\nfor the occurrence of an adverse effect from exercise asso-\nciated with a known or an undiagnosed health condition.\nMedications can adversely affect a patient’s balance and\ncoordination during exercise or cardiopulmonary response\nto exercise. Therefore, risk factors must be identified and\nweighed carefully before an exercise program is initiated.\nMedical clearance from a patient’s physician may be indi-\ncated before beginning an exercise program.\n",
+      "normalized_text": "Many factors can influence a patient’s safety during\nexercise. Prior to engaging in exercise, a patient’s health\nhistory and current health status must be explored. A\npatient unaccustomed to physical exertion may be at risk\nfor the occurrence of an adverse effect from exercise associated with a known or an undiagnosed health condition.\nMedications can adversely affect a patient’s balance and\ncoordination during exercise or cardiopulmonary response\nto exercise. Therefore, risk factors must be identified and\nweighed carefully before an exercise program is initiated.\nMedical clearance from a patient’s physician may be indicated before beginning an exercise program.",
+      "translated_text": ""
+    },
+    {
+      "id": "p3_b4",
+      "page_number": 3,
+      "type": "text",
+      "raw_text": "The environment in which exercises are performed\nalso affects patient safety. Adequate space and a proper\nsupport surface for exercise are necessary prerequisites\nfor patient safety. If exercise equipment is used in the\nclinical setting or at home, to ensure patient safety the\nequipment must be well maintained and in good working\ncondition, must fit the patient, and must be applied and\nused properly.\n",
+      "normalized_text": "The environment in which exercises are performed\nalso affects patient safety. Adequate space and a proper\nsupport surface for exercise are necessary prerequisites\nfor patient safety. If exercise equipment is used in the\nclinical setting or at home, to ensure patient safety the\nequipment must be well maintained and in good working\ncondition, must fit the patient, and must be applied and\nused properly.",
+      "translated_text": ""
+    },
+    {
+      "id": "p3_b5",
+      "page_number": 3,
+      "type": "text",
+      "raw_text": "Specific to each exercise in a program, the accuracy\nwith which a patient performs an exercise affects safety,\nincluding proper posture or alignment of the body, execu-\ntion of the correct movement patterns, and performing\neach exercise with the appropriate intensity, speed, and\nduration. A patient must be informed of the signs of\n",
+      "normalized_text": "Specific to each exercise in a program, the accuracy\nwith which a patient performs an exercise affects safety,\nincluding proper posture or alignment of the body, execution of the correct movement patterns, and performing\neach exercise with the appropriate intensity, speed, and\nduration. A patient must be informed of the signs of",
+      "translated_text": ""
+    },
+    {
+      "id": "p3_b6",
+      "page_number": 3,
+      "type": "text",
+      "raw_text": "respond to proprioceptive and kinesthetic information and,\nsubsequently, to work in correct sequence to create coordi-\nnated movement.72\n",
+      "normalized_text": "respond to proprioceptive and kinesthetic information and,\nsubsequently, to work in correct sequence to create coordinated movement.72",
+      "translated_text": ""
+    },
+    {
+      "id": "p3_b7",
+      "page_number": 3,
+      "type": "text",
+      "raw_text": "Postural control, postural stability, and equilibrium.\nUsed interchangeably with static or dynamic bal-\nance.50,124,127\n",
+      "normalized_text": "Postural control, postural stability, and equilibrium.\nUsed interchangeably with static or dynamic balance.50,124,127",
+      "translated_text": ""
+    },
+    {
+      "id": "p3_b8",
+      "page_number": 3,
+      "type": "text",
+      "raw_text": "Stability. The ability of the neuromuscular system through\nsynergistic muscle actions to hold a proximal or distal\nbody segment in a stationary position or to control a stable\nbase during superimposed movement.50,127,134 Joint stability\nis the maintenence of proper alignment of bony partners of\na joint by means of passive and dynamic components.85\n",
+      "normalized_text": "Stability. The ability of the neuromuscular system through\nsynergistic muscle actions to hold a proximal or distal\nbody segment in a stationary position or to control a stable\nbase during superimposed movement.50,127,134 Joint stability\nis the maintenence of proper alignment of bony partners of\na joint by means of passive and dynamic components.85",
+      "translated_text": ""
+    },
+    {
+      "id": "p3_b9",
+      "page_number": 3,
+      "type": "text",
+      "raw_text": "The systems of the body that control each of these\naspects of physical function react, adapt, and develop in\nresponse to forces and physical stresses (stress ! force/\narea) placed upon tisses that make up body systems.81,84\nGravity, for example, is a constant force that affects the\nmusculoskeletal, neuromuscular, and circulatory systems.\nAdditional forces, incurred during routine physical activi-\nties, help the body maintain a functional level of strength,\ncardiopulmonary fitness, and mobility. Imposed forces and\nphysical stresses that are excessive can cause acute\ninjuries, such as sprains and fractures, or chronic condi-\ntions, such as repetitive stress disorders.84 The absence of\ntypical forces on the body can also cause degeneration,\ndegradation, or deformity. For example, the absence of nor-\nmal weight bearing associated with prolonged bed rest or\nimmobilization weakens muscle and bone.8,20,69,84,108 Pro-\nlonged inactivity also leads to decreased efficiency of the\ncirculatory and pulmonary systems.1\n",
+      "normalized_text": "The systems of the body that control each of these\naspects of physical function react, adapt, and develop in\nresponse to forces and physical stresses (stress ! force/\narea) placed upon tisses that make up body systems.81,84\nGravity, for example, is a constant force that affects the\nmusculoskeletal, neuromuscular, and circulatory systems.\nAdditional forces, incurred during routine physical activities, help the body maintain a functional level of strength,\ncardiopulmonary fitness, and mobility. Imposed forces and\nphysical stresses that are excessive can cause acute\ninjuries, such as sprains and fractures, or chronic conditions, such as repetitive stress disorders.84 The absence of\ntypical forces on the body can also cause degeneration,\ndegradation, or deformity. For example, the absence of normal weight bearing associated with prolonged bed rest or\nimmobilization weakens muscle and bone.8,20,69,84,108 Prolonged inactivity also leads to decreased efficiency of the\ncirculatory and pulmonary systems.1",
+      "translated_text": ""
+    },
+    {
+      "id": "p3_b10",
+      "page_number": 3,
+      "type": "text",
+      "raw_text": "Impairment of any one or more of the body systems\nand subsequent impairment of any aspect of physical func-\ntion, separately or jointly, can result in functional limita-\ntion and disability. Therapeutic exercise interventions\ninvolve the application of carefully graded physical stress-\nes and forces that are imposed on impaired body systems,\nspecific tissues, or individual structures in a controlled,\nprogressive, safely executed manner to reduce physical\nimpairments and improve function.\n",
+      "normalized_text": "Impairment of any one or more of the body systems\nand subsequent impairment of any aspect of physical function, separately or jointly, can result in functional limitation and disability. Therapeutic exercise interventions\ninvolve the application of carefully graded physical stresses and forces that are imposed on impaired body systems,\nspecific tissues, or individual structures in a controlled,\nprogressive, safely executed manner to reduce physical\nimpairments and improve function.",
+      "translated_text": ""
+    },
+    {
+      "id": "p3_b11",
+      "page_number": 3,
+      "type": "text",
+      "raw_text": "Types of Therapeutic Exercise Intervention\n",
+      "normalized_text": "Types of Therapeutic Exercise Intervention",
+      "translated_text": ""
+    },
+    {
+      "id": "p3_b12",
+      "page_number": 3,
+      "type": "text",
+      "raw_text": "Therapeutic exercise procedures embody a wide variety\nof activities, actions, and techniques. The techniques\nselected for an individualized therapeutic exercise pro-\ngram are based on a therapist’s determination of the\nunderlying cause or causes of a patient’s impairments,\nfunctional limitations, or disability. The types of thera-\npeutic exercise interventions presented in this textbook\nare listed in Box 1.1. Additional exercise interventions\nare used by therapists for patients with neuromuscular\nor developmental conditions.2\n",
+      "normalized_text": "Therapeutic exercise procedures embody a wide variety\nof activities, actions, and techniques. The techniques\nselected for an individualized therapeutic exercise program are based on a therapist’s determination of the\nunderlying cause or causes of a patient’s impairments,\nfunctional limitations, or disability. The types of therapeutic exercise interventions presented in this textbook\nare listed in Box 1.1. Additional exercise interventions\nare used by therapists for patients with neuromuscular\nor developmental conditions.2",
+      "translated_text": ""
+    },
+    {
+      "id": "p3_b13",
+      "page_number": 3,
+      "type": "text",
+      "raw_text": "N O T E : Although joint mobilization techniques are often\nclassified as manual therapy procedures, not therapeutic\nexercise,2 the authors of this textbook have chosen to\ninclude joint mobilization procedures under the broad\n",
+      "normalized_text": "N O T E : Although joint mobilization techniques are often\nclassified as manual therapy procedures, not therapeutic\nexercise,2 the authors of this textbook have chosen to\ninclude joint mobilization procedures under the broad",
+      "translated_text": ""
+    },
+    {
+      "id": "p3_b14",
+      "page_number": 3,
+      "type": "text",
+      "raw_text": "C H A P T E R  1\nTherapeutic Exercise: Foundational Concepts\n3\n",
+      "normalized_text": "C H A P T E R 1\nTherapeutic Exercise: Foundational Concepts\n3",
+      "translated_text": ""
+    },
+    {
+      "id": "p3_b15",
+      "page_number": 3,
+      "type": "text",
+      "raw_text": "BOX 1.1\nTherapeutic Exercise Interventions\n",
+      "normalized_text": "BOX 1.1\nTherapeutic Exercise Interventions",
+      "translated_text": ""
+    },
+    {
+      "id": "p3_b16",
+      "page_number": 3,
+      "type": "text",
+      "raw_text": "• Aerobic conditioning and reconditioning\n• Muscle performance exercises: strength, power, and\n",
+      "normalized_text": "• Aerobic conditioning and reconditioning\n• Muscle performance exercises: strength, power, and",
+      "translated_text": ""
+    },
+    {
+      "id": "p3_b17",
+      "page_number": 3,
+      "type": "text",
+      "raw_text": "endurance training\n• Stretching techniques including muscle-lengthening\n",
+      "normalized_text": "endurance training\n• Stretching techniques including muscle-lengthening",
+      "translated_text": ""
+    },
+    {
+      "id": "p3_b18",
+      "page_number": 3,
+      "type": "text",
+      "raw_text": "procedures and joint mobilization techniques\n• Neuromuscular control, inhibition, and facilitation\n",
+      "normalized_text": "procedures and joint mobilization techniques\n• Neuromuscular control, inhibition, and facilitation",
+      "translated_text": ""
+    },
+    {
+      "id": "p3_b19",
+      "page_number": 3,
+      "type": "text",
+      "raw_text": "techniques and posture awareness training\n• Postural control, body mechanics, and stabilization\n",
+      "normalized_text": "techniques and posture awareness training\n• Postural control, body mechanics, and stabilization",
+      "translated_text": ""
+    },
+    {
+      "id": "p3_b20",
+      "page_number": 3,
+      "type": "text",
+      "raw_text": "exercises\n• Balance exercises and agility training\n• Relaxation exercises\n• Breathing exercises and ventilatory muscle training\n• Task-specific functional training\n",
+      "normalized_text": "exercises\n• Balance exercises and agility training\n• Relaxation exercises\n• Breathing exercises and ventilatory muscle training\n• Task-specific functional training",
+      "translated_text": ""
+    },
+    {
+      "id": "p4_b0",
+      "page_number": 4,
+      "type": "text",
+      "raw_text": "fatigue, the relationship of fatigue to the risk of injury,\nand the importance of rest for recovery during and after\nan exercise routine. When a patient is being directly\nsupervised in a clinical or home setting while learning\nan exercise program, the therapist can control these vari-\nables. However, when a patient is carrying out an exercise\nprogram independently at home or at a community fitness\nfacility, patient safety is enhanced and the risk of injury or\nre-injury is minimized by effective exercise instruction\nand patient education. Suggestions for effective exercise\ninstruction and patient education are discussed in a later\nsection of this chapter.\n",
+      "normalized_text": "fatigue, the relationship of fatigue to the risk of injury,\nand the importance of rest for recovery during and after\nan exercise routine. When a patient is being directly\nsupervised in a clinical or home setting while learning\nan exercise program, the therapist can control these variables. However, when a patient is carrying out an exercise\nprogram independently at home or at a community fitness\nfacility, patient safety is enhanced and the risk of injury or\nre-injury is minimized by effective exercise instruction\nand patient education. Suggestions for effective exercise\ninstruction and patient education are discussed in a later\nsection of this chapter.",
+      "translated_text": ""
+    },
+    {
+      "id": "p4_b1",
+      "page_number": 4,
+      "type": "text",
+      "raw_text": "As mentioned, therapist safety is also a consideration\nto avoid work-related injury. For example, when a therapist\nis using manual resistance during an exercise designed to\nimprove a patient’s strength or is applying a stretch force\nmanually to improve a patient’s range of motion, the thera-\npist must incorporate principles of proper body mechanics\nand joint protection into these manual techniques to mini-\nmize his or her own risk of injury.\n",
+      "normalized_text": "As mentioned, therapist safety is also a consideration\nto avoid work-related injury. For example, when a therapist\nis using manual resistance during an exercise designed to\nimprove a patient’s strength or is applying a stretch force\nmanually to improve a patient’s range of motion, the therapist must incorporate principles of proper body mechanics\nand joint protection into these manual techniques to minimize his or her own risk of injury.",
+      "translated_text": ""
+    },
+    {
+      "id": "p4_b2",
+      "page_number": 4,
+      "type": "text",
+      "raw_text": "Throughout each of the chapters of this textbook,\nprecautions, contraindications, and safety considerations\nare addressed for the management of specific pathologies,\nimpairments, and functional limitations and for the use and\nprogression of specific therapeutic exercise interventions.\n",
+      "normalized_text": "Throughout each of the chapters of this textbook,\nprecautions, contraindications, and safety considerations\nare addressed for the management of specific pathologies,\nimpairments, and functional limitations and for the use and\nprogression of specific therapeutic exercise interventions.",
+      "translated_text": ""
+    },
+    {
+      "id": "p4_b3",
+      "page_number": 4,
+      "type": "text",
+      "raw_text": "PROCESS AND MODELS\nOF DISABLEMENT\n",
+      "normalized_text": "PROCESS AND MODELS\nOF DISABLEMENT",
+      "translated_text": ""
+    },
+    {
+      "id": "p4_b4",
+      "page_number": 4,
+      "type": "text",
+      "raw_text": "It has been said that the physical therapy profession is\ndefined by a body of knowledge and clinical applications\nthat are directed toward the elimination or resolution of\ndisability.110 Understanding the disabling consequences of\ndisease, injury, and abnormalities of development and how\nthe risk of potential disability can be reduced, therefore,\nmust be fundamental to the provision of effective care and\nservices, which are geared to the restoration of meaningful\nfunction for patients and their families, significant others,\nand caregivers.\n",
+      "normalized_text": "It has been said that the physical therapy profession is\ndefined by a body of knowledge and clinical applications\nthat are directed toward the elimination or resolution of\ndisability.110 Understanding the disabling consequences of\ndisease, injury, and abnormalities of development and how\nthe risk of potential disability can be reduced, therefore,\nmust be fundamental to the provision of effective care and\nservices, which are geared to the restoration of meaningful\nfunction for patients and their families, significant others,\nand caregivers.",
+      "translated_text": ""
+    },
+    {
+      "id": "p4_b5",
+      "page_number": 4,
+      "type": "text",
+      "raw_text": "The Disablement Process\n",
+      "normalized_text": "The Disablement Process",
+      "translated_text": ""
+    },
+    {
+      "id": "p4_b6",
+      "page_number": 4,
+      "type": "text",
+      "raw_text": "Definition\nDisablement is a term that refers to the impact(s) and func-\ntional consequences of acute or chronic conditions, such as\ndisease, injury, and congenital or developmental abnormal-\nities, on specific body systems that compromise basic\nhuman performance and an individual’s ability to meet\nnecessary, customary, expected, and desired societal func-\ntions and roles.60,86,143 Physical therapists most commonly\nprovide care and services to people with physical disabili-\nty. Social, emotional, and cognitive disablement can affect\nphysical function and vice versa and, therefore, should not\nbe disregarded or dismissed.58,60\n",
+      "normalized_text": "Definition\nDisablement is a term that refers to the impact(s) and functional consequences of acute or chronic conditions, such as\ndisease, injury, and congenital or developmental abnormalities, on specific body systems that compromise basic\nhuman performance and an individual’s ability to meet\nnecessary, customary, expected, and desired societal functions and roles.60,86,143 Physical therapists most commonly\nprovide care and services to people with physical disability. Social, emotional, and cognitive disablement can affect\nphysical function and vice versa and, therefore, should not\nbe disregarded or dismissed.58,60",
+      "translated_text": ""
+    },
+    {
+      "id": "p4_b7",
+      "page_number": 4,
+      "type": "text",
+      "raw_text": "Implications in Health Care\nKnowledge of the process of disablement provides a\nfoundation for health-care professionals to develop an\n",
+      "normalized_text": "Implications in Health Care\nKnowledge of the process of disablement provides a\nfoundation for health-care professionals to develop an",
+      "translated_text": ""
+    },
+    {
+      "id": "p4_b8",
+      "page_number": 4,
+      "type": "text",
+      "raw_text": "appreciation of the complex relationships among func-\ntion, disability, and health.62,132 This knowledge, in turn,\nprovides a theoretical framework upon which practice\ncan be organized and research can be based, thus facilitat-\ning effective management and care of patients that is\nreflected by meaningful functional outcomes.40,62\n",
+      "normalized_text": "appreciation of the complex relationships among function, disability, and health.62,132 This knowledge, in turn,\nprovides a theoretical framework upon which practice\ncan be organized and research can be based, thus facilitating effective management and care of patients that is\nreflected by meaningful functional outcomes.40,62",
+      "translated_text": ""
+    },
+    {
+      "id": "p4_b9",
+      "page_number": 4,
+      "type": "text",
+      "raw_text": "Inherent in the integration and application of knowl-\nedge of the disablement process in health-care delivery is\nan understanding that the process is not unidirectional; that\nis, it is not necessarily unpreventable or irreversible.14 Fur-\nthermore, it is assumed that in most instances, depending\non factors such as the severity and duration of the patho-\nlogical condition, a patient’s access to quality health care\nas well as the motivation and desires of the patient, the\nprogression of the process can indeed be altered and the\npatient’s function improved.2,14,132,133\n",
+      "normalized_text": "Inherent in the integration and application of knowledge of the disablement process in health-care delivery is\nan understanding that the process is not unidirectional; that\nis, it is not necessarily unpreventable or irreversible.14 Furthermore, it is assumed that in most instances, depending\non factors such as the severity and duration of the pathological condition, a patient’s access to quality health care\nas well as the motivation and desires of the patient, the\nprogression of the process can indeed be altered and the\npatient’s function improved.2,14,132,133",
+      "translated_text": ""
+    },
+    {
+      "id": "p4_b10",
+      "page_number": 4,
+      "type": "text",
+      "raw_text": "An understanding and application of the disablement\nprocess shifts the focus of patient management from strict\ntreatment of a disease or injury to treatment of the impact\nthat a disease, injury, or disorder has on a patient’s function\nas well as the identification of the underlying causes of the\npatient’s dysfunction. This perspective puts the person, not\nsolely the disease or disorder, at the center of efforts to\nprevent or halt the progression of disablement by employ-\ning interventions that improve a patient’s functional abili-\nties while simultaneously reducing or eliminating the\ncauses of disability.39,132,133\n",
+      "normalized_text": "An understanding and application of the disablement\nprocess shifts the focus of patient management from strict\ntreatment of a disease or injury to treatment of the impact\nthat a disease, injury, or disorder has on a patient’s function\nas well as the identification of the underlying causes of the\npatient’s dysfunction. This perspective puts the person, not\nsolely the disease or disorder, at the center of efforts to\nprevent or halt the progression of disablement by employing interventions that improve a patient’s functional abilities while simultaneously reducing or eliminating the\ncauses of disability.39,132,133",
+      "translated_text": ""
+    },
+    {
+      "id": "p4_b11",
+      "page_number": 4,
+      "type": "text",
+      "raw_text": "Models of Disablement\n",
+      "normalized_text": "Models of Disablement",
+      "translated_text": ""
+    },
+    {
+      "id": "p4_b12",
+      "page_number": 4,
+      "type": "text",
+      "raw_text": "Several models that depict the process of disablement\nhave been proposed over the past 40 years. The first two\nschema developed were the Nagi model86,87 and the Inter-\nnational Classification of Impairments, Disabilities, and\nHandicaps (ICIDH) model for the World Health Organiza-\ntion (WHO).51 The ICIDH model was revised after its\noriginal publication, with adjustments made in the descrip-\ntions of the classification criteria of the model based on\ninput from health-care practitioners as they became famil-\niar with the original model.47 The National Center for\nMedical Rehabilitation Research (NCMRR) integrated\ncomponents of the Nagi model with the original ICIDH\nmodel to develop its own model.89 The NCMRR model\nadded interactions of individual risk factors, including\nphysical and social factors, to the disablement process.\n",
+      "normalized_text": "Several models that depict the process of disablement\nhave been proposed over the past 40 years. The first two\nschema developed were the Nagi model86,87 and the International Classification of Impairments, Disabilities, and\nHandicaps (ICIDH) model for the World Health Organization (WHO).51 The ICIDH model was revised after its\noriginal publication, with adjustments made in the descriptions of the classification criteria of the model based on\ninput from health-care practitioners as they became familiar with the original model.47 The National Center for\nMedical Rehabilitation Research (NCMRR) integrated\ncomponents of the Nagi model with the original ICIDH\nmodel to develop its own model.89 The NCMRR model\nadded interactions of individual risk factors, including\nphysical and social factors, to the disablement process.",
+      "translated_text": ""
+    },
+    {
+      "id": "p4_b13",
+      "page_number": 4,
+      "type": "text",
+      "raw_text": "Although each of these models uses slightly different\nterminology, each reflects a spectrum of disablement.\nSeveral sources in the literature have discussed or com-\npared and contrasted the terminology and descriptors\nused in these and other models.2,39,51,59,60,86,87,89 Despite\nthe variations in these models, each taxonomy reflects\nthe complex interrelationships among the following.\n",
+      "normalized_text": "Although each of these models uses slightly different\nterminology, each reflects a spectrum of disablement.\nSeveral sources in the literature have discussed or compared and contrasted the terminology and descriptors\nused in these and other models.2,39,51,59,60,86,87,89 Despite\nthe variations in these models, each taxonomy reflects\nthe complex interrelationships among the following.",
+      "translated_text": ""
+    },
+    {
+      "id": "p4_b14",
+      "page_number": 4,
+      "type": "text",
+      "raw_text": "Acute or chronic pathology\n",
+      "normalized_text": "Acute or chronic pathology",
+      "translated_text": ""
+    },
+    {
+      "id": "p4_b15",
+      "page_number": 4,
+      "type": "text",
+      "raw_text": "Impairments\nFunctional limitations\nDisabilities, handicaps, or societal limitations\n",
+      "normalized_text": "Impairments\nFunctional limitations\nDisabilities, handicaps, or societal limitations",
+      "translated_text": ""
+    },
+    {
+      "id": "p4_b16",
+      "page_number": 4,
+      "type": "text",
+      "raw_text": "The conceptual frameworks of the Nagi, ICIDH, and\nNCMRR models of disablement, although applied widely\n",
+      "normalized_text": "The conceptual frameworks of the Nagi, ICIDH, and\nNCMRR models of disablement, although applied widely",
+      "translated_text": ""
+    },
+    {
+      "id": "p4_b17",
+      "page_number": 4,
+      "type": "text",
+      "raw_text": "4\nPROCESS AND MODELS OF DISABLEMENT\n",
+      "normalized_text": "4\nPROCESS AND MODELS OF DISABLEMENT",
+      "translated_text": ""
+    },
+    {
+      "id": "p5_b0",
+      "page_number": 5,
+      "type": "text",
+      "raw_text": "Use of Disablement Models and\nClassifications in Physical Therapy\n",
+      "normalized_text": "Use of Disablement Models and\nClassifications in Physical Therapy",
+      "translated_text": ""
+    },
+    {
+      "id": "p5_b1",
+      "page_number": 5,
+      "type": "text",
+      "raw_text": "During the early 1990s physical therapists began to explore\nthe potential use of disablement models and suggested that\ndisablement schema and related terminology provided an\nappropriate framework for clinical decision making in\npractice and research.40,59,120 In addition, practitioners and\nresearchers suggested that consistent use of disablement-\nrelated language could be a mechanism to standardize ter-\nminology for documentation and communication in the\nclinical and research settings.45 The American Physical\nTherapy Association (APTA) subsequently incorporated an\nextension of the Nagi disablement model and related termi-\nnology into its evolving consensus document, the Guide to\nPhysical Therapist Practice2 (often called the Guide),\nwhich was developed to reflect “best practice” from the\ninitial examination to the outcomes of intervention. The\nGuide also uses the concept of disablement as a framework\nfor organizing and prioritizing clinical decisions made dur-\ning the continuum of physical therapy care and services.\n",
+      "normalized_text": "During the early 1990s physical therapists began to explore\nthe potential use of disablement models and suggested that\ndisablement schema and related terminology provided an\nappropriate framework for clinical decision making in\npractice and research.40,59,120 In addition, practitioners and\nresearchers suggested that consistent use of disablementrelated language could be a mechanism to standardize terminology for documentation and communication in the\nclinical and research settings.45 The American Physical\nTherapy Association (APTA) subsequently incorporated an\nextension of the Nagi disablement model and related terminology into its evolving consensus document, the Guide to\nPhysical Therapist Practice2 (often called the Guide),\nwhich was developed to reflect “best practice” from the\ninitial examination to the outcomes of intervention. The\nGuide also uses the concept of disablement as a framework\nfor organizing and prioritizing clinical decisions made during the continuum of physical therapy care and services.",
+      "translated_text": ""
+    },
+    {
+      "id": "p5_b2",
+      "page_number": 5,
+      "type": "text",
+      "raw_text": "To be consistent with the language of the Guide,\nFigure 1.2, which was configured for this textbook, depicts\na model of disablement and the potential impacts of thera-\npeutic exercise interventions on the disablement process.\nThe impact of risk factors has also been included in this\ndepiction of the process. Incorporating risk factors into the\n",
+      "normalized_text": "To be consistent with the language of the Guide,\nFigure 1.2, which was configured for this textbook, depicts\na model of disablement and the potential impacts of therapeutic exercise interventions on the disablement process.\nThe impact of risk factors has also been included in this\ndepiction of the process. Incorporating risk factors into the",
+      "translated_text": ""
+    },
+    {
+      "id": "p5_b3",
+      "page_number": 5,
+      "type": "text",
+      "raw_text": "in clinical practice and research in many health-care pro-\nfessions, have been criticized for their perceived focus on\ndisease and a medical-biological view of disability as well\nas their lack of attention to the person with a disability.21 In\nresponse to these criticisms, the WHO undertook a broad\nrevision of its conceptual framework and system for classi-\nfying disability described in its ICIDH model. Through a\ncomprehensive consensus process over a number of years,\nthe WHO developed the International Classification of\nFunctioning, Disability, and Health (ICF).52,131-133 This new\nconceptual model integrates functioning and disability and\nis characterized as a bio-psycho-social model of disable-\nment that provides a coherent perspective of various\naspects of health. The revised model was also designed to\nplace less emphasis on disease and greater emphasis on\nhow people affected by health conditions live.21,52,132,133\nThe ICF model consists of the following components of\nhealth and health-related influences.\n",
+      "normalized_text": "in clinical practice and research in many health-care professions, have been criticized for their perceived focus on\ndisease and a medical-biological view of disability as well\nas their lack of attention to the person with a disability.21 In\nresponse to these criticisms, the WHO undertook a broad\nrevision of its conceptual framework and system for classifying disability described in its ICIDH model. Through a\ncomprehensive consensus process over a number of years,\nthe WHO developed the International Classification of\nFunctioning, Disability, and Health (ICF).52,131-133 This new\nconceptual model integrates functioning and disability and\nis characterized as a bio-psycho-social model of disablement that provides a coherent perspective of various\naspects of health. The revised model was also designed to\nplace less emphasis on disease and greater emphasis on\nhow people affected by health conditions live.21,52,132,133\nThe ICF model consists of the following components of\nhealth and health-related influences.",
+      "translated_text": ""
+    },
+    {
+      "id": "p5_b4",
+      "page_number": 5,
+      "type": "text",
+      "raw_text": "Impairment of body structure (anatomical) and function\n(physiological)\nActivity limitation\n",
+      "normalized_text": "Impairment of body structure (anatomical) and function\n(physiological)\nActivity limitation",
+      "translated_text": ""
+    },
+    {
+      "id": "p5_b5",
+      "page_number": 5,
+      "type": "text",
+      "raw_text": "Participation restriction\nImpact of contextual factors (environmental and person-\nal) on functioning, disability, and health\n",
+      "normalized_text": "Participation restriction\nImpact of contextual factors (environmental and personal) on functioning, disability, and health",
+      "translated_text": ""
+    },
+    {
+      "id": "p5_b6",
+      "page_number": 5,
+      "type": "text",
+      "raw_text": "The components of the ICF model are compared in\nTable 1.1 to the Nagi and ICIDH models of disablement.\n",
+      "normalized_text": "The components of the ICF model are compared in\nTable 1.1 to the Nagi and ICIDH models of disablement.",
+      "translated_text": ""
+    },
+    {
+      "id": "p5_b7",
+      "page_number": 5,
+      "type": "text",
+      "raw_text": "C H A P T E R  1\nTherapeutic Exercise: Foundational Concepts\n5\n",
+      "normalized_text": "C H A P T E R 1\nTherapeutic Exercise: Foundational Concepts\n5",
+      "translated_text": ""
+    },
+    {
+      "id": "p5_b8",
+      "page_number": 5,
+      "type": "text",
+      "raw_text": "TABLE 1.1\nComparison of Terminology of Three Disablement Models\n",
+      "normalized_text": "TABLE 1.1\nComparison of Terminology of Three Disablement Models",
+      "translated_text": ""
+    },
+    {
+      "id": "p5_b9",
+      "page_number": 5,
+      "type": "text",
+      "raw_text": "Model\nTissue/Cellular Level\nOrgan/System Level\nPersonal Level\nSocietal Level\n",
+      "normalized_text": "Model\nTissue/Cellular Level\nOrgan/System Level\nPersonal Level\nSocietal Level",
+      "translated_text": ""
+    },
+    {
+      "id": "p5_b10",
+      "page_number": 5,
+      "type": "text",
+      "raw_text": "Nagi\nActive pathology\nImpairment\nFunctional limitation\nDisability\nICIDH*\nDisease\nImpairment \nDisability\nHandicap\nICF†\nImpairment of body \nActivity limitation\nParticipation restriction\nstructure/function\n",
+      "normalized_text": "Nagi\nActive pathology\nImpairment\nFunctional limitation\nDisability\nICIDH*\nDisease\nImpairment\nDisability\nHandicap\nICF†\nImpairment of body\nActivity limitation\nParticipation restriction\nstructure/function",
+      "translated_text": ""
+    },
+    {
+      "id": "p5_b11",
+      "page_number": 5,
+      "type": "text",
+      "raw_text": "*International Classification of Impairments, Disabilities, and Handicaps.\n†International Classification of Functioning, Disability, and Health.\n",
+      "normalized_text": "*International Classification of Impairments, Disabilities, and Handicaps.\n†International Classification of Functioning, Disability, and Health.",
+      "translated_text": ""
+    },
+    {
+      "id": "p5_b12",
+      "page_number": 5,
+      "type": "text",
+      "raw_text": "FIGURE 1.2 Impact of therapeutic exercise on the disablement process.\n",
+      "normalized_text": "FIGURE 1.2 Impact of therapeutic exercise on the disablement process.",
+      "translated_text": ""
+    },
+    {
+      "id": "p6_b0",
+      "page_number": 6,
+      "type": "text",
+      "raw_text": "model underscores the assumption that disability can\nbe prevented, eliminated, or reduced if the risk of occur-\nrence or severity of pathology, impairment, or functional\nlimitation is reduced. The model also shows that effective\ninterventions, in particular therapeutic exercise, can\nhave a positive impact on every aspect of the disablement\nprocess.\n",
+      "normalized_text": "model underscores the assumption that disability can\nbe prevented, eliminated, or reduced if the risk of occurrence or severity of pathology, impairment, or functional\nlimitation is reduced. The model also shows that effective\ninterventions, in particular therapeutic exercise, can\nhave a positive impact on every aspect of the disablement\nprocess.",
+      "translated_text": ""
+    },
+    {
+      "id": "p6_b1",
+      "page_number": 6,
+      "type": "text",
+      "raw_text": "N O T E : Shortly after the second edition of the Guide\nwas published, the WHO adopted and disseminated the ICF\nmodel of disablement, with its newly developed conceptual\nframework and system for classifying functioning and dis-\nability.52 Consequently, information about this model and\nits revised concepts and terminology were not incorporated\ninto the Guide, and so the elements of the ICF model are\nnot yet widely used by the physical therapy community.\nBecause physical therapists need to be aware of the\nchanging concepts and language of disablement, it is\nlikely that the next edition of the Guide will reflect this\ninformation.\n",
+      "normalized_text": "N O T E : Shortly after the second edition of the Guide\nwas published, the WHO adopted and disseminated the ICF\nmodel of disablement, with its newly developed conceptual\nframework and system for classifying functioning and disability.52 Consequently, information about this model and\nits revised concepts and terminology were not incorporated\ninto the Guide, and so the elements of the ICF model are\nnot yet widely used by the physical therapy community.\nBecause physical therapists need to be aware of the\nchanging concepts and language of disablement, it is\nlikely that the next edition of the Guide will reflect this\ninformation.",
+      "translated_text": ""
+    },
+    {
+      "id": "p6_b2",
+      "page_number": 6,
+      "type": "text",
+      "raw_text": "By choosing to use a model of disablement as part of\nthe theoretical framework of practice, physical therapists\nhave a responsibility to provide evidence that there are,\nindeed, links among the elements of the disablement\nprocess that can be identified by physical therapy tests\nand measures. It is also the responsibility of the profes-\nsion to demonstrate that not only can physical impair-\nments be reduced but functional abilities can be signifi-\ncantly enhanced by physical therapy interventions. This\nbody of evidence has just begun to emerge during the\npast decade. Examples of some of this evidence are inte-\ngrated into this chapter and interspersed throughout the\ntextbook.\n",
+      "normalized_text": "By choosing to use a model of disablement as part of\nthe theoretical framework of practice, physical therapists\nhave a responsibility to provide evidence that there are,\nindeed, links among the elements of the disablement\nprocess that can be identified by physical therapy tests\nand measures. It is also the responsibility of the profession to demonstrate that not only can physical impairments be reduced but functional abilities can be significantly enhanced by physical therapy interventions. This\nbody of evidence has just begun to emerge during the\npast decade. Examples of some of this evidence are integrated into this chapter and interspersed throughout the\ntextbook.",
+      "translated_text": ""
+    },
+    {
+      "id": "p6_b3",
+      "page_number": 6,
+      "type": "text",
+      "raw_text": "An overview of the key components of the process\nof disablement, using language consistent with that in the\nGuide, is presented in the following sections of this chap-\nter, with additional discussion of risk factors and their\npotential impact on disability. The relationship of the\ndisablement model to patient management and physical\ntherapy interventions, specifically therapeutic exercise,\nis also discussed.\n",
+      "normalized_text": "An overview of the key components of the process\nof disablement, using language consistent with that in the\nGuide, is presented in the following sections of this chapter, with additional discussion of risk factors and their\npotential impact on disability. The relationship of the\ndisablement model to patient management and physical\ntherapy interventions, specifically therapeutic exercise,\nis also discussed.",
+      "translated_text": ""
+    },
+    {
+      "id": "p6_b4",
+      "page_number": 6,
+      "type": "text",
+      "raw_text": "Pathology/Pathophysiology\nThis first major component of the disablement model\nrefers to disruptions of the body’s homeostasis as the\nresult of acute or chronic diseases, disorders, or condi-\ntions characterized by a set of abnormal findings (clus-\nters of signs and symptoms) that are indicative of alter-\nations or interruptions of structure or function of the\nbody primarily identified at the cellular level.2,36 Identi-\nfication and classification of these abnormalities of\nanatomical, physiological, or psychological structure or\nprocess generally trigger medical intervention based on\na medical diagnosis.\n",
+      "normalized_text": "Pathology/Pathophysiology\nThis first major component of the disablement model\nrefers to disruptions of the body’s homeostasis as the\nresult of acute or chronic diseases, disorders, or conditions characterized by a set of abnormal findings (clusters of signs and symptoms) that are indicative of alterations or interruptions of structure or function of the\nbody primarily identified at the cellular level.2,36 Identification and classification of these abnormalities of\nanatomical, physiological, or psychological structure or\nprocess generally trigger medical intervention based on\na medical diagnosis.",
+      "translated_text": ""
+    },
+    {
+      "id": "p6_b5",
+      "page_number": 6,
+      "type": "text",
+      "raw_text": "Physical therapists in all areas of practice treat patients\nwith a multitude of pathologies. Knowledge of these\npathologies (medical diagnoses) is important background\ninformation, but it does not tell the therapist how to assess\nand treat a patient’s dysfunction that arises from the patho-\nlogical condition. Despite an accurate medical diagnosis\nand a therapist’s thorough knowledge of specific patholo-\ngies, the experienced therapist knows full well that two\npatients with the same medical diagnosis, such as rheuma-\ntoid arthritis, and the same extent of joint destruction (con-\nfirmed radiologically) may have very different severities\nof impairment and functional limitation and, consequently,\nvery different degrees of disability. This emphasizes the\nneed for physical therapists to always pay close attention\nto the impact(s) of a particular pathology on function when\ndesigning meaningful management strategies to improve\nfunctional abilities.\n",
+      "normalized_text": "Physical therapists in all areas of practice treat patients\nwith a multitude of pathologies. Knowledge of these\npathologies (medical diagnoses) is important background\ninformation, but it does not tell the therapist how to assess\nand treat a patient’s dysfunction that arises from the pathological condition. Despite an accurate medical diagnosis\nand a therapist’s thorough knowledge of specific pathologies, the experienced therapist knows full well that two\npatients with the same medical diagnosis, such as rheumatoid arthritis, and the same extent of joint destruction (confirmed radiologically) may have very different severities\nof impairment and functional limitation and, consequently,\nvery different degrees of disability. This emphasizes the\nneed for physical therapists to always pay close attention\nto the impact(s) of a particular pathology on function when\ndesigning meaningful management strategies to improve\nfunctional abilities.",
+      "translated_text": ""
+    },
+    {
+      "id": "p6_b6",
+      "page_number": 6,
+      "type": "text",
+      "raw_text": "Impairments\nImpairments are the consequences of pathological condi-\ntions; that is, they are the signs and symptoms that reflect\nabnormalities at the body system, organ, or tissue\nlevel.2,36,58\n",
+      "normalized_text": "Impairments\nImpairments are the consequences of pathological conditions; that is, they are the signs and symptoms that reflect\nabnormalities at the body system, organ, or tissue\nlevel.2,36,58",
+      "translated_text": ""
+    },
+    {
+      "id": "p6_b7",
+      "page_number": 6,
+      "type": "text",
+      "raw_text": "Types of Impairment\nImpairments can be categorized as arising from anatomi-\ncal, physiological, or psychological alterations as well as\nlosses or abnormalities of structure or function of a body\nsystem. Physical therapists typically provide care and serv-\nices to patients with impairments that affect the following\nsystems.\n",
+      "normalized_text": "Types of Impairment\nImpairments can be categorized as arising from anatomical, physiological, or psychological alterations as well as\nlosses or abnormalities of structure or function of a body\nsystem. Physical therapists typically provide care and services to patients with impairments that affect the following\nsystems.",
+      "translated_text": ""
+    },
+    {
+      "id": "p6_b8",
+      "page_number": 6,
+      "type": "text",
+      "raw_text": "Musculoskeletal\nNeuromuscular\nCardiovascular/pulmonary\nIntegumentary\n",
+      "normalized_text": "Musculoskeletal\nNeuromuscular\nCardiovascular/pulmonary\nIntegumentary",
+      "translated_text": ""
+    },
+    {
+      "id": "p6_b9",
+      "page_number": 6,
+      "type": "text",
+      "raw_text": "Most impairments of these body systems primarily\nare the result of abnormalities of physiological function\nor anatomical structure. Some representative examples\nof physical impairments commonly identified by physical\ntherapists and managed with therapeutic exercise interven-\ntions are noted in Box 1.2.\n",
+      "normalized_text": "Most impairments of these body systems primarily\nare the result of abnormalities of physiological function\nor anatomical structure. Some representative examples\nof physical impairments commonly identified by physical\ntherapists and managed with therapeutic exercise interventions are noted in Box 1.2.",
+      "translated_text": ""
+    },
+    {
+      "id": "p6_b10",
+      "page_number": 6,
+      "type": "text",
+      "raw_text": "Impairments may arise directly from the pathology\n(direct/primary impairments) or may be the result of pre-\nexisting impairments (indirect/secondary impairments).\nA patient, for example, who has been referred to physical\ntherapy with a medical diagnosis of impingement syn-\ndrome or tendinitis of the rotator cuff (pathology) may\nexhibit primary impairments, such as pain, limited ROM\nof the shoulder, and weakness of specific shoulder girdle\nand glenohumeral musculature during the physical therapy\nexamination (Fig. 1.3 A&B). The patient may subsequently\ndevelop secondary postural asymmetry because of altered\nuse of the upper extremity.\n",
+      "normalized_text": "Impairments may arise directly from the pathology\n(direct/primary impairments) or may be the result of preexisting impairments (indirect/secondary impairments).\nA patient, for example, who has been referred to physical\ntherapy with a medical diagnosis of impingement syndrome or tendinitis of the rotator cuff (pathology) may\nexhibit primary impairments, such as pain, limited ROM\nof the shoulder, and weakness of specific shoulder girdle\nand glenohumeral musculature during the physical therapy\nexamination (Fig. 1.3 A&B). The patient may subsequently\ndevelop secondary postural asymmetry because of altered\nuse of the upper extremity.",
+      "translated_text": ""
+    },
+    {
+      "id": "p6_b11",
+      "page_number": 6,
+      "type": "text",
+      "raw_text": "6\nPROCESS AND MODELS OF DISABLEMENT\n",
+      "normalized_text": "6\nPROCESS AND MODELS OF DISABLEMENT",
+      "translated_text": ""
+    },
+    {
+      "id": "p7_b0",
+      "page_number": 7,
+      "type": "text",
+      "raw_text": "Furthermore, when an impairment is the result of mul-\ntiple underlying causes and arises from a combination of\nprimary or secondary impairments, the term composite\nimpairment is sometimes used.120 For example, a patient\nwho sustained a severe inversion sprain of the ankle result-\ning in a tear of the talofibular ligament and whose ankle\nwas immobilized for several weeks is likely to exhibit a\nbalance impairment of the involved lower extremity after\nthe immobilization order is removed. This composite\nimpairment could be the result of chronic ligamentous\nlaxity and impaired ankle proprioception from the injury\nor muscle weakness due to immobilization and disuse.\n",
+      "normalized_text": "Furthermore, when an impairment is the result of multiple underlying causes and arises from a combination of\nprimary or secondary impairments, the term composite\nimpairment is sometimes used.120 For example, a patient\nwho sustained a severe inversion sprain of the ankle resulting in a tear of the talofibular ligament and whose ankle\nwas immobilized for several weeks is likely to exhibit a\nbalance impairment of the involved lower extremity after\nthe immobilization order is removed. This composite\nimpairment could be the result of chronic ligamentous\nlaxity and impaired ankle proprioception from the injury\nor muscle weakness due to immobilization and disuse.",
+      "translated_text": ""
+    },
+    {
+      "id": "p7_b1",
+      "page_number": 7,
+      "type": "text",
+      "raw_text": "C H A P T E R  1\nTherapeutic Exercise: Foundational Concepts\n7\n",
+      "normalized_text": "C H A P T E R 1\nTherapeutic Exercise: Foundational Concepts\n7",
+      "translated_text": ""
+    },
+    {
+      "id": "p7_b2",
+      "page_number": 7,
+      "type": "text",
+      "raw_text": "BOX 1.2\nCommon Physical Impairments\nManaged with Therapeutic Exercise\n",
+      "normalized_text": "BOX 1.2\nCommon Physical Impairments\nManaged with Therapeutic Exercise",
+      "translated_text": ""
+    },
+    {
+      "id": "p7_b3",
+      "page_number": 7,
+      "type": "text",
+      "raw_text": "Musculoskeletal\n• Pain\n• Muscle weakness/reduced torque production\n• Decreased muscular endurance\n• Limited range of motion due to\n",
+      "normalized_text": "Musculoskeletal\n• Pain\n• Muscle weakness/reduced torque production\n• Decreased muscular endurance\n• Limited range of motion due to",
+      "translated_text": ""
+    },
+    {
+      "id": "p7_b4",
+      "page_number": 7,
+      "type": "text",
+      "raw_text": "• Restriction of the joint capsule\n• Restriction of periarticular connective tissue\n• Decreased muscle length\n• Joint hypermobility\n• Faulty posture\n• Muscle length/strength imbalances\n",
+      "normalized_text": "• Restriction of the joint capsule\n• Restriction of periarticular connective tissue\n• Decreased muscle length\n• Joint hypermobility\n• Faulty posture\n• Muscle length/strength imbalances",
+      "translated_text": ""
+    },
+    {
+      "id": "p7_b5",
+      "page_number": 7,
+      "type": "text",
+      "raw_text": "Neuromuscular\n• Pain\n• Impaired balance, postural stability, or control\n• Incoordination, faulty timing\n• Delayed motor development\n• Abnormal tone (hypotonia, hypertonia, dystonia)\n• Ineffective/inefficient functional movement strategies\n",
+      "normalized_text": "Neuromuscular\n• Pain\n• Impaired balance, postural stability, or control\n• Incoordination, faulty timing\n• Delayed motor development\n• Abnormal tone (hypotonia, hypertonia, dystonia)\n• Ineffective/inefficient functional movement strategies",
+      "translated_text": ""
+    },
+    {
+      "id": "p7_b6",
+      "page_number": 7,
+      "type": "text",
+      "raw_text": "Cardiovascular/Pulmonary\n• Decreased aerobic capacity (cardiopulmonary endu-\n",
+      "normalized_text": "Cardiovascular/Pulmonary\n• Decreased aerobic capacity (cardiopulmonary endu-",
+      "translated_text": ""
+    },
+    {
+      "id": "p7_b7",
+      "page_number": 7,
+      "type": "text",
+      "raw_text": "rance)\n• Impaired circulation (lymphatic, venous, arterial)\n• Pain with sustained physical activity (intermittent\n",
+      "normalized_text": "rance)\n• Impaired circulation (lymphatic, venous, arterial)\n• Pain with sustained physical activity (intermittent",
+      "translated_text": ""
+    },
+    {
+      "id": "p7_b8",
+      "page_number": 7,
+      "type": "text",
+      "raw_text": "claudication)\n",
+      "normalized_text": "claudication)",
+      "translated_text": ""
+    },
+    {
+      "id": "p7_b9",
+      "page_number": 7,
+      "type": "text",
+      "raw_text": "Integumentary\n• Skin hypomobility (e.g., immobile or adherent scarring)\n",
+      "normalized_text": "Integumentary\n• Skin hypomobility (e.g., immobile or adherent scarring)",
+      "translated_text": ""
+    },
+    {
+      "id": "p7_b10",
+      "page_number": 7,
+      "type": "text",
+      "raw_text": "A\n",
+      "normalized_text": "A",
+      "translated_text": ""
+    },
+    {
+      "id": "p7_b11",
+      "page_number": 7,
+      "type": "text",
+      "raw_text": "B\n",
+      "normalized_text": "B",
+      "translated_text": ""
+    },
+    {
+      "id": "p7_b12",
+      "page_number": 7,
+      "type": "text",
+      "raw_text": "FIGURE 1.3 (A) Impingement syndrome of the shoulder and associated\ntendinitis of the rotator cuff (pathology) leading to (B) limited range of\nshoulder elevation (an impairment) are identified during the examination.\n",
+      "normalized_text": "FIGURE 1.3 (A) Impingement syndrome of the shoulder and associated\ntendinitis of the rotator cuff (pathology) leading to (B) limited range of\nshoulder elevation (an impairment) are identified during the examination.",
+      "translated_text": ""
+    },
+    {
+      "id": "p7_b13",
+      "page_number": 7,
+      "type": "text",
+      "raw_text": "Regardless of the types of impairment exhibited by a\npatient, a therapist must keep in mind that impairments\nmanifest differently from one patient to another. In addi-\ntion, not all impairments are necessarily linked to function-\nal limitations or disability. An important key to effective\nmanagement of a patient’s problems is to recognize func-\ntionally relevant impairments, in other words, impairments\nthat directly contribute to current or future functional limi-\ntations and disability. Impairments that can predispose a\npatient to secondary pathologies or impairments must also\nbe identified.\n",
+      "normalized_text": "Regardless of the types of impairment exhibited by a\npatient, a therapist must keep in mind that impairments\nmanifest differently from one patient to another. In addition, not all impairments are necessarily linked to functional limitations or disability. An important key to effective\nmanagement of a patient’s problems is to recognize functionally relevant impairments, in other words, impairments\nthat directly contribute to current or future functional limitations and disability. Impairments that can predispose a\npatient to secondary pathologies or impairments must also\nbe identified.",
+      "translated_text": ""
+    },
+    {
+      "id": "p7_b14",
+      "page_number": 7,
+      "type": "text",
+      "raw_text": "Equally crucial for the effective management of a\npatient’s dysfunction is the need to analyze and determine,\nor at least infer and certainly not ignore, the underlying\ncauses of the identified physical impairments, particularly\nthose related to impaired movement.117,118 For example,\nare biomechanical abnormalities of soft tissues the source\nof restricted ROM? If so, which soft tissues are restricted,\nand why are they restricted? This information assists the\ntherapist in the selection of appropriate, effective thera-\npeutic interventions that target the underlying causes of\nthe impairments, the impairments themselves, and the\nresulting functional limitations.\n",
+      "normalized_text": "Equally crucial for the effective management of a\npatient’s dysfunction is the need to analyze and determine,\nor at least infer and certainly not ignore, the underlying\ncauses of the identified physical impairments, particularly\nthose related to impaired movement.117,118 For example,\nare biomechanical abnormalities of soft tissues the source\nof restricted ROM? If so, which soft tissues are restricted,\nand why are they restricted? This information assists the\ntherapist in the selection of appropriate, effective therapeutic interventions that target the underlying causes of\nthe impairments, the impairments themselves, and the\nresulting functional limitations.",
+      "translated_text": ""
+    },
+    {
+      "id": "p8_b0",
+      "page_number": 8,
+      "type": "text",
+      "raw_text": "Although most physical therapy interventions, includ-\ning therapeutic exercise, are designed to correct or reduce\nphysical impairments, such as decreased ROM or strength,\npoor balance, or limited cardiopulmonary endurance, the\nfocus of treatment must still be on restoration of function\nand prevention of dysfunction. Elimination or reduction of\nfunctionally relevant impairments is certainly necessary\nduring treatment; but from a patient’s perspective, success-\nful outcomes of treatment are determined by a reduction or\nresolution of functional limitations or disabilities and the\nrestoration or improvement of function. A therapist cannot\nsimply assume that intervening at the impairment level\n(e.g., with strengthening or stretching exercises) and subse-\nquently reducing physical impairments (by increasing\nstrength and ROM) necessarily generalizes to remediation\nof functional limitations and restoration of functional\nmotor abilities for daily living. Mechanisms for integrating\ncorrection of physical impairments and restoration of func-\ntional abilities through task-specific training are explored\nin a model of effective patient management later in this\nchapter.\n",
+      "normalized_text": "Although most physical therapy interventions, including therapeutic exercise, are designed to correct or reduce\nphysical impairments, such as decreased ROM or strength,\npoor balance, or limited cardiopulmonary endurance, the\nfocus of treatment must still be on restoration of function\nand prevention of dysfunction. Elimination or reduction of\nfunctionally relevant impairments is certainly necessary\nduring treatment; but from a patient’s perspective, successful outcomes of treatment are determined by a reduction or\nresolution of functional limitations or disabilities and the\nrestoration or improvement of function. A therapist cannot\nsimply assume that intervening at the impairment level\n(e.g., with strengthening or stretching exercises) and subsequently reducing physical impairments (by increasing\nstrength and ROM) necessarily generalizes to remediation\nof functional limitations and restoration of functional\nmotor abilities for daily living. Mechanisms for integrating\ncorrection of physical impairments and restoration of functional abilities through task-specific training are explored\nin a model of effective patient management later in this\nchapter.",
+      "translated_text": ""
+    },
+    {
+      "id": "p8_b1",
+      "page_number": 8,
+      "type": "text",
+      "raw_text": "Functional Limitations\nFunctional limitations, the third component of the disable-\nment model, occur at the level of the whole person. They\nare the result of impairments and are characterized by the\nreduced ability of a person to perform actions or compo-\nnents of motor skills in an efficient or typically expected\nmanner.2,86,87,89 For example, as shown in Figure 1.4,\nrestricted range of motion (impairment) of the shoulder as\nthe result of shoulder pain can limit a person’s ability to\nreach overhead (functional limitation) while performing,\nfor example, personal grooming or household tasks.\n",
+      "normalized_text": "Functional Limitations\nFunctional limitations, the third component of the disablement model, occur at the level of the whole person. They\nare the result of impairments and are characterized by the\nreduced ability of a person to perform actions or components of motor skills in an efficient or typically expected\nmanner.2,86,87,89 For example, as shown in Figure 1.4,\nrestricted range of motion (impairment) of the shoulder as\nthe result of shoulder pain can limit a person’s ability to\nreach overhead (functional limitation) while performing,\nfor example, personal grooming or household tasks.",
+      "translated_text": ""
+    },
+    {
+      "id": "p8_b2",
+      "page_number": 8,
+      "type": "text",
+      "raw_text": "N O T E : The term now used by the WHO to denote func-\ntional limitation is “ability limitation,” as defined in the ICF\nmodel of functioning and disability21,52,131-133 (see Table 1.1).\n",
+      "normalized_text": "N O T E : The term now used by the WHO to denote functional limitation is “ability limitation,” as defined in the ICF\nmodel of functioning and disability21,52,131-133 (see Table 1.1).",
+      "translated_text": ""
+    },
+    {
+      "id": "p8_b3",
+      "page_number": 8,
+      "type": "text",
+      "raw_text": "As previously indicated in Figure 1.2, functional limi-\ntations may be physical, social, or psychological in nature.\nThe focus of physical therapy interventions is on the man-\nagement of limitations of physical functioning while\nrespecting the needs of the whole person and recognizing\nthat social and psychological influences can also limit a\nperson’s ability to function. In addition, the focus must be\non those functional limitations that are most important to\nthe patient and those that are or could be directly causing\ndisability. When impairments cause functional limitations, a\nperson’s quality of life may begin to deteriorate (see Fig.\n1.2). It should also be noted that a single or even several\nmild impairments often do not cause loss of function. Evi-\ndence suggests that the severity and complexity of impair-\nments must reach a critical level, which is different for each\nperson, before degradation of function begins to occur.95,103\n",
+      "normalized_text": "As previously indicated in Figure 1.2, functional limitations may be physical, social, or psychological in nature.\nThe focus of physical therapy interventions is on the management of limitations of physical functioning while\nrespecting the needs of the whole person and recognizing\nthat social and psychological influences can also limit a\nperson’s ability to function. In addition, the focus must be\non those functional limitations that are most important to\nthe patient and those that are or could be directly causing\ndisability. When impairments cause functional limitations, a\nperson’s quality of life may begin to deteriorate (see Fig.\n1.2). It should also be noted that a single or even several\nmild impairments often do not cause loss of function. Evidence suggests that the severity and complexity of impairments must reach a critical level, which is different for each\nperson, before degradation of function begins to occur.95,103",
+      "translated_text": ""
+    },
+    {
+      "id": "p8_b4",
+      "page_number": 8,
+      "type": "text",
+      "raw_text": "Types of Functional Limitations\nFunctional limitations in the physical domain deal with\nthe performance of sensorimotor tasks, that is, total body\nactions that are typically components or elements of func-\ntional activities.2,89 These activities include basic activities\nof daily living (ADL), such as bathing, dressing, or feed-\ning, and the more complex tasks known as instrumental\nactivities of daily living (IADL), such as occupational\ntasks, school-related skills, housekeeping, and recreational\nactivities, or community mobility (driving, using public\ntransportation), just to name a few.\n",
+      "normalized_text": "Types of Functional Limitations\nFunctional limitations in the physical domain deal with\nthe performance of sensorimotor tasks, that is, total body\nactions that are typically components or elements of functional activities.2,89 These activities include basic activities\nof daily living (ADL), such as bathing, dressing, or feeding, and the more complex tasks known as instrumental\nactivities of daily living (IADL), such as occupational\ntasks, school-related skills, housekeeping, and recreational\nactivities, or community mobility (driving, using public\ntransportation), just to name a few.",
+      "translated_text": ""
+    },
+    {
+      "id": "p8_b5",
+      "page_number": 8,
+      "type": "text",
+      "raw_text": "Box 1.3 lists a number of functional limitations that\ncan arise from physical impairments, involve whole-body\nmovements, and are necessary component motions of sim-\nple to complex daily living skills. Defining functional limi-\n",
+      "normalized_text": "Box 1.3 lists a number of functional limitations that\ncan arise from physical impairments, involve whole-body\nmovements, and are necessary component motions of simple to complex daily living skills. Defining functional limi-",
+      "translated_text": ""
+    },
+    {
+      "id": "p8_b6",
+      "page_number": 8,
+      "type": "text",
+      "raw_text": "8\nPROCESS AND MODELS OF DISABLEMENT\n",
+      "normalized_text": "8\nPROCESS AND MODELS OF DISABLEMENT",
+      "translated_text": ""
+    },
+    {
+      "id": "p8_b7",
+      "page_number": 8,
+      "type": "text",
+      "raw_text": "FIGURE 1.4 Limited ability to reach overhead (functional limitation) as the\nresult of impaired shoulder mobility may lead to difficulty performing person-\nal grooming or household tasks independently (disability).\n",
+      "normalized_text": "FIGURE 1.4 Limited ability to reach overhead (functional limitation) as the\nresult of impaired shoulder mobility may lead to difficulty performing personal grooming or household tasks independently (disability).",
+      "translated_text": ""
+    },
+    {
+      "id": "p8_b8",
+      "page_number": 8,
+      "type": "text",
+      "raw_text": "BOX 1.3\nCommon Functional Limitations\nRelated to Physical Tasks\n",
+      "normalized_text": "BOX 1.3\nCommon Functional Limitations\nRelated to Physical Tasks",
+      "translated_text": ""
+    },
+    {
+      "id": "p8_b9",
+      "page_number": 8,
+      "type": "text",
+      "raw_text": "Limitation of\n",
+      "normalized_text": "Limitation of",
+      "translated_text": ""
+    },
+    {
+      "id": "p8_b10",
+      "page_number": 8,
+      "type": "text",
+      "raw_text": "• Reaching and grasping\n• Lifting and carrying\n• Pushing and pulling\n• Bending and stooping\n• Turning and twisting\n• Throwing and catching\n• Rolling\n• Standing\n• Squatting and kneeling\n• Standing up and sitting down\n• Getting in and out of bed\n• Crawling, walking, running\n• Ascending and descending stairs\n• Hopping and jumping\n• Kicking\n",
+      "normalized_text": "• Reaching and grasping\n• Lifting and carrying\n• Pushing and pulling\n• Bending and stooping\n• Turning and twisting\n• Throwing and catching\n• Rolling\n• Standing\n• Squatting and kneeling\n• Standing up and sitting down\n• Getting in and out of bed\n• Crawling, walking, running\n• Ascending and descending stairs\n• Hopping and jumping\n• Kicking",
+      "translated_text": ""
+    }
+  ]
+}

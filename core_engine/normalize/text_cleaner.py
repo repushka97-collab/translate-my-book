@@ -36,6 +36,10 @@ RE_DOI = re.compile(r"\b10\.\d{4,9}/\S+\b", re.IGNORECASE)
 RE_URL = re.compile(r"https?://\S+")
 RE_SUP_INDEX = re.compile(r"[A-Za-z0-9]\s*[\u00B2\u00B3\u00B9\u2070-\u209F]")  # грубый индикатор индексов
 
+# Медицинские аббревиатуры и термины для защиты
+RE_MEDICAL_ABBREV = re.compile(r"\b(MSK|DN|TCM|TENS|EMG|MRI|CT|PET|EEG|ECG|ICU|ER|OR)\b", re.IGNORECASE)
+RE_ANATOMICAL_TERMS = re.compile(r"\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\s*\([A-Z]+\)", re.IGNORECASE)  # Термины в скобках
+
 
 # --- утилиты ------------------------------------------------------------------
 
@@ -90,6 +94,14 @@ def _detect_protected_tokens(text: str) -> List[str]:
         tokens.append(m.group(0))
 
     for m in RE_URL.finditer(text):
+        tokens.append(m.group(0))
+
+    # Медицинские аббревиатуры
+    for m in RE_MEDICAL_ABBREV.finditer(text):
+        tokens.append(m.group(1).upper())
+
+    # Анатомические термины в скобках (например "Meridian (MER)")
+    for m in RE_ANATOMICAL_TERMS.finditer(text):
         tokens.append(m.group(0))
 
     # индексы/степени – пока просто флажок, без явного токена

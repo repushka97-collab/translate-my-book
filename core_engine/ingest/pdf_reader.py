@@ -57,15 +57,70 @@ def extract_blocks(path, pages: List[Page]) -> List[Block]:
     """
     Извлечение текстовых блоков для каждой страницы.
     Возвращаем все блоки, но также раскладываем их в pages[n].blocks.
+    Теперь извлекаем font signals (size, bold, italic) для улучшения layout.
     """
     blocks: List[Block] = []
 
     with fitz.open(str(path)) as doc:
         for i, page in enumerate(doc):
+            # Получаем блоки с текстом
             text_blocks = page.get_text("blocks")
+            
+            # Получаем детальную информацию о шрифтах через dict
+            try:
+                text_dict = page.get_text("dict")
+                font_info_by_bbox = {}  # (x0, y0, x1, y1) -> {size, flags, font}
+                
+                # Собираем font signals из spans
+                if "blocks" in text_dict:
+                    for block_dict in text_dict["blocks"]:
+                        if "lines" in block_dict:
+                            for line in block_dict["lines"]:
+                                if "spans" in line:
+                                    for span in line["spans"]:
+                                        bbox = span.get("bbox", [0, 0, 0, 0])
+                                        if len(bbox) == 4:
+                                            bbox_key = (
+                                                round(bbox[0], 1),
+                                                round(bbox[1], 1),
+                                                round(bbox[2], 1),
+                                                round(bbox[3], 1),
+                                            )
+                                            font_info_by_bbox[bbox_key] = {
+                                                "size": span.get("size", 0),
+                                                "flags": span.get("flags", 0),  # bold=16, italic=2
+                                                "font": span.get("font", ""),
+                                            }
+            except Exception:
+                # Fallback: если get_text("dict") не работает, используем пустые font signals
+                font_info_by_bbox = {}
 
             for idx, b in enumerate(text_blocks):
                 x0, y0, x1, y1, txt, *_ = b
+                
+                # Пытаемся найти font info для этого блока
+                bbox_key = (round(x0, 1), round(y0, 1), round(x1, 1), round(y1, 1))
+                font_info = font_info_by_bbox.get(bbox_key, {})
+                
+                # Вычисляем средний размер шрифта и флаги для блока
+                # Если точного совпадения нет, ищем ближайший
+                if not font_info:
+                    for key, info in font_info_by_bbox.items():
+                        if abs(key[0] - x0) < 10 and abs(key[1] - y0) < 10:
+                            font_info = info
+                            break
+                
+                font_size = font_info.get("size", 0)
+                flags = font_info.get("flags", 0)
+                is_bold = bool(flags & 16)  # PyMuPDF bold flag
+                is_italic = bool(flags & 2)  # PyMuPDF italic flag
+
+                metadata = {
+                    "font_size": font_size,
+                    "is_bold": is_bold,
+                    "is_italic": is_italic,
+                    "font": font_info.get("font", ""),
+                }
 
                 blk = Block(
                     id=f"p{i+1}_b{idx}",
@@ -74,7 +129,7 @@ def extract_blocks(path, pages: List[Page]) -> List[Block]:
                     bbox=BBox(x0, y0, x1, y1),
                     spans=[],
                     raw_text=txt,
-                    metadata={},
+                    metadata=metadata,
                 )
 
                 blocks.append(blk)
@@ -90,13 +145,21 @@ def extract_images(path, pages: List[Page]) -> List[ImageObject]:
         for i, page in enumerate(doc):
             for idx, img in enumerate(page.get_images(full=True)):
                 xref = img[0]
-                pix = fitz.Pixmap(doc, xref)
+                try:
+                    pix = fitz.Pixmap(doc, xref)
 
-                if pix.n < 5:  # RGB
-                    data = pix.tobytes()
-                else:          # CMYK → RGB
-                    pix = fitz.Pixmap(fitz.csRGB, pix)
-                    data = pix.tobytes()
+                    # Normalize to RGB/GRAY without alpha, otherwise PyMuPDF may fail to encode PNG.
+                    # - CMYK / unknown colorspaces -> RGB
+                    # - RGBA -> drop alpha
+                    if getattr(pix, "alpha", 0):
+                        pix = fitz.Pixmap(pix, 0)
+                    if pix.colorspace is None or pix.n not in (1, 3):
+                        pix = fitz.Pixmap(fitz.csRGB, pix)
+
+                    data = pix.tobytes("png")
+                except Exception:
+                    # Best-effort: do not fail ingest because of an unsupported image
+                    continue
 
                 bbox = BBox(0, 0, 0, 0)  # пока не извлекаем bbox изображений (сложно)
                 im = ImageObject(

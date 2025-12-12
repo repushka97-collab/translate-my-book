@@ -1,8 +1,10 @@
 from pathlib import Path
 from typing import Any, Dict, List, Mapping, Union
+import re
 
 from docx import Document
 from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.shared import Pt, Inches
 
 
 Paragraph = Dict[str, Any]
@@ -79,12 +81,49 @@ def _get_para_text(p: Paragraph) -> str:
 def _add_heading(doc: Document, text: str, level: int = 2) -> None:
     para = doc.add_heading(text, level=level)
     para.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    # Улучшенные стили для заголовков
+    para_format = para.paragraph_format
+    if level == 1:
+        para_format.space_before = Pt(12)
+        para_format.space_after = Pt(6)
+    elif level == 2:
+        para_format.space_before = Pt(10)
+        para_format.space_after = Pt(4)
+    else:
+        para_format.space_before = Pt(8)
+        para_format.space_after = Pt(4)
 
 
 def _add_list_item(doc: Document, text: str) -> None:
-    para = doc.add_paragraph(style="List Bullet")
-    run = para.add_run(text)
-    para.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    """
+    Улучшенная обработка списков:
+    - Нумерованные списки (1. 2. 3. или 1) 2) 3))
+    - Маркированные списки (• - *)
+    """
+    text_stripped = text.lstrip()
+    
+    # Нумерованный список
+    numbered_match = re.match(r"^\(?\d+[\.\)]\s+", text_stripped)
+    if numbered_match:
+        para = doc.add_paragraph(style="List Number")
+        # Убираем номер из текста (Word сам пронумерует)
+        text_clean = re.sub(r"^\(?\d+[\.\)]\s+", "", text_stripped)
+        run = para.add_run(text_clean)
+        para.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    # Римские цифры
+    elif re.match(r"^[ivxlcdm]+\.\s+", text_stripped.lower()):
+        para = doc.add_paragraph(style="List Number")
+        text_clean = re.sub(r"^[ivxlcdm]+\.\s+", "", text_stripped, flags=re.IGNORECASE)
+        run = para.add_run(text_clean)
+        para.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    # Маркированный список
+    else:
+        para = doc.add_paragraph(style="List Bullet")
+        # Убираем маркер если есть
+        text_clean = re.sub(r"^[•\-\–\—\*]\s+", "", text_stripped)
+        run = para.add_run(text_clean)
+        para.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    
     run.bold = False
 
 
@@ -150,6 +189,10 @@ def _add_table_placeholder(doc: Document, text: str) -> None:
 def _add_normal_paragraph(doc: Document, text: str) -> None:
     para = doc.add_paragraph(text)
     para.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+    # Улучшенные стили: отступы и интервалы
+    para_format = para.paragraph_format
+    para_format.space_after = Pt(6)  # Небольшой отступ после параграфа
+    para_format.first_line_indent = Inches(0)  # Без красной строки (как в научных статьях)
 
 
 # ================================
@@ -178,10 +221,20 @@ def export_docx(paragraphs: Any, output_path: PathLike) -> str:
         raise ValueError("EXPORT ERROR: all paragraphs are empty")
 
     doc = Document()
+    prev_page = 0
 
     for p in para_list:
         p_type = _get_para_type(p)
         text = _get_para_text(p)
+        page = p.get("page", 0)
+
+        # ---------------------
+        #      Page Break
+        # ---------------------
+        if p_type == "page_break":
+            doc.add_page_break()
+            prev_page = page
+            continue
 
         if not text and p_type not in TABLE_TYPES:
             continue
@@ -191,10 +244,17 @@ def export_docx(paragraphs: Any, output_path: PathLike) -> str:
         # ---------------------
         if p_type in {"heading1", "h1"}:
             _add_heading(doc, text, level=1)
+            prev_page = page
             continue
 
         if p_type in {"heading2", "heading", "h2"}:
             _add_heading(doc, text, level=2)
+            prev_page = page
+            continue
+
+        if p_type in {"heading3", "h3"}:
+            _add_heading(doc, text, level=3)
+            prev_page = page
             continue
 
         # ---------------------
@@ -230,6 +290,7 @@ def export_docx(paragraphs: Any, output_path: PathLike) -> str:
         #   Обычный параграф
         # ---------------------
         _add_normal_paragraph(doc, text)
+        prev_page = page
 
     if len(doc.paragraphs) == 0:
         raise ValueError("EXPORT ERROR: empty DOCX")

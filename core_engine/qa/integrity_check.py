@@ -64,8 +64,19 @@ def _count_alphabets(text: str) -> Dict[str, int]:
 
 
 def _detect_mixed_alphabet_issue(text: str) -> Dict[str, Any] | None:
-    """Ищем странные смеси латиницы/кириллицы в одном блоке."""
-    stats = _count_alphabets(text)
+    """
+    Ищем странные смеси латиницы/кириллицы в одном блоке.
+    Игнорируем латиницу в скобках (аббревиатуры, термины) и URL/DOI.
+    """
+    # Исключаем латиницу в скобках и URL/DOI из подсчета
+    text_for_check = text
+    # Убираем содержимое скобок
+    text_for_check = re.sub(r"\([^)]*\)", "", text_for_check)
+    # Убираем URL и DOI
+    text_for_check = re.sub(r"https?://\S+", "", text_for_check, flags=re.IGNORECASE)
+    text_for_check = re.sub(r"doi\.org/\S+", "", text_for_check, flags=re.IGNORECASE)
+    
+    stats = _count_alphabets(text_for_check)
     latin = stats["latin"]
     cyr = stats["cyr"]
     total_letters = latin + cyr
@@ -75,8 +86,9 @@ def _detect_mixed_alphabet_issue(text: str) -> Dict[str, Any] | None:
     latin_ratio = latin / total_letters
     cyr_ratio = cyr / total_letters
 
-    # Сценарий: текст в основном русский, но заметный кусок латиницы
-    if cyr_ratio >= 0.5 and latin_ratio >= 0.2:
+    # Сценарий: текст в основном русский, но заметный кусок латиницы (не в скобках)
+    # Более строгий порог: латиница должна быть >= 30% чтобы это было проблемой
+    if cyr_ratio >= 0.5 and latin_ratio >= 0.3:
         return {
             "latin": latin,
             "cyr": cyr,
@@ -91,6 +103,7 @@ def _detect_concatenated_scripts(text: str) -> List[str]:
     """
     Ищем слова, где латиница и кириллица склеены без пробела:
     типа 'meridiansвсе', 'Yangи'.
+    Игнорируем случаи где латиница в конце после цифр (например "MSK", "TCM").
     """
     tokens = re.findall(r"\S+", text)
     bad: List[str] = []
@@ -98,16 +111,31 @@ def _detect_concatenated_scripts(text: str) -> List[str]:
         has_latin = any("a" <= ch.lower() <= "z" for ch in t)
         has_cyr = any("а" <= ch.lower() <= "я" or ch.lower() == "ё" for ch in t)
         if has_latin and has_cyr:
+            # Игнорируем если это выглядит как аббревиатура в конце (например "MSK", "TCM")
+            # или если латиница только в начале короткого слова (например "Qi" в "Qi-терапия")
+            if len(t) <= 5 and (t[0].isupper() or t.lower() in ["msk", "tcm", "dn", "qi", "yin", "yang"]):
+                continue
             bad.append(t)
     return bad
 
 
 def _detect_suspect_english_terms(text: str) -> List[str]:
-    """Ищем ключевые английские термины в русском блоке."""
+    """
+    Ищем ключевые английские термины в русском блоке.
+    Игнорируем если термин уже нормализован (в скобках или с русским эквивалентом).
+    """
     lowered = text.lower()
     found = []
     for term in _SUSPECT_EN_TERMS:
         if term in lowered:
+            # Проверяем контекст: если термин в скобках или рядом с русским эквивалентом - это нормально
+            pattern = re.escape(term)
+            # Игнорируем если термин в скобках: (meridian) или ци (Qi)
+            if re.search(rf"\([^)]*{pattern}[^)]*\)", lowered) or re.search(rf"[а-яё]+\s*\({pattern}\)", lowered):
+                continue
+            # Игнорируем если это часть нормализованного термина: "меридиан (meridian)"
+            if re.search(rf"[а-яё]+\s*\({pattern}\)", lowered):
+                continue
             found.append(term)
     return found
 
@@ -288,21 +316,33 @@ def qa_check_blocks(normalized_blocks: List[Block], translated_blocks: List[Bloc
                 }
             )
 
-        # 2.5. Потенциальные разрывы текста (грубая эвристика)
+        # 2.5. Потенциальные разрывы текста (улучшенная эвристика)
         if src_len > 80:
             stripped = src_text.rstrip()
-            if stripped and stripped[-1] not in ".!?;:," and not stripped.endswith(("-", "–")):
-                issues.append(
-                    {
-                        "block_id": block_id,
-                        "page": src_block.get("page"),
-                        "order": src_block.get("order"),
-                        "type": "potential_break",
-                        "severity": "low",
-                        "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-                        "meta": {"src_len": src_len},
-                    }
-                )
+            if not stripped:
+                continue
+            # Игнорируем если заканчивается на пунктуацию, закрывающие скобки, или URL/DOI
+            if stripped[-1] in ".!?;:,)]}":
+                continue
+            if stripped.endswith(("-", "–", "—")):
+                continue
+            # Игнорируем если это URL или DOI
+            if re.search(r"\b(https?://|doi\.org/)\S+$", stripped, re.IGNORECASE):
+                continue
+            # Игнорируем если это список или перечисление
+            if re.search(r"[,;]\s*$", stripped):
+                continue
+            issues.append(
+                {
+                    "block_id": block_id,
+                    "page": src_block.get("page"),
+                    "order": src_block.get("order"),
+                    "type": "potential_break",
+                    "severity": "low",
+                    "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
+                    "meta": {"src_len": src_len},
+                }
+            )
 
         # === QA v2 ДОПОЛНИТЕЛЬНЫЕ ПРОВЕРКИ ПО ПЕРЕВОДУ ===
 
