@@ -61,10 +61,20 @@ def ingest_pdf(source_path: str) -> IngestResult:
     num_pages = info["pages"]
 
     # 2. Страницы
-    pages: List[Page] = extract_pages(pdf_path)
+    try:
+        pages: List[Page] = extract_pages(pdf_path)
+        if not pages:
+            raise ValueError(f"PDF {pdf_path} contains no pages")
+    except Exception as e:
+        raise RuntimeError(f"Failed to extract pages from {pdf_path}: {e}") from e
 
     # 3. Блоки (твоя логика из pdf_reader)
-    blocks: List[Block] = extract_blocks(pdf_path, pages)
+    try:
+        blocks: List[Block] = extract_blocks(pdf_path, pages)
+        if not blocks:
+            print(f"[WARN] PDF {pdf_path} contains no text blocks - may be image-only")
+    except Exception as e:
+        raise RuntimeError(f"Failed to extract blocks from {pdf_path}: {e}") from e
 
     # 4. Изображения
     # Best-effort: some PDFs contain images that can't be rasterized/encoded cleanly.
@@ -95,9 +105,15 @@ def ingest_pdf(source_path: str) -> IngestResult:
     #    "id", "page", "order", "text" — обязательные ключи.
     blocks_dict: List[Dict[str, Any]] = []
     order = 0
+    empty_blocks_skipped = 0
     for blk in blocks:
         blk_id = blk.id  # уже уникальный ID блока из core.models
         raw_text = blk.raw_text or ""
+        
+        # Пропускаем пустые блоки (уже фильтруем, но на всякий случай)
+        if not raw_text.strip():
+            empty_blocks_skipped += 1
+            continue
 
         # Контракт A1: ingest blocks must have non-empty text.
         # Для PDF с мусорными/пустыми блоками — просто пропускаем их,
