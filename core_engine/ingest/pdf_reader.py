@@ -704,6 +704,14 @@ def detect_tables(path, pages: List[Page]) -> List[TableObject]:
             # Fallback: pdfplumber (опционально)
             if table_obj is None and use_pdfplumber and pdfplumber_mod:
                 table_obj = pdfplumber_fallback(pdfplumber_mod, i)
+            
+            # [ADVANCED MODE] Используем улучшенный PDFPlumber для сложных таблиц
+            if table_obj is None and use_pdfplumber:
+                try:
+                    from core_engine.ingest.pdfplumber_advanced import extract_tables_with_pdfplumber
+                    table_obj = extract_tables_with_pdfplumber(path, i + 1, strategy="lines")
+                except Exception:
+                    pass  # Логируем в errors.log через функцию
 
             if table_obj:
                 table_obj.id = f"p{i+1}_tbl{len(pages[i].tables) + 1}"

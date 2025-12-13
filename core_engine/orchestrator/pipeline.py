@@ -17,7 +17,7 @@ from core_engine.layout.chapter_detector import detect_chapter_structure
 from core_engine.layout.layout_reassemble_v2 import build_paragraph_stream
 from core_engine.export.export_json import export_json_bundle
 from core_engine.export.docx_exporter import export_docx
-from core_engine.export.exporter import export_html
+from core_engine.export.exporter import export_html, export_pdf
 from core_engine.core.models import BookDocument, Page, Block, BBox, BlockType, ImageObject, TableObject, TableCell
 from core_engine.library.library_manager import register_book_in_library
 from core_engine.qa.integrity_check import qa_check_blocks
@@ -251,6 +251,13 @@ def run_book_pipeline(
                     previous_blocks = []
                     changed_ids = set()
         
+        # [ADVANCED MODE] Checkpoint Manager для восстановления
+        use_checkpoints = os.getenv("USE_CHECKPOINTS", "0") == "1"
+        checkpoint_mgr = None
+        if use_checkpoints:
+            from core_engine.orchestrator.checkpoint_manager import CheckpointManager
+            checkpoint_mgr = CheckpointManager(checkpoint_dir="checkpoints")
+        
         translated = translate_blocks(
             normalized,
             source_lang="en",
@@ -262,6 +269,10 @@ def run_book_pipeline(
         if use_incremental and previous_blocks and changed_ids:
             from core_engine.orchestrator.incremental_update import merge_translations
             translated = merge_translations(translated, previous_blocks, changed_ids)
+        
+        # [ADVANCED MODE] Сохраняем чекпоинт после перевода
+        if checkpoint_mgr:
+            checkpoint_mgr.save_checkpoint(book_id, 0, {"translated_blocks": len(translated)}, stage="translate")
         
         validate_blocks_structure(translated, stage="translate")
         # Подсчитываем переведенные блоки
@@ -308,6 +319,32 @@ def run_book_pipeline(
         images_by_page = {}
         if hasattr(ingest_raw, "doc") and ingest_raw.doc:
             _add_images_to_layout_model(layout_model, ingest_raw.doc)
+            
+            # [ADVANCED MODE] DocTR для обработки текста в изображениях
+            use_doctr = os.getenv("USE_DOCTR_IMAGES", "0") == "1"
+            if use_doctr:
+                try:
+                    from core_engine.export.doctr_images import replace_images_in_pdf_with_translated_text
+                    from core_engine.translate.llm_adapter import translate_text_simple
+                    
+                    # Создаем функцию перевода для изображений
+                    def translate_fn(text, source_lang="en", target_lang="ru"):
+                        return translate_text_simple(text, source_lang, target_lang)
+                    
+                    # Обрабатываем изображения с текстом (сохраняем во временный файл)
+                    temp_pdf_with_images = out_dir / "temp_with_translated_images.pdf"
+                    if replace_images_in_pdf_with_translated_text(
+                        str(source_path),
+                        str(temp_pdf_with_images),
+                        translate_fn
+                    ):
+                        print(f"      DocTR: Processed images with text")
+                except Exception as e:
+                    error_log_path = Path("errors.log")
+                    error_log_path.parent.mkdir(exist_ok=True)
+                    with open(error_log_path, "a", encoding="utf-8") as f:
+                        f.write(f"[DocTR] Error: {e}\n")
+            
             # Сохраняем изображения отдельно для передачи в export_docx (с image_bytes)
             for page in ingest_raw.doc.pages:
                 if hasattr(page, "images") and page.images:
@@ -398,8 +435,52 @@ def run_book_pipeline(
     # --------------------------------------------------------
     stage += 1
     _progress("Build paragraph_stream (Layout v2.1)")
+    formulas_by_page: Dict[int, List[Dict[str, Any]]] = {}  # Инициализируем на уровне функции
     try:
         paragraphs = build_paragraph_stream(layout_model)
+        
+        # [ADVANCED MODE] Обнаружение и обработка формул через MathJax
+        use_mathjax = os.getenv("USE_MATHJAX", "0") == "1"
+        if use_mathjax:
+            try:
+                from core_engine.export.mathjax_formulas import detect_formulas_in_text, replace_formulas_in_pdf
+                
+                # Собираем формулы по страницам
+                formulas_by_page = {}  # Переиспользуем переменную уровня функции
+                for para in paragraphs:
+                    page_num = para.get("page", 0)
+                    text = para.get("text", "") or para.get("translated_text", "")
+                    
+                    if text:
+                        formulas = detect_formulas_in_text(text)
+                        if formulas:
+                            if page_num not in formulas_by_page:
+                                formulas_by_page[page_num] = []
+                            
+                            # Добавляем формулы с bbox (упрощенная версия)
+                            for formula in formulas:
+                                # Используем bbox параграфа как приблизительный bbox формулы
+                                bbox = para.get("bbox", {})
+                                formulas_by_page[page_num].append({
+                                    "formula": formula.get("formula", ""),
+                                    "bbox": [
+                                        bbox.get("x0", 0),
+                                        bbox.get("y0", 0),
+                                        bbox.get("x1", 0),
+                                        bbox.get("y1", 0)
+                                    ]
+                                })
+                
+                if formulas_by_page:
+                    print(f"      MathJax: Found formulas on {len(formulas_by_page)} pages")
+            except Exception as e:
+                error_log_path = Path("errors.log")
+                error_log_path.parent.mkdir(exist_ok=True)
+                with open(error_log_path, "a", encoding="utf-8") as f:
+                    f.write(f"[MathJax] Error: {e}\n")
+                formulas_by_page = {}
+        else:
+            formulas_by_page = {}
     except Exception as e:
         raise RuntimeError(f"Paragraph stream build failed: {e}") from e
 
@@ -481,6 +562,102 @@ def run_book_pipeline(
         export_paths["html"] = str(html_path)
     except Exception as e:
         print(f"[WARN] HTML export failed: {e}")
+
+    # --------------------------------------------------------
+    stage += 1
+    _progress("Export PDF")
+    try:
+        pdf_path = out_dir / "book_ru.pdf"
+        book_doc = _layout_to_bookdoc(layout_model, images_by_page)
+        
+        # Передаем формулы если они были обнаружены (через metadata)
+        if formulas_by_page and hasattr(book_doc, "metadata"):
+            if book_doc.metadata is None:
+                book_doc.metadata = {}
+            book_doc.metadata["formulas_by_page"] = formulas_by_page
+        export_pdf(book_doc, str(pdf_path))
+        export_paths["pdf"] = str(pdf_path)
+        print(f"      PDF exported: {pdf_path}")
+        
+        # [QUALITY VERIFICATION MODE] Полная проверка качества
+        use_quality_check = os.getenv("QUALITY_CHECK", "1") == "1"
+        if use_quality_check and Path(source_path).exists():
+            try:
+                from core_engine.qa.quality_scorecard import generate_quality_scorecard, print_scorecard
+                
+                quality_reports_dir = out_dir / "quality_reports"
+                quality_reports_dir.mkdir(exist_ok=True)
+                
+                scorecard_path = quality_reports_dir / "quality_scorecard.json"
+                scorecard = generate_quality_scorecard(
+                    str(source_path),
+                    str(pdf_path),
+                    str(scorecard_path)
+                )
+                
+                # Выводим scorecard
+                print_scorecard(scorecard)
+                
+                overall_score = scorecard.get("overall_score", 0.0)
+                
+                if overall_score >= 95:
+                    print(f"      ✅ Quality Score: {overall_score:.1f}/100 - Excellent")
+                elif overall_score >= 90:
+                    print(f"      ⚠️ Quality Score: {overall_score:.1f}/100 - Good (manual review recommended for 10% pages)")
+                else:
+                    print(f"      ❌ Quality Score: {overall_score:.1f}/100 - Needs correction")
+                
+                export_paths["quality_scorecard"] = str(scorecard_path)
+                
+                # Генерируем heatmaps если включено
+                use_heatmaps = os.getenv("GENERATE_HEATMAPS", "0") == "1"
+                if use_heatmaps:
+                    try:
+                        from core_engine.qa.heatmap_diff import generate_heatmap_diff
+                        heatmap_result = generate_heatmap_diff(
+                            str(source_path),
+                            str(pdf_path),
+                            str(quality_reports_dir / "heatmaps")
+                        )
+                        if heatmap_result.get("heatmaps_generated", 0) > 0:
+                            print(f"      Heatmaps generated: {heatmap_result['heatmaps_generated']} pages")
+                            if heatmap_result.get("critical_pages"):
+                                print(f"      Critical pages: {len(heatmap_result['critical_pages'])} pages need review")
+                    except Exception as e:
+                        error_log_path = Path("errors.log")
+                        error_log_path.parent.mkdir(exist_ok=True)
+                        with open(error_log_path, "a", encoding="utf-8") as f:
+                            f.write(f"[Heatmaps] Error: {e}\n")
+                
+                # pdf-diff для дополнительной визуализации
+                use_pdf_diff = os.getenv("PDF_DIFF_CHECK", "0") == "1"
+                if use_pdf_diff:
+                    try:
+                        from core_engine.qa.pdf_diff_check import check_pdf_diff
+                        diff_report_path = quality_reports_dir / "pdf_diff_report.html"
+                        diff_result = check_pdf_diff(
+                            str(source_path),
+                            str(pdf_path),
+                            str(diff_report_path),
+                            threshold_px=2.0
+                        )
+                        if diff_result:
+                            print(f"      PDF diff check: {diff_result.get('differences_count', 0)} differences found")
+                            export_paths["pdf_diff_report"] = str(diff_report_path)
+                    except Exception as e:
+                        error_log_path = Path("errors.log")
+                        error_log_path.parent.mkdir(exist_ok=True)
+                        with open(error_log_path, "a", encoding="utf-8") as f:
+                            f.write(f"[PDF_DIFF] Error: {e}\n")
+                
+            except Exception as e:
+                # Логируем, но не падаем
+                error_log_path = Path("errors.log")
+                error_log_path.parent.mkdir(exist_ok=True)
+                with open(error_log_path, "a", encoding="utf-8") as f:
+                    f.write(f"[QualityCheck] Error: {e}\n")
+    except Exception as e:
+        print(f"[WARN] PDF export failed: {e}")
 
     # --------------------------------------------------------
     stage += 1
