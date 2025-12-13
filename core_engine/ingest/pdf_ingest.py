@@ -90,14 +90,31 @@ def ingest_pdf(source_path: str) -> IngestResult:
     # 5. (Опционально) Растровые превью страниц для анализа фона/водяных знаков.
     #    Управляется env-переменной INGEST_RASTER_PREVIEW=1, по умолчанию выключено,
     #    чтобы не раздувать память/manifest.
+    #    Оптимизация для больших PDF: обрабатываем по частям если страниц > 100
     raster_previews_b64: List[str] = []
     if os.getenv("INGEST_RASTER_PREVIEW", "0") == "1":
-        previews = rasterize_pdf_pages(str(pdf_path), dpi=200)
-        for p in previews:
-            if p:
-                raster_previews_b64.append(base64.b64encode(p).decode("ascii"))
-            else:
-                raster_previews_b64.append("")
+        dpi = int(os.getenv("RASTER_PREVIEW_DPI", "200"))
+        # Для больших PDF обрабатываем по частям
+        if num_pages > 100:
+            chunk_size = 50
+            for start in range(0, num_pages, chunk_size):
+                end = min(start + chunk_size, num_pages)
+                previews = rasterize_pdf_pages(str(pdf_path), dpi=dpi, page_range=(start, end))
+                for p in previews:
+                    if p:
+                        raster_previews_b64.append(base64.b64encode(p).decode("ascii"))
+                    else:
+                        raster_previews_b64.append("")
+                # Очистка памяти после каждого чанка
+                import gc
+                gc.collect()
+        else:
+            previews = rasterize_pdf_pages(str(pdf_path), dpi=dpi)
+            for p in previews:
+                if p:
+                    raster_previews_b64.append(base64.b64encode(p).decode("ascii"))
+                else:
+                    raster_previews_b64.append("")
 
     # 6. Собираем BookDocument
     doc = BookDocument(

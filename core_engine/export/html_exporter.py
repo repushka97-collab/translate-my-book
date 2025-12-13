@@ -255,10 +255,12 @@ def _render_block_flow(block: Block) -> str:
     font_size = None
     is_bold = False
     is_italic = False
+    text_color = None
     if isinstance(block.metadata, dict):
         font_size = block.metadata.get("font_size")
         is_bold = bool(block.metadata.get("is_bold"))
         is_italic = bool(block.metadata.get("is_italic"))
+        text_color = block.metadata.get("color")  # Цвет из Layout API
     
     # Специальная обработка формул
     if tag == "formula":
@@ -277,6 +279,8 @@ def _render_block_flow(block: Block) -> str:
         style.append("font-weight:bold")
     if is_italic:
         style.append("font-style:italic")
+    if text_color and text_color != "#000000":  # Сохраняем цвет если не черный (дефолт)
+        style.append(f"color:{text_color}")
     style.append("line-height:1.35")
     style.append("margin:0 0 8px 0")
     if tag == "li":

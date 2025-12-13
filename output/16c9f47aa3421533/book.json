@@ -21,6 +21,7 @@
             "is_bold": true,
             "is_italic": false,
             "font": "RotisSansSerif-Bold",
+            "color": "#231f20",
             "protected_tokens": [],
             "role": "body",
             "cache_hit": true,
@@ -48,6 +49,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "TimesNewRomanPSMT",
+            "color": "#00aeef",
             "protected_tokens": [
               "OR"
             ],
@@ -76,6 +78,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "",
+            "color": null,
             "protected_tokens": [],
             "role": "body",
             "cache_hit": true,
@@ -138,6 +141,7 @@
             "is_bold": true,
             "is_italic": false,
             "font": "RotisSansSerif-Bold",
+            "color": "#00aeef",
             "protected_tokens": [],
             "heading_preprocessed": true,
             "role": "heading1",
@@ -164,6 +168,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "TimesNewRomanPSMT",
+            "color": "#231f20",
             "protected_tokens": [
               "OR"
             ],
@@ -192,6 +197,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "",
+            "color": null,
             "protected_tokens": [
               "OR"
             ],
@@ -220,6 +226,7 @@
             "is_bold": true,
             "is_italic": false,
             "font": "RotisSansSerif-Bold",
+            "color": "#00aeef",
             "protected_tokens": [],
             "role": "heading2",
             "cache_hit": true
@@ -245,6 +252,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "TimesNewRomanPSMT",
+            "color": "#231f20",
             "protected_tokens": [
               "OR"
             ],
@@ -272,6 +280,7 @@
             "is_bold": true,
             "is_italic": true,
             "font": "TimesNewRomanPS-BoldItal",
+            "color": "#231f20",
             "protected_tokens": [
               "OR"
             ],
@@ -300,6 +309,7 @@
             "is_bold": true,
             "is_italic": true,
             "font": "TimesNewRomanPS-BoldItal",
+            "color": "#231f20",
             "protected_tokens": [
               "OR"
             ],
@@ -327,6 +337,7 @@
             "is_bold": true,
             "is_italic": true,
             "font": "TimesNewRomanPS-BoldItal",
+            "color": "#231f20",
             "protected_tokens": [
               "OR",
               "The ability of structures or segments of the body\nto move or be moved in order to allow the occurrence of\nrange of motion (ROM)"
@@ -355,6 +366,7 @@
             "is_bold": true,
             "is_italic": true,
             "font": "TimesNewRomanPS-BoldItal",
+            "color": "#231f20",
             "protected_tokens": [
               "OR"
             ],
@@ -431,6 +443,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "RotisSansSerif",
+            "color": "#231f20",
             "protected_tokens": [],
             "role": "body",
             "cache_hit": true
@@ -456,6 +469,7 @@
             "is_bold": true,
             "is_italic": false,
             "font": "RotisSansSerif-Bold",
+            "color": "#00aeef",
             "protected_tokens": [],
             "role": "heading2",
             "cache_hit": true
@@ -481,6 +495,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "TimesNewRomanPSMT",
+            "color": "#231f20",
             "protected_tokens": [
               "OR"
             ],
@@ -509,6 +524,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "",
+            "color": null,
             "protected_tokens": [
               "OR"
             ],
@@ -536,6 +552,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "",
+            "color": null,
             "protected_tokens": [
               "OR"
             ],
@@ -563,6 +580,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "",
+            "color": null,
             "protected_tokens": [
               "OR"
             ],
@@ -591,6 +609,7 @@
             "is_bold": true,
             "is_italic": true,
             "font": "TimesNewRomanPS-BoldItal",
+            "color": "#231f20",
             "protected_tokens": [
               "OR"
             ],
@@ -619,6 +638,7 @@
             "is_bold": true,
             "is_italic": false,
             "font": "RotisSansSerif-Bold",
+            "color": "#00aeef",
             "protected_tokens": [],
             "role": "heading2",
             "cache_hit": true
@@ -644,6 +664,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "TimesNewRomanPSMT",
+            "color": "#231f20",
             "protected_tokens": [
               "OR"
             ],
@@ -712,6 +733,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "",
+            "color": null,
             "protected_tokens": [
               "OR"
             ],
@@ -740,6 +762,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "",
+            "color": null,
             "protected_tokens": [],
             "role": "body",
             "cache_hit": true
@@ -765,6 +788,7 @@
             "is_bold": true,
             "is_italic": false,
             "font": "RotisSansSerif-Bold",
+            "color": "#00aeef",
             "protected_tokens": [],
             "heading_preprocessed": true,
             "role": "heading1",
@@ -791,6 +815,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "TimesNewRomanPSMT",
+            "color": "#231f20",
             "protected_tokens": [
               "OR"
             ],
@@ -820,6 +845,7 @@
             "is_bold": true,
             "is_italic": false,
             "font": "RotisSansSerif-Bold",
+            "color": "#00aeef",
             "protected_tokens": [],
             "role": "heading2",
             "cache_hit": true
@@ -845,6 +871,7 @@
             "is_bold": true,
             "is_italic": false,
             "font": "RotisSansSerif-Bold",
+            "color": "#231f20",
             "protected_tokens": [
               "OR",
               "term that refers to the impact(s)"
@@ -874,6 +901,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "",
+            "color": null,
             "protected_tokens": [
               "OR"
             ],
@@ -902,6 +930,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "TimesNewRomanPSMT",
+            "color": "#231f20",
             "protected_tokens": [
               "and\nHandicaps (ICIDH)",
               "model for the World Health Organization (WHO)",
@@ -933,6 +962,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "",
+            "color": null,
             "protected_tokens": [
               "OR"
             ],
@@ -960,6 +990,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "TimesNewRomanPSMT",
+            "color": "#231f20",
             "protected_tokens": [
               "OR"
             ],
@@ -987,6 +1018,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "TimesNewRomanPSMT",
+            "color": "#231f20",
             "protected_tokens": [
               "OR"
             ],
@@ -1063,6 +1095,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "TimesNewRomanPSMT",
+            "color": "#231f20",
             "protected_tokens": [
               "The American Physical\nTherapy Association (APTA)"
             ],
@@ -1091,6 +1124,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "",
+            "color": null,
             "protected_tokens": [
               "and Health (ICF)"
             ],
@@ -1119,6 +1153,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "TimesNewRomanPSMT",
+            "color": "#231f20",
             "protected_tokens": [
               "Impairment of body structure (anatomical)",
               "and function\n(physiological)",
@@ -1148,6 +1183,7 @@
             "is_bold": true,
             "is_italic": false,
             "font": "RotisSansSerif-Bold",
+            "color": "#00aeef",
             "protected_tokens": [
               "TABLE 1"
             ],
@@ -1176,6 +1212,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "Helvetica",
+            "color": "#231f20",
             "protected_tokens": [],
             "role": "body",
             "cache_hit": true,
@@ -1202,6 +1239,7 @@
             "is_bold": true,
             "is_italic": false,
             "font": "RotisSansSerif-Bold",
+            "color": "#00aeef",
             "protected_tokens": [],
             "role": "body",
             "cache_hit": true
@@ -1258,6 +1296,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "TimesNewRomanPSMT",
+            "color": "#231f20",
             "protected_tokens": [
               "OR"
             ],
@@ -1285,6 +1324,7 @@
             "is_bold": true,
             "is_italic": false,
             "font": "RotisSansSerif-Bold",
+            "color": "#00aeef",
             "protected_tokens": [],
             "role": "body",
             "cache_hit": true,
@@ -1312,6 +1352,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "",
+            "color": null,
             "protected_tokens": [],
             "role": "body",
             "cache_hit": true,
@@ -1338,6 +1379,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "",
+            "color": null,
             "protected_tokens": [],
             "role": "body",
             "cache_hit": true
@@ -1363,6 +1405,7 @@
             "is_bold": true,
             "is_italic": false,
             "font": "RotisSansSerif-Bold",
+            "color": "#231f20",
             "protected_tokens": [
               "OR"
             ],
@@ -1391,6 +1434,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "",
+            "color": null,
             "protected_tokens": [
               "This emphasizes the\nneed for physical therapists to always pay close attention\nto the impact(s)"
             ],
@@ -1419,6 +1463,7 @@
             "is_bold": true,
             "is_italic": false,
             "font": "RotisSansSerif-Bold",
+            "color": "#231f20",
             "protected_tokens": [
               "OR"
             ],
@@ -1448,6 +1493,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "TimesNewRomanPSMT",
+            "color": "#231f20",
             "protected_tokens": [
               "OR"
             ],
@@ -1475,6 +1521,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "",
+            "color": null,
             "protected_tokens": [
               "Fig. 1",
               "OR",
@@ -1505,6 +1552,7 @@
             "is_bold": true,
             "is_italic": false,
             "font": "RotisSansSerif-Bold",
+            "color": "#231f20",
             "protected_tokens": [],
             "role": "body",
             "cache_hit": true
@@ -1564,6 +1612,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "",
+            "color": null,
             "protected_tokens": [
               "OR"
             ],
@@ -1592,6 +1641,7 @@
             "is_bold": true,
             "is_italic": false,
             "font": "RotisSansSerif-Bold",
+            "color": "#00aeef",
             "protected_tokens": [],
             "role": "body",
             "cache_hit": true,
@@ -1619,6 +1669,7 @@
             "is_bold": true,
             "is_italic": false,
             "font": "RotisSerif-Bold",
+            "color": "#00aeef",
             "protected_tokens": [
               "OR"
             ],
@@ -1648,6 +1699,7 @@
             "is_bold": true,
             "is_italic": false,
             "font": "RotisSansSerif-Bold",
+            "color": "#00aeef",
             "protected_tokens": [
               "Impingement syndrome of the shoulder and associated\ntendinitis of the rotator cuff (pathology)",
               "leading to (B)"
@@ -1676,6 +1728,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "",
+            "color": null,
             "protected_tokens": [
               "OR"
             ],
@@ -1703,6 +1756,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "",
+            "color": null,
             "protected_tokens": [
               "OR"
             ],
@@ -1781,6 +1835,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "",
+            "color": null,
             "protected_tokens": [
               "OR"
             ],
@@ -1809,6 +1864,7 @@
             "is_bold": true,
             "is_italic": false,
             "font": "RotisSansSerif-Bold",
+            "color": "#231f20",
             "protected_tokens": [
               "OR",
               "restricted range of motion (impairment)"
@@ -1839,6 +1895,7 @@
             "is_bold": true,
             "is_italic": false,
             "font": "RotisSansSerif-Bold",
+            "color": "#00aeef",
             "protected_tokens": [
               "Table 1"
             ],
@@ -1867,6 +1924,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "",
+            "color": null,
             "protected_tokens": [
               "Fig.\n1",
               "OR",
@@ -1899,6 +1957,7 @@
             "is_bold": false,
             "is_italic": false,
             "font": "",
+            "color": null,
             "protected_tokens": [
               "OR",
               "as the\nresult of impaired shoulder mobility may lead to difficulty performing personal grooming or household tasks independently (disability)"
@@ -1928,6 +1987,7 @@
             "is_bold": true,
             "is_italic": false,
             "font": "RotisSansSerif-Bold",
+            "color": "#ffffff",
             "protected_tokens": [],
             "role": "body",
             "cache_hit": true,

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import os
 from typing import List, Dict, Any
 from dataclasses import dataclass
 
@@ -210,6 +211,18 @@ def translate_blocks(
 
     # Строим backend
     backend = make_backend(profile)
+
+    # Применяем выборочное маскирование (если включено)
+    mask_config = None
+    if os.getenv("SELECTIVE_MASK", "0") == "1":
+        from core_engine.translate.selective_mask import apply_selective_mask
+        # Конфигурация из env или дефолтная
+        mask_config = {
+            "skip_patterns": os.getenv("MASK_SKIP_PATTERNS", "").split(",") if os.getenv("MASK_SKIP_PATTERNS") else [],
+            "skip_types": os.getenv("MASK_SKIP_TYPES", "").split(",") if os.getenv("MASK_SKIP_TYPES") else [],
+            "skip_roles": os.getenv("MASK_SKIP_ROLES", "").split(",") if os.getenv("MASK_SKIP_ROLES") else [],
+        }
+        blocks = apply_selective_mask(blocks, mask_config)
 
     # Пропускаем формулы - не переводим их
     import re

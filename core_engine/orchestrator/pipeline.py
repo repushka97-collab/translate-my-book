@@ -6,6 +6,7 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any, Dict
 import json
+import os
 
 from core_engine.ingest.pdf_ingest import ingest_pdf
 from core_engine.normalize.text_cleaner import normalize_blocks
@@ -221,17 +222,62 @@ def run_book_pipeline(
     stage += 1
     _progress("Translate blocks")
     try:
+        # Инкрементальное обновление (если включено)
+        use_incremental = os.getenv("INCREMENTAL_UPDATE", "0") == "1"
+        previous_blocks = []
+        changed_ids = set()
+        
+        if use_incremental:
+            from core_engine.orchestrator.incremental_update import (
+                load_translation_state,
+                detect_changed_blocks,
+                merge_translations,
+            )
+            
+            state_dir = Path("library/translation_states")
+            previous_state = load_translation_state(book_id, state_dir)
+            
+            if previous_state:
+                # Загружаем предыдущие блоки из библиотеки
+                from core_engine.library.book_api import get_book_blocks
+                try:
+                    previous_blocks = get_book_blocks(book_id, "library") or []
+                    changed_ids = detect_changed_blocks(normalized, previous_state)
+                    if changed_ids:
+                        print(f"      Detected {len(changed_ids)} changed blocks, re-translating...")
+                    else:
+                        print(f"      No changes detected, using cached translations")
+                except Exception:
+                    previous_blocks = []
+                    changed_ids = set()
+        
         translated = translate_blocks(
             normalized,
             source_lang="en",
             target_lang="ru",
             mode=mode,
         )
+        
+        # Объединяем со старыми переводами если включено инкрементальное обновление
+        if use_incremental and previous_blocks and changed_ids:
+            from core_engine.orchestrator.incremental_update import merge_translations
+            translated = merge_translations(translated, previous_blocks, changed_ids)
+        
         validate_blocks_structure(translated, stage="translate")
         # Подсчитываем переведенные блоки
         translated_count = sum(1 for b in translated if (b.get("translated_text") or "").strip())
-        print(f"      Translated {translated_count}/{len(translated)} blocks")
+        cached_count = sum(1 for b in translated if b.get("metadata", {}).get("from_cache", False))
+        if cached_count > 0:
+            print(f"      Translated {translated_count}/{len(translated)} blocks ({cached_count} from cache)")
+        else:
+            print(f"      Translated {translated_count}/{len(translated)} blocks")
         _progress("Translate blocks", 1.0)
+        
+        # Сохраняем состояние для инкрементального обновления
+        if use_incremental:
+            from core_engine.orchestrator.incremental_update import update_translation_state
+            state_dir = Path("library/translation_states")
+            update_translation_state(book_id, translated, state_dir)
     except Exception as e:
         raise RuntimeError(f"Translation failed: {e}") from e
 

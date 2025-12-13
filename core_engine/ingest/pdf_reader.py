@@ -67,17 +67,76 @@ def _detect_block_type(text: str) -> BlockType:
 def _ocr_fallback(page, dpi: int = 200) -> List[Block]:
     """
     OCR fallback для пустых/сканированных страниц (best-effort).
-    Использует MuPDF OCR если доступен, иначе возвращает пустой список.
+    Пробует MuPDF OCR, затем Tesseract если доступен.
     """
     blocks: List[Block] = []
+    
+    # Пробуем MuPDF OCR (встроенный)
     try:
-        # Пробуем MuPDF OCR (если доступен)
-        pix = page.get_pixmap(dpi=dpi)
-        # Если OCR не доступен, просто возвращаем пустой список
-        # (можно добавить Tesseract fallback позже)
-        return blocks
+        # PyMuPDF 1.23+ имеет встроенный OCR через page.get_text("ocr")
+        ocr_text = page.get_text("ocr")
+        if ocr_text and ocr_text.strip():
+            # Разбиваем на блоки по строкам
+            lines = ocr_text.split("\n")
+            for idx, line in enumerate(lines):
+                if not line.strip():
+                    continue
+                # Приблизительный bbox (на всю ширину страницы)
+                rect = page.rect
+                y0 = rect.y0 + (idx * 20)  # Примерная высота строки
+                y1 = y0 + 20
+                blk = Block(
+                    id=f"ocr_p{page.number}_b{idx}",
+                    page_number=page.number,
+                    type=BlockType.PARAGRAPH,
+                    bbox=BBox(rect.x0, y0, rect.x1, y1),
+                    spans=[],
+                    raw_text=line.strip(),
+                    metadata={"ocr": True, "font_size": 12},
+                )
+                blocks.append(blk)
+            return blocks
     except Exception:
-        return blocks
+        pass
+    
+    # Fallback: Tesseract OCR (если установлен)
+    try:
+        try:
+            import pytesseract  # type: ignore
+            from PIL import Image  # type: ignore
+        except ImportError:
+            return blocks
+        
+        pix = page.get_pixmap(dpi=dpi)
+        img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
+        ocr_text = pytesseract.image_to_string(img, lang="eng+rus")
+        
+        if ocr_text and ocr_text.strip():
+            lines = ocr_text.split("\n")
+            for idx, line in enumerate(lines):
+                if not line.strip():
+                    continue
+                rect = page.rect
+                y0 = rect.y0 + (idx * 20)
+                y1 = y0 + 20
+                blk = Block(
+                    id=f"tesseract_p{page.number}_b{idx}",
+                    page_number=page.number,
+                    type=BlockType.PARAGRAPH,
+                    bbox=BBox(rect.x0, y0, rect.x1, y1),
+                    spans=[],
+                    raw_text=line.strip(),
+                    metadata={"ocr": True, "ocr_engine": "tesseract", "font_size": 12},
+                )
+                blocks.append(blk)
+            return blocks
+    except ImportError:
+        # Tesseract не установлен - это нормально
+        pass
+    except Exception:
+        pass
+    
+    return blocks
 
 
 def extract_blocks(path, pages: List[Page]) -> List[Block]:
@@ -121,10 +180,20 @@ def extract_blocks(path, pages: List[Page]) -> List[Block]:
                                                 round(bbox[2], 1),
                                                 round(bbox[3], 1),
                                             )
+                                            # Извлекаем цвета из span (Layout API)
+                                            color = span.get("color", 0)
+                                            # Конвертируем цвет из int в RGB
+                                            r = (color >> 16) & 0xFF
+                                            g = (color >> 8) & 0xFF
+                                            b = color & 0xFF
+                                            color_rgb = f"#{r:02x}{g:02x}{b:02x}" if color > 0 else None
+                                            
                                             font_info_by_bbox[bbox_key] = {
                                                 "size": span.get("size", 0),
                                                 "flags": span.get("flags", 0),  # bold=16, italic=2
                                                 "font": span.get("font", ""),
+                                                "color": color_rgb,
+                                                "color_int": color,
                                             }
             except Exception:
                 # Fallback: если get_text("dict") не работает, используем пустые font signals
@@ -149,12 +218,14 @@ def extract_blocks(path, pages: List[Page]) -> List[Block]:
                 flags = font_info.get("flags", 0)
                 is_bold = bool(flags & 16)  # PyMuPDF bold flag
                 is_italic = bool(flags & 2)  # PyMuPDF italic flag
+                color = font_info.get("color")  # RGB цвет из Layout API
 
                 metadata = {
                     "font_size": font_size,
                     "is_bold": is_bold,
                     "is_italic": is_italic,
                     "font": font_info.get("font", ""),
+                    "color": color,  # Сохраняем цвет для экспорта
                 }
 
                 blk = Block(
@@ -234,6 +305,7 @@ def extract_images(path, pages: List[Page]) -> List[ImageObject]:
             # Извлекаем пиксмапы
             for idx, img in enumerate(raw_images):
                 xref = img[0]
+                pix = None
                 try:
                     pix = fitz.Pixmap(doc, xref)
 
@@ -249,6 +321,10 @@ def extract_images(path, pages: List[Page]) -> List[ImageObject]:
                 except Exception:
                     # Best-effort: do not fail ingest because of an unsupported image
                     continue
+                finally:
+                    # Очистка памяти после каждого изображения для больших PDF
+                    if pix is not None:
+                        del pix
 
                 bbox_list = xref_to_bbox.get(xref, [0, 0, 0, 0])
                 bbox = BBox(
