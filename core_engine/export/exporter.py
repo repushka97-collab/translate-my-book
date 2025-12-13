@@ -5,6 +5,7 @@ from docx import Document
 
 from core_engine.core.models import BookDocument
 from core_engine.layout.pdf_builder import PDFBuilder
+from core_engine.export.html_exporter import export_html_absolute
 
 
 def export_json(doc: BookDocument, out_path: str) -> None:
@@ -20,24 +21,9 @@ def export_json(doc: BookDocument, out_path: str) -> None:
 
 def export_html(doc: BookDocument, out_path: str) -> None:
     """
-    Очень простой HTML без стилей. Позже улучшим.
+    HTML с абсолютными bbox, подложкой-растровкой и слоями блоков/картинок/таблиц.
     """
-    html = ["<html><body>"]
-
-    for page in doc.pages:
-        html.append(f"<h2>Page {page.number}</h2>")
-        for block in page.blocks:
-            txt = (
-                block.translated_text
-                or block.normalized_text
-                or block.raw_text
-                or ""
-            )
-            html.append(f"<p>{txt}</p>")
-
-    html.append("</body></html>")
-
-    Path(out_path).write_text("\n".join(html), encoding="utf-8")
+    export_html_absolute(doc, out_path)
 
 
 def export_pdf(doc: BookDocument, out_path: str) -> None:

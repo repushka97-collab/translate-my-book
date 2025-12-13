@@ -3,7 +3,16 @@ import pdfplumber
 from pypdf import PdfReader
 
 from typing import List, Dict, Any
-from core_engine.core.models import Page, Block, BlockType, BBox, ImageObject
+from core_engine.core.models import (
+    Page,
+    Block,
+    BlockType,
+    BBox,
+    ImageObject,
+    TableObject,
+    TableCell,
+)
+from core_engine.layout.column_detector import detect_columns as detect_columns_hist
 
 
 def get_pdf_info(path) -> Dict[str, Any]:
@@ -63,21 +72,27 @@ def extract_blocks(path, pages: List[Page]) -> List[Block]:
 
     with fitz.open(str(path)) as doc:
         for i, page in enumerate(doc):
-            # Получаем блоки с текстом
+            # Получаем блоки с текстом (PyMuPDF)
             text_blocks = page.get_text("blocks")
             
             # Получаем детальную информацию о шрифтах через dict
             try:
-                text_dict = page.get_text("dict")
+                text_dict = page.get_text("dict") or {}
                 font_info_by_bbox = {}  # (x0, y0, x1, y1) -> {size, flags, font}
                 
                 # Собираем font signals из spans
                 if "blocks" in text_dict:
-                    for block_dict in text_dict["blocks"]:
+                    for block_dict in text_dict.get("blocks", []):
+                        if not block_dict or not isinstance(block_dict, dict):
+                            continue
                         if "lines" in block_dict:
                             for line in block_dict["lines"]:
+                                if not line or not isinstance(line, dict):
+                                    continue
                                 if "spans" in line:
                                     for span in line["spans"]:
+                                        if not span or not isinstance(span, dict):
+                                            continue
                                         bbox = span.get("bbox", [0, 0, 0, 0])
                                         if len(bbox) == 4:
                                             bbox_key = (
@@ -134,6 +149,27 @@ def extract_blocks(path, pages: List[Page]) -> List[Block]:
 
                 blocks.append(blk)
                 pages[i].blocks.append(blk)
+
+    # Сохраняем assignments колонок на уровне metadata page (best-effort)
+    for page in pages:
+        if not page.blocks:
+            continue
+        blocks_dicts = []
+        for b in page.blocks:
+            blocks_dicts.append(
+                {
+                    "id": b.id,
+                    "bbox": {
+                        "x0": b.bbox.x0,
+                        "y0": b.bbox.y0,
+                        "x1": b.bbox.x1,
+                        "y1": b.bbox.y1,
+                    },
+                }
+            )
+        col_info = detect_columns_hist(blocks_dicts, page.width) or {}
+        page.metadata["columns"] = col_info.get("columns", [])
+        page.metadata["column_assignments"] = col_info.get("assignments", {})
 
     return blocks
 
@@ -210,17 +246,150 @@ def extract_images(path, pages: List[Page]) -> List[ImageObject]:
     return images
 
 
-def detect_tables(path, pages: List[Page]):
+def detect_tables(path, pages: List[Page]) -> List[TableObject]:
     """
-    Пока фейковая заглушка таблиц.
-    Если очень нужно — можно распарсить через pdfplumber.
+    Простая универсальная детекция таблиц на основе page.get_text(\"words\"):
+    - Кластеризация по Y в строки (tolerance=4)
+    - Кластеризация по X в столбцы (tolerance=25)
+    - Требования: >=3 строк и >=2 колонок, ширина таблицы < 90% ширины страницы.
+    - Заполняет page.tables TableObject с cells (row/col/text).
     """
-    pass
+    detected: List[TableObject] = []
+
+    with fitz.open(str(path)) as doc:
+        for i, page in enumerate(doc):
+            words = page.get_text("words") or []
+            if not words or len(words) < 10:
+                continue
+
+            # Сортируем слова по y0, затем x0
+            words = sorted(words, key=lambda w: (w[1], w[0]))
+
+            # Кластеризация в строки по Y
+            rows_raw: List[List[Any]] = []
+            tol_y = 4
+            current: List[Any] = []
+            current_y = None
+            for w in words:
+                x0, y0, x1, y1, text, *_ = w
+                if current_y is None:
+                    current_y = y0
+                if abs(y0 - current_y) <= tol_y:
+                    current.append(w)
+                else:
+                    if current:
+                        rows_raw.append(current)
+                    current = [w]
+                    current_y = y0
+            if current:
+                rows_raw.append(current)
+
+            # Удаляем строки с очень малым количеством слов
+            rows_raw = [r for r in rows_raw if len(r) >= 2]
+            if len(rows_raw) < 3:
+                continue
+
+            # Выделяем X-позиции для колонок
+            all_x = []
+            for r in rows_raw:
+                for w in r:
+                    all_x.append(w[0])
+            all_x = sorted(all_x)
+            cols: List[float] = []
+            tol_x = 25
+            for x in all_x:
+                if not cols or abs(x - cols[-1]) > tol_x:
+                    cols.append(x)
+
+            if len(cols) < 2:
+                continue
+
+            # Ограничение по ширине (90% от ширины страницы)
+            min_x = min(w[0] for w in words)
+            max_x = max(w[2] for w in words)
+            if (max_x - min_x) > page.rect.width * 0.9:
+                continue
+
+            # Строим ячейки строк по ближайшему столбцу
+            table_rows: List[List[str]] = []
+            for r in rows_raw:
+                cell_texts = [""] * len(cols)
+                for w in r:
+                    x0, y0, x1, y1, text, *_ = w
+                    # Пропускаем пустые токены
+                    if not text:
+                        continue
+                    # Находим ближайший столбец по x0
+                    best_idx = min(range(len(cols)), key=lambda idx: abs(x0 - cols[idx]))
+                    cell_texts[best_idx] = (cell_texts[best_idx] + " " + text).strip()
+                table_rows.append(cell_texts)
+
+            # Проверяем, что есть содержимое в большинстве ячеек
+            non_empty_cells = sum(1 for row in table_rows for c in row if c)
+            if non_empty_cells < len(table_rows) * len(cols) * 0.4:
+                continue
+
+            bbox = BBox(min_x, min(w[1] for w in words), max_x, max(w[3] for w in words))
+
+            # Формируем TableCells
+            cells: List[TableCell] = []
+            for r_idx, row in enumerate(table_rows):
+                for c_idx, cell_text in enumerate(row):
+                    cells.append(TableCell(row=r_idx, col=c_idx, text=cell_text))
+
+            tbl = TableObject(
+                id=f"p{i+1}_tbl{len(pages[i].tables) + 1}",
+                page_number=i + 1,
+                bbox=bbox,
+                cells=cells,
+                label=None,
+                caption=None,
+            )
+
+            pages[i].tables.append(tbl)
+            detected.append(tbl)
+
+    return detected
 
 
 def detect_columns(pages: List[Page], blocks: List[Block]):
     """
-    Лёгкая заглушка колонок.
+    Обертка для column_detector: если колонки уже вычислены в extract_blocks — пропускаем.
+    Иначе рассчитываем по имеющимся блокам.
     """
-    pass
+    if not pages or not blocks:
+        return
+
+    # Проверяем: есть ли хоть одна страница без columns
+    need_compute = any(not (p.metadata.get("columns") or p.metadata.get("column_assignments")) for p in pages)
+    if not need_compute:
+        return
+
+    # Группируем блоки по страницам
+    by_page: Dict[int, List[Block]] = {}
+    for b in blocks:
+        by_page.setdefault(b.page_number, []).append(b)
+
+    for p in pages:
+        if p.metadata.get("columns") or p.metadata.get("column_assignments"):
+            continue
+        bps = by_page.get(p.number, [])
+        if not bps:
+            continue
+        blocks_dicts = []
+        for b in bps:
+            blocks_dicts.append(
+                {
+                    "id": b.id,
+                    "bbox": {
+                        "x0": b.bbox.x0,
+                        "y0": b.bbox.y0,
+                        "x1": b.bbox.x1,
+                        "y1": b.bbox.y1,
+                    },
+                }
+            )
+        col_info = detect_columns_hist(blocks_dicts, p.width) or {}
+        p.metadata["columns"] = col_info.get("columns", [])
+        p.metadata["column_assignments"] = col_info.get("assignments", {})
 

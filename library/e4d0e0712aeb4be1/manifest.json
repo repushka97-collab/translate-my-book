@@ -2,7 +2,7 @@
   "book_id": "e4d0e0712aeb4be1",
   "source_pdf": "I:\\PROJECTS\\Translate-my-book\\translate-my-book\\For test\\Myofascial.pdf",
   "library_pdf": "library\\e4d0e0712aeb4be1\\original.pdf",
-  "created_at": "2025-12-12T22:13:13.195674Z",
+  "created_at": "2025-12-12T23:54:44.986625Z",
   "pages": 61,
   "metadata": {
     "title": "Myofascial Pain Syndrome: An Update on Clinical Characteristics, Etiopathogenesis, Diagnosis, and Treatment - Steen - Muscle & Nerve - Wiley Online Library",
@@ -14,2107 +14,8 @@
     "docx_main": "output\\e4d0e0712aeb4be1\\book_ru.docx"
   },
   "qa": {
-    "status": "error",
+    "status": "warn",
     "issues": [
-      {
-        "block_id": "p28_b1",
-        "page": 28,
-        "order": 419,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p28_b11",
-        "page": 28,
-        "order": 429,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p28_b13",
-        "page": 28,
-        "order": 431,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p28_b3",
-        "page": 28,
-        "order": 421,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p28_b5",
-        "page": 28,
-        "order": 423,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p28_b7",
-        "page": 28,
-        "order": 425,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p28_b9",
-        "page": 28,
-        "order": 427,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p29_b0",
-        "page": 29,
-        "order": 433,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p29_b10",
-        "page": 29,
-        "order": 443,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p29_b12",
-        "page": 29,
-        "order": 445,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p29_b14",
-        "page": 29,
-        "order": 447,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p29_b2",
-        "page": 29,
-        "order": 435,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p29_b4",
-        "page": 29,
-        "order": 437,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p29_b6",
-        "page": 29,
-        "order": 439,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p29_b8",
-        "page": 29,
-        "order": 441,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p30_b1",
-        "page": 30,
-        "order": 449,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p30_b11",
-        "page": 30,
-        "order": 459,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p30_b13",
-        "page": 30,
-        "order": 461,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p30_b15",
-        "page": 30,
-        "order": 463,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p30_b3",
-        "page": 30,
-        "order": 451,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p30_b5",
-        "page": 30,
-        "order": 453,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p30_b7",
-        "page": 30,
-        "order": 455,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p30_b9",
-        "page": 30,
-        "order": 457,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p31_b1",
-        "page": 31,
-        "order": 465,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p31_b11",
-        "page": 31,
-        "order": 475,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p31_b13",
-        "page": 31,
-        "order": 477,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p31_b15",
-        "page": 31,
-        "order": 479,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p31_b3",
-        "page": 31,
-        "order": 467,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p31_b5",
-        "page": 31,
-        "order": 469,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p31_b7",
-        "page": 31,
-        "order": 471,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p31_b9",
-        "page": 31,
-        "order": 473,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p32_b1",
-        "page": 32,
-        "order": 481,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p32_b11",
-        "page": 32,
-        "order": 491,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p32_b13",
-        "page": 32,
-        "order": 493,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p32_b15",
-        "page": 32,
-        "order": 495,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p32_b3",
-        "page": 32,
-        "order": 483,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p32_b5",
-        "page": 32,
-        "order": 485,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p32_b7",
-        "page": 32,
-        "order": 487,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p32_b9",
-        "page": 32,
-        "order": 489,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p33_b1",
-        "page": 33,
-        "order": 497,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p33_b11",
-        "page": 33,
-        "order": 507,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p33_b13",
-        "page": 33,
-        "order": 509,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p33_b15",
-        "page": 33,
-        "order": 511,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p33_b3",
-        "page": 33,
-        "order": 499,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p33_b5",
-        "page": 33,
-        "order": 501,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p33_b7",
-        "page": 33,
-        "order": 503,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p33_b9",
-        "page": 33,
-        "order": 505,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p34_b1",
-        "page": 34,
-        "order": 513,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p34_b11",
-        "page": 34,
-        "order": 523,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p34_b13",
-        "page": 34,
-        "order": 525,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p34_b15",
-        "page": 34,
-        "order": 527,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p34_b3",
-        "page": 34,
-        "order": 515,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p34_b5",
-        "page": 34,
-        "order": 517,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p34_b7",
-        "page": 34,
-        "order": 519,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p34_b9",
-        "page": 34,
-        "order": 521,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p35_b1",
-        "page": 35,
-        "order": 529,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p35_b11",
-        "page": 35,
-        "order": 539,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p35_b13",
-        "page": 35,
-        "order": 541,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p35_b3",
-        "page": 35,
-        "order": 531,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p35_b5",
-        "page": 35,
-        "order": 533,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p35_b7",
-        "page": 35,
-        "order": 535,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p35_b9",
-        "page": 35,
-        "order": 537,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p36_b0",
-        "page": 36,
-        "order": 543,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p36_b10",
-        "page": 36,
-        "order": 553,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p36_b12",
-        "page": 36,
-        "order": 555,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p36_b14",
-        "page": 36,
-        "order": 557,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p36_b2",
-        "page": 36,
-        "order": 545,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p36_b4",
-        "page": 36,
-        "order": 547,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p36_b6",
-        "page": 36,
-        "order": 549,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p36_b8",
-        "page": 36,
-        "order": 551,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p37_b1",
-        "page": 37,
-        "order": 559,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p37_b11",
-        "page": 37,
-        "order": 569,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p37_b13",
-        "page": 37,
-        "order": 571,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p37_b15",
-        "page": 37,
-        "order": 573,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p37_b3",
-        "page": 37,
-        "order": 561,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p37_b5",
-        "page": 37,
-        "order": 563,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p37_b7",
-        "page": 37,
-        "order": 565,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p37_b9",
-        "page": 37,
-        "order": 567,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p38_b1",
-        "page": 38,
-        "order": 575,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p38_b11",
-        "page": 38,
-        "order": 585,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p38_b13",
-        "page": 38,
-        "order": 587,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p38_b3",
-        "page": 38,
-        "order": 577,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p38_b5",
-        "page": 38,
-        "order": 579,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p38_b7",
-        "page": 38,
-        "order": 581,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p38_b9",
-        "page": 38,
-        "order": 583,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p39_b0",
-        "page": 39,
-        "order": 589,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p39_b10",
-        "page": 39,
-        "order": 599,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p39_b12",
-        "page": 39,
-        "order": 601,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p39_b14",
-        "page": 39,
-        "order": 603,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p39_b2",
-        "page": 39,
-        "order": 591,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p39_b4",
-        "page": 39,
-        "order": 593,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p39_b6",
-        "page": 39,
-        "order": 595,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p39_b8",
-        "page": 39,
-        "order": 597,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p40_b1",
-        "page": 40,
-        "order": 605,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p40_b11",
-        "page": 40,
-        "order": 615,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p40_b13",
-        "page": 40,
-        "order": 617,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p40_b3",
-        "page": 40,
-        "order": 607,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p40_b5",
-        "page": 40,
-        "order": 609,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p40_b7",
-        "page": 40,
-        "order": 611,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p40_b9",
-        "page": 40,
-        "order": 613,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p41_b1",
-        "page": 41,
-        "order": 620,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p41_b11",
-        "page": 41,
-        "order": 630,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p41_b13",
-        "page": 41,
-        "order": 632,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p41_b15",
-        "page": 41,
-        "order": 634,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p41_b3",
-        "page": 41,
-        "order": 622,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p41_b5",
-        "page": 41,
-        "order": 624,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p41_b7",
-        "page": 41,
-        "order": 626,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p41_b9",
-        "page": 41,
-        "order": 628,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p42_b1",
-        "page": 42,
-        "order": 636,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p42_b11",
-        "page": 42,
-        "order": 646,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p42_b13",
-        "page": 42,
-        "order": 648,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p42_b3",
-        "page": 42,
-        "order": 638,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p42_b5",
-        "page": 42,
-        "order": 640,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p42_b7",
-        "page": 42,
-        "order": 642,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p42_b9",
-        "page": 42,
-        "order": 644,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p43_b0",
-        "page": 43,
-        "order": 650,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p43_b10",
-        "page": 43,
-        "order": 660,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p43_b12",
-        "page": 43,
-        "order": 662,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p43_b14",
-        "page": 43,
-        "order": 664,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p43_b2",
-        "page": 43,
-        "order": 652,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p43_b4",
-        "page": 43,
-        "order": 654,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p43_b6",
-        "page": 43,
-        "order": 656,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p43_b8",
-        "page": 43,
-        "order": 658,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p44_b0",
-        "page": 44,
-        "order": 666,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p44_b10",
-        "page": 44,
-        "order": 676,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p44_b12",
-        "page": 44,
-        "order": 678,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p44_b14",
-        "page": 44,
-        "order": 680,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p44_b2",
-        "page": 44,
-        "order": 668,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p44_b4",
-        "page": 44,
-        "order": 670,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p44_b6",
-        "page": 44,
-        "order": 672,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p44_b8",
-        "page": 44,
-        "order": 674,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p45_b1",
-        "page": 45,
-        "order": 682,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p45_b11",
-        "page": 45,
-        "order": 692,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p45_b13",
-        "page": 45,
-        "order": 694,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p45_b15",
-        "page": 45,
-        "order": 696,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p45_b3",
-        "page": 45,
-        "order": 684,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p45_b5",
-        "page": 45,
-        "order": 686,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p45_b7",
-        "page": 45,
-        "order": 688,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p45_b9",
-        "page": 45,
-        "order": 690,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p46_b1",
-        "page": 46,
-        "order": 698,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p46_b11",
-        "page": 46,
-        "order": 708,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p46_b13",
-        "page": 46,
-        "order": 710,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p46_b3",
-        "page": 46,
-        "order": 700,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p46_b5",
-        "page": 46,
-        "order": 702,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p46_b7",
-        "page": 46,
-        "order": 704,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p46_b9",
-        "page": 46,
-        "order": 706,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p47_b1",
-        "page": 47,
-        "order": 713,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p47_b11",
-        "page": 47,
-        "order": 723,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p47_b13",
-        "page": 47,
-        "order": 725,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p47_b3",
-        "page": 47,
-        "order": 715,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p47_b5",
-        "page": 47,
-        "order": 717,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p47_b7",
-        "page": 47,
-        "order": 719,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p47_b9",
-        "page": 47,
-        "order": 721,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p48_b0",
-        "page": 48,
-        "order": 727,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p48_b10",
-        "page": 48,
-        "order": 737,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p48_b12",
-        "page": 48,
-        "order": 739,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p48_b14",
-        "page": 48,
-        "order": 741,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p48_b2",
-        "page": 48,
-        "order": 729,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p48_b4",
-        "page": 48,
-        "order": 731,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p48_b6",
-        "page": 48,
-        "order": 733,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p48_b8",
-        "page": 48,
-        "order": 735,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p49_b1",
-        "page": 49,
-        "order": 744,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p49_b13",
-        "page": 49,
-        "order": 756,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p49_b15",
-        "page": 49,
-        "order": 758,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p49_b3",
-        "page": 49,
-        "order": 746,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p49_b5",
-        "page": 49,
-        "order": 748,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p49_b7",
-        "page": 49,
-        "order": 750,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p49_b9",
-        "page": 49,
-        "order": 752,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p50_b1",
-        "page": 50,
-        "order": 760,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p50_b11",
-        "page": 50,
-        "order": 770,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p50_b13",
-        "page": 50,
-        "order": 772,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p50_b3",
-        "page": 50,
-        "order": 762,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p50_b5",
-        "page": 50,
-        "order": 764,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p50_b7",
-        "page": 50,
-        "order": 766,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p50_b9",
-        "page": 50,
-        "order": 768,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p51_b1",
-        "page": 51,
-        "order": 774,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p51_b11",
-        "page": 51,
-        "order": 784,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p51_b13",
-        "page": 51,
-        "order": 786,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p51_b3",
-        "page": 51,
-        "order": 776,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p51_b5",
-        "page": 51,
-        "order": 778,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p51_b7",
-        "page": 51,
-        "order": 780,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p51_b9",
-        "page": 51,
-        "order": 782,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p52_b1",
-        "page": 52,
-        "order": 788,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p52_b11",
-        "page": 52,
-        "order": 798,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p52_b13",
-        "page": 52,
-        "order": 800,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p52_b3",
-        "page": 52,
-        "order": 790,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p52_b5",
-        "page": 52,
-        "order": 792,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p52_b7",
-        "page": 52,
-        "order": 794,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p52_b9",
-        "page": 52,
-        "order": 796,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p53_b1",
-        "page": 53,
-        "order": 803,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p53_b11",
-        "page": 53,
-        "order": 813,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p53_b13",
-        "page": 53,
-        "order": 815,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p53_b15",
-        "page": 53,
-        "order": 817,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p53_b3",
-        "page": 53,
-        "order": 805,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p53_b5",
-        "page": 53,
-        "order": 807,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p53_b7",
-        "page": 53,
-        "order": 809,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p53_b9",
-        "page": 53,
-        "order": 811,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p54_b1",
-        "page": 54,
-        "order": 819,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p54_b11",
-        "page": 54,
-        "order": 829,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p54_b13",
-        "page": 54,
-        "order": 831,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p54_b3",
-        "page": 54,
-        "order": 821,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p54_b5",
-        "page": 54,
-        "order": 823,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p54_b7",
-        "page": 54,
-        "order": 825,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p54_b9",
-        "page": 54,
-        "order": 827,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p55_b1",
-        "page": 55,
-        "order": 834,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p55_b11",
-        "page": 55,
-        "order": 844,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p55_b13",
-        "page": 55,
-        "order": 846,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p55_b3",
-        "page": 55,
-        "order": 836,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p55_b5",
-        "page": 55,
-        "order": 838,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p55_b7",
-        "page": 55,
-        "order": 840,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p56_b0",
-        "page": 56,
-        "order": 848,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p56_b10",
-        "page": 56,
-        "order": 858,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p56_b12",
-        "page": 56,
-        "order": 860,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p56_b14",
-        "page": 56,
-        "order": 862,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p56_b2",
-        "page": 56,
-        "order": 850,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p56_b4",
-        "page": 56,
-        "order": 852,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p56_b6",
-        "page": 56,
-        "order": 854,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p57_b11",
-        "page": 57,
-        "order": 874,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p57_b13",
-        "page": 57,
-        "order": 876,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p57_b5",
-        "page": 57,
-        "order": 868,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p57_b7",
-        "page": 57,
-        "order": 870,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p57_b9",
-        "page": 57,
-        "order": 872,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p58_b1",
-        "page": 58,
-        "order": 878,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p58_b11",
-        "page": 58,
-        "order": 888,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p58_b3",
-        "page": 58,
-        "order": 880,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p58_b5",
-        "page": 58,
-        "order": 882,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p58_b7",
-        "page": 58,
-        "order": 884,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p58_b9",
-        "page": 58,
-        "order": 886,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p59_b1",
-        "page": 59,
-        "order": 892,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p59_b3",
-        "page": 59,
-        "order": 894,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p59_b5",
-        "page": 59,
-        "order": 896,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p59_b7",
-        "page": 59,
-        "order": 898,
-        "type": "lost_block",
-        "severity": "high",
-        "message": "Block present in normalized_blocks but missing in translated_blocks.",
-        "meta": {}
-      },
-      {
-        "block_id": "p10_b24",
-        "page": 10,
-        "order": 141,
-        "type": "potential_break",
-        "severity": "low",
-        "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-        "meta": {
-          "src_len": 386
-        }
-      },
       {
         "block_id": "p10_b4",
         "page": 10,
@@ -2124,28 +25,6 @@
         "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
         "meta": {
           "src_len": 310
-        }
-      },
-      {
-        "block_id": "p12_b1",
-        "page": 12,
-        "order": 182,
-        "type": "potential_break",
-        "severity": "low",
-        "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-        "meta": {
-          "src_len": 511
-        }
-      },
-      {
-        "block_id": "p12_b26",
-        "page": 12,
-        "order": 207,
-        "type": "potential_break",
-        "severity": "low",
-        "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-        "meta": {
-          "src_len": 106
         }
       },
       {
@@ -2253,6 +132,454 @@
         }
       },
       {
+        "block_id": "p28_b1",
+        "page": 28,
+        "order": 419,
+        "type": "mixed_alphabet",
+        "severity": "medium",
+        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "meta": {
+          "latin": 6,
+          "cyr": 6,
+          "latin_ratio": 0.5,
+          "cyr_ratio": 0.5
+        }
+      },
+      {
+        "block_id": "p28_b11",
+        "page": 28,
+        "order": 429,
+        "type": "mixed_alphabet",
+        "severity": "medium",
+        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "meta": {
+          "latin": 6,
+          "cyr": 6,
+          "latin_ratio": 0.5,
+          "cyr_ratio": 0.5
+        }
+      },
+      {
+        "block_id": "p29_b6",
+        "page": 29,
+        "order": 439,
+        "type": "mixed_alphabet",
+        "severity": "medium",
+        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "meta": {
+          "latin": 6,
+          "cyr": 6,
+          "latin_ratio": 0.5,
+          "cyr_ratio": 0.5
+        }
+      },
+      {
+        "block_id": "p30_b1",
+        "page": 30,
+        "order": 449,
+        "type": "mixed_alphabet",
+        "severity": "medium",
+        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "meta": {
+          "latin": 6,
+          "cyr": 6,
+          "latin_ratio": 0.5,
+          "cyr_ratio": 0.5
+        }
+      },
+      {
+        "block_id": "p30_b15",
+        "page": 30,
+        "order": 463,
+        "type": "mixed_alphabet",
+        "severity": "medium",
+        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "meta": {
+          "latin": 6,
+          "cyr": 6,
+          "latin_ratio": 0.5,
+          "cyr_ratio": 0.5
+        }
+      },
+      {
+        "block_id": "p30_b5",
+        "page": 30,
+        "order": 453,
+        "type": "mixed_alphabet",
+        "severity": "medium",
+        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "meta": {
+          "latin": 6,
+          "cyr": 6,
+          "latin_ratio": 0.5,
+          "cyr_ratio": 0.5
+        }
+      },
+      {
+        "block_id": "p31_b1",
+        "page": 31,
+        "order": 465,
+        "type": "mixed_alphabet",
+        "severity": "medium",
+        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "meta": {
+          "latin": 6,
+          "cyr": 6,
+          "latin_ratio": 0.5,
+          "cyr_ratio": 0.5
+        }
+      },
+      {
+        "block_id": "p31_b11",
+        "page": 31,
+        "order": 475,
+        "type": "mixed_alphabet",
+        "severity": "medium",
+        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "meta": {
+          "latin": 6,
+          "cyr": 6,
+          "latin_ratio": 0.5,
+          "cyr_ratio": 0.5
+        }
+      },
+      {
+        "block_id": "p31_b7",
+        "page": 31,
+        "order": 471,
+        "type": "mixed_alphabet",
+        "severity": "medium",
+        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "meta": {
+          "latin": 6,
+          "cyr": 6,
+          "latin_ratio": 0.5,
+          "cyr_ratio": 0.5
+        }
+      },
+      {
+        "block_id": "p31_b9",
+        "page": 31,
+        "order": 473,
+        "type": "mixed_alphabet",
+        "severity": "medium",
+        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "meta": {
+          "latin": 6,
+          "cyr": 6,
+          "latin_ratio": 0.5,
+          "cyr_ratio": 0.5
+        }
+      },
+      {
+        "block_id": "p32_b7",
+        "page": 32,
+        "order": 487,
+        "type": "mixed_alphabet",
+        "severity": "medium",
+        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "meta": {
+          "latin": 6,
+          "cyr": 6,
+          "latin_ratio": 0.5,
+          "cyr_ratio": 0.5
+        }
+      },
+      {
+        "block_id": "p33_b15",
+        "page": 33,
+        "order": 511,
+        "type": "mixed_alphabet",
+        "severity": "medium",
+        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "meta": {
+          "latin": 6,
+          "cyr": 6,
+          "latin_ratio": 0.5,
+          "cyr_ratio": 0.5
+        }
+      },
+      {
+        "block_id": "p33_b5",
+        "page": 33,
+        "order": 501,
+        "type": "mixed_alphabet",
+        "severity": "medium",
+        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "meta": {
+          "latin": 6,
+          "cyr": 6,
+          "latin_ratio": 0.5,
+          "cyr_ratio": 0.5
+        }
+      },
+      {
+        "block_id": "p34_b5",
+        "page": 34,
+        "order": 517,
+        "type": "mixed_alphabet",
+        "severity": "medium",
+        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "meta": {
+          "latin": 6,
+          "cyr": 6,
+          "latin_ratio": 0.5,
+          "cyr_ratio": 0.5
+        }
+      },
+      {
+        "block_id": "p35_b7",
+        "page": 35,
+        "order": 535,
+        "type": "mixed_alphabet",
+        "severity": "medium",
+        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "meta": {
+          "latin": 6,
+          "cyr": 6,
+          "latin_ratio": 0.5,
+          "cyr_ratio": 0.5
+        }
+      },
+      {
+        "block_id": "p36_b12",
+        "page": 36,
+        "order": 555,
+        "type": "mixed_alphabet",
+        "severity": "medium",
+        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "meta": {
+          "latin": 6,
+          "cyr": 6,
+          "latin_ratio": 0.5,
+          "cyr_ratio": 0.5
+        }
+      },
+      {
+        "block_id": "p36_b8",
+        "page": 36,
+        "order": 551,
+        "type": "mixed_alphabet",
+        "severity": "medium",
+        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "meta": {
+          "latin": 6,
+          "cyr": 6,
+          "latin_ratio": 0.5,
+          "cyr_ratio": 0.5
+        }
+      },
+      {
+        "block_id": "p42_b11",
+        "page": 42,
+        "order": 646,
+        "type": "mixed_alphabet",
+        "severity": "medium",
+        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "meta": {
+          "latin": 6,
+          "cyr": 6,
+          "latin_ratio": 0.5,
+          "cyr_ratio": 0.5
+        }
+      },
+      {
+        "block_id": "p43_b10",
+        "page": 43,
+        "order": 660,
+        "type": "mixed_alphabet",
+        "severity": "medium",
+        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "meta": {
+          "latin": 6,
+          "cyr": 6,
+          "latin_ratio": 0.5,
+          "cyr_ratio": 0.5
+        }
+      },
+      {
+        "block_id": "p43_b2",
+        "page": 43,
+        "order": 652,
+        "type": "mixed_alphabet",
+        "severity": "medium",
+        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "meta": {
+          "latin": 6,
+          "cyr": 6,
+          "latin_ratio": 0.5,
+          "cyr_ratio": 0.5
+        }
+      },
+      {
+        "block_id": "p43_b8",
+        "page": 43,
+        "order": 658,
+        "type": "mixed_alphabet",
+        "severity": "medium",
+        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "meta": {
+          "latin": 6,
+          "cyr": 6,
+          "latin_ratio": 0.5,
+          "cyr_ratio": 0.5
+        }
+      },
+      {
+        "block_id": "p44_b8",
+        "page": 44,
+        "order": 674,
+        "type": "mixed_alphabet",
+        "severity": "medium",
+        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "meta": {
+          "latin": 6,
+          "cyr": 6,
+          "latin_ratio": 0.5,
+          "cyr_ratio": 0.5
+        }
+      },
+      {
+        "block_id": "p49_b7",
+        "page": 49,
+        "order": 750,
+        "type": "mixed_alphabet",
+        "severity": "medium",
+        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "meta": {
+          "latin": 6,
+          "cyr": 6,
+          "latin_ratio": 0.5,
+          "cyr_ratio": 0.5
+        }
+      },
+      {
+        "block_id": "p51_b7",
+        "page": 51,
+        "order": 780,
+        "type": "mixed_alphabet",
+        "severity": "medium",
+        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "meta": {
+          "latin": 6,
+          "cyr": 6,
+          "latin_ratio": 0.5,
+          "cyr_ratio": 0.5
+        }
+      },
+      {
+        "block_id": "p53_b1",
+        "page": 53,
+        "order": 803,
+        "type": "mixed_alphabet",
+        "severity": "medium",
+        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "meta": {
+          "latin": 6,
+          "cyr": 6,
+          "latin_ratio": 0.5,
+          "cyr_ratio": 0.5
+        }
+      },
+      {
+        "block_id": "p53_b7",
+        "page": 53,
+        "order": 809,
+        "type": "mixed_alphabet",
+        "severity": "medium",
+        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "meta": {
+          "latin": 6,
+          "cyr": 6,
+          "latin_ratio": 0.5,
+          "cyr_ratio": 0.5
+        }
+      },
+      {
+        "block_id": "p54_b1",
+        "page": 54,
+        "order": 819,
+        "type": "mixed_alphabet",
+        "severity": "medium",
+        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "meta": {
+          "latin": 6,
+          "cyr": 6,
+          "latin_ratio": 0.5,
+          "cyr_ratio": 0.5
+        }
+      },
+      {
+        "block_id": "p54_b7",
+        "page": 54,
+        "order": 825,
+        "type": "mixed_alphabet",
+        "severity": "medium",
+        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "meta": {
+          "latin": 6,
+          "cyr": 6,
+          "latin_ratio": 0.5,
+          "cyr_ratio": 0.5
+        }
+      },
+      {
+        "block_id": "p55_b7",
+        "page": 55,
+        "order": 840,
+        "type": "mixed_alphabet",
+        "severity": "medium",
+        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "meta": {
+          "latin": 6,
+          "cyr": 6,
+          "latin_ratio": 0.5,
+          "cyr_ratio": 0.5
+        }
+      },
+      {
+        "block_id": "p56_b14",
+        "page": 56,
+        "order": 862,
+        "type": "mixed_alphabet",
+        "severity": "medium",
+        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "meta": {
+          "latin": 6,
+          "cyr": 6,
+          "latin_ratio": 0.5,
+          "cyr_ratio": 0.5
+        }
+      },
+      {
+        "block_id": "p56_b6",
+        "page": 56,
+        "order": 854,
+        "type": "mixed_alphabet",
+        "severity": "medium",
+        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "meta": {
+          "latin": 6,
+          "cyr": 6,
+          "latin_ratio": 0.5,
+          "cyr_ratio": 0.5
+        }
+      },
+      {
+        "block_id": "p57_b13",
+        "page": 57,
+        "order": 876,
+        "type": "mixed_alphabet",
+        "severity": "medium",
+        "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+        "meta": {
+          "latin": 6,
+          "cyr": 6,
+          "latin_ratio": 0.5,
+          "cyr_ratio": 0.5
+        }
+      },
+      {
         "block_id": "p58_b13",
         "page": 58,
         "order": 890,
@@ -2318,32 +645,30 @@
       }
     ],
     "summary": {
-      "total_blocks": 635,
-      "checked": 403,
-      "issues_total": 249,
+      "total_blocks": 631,
+      "checked": 631,
+      "issues_total": 46,
       "issues_by_type": {
-        "lost_block": 232,
-        "potential_break": 5,
+        "potential_break": 2,
         "repeated_tokens": 10,
         "concatenated_scripts": 1,
-        "mixed_alphabet": 1
+        "mixed_alphabet": 33
       },
       "issues_by_severity": {
-        "high": 232,
-        "low": 15,
-        "medium": 2
+        "low": 12,
+        "medium": 34
       },
       "roles_count": {
-        "body": 348,
+        "body": 346,
         "heading1": 8,
-        "heading2": 279
+        "heading2": 277
       }
     },
     "translation_metrics": {
-      "average_length_ratio": 0.9324487971014569,
+      "average_length_ratio": 0.9576900501487353,
       "min_length_ratio": 0.3888888888888889,
       "max_length_ratio": 1.5,
-      "blocks_analyzed": 403
+      "blocks_analyzed": 631
     }
   },
   "layers": {

@@ -6,6 +6,9 @@ from __future__ import annotations
 from typing import Any, Dict, List
 import re
 
+from core_engine.layout.sentence_merger import merge_paragraphs_in_stream
+from core_engine.layout.column_detector import detect_columns
+
 
 # ============================================================
 #               РЕГУЛЯРКИ ДЛЯ СТРУКТУРНЫХ ЗАГОЛОВКОВ
@@ -423,61 +426,146 @@ def _parse_table_rows(text: str) -> List[List[str]]:
 #                          ДВЕ КОЛОНКИ
 # ============================================================
 
-def _order_blocks_two_columns(blocks: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+def _order_blocks_two_columns(
+    blocks: List[Dict[str, Any]],
+    col_assignments: Dict[str, int] | None = None,
+    columns: List[Any] | None = None,
+) -> List[Dict[str, Any]]:
     """
     Улучшенная двухколоночная верстка:
     - Определяет есть ли две колонки
     - Чередует блоки из левой и правой колонок по y-позиции
     - Сохраняет правильный порядок чтения (слева направо, сверху вниз)
     """
+    col_assignments = col_assignments or {}
+    columns = columns or []
+
     with_bbox = [b for b in blocks if b.get("bbox")]
     no_bbox = [b for b in blocks if not b.get("bbox")]
 
     if not with_bbox:
         return sorted(blocks, key=lambda b: b.get("order", 0))
 
-    xs = [b["bbox"]["x0"] for b in with_bbox]
-    spread = max(xs) - min(xs)
+    # Если есть уверенные назначения колонок (>=40% блоков с bbox имеют assignment) — используем их
+    def _bucket_idx(b: Dict[str, Any]) -> int | None:
+        bid = b.get("id") or b.get("block_id")
+        if bid in col_assignments:
+            try:
+                return int(col_assignments[bid])
+            except Exception:
+                return None
+        return None
 
-    if spread < 120:
-        # Одна колонка - просто сортируем по y
-        ordered = sorted(with_bbox, key=lambda b: (b["bbox"]["y0"], b.get("order", 0)))
-    else:
-        # Две колонки - определяем границу
-        mid = sorted(xs)[len(xs) // 2]
-        left = sorted(
-            [b for b in with_bbox if b["bbox"]["x0"] <= mid],
-            key=lambda b: (b["bbox"]["y0"], b.get("order", 0)),
-        )
-        right = sorted(
-            [b for b in with_bbox if b["bbox"]["x0"] > mid],
-            key=lambda b: (b["bbox"]["y0"], b.get("order", 0)),
-        )
-        
-        # Чередуем блоки из левой и правой колонок по y-позиции
-        ordered = []
-        left_idx = 0
-        right_idx = 0
-        
-        while left_idx < len(left) or right_idx < len(right):
-            # Определяем какой блок идет следующим по y-позиции
-            left_y = left[left_idx]["bbox"]["y0"] if left_idx < len(left) else float('inf')
-            right_y = right[right_idx]["bbox"]["y0"] if right_idx < len(right) else float('inf')
-            
-            # Если блоки близко по y (в пределах 50px), берем левый первым
-            if abs(left_y - right_y) < 50:
-                if left_idx < len(left):
+    assigned = [b for b in with_bbox if _bucket_idx(b) is not None]
+    use_assignments = assigned and len(assigned) >= 0.4 * len(with_bbox)
+
+    ordered: List[Dict[str, Any]]
+
+    if use_assignments:
+        buckets: Dict[int, List[Dict[str, Any]]] = {}
+        max_idx = -1
+        for b in assigned:
+            idx = _bucket_idx(b)
+            if idx is None:
+                continue
+            buckets.setdefault(idx, []).append(b)
+            max_idx = max(max_idx, idx)
+
+        # Сортировка внутри каждой колонки по y
+        for arr in buckets.values():
+            arr.sort(key=lambda b: (b["bbox"]["y0"], b.get("order", 0)))
+
+        # Interleave по колонкам (для 2 колонок — предыдущая логика)
+        if max_idx == 1 and len(buckets) == 2:
+            left = buckets.get(0, [])
+            right = buckets.get(1, [])
+            ordered = []
+            left_idx = 0
+            right_idx = 0
+            while left_idx < len(left) or right_idx < len(right):
+                left_y = left[left_idx]["bbox"]["y0"] if left_idx < len(left) else float("inf")
+                right_y = right[right_idx]["bbox"]["y0"] if right_idx < len(right) else float("inf")
+                if abs(left_y - right_y) < 50:
+                    if left_idx < len(left):
+                        ordered.append(left[left_idx])
+                        left_idx += 1
+                    if right_idx < len(right):
+                        ordered.append(right[right_idx])
+                        right_idx += 1
+                elif left_y < right_y:
                     ordered.append(left[left_idx])
                     left_idx += 1
-                if right_idx < len(right):
+                else:
                     ordered.append(right[right_idx])
                     right_idx += 1
-            elif left_y < right_y:
-                ordered.append(left[left_idx])
-                left_idx += 1
-            else:
-                ordered.append(right[right_idx])
-                right_idx += 1
+        else:
+            # >2 колонок или несбалансировано: глобальная слияние по ближайшему y
+            ordered = []
+            heads = {k: 0 for k in buckets}
+            while True:
+                best_col = None
+                best_y = float("inf")
+                for k, arr in buckets.items():
+                    idx = heads[k]
+                    if idx >= len(arr):
+                        continue
+                    y = arr[idx]["bbox"]["y0"]
+                    if y < best_y:
+                        best_y = y
+                        best_col = k
+                if best_col is None:
+                    break
+                ordered.append(buckets[best_col][heads[best_col]])
+                heads[best_col] += 1
+
+        # Добавляем необработанные блоки (без assignment) по y
+        leftovers = [b for b in with_bbox if _bucket_idx(b) is None]
+        if leftovers:
+            ordered += sorted(leftovers, key=lambda b: (b["bbox"]["y0"], b.get("order", 0)))
+    else:
+        # Fallback: старая эвристика по spread
+        xs = [b["bbox"]["x0"] for b in with_bbox]
+        spread = max(xs) - min(xs)
+
+        if spread < 120:
+            # Одна колонка - просто сортируем по y
+            ordered = sorted(with_bbox, key=lambda b: (b["bbox"]["y0"], b.get("order", 0)))
+        else:
+            # Две колонки - определяем границу
+            mid = sorted(xs)[len(xs) // 2]
+            left = sorted(
+                [b for b in with_bbox if b["bbox"]["x0"] <= mid],
+                key=lambda b: (b["bbox"]["y0"], b.get("order", 0)),
+            )
+            right = sorted(
+                [b for b in with_bbox if b["bbox"]["x0"] > mid],
+                key=lambda b: (b["bbox"]["y0"], b.get("order", 0)),
+            )
+            
+            # Чередуем блоки из левой и правой колонок по y-позиции
+            ordered = []
+            left_idx = 0
+            right_idx = 0
+            
+            while left_idx < len(left) or right_idx < len(right):
+                # Определяем какой блок идет следующим по y-позиции
+                left_y = left[left_idx]["bbox"]["y0"] if left_idx < len(left) else float('inf')
+                right_y = right[right_idx]["bbox"]["y0"] if right_idx < len(right) else float('inf')
+                
+                # Если блоки близко по y (в пределах 50px), берем левый первым
+                if abs(left_y - right_y) < 50:
+                    if left_idx < len(left):
+                        ordered.append(left[left_idx])
+                        left_idx += 1
+                    if right_idx < len(right):
+                        ordered.append(right[right_idx])
+                        right_idx += 1
+                elif left_y < right_y:
+                    ordered.append(left[left_idx])
+                    left_idx += 1
+                else:
+                    ordered.append(right[right_idx])
+                    right_idx += 1
 
     tail = sorted(no_bbox, key=lambda b: b.get("order", 0))
     return ordered + tail
@@ -606,6 +694,56 @@ def _block_to_paragraphs(block: Dict[str, Any], page: int) -> List[Dict[str, Any
     return [{"type": "paragraph", "text": text, "page": page}]
 
 
+def _table_to_paragraph(table: Dict[str, Any], page: int) -> List[Dict[str, Any]]:
+    """
+    Конвертация таблицы (dict или TableObject) в paragraph-stream формат.
+    """
+    rows_out: List[List[str]] = []
+
+    # Извлекаем ячейки
+    cells = table.get("cells") or []
+    if hasattr(table, "cells"):
+        try:
+            cells = table.cells  # TableObject
+        except Exception:
+            pass
+
+    if cells:
+        # Группируем по row/col
+        rows_by_idx: Dict[int, Dict[int, str]] = {}
+        max_col = 0
+        for c in cells:
+            try:
+                r_idx = int(getattr(c, "row", c.get("row", 0)))
+                c_idx = int(getattr(c, "col", c.get("col", 0)))
+                txt = getattr(c, "text", None) if not isinstance(c, dict) else c.get("text")
+            except Exception:
+                continue
+            max_col = max(max_col, c_idx)
+            rows_by_idx.setdefault(r_idx, {})
+            rows_by_idx[r_idx][c_idx] = (txt or "").strip()
+
+        for r_idx in sorted(rows_by_idx.keys()):
+            row_cells = []
+            for c_idx in range(max_col + 1):
+                row_cells.append(rows_by_idx[r_idx].get(c_idx, ""))
+            rows_out.append(row_cells)
+
+    label = table.get("label") if isinstance(table, dict) else getattr(table, "label", None)
+    caption = table.get("caption") if isinstance(table, dict) else getattr(table, "caption", None)
+
+    para = {
+        "type": "table",
+        "rows": rows_out,
+        "text": label or "",
+        "page": page,
+    }
+    out = [para]
+    if caption:
+        out.append({"type": "caption", "text": caption, "page": page})
+    return out
+
+
 # ============================================================
 #                   GRAPHICAL ABSTRACT
 # ============================================================
@@ -632,18 +770,32 @@ def build_paragraph_stream(book: Dict[str, Any]) -> List[Dict[str, Any]]:
         page_num = page.get("page_num", 0)
         blocks = page.get("blocks", [])
         images = page.get("images", [])  # Изображения из layout_model
+        tables = page.get("tables", [])
+
+        # Колонки из ingest (best-effort)
+        col_meta = page.get("metadata", {}) or {}
+        col_assignments = col_meta.get("column_assignments", {}) or {}
 
         # Page break между страницами (кроме первой)
         if prev_page > 0 and page_num != prev_page:
             result.append({"type": "page_break", "page": page_num})
         prev_page = page_num
 
-        ordered = _order_blocks_two_columns(blocks)
+        ordered = _order_blocks_two_columns(
+            blocks,
+            col_assignments=col_assignments,
+            columns=col_meta.get("columns", []),
+        )
 
         # Добавляем изображения в правильном порядке (по позиции y0)
         # Сортируем изображения по позиции на странице
         images_sorted = sorted(images, key=lambda img: img.get("bbox", {}).get("y0", 0))
         image_idx = 0
+        tables_sorted = sorted(
+            tables,
+            key=lambda t: (t.get("bbox", {}).get("y0", 0) if isinstance(t, dict) else getattr(t, "bbox", {}).y0),
+        )
+        table_idx = 0
 
         if _page_has_graphical_abstract(blocks):
             result.append(
@@ -657,10 +809,20 @@ def build_paragraph_stream(book: Dict[str, Any]) -> List[Dict[str, Any]]:
 
         # Блок → параграфы
         for b in ordered:
-            # Проверяем, нужно ли вставить изображение перед этим блоком
+            # Проверяем, нужно ли вставить изображение/таблицу перед этим блоком
             block_y0 = b.get("bbox", {}).get("y0", 0) if isinstance(b.get("bbox"), dict) else 0
             
-            # Вставляем изображения, которые находятся выше текущего блока
+            # Вставляем таблицы выше текущего блока
+            while table_idx < len(tables_sorted):
+                tbl = tables_sorted[table_idx]
+                tbl_y0 = tbl.get("bbox", {}).get("y0", 0) if isinstance(tbl, dict) else getattr(tbl, "bbox", None).y0 if getattr(tbl, "bbox", None) else 0
+                if tbl_y0 < block_y0 or block_y0 == 0:
+                    result.extend(_table_to_paragraph(tbl, page_num))
+                    table_idx += 1
+                else:
+                    break
+
+            # Вставляем изображения выше текущего блока
             while image_idx < len(images_sorted):
                 img = images_sorted[image_idx]
                 img_y0 = img.get("bbox", {}).get("y0", 0)
@@ -749,6 +911,12 @@ def build_paragraph_stream(book: Dict[str, Any]) -> List[Dict[str, Any]]:
             image_idx += 1
             fig_id += 1
 
+        # Добавляем оставшиеся таблицы
+        while table_idx < len(tables_sorted):
+            tbl = tables_sorted[table_idx]
+            result.extend(_table_to_paragraph(tbl, page_num))
+            table_idx += 1
+
     print(f"[LAYOUT v2.1] paragraphs built: {len(result)}")
     
     # Разделяем смешанные параграфы (заголовки + текст)
@@ -757,7 +925,6 @@ def build_paragraph_stream(book: Dict[str, Any]) -> List[Dict[str, Any]]:
     print(f"[LAYOUT v2.1] after splitting mixed paragraphs: {len(result)}")
     
     # Улучшенное слияние разорванных предложений
-    from core_engine.layout.sentence_merger import merge_paragraphs_in_stream
     result = merge_paragraphs_in_stream(result)
     
     print(f"[LAYOUT v2.1] after sentence merging: {len(result)}")
