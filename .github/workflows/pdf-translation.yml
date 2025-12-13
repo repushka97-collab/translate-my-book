@@ -1,0 +1,65 @@
+name: PDF Translation Pipeline
+
+on:
+  push:
+    paths:
+      - 'books/**.pdf'
+  workflow_dispatch:
+    inputs:
+      book_path:
+        description: 'Path to book PDF'
+        required: true
+
+jobs:
+  translate-and-correct:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y poppler-utils tesseract-ocr libtesseract-dev ghostscript
+    
+    - name: Install Python dependencies
+      run: |
+        pip install -r requirements.txt
+    
+    - name: Translate PDF
+      env:
+        QUALITY_CHECK: "1"
+        AUTO_CORRECTION: "1"
+        USE_OVERFLOW_PREDICTOR: "1"
+        PDF_REBUILD: "1"
+        GHOSTSCRIPT_COMPRESS: "1"
+      run: |
+        python run_pipeline.py \
+          --source ${{ inputs.book_path || 'books/input.pdf' }} \
+          --mode fast
+    
+    - name: Quality verification
+      run: |
+        python -c "
+        from core_engine.qa.quality_scorecard import generate_quality_scorecard
+        import json
+        scorecard = generate_quality_scorecard(
+            '${{ inputs.book_path || 'books/input.pdf' }}',
+            'output/*/book_ru.pdf',
+            'quality_report.json'
+        )
+        print(json.dumps(scorecard, indent=2))
+        "
+    
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: translated-book-${{ github.sha }}
+        path: output/
+

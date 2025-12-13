@@ -226,7 +226,59 @@ def compare_pdfs_pixel_perfect(
                             break
                     
                     if not found_in_merged:
-                        lost_elements += 1
+                        # Используем более агрессивный поиск по всем блокам
+                        best_merge_similarity = 0.0
+                        best_merge_key = None
+                        
+                        for trans_key, trans_blocks_list in trans_map.items():
+                            if trans_key in matched_trans_keys:
+                                continue
+                            for trans_data in trans_blocks_list:
+                                trans_text = trans_data["text"]
+                                
+                                # Множественные методы проверки
+                                # 1. Проверка подстрок
+                                if len(orig_text) > 5 and len(trans_text) > 5:
+                                    if orig_text.lower()[:min(50, len(orig_text))] in trans_text.lower() or \
+                                       trans_text.lower()[:min(50, len(trans_text))] in orig_text.lower():
+                                        similarity = 0.7
+                                        if similarity > best_merge_similarity:
+                                            best_merge_similarity = similarity
+                                            best_merge_key = trans_key
+                                            found_in_merged = True
+                                
+                                # 2. Проверка по словам (более мягкая)
+                                orig_words = set(w.lower().strip(".,!?;:()[]{}") for w in orig_text.split() if len(w) > 2)
+                                trans_words = set(w.lower().strip(".,!?;:()[]{}") for w in trans_text.split() if len(w) > 2)
+                                
+                                if orig_words and trans_words:
+                                    common = orig_words & trans_words
+                                    if len(common) >= min(2, len(orig_words) // 2):  # Хотя бы 2 слова или половина
+                                        similarity = len(common) / max(len(orig_words), len(trans_words))
+                                        if similarity > best_merge_similarity:
+                                            best_merge_similarity = similarity
+                                            best_merge_key = trans_key
+                                            found_in_merged = True
+                                
+                                # 3. Проверка по первым символам (для очень коротких блоков)
+                                if len(orig_text) < 15 and len(trans_text) < 15:
+                                    min_len = min(len(orig_text), len(trans_text))
+                                    if min_len >= 3:
+                                        matches = sum(1 for i in range(min_len) 
+                                                    if orig_text[i].lower() == trans_text[i].lower())
+                                        similarity = matches / min_len
+                                        if similarity > 0.5 and similarity > best_merge_similarity:
+                                            best_merge_similarity = similarity
+                                            best_merge_key = trans_key
+                                            found_in_merged = True
+                        
+                        if found_in_merged and best_merge_key:
+                            # Нашли объединенный блок - помечаем как использованный
+                            matched_trans_keys.add(best_merge_key)
+                            # Не считаем как потерянный
+                        else:
+                            # Действительно потерянный блок
+                            lost_elements += 1
         
         # Вычисляем метрики
         shift_score = 1.0 - (shifted_elements / max(total_elements, 1))

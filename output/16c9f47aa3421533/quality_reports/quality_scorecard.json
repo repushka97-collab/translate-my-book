@@ -1,8 +1,8 @@
 {
-  "timestamp": "2025-12-13T18:20:59.854422",
+  "timestamp": "2025-12-13T18:41:49.509528",
   "original_pdf": "For test\\30-38.pdf",
   "translated_pdf": "output\\16c9f47aa3421533\\book_ru.pdf",
-  "overall_score": 81.30415719051275,
+  "overall_score": 81.80002495910782,
   "layout_preservation": 85.41666666666666,
   "text_overflow_rate": 0.8264462809917356,
   "image_position_drift": 0.0,
@@ -17,8 +17,8 @@
   ],
   "detailed_metrics": {
     "pixel_perfect": {
-      "shift_score": 0.8429752066115702,
-      "element_loss": 0.256198347107438,
+      "shift_score": 0.8925619834710744,
+      "element_loss": 0.2396694214876033,
       "text_overflow": 0.008264462809917356,
       "displacements": [
         {
@@ -65,27 +65,6 @@
         },
         {
           "page": 2,
-          "element_index": 14,
-          "dx": 0.0,
-          "dy": 11.5,
-          "max_shift": 11.5,
-          "bbox_orig": [
-            303.0,
-            570.3319702148438,
-            542.06201171875,
-            639.1119995117188
-          ],
-          "bbox_trans": [
-            303.0,
-            581.8319702148438,
-            542.06201171875,
-            639.1119995117188
-          ],
-          "text_similarity": 0.8648648648648649,
-          "layout_mode": "flow"
-        },
-        {
-          "page": 2,
           "element_index": 15,
           "dx": 0.0,
           "dy": 11.5,
@@ -127,48 +106,6 @@
           "layout_mode": "flow"
         },
         {
-          "page": 3,
-          "element_index": 4,
-          "dx": 0.0,
-          "dy": 11.5,
-          "max_shift": 11.5,
-          "bbox_orig": [
-            318.0,
-            558.6859741210938,
-            548.1680297851562,
-            650.4660034179688
-          ],
-          "bbox_trans": [
-            318.0,
-            570.1859741210938,
-            548.1680297851562,
-            650.4660034179688
-          ],
-          "text_similarity": 0.8888888888888888,
-          "layout_mode": "flow"
-        },
-        {
-          "page": 3,
-          "element_index": 5,
-          "dx": 0.0,
-          "dy": 11.5,
-          "max_shift": 11.5,
-          "bbox_orig": [
-            318.0,
-            650.6859741210938,
-            550.3441162109375,
-            719.4660034179688
-          ],
-          "bbox_trans": [
-            318.0,
-            662.1859741210938,
-            550.3441162109375,
-            719.4660034179688
-          ],
-          "text_similarity": 0.8333333333333334,
-          "layout_mode": "flow"
-        },
-        {
           "page": 4,
           "element_index": 2,
           "dx": 0.0,
@@ -187,27 +124,6 @@
             345.43798828125
           ],
           "text_similarity": 0.8,
-          "layout_mode": "flow"
-        },
-        {
-          "page": 4,
-          "element_index": 4,
-          "dx": 0.0,
-          "dy": 11.5,
-          "max_shift": 11.5,
-          "bbox_orig": [
-            45.0,
-            409.65899658203125,
-            281.60186767578125,
-            524.43896484375
-          ],
-          "bbox_trans": [
-            45.0,
-            421.15899658203125,
-            281.60186767578125,
-            524.43896484375
-          ],
-          "text_similarity": 0.8275862068965517,
           "layout_mode": "flow"
         },
         {
@@ -296,27 +212,6 @@
         },
         {
           "page": 6,
-          "element_index": 6,
-          "dx": 0.0,
-          "dy": 12.42999267578125,
-          "max_shift": 12.42999267578125,
-          "bbox_orig": [
-            303.0,
-            258.2279968261719,
-            535.0009155273438,
-            316.43798828125
-          ],
-          "bbox_trans": [
-            303.0,
-            270.6579895019531,
-            535.0009155273438,
-            316.43798828125
-          ],
-          "text_similarity": 0.9047619047619048,
-          "layout_mode": "flow"
-        },
-        {
-          "page": 6,
           "element_index": 8,
           "dx": 0.082000732421875,
           "dy": 11.5,
@@ -398,39 +293,18 @@
           ],
           "text_similarity": 0.8,
           "layout_mode": "flow"
-        },
-        {
-          "page": 8,
-          "element_index": 5,
-          "dx": 0.0,
-          "dy": 11.5,
-          "max_shift": 11.5,
-          "bbox_orig": [
-            303.0,
-            409.1189880371094,
-            541.2898559570312,
-            454.89898681640625
-          ],
-          "bbox_trans": [
-            303.0,
-            420.6189880371094,
-            541.2898559570312,
-            454.89898681640625
-          ],
-          "text_similarity": 0.8,
-          "layout_mode": "flow"
         }
       ],
-      "overall_score": 0.8578512396694215,
+      "overall_score": 0.8826446280991737,
       "total_elements": 121,
-      "shifted_elements": 19,
-      "lost_elements": 31,
+      "shifted_elements": 13,
+      "lost_elements": 29,
       "overflow_elements": 1
     },
     "layout_similarity": {
       "similarity": 0.8541666666666666,
       "structure_match": 0.01056733794971316,
-      "element_types_match": 0.0,
+      "element_types_match": 0.01056733794971316,
       "hierarchy_preserved": false,
       "page_similarities": [
         0.6666666666666666,

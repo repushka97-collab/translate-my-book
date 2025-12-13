@@ -270,6 +270,53 @@ def run_book_pipeline(
             from core_engine.orchestrator.incremental_update import merge_translations
             translated = merge_translations(translated, previous_blocks, changed_ids)
         
+        # [ADVANCED MODE] Font Metric Compensation для критичных блоков
+        use_font_compensation = os.getenv("USE_FONT_COMPENSATION", "0") == "1"
+        if use_font_compensation:
+            try:
+                from core_engine.correction.font_compensator import FontMetricsCompensator
+                
+                compensator = FontMetricsCompensator(
+                    source_lang="en",
+                    target_lang="ru",
+                    max_width_change=1.3
+                )
+                
+                # Применяем компенсацию к блокам с высоким риском переполнения
+                compensated_count = 0
+                for block in translated:
+                    # Проверяем, нужна ли компенсация (по translation_params или metadata)
+                    needs_compensation = False
+                    if translation_params.get("font_size_reduction"):
+                        needs_compensation = True
+                    elif block.get("metadata", {}).get("high_overflow_risk"):
+                        needs_compensation = True
+                    
+                    if needs_compensation:
+                        orig_text = block.get("normalized_text", "")
+                        trans_text = block.get("translated_text", "")
+                        
+                        if orig_text and trans_text:
+                            compensation = compensator.calculate(
+                                orig_text,
+                                trans_text,
+                                font_size=block.get("metadata", {}).get("font_size", 12.0)
+                            )
+                            
+                            # Сохраняем параметры компенсации в metadata
+                            if "metadata" not in block:
+                                block["metadata"] = {}
+                            block["metadata"]["font_compensation"] = compensation
+                            compensated_count += 1
+                
+                if compensated_count > 0:
+                    print(f"      Font compensation applied to {compensated_count} blocks")
+            except Exception as e:
+                error_log_path = Path("errors.log")
+                error_log_path.parent.mkdir(exist_ok=True)
+                with open(error_log_path, "a", encoding="utf-8") as f:
+                    f.write(f"[FontCompensation] Error: {e}\n")
+        
         # [ADVANCED MODE] Сохраняем чекпоинт после перевода
         if checkpoint_mgr:
             checkpoint_mgr.save_checkpoint(book_id, 0, {"translated_blocks": len(translated)}, stage="translate")
@@ -578,6 +625,72 @@ def run_book_pipeline(
         export_pdf(book_doc, str(pdf_path))
         export_paths["pdf"] = str(pdf_path)
         print(f"      PDF exported: {pdf_path}")
+        
+        # [ADVANCED MODE] Vector Graphics Repair
+        use_vector_repair = os.getenv("USE_VECTOR_REPAIR", "0") == "1"
+        if use_vector_repair and Path(source_path).exists() and Path(pdf_path).exists():
+            try:
+                from core_engine.correction.vector_repair import repair_vector_elements
+                import fitz
+                
+                print("      Vector Repair: Fixing vector graphics...")
+                
+                doc_orig = fitz.open(str(source_path))
+                doc_trans = fitz.open(str(pdf_path))
+                
+                max_pages = min(len(doc_orig), len(doc_trans))
+                repaired_count = 0
+                
+                for page_num in range(max_pages):
+                    page_orig = doc_orig[page_num]
+                    page_trans = doc_trans[page_num]
+                    
+                    # Применяем исправления
+                    repaired_page = repair_vector_elements(page_trans, page_orig)
+                    if repaired_page != page_trans:
+                        repaired_count += 1
+                
+                if repaired_count > 0:
+                    doc_trans.save(str(pdf_path), incremental=True)
+                    print(f"      Vector Repair: Fixed {repaired_count} pages")
+                
+                doc_orig.close()
+                doc_trans.close()
+            except Exception as e:
+                error_log_path = Path("errors.log")
+                error_log_path.parent.mkdir(exist_ok=True)
+                with open(error_log_path, "a", encoding="utf-8") as f:
+                    f.write(f"[VectorRepair] Error: {e}\n")
+        
+        # [ADVANCED MODE] Автоматическое исправление ошибок верстки
+        use_auto_correction = os.getenv("AUTO_CORRECTION", "0") == "1"
+        if use_auto_correction and Path(source_path).exists() and Path(pdf_path).exists():
+            try:
+                from core_engine.correction.layout_fixer import apply_layout_correction
+                from core_engine.correction.overflow_predictor import OverflowPredictor, adjust_translation_params
+                
+                print("      Auto-correction: Applying layout fixes...")
+                
+                # Применяем исправления
+                corrected_pdf_path = str(Path(pdf_path).with_suffix(".corrected.pdf"))
+                correction_result = apply_layout_correction(
+                    str(source_path),
+                    str(pdf_path),
+                    corrected_pdf_path,
+                    target_language="ru"
+                )
+                
+                if correction_result.get("success"):
+                    # Заменяем оригинальный PDF исправленным
+                    if Path(corrected_pdf_path).exists():
+                        Path(pdf_path).unlink()
+                        Path(corrected_pdf_path).rename(pdf_path)
+                        print(f"      Auto-correction: Fixed {correction_result.get('issues_found', 0)} issues")
+            except Exception as e:
+                error_log_path = Path("errors.log")
+                error_log_path.parent.mkdir(exist_ok=True)
+                with open(error_log_path, "a", encoding="utf-8") as f:
+                    f.write(f"[AutoCorrection] Error: {e}\n")
         
         # [QUALITY VERIFICATION MODE] Полная проверка качества
         use_quality_check = os.getenv("QUALITY_CHECK", "1") == "1"

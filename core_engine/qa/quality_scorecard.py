@@ -307,7 +307,9 @@ def print_scorecard(scorecard: Dict[str, Any]) -> None:
     print(f"Image Position Drift: {scorecard.get('image_position_drift', 0.0):.2f}px avg")
     print(f"Font Consistency: {scorecard.get('font_consistency', 0.0):.1f}%")
     print(f"Table Integrity: {scorecard.get('table_integrity', 0.0):.1f}%")
-    print(f"Page Count Match: {'✅' if scorecard.get('page_count_match', False) else '❌'}")
+    page_match = scorecard.get('page_count_match', False)
+    page_match_str = "OK" if page_match else "MISMATCH"
+    print(f"Page Count Match: {page_match_str}")
     print(f"File Size Ratio: {scorecard.get('file_size_ratio', 1.0):.2f}x (допустимо до 1.25x)")
     print("-" * 50)
     print("Recommendations:")

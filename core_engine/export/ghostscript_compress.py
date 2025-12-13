@@ -44,7 +44,7 @@ def compress_pdf_with_ghostscript(
         return False
     
     try:
-        # Команда Ghostscript для сжатия
+        # Команда Ghostscript для сжатия с дополнительными опциями
         cmd = [
             "gs",
             "-sDEVICE=pdfwrite",
@@ -53,6 +53,17 @@ def compress_pdf_with_ghostscript(
             "-dNOPAUSE",
             "-dQUIET",
             "-dBATCH",
+            "-dAutoRotatePages=/None",  # Сохраняем ориентацию
+            "-dColorImageDownsampleType=/Bicubic",  # Качественное уменьшение изображений
+            "-dGrayImageDownsampleType=/Bicubic",
+            "-dMonoImageDownsampleType=/Bicubic",
+            "-dColorImageResolution=300",  # Разрешение для цветных изображений
+            "-dGrayImageResolution=300",
+            "-dMonoImageResolution=1200",
+            "-dEmbedAllFonts=true",  # Встраиваем все шрифты
+            "-dSubsetFonts=true",  # Подмножество шрифтов
+            "-dCompressFonts=true",  # Сжатие шрифтов
+            "-dOptimize=true",  # Оптимизация
             f"-sOutputFile={output_pdf_path}",
             input_pdf_path
         ]
