@@ -130,14 +130,25 @@ def translate_with_nllb(
     forced_bos_token_id = tokenizer.convert_tokens_to_ids(lang_token)
 
     translated_blocks: List[Dict[str, Any]] = []
+    
+    # Сначала обрабатываем формулы отдельно
+    formula_blocks = []
+    regular_blocks = []
+    for b in blocks:
+        if b.get("metadata", {}).get("formula_preserved") or b.get("translated_text"):
+            # Формула уже обработана или имеет готовый перевод
+            formula_blocks.append(b)
+        else:
+            regular_blocks.append(b)
 
-    for i in range(0, len(blocks), batch_size):
-        batch = blocks[i : i + batch_size]
+    for i in range(0, len(regular_blocks), batch_size):
+        batch = regular_blocks[i : i + batch_size]
 
         expanded_chunks: List[str] = []
         chunk_map: List[tuple[int, int]] = []
 
         for bi, b in enumerate(batch):
+                
             src = b.get("text") or b.get("normalized_text") or ""
             if not src.strip():
                 expanded_chunks.append("")
@@ -192,6 +203,22 @@ def translate_with_nllb(
                 merged = b.get("text") or ""
             translated_blocks.append({**b, "translated_text": merged})
 
-    return translated_blocks
+    # Добавляем формулы в конец (сохраняем порядок)
+    # Создаем map для быстрого поиска
+    formula_map = {id(b): b for b in formula_blocks}
+    result = []
+    for b in blocks:
+        if id(b) in formula_map:
+            result.append(formula_map[id(b)])
+        else:
+            # Ищем в translated_blocks
+            for tb in translated_blocks:
+                if tb.get("id") == b.get("id") or id(tb) == id(b):
+                    result.append(tb)
+                    break
+            else:
+                result.append(b)
+    
+    return result
 
 

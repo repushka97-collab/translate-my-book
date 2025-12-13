@@ -211,7 +211,45 @@ def translate_blocks(
     # Строим backend
     backend = make_backend(profile)
 
-    # Перевод (или подстановка текста)
+    # Пропускаем формулы - не переводим их
+    import re
+    def _is_formula_block(block: Dict[str, Any]) -> bool:
+        """Проверяет, является ли блок формулой."""
+        block_type = block.get("type")
+        if isinstance(block_type, str) and block_type.lower() == "formula":
+            return True
+        if isinstance(block_type, dict) and block_type.get("name") == "FORMULA":
+            return True
+        metadata = block.get("metadata", {})
+        if metadata.get("role") == "formula":
+            return True
+        text = (block.get("normalized_text") or block.get("text") or "").strip()
+        if not text or len(text) < 3:
+            return False
+        # Математические символы
+        if re.search(r"[∑∫√≤≥≠≈±×÷∞∈∉⊂⊃∪∩∅→←⇒⇐=]", text):
+            if len(re.findall(r"[∑∫√≤≥≠≈±×÷∞∈∉⊂⊃∪∩∅→←⇒⇐=]", text)) >= 2 or ("=" in text and len(text) < 50):
+                return True
+        # LaTeX команды
+        if re.search(r"\\[a-zA-Z]+\{", text) or "\\frac" in text or "\\sqrt" in text:
+            return True
+        # Индексы/степени
+        if re.search(r"[¹²³⁴⁵⁶⁷⁸⁹⁰₀₁₂₃₄₅₆₇₈₉]", text):
+            return True
+        # Паттерны x^2, x_1
+        if re.search(r"\w+[\^_]\d+", text) and len(text) < 50:
+            return True
+        return False
+
+    # Обрабатываем формулы отдельно - сохраняем как есть
+    for block in blocks:
+        if _is_formula_block(block):
+            text = block.get("normalized_text") or block.get("text") or ""
+            block["translated_text"] = text
+            block["metadata"] = block.get("metadata", {})
+            block["metadata"]["formula_preserved"] = True
+
+    # Перевод (или подстановка текста) - формулы уже обработаны
     translated = backend.translate(blocks)
 
     # Quality-pass v1: лёгкая чистка

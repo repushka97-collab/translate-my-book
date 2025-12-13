@@ -52,10 +52,20 @@ def export_pdf(doc: BookDocument, out_path: str) -> None:
                 export_html_absolute(doc, str(tmp_html))
             else:
                 export_html_flow(doc, str(tmp_html))
-            ok = convert_html_to_pdf(str(tmp_html), out_path)
+            
+            # Получаем размеры страницы из документа (если есть)
+            page_width = None
+            page_height = None
+            if doc.pages:
+                first_page = doc.pages[0]
+                page_width = getattr(first_page, "width", None)
+                page_height = getattr(first_page, "height", None)
+            
+            ok = convert_html_to_pdf(str(tmp_html), out_path, page_width, page_height)
             if ok:
                 return
-        except Exception:
+        except Exception as e:
+            print(f"[WARN] Playwright PDF export failed: {e}")
             pass
 
     # Fallback

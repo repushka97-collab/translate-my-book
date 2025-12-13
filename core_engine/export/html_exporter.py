@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import base64
+import os
 from html import escape
 from pathlib import Path
 from typing import List, Dict
@@ -220,6 +221,11 @@ def _tag_for_block(block: Block) -> str:
         role = (block.metadata.get("role") or "").lower()
     btype = block.type.value if isinstance(block.type, BlockType) else str(block.type)
     txt = _block_text(block).strip()
+    
+    # Формулы - специальная обработка
+    if role == "formula" or btype == "formula" or block.metadata.get("formula_preserved"):
+        return "formula"  # Специальный тег для формул
+    
     if role in {"heading1", "h1"} or btype in {"heading1", "heading"}:
         return "h2"
     if role in {"heading2", "h2"}:
@@ -253,6 +259,18 @@ def _render_block_flow(block: Block) -> str:
         font_size = block.metadata.get("font_size")
         is_bold = bool(block.metadata.get("is_bold"))
         is_italic = bool(block.metadata.get("is_italic"))
+    
+    # Специальная обработка формул
+    if tag == "formula":
+        style.append("text-align:center")
+        style.append("font-family:'Courier New', monospace")
+        style.append("font-size:1.1em")
+        style.append("margin:16px 0")
+        style.append("padding:8px")
+        style.append("background-color:#f9f9f9")
+        style.append("border-left:3px solid #4a90e2")
+        return f"<div class='formula' style=\"{' ;'.join(style)}\">{txt}</div>"
+    
     if font_size:
         style.append(f"font-size:{font_size}px")
     if is_bold:
@@ -362,6 +380,16 @@ def export_html_flow(doc: BookDocument, out_path: str) -> None:
     table tr:nth-child(even) {
         background-color: #fafafa;
     }
+    .formula {
+        text-align: center;
+        font-family: 'Courier New', monospace;
+        font-size: 1.1em;
+        margin: 16px 0;
+        padding: 8px;
+        background-color: #f9f9f9;
+        border-left: 3px solid #4a90e2;
+        border-radius: 4px;
+    }
     </style>
     """)
     parts.append("</head><body>")
@@ -369,8 +397,24 @@ def export_html_flow(doc: BookDocument, out_path: str) -> None:
     for page in doc.pages:
         w = page.width
         h = page.height
-        # Фон убираем из flow, чтобы не дублировать исходный текст
+        
+        # Обработка фона и водяных знаков из raster_preview
         bg_div = ""
+        use_background = os.getenv("HTML_BACKGROUND", "0") == "1"
+        background_opacity = float(os.getenv("HTML_BACKGROUND_OPACITY", "0.1"))
+        
+        if use_background:
+            meta = page.metadata or {}
+            # Пробуем получить raster_preview из metadata
+            bg_b64 = meta.get("raster_preview_png_b64", "")
+            if not bg_b64:
+                # Альтернативный путь: проверяем наличие файла
+                # (можно расширить позже для загрузки из файла)
+                pass
+            
+            if bg_b64:
+                bg_style = f"position:absolute;left:0;top:0;width:{w}px;height:{h}px;background:url(data:image/png;base64,{bg_b64}) no-repeat left top;background-size:{w}px {h}px;opacity:{background_opacity};z-index:0;pointer-events:none;"
+                bg_div = f"<div class='bg' style='{bg_style}'></div>"
 
         meta = page.metadata or {}
         assignments: Dict[str, int] = meta.get("column_assignments") or {}

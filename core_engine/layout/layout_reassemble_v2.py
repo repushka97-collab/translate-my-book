@@ -308,13 +308,35 @@ def _split_abstract_block(text: str) -> tuple[str, str]:
 # ============================================================
 
 def _looks_like_list_item(text: str) -> bool:
+    """
+    Улучшенная детекция списков:
+    - Bulleted: •, -, *, ‣, ∙, ·, —, –, ○, ●, ▪, ▫
+    - Numbered: 1. 2. 3. или 1) 2) 3) или (1) (2) (3)
+    - Lettered: a) b) c) или A. B. C.
+    - Roman: i. ii. iii. или I. II. III.
+    """
     t = text.lstrip()
-    if t.startswith(("•", "-", "–", "—", "*")):
+    if not t:
+        return False
+    
+    # Bulleted списки: различные маркеры
+    if t.startswith(("•", "-", "–", "—", "*", "‣", "∙", "·", "○", "●", "▪", "▫")):
         return True
-    if re.match(r"^\(?\d+[\.\)]\s+", t):
+    
+    # Numbered списки: 1. 2. 3. или 1) 2) 3) или (1) (2) (3)
+    if re.match(r"^\(?\d{1,3}[\.\)]\s+", t):
         return True
-    if re.match(r"^[ivxlcdm]+\.\s+", t.lower()):
+    
+    # Lettered списки: a) b) c) или A. B. C.
+    if re.match(r"^[a-z]\)\s+", t, re.IGNORECASE):
         return True
+    if re.match(r"^[A-Z]\.\s+", t):
+        return True
+    
+    # Roman numerals: i. ii. iii. или I. II. III.
+    if re.match(r"^[ivxlcdm]+\.\s+", t, re.IGNORECASE):
+        return True
+    
     return False
 
 

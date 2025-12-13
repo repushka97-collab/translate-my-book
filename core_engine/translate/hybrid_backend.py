@@ -43,11 +43,19 @@ class HybridBackend(LLMBackend):
         self.ollama_endpoint = profile.get("ollama_endpoint", "http://127.0.0.1:11434")
         self.ollama_model = profile.get("ollama_model", "qwen2.5:7b")
 
-    def _call_ollama_refine(self, en_text: str, nllb_translation: str) -> str:
+    def _call_ollama_refine(self, en_text: str, nllb_translation: str, prev_context: str = "", next_context: str = "") -> str:
         """
-        Улучшает перевод через Ollama.
+        Улучшает перевод через Ollama с учетом контекста.
         """
-        prompt = f"""Ты профессиональный переводчик с английского на русский. Улучши следующий перевод, сделав его более естественным и точным, сохраняя все термины и технические детали.
+        context_part = ""
+        if prev_context or next_context:
+            context_part = "\n\nКонтекст для лучшего понимания:\n"
+            if prev_context:
+                context_part += f"Предыдущий текст (уже переведен): {prev_context[:200]}...\n"
+            if next_context:
+                context_part += f"Следующий текст (оригинал): {next_context[:200]}...\n"
+        
+        prompt = f"""Ты профессиональный переводчик с английского на русский. Улучши следующий перевод, сделав его более естественным и точным, сохраняя все термины и технические детали. Учитывай контекст для лучшей связности текста.{context_part}
 
 Оригинал (английский):
 {en_text}
@@ -87,21 +95,58 @@ class HybridBackend(LLMBackend):
     def _should_refine(self, block: Dict[str, Any], nllb_text: str) -> bool:
         """
         Определяет, нужно ли улучшать блок через LLM.
+        Расширенная версия: учитывает больше типов и сниженный порог длины.
         """
         if not self.refine_enabled:
             return False
         
-        # Проверяем важные типы
+        # Проверяем важные типы (расширенный список)
         metadata = block.get("metadata", {})
         role = metadata.get("role", "")
-        if role in self.refine_important_types:
+        block_type = block.get("type", "")
+        
+        important_roles = self.refine_important_types + ["heading3", "abstract", "introduction", "conclusion"]
+        if role in important_roles or block_type in ["heading1", "heading2", "heading3"]:
             return True
         
-        # Проверяем длину
-        if len(nllb_text) >= self.refine_min_length:
+        # Проверяем длину (сниженный порог для лучшего качества)
+        min_len = max(100, self.refine_min_length // 2)  # Снижаем порог вдвое
+        if len(nllb_text) >= min_len:
             return True
+        
+        # Также улучшаем блоки с техническими терминами или сложными конструкциями
+        src_text = block.get("text") or block.get("normalized_text", "")
+        if src_text:
+            # Если есть много заглавных букв (акронимы) или технические термины
+            if sum(1 for c in src_text if c.isupper()) > len(src_text) * 0.3:
+                return True
         
         return False
+    
+    def _get_context(self, blocks: List[Dict[str, Any]], current_idx: int, context_window: int = 2) -> tuple[str, str]:
+        """
+        Получает контекст из предыдущих и следующих блоков для улучшения перевода.
+        Возвращает (previous_context, next_context).
+        """
+        prev_texts = []
+        next_texts = []
+        
+        # Предыдущие блоки
+        for i in range(max(0, current_idx - context_window), current_idx):
+            txt = blocks[i].get("translated_text", "").strip()
+            if txt:
+                prev_texts.append(txt)
+        
+        # Следующие блоки (оригинал, не переведенный)
+        for i in range(current_idx + 1, min(len(blocks), current_idx + 1 + context_window)):
+            txt = blocks[i].get("text") or blocks[i].get("normalized_text", "").strip()
+            if txt:
+                next_texts.append(txt)
+        
+        prev_context = " ".join(prev_texts[-2:])  # Последние 2 блока
+        next_context = " ".join(next_texts[:2])   # Первые 2 блока
+        
+        return prev_context, next_context
 
     def translate(self, blocks: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         """
@@ -128,7 +173,7 @@ class HybridBackend(LLMBackend):
             device=nllb_profile["device"],
         )
 
-        # Шаг 2: Улучшаем важные блоки через LLM
+        # Шаг 2: Улучшаем важные блоки через LLM с контекстом
         if self.refine_enabled:
             refined_count = 0
             for i, block in enumerate(translated):
@@ -139,7 +184,10 @@ class HybridBackend(LLMBackend):
                 if self._should_refine(block, nllb_text):
                     src_text = block.get("text") or block.get("normalized_text", "")
                     if src_text.strip():
-                        refined = self._call_ollama_refine(src_text, nllb_text)
+                        # Получаем контекст из соседних блоков
+                        prev_ctx, next_ctx = self._get_context(translated, i, context_window=2)
+                        
+                        refined = self._call_ollama_refine(src_text, nllb_text, prev_ctx, next_ctx)
                         if refined and refined != nllb_text:
                             block["translated_text"] = refined
                             block["metadata"] = block.get("metadata", {})
@@ -149,7 +197,7 @@ class HybridBackend(LLMBackend):
                                 print(f"[HYBRID] Refined {refined_count} blocks...")
             
             if refined_count > 0:
-                print(f"[HYBRID] Step 2: Refined {refined_count}/{len(blocks)} blocks with LLM")
+                print(f"[HYBRID] Step 2: Refined {refined_count}/{len(blocks)} blocks with LLM (context-aware)")
 
         return translated
 
