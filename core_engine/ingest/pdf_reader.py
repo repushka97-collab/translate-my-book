@@ -1,4 +1,6 @@
 import fitz  # PyMuPDF
+import math
+import os
 import pdfplumber
 from pypdf import PdfReader
 
@@ -248,106 +250,252 @@ def extract_images(path, pages: List[Page]) -> List[ImageObject]:
 
 def detect_tables(path, pages: List[Page]) -> List[TableObject]:
     """
-    Простая универсальная детекция таблиц на основе page.get_text(\"words\"):
-    - Кластеризация по Y в строки (tolerance=4)
-    - Кластеризация по X в столбцы (tolerance=25)
-    - Требования: >=3 строк и >=2 колонок, ширина таблицы < 90% ширины страницы.
-    - Заполняет page.tables TableObject с cells (row/col/text).
+    Детекция таблиц с опорой на линии/прямоугольники и слова.
+    Порядок:
+    1) Собираем линии из drawings (гориз/верт) + стороны прямоугольников.
+    2) Кластеризуем линии (snap_tolerance) → сетка.
+    3) Раскладываем слова по ячейкам сетки.
+    4) Fallback: кластеризация слов (как раньше).
+    5) Опциональный fallback pdfplumber (если PDFPLUMBER_TABLES=1 и библиотека установлена).
+    Colspan/rowspan пока =1 (улучшим позже).
     """
     detected: List[TableObject] = []
+
+    # Толерансы
+    LINE_TOL = 3.0          # кластеризация линий
+    WORD_ROW_TOL = 4.0      # кластеризация слов по Y
+    WORD_COL_TOL = 25.0     # кластеризация слов по X
+    MIN_ROWS = 3
+    MIN_COLS = 2
+    MIN_DENSITY = 0.2
+
+    use_pdfplumber = os.getenv("PDFPLUMBER_TABLES", "0") == "1"
+    pdfplumber_mod = None
+    if use_pdfplumber:
+        try:
+            import pdfplumber  # type: ignore
+            pdfplumber_mod = pdfplumber
+        except Exception:
+            pdfplumber_mod = None
+            use_pdfplumber = False
+
+    def cluster_positions(vals: List[float], tol: float = 3.0) -> List[float]:
+        if not vals:
+            return []
+        vals = sorted(vals)
+        clusters = [[vals[0]]]
+        for v in vals[1:]:
+            if abs(v - clusters[-1][-1]) <= tol:
+                clusters[-1].append(v)
+            else:
+                clusters.append([v])
+        return [sum(c) / len(c) for c in clusters]
+
+    def extract_lines(page):
+        horiz = []
+        vert = []
+        try:
+            drawings = page.get_drawings()
+            for d in drawings:
+                for item in d.get("items", []):
+                    if not item:
+                        continue
+                    op = item[0]
+                    # line
+                    if op == "l" and len(item) >= 3:
+                        p1, p2 = item[1], item[2]
+                        x0, y0 = p1
+                        x1, y1 = p2
+                        if abs(y0 - y1) < 1.0:  # horizontal
+                            horiz.append((min(x0, x1), y0, max(x0, x1), y1))
+                        elif abs(x0 - x1) < 1.0:  # vertical
+                            vert.append((x0, min(y0, y1), x1, max(y0, y1)))
+                    # rectangle as four lines
+                    if op == "re" and len(item) >= 2:
+                        try:
+                            x, y, w, h = item[1]
+                            horiz.append((x, y, x + w, y))
+                            horiz.append((x, y + h, x + w, y + h))
+                            vert.append((x, y, x, y + h))
+                            vert.append((x + w, y, x + w, y + h))
+                        except Exception:
+                            continue
+        except Exception:
+            pass
+        return horiz, vert
+
+    def build_from_grid(page, words, x_lines, y_lines):
+        cells: List[TableCell] = []
+        table_rows: List[List[str]] = []
+        # Map words to cells by center point
+        # Build empty grid
+        grid = [[[] for _ in range(len(x_lines) - 1)] for _ in range(len(y_lines) - 1)]
+        for w in words:
+            x0, y0, x1, y1, text, *_ = w
+            if not text:
+                continue
+            cx = (x0 + x1) / 2.0
+            cy = (y0 + y1) / 2.0
+            # find column
+            c_idx = None
+            for ci in range(len(x_lines) - 1):
+                if x_lines[ci] - 1e-3 <= cx <= x_lines[ci + 1] + 1e-3:
+                    c_idx = ci
+                    break
+            r_idx = None
+            for ri in range(len(y_lines) - 1):
+                if y_lines[ri] - 1e-3 <= cy <= y_lines[ri + 1] + 1e-3:
+                    r_idx = ri
+                    break
+            if r_idx is None or c_idx is None:
+                continue
+            grid[r_idx][c_idx].append(text)
+
+        for r_idx, row in enumerate(grid):
+            row_txt: List[str] = []
+            for c_idx, cell_words in enumerate(row):
+                txt = " ".join(cell_words).strip()
+                row_txt.append(txt)
+                cells.append(TableCell(row=r_idx, col=c_idx, text=txt, rowspan=1, colspan=1))
+            table_rows.append(row_txt)
+
+        non_empty_cells = sum(1 for row in table_rows for c in row if c)
+        if non_empty_cells < len(table_rows) * len(table_rows[0]) * 0.2:
+            return None
+
+        bbox = BBox(
+            min(x_lines),
+            min(y_lines),
+            max(x_lines),
+            max(y_lines),
+        )
+        tbl = TableObject(
+            id="",
+            page_number=0,
+            bbox=bbox,
+            cells=cells,
+            label=None,
+            caption=None,
+        )
+        return tbl
+
+    def pdfplumber_fallback(pdfplumber_mod, page_index: int):
+        try:
+            with pdfplumber_mod.open(str(path)) as pdf:
+                if page_index >= len(pdf.pages):
+                    return None
+                p = pdf.pages[page_index]
+                table = p.extract_table(
+                    {
+                        "vertical_strategy": "lines",
+                        "horizontal_strategy": "lines",
+                    }
+                )
+                if not table or len(table) < MIN_ROWS:
+                    return None
+                cells: List[TableCell] = []
+                max_cols = max(len(r) for r in table)
+                for r_idx, row in enumerate(table):
+                    for c_idx in range(max_cols):
+                        txt = row[c_idx] if c_idx < len(row) else ""
+                        cells.append(TableCell(row=r_idx, col=c_idx, text=txt or "", rowspan=1, colspan=1))
+                bbox = BBox(0, 0, page.rect.width, page.rect.height)
+                return TableObject(
+                    id="",
+                    page_number=page_index + 1,
+                    bbox=bbox,
+                    cells=cells,
+                    label=None,
+                    caption=None,
+                )
+        except Exception:
+            return None
 
     with fitz.open(str(path)) as doc:
         for i, page in enumerate(doc):
             words = page.get_text("words") or []
-            if not words or len(words) < 10:
+            if not words or len(words) < 6:
                 continue
+            horiz, vert = extract_lines(page)
+            x_lines = cluster_positions([ln[0] for ln in vert] + [ln[2] for ln in vert], tol=LINE_TOL)
+            y_lines = cluster_positions([ln[1] for ln in horiz] + [ln[3] for ln in horiz], tol=LINE_TOL)
 
-            # Сортируем слова по y0, затем x0
-            words = sorted(words, key=lambda w: (w[1], w[0]))
+            table_obj = None
+            if len(x_lines) >= 2 and len(y_lines) >= 2:
+                table_obj = build_from_grid(page, words, x_lines, y_lines)
 
-            # Кластеризация в строки по Y
-            rows_raw: List[List[Any]] = []
-            tol_y = 4
-            current: List[Any] = []
-            current_y = None
-            for w in words:
-                x0, y0, x1, y1, text, *_ = w
-                if current_y is None:
-                    current_y = y0
-                if abs(y0 - current_y) <= tol_y:
-                    current.append(w)
-                else:
-                    if current:
-                        rows_raw.append(current)
-                    current = [w]
-                    current_y = y0
-            if current:
-                rows_raw.append(current)
-
-            # Удаляем строки с очень малым количеством слов
-            rows_raw = [r for r in rows_raw if len(r) >= 2]
-            if len(rows_raw) < 3:
-                continue
-
-            # Выделяем X-позиции для колонок
-            all_x = []
-            for r in rows_raw:
-                for w in r:
-                    all_x.append(w[0])
-            all_x = sorted(all_x)
-            cols: List[float] = []
-            tol_x = 25
-            for x in all_x:
-                if not cols or abs(x - cols[-1]) > tol_x:
-                    cols.append(x)
-
-            if len(cols) < 2:
-                continue
-
-            # Ограничение по ширине (90% от ширины страницы)
-            min_x = min(w[0] for w in words)
-            max_x = max(w[2] for w in words)
-            if (max_x - min_x) > page.rect.width * 0.9:
-                continue
-
-            # Строим ячейки строк по ближайшему столбцу
-            table_rows: List[List[str]] = []
-            for r in rows_raw:
-                cell_texts = [""] * len(cols)
-                for w in r:
+            # Fallback: старая словарная кластеризация
+            if table_obj is None:
+                # Сортируем слова по y0, затем x0
+                words_sorted = sorted(words, key=lambda w: (w[1], w[0]))
+                rows_raw: List[List[Any]] = []
+                tol_y = WORD_ROW_TOL
+                current: List[Any] = []
+                current_y = None
+                for w in words_sorted:
                     x0, y0, x1, y1, text, *_ = w
-                    # Пропускаем пустые токены
-                    if not text:
-                        continue
-                    # Находим ближайший столбец по x0
-                    best_idx = min(range(len(cols)), key=lambda idx: abs(x0 - cols[idx]))
-                    cell_texts[best_idx] = (cell_texts[best_idx] + " " + text).strip()
-                table_rows.append(cell_texts)
+                    if current_y is None:
+                        current_y = y0
+                    if abs(y0 - current_y) <= tol_y:
+                        current.append(w)
+                    else:
+                        if current:
+                            rows_raw.append(current)
+                        current = [w]
+                        current_y = y0
+                if current:
+                    rows_raw.append(current)
+                rows_raw = [r for r in rows_raw if len(r) >= 2]
+                if len(rows_raw) >= MIN_ROWS:
+                    all_x = []
+                    for r in rows_raw:
+                        for w in r:
+                            all_x.append(w[0])
+                    all_x = sorted(all_x)
+                    cols: List[float] = []
+                    tol_x = WORD_COL_TOL
+                    for x in all_x:
+                        if not cols or abs(x - cols[-1]) > tol_x:
+                            cols.append(x)
+                    if len(cols) >= MIN_COLS:
+                        min_x = min(w[0] for w in words_sorted)
+                        max_x = max(w[2] for w in words_sorted)
+                        if (max_x - min_x) <= page.rect.width * 0.9:
+                            table_rows: List[List[str]] = []
+                            cells: List[TableCell] = []
+                            for r in rows_raw:
+                                cell_texts = [""] * len(cols)
+                                for w in r:
+                                    x0, y0, x1, y1, text, *_ = w
+                                    if not text:
+                                        continue
+                                    best_idx = min(range(len(cols)), key=lambda idx: abs(x0 - cols[idx]))
+                                    cell_texts[best_idx] = (cell_texts[best_idx] + " " + text).strip()
+                                table_rows.append(cell_texts)
+                            non_empty_cells = sum(1 for row in table_rows for c in row if c)
+                            if non_empty_cells >= len(table_rows) * len(cols) * MIN_DENSITY:
+                                bbox = BBox(min_x, min(w[1] for w in words_sorted), max_x, max(w[3] for w in words_sorted))
+                                for r_idx, row in enumerate(table_rows):
+                                    for c_idx, cell_text in enumerate(row):
+                                        cells.append(TableCell(row=r_idx, col=c_idx, text=cell_text, rowspan=1, colspan=1))
+                                table_obj = TableObject(
+                                    id="",
+                                    page_number=0,
+                                    bbox=bbox,
+                                    cells=cells,
+                                    label=None,
+                                    caption=None,
+                                )
 
-            # Проверяем, что есть содержимое в большинстве ячеек
-            non_empty_cells = sum(1 for row in table_rows for c in row if c)
-            if non_empty_cells < len(table_rows) * len(cols) * 0.4:
-                continue
+            # Fallback: pdfplumber (опционально)
+            if table_obj is None and use_pdfplumber and pdfplumber_mod:
+                table_obj = pdfplumber_fallback(pdfplumber_mod, i)
 
-            bbox = BBox(min_x, min(w[1] for w in words), max_x, max(w[3] for w in words))
-
-            # Формируем TableCells
-            cells: List[TableCell] = []
-            for r_idx, row in enumerate(table_rows):
-                for c_idx, cell_text in enumerate(row):
-                    cells.append(TableCell(row=r_idx, col=c_idx, text=cell_text))
-
-            tbl = TableObject(
-                id=f"p{i+1}_tbl{len(pages[i].tables) + 1}",
-                page_number=i + 1,
-                bbox=bbox,
-                cells=cells,
-                label=None,
-                caption=None,
-            )
-
-            pages[i].tables.append(tbl)
-            detected.append(tbl)
+            if table_obj:
+                table_obj.id = f"p{i+1}_tbl{len(pages[i].tables) + 1}"
+                table_obj.page_number = i + 1
+                pages[i].tables.append(table_obj)
+                detected.append(table_obj)
 
     return detected
 

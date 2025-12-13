@@ -120,9 +120,9 @@ def register_book_in_library(
     doc = getattr(ingest_result, "doc", None)
     if not isinstance(doc, BookDocument):
         doc = BookDocument(
-            pages=[],
-            source_path=ingest_result.meta.get("source_path", ""),
-        )
+    pages=[],
+    source_path=ingest_result.meta.get("source_path", ""),
+    )
 
     # Генерация book_id из твоей функции compute_book_id невозможно (нет PDF пути),
     # поэтому просто используем тот, что дал ingest.

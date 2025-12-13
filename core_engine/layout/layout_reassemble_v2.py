@@ -392,7 +392,7 @@ def _parse_table_rows(text: str) -> List[List[str]]:
         
         if has_pipes:
             # Таблица с | разделителями
-            parts = [c.strip() for c in ln.split("|")]
+        parts = [c.strip() for c in ln.split("|")]
             # Убираем пустые элементы в начале/конце (от разделителей)
             if parts and not parts[0]:
                 parts = parts[1:]
@@ -410,7 +410,7 @@ def _parse_table_rows(text: str) -> List[List[str]]:
             parts = re.split(r"\s{3,}", ln)
             parts = [c.strip() for c in parts if c.strip()]
             if parts:
-                rows.append(parts)
+        rows.append(parts)
     
     # Нормализуем количество колонок (дополняем пустыми строками)
     if rows:
@@ -524,23 +524,23 @@ def _order_blocks_two_columns(
             ordered += sorted(leftovers, key=lambda b: (b["bbox"]["y0"], b.get("order", 0)))
     else:
         # Fallback: старая эвристика по spread
-        xs = [b["bbox"]["x0"] for b in with_bbox]
-        spread = max(xs) - min(xs)
+    xs = [b["bbox"]["x0"] for b in with_bbox]
+    spread = max(xs) - min(xs)
 
-        if spread < 120:
+    if spread < 120:
             # Одна колонка - просто сортируем по y
-            ordered = sorted(with_bbox, key=lambda b: (b["bbox"]["y0"], b.get("order", 0)))
-        else:
+        ordered = sorted(with_bbox, key=lambda b: (b["bbox"]["y0"], b.get("order", 0)))
+    else:
             # Две колонки - определяем границу
-            mid = sorted(xs)[len(xs) // 2]
-            left = sorted(
-                [b for b in with_bbox if b["bbox"]["x0"] <= mid],
-                key=lambda b: (b["bbox"]["y0"], b.get("order", 0)),
-            )
-            right = sorted(
-                [b for b in with_bbox if b["bbox"]["x0"] > mid],
-                key=lambda b: (b["bbox"]["y0"], b.get("order", 0)),
-            )
+        mid = sorted(xs)[len(xs) // 2]
+        left = sorted(
+            [b for b in with_bbox if b["bbox"]["x0"] <= mid],
+            key=lambda b: (b["bbox"]["y0"], b.get("order", 0)),
+        )
+        right = sorted(
+            [b for b in with_bbox if b["bbox"]["x0"] > mid],
+            key=lambda b: (b["bbox"]["y0"], b.get("order", 0)),
+        )
             
             # Чередуем блоки из левой и правой колонок по y-позиции
             ordered = []
@@ -677,7 +677,7 @@ def _block_to_paragraphs(block: Dict[str, Any], page: int) -> List[Dict[str, Any
         # Проверяем что это не просто номер страницы
         if not re.match(r"^\d+$", text.strip()):
             # Вероятно обрывок заголовка - помечаем как heading2
-            return [{"type": "heading2", "text": text, "page": page}]
+        return [{"type": "heading2", "text": text, "page": page}]
 
     # SOFT HEADING (эвристика по тексту)
     if _looks_like_heading(text):
@@ -744,6 +744,87 @@ def _table_to_paragraph(table: Dict[str, Any], page: int) -> List[Dict[str, Any]
     return out
 
 
+def _get_text_from_block(block: Dict[str, Any]) -> str:
+    return (
+        block.get("translated_text")
+        or block.get("normalized_text")
+        or block.get("text")
+        or block.get("raw_text")
+        or ""
+    )
+
+
+def _looks_like_caption(text: str, kind: str) -> bool:
+    t = text.lower().strip()
+    if not t:
+        return False
+    if kind == "figure":
+        return bool(re.match(r"^(fig(?:ure)?\.?|рис\.?|рисунок)\b", t, re.IGNORECASE))
+    if kind == "table":
+        return bool(re.match(r"^(table|табл\.?|таблица)\b", t, re.IGNORECASE))
+    return False
+
+
+def _overlap_ratio(a0: float, a1: float, b0: float, b1: float) -> float:
+    inter = max(0.0, min(a1, b1) - max(a0, b0))
+    denom = max(1e-3, max(a1, b1) - min(a0, b0))
+    return inter / denom
+
+
+def _find_captions(blocks: List[Dict[str, Any]], images: List[Dict[str, Any]], tables: List[Dict[str, Any]]):
+    """
+    Находим подписи рядом с изображениями/таблицами.
+    Эвристика: короткий текст, триггерные слова (Figure/Fig/Рис или Table/Таблица),
+    bbox близко по y и с перекрытием по x.
+    """
+    captions_by_obj: Dict[str, str] = {}
+    used_blocks: set[str] = set()
+
+    def search_for(obj: Dict[str, Any], kind: str) -> None:
+        bbox = obj.get("bbox") or {}
+        x0, y0, x1, y1 = bbox.get("x0", 0), bbox.get("y0", 0), bbox.get("x1", 0), bbox.get("y1", 0)
+        if x1 <= x0 and y1 <= y0:
+            return
+
+        best_block = None
+        best_score = 1e9
+        for b in blocks:
+            bid = b.get("id") or b.get("block_id")
+            if not bid or bid in used_blocks:
+                continue
+            bb = b.get("bbox") or {}
+            bx0, by0, bx1, by1 = bb.get("x0", 0), bb.get("y0", 0), bb.get("x1", 0), bb.get("y1", 0)
+            if bx1 <= bx0 and by1 <= by0:
+                continue
+            txt = _get_text_from_block(b)
+            if len(txt) > 180:
+                continue
+            if not _looks_like_caption(txt, kind):
+                continue
+            # Требуем перекрытие по X
+            if _overlap_ratio(x0, x1, bx0, bx1) < 0.25:
+                continue
+            # Близость по Y: подпись под объектом или чуть сверху
+            if by0 > y1 + 120 or by1 < y0 - 60:
+                continue
+            dist = min(abs(by0 - y1), abs(by1 - y0))
+            if dist < best_score:
+                best_score = dist
+                best_block = b
+
+        if best_block:
+            bid = best_block.get("id") or best_block.get("block_id")
+            captions_by_obj[id(obj)] = _get_text_from_block(best_block).strip()
+            used_blocks.add(bid)
+
+    for img in images:
+        search_for(img, "figure")
+    for tbl in tables:
+        search_for(tbl, "table")
+
+    return captions_by_obj, used_blocks
+
+
 # ============================================================
 #                   GRAPHICAL ABSTRACT
 # ============================================================
@@ -781,6 +862,9 @@ def build_paragraph_stream(book: Dict[str, Any]) -> List[Dict[str, Any]]:
             result.append({"type": "page_break", "page": page_num})
         prev_page = page_num
 
+        # Подписи к изображениям/таблицам (эвристика)
+        captions_map, caption_blocks_used = _find_captions(blocks, images, tables)
+
         ordered = _order_blocks_two_columns(
             blocks,
             col_assignments=col_assignments,
@@ -793,7 +877,7 @@ def build_paragraph_stream(book: Dict[str, Any]) -> List[Dict[str, Any]]:
         image_idx = 0
         tables_sorted = sorted(
             tables,
-            key=lambda t: (t.get("bbox", {}).get("y0", 0) if isinstance(t, dict) else getattr(t, "bbox", {}).y0),
+            key=lambda t: (t.get("bbox", {}).get("y0", 0) if isinstance(t, dict) else getattr(t, "bbox", None).y0 if getattr(t, "bbox", None) else 0),
         )
         table_idx = 0
 
@@ -828,10 +912,11 @@ def build_paragraph_stream(book: Dict[str, Any]) -> List[Dict[str, Any]]:
                 img_y0 = img.get("bbox", {}).get("y0", 0)
                 if img_y0 < block_y0 or block_y0 == 0:
                     # НЕ добавляем image_bytes здесь - он будет восстановлен в pipeline из images_by_page
+                    label = captions_map.get(id(img), img.get("label"))
                     result.append({
                         "type": "image",
                         "image_id": img.get("id", f"img_{fig_id}"),
-                        "label": img.get("label"),
+                        "label": label,
                         "page": page_num,
                     })
                     image_idx += 1
@@ -839,6 +924,11 @@ def build_paragraph_stream(book: Dict[str, Any]) -> List[Dict[str, Any]]:
                 else:
                     break
             
+            # Пропускаем блоки, использованные как подписи
+            bid = b.get("id") or b.get("block_id")
+            if bid and bid in caption_blocks_used:
+                continue
+
             out = _block_to_paragraphs(b, page_num)
 
             # Авто-слияние коротких абзацев
@@ -902,10 +992,11 @@ def build_paragraph_stream(book: Dict[str, Any]) -> List[Dict[str, Any]]:
         while image_idx < len(images_sorted):
             img = images_sorted[image_idx]
             # НЕ добавляем image_bytes здесь - он будет восстановлен в pipeline из images_by_page
+            label = captions_map.get(id(img), img.get("label"))
             result.append({
                 "type": "image",
                 "image_id": img.get("id", f"img_{fig_id}"),
-                "label": img.get("label"),
+                "label": label,
                 "page": page_num,
             })
             image_idx += 1

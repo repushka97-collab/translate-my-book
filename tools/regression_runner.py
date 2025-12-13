@@ -183,7 +183,7 @@ def main() -> None:
     args = parser.parse_args()
 
     if args.out:
-        out_path = Path(args.out)
+    out_path = Path(args.out)
     else:
         ts = datetime.now().strftime("%Y%m%d_%H%M%S")
         out_path = Path("output") / f"regression_summary_{ts}_{args.mode}.json"
@@ -225,7 +225,7 @@ def main() -> None:
             # ASCII-only log (Windows consoles may choke on Unicode)
             print(f"[REGRESSION] [{idx}/{len(pdf_paths)}] {pdf_path} (mode={args.mode})")
             t0 = time.time()
-            result = run_book_pipeline(pdf_path, mode=args.mode)
+        result = run_book_pipeline(pdf_path, mode=args.mode)
             rr = _summarize(result, pdf_path, args.mode)
             rr.duration_sec = round(time.time() - t0, 3)
             runs.append(rr)

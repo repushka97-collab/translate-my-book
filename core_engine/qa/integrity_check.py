@@ -346,17 +346,17 @@ def qa_check_blocks(normalized_blocks: List[Block], translated_blocks: List[Bloc
                 if src_len > 150:
                     continue
             
-            issues.append(
-                {
-                    "block_id": block_id,
-                    "page": src_block.get("page"),
-                    "order": src_block.get("order"),
-                    "type": "potential_break",
-                    "severity": "low",
-                    "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-                    "meta": {"src_len": src_len},
-                }
-            )
+                issues.append(
+                    {
+                        "block_id": block_id,
+                        "page": src_block.get("page"),
+                        "order": src_block.get("order"),
+                        "type": "potential_break",
+                        "severity": "low",
+                        "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
+                        "meta": {"src_len": src_len},
+                    }
+                )
 
         # === QA v2 ДОПОЛНИТЕЛЬНЫЕ ПРОВЕРКИ ПО ПЕРЕВОДУ ===
 
