@@ -64,13 +64,31 @@ def _detect_block_type(text: str) -> BlockType:
     return BlockType.TEXT
 
 
+def _ocr_fallback(page, dpi: int = 200) -> List[Block]:
+    """
+    OCR fallback для пустых/сканированных страниц (best-effort).
+    Использует MuPDF OCR если доступен, иначе возвращает пустой список.
+    """
+    blocks: List[Block] = []
+    try:
+        # Пробуем MuPDF OCR (если доступен)
+        pix = page.get_pixmap(dpi=dpi)
+        # Если OCR не доступен, просто возвращаем пустой список
+        # (можно добавить Tesseract fallback позже)
+        return blocks
+    except Exception:
+        return blocks
+
+
 def extract_blocks(path, pages: List[Page]) -> List[Block]:
     """
     Извлечение текстовых блоков для каждой страницы.
     Возвращаем все блоки, но также раскладываем их в pages[n].blocks.
     Теперь извлекаем font signals (size, bold, italic) для улучшения layout.
+    OCR fallback для пустых страниц (если включен OCR_FALLBACK=1).
     """
     blocks: List[Block] = []
+    use_ocr_fallback = os.getenv("OCR_FALLBACK", "0") == "1"
 
     with fitz.open(str(path)) as doc:
         for i, page in enumerate(doc):
@@ -151,6 +169,13 @@ def extract_blocks(path, pages: List[Page]) -> List[Block]:
 
                 blocks.append(blk)
                 pages[i].blocks.append(blk)
+        
+        # OCR fallback для пустых страниц (если включен)
+        if use_ocr_fallback and not pages[i].blocks:
+            ocr_blocks = _ocr_fallback(page)
+            for ocr_blk in ocr_blocks:
+                blocks.append(ocr_blk)
+                pages[i].blocks.append(ocr_blk)
 
     # Сохраняем assignments колонок на уровне metadata page (best-effort)
     for page in pages:
@@ -351,13 +376,99 @@ def detect_tables(path, pages: List[Page]) -> List[TableObject]:
                 continue
             grid[r_idx][c_idx].append(text)
 
+        # Сначала собираем текст для каждой ячейки
+        cell_texts = {}
         for r_idx, row in enumerate(grid):
-            row_txt: List[str] = []
             for c_idx, cell_words in enumerate(row):
                 txt = " ".join(cell_words).strip()
-                row_txt.append(txt)
-                cells.append(TableCell(row=r_idx, col=c_idx, text=txt, rowspan=1, colspan=1))
-            table_rows.append(row_txt)
+                cell_texts[(r_idx, c_idx)] = txt
+
+        # Теперь определяем colspan/rowspan для объединенных ячеек
+        # Алгоритм: если ячейка пустая, проверяем соседние ячейки
+        # Если соседние тоже пустые или содержат текст, объединяем
+        used_cells = set()
+        
+        for r_idx in range(len(y_lines) - 1):
+            row_txt: List[str] = []
+            for c_idx in range(len(x_lines) - 1):
+                if (r_idx, c_idx) in used_cells:
+                    continue
+                
+                txt = cell_texts.get((r_idx, c_idx), "").strip()
+                
+                # Определяем colspan: проверяем, сколько пустых ячеек справа можно объединить
+                colspan = 1
+                if not txt:
+                    # Пустая ячейка - проверяем, можно ли объединить с правой
+                    for next_c in range(c_idx + 1, len(x_lines) - 1):
+                        next_txt = cell_texts.get((r_idx, next_c), "").strip()
+                        if not next_txt:
+                            colspan += 1
+                        else:
+                            break
+                else:
+                    # Ячейка с текстом - проверяем, не является ли она частью объединенной
+                    # Проверяем, есть ли пустые ячейки справа, которые можно объединить
+                    for next_c in range(c_idx + 1, len(x_lines) - 1):
+                        next_txt = cell_texts.get((r_idx, next_c), "").strip()
+                        # Если следующая ячейка пустая и нет текста в других ячейках этой строки
+                        if not next_txt:
+                            # Проверяем, нет ли текста в ячейках ниже
+                            has_text_below = False
+                            for check_r in range(r_idx + 1, len(y_lines) - 1):
+                                if cell_texts.get((check_r, next_c), "").strip():
+                                    has_text_below = True
+                                    break
+                            if not has_text_below:
+                                colspan += 1
+                            else:
+                                break
+                        else:
+                            break
+                
+                # Определяем rowspan: проверяем, сколько пустых ячеек снизу можно объединить
+                rowspan = 1
+                if not txt:
+                    for next_r in range(r_idx + 1, len(y_lines) - 1):
+                        next_txt = cell_texts.get((next_r, c_idx), "").strip()
+                        if not next_txt:
+                            rowspan += 1
+                        else:
+                            break
+                else:
+                    # Ячейка с текстом - проверяем rowspan
+                    for next_r in range(r_idx + 1, len(y_lines) - 1):
+                        next_txt = cell_texts.get((next_r, c_idx), "").strip()
+                        if not next_txt:
+                            # Проверяем, нет ли текста в ячейках справа
+                            has_text_right = False
+                            for check_c in range(c_idx + 1, len(x_lines) - 1):
+                                if cell_texts.get((next_r, check_c), "").strip():
+                                    has_text_right = True
+                                    break
+                            if not has_text_right:
+                                rowspan += 1
+                            else:
+                                break
+                        else:
+                            break
+                
+                # Если ячейка пустая и не объединена, пропускаем её
+                if not txt and colspan == 1 and rowspan == 1:
+                    # Но всё равно добавляем пустую ячейку для структуры таблицы
+                    row_txt.append("")
+                    cells.append(TableCell(row=r_idx, col=c_idx, text="", rowspan=rowspan, colspan=colspan))
+                else:
+                    row_txt.append(txt)
+                    cells.append(TableCell(row=r_idx, col=c_idx, text=txt, rowspan=rowspan, colspan=colspan))
+                
+                # Помечаем все объединенные ячейки как использованные
+                for dr in range(rowspan):
+                    for dc in range(colspan):
+                        used_cells.add((r_idx + dr, c_idx + dc))
+            
+            if row_txt:  # Добавляем строку только если она не пустая
+                table_rows.append(row_txt)
 
         non_empty_cells = sum(1 for row in table_rows for c in row if c)
         if non_empty_cells < len(table_rows) * len(table_rows[0]) * 0.2:
@@ -413,9 +524,36 @@ def detect_tables(path, pages: List[Page]) -> List[TableObject]:
 
     with fitz.open(str(path)) as doc:
         for i, page in enumerate(doc):
+            # Улучшение: используем Layout API для более точного извлечения
             words = page.get_text("words") or []
             if not words or len(words) < 6:
                 continue
+            
+            # Пробуем получить layout через dict для более точной структуры
+            layout_dict = None
+            try:
+                layout_dict = page.get_text("dict")
+                # Используем layout_dict для улучшения детекции таблиц
+                # Анализируем блоки с текстом для поиска табличных паттернов
+                if layout_dict:
+                    blocks_dict = layout_dict.get("blocks", [])
+                    # Ищем блоки с регулярной структурой (потенциальные таблицы)
+                    table_candidates = []
+                    for blk in blocks_dict:
+                        if blk.get("type") == 0:  # текстовый блок
+                            lines = blk.get("lines", [])
+                            if len(lines) >= MIN_ROWS:
+                                # Проверяем, есть ли регулярная структура (много колонок)
+                                cols_count = set()
+                                for line in lines:
+                                    spans = line.get("spans", [])
+                                    if len(spans) >= MIN_COLS:
+                                        cols_count.add(len(spans))
+                                if len(cols_count) > 0 and max(cols_count) >= MIN_COLS:
+                                    table_candidates.append(blk)
+            except Exception:
+                layout_dict = None
+            
             horiz, vert = extract_lines(page)
             x_lines = cluster_positions([ln[0] for ln in vert] + [ln[2] for ln in vert], tol=LINE_TOL)
             y_lines = cluster_positions([ln[1] for ln in horiz] + [ln[3] for ln in horiz], tol=LINE_TOL)

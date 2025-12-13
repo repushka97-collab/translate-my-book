@@ -194,10 +194,10 @@ def run_book_pipeline(
     
     _progress("Ingest PDF")
     try:
-    ingest_raw = ingest_pdf(source)
-    ingest = _normalize_ingest_result(ingest_raw)
-    validate_ingest_result(ingest)
-    book_id = ingest["book_id"]
+        ingest_raw = ingest_pdf(source)
+        ingest = _normalize_ingest_result(ingest_raw)
+        validate_ingest_result(ingest)
+        book_id = ingest["book_id"]
         if not ingest.get("blocks"):
             raise RuntimeError("Ingest produced no blocks - PDF may be empty or corrupted")
         _progress("Ingest PDF", 1.0)
@@ -208,10 +208,10 @@ def run_book_pipeline(
     stage += 1
     _progress("Normalize blocks")
     try:
-    normalized = normalize_blocks(ingest["blocks"])
+        normalized = normalize_blocks(ingest["blocks"])
         normalized = detect_headings(normalized)
         normalized = detect_chapter_structure(normalized)
-    validate_blocks_structure(normalized, stage="normalize")
+        validate_blocks_structure(normalized, stage="normalize")
         print(f"      Normalized {len(normalized)} blocks")
         _progress("Normalize blocks", 1.0)
     except Exception as e:
@@ -221,13 +221,13 @@ def run_book_pipeline(
     stage += 1
     _progress("Translate blocks")
     try:
-    translated = translate_blocks(
-        normalized,
-        source_lang="en",
-        target_lang="ru",
-        mode=mode,
-    )
-    validate_blocks_structure(translated, stage="translate")
+        translated = translate_blocks(
+            normalized,
+            source_lang="en",
+            target_lang="ru",
+            mode=mode,
+        )
+        validate_blocks_structure(translated, stage="translate")
         # Подсчитываем переведенные блоки
         translated_count = sum(1 for b in translated if (b.get("translated_text") or "").strip())
         print(f"      Translated {translated_count}/{len(translated)} blocks")
@@ -257,7 +257,7 @@ def run_book_pipeline(
     stage += 1
     _progress("Build layout model")
     try:
-    layout_model = build_layout_model(book_id, translated)
+        layout_model = build_layout_model(book_id, translated)
         # Добавляем изображения из ingest_result.doc
         images_by_page = {}
         if hasattr(ingest_raw, "doc") and ingest_raw.doc:
@@ -345,7 +345,7 @@ def run_book_pipeline(
     stage += 1
     _progress("Save JSON bundle")
     try:
-    json_paths = export_json_bundle(layout_model, book_id)
+        json_paths = export_json_bundle(layout_model, book_id)
     except Exception as e:
         raise RuntimeError(f"JSON export failed: {e}") from e
 
@@ -353,7 +353,7 @@ def run_book_pipeline(
     stage += 1
     _progress("Build paragraph_stream (Layout v2.1)")
     try:
-    paragraphs = build_paragraph_stream(layout_model)
+        paragraphs = build_paragraph_stream(layout_model)
     except Exception as e:
         raise RuntimeError(f"Paragraph stream build failed: {e}") from e
 
@@ -384,7 +384,7 @@ def run_book_pipeline(
     stage += 1
     _progress("Export DOCX")
     try:
-    docx_path = out_dir / "book_ru.docx"
+        docx_path = out_dir / "book_ru.docx"
         # Восстанавливаем image_bytes для DOCX из images_by_page
         paragraphs_with_images = []
         images_restored = 0
@@ -422,7 +422,7 @@ def run_book_pipeline(
             print(f"      Restored {images_restored} images for DOCX export")
         
         export_docx_path = export_docx(paragraphs_with_images, docx_path)
-    export_paths = {**json_paths, "docx_main": export_docx_path}
+        export_paths = {**json_paths, "docx_main": export_docx_path}
     except Exception as e:
         raise RuntimeError(f"DOCX export failed: {e}") from e
 
@@ -440,11 +440,11 @@ def run_book_pipeline(
     stage += 1
     _progress("Register in library")
     try:
-    library_record = register_book_in_library(
-        ingest_raw,
-        export_paths,
-        qa_report,
-    )
+        library_record = register_book_in_library(
+            ingest_raw,
+            export_paths,
+            qa_report,
+        )
     except Exception as e:
         print(f"[WARN] Library registration failed: {e}")
         library_record = None

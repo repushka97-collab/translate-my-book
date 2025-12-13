@@ -2,7 +2,7 @@
   "book_id": "16c9f47aa3421533",
   "source_pdf": "I:\\PROJECTS\\Translate-my-book\\translate-my-book\\For test\\30-38.pdf",
   "library_pdf": "library\\16c9f47aa3421533\\original.pdf",
-  "created_at": "2025-12-13T01:50:56.665106Z",
+  "created_at": "2025-12-13T10:05:21.322739Z",
   "pages": 8,
   "metadata": {
     "title": "",
@@ -17,28 +17,6 @@
   "qa": {
     "status": "warn",
     "issues": [
-      {
-        "block_id": "p4_b15",
-        "page": 4,
-        "order": 71,
-        "type": "potential_break",
-        "severity": "low",
-        "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-        "meta": {
-          "src_len": 288
-        }
-      },
-      {
-        "block_id": "p5_b7",
-        "page": 5,
-        "order": 81,
-        "type": "potential_break",
-        "severity": "low",
-        "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-        "meta": {
-          "src_len": 202
-        }
-      },
       {
         "block_id": "p5_b7",
         "page": 5,
@@ -56,13 +34,12 @@
     "summary": {
       "total_blocks": 60,
       "checked": 60,
-      "issues_total": 3,
+      "issues_total": 1,
       "issues_by_type": {
-        "potential_break": 2,
         "repeated_tokens": 1
       },
       "issues_by_severity": {
-        "low": 3
+        "low": 1
       },
       "roles_count": {
         "body": 53,

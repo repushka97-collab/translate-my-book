@@ -392,7 +392,7 @@ def _parse_table_rows(text: str) -> List[List[str]]:
         
         if has_pipes:
             # Таблица с | разделителями
-        parts = [c.strip() for c in ln.split("|")]
+            parts = [c.strip() for c in ln.split("|")]
             # Убираем пустые элементы в начале/конце (от разделителей)
             if parts and not parts[0]:
                 parts = parts[1:]
@@ -410,7 +410,7 @@ def _parse_table_rows(text: str) -> List[List[str]]:
             parts = re.split(r"\s{3,}", ln)
             parts = [c.strip() for c in parts if c.strip()]
             if parts:
-        rows.append(parts)
+                rows.append(parts)
     
     # Нормализуем количество колонок (дополняем пустыми строками)
     if rows:
@@ -524,23 +524,23 @@ def _order_blocks_two_columns(
             ordered += sorted(leftovers, key=lambda b: (b["bbox"]["y0"], b.get("order", 0)))
     else:
         # Fallback: старая эвристика по spread
-    xs = [b["bbox"]["x0"] for b in with_bbox]
-    spread = max(xs) - min(xs)
+        xs = [b["bbox"]["x0"] for b in with_bbox]
+        spread = max(xs) - min(xs)
 
-    if spread < 120:
+        if spread < 120:
             # Одна колонка - просто сортируем по y
-        ordered = sorted(with_bbox, key=lambda b: (b["bbox"]["y0"], b.get("order", 0)))
-    else:
+            ordered = sorted(with_bbox, key=lambda b: (b["bbox"]["y0"], b.get("order", 0)))
+        else:
             # Две колонки - определяем границу
-        mid = sorted(xs)[len(xs) // 2]
-        left = sorted(
-            [b for b in with_bbox if b["bbox"]["x0"] <= mid],
-            key=lambda b: (b["bbox"]["y0"], b.get("order", 0)),
-        )
-        right = sorted(
-            [b for b in with_bbox if b["bbox"]["x0"] > mid],
-            key=lambda b: (b["bbox"]["y0"], b.get("order", 0)),
-        )
+            mid = sorted(xs)[len(xs) // 2]
+            left = sorted(
+                [b for b in with_bbox if b["bbox"]["x0"] <= mid],
+                key=lambda b: (b["bbox"]["y0"], b.get("order", 0)),
+            )
+            right = sorted(
+                [b for b in with_bbox if b["bbox"]["x0"] > mid],
+                key=lambda b: (b["bbox"]["y0"], b.get("order", 0)),
+            )
             
             # Чередуем блоки из левой и правой колонок по y-позиции
             ordered = []
@@ -677,7 +677,7 @@ def _block_to_paragraphs(block: Dict[str, Any], page: int) -> List[Dict[str, Any
         # Проверяем что это не просто номер страницы
         if not re.match(r"^\d+$", text.strip()):
             # Вероятно обрывок заголовка - помечаем как heading2
-        return [{"type": "heading2", "text": text, "page": page}]
+            return [{"type": "heading2", "text": text, "page": page}]
 
     # SOFT HEADING (эвристика по тексту)
     if _looks_like_heading(text):
@@ -771,20 +771,48 @@ def _overlap_ratio(a0: float, a1: float, b0: float, b1: float) -> float:
     return inter / denom
 
 
-def _find_captions(blocks: List[Dict[str, Any]], images: List[Dict[str, Any]], tables: List[Dict[str, Any]]):
+def _find_captions(
+    blocks: List[Dict[str, Any]], 
+    images: List[Dict[str, Any]], 
+    tables: List[Dict[str, Any]],
+    col_assignments: Dict[str, int] = None,
+    columns: List[Dict[str, Any]] = None
+):
     """
     Находим подписи рядом с изображениями/таблицами.
     Эвристика: короткий текст, триггерные слова (Figure/Fig/Рис или Table/Таблица),
     bbox близко по y и с перекрытием по x.
+    Улучшение: учитывает колонки - подпись ищется в той же колонке, что и объект.
     """
     captions_by_obj: Dict[str, str] = {}
     used_blocks: set[str] = set()
+    col_assignments = col_assignments or {}
+    columns = columns or []
+
+    def get_column_for_bbox(bbox: Dict[str, float]) -> int:
+        """Определяет номер колонки для bbox."""
+        x0 = bbox.get("x0", 0)
+        x1 = bbox.get("x1", 0)
+        cx = (x0 + x1) / 2.0
+        
+        # Если есть явные колонки, используем их
+        if columns:
+            for i, col in enumerate(columns):
+                col_x0 = col.get("x0", 0)
+                col_x1 = col.get("x1", 0)
+                if col_x0 <= cx <= col_x1:
+                    return i
+        return -1
 
     def search_for(obj: Dict[str, Any], kind: str) -> None:
         bbox = obj.get("bbox") or {}
         x0, y0, x1, y1 = bbox.get("x0", 0), bbox.get("y0", 0), bbox.get("x1", 0), bbox.get("y1", 0)
         if x1 <= x0 and y1 <= y0:
             return
+
+        # Определяем колонку объекта
+        obj_col = get_column_for_bbox(bbox)
+        obj_id = obj.get("id") or str(id(obj))
 
         best_block = None
         best_score = 1e9
@@ -801,8 +829,16 @@ def _find_captions(blocks: List[Dict[str, Any]], images: List[Dict[str, Any]], t
                 continue
             if not _looks_like_caption(txt, kind):
                 continue
-            # Требуем перекрытие по X
-            if _overlap_ratio(x0, x1, bx0, bx1) < 0.25:
+            
+            # Улучшение: проверяем, что блок находится в той же колонке
+            if obj_col >= 0:
+                block_col = get_column_for_bbox(bb)
+                if block_col >= 0 and block_col != obj_col:
+                    continue
+            
+            # Требуем перекрытие по X (более строгое требование если есть колонки)
+            min_overlap = 0.25 if obj_col < 0 else 0.15
+            if _overlap_ratio(x0, x1, bx0, bx1) < min_overlap:
                 continue
             # Близость по Y: подпись под объектом или чуть сверху
             if by0 > y1 + 120 or by1 < y0 - 60:
@@ -814,13 +850,15 @@ def _find_captions(blocks: List[Dict[str, Any]], images: List[Dict[str, Any]], t
 
         if best_block:
             bid = best_block.get("id") or best_block.get("block_id")
-            captions_by_obj[id(obj)] = _get_text_from_block(best_block).strip()
+            captions_by_obj[obj_id] = _get_text_from_block(best_block).strip()
             used_blocks.add(bid)
 
     for img in images:
         search_for(img, "figure")
     for tbl in tables:
         search_for(tbl, "table")
+    
+    return captions_by_obj, used_blocks
 
     return captions_by_obj, used_blocks
 
@@ -862,8 +900,12 @@ def build_paragraph_stream(book: Dict[str, Any]) -> List[Dict[str, Any]]:
             result.append({"type": "page_break", "page": page_num})
         prev_page = page_num
 
-        # Подписи к изображениям/таблицам (эвристика)
-        captions_map, caption_blocks_used = _find_captions(blocks, images, tables)
+        # Подписи к изображениям/таблицам (эвристика с учетом колонок)
+        captions_map, caption_blocks_used = _find_captions(
+            blocks, images, tables,
+            col_assignments=col_assignments,
+            columns=col_meta.get("columns", [])
+        )
 
         ordered = _order_blocks_two_columns(
             blocks,

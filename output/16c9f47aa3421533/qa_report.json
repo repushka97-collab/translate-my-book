@@ -2,28 +2,6 @@
   "status": "warn",
   "issues": [
     {
-      "block_id": "p4_b15",
-      "page": 4,
-      "order": 71,
-      "type": "potential_break",
-      "severity": "low",
-      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-      "meta": {
-        "src_len": 288
-      }
-    },
-    {
-      "block_id": "p5_b7",
-      "page": 5,
-      "order": 81,
-      "type": "potential_break",
-      "severity": "low",
-      "message": "Source block looks like it may be cut in the middle of a sentence (no terminal punctuation).",
-      "meta": {
-        "src_len": 202
-      }
-    },
-    {
       "block_id": "p5_b7",
       "page": 5,
       "order": 81,
@@ -40,13 +18,12 @@
   "summary": {
     "total_blocks": 60,
     "checked": 60,
-    "issues_total": 3,
+    "issues_total": 1,
     "issues_by_type": {
-      "potential_break": 2,
       "repeated_tokens": 1
     },
     "issues_by_severity": {
-      "low": 3
+      "low": 1
     },
     "roles_count": {
       "body": 53,
