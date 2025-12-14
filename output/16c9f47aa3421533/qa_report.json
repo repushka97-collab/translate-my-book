@@ -2,6 +2,20 @@
   "status": "warn",
   "issues": [
     {
+      "block_id": "p2_b1",
+      "page": 2,
+      "order": 18,
+      "type": "mixed_alphabet",
+      "severity": "medium",
+      "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+      "meta": {
+        "latin": 24,
+        "cyr": 25,
+        "latin_ratio": 0.49,
+        "cyr_ratio": 0.51
+      }
+    },
+    {
       "block_id": "p5_b7",
       "page": 5,
       "order": 81,
@@ -18,11 +32,13 @@
   "summary": {
     "total_blocks": 60,
     "checked": 60,
-    "issues_total": 1,
+    "issues_total": 2,
     "issues_by_type": {
+      "mixed_alphabet": 1,
       "repeated_tokens": 1
     },
     "issues_by_severity": {
+      "medium": 1,
       "low": 1
     },
     "roles_count": {
@@ -32,8 +48,8 @@
     }
   },
   "translation_metrics": {
-    "average_length_ratio": 0.7858085836974382,
-    "min_length_ratio": 0.4489795918367347,
+    "average_length_ratio": 0.9879987078183979,
+    "min_length_ratio": 0.8064516129032258,
     "max_length_ratio": 1.0,
     "blocks_analyzed": 60
   }

@@ -26,6 +26,22 @@ from core_engine.utils.contracts import (
     validate_blocks_structure,
 )
 
+# Production modules (optional)
+try:
+    from core_engine.production import (
+        get_performance_config,
+        apply_performance_config,
+        detect_book_type,
+        get_book_profile,
+        apply_profile,
+        get_metrics_collector,
+        sanitize_pdf,
+        audit_operation,
+    )
+    PRODUCTION_MODULES_AVAILABLE = True
+except ImportError:
+    PRODUCTION_MODULES_AVAILABLE = False
+
 
 # ============================================================
 #                САНИТИ для ingest-результата
@@ -100,6 +116,54 @@ def run_book_pipeline(
     source = Path(source_path)
     if not source.exists():
         raise FileNotFoundError(f"Source PDF not found: {source}")
+
+    # [PRODUCTION MODE] Apply performance config
+    if PRODUCTION_MODULES_AVAILABLE and os.getenv("USE_PERFORMANCE_CONFIG", "0") == "1":
+        try:
+            config = get_performance_config()
+            apply_performance_config(config)
+        except Exception as e:
+            print(f"      [WARN] Performance config failed: {e}")
+
+    # [PRODUCTION MODE] Sanitize PDF if enabled
+    sanitize_enabled = os.getenv("SANITIZE_PDF", "0") == "1"
+    if PRODUCTION_MODULES_AVAILABLE and sanitize_enabled:
+        try:
+            sanitized_path = str(source).replace(".pdf", "_sanitized.pdf")
+            result = sanitize_pdf(str(source), sanitized_path)
+            if result.get("success"):
+                print(f"      [Security] Sanitized PDF: {result.get('redacted_count', 0)} items redacted")
+                source = Path(sanitized_path)
+        except Exception as e:
+            print(f"      [WARN] PDF sanitization failed: {e}")
+
+    # [PRODUCTION MODE] Detect book type and apply profile
+    book_type = None
+    if PRODUCTION_MODULES_AVAILABLE and os.getenv("USE_BOOK_PROFILES", "0") == "1":
+        try:
+            book_type = detect_book_type(str(source))
+            profile = get_book_profile(book_type, str(source))
+            print(f"      [Book Profile] Detected type: {book_type}")
+            print(f"      [Book Profile] Quality threshold: {profile.get('quality_threshold', 0.90)}")
+        except Exception as e:
+            print(f"      [WARN] Book profile detection failed: {e}")
+
+    # [PRODUCTION MODE] Start monitoring
+    metrics_collector = None
+    if PRODUCTION_MODULES_AVAILABLE and os.getenv("USE_MONITORING", "0") == "1":
+        try:
+            metrics_collector = get_metrics_collector()
+            import time
+            start_time = time.time()
+        except Exception as e:
+            print(f"      [WARN] Monitoring setup failed: {e}")
+
+    # [PRODUCTION MODE] Audit operation
+    if PRODUCTION_MODULES_AVAILABLE and os.getenv("AUDIT_OPERATIONS", "0") == "1":
+        try:
+            audit_operation("translate_start", document_id=str(source.stem))
+        except Exception as e:
+            print(f"      [WARN] Audit logging failed: {e}")
 
     # --------------------------------------------------------
     stage = 1
@@ -784,6 +848,38 @@ def run_book_pipeline(
     except Exception as e:
         print(f"[WARN] Library registration failed: {e}")
         library_record = None
+
+    # [PRODUCTION MODE] Record metrics
+    if metrics_collector and 'start_time' in locals():
+        try:
+            import time
+            processing_time = time.time() - start_time
+            metrics_collector.record_processing_time(book_id, processing_time)
+            
+            # Get quality score if available
+            if "quality_scorecard" in export_paths:
+                try:
+                    with open(export_paths["quality_scorecard"], "r", encoding="utf-8") as f:
+                        scorecard = json.load(f)
+                        quality_score = scorecard.get("overall_score", 0.0) / 100.0
+                        metrics_collector.record_quality_score(book_id, quality_score)
+                except Exception:
+                    pass
+            
+            metrics_collector.save_metrics()
+            print(f"      [Monitoring] Metrics saved: {processing_time:.1f}s processing time")
+        except Exception as e:
+            print(f"      [WARN] Metrics recording failed: {e}")
+
+    # [PRODUCTION MODE] Audit completion
+    if PRODUCTION_MODULES_AVAILABLE and os.getenv("AUDIT_OPERATIONS", "0") == "1":
+        try:
+            audit_operation("translate_complete", document_id=str(source.stem), details={
+                "book_id": book_id,
+                "pages": len(ingest.get("blocks", [])) if ingest else 0
+            })
+        except Exception as e:
+            print(f"      [WARN] Audit logging failed: {e}")
 
     return {
         "book_id": book_id,

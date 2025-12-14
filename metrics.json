@@ -1,0 +1,13 @@
+{
+  "system_health": {},
+  "quality_metrics": {},
+  "business_metrics": {
+    "processing_times": [
+      {
+        "book_id": "16c9f47aa3421533",
+        "time": 0.525780439376831,
+        "timestamp": "2025-12-13T21:07:04.285230"
+      }
+    ]
+  }
+}

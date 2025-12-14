@@ -105,11 +105,23 @@ def rebuild_pdf_with_translations(
             if not translated_text or translated_text == original_text or not original_text:
                 continue
             
-            # Ищем текст в PDF по содержимому (более надежно чем по bbox)
-            # Используем поиск текста для получения точных координат
+            # Ищем текст в PDF по содержимому
+            # Пробуем разные варианты поиска
+            text_instances = []
+            
+            # 1. Точный поиск полного текста
             text_instances = page.search_for(original_text, flags=fitz.TEXT_DEHYPHENATE)
             
-            # Если не нашли точное совпадение, используем bbox из перевода
+            # 2. Если не нашли, пробуем поиск по первым словам (для длинных текстов)
+            if not text_instances and len(original_text) > 20:
+                first_words = " ".join(original_text.split()[:5])  # Первые 5 слов
+                text_instances = page.search_for(first_words, flags=fitz.TEXT_DEHYPHENATE)
+            
+            # 3. Если не нашли, пробуем поиск по первым 50 символам
+            if not text_instances and len(original_text) > 50:
+                text_instances = page.search_for(original_text[:50], flags=fitz.TEXT_DEHYPHENATE)
+            
+            # 4. Если все еще не нашли, используем bbox из перевода
             if not text_instances:
                 bbox = trans.get("bbox", {})
                 x0 = bbox.get("x0", 0)
@@ -117,10 +129,8 @@ def rebuild_pdf_with_translations(
                 x1 = bbox.get("x1", 0)
                 y1 = bbox.get("y1", 0)
                 
-                if x1 <= x0 or y1 <= y0:
-                    continue
-                
-                text_instances = [fitz.Rect(x0, y0, x1, y1)]
+                if x1 > x0 and y1 > y0:
+                    text_instances = [fitz.Rect(x0, y0, x1, y1)]
             
             # Используем первое найденное вхождение (или bbox если поиск не дал результатов)
             rect = text_instances[0] if text_instances else None
@@ -161,11 +171,51 @@ def rebuild_pdf_with_translations(
                 pdf_font
             )
             
-            # Затираем оригинальный текст
-            page.add_redact_annot(rect, fill=(1, 1, 1))  # белый фон
+            # АГРЕССИВНОЕ УДАЛЕНИЕ ТЕКСТА - используем несколько методов
+            # Расширяем rect для полного покрытия текста
+            expanded_rect = fitz.Rect(
+                max(0, rect.x0 - 5),
+                max(0, rect.y0 - 5),
+                min(page.rect.width, rect.x1 + 5),
+                min(page.rect.height, rect.y1 + 5)
+            )
             
-            # Применяем затирание (сохраняем изображения)
+            # Метод 1: Получаем все текстовые блоки в области и затираем их
+            try:
+                text_dict = page.get_text("dict", clip=expanded_rect)
+                for block in text_dict.get("blocks", []):
+                    if "lines" in block:
+                        for line in block["lines"]:
+                            for span in line.get("spans", []):
+                                span_rect = fitz.Rect(span["bbox"])
+                                # Затираем каждый span отдельно
+                                page.add_redact_annot(span_rect, fill=(1, 1, 1))
+            except Exception:
+                pass
+            
+            # Метод 2: Затираем всю область белым фоном
+            page.add_redact_annot(expanded_rect, fill=(1, 1, 1))
+            
+            # Метод 3: Применяем затирание (сохраняем изображения)
             page.apply_redactions(images=fitz.PDF_REDACT_IMAGE_NONE)
+            
+            # Метод 4: Рисуем белый прямоугольник поверх для гарантии (несколько слоев)
+            for _ in range(2):  # Два слоя для гарантии
+                page.draw_rect(expanded_rect, color=(1, 1, 1), fill=(1, 1, 1), width=0)
+            
+            # Метод 5: Дополнительно затираем через поиск текста в области
+            try:
+                area_text = page.get_text("text", clip=expanded_rect).strip()
+                if area_text:
+                    # Ищем и затираем все вхождения текста в области
+                    for word in original_text.split()[:10]:  # Первые 10 слов
+                        word_instances = page.search_for(word, flags=fitz.TEXT_DEHYPHENATE)
+                        for word_rect in word_instances:
+                            if expanded_rect.intersects(word_rect):
+                                page.add_redact_annot(word_rect, fill=(1, 1, 1))
+                    page.apply_redactions(images=fitz.PDF_REDACT_IMAGE_NONE)
+            except Exception:
+                pass
             
             # Вставляем переведенный текст с сохранением позиции и шрифта
             try:

@@ -13,8 +13,8 @@
     }
   },
   "translation_metrics": {
-    "average_length_ratio": 0.7434560080675088,
-    "min_length_ratio": 0.2558139534883721,
+    "average_length_ratio": 0.9992896742896743,
+    "min_length_ratio": 0.9833333333333333,
     "max_length_ratio": 1.0,
     "blocks_analyzed": 37
   }

@@ -46,8 +46,9 @@ def export_pdf(doc: BookDocument, out_path: str) -> None:
     """
     # [PDF TRANSLATION EXPERT MODE] PyMuPDF Deep Layout Manipulation
     # Примечание: HTML to PDF через Playwright более надежен для переведенного контента
-    use_pdf_rebuild = os.getenv("PDF_REBUILD", "0") == "1"
-    use_playwright = os.getenv("HTML_TO_PDF_PLAYWRIGHT", "0") == "1"
+    # Приоритет HTML→PDF для лучшего сохранения переводов
+    use_playwright = os.getenv("HTML_TO_PDF_PLAYWRIGHT", "1") == "1"  # По умолчанию включен
+    use_pdf_rebuild = os.getenv("PDF_REBUILD", "0") == "1" and not use_playwright
     
     # Если включен Playwright, используем его (более надежно для переведенного текста)
     if use_playwright:
@@ -77,9 +78,15 @@ def export_pdf(doc: BookDocument, out_path: str) -> None:
                     if Path(temp_pdf).exists():
                         Path(temp_pdf).unlink()
                 else:
+                    # Удаляем старый файл перед переименованием
+                    if Path(out_path).exists():
+                        Path(out_path).unlink()
                     if Path(temp_pdf).exists():
                         Path(temp_pdf).rename(out_path)
             else:
+                # Удаляем старый файл перед переименованием
+                if Path(out_path).exists():
+                    Path(out_path).unlink()
                 if Path(temp_pdf).exists():
                     Path(temp_pdf).rename(out_path)
             
@@ -94,7 +101,12 @@ def export_pdf(doc: BookDocument, out_path: str) -> None:
     
     if use_pdf_rebuild:
         try:
-            from core_engine.export.pdf_rebuilder import rebuild_pdf_with_translations
+            # Используем улучшенную версию v2 для гарантированного удаления текста
+            use_v2 = os.getenv("PDF_REBUILD_V2", "1") == "1"
+            if use_v2:
+                from core_engine.export.pdf_rebuilder_v2 import rebuild_pdf_with_translations_v2 as rebuild_pdf_with_translations
+            else:
+                from core_engine.export.pdf_rebuilder import rebuild_pdf_with_translations
             
             # Подготавливаем переводы из документа
             translations = []

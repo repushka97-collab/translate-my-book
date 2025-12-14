@@ -1,0 +1,64 @@
+[
+  {
+    "file": "For test\\30-38.pdf",
+    "name": "30-38.pdf",
+    "book_id": "16c9f47aa3421533",
+    "success": true,
+    "processing_time": 2.66,
+    "output_path": "output\\16c9f47aa3421533\\book_ru.pdf",
+    "timestamp": "2025-12-13T21:59:34.250456"
+  },
+  {
+    "file": "For test\\GPT.pdf",
+    "name": "GPT.pdf",
+    "book_id": "d247362f641f5add",
+    "success": true,
+    "processing_time": 3.54,
+    "output_path": "output\\d247362f641f5add\\book_ru.pdf",
+    "timestamp": "2025-12-13T21:59:37.793402"
+  },
+  {
+    "file": "For test\\KIDCITY.pdf",
+    "name": "KIDCITY.pdf",
+    "book_id": "a7e2c751b5e6db65",
+    "success": true,
+    "processing_time": 7.43,
+    "output_path": "output\\a7e2c751b5e6db65\\book_ru.pdf",
+    "timestamp": "2025-12-13T21:59:45.227481"
+  },
+  {
+    "file": "For test\\Myofascial.pdf",
+    "name": "Myofascial.pdf",
+    "book_id": "e4d0e0712aeb4be1",
+    "success": true,
+    "processing_time": 4.79,
+    "output_path": "output\\e4d0e0712aeb4be1\\book_ru.pdf",
+    "timestamp": "2025-12-13T21:59:50.014016"
+  },
+  {
+    "file": "ingest\\._Book1.pdf",
+    "name": "._Book1.pdf",
+    "success": false,
+    "error": "Ingest failed for ingest\\._Book1.pdf: Stream has ended unexpectedly",
+    "processing_time": 0.0,
+    "timestamp": "2025-12-13T21:59:50.016776"
+  },
+  {
+    "file": "ingest\\Book1.pdf",
+    "name": "Book1.pdf",
+    "book_id": "0c7daf4499e5620f",
+    "success": true,
+    "processing_time": 65.87,
+    "output_path": "output\\0c7daf4499e5620f\\book_ru.pdf",
+    "timestamp": "2025-12-13T22:00:55.887541"
+  },
+  {
+    "file": "ingest\\Основы фитнес тренировки.pdf",
+    "name": "Основы фитнес тренировки.pdf",
+    "book_id": "f4c13fdec42b7d46",
+    "success": true,
+    "processing_time": 28.31,
+    "output_path": "output\\f4c13fdec42b7d46\\book_ru.pdf",
+    "timestamp": "2025-12-13T22:01:24.196445"
+  }
+]
