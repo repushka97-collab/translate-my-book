@@ -15,6 +15,7 @@ import fitz  # PyMuPDF
 def calculate_text_width(text: str, fontsize: float, fontname: str = "helv") -> float:
     """
     Вычисляет ширину текста для определения переполнения.
+    КРИТИЧНО: Учитывает кириллицу (на 10-15% шире латиницы).
     """
     # Приблизительный расчет (можно улучшить через font metrics)
     # Средняя ширина символа в зависимости от шрифта
@@ -23,8 +24,16 @@ def calculate_text_width(text: str, fontsize: float, fontname: str = "helv") -> 
         "times": 0.55,
         "cour": 0.6,
     }
-    ratio = char_width_ratios.get(fontname.lower(), 0.6)
-    return len(text) * fontsize * ratio
+    base_ratio = char_width_ratios.get(fontname.lower(), 0.6)
+    
+    # КРИТИЧНОЕ ИСПРАВЛЕНИЕ: Проверяем наличие кириллицы
+    # Кириллические символы (U+0400-U+04FF) на 10-15% шире латиницы
+    has_cyrillic = any(ord(c) >= 0x0400 and ord(c) <= 0x04FF for c in text)
+    if has_cyrillic:
+        # Увеличиваем коэффициент для кириллицы
+        base_ratio *= 1.12  # 12% шире для кириллицы
+    
+    return len(text) * fontsize * base_ratio
 
 
 def adjust_fontsize_for_overflow(
@@ -228,32 +237,68 @@ def rebuild_pdf_with_translations(
                     b = int(color[5:7], 16) / 255.0
                     text_color = (r, g, b)
                 
-                # Вставляем текст в верхний левый угол rect
+                # КРИТИЧНОЕ ИСПРАВЛЕНИЕ: Позиционирование с учетом baseline
+                # rect.tl помещает текст слишком высоко, нужно учесть высоту шрифта
+                # Используем y0 + fontsize * 0.8 для правильного baseline
+                text_point = fitz.Point(rect.x0, rect.y0 + adjusted_fontsize * 0.8)
+                
+                # Вставляем текст с правильным позиционированием
                 # Используем стандартные шрифты PyMuPDF (не требуют файлов)
                 try:
                     page.insert_text(
-                        rect.tl,  # top-left corner
+                        text_point,  # правильная позиция с учетом baseline
                         translated_text,
                         fontsize=adjusted_fontsize,
                         fontname=pdf_font,
                         color=text_color if text_color else (0, 0, 0),  # черный по умолчанию
                     )
                 except (ValueError, RuntimeError) as font_error:
-                    # Если шрифт не поддерживается, используем базовый
-                    try:
-                        page.insert_text(
-                            rect.tl,
-                            translated_text,
-                            fontsize=adjusted_fontsize,
-                            fontname=base_font,  # используем базовый шрифт без модификаторов
-                            color=text_color if text_color else (0, 0, 0),
-                        )
-                    except Exception:
-                        # Последний fallback: простая вставка
-                        page.insert_text(rect.tl, translated_text, fontsize=adjusted_fontsize)
+                    # КРИТИЧНОЕ ИСПРАВЛЕНИЕ: Проверяем кириллицу перед fallback
+                    # Если шрифт не поддерживается, проверяем наличие кириллицы
+                    has_cyrillic = any(ord(c) >= 0x0400 and ord(c) <= 0x04FF for c in translated_text)
+                    
+                    if has_cyrillic:
+                        # Для кириллицы пробуем использовать Font Manager если доступен
+                        try:
+                            from core_engine.export.font_manager import get_font_manager
+                            font_manager = get_font_manager()
+                            cyrillic_font = font_manager.get_font_for_text(doc, base_font, translated_text)
+                            if cyrillic_font != base_font:
+                                page.insert_text(
+                                    text_point,
+                                    translated_text,
+                                    fontsize=adjusted_fontsize,
+                                    fontname=cyrillic_font,
+                                    color=text_color if text_color else (0, 0, 0),
+                                )
+                            else:
+                                raise ValueError("No Cyrillic font available")
+                        except (ImportError, ValueError, RuntimeError):
+                            # Если Font Manager недоступен, используем базовый (может не отобразить кириллицу)
+                            page.insert_text(
+                                text_point,
+                                translated_text,
+                                fontsize=adjusted_fontsize,
+                                fontname=base_font,
+                                color=text_color if text_color else (0, 0, 0),
+                            )
+                    else:
+                        # Для не-кириллического текста используем базовый шрифт
+                        try:
+                            page.insert_text(
+                                text_point,
+                                translated_text,
+                                fontsize=adjusted_fontsize,
+                                fontname=base_font,
+                                color=text_color if text_color else (0, 0, 0),
+                            )
+                        except Exception:
+                            # Последний fallback: простая вставка
+                            page.insert_text(text_point, translated_text, fontsize=adjusted_fontsize)
             except Exception as e:
                 # Fallback: простая вставка без форматирования
-                page.insert_text(rect.tl, translated_text, fontsize=adjusted_fontsize)
+                text_point = fitz.Point(rect.x0, rect.y0 + adjusted_fontsize * 0.8)
+                page.insert_text(text_point, translated_text, fontsize=adjusted_fontsize)
             
             page_replacements += 1
             total_replacements += 1

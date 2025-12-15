@@ -45,10 +45,9 @@ def export_pdf(doc: BookDocument, out_path: str) -> None:
     - Иначе fallback на PDFBuilder (старый путь).
     """
     # [PDF TRANSLATION EXPERT MODE] PyMuPDF Deep Layout Manipulation
-    # Примечание: HTML to PDF через Playwright более надежен для переведенного контента
-    # Приоритет HTML→PDF для лучшего сохранения переводов
-    use_playwright = os.getenv("HTML_TO_PDF_PLAYWRIGHT", "1") == "1"  # По умолчанию включен
-    use_pdf_rebuild = os.getenv("PDF_REBUILD", "0") == "1" and not use_playwright
+    # КРИТИЧНО: PDF_REBUILD_V2 имеет приоритет для точного копирования изображений
+    use_pdf_rebuild = os.getenv("PDF_REBUILD", "0") == "1"
+    use_playwright = os.getenv("HTML_TO_PDF_PLAYWRIGHT", "0") == "1" and not use_pdf_rebuild
     
     # Если включен Playwright, используем его (более надежно для переведенного текста)
     if use_playwright:
@@ -56,8 +55,10 @@ def export_pdf(doc: BookDocument, out_path: str) -> None:
         tmp_dir = Path(tempfile.gettempdir())
         html_tmp = tmp_dir / f"pdf_export_{uuid.uuid4().hex[:8]}.html"
         try:
-            # Генерируем HTML (flow по умолчанию, или absolute если указано)
-            use_absolute = os.getenv("HTML_ABSOLUTE", "0") == "1"
+            # Генерируем HTML - используем absolute для лучшего сохранения layout
+            # HTML_ABSOLUTE=0 для flow (быстрее, но менее точный)
+            # HTML_ABSOLUTE=1 для absolute (медленнее, но точнее) - ПО УМОЛЧАНИЮ
+            use_absolute = os.getenv("HTML_ABSOLUTE", "1") == "1"  # По умолчанию absolute для качества
             if use_absolute:
                 from core_engine.export.html_exporter import export_html_absolute
                 export_html_absolute(doc, str(html_tmp))
@@ -70,25 +71,59 @@ def export_pdf(doc: BookDocument, out_path: str) -> None:
             temp_pdf = str(Path(out_path).with_suffix(".tmp.pdf"))
             convert_html_to_pdf(str(html_tmp), temp_pdf, page_width=doc.pages[0].width if doc.pages else 595, page_height=doc.pages[0].height if doc.pages else 842)
             
-            # [ADVANCED MODE] Финальное сжатие через Ghostscript
-            use_ghostscript = os.getenv("GHOSTSCRIPT_COMPRESS", "1") == "1"
+            # [ADVANCED MODE] Финальное сжатие (Ghostscript или PyMuPDF fallback)
+            use_ghostscript = os.getenv("GHOSTSCRIPT_COMPRESS", "1") != "0"  # По умолчанию включено
+            compressed = False
+            
             if use_ghostscript and Path(temp_pdf).exists():
                 from core_engine.export.ghostscript_compress import compress_pdf_with_ghostscript
-                if compress_pdf_with_ghostscript(temp_pdf, out_path, quality="prepress"):
+                # Используем "ebook" для лучшего баланса качества и размера (можно изменить на "screen" для максимального сжатия)
+                compression_quality = os.getenv("GHOSTSCRIPT_QUALITY", "ebook")  # screen, ebook, prepress, printer
+                if compress_pdf_with_ghostscript(temp_pdf, out_path, quality=compression_quality):
+                    compressed = True
                     if Path(temp_pdf).exists():
                         Path(temp_pdf).unlink()
-                else:
-                    # Удаляем старый файл перед переименованием
+            
+            # Fallback: сжатие через PyMuPDF если Ghostscript не доступен
+            if not compressed and Path(temp_pdf).exists():
+                try:
+                    import fitz
+                    doc = fitz.open(temp_pdf)
+                    # Агрессивное сжатие через PyMuPDF
+                    # Более агрессивное сжатие
+                    # Более агрессивное сжатие
+                    doc.save(
+                        out_path,
+                        garbage=4,  # максимальная очистка
+                        deflate=True,  # сжатие потоков
+                        deflate_images=True,  # сжатие изображений
+                        deflate_fonts=True,  # сжатие шрифтов
+                        clean=True,  # очистка структуры
+                        ascii=False,  # бинарный формат
+                        no_new_id=True,  # не создавать новые ID
+                        encryption=0,  # без шифрования
+                    )
+                    doc.close()
+                    if Path(temp_pdf).exists():
+                        Path(temp_pdf).unlink()
+                    print(f"[PDF] Compressed via PyMuPDF (Ghostscript not available)")
+                    compressed = True
+                except Exception as e:
+                    print(f"[WARN] PyMuPDF compression failed: {e}")
+            
+            # Если сжатие не сработало, просто переименовываем
+            if not compressed and Path(temp_pdf).exists():
+                try:
                     if Path(out_path).exists():
                         Path(out_path).unlink()
-                    if Path(temp_pdf).exists():
-                        Path(temp_pdf).rename(out_path)
-            else:
-                # Удаляем старый файл перед переименованием
-                if Path(out_path).exists():
-                    Path(out_path).unlink()
-                if Path(temp_pdf).exists():
                     Path(temp_pdf).rename(out_path)
+                except Exception as e:
+                    # Если переименование не работает, копируем
+                    import shutil
+                    if Path(out_path).exists():
+                        Path(out_path).unlink()
+                    shutil.copy2(temp_pdf, out_path)
+                    Path(temp_pdf).unlink()
             
             print(f"[PDF] Generated via HTML to PDF (Playwright)")
             if html_tmp.exists():
@@ -172,7 +207,8 @@ def export_pdf(doc: BookDocument, out_path: str) -> None:
                 use_ghostscript = os.getenv("GHOSTSCRIPT_COMPRESS", "1") == "1"
                 if use_ghostscript:
                     from core_engine.export.ghostscript_compress import compress_pdf_with_ghostscript
-                    if compress_pdf_with_ghostscript(temp_out, out_path, quality="prepress"):
+                    compression_quality = os.getenv("GHOSTSCRIPT_QUALITY", "ebook")  # screen, ebook, prepress, printer
+                    if compress_pdf_with_ghostscript(temp_out, out_path, quality=compression_quality):
                         # Удаляем временный файл
                         try:
                             if Path(temp_out).exists():
@@ -214,10 +250,13 @@ def export_pdf(doc: BookDocument, out_path: str) -> None:
         tmp_dir = Path(tempfile.gettempdir())
         tmp_html = tmp_dir / "tmp_export_abs.html"
         try:
-            use_abs = os.getenv("HTML_ABSOLUTE", "0") == "1"
+            # КРИТИЧНО: По умолчанию используем absolute для точного позиционирования
+            use_abs = os.getenv("HTML_ABSOLUTE", "1") == "1"  # По умолчанию 1 для качества
             if use_abs:
+                print(f"      [PDF] Using HTML_ABSOLUTE layout for precise positioning")
                 export_html_absolute(doc, str(tmp_html))
             else:
+                print(f"      [PDF] Using HTML_FLOW layout (less precise)")
                 export_html_flow(doc, str(tmp_html))
             
             # Получаем размеры страницы из документа (если есть)

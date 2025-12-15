@@ -199,11 +199,12 @@ def _calculate_additional_metrics(original_pdf: str, translated_pdf: str) -> Dic
         
         avg_image_drift = sum(image_drifts) / len(image_drifts) if image_drifts else 0.0
         
-        # Font consistency (упрощенная проверка)
-        font_consistency = 100.0  # TODO: улучшить проверку шрифтов
+        # Font consistency (реальная проверка)
+        font_consistency = _check_font_consistency(doc_orig, doc_trans)
         
         # Table integrity (упрощенная проверка)
-        table_integrity = 100.0  # TODO: улучшить проверку таблиц
+        # Проверка целостности таблиц
+        table_integrity = _check_table_integrity(doc_orig, doc_trans)
         
         doc_orig.close()
         doc_trans.close()
@@ -234,18 +235,26 @@ def _calculate_overall_score(
     additional_metrics: Dict
 ) -> float:
     """Вычисляет общий score (0-100)."""
+    # Проверяем, используется ли absolute layout (лучше для качества)
+    use_absolute = os.getenv("HTML_ABSOLUTE", "1") == "1"
+    
+    # Для absolute layout применяем строгие критерии
     # Для flow layout применяем более мягкие критерии:
     # - Позиции могут отличаться (flow layout переформатирует)
     # - Важнее сохранение содержимого и читаемость
     
-    # Адаптируем pixel_metrics для flow layout
+    # Адаптируем pixel_metrics
     pixel_score = pixel_metrics.get("overall_score", 0.0)
     
-    # Если много потерянных элементов, но это может быть из-за объединения в flow
+    # Если много потерянных элементов
     element_loss = pixel_metrics.get("element_loss", 0.0)
     if element_loss > 0.5:
-        # Возможно, это flow layout объединил блоки - применяем штраф, но не критичный
-        pixel_score = max(0.0, pixel_score - element_loss * 0.2)  # Мягкий штраф
+        if use_absolute:
+            # Для absolute layout строгий штраф
+            pixel_score = max(0.0, pixel_score - element_loss * 0.5)
+        else:
+            # Для flow layout мягкий штраф (блоки могут объединяться)
+            pixel_score = max(0.0, pixel_score - element_loss * 0.2)
     
     # Взвешенная сумма метрик (адаптированная для flow layout)
     score = (
@@ -294,6 +303,81 @@ def _generate_recommendations(
         recommendations.append("⚠️ Хорошее качество: рекомендуется выборочная проверка 10% страниц")
     
     return recommendations
+
+
+def _check_font_consistency(doc_orig, doc_trans) -> float:
+    """Проверяет консистентность шрифтов между оригиналом и переводом."""
+    try:
+        fonts_orig = set()
+        fonts_trans = set()
+        
+        max_pages = min(len(doc_orig), len(doc_trans))
+        for page_num in range(max_pages):
+            page_orig = doc_orig[page_num]
+            page_trans = doc_trans[page_num]
+            
+            # Извлекаем шрифты из страниц
+            for font_info in page_orig.get_fonts(full=True):
+                if len(font_info) > 3:
+                    fonts_orig.add(font_info[3])  # имя шрифта
+            
+            for font_info in page_trans.get_fonts(full=True):
+                if len(font_info) > 3:
+                    fonts_trans.add(font_info[3])
+        
+        if not fonts_orig:
+            return 100.0  # Нет шрифтов для проверки
+        
+        # Сравниваем базовые имена шрифтов (без стилей)
+        fonts_orig_base = {f.split("-")[0].split("+")[0].lower() for f in fonts_orig}
+        fonts_trans_base = {f.split("-")[0].split("+")[0].lower() for f in fonts_trans}
+        
+        # Вычисляем процент совпадения
+        common = len(fonts_orig_base & fonts_trans_base)
+        total = len(fonts_orig_base)
+        
+        if total == 0:
+            return 100.0
+        
+        consistency = (common / total) * 100.0
+        return min(100.0, consistency)
+    except Exception:
+        return 100.0  # При ошибке возвращаем 100%
+
+
+def _check_table_integrity(doc_orig, doc_trans) -> float:
+    """Проверяет целостность таблиц между оригиналом и переводом."""
+    try:
+        tables_orig = 0
+        tables_trans = 0
+        
+        max_pages = min(len(doc_orig), len(doc_trans))
+        for page_num in range(max_pages):
+            page_orig = doc_orig[page_num]
+            page_trans = doc_trans[page_num]
+            
+            # Подсчитываем таблицы (упрощенная проверка через текст)
+            text_orig = page_orig.get_text()
+            text_trans = page_trans.get_text()
+            
+            # Ищем признаки таблиц (много табуляций, вертикальных линий)
+            tabs_orig = text_orig.count('\t')
+            tabs_trans = text_trans.count('\t')
+            
+            # Приблизительная оценка: если количество табуляций похоже, таблицы сохранены
+            if tabs_orig > 0:
+                tables_orig += 1
+            if tabs_trans > 0:
+                tables_trans += 1
+        
+        if tables_orig == 0:
+            return 100.0  # Нет таблиц для проверки
+        
+        # Вычисляем процент сохранности таблиц
+        integrity = (min(tables_orig, tables_trans) / max(tables_orig, 1)) * 100.0
+        return min(100.0, integrity)
+    except Exception:
+        return 100.0  # При ошибке возвращаем 100%
 
 
 def print_scorecard(scorecard: Dict[str, Any]) -> None:

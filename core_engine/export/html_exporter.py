@@ -24,22 +24,41 @@ def _block_text(block: Block) -> str:
 
 def _inline_style_block(bbox, font_size: float | None, is_bold: bool, is_italic: bool, font_name: str) -> str:
     width = bbox.x1 - bbox.x0
+    height = bbox.y1 - bbox.y0
+    
+    # Улучшенное позиционирование для absolute layout
+    # Предотвращаем наезд текста: используем min-height и правильный overflow
     styles = [
         f"position:absolute",
         f"left:{bbox.x0}px",
         f"top:{bbox.y0}px",
         f"width:{max(width,1)}px",
+        f"min-height:{max(height,1)}px",  # min-height вместо height для предотвращения обрезки
+        f"max-height:{max(height * 1.5, height + 20)}px",  # Ограничиваем максимальную высоту
         f"font-size:{font_size if font_size else 12}px",
-        f"line-height:1.25",
+        f"line-height:1.2",  # Улучшенный line-height для кириллицы
         f"white-space:pre-wrap",
         f"overflow-wrap:break-word",
+        f"word-wrap:break-word",
+        f"overflow:hidden",  # Скрываем переполнение
+        f"margin:0",
+        f"padding:1px",  # Минимальный padding
+        f"box-sizing:border-box",  # Padding включается в размер
     ]
+    
+    # Улучшенная поддержка шрифтов с кириллицей
     if font_name:
-        styles.append(f"font-family:'{font_name}', serif")
+        # Добавляем fallback шрифты с поддержкой кириллицы
+        font_family = f"'{font_name}', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif"
+        styles.append(f"font-family:{font_family}")
+    else:
+        styles.append("font-family:'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif")
+    
     if is_bold:
         styles.append("font-weight:bold")
     if is_italic:
         styles.append("font-style:italic")
+    
     return ";".join(styles)
 
 
@@ -156,55 +175,127 @@ def _table_to_html(table: TableObject) -> str:
 def export_html_absolute(doc: BookDocument, out_path: str) -> None:
     """
     HTML с абсолютным позиционированием по исходным bbox (в поинтах~px).
-    Использовать для отладки, возможны наложения.
+    Улучшенная версия для точного сохранения позиций элементов.
     """
     parts: List[str] = []
     parts.append("<html><head><meta charset='utf-8'>")
-    parts.append(
-        "<style>body{margin:0;padding:0;background:#f7f7f7;} .page{position:relative;margin:20px auto;box-shadow:0 0 6px rgba(0,0,0,0.2);} .layer{position:absolute;}</style>"
-    )
+    parts.append("""
+    <style>
+    * { box-sizing: border-box; }
+    body {
+        margin: 0;
+        padding: 0;
+        background: #f7f7f7;
+        font-family: 'Georgia', 'Times New Roman', serif;
+    }
+    .page {
+        position: relative;
+        margin: 20px auto;
+        box-shadow: 0 0 6px rgba(0,0,0,0.2);
+        background: #fff;
+        overflow: hidden;
+    }
+    .layer {
+        position: absolute;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+    .text-layer {
+        line-height: 1.2;
+        margin: 0;
+        padding: 0;
+        z-index: 3;  /* Текст поверх всего */
+        overflow: hidden;  /* Предотвращаем наезд */
+        position: absolute;
+        display: block;
+    }
+    .image-layer {
+        object-fit: contain;
+        z-index: 1;  /* Изображения под текстом */
+        position: absolute;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    .table-layer {
+        border-collapse: collapse;
+        z-index: 2;  /* Таблицы между изображениями и текстом */
+        position: absolute;
+    }
+    </style>
+    """)
     parts.append("</head><body>")
 
     for page in doc.pages:
         w = page.width
         h = page.height
-        bg = page.metadata.get("raster_preview_png_b64", "")
+        bg = page.metadata.get("raster_preview_png_b64", "") if hasattr(page, "metadata") and page.metadata else ""
         bg_style = ""
         if bg:
             bg_style = f"background:url(data:image/png;base64,{bg}) no-repeat left top;background-size:{w}px {h}px;"
         parts.append(f"<div class='page' style='width:{w}px;height:{h}px;{bg_style}'>")
 
-        # Таблицы под текстом, но над фоном
+        # Изображения ПЕРВЫМИ (нижний слой, z-index: 1)
+        # КРИТИЧНО: Проверяем что изображения есть и вставляем их
+        images_inserted = 0
+        for img in page.images:
+            if not img.image_bytes:
+                print(f"      [HTML_EXPORT] Warning: Image on page {page.number} has no image_bytes")
+                continue
+            if not hasattr(img, "bbox") or not img.bbox:
+                print(f"      [HTML_EXPORT] Warning: Image on page {page.number} has no bbox")
+                continue
+            bbox = img.bbox
+            width = bbox.x1 - bbox.x0
+            height = bbox.y1 - bbox.y0
+            if width <= 0 or height <= 0:
+                print(f"      [HTML_EXPORT] Warning: Image on page {page.number} has invalid dimensions")
+                continue
+            data_uri = _image_to_data_uri(img)
+            if data_uri:
+                # КРИТИЧНО: Используем position:absolute и правильный z-index
+                # Добавляем display:block для гарантированного отображения
+                parts.append(
+                    f"<img class='layer image-layer' src='{data_uri}' style='position:absolute;left:{bbox.x0}px;top:{bbox.y0}px;width:{max(width,1)}px;height:{max(height,1)}px;object-fit:contain;z-index:1;display:block;margin:0;padding:0;'/>"
+                )
+                images_inserted += 1
+        if images_inserted > 0:
+            print(f"      [HTML_EXPORT] Inserted {images_inserted} images on page {page.number}")
+
+        # Таблицы (средний слой, z-index: 2)
         for tbl in page.tables:
             bbox = tbl.bbox
             width = bbox.x1 - bbox.x0
             height = bbox.y1 - bbox.y0
             parts.append(
-                f"<div class='layer' style='left:{bbox.x0}px;top:{bbox.y0}px;width:{max(width,1)}px;height:{max(height,1)}px;border:1px solid #ccc;background:#fff'>{_table_to_html(tbl)}</div>"
+                f"<div class='layer table-layer' style='left:{bbox.x0}px;top:{bbox.y0}px;width:{max(width,1)}px;height:{max(height,1)}px;border:1px solid #ccc;background:#fff;z-index:2;'>{_table_to_html(tbl)}</div>"
             )
 
-        # Изображения (если bytes есть)
-        for img in page.images:
-            if not img.image_bytes:
+        # Текстовые блоки ПОСЛЕДНИМИ (верхний слой, z-index: 3)
+        # Сортируем по позиции для правильного порядка
+        sorted_blocks = sorted(page.blocks, key=lambda b: (b.bbox.y0 if hasattr(b, "bbox") and b.bbox else 0, b.bbox.x0 if hasattr(b, "bbox") and b.bbox else 0))
+        blocks_inserted = 0
+        for block in sorted_blocks:
+            if not hasattr(block, "bbox") or not block.bbox:
                 continue
-            bbox = img.bbox
-            width = bbox.x1 - bbox.x0
-            height = bbox.y1 - bbox.y0
-            data_uri = _image_to_data_uri(img)
-            parts.append(
-                f"<img class='layer' src='{data_uri}' style='left:{bbox.x0}px;top:{bbox.y0}px;width:{max(width,1)}px;height:{max(height,1)}px;object-fit:contain;'/>"
-            )
-
-        # Текстовые блоки
-        for block in page.blocks:
             bbox = block.bbox
+            # Проверяем валидность bbox
+            if bbox.x1 <= bbox.x0 or bbox.y1 <= bbox.y0:
+                continue
             font_size = block.metadata.get("font_size") if isinstance(block.metadata, dict) else None
             is_bold = bool(block.metadata.get("is_bold")) if isinstance(block.metadata, dict) else False
             is_italic = bool(block.metadata.get("is_italic")) if isinstance(block.metadata, dict) else False
             font_name = block.metadata.get("font") if isinstance(block.metadata, dict) else ""
             txt = _escape(_block_text(block))
+            if not txt.strip():
+                continue
             style = _inline_style_block(bbox, font_size, is_bold, is_italic, font_name or "")
-            parts.append(f"<div class='layer' style='{style}'>{txt}</div>")
+            # Добавляем z-index и overflow для предотвращения наезда
+            style += ";z-index:3;overflow:hidden;position:absolute;"
+            parts.append(f"<div class='layer text-layer' style='{style}'>{txt}</div>")
+            blocks_inserted += 1
+        if blocks_inserted > 0:
+            print(f"      [HTML_EXPORT] Inserted {blocks_inserted} text blocks on page {page.number}")
 
         parts.append("</div>")  # page
 

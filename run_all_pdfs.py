@@ -4,6 +4,14 @@
 """
 
 import sys
+
+# Исправление кодировки для Windows
+if sys.platform == "win32":
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+        sys.stderr.reconfigure(encoding='utf-8')
+    except Exception:
+        pass  # Если не поддерживается, игнорируем
 from pathlib import Path
 from core_engine.orchestrator.pipeline import run_book_pipeline
 import time

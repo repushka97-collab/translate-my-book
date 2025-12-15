@@ -9,6 +9,14 @@ from typing import List, Dict, Any, Optional
 from pathlib import Path
 import fitz  # PyMuPDF
 import copy
+import os
+
+# Font Manager для поддержки Unicode шрифтов
+try:
+    from core_engine.export.font_manager import get_font_manager
+    FONT_MANAGER_AVAILABLE = True
+except ImportError:
+    FONT_MANAGER_AVAILABLE = False
 
 
 def rebuild_pdf_with_translations_v2(
@@ -30,6 +38,23 @@ def rebuild_pdf_with_translations_v2(
     source_doc = fitz.open(source_pdf_path)
     new_doc = fitz.open()  # Создаем новый документ
     
+    # Инициализируем Font Manager для поддержки кириллицы
+    font_manager = None
+    if FONT_MANAGER_AVAILABLE:
+        font_manager = get_font_manager()
+    
+    # Добавляем Unicode шрифты с поддержкой кириллицы через Font Manager
+    font_paths = {}  # Сохраняем пути к шрифтам
+    if FONT_MANAGER_AVAILABLE and font_manager:
+        for font_family in ["helv", "times", "cour"]:
+            font_path = font_manager.find_cyrillic_font(font_family)
+            if font_path:
+                font_name = f"cyrillic-{font_family}"
+                result = font_manager.load_font_to_doc(new_doc, font_name, font_path)
+                if result:
+                    font_paths[font_family] = font_path
+                    print(f"[PDF_REBUILD_V2] Found Unicode font: {font_name} ({Path(font_path).name})")
+    
     # Группируем переводы по страницам
     translations_by_page: Dict[int, List[Dict[str, Any]]] = {}
     for trans in translations:
@@ -48,22 +73,31 @@ def rebuild_pdf_with_translations_v2(
             height=source_page.rect.height
         )
         
-        # Копируем изображения и векторную графику
+        # Копируем изображения и векторную графику ПЕРВЫМИ
         image_list = source_page.get_images()
+        images_copied = 0
         for img_idx, img_info in enumerate(image_list):
             xref = img_info[0]
             try:
                 # Извлекаем изображение
                 base_image = source_doc.extract_image(xref)
-                image_bytes = base_image["image"]
+                image_bytes = base_image.get("image")
+                if not image_bytes:
+                    continue
                 image_rects = source_page.get_image_rects(xref)
                 
-                if image_rects:
+                if image_rects and image_bytes:
                     rect = image_rects[0]
                     # Вставляем изображение на новую страницу
                     new_page.insert_image(rect, stream=image_bytes)
-            except Exception:
-                pass
+                    images_copied += 1
+            except Exception as e:
+                error_log_path = os.getenv("ERROR_LOG_PATH", "errors.log")
+                with open(error_log_path, "a", encoding="utf-8") as f:
+                    f.write(f"[PDF_REBUILD_V2] Failed to copy image {img_idx} on page {page_num}: {e}\n")
+        
+        if images_copied > 0:
+            print(f"      [PDF_REBUILD_V2] Copied {images_copied} images to page {page_num + 1}")
         
         # Получаем переводы для этой страницы
         page_translations = translations_by_page.get(page_num, [])
@@ -108,7 +142,7 @@ def rebuild_pdf_with_translations_v2(
             else:
                 base_font = "helv"
             
-            # Формируем полное имя шрифта
+            # Формируем стандартное имя шрифта (для fallback)
             if is_bold and is_italic:
                 pdf_font = f"{base_font}-boldoblique"
             elif is_bold:
@@ -117,6 +151,11 @@ def rebuild_pdf_with_translations_v2(
                 pdf_font = f"{base_font}-oblique"
             else:
                 pdf_font = base_font
+            
+            # Используем Font Manager для получения правильного шрифта (ПОСЛЕ определения pdf_font)
+            final_font = pdf_font
+            if font_manager:
+                final_font = font_manager.get_font_for_text(new_doc, base_font, translated_text)
             
             # Корректируем размер шрифта при переполнении
             from core_engine.export.pdf_rebuilder import adjust_fontsize_for_overflow
@@ -136,14 +175,14 @@ def rebuild_pdf_with_translations_v2(
                 text_color = (r, g, b)
             
             # Вставляем текст через textbox для правильной обработки кириллицы
-            # Используем insert_textbox для многострочного текста
+            # Используем Font Manager для получения правильного шрифта
             try:
                 # Создаем textbox с правильными параметрами
                 rc = new_page.insert_textbox(
                     rect,
                     translated_text,
                     fontsize=adjusted_fontsize,
-                    fontname=pdf_font,
+                    fontname=final_font,  # Используем шрифт из Font Manager
                     color=text_color if text_color else (0, 0, 0),
                     align=0,  # left align
                     render_mode=0,

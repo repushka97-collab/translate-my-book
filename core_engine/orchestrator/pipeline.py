@@ -837,6 +837,59 @@ def run_book_pipeline(
         print(f"[WARN] PDF export failed: {e}")
 
     # --------------------------------------------------------
+    # [HUMAN FEEDBACK MODE] Оценка качества "как человек"
+    use_human_like_evaluation = os.getenv("USE_HUMAN_LIKE_EVALUATION", "0") == "1"
+    human_model_user = os.getenv("HUMAN_MODEL_USER", "default")
+    
+    if use_human_like_evaluation:
+        try:
+            from core_engine.learning.human_like_metrics import HumanLikeQualityAssessor
+            from core_engine.learning.quality_model_trainer import load_user_model
+            
+            # Загружаем модель пользователя если есть
+            user_model_path = load_user_model(human_model_user)
+            if user_model_path:
+                print(f"      [HUMAN_METRICS] Using personalized model for {human_model_user}")
+            
+            # Создаем оценщик
+            quality_assessor = HumanLikeQualityAssessor()
+            
+            # Оцениваем качество переведенного PDF
+            if Path(pdf_path).exists():
+                try:
+                    import fitz
+                    doc_orig = fitz.open(str(source_path))
+                    doc_trans = fitz.open(pdf_path)
+                    
+                    page_scores = []
+                    max_pages = min(len(doc_orig), len(doc_trans), 10)  # Оцениваем первые 10 страниц
+                    
+                    for page_num in range(max_pages):
+                        page_orig = doc_orig[page_num]
+                        page_trans = doc_trans[page_num]
+                        
+                        assessment = quality_assessor.assess_page(page_orig, page_trans)
+                        page_scores.append(assessment["overall_score"])
+                    
+                    avg_score = sum(page_scores) / len(page_scores) if page_scores else 0.0
+                    print(f"      [HUMAN_METRICS] Average human-like score: {avg_score:.1f}/10")
+                    print(f"      [HUMAN_METRICS] Recommendation: {quality_assessor.generate_recommendation(avg_score)}")
+                    
+                    # Добавляем в метаданные
+                    if "human_quality_score" not in result:
+                        result["human_quality_score"] = avg_score
+                        result["human_recommendation"] = quality_assessor.generate_recommendation(avg_score)
+                    
+                    doc_orig.close()
+                    doc_trans.close()
+                except Exception as e:
+                    print(f"      [WARN] Human metrics evaluation failed: {e}")
+        except ImportError:
+            print(f"      [WARN] Human metrics modules not available")
+        except Exception as e:
+            print(f"      [WARN] Human metrics evaluation failed: {e}")
+    
+    # --------------------------------------------------------
     stage += 1
     _progress("Register in library")
     try:

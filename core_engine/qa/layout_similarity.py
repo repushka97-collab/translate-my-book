@@ -165,7 +165,7 @@ def _extract_page_layout(page) -> List[Dict[str, Any]]:
     return layout
 
 
-def _jaccard_similarity(layout1: List[Dict], layout2: List[Dict]) -> float:
+def _jaccard_similarity(layout1: List[Dict], layout2: List[Dict], is_absolute: bool = True) -> float:
     """Jaccard similarity между структурами."""
     if not layout1 and not layout2:
         return 1.0

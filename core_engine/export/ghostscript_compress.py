@@ -45,6 +45,16 @@ def compress_pdf_with_ghostscript(
     
     try:
         # Команда Ghostscript для сжатия с дополнительными опциями
+        # Настройки разрешения в зависимости от качества
+        quality_resolutions = {
+            "screen": {"color": 72, "gray": 72, "mono": 300},
+            "ebook": {"color": 150, "gray": 150, "mono": 300},
+            "prepress": {"color": 300, "gray": 300, "mono": 1200},
+            "printer": {"color": 300, "gray": 300, "mono": 1200},
+        }
+        
+        res = quality_resolutions.get(quality, quality_resolutions["ebook"])
+        
         cmd = [
             "gs",
             "-sDEVICE=pdfwrite",
@@ -57,13 +67,15 @@ def compress_pdf_with_ghostscript(
             "-dColorImageDownsampleType=/Bicubic",  # Качественное уменьшение изображений
             "-dGrayImageDownsampleType=/Bicubic",
             "-dMonoImageDownsampleType=/Bicubic",
-            "-dColorImageResolution=300",  # Разрешение для цветных изображений
-            "-dGrayImageResolution=300",
-            "-dMonoImageResolution=1200",
+            f"-dColorImageResolution={res['color']}",  # Разрешение для цветных изображений
+            f"-dGrayImageResolution={res['gray']}",
+            f"-dMonoImageResolution={res['mono']}",
             "-dEmbedAllFonts=true",  # Встраиваем все шрифты
             "-dSubsetFonts=true",  # Подмножество шрифтов
             "-dCompressFonts=true",  # Сжатие шрифтов
             "-dOptimize=true",  # Оптимизация
+            "-dUseFlateCompression=true",  # Использовать Flate сжатие
+            "-dFastWebView=true",  # Быстрый просмотр в браузере
             f"-sOutputFile={output_pdf_path}",
             input_pdf_path
         ]

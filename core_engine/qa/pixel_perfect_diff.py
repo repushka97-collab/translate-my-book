@@ -311,6 +311,7 @@ def compare_pdfs_pixel_perfect(
         error_log_path = os.getenv("ERROR_LOG_PATH", "errors.log")
         with open(error_log_path, "a", encoding="utf-8") as f:
             f.write(f"[PixelPerfect] Error: {e}\n")
+        
         return {
             "shift_score": 0.0,
             "element_loss": 1.0,

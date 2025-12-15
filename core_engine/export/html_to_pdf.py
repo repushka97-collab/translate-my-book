@@ -36,6 +36,8 @@ async def _convert_async(html_path: str, pdf_path: str, page_width: float = None
                 "bottom": "0",
                 "left": "0",
             },
+            "display_header_footer": False,  # Без заголовков/футеров
+            "scale": 1.0,  # Масштаб 1:1
         }
         
         # Если указаны размеры страницы, используем их
