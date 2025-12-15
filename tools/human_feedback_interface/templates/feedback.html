@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Оценка качества перевода - Страница {{ page }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .comparison {
+            display: flex;
+            gap: 20px;
+            margin: 20px;
+            justify-content: center;
+        }
+        .page-container {
+            border: 2px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .page-container h3 {
+            margin-top: 0;
+            color: #555;
+        }
+        .page-container img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+        }
+        .annotation-area {
+            border: 2px dashed red;
+            position: absolute;
+            cursor: move;
+            background: rgba(255, 0, 0, 0.1);
+        }
+        .controls {
+            margin: 20px;
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .controls label {
+            display: block;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .controls input[type="range"] {
+            width: 300px;
+        }
+        .controls textarea {
+            width: 100%;
+            max-width: 600px;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .controls button {
+            background: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .controls button:hover {
+            background: #45a049;
+        }
+        #score-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4CAF50;
+            margin-left: 10px;
+        }
+        .problem-areas {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .problem-areas h4 {
+            margin-bottom: 10px;
+        }
+        .problem-area-item {
+            background: #fff3cd;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 4px;
+            border-left: 4px solid #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <h1>Оцените качество перевода - Страница {{ page }}</h1>
+    <p style="text-align: center; color: #666;">Книга: {{ book }}</p>
+    
+    <div class="comparison">
+        <div class="page-container">
+            <h3>Оригинал</h3>
+            <img src="{{ original_img }}" width="500" id="original-page" alt="Original page">
+        </div>
+        <div class="page-container" style="position: relative;">
+            <h3>Перевод</h3>
+            <img src="{{ translated_img }}" width="500" id="translated-page" alt="Translated page">
+            <div id="annotations"></div>
+        </div>
+    </div>
+    
+    <div class="controls">
+        <label>
+            Ваша оценка (1-10): 
+            <input type="range" min="1" max="10" value="7" id="quality-score" step="0.5">
+            <span id="score-value">7.0</span>
+        </label>
+        
+        <label>
+            Ваше имя (для персональной модели):
+            <input type="text" id="user-name" value="default" style="padding: 8px; width: 200px; border: 1px solid #ddd; border-radius: 4px;">
+        </label>
+        
+        <label>
+            Комментарий:
+            <textarea id="comment" rows="3" placeholder="Опишите проблемы, которые вы видите..."></textarea>
+        </label>
+        
+        <div class="problem-areas">
+            <h4>Проблемные области (кликните на изображении для выделения):</h4>
+            <div id="problem-areas-list"></div>
+        </div>
+        
+        <button onclick="saveFeedback()">💾 Сохранить оценку</button>
+        <div id="status-message" style="margin-top: 10px;"></div>
+    </div>
+
+    <script>
+        let problemAreas = [];
+        let isDrawing = false;
+        let startX, startY, currentRect = null;
+
+        // Обработка клика для выделения проблемных областей
+        const translatedPage = document.getElementById('translated-page');
+        const annotationsDiv = document.getElementById('annotations');
+        const pageContainer = translatedPage.parentElement;
+
+        translatedPage.addEventListener('mousedown', function(e) {
+            if (e.button !== 0) return; // Только левая кнопка
+            
+            isDrawing = true;
+            const rect = translatedPage.getBoundingClientRect();
+            startX = e.clientX - rect.left;
+            startY = e.clientY - rect.top;
+            
+            currentRect = document.createElement('div');
+            currentRect.className = 'annotation-area';
+            currentRect.style.left = startX + 'px';
+            currentRect.style.top = startY + 'px';
+            currentRect.style.width = '0px';
+            currentRect.style.height = '0px';
+            annotationsDiv.appendChild(currentRect);
+        });
+
+        translatedPage.addEventListener('mousemove', function(e) {
+            if (!isDrawing || !currentRect) return;
+            
+            const rect = translatedPage.getBoundingClientRect();
+            const currentX = e.clientX - rect.left;
+            const currentY = e.clientY - rect.top;
+            
+            const width = Math.abs(currentX - startX);
+            const height = Math.abs(currentY - startY);
+            
+            currentRect.style.left = Math.min(startX, currentX) + 'px';
+            currentRect.style.top = Math.min(startY, currentY) + 'px';
+            currentRect.style.width = width + 'px';
+            currentRect.style.height = height + 'px';
+        });
+
+        translatedPage.addEventListener('mouseup', function(e) {
+            if (!isDrawing || !currentRect) return;
+            
+            isDrawing = false;
+            
+            // Запрашиваем описание проблемы
+            const issue = prompt('Опишите проблему в этой области:', 'text_overflow');
+            const severity = prompt('Серьезность (low/medium/high):', 'medium');
+            
+            if (issue) {
+                const rect = currentRect.getBoundingClientRect();
+                const imgRect = translatedPage.getBoundingClientRect();
+                
+                // Сохраняем координаты относительно изображения
+                const problemArea = {
+                    bbox: [
+                        rect.left - imgRect.left,
+                        rect.top - imgRect.top,
+                        rect.right - imgRect.left,
+                        rect.bottom - imgRect.top
+                    ],
+                    issue: issue,
+                    severity: severity || 'medium'
+                };
+                
+                problemAreas.push(problemArea);
+                updateProblemAreasList();
+            } else {
+                // Удаляем если не указана проблема
+                currentRect.remove();
+            }
+            
+            currentRect = null;
+        });
+
+        function updateProblemAreasList() {
+            const listDiv = document.getElementById('problem-areas-list');
+            listDiv.innerHTML = '';
+            
+            problemAreas.forEach((area, index) => {
+                const item = document.createElement('div');
+                item.className = 'problem-area-item';
+                item.innerHTML = `
+                    <strong>Область ${index + 1}:</strong> ${area.issue} 
+                    <span style="color: ${area.severity === 'high' ? 'red' : area.severity === 'medium' ? 'orange' : 'green'}">
+                        (${area.severity})
+                    </span>
+                    <button onclick="removeProblemArea(${index})" style="float: right; background: #f44336; color: white; border: none; padding: 4px 8px; border-radius: 4px; cursor: pointer;">Удалить</button>
+                `;
+                listDiv.appendChild(item);
+            });
+        }
+
+        function removeProblemArea(index) {
+            problemAreas.splice(index, 1);
+            updateProblemAreasList();
+            // Удаляем визуальное выделение
+            const annotations = document.querySelectorAll('.annotation-area');
+            if (annotations[index]) {
+                annotations[index].remove();
+            }
+        }
+
+        // Обновление отображения оценки
+        document.getElementById('quality-score').addEventListener('input', function() {
+            document.getElementById('score-value').textContent = this.value;
+        });
+
+        // Сохранение фидбека
+        function saveFeedback() {
+            const feedback = {
+                book: '{{ book }}',
+                original_pdf: '{{ original_pdf }}',
+                page: {{ page }},
+                user: document.getElementById('user-name').value || 'default',
+                quality_score: parseFloat(document.getElementById('quality-score').value),
+                comment: document.getElementById('comment').value,
+                problem_areas: problemAreas,
+                semantic_issues: [] // Можно добавить отдельное поле
+            };
+            
+            const statusDiv = document.getElementById('status-message');
+            statusDiv.textContent = 'Сохранение...';
+            statusDiv.style.color = '#666';
+            
+            fetch('/save_feedback', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify(feedback)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    statusDiv.textContent = '✅ Оценка сохранена! ' + (data.feedback ? 'Можно перейти к следующей странице.' : '');
+                    statusDiv.style.color = '#4CAF50';
+                } else {
+                    statusDiv.textContent = '❌ Ошибка: ' + (data.message || 'Неизвестная ошибка');
+                    statusDiv.style.color = '#f44336';
+                }
+            })
+            .catch(error => {
+                statusDiv.textContent = '❌ Ошибка: ' + error.message;
+                statusDiv.style.color = '#f44336';
+            });
+        }
+    </script>
+</body>
+</html>
+

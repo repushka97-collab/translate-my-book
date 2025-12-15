@@ -1,0 +1,464 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>PDF Diff Report</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            h1 { color: #333; }
+            .difference { 
+                border: 1px solid #ddd; 
+                padding: 10px; 
+                margin: 10px 0; 
+                background: #f9f9f9;
+            }
+            .warning { color: #ff6600; }
+            .error { color: #cc0000; }
+            table { border-collapse: collapse; width: 100%; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background: #f0f0f0; }
+        </style>
+    </head>
+    <body>
+        <h1>PDF Diff Report</h1>
+        <p>Threshold: 2.0px</p>
+        <p>Total differences: 71</p>
+        
+        <table>
+            <tr>
+                <th>Page</th>
+                <th>Type</th>
+                <th>Details</th>
+            </tr>
+    
+            <tr>
+                <td>1</td>
+                <td>block_count_mismatch</td>
+                <td>{'page': 1, 'type': 'block_count_mismatch', 'original_count': 24, 'translated_count': 10}</td>
+            </tr>
+        
+            <tr>
+                <td>1</td>
+                <td>position_shift</td>
+                <td>{'page': 1, 'type': 'position_shift', 'block_index': 0, 'dx': 12.240001678466797, 'dy': 74.12908935546875, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>1</td>
+                <td>position_shift</td>
+                <td>{'page': 1, 'type': 'position_shift', 'block_index': 1, 'dx': 25.091094970703125, 'dy': 30.95539093017578, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>1</td>
+                <td>position_shift</td>
+                <td>{'page': 1, 'type': 'position_shift', 'block_index': 2, 'dx': 9.038116455078125, 'dy': 45.021080017089844, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>1</td>
+                <td>position_shift</td>
+                <td>{'page': 1, 'type': 'position_shift', 'block_index': 3, 'dx': 97.26734924316406, 'dy': 269.46854400634766, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>1</td>
+                <td>position_shift</td>
+                <td>{'page': 1, 'type': 'position_shift', 'block_index': 4, 'dx': 118.09602355957031, 'dy': 289.67574310302734, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>1</td>
+                <td>position_shift</td>
+                <td>{'page': 1, 'type': 'position_shift', 'block_index': 5, 'dx': 206.10430908203125, 'dy': 304.46849822998047, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>1</td>
+                <td>position_shift</td>
+                <td>{'page': 1, 'type': 'position_shift', 'block_index': 6, 'dx': 325.035400390625, 'dy': 578.2184982299805, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>1</td>
+                <td>position_shift</td>
+                <td>{'page': 1, 'type': 'position_shift', 'block_index': 7, 'dx': 239.97679138183594, 'dy': 552.8884887695312, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>1</td>
+                <td>position_shift</td>
+                <td>{'page': 1, 'type': 'position_shift', 'block_index': 8, 'dx': 210.01333618164062, 'dy': 573.1384887695312, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>1</td>
+                <td>position_shift</td>
+                <td>{'page': 1, 'type': 'position_shift', 'block_index': 9, 'dx': 205.82443237304688, 'dy': 554.3884887695312, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td>block_count_mismatch</td>
+                <td>{'page': 2, 'type': 'block_count_mismatch', 'original_count': 16, 'translated_count': 9}</td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td>position_shift</td>
+                <td>{'page': 2, 'type': 'position_shift', 'block_index': 0, 'dx': 261.65903091430664, 'dy': 34.58972930908203, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td>position_shift</td>
+                <td>{'page': 2, 'type': 'position_shift', 'block_index': 1, 'dx': 63.705902099609375, 'dy': 246.83148193359375, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td>position_shift</td>
+                <td>{'page': 2, 'type': 'position_shift', 'block_index': 2, 'dx': 104.52446365356445, 'dy': 278.1569519042969, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td>position_shift</td>
+                <td>{'page': 2, 'type': 'position_shift', 'block_index': 3, 'dx': 63.799652099609375, 'dy': 374.0831298828125, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td>position_shift</td>
+                <td>{'page': 2, 'type': 'position_shift', 'block_index': 4, 'dx': 63.79965591430664, 'dy': 478.8339385986328, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td>position_shift</td>
+                <td>{'page': 2, 'type': 'position_shift', 'block_index': 5, 'dx': 261.95402908325195, 'dy': 460.70928955078125, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td>position_shift</td>
+                <td>{'page': 2, 'type': 'position_shift', 'block_index': 6, 'dx': 63.79965591430664, 'dy': 472.36199951171875, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td>position_shift</td>
+                <td>{'page': 2, 'type': 'position_shift', 'block_index': 7, 'dx': 75.30341720581055, 'dy': 478.7579345703125, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td>position_shift</td>
+                <td>{'page': 2, 'type': 'position_shift', 'block_index': 8, 'dx': 52.56153106689453, 'dy': 138.22332763671875, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td>block_count_mismatch</td>
+                <td>{'page': 3, 'type': 'block_count_mismatch', 'original_count': 13, 'translated_count': 12}</td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td>position_shift</td>
+                <td>{'page': 3, 'type': 'position_shift', 'block_index': 0, 'dx': 63.47153091430664, 'dy': 62.36043119430542, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td>position_shift</td>
+                <td>{'page': 3, 'type': 'position_shift', 'block_index': 1, 'dx': 261.65903091430664, 'dy': 84.98069524765015, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td>position_shift</td>
+                <td>{'page': 3, 'type': 'position_shift', 'block_index': 2, 'dx': 63.54184341430664, 'dy': 201.9499626159668, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td>position_shift</td>
+                <td>{'page': 3, 'type': 'position_shift', 'block_index': 3, 'dx': 165.51787567138672, 'dy': 58.589599609375, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td>position_shift</td>
+                <td>{'page': 3, 'type': 'position_shift', 'block_index': 4, 'dx': 144.55356216430664, 'dy': 34.5667724609375, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td>position_shift</td>
+                <td>{'page': 3, 'type': 'position_shift', 'block_index': 5, 'dx': 64.22965621948242, 'dy': 36.285614013671875, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td>position_shift</td>
+                <td>{'page': 3, 'type': 'position_shift', 'block_index': 6, 'dx': 63.79965591430664, 'dy': 62.58184814453125, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td>position_shift</td>
+                <td>{'page': 3, 'type': 'position_shift', 'block_index': 7, 'dx': 257.1619071960449, 'dy': 75.6859130859375, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td>position_shift</td>
+                <td>{'page': 3, 'type': 'position_shift', 'block_index': 8, 'dx': 2.568267822265625, 'dy': 532.6139831542969, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td>position_shift</td>
+                <td>{'page': 3, 'type': 'position_shift', 'block_index': 9, 'dx': 35.686126708984375, 'dy': 504.676513671875, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td>position_shift</td>
+                <td>{'page': 3, 'type': 'position_shift', 'block_index': 10, 'dx': 1.90814208984375, 'dy': 462.16416931152344, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td>position_shift</td>
+                <td>{'page': 3, 'type': 'position_shift', 'block_index': 11, 'dx': 200.68545532226562, 'dy': 294.44305419921875, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td>block_count_mismatch</td>
+                <td>{'page': 4, 'type': 'block_count_mismatch', 'original_count': 19, 'translated_count': 11}</td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td>position_shift</td>
+                <td>{'page': 4, 'type': 'position_shift', 'block_index': 0, 'dx': 16.282001495361328, 'dy': 6.476158142089844, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td>position_shift</td>
+                <td>{'page': 4, 'type': 'position_shift', 'block_index': 1, 'dx': 126.64083862304688, 'dy': 84.80646705627441, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td>position_shift</td>
+                <td>{'page': 4, 'type': 'position_shift', 'block_index': 2, 'dx': 44.20146179199219, 'dy': 108.81501197814941, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td>position_shift</td>
+                <td>{'page': 4, 'type': 'position_shift', 'block_index': 3, 'dx': 63.79965591430664, 'dy': 2.1075286865234375, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td>position_shift</td>
+                <td>{'page': 4, 'type': 'position_shift', 'block_index': 4, 'dx': 297.4712829589844, 'dy': 15.433120727539062, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td>position_shift</td>
+                <td>{'page': 4, 'type': 'position_shift', 'block_index': 5, 'dx': 63.79965591430664, 'dy': 62.71717834472656, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td>position_shift</td>
+                <td>{'page': 4, 'type': 'position_shift', 'block_index': 6, 'dx': 297.2603454589844, 'dy': 141.46717834472656, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td>position_shift</td>
+                <td>{'page': 4, 'type': 'position_shift', 'block_index': 7, 'dx': 63.79965591430664, 'dy': 295.33265686035156, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td>position_shift</td>
+                <td>{'page': 4, 'type': 'position_shift', 'block_index': 8, 'dx': 144.46133422851562, 'dy': 314.83265686035156, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td>position_shift</td>
+                <td>{'page': 4, 'type': 'position_shift', 'block_index': 9, 'dx': 102.45077514648438, 'dy': 505.4513702392578, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td>position_shift</td>
+                <td>{'page': 4, 'type': 'position_shift', 'block_index': 10, 'dx': 194.06818389892578, 'dy': 517.3928833007812, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                <td>block_count_mismatch</td>
+                <td>{'page': 5, 'type': 'block_count_mismatch', 'original_count': 11, 'translated_count': 16}</td>
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                <td>position_shift</td>
+                <td>{'page': 5, 'type': 'position_shift', 'block_index': 0, 'dx': 261.69418716430664, 'dy': 62.3260440826416, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                <td>position_shift</td>
+                <td>{'page': 5, 'type': 'position_shift', 'block_index': 1, 'dx': 262.1858444213867, 'dy': 51.92436218261719, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                <td>position_shift</td>
+                <td>{'page': 5, 'type': 'position_shift', 'block_index': 2, 'dx': 261.91684341430664, 'dy': 144.50230407714844, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                <td>position_shift</td>
+                <td>{'page': 5, 'type': 'position_shift', 'block_index': 3, 'dx': 63.57699966430664, 'dy': 237.99571228027344, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                <td>position_shift</td>
+                <td>{'page': 5, 'type': 'position_shift', 'block_index': 4, 'dx': 85.64340591430664, 'dy': 278.08775329589844, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                <td>position_shift</td>
+                <td>{'page': 5, 'type': 'position_shift', 'block_index': 5, 'dx': 97.66971969604492, 'dy': 227.2622833251953, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                <td>position_shift</td>
+                <td>{'page': 5, 'type': 'position_shift', 'block_index': 6, 'dx': 261.69418716430664, 'dy': 376.2287139892578, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                <td>position_shift</td>
+                <td>{'page': 5, 'type': 'position_shift', 'block_index': 7, 'dx': 64.06865692138672, 'dy': 347.9312286376953, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                <td>position_shift</td>
+                <td>{'page': 5, 'type': 'position_shift', 'block_index': 8, 'dx': 261.91684341430664, 'dy': 368.9457550048828, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                <td>position_shift</td>
+                <td>{'page': 5, 'type': 'position_shift', 'block_index': 9, 'dx': 84.1199722290039, 'dy': 369.7049102783203, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                <td>position_shift</td>
+                <td>{'page': 5, 'type': 'position_shift', 'block_index': 10, 'dx': 200.35733032226562, 'dy': 311.47804260253906, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>6</td>
+                <td>block_count_mismatch</td>
+                <td>{'page': 6, 'type': 'block_count_mismatch', 'original_count': 40, 'translated_count': 10}</td>
+            </tr>
+        
+            <tr>
+                <td>6</td>
+                <td>position_shift</td>
+                <td>{'page': 6, 'type': 'position_shift', 'block_index': 0, 'dx': 63.79965591430664, 'dy': 302.79256439208984, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>6</td>
+                <td>position_shift</td>
+                <td>{'page': 6, 'type': 'position_shift', 'block_index': 1, 'dx': 66.69784545898438, 'dy': 298.50118255615234, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>6</td>
+                <td>position_shift</td>
+                <td>{'page': 6, 'type': 'position_shift', 'block_index': 2, 'dx': 217.3387222290039, 'dy': 301.47515869140625, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>6</td>
+                <td>position_shift</td>
+                <td>{'page': 6, 'type': 'position_shift', 'block_index': 3, 'dx': 217.36162567138672, 'dy': 435.6897888183594, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>6</td>
+                <td>position_shift</td>
+                <td>{'page': 6, 'type': 'position_shift', 'block_index': 4, 'dx': 217.6347198486328, 'dy': 439.8391876220703, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>6</td>
+                <td>position_shift</td>
+                <td>{'page': 6, 'type': 'position_shift', 'block_index': 5, 'dx': 34.666656494140625, 'dy': 405.6629180908203, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>6</td>
+                <td>position_shift</td>
+                <td>{'page': 6, 'type': 'position_shift', 'block_index': 6, 'dx': 63.799659729003906, 'dy': 425.1893005371094, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>6</td>
+                <td>position_shift</td>
+                <td>{'page': 6, 'type': 'position_shift', 'block_index': 7, 'dx': 172.6087188720703, 'dy': 388.8609924316406, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>6</td>
+                <td>position_shift</td>
+                <td>{'page': 6, 'type': 'position_shift', 'block_index': 8, 'dx': 63.03793716430664, 'dy': 401.1369934082031, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>6</td>
+                <td>position_shift</td>
+                <td>{'page': 6, 'type': 'position_shift', 'block_index': 9, 'dx': 310.35581970214844, 'dy': 400.0197448730469, 'threshold': 2.0}</td>
+            </tr>
+        
+            <tr>
+                <td>7</td>
+                <td>block_count_mismatch</td>
+                <td>{'page': 7, 'type': 'block_count_mismatch', 'original_count': 16, 'translated_count': 1}</td>
+            </tr>
+        
+            <tr>
+                <td>7</td>
+                <td>position_shift</td>
+                <td>{'page': 7, 'type': 'position_shift', 'block_index': 0, 'dx': 63.03793716430664, 'dy': 62.38794136047363, 'threshold': 2.0}</td>
+            </tr>
+        
+        </table>
+    </body>
+    </html>
+    

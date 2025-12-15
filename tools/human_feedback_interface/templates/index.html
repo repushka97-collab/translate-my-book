@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Human Feedback Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .form-group {
+            margin: 20px 0;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Human Feedback Interface</h1>
+        <p>Интерфейс для оценки качества перевода PDF</p>
+        
+        <form onsubmit="goToFeedback(event)">
+            <div class="form-group">
+                <label for="book">Путь к переведенному PDF:</label>
+                <input type="text" id="book" name="book" required 
+                       placeholder="output/book_id/book_ru.pdf">
+            </div>
+            
+            <div class="form-group">
+                <label for="original">Путь к оригинальному PDF (опционально):</label>
+                <input type="text" id="original" name="original" 
+                       placeholder="test_pdfs/book.pdf">
+            </div>
+            
+            <div class="form-group">
+                <label for="page">Номер страницы:</label>
+                <input type="number" id="page" name="page" value="1" min="1" required>
+            </div>
+            
+            <button type="submit">Открыть страницу для оценки</button>
+        </form>
+    </div>
+
+    <script>
+        function goToFeedback(event) {
+            event.preventDefault();
+            const book = document.getElementById('book').value;
+            const original = document.getElementById('original').value;
+            const page = document.getElementById('page').value;
+            
+            let url = `/feedback?book=${encodeURIComponent(book)}&page=${page}`;
+            if (original) {
+                url += `&original=${encodeURIComponent(original)}`;
+            }
+            
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
+

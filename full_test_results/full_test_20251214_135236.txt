@@ -1,0 +1,18 @@
+[1/6] 30-38.pdf: SUCCESS (2.2s)
+  Output: output\16c9f47aa3421533\book_ru.pdf
+
+[2/6] GPT.pdf: SUCCESS (3.4s)
+  Output: output\d247362f641f5add\book_ru.pdf
+
+[3/6] KIDCITY.pdf: SUCCESS (8.3s)
+  Output: output\a7e2c751b5e6db65\book_ru.pdf
+
+[4/6] Myofascial.pdf: SUCCESS (4.5s)
+  Output: output\e4d0e0712aeb4be1\book_ru.pdf
+
+[5/6] Book1.pdf: EXCEPTION
+  RuntimeError: DOCX export failed: All strings must be XML compatible: Unicode or ASCII, no NULL bytes or control characters
+
+[6/6] Основы фитнес тренировки.pdf: SUCCESS (19.3s)
+  Output: output\f4c13fdec42b7d46\book_ru.pdf
+

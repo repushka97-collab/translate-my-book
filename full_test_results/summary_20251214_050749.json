@@ -1,0 +1,113 @@
+{
+  "timestamp": "20251214_050749",
+  "total": 21,
+  "successful": 0,
+  "failed": 21,
+  "results": [
+    {
+      "pdf": "._input.pdf",
+      "status": "exception",
+      "error": "run_book_pipeline() got an unexpected keyword argument 'output_dir'"
+    },
+    {
+      "pdf": "exports\\f4c13fdec42b7d46\\input_ru.pdf",
+      "status": "exception",
+      "error": "run_book_pipeline() got an unexpected keyword argument 'output_dir'"
+    },
+    {
+      "pdf": "For test\\30-38.pdf",
+      "status": "exception",
+      "error": "run_book_pipeline() got an unexpected keyword argument 'output_dir'"
+    },
+    {
+      "pdf": "For test\\GPT.pdf",
+      "status": "exception",
+      "error": "run_book_pipeline() got an unexpected keyword argument 'output_dir'"
+    },
+    {
+      "pdf": "For test\\KIDCITY.pdf",
+      "status": "exception",
+      "error": "run_book_pipeline() got an unexpected keyword argument 'output_dir'"
+    },
+    {
+      "pdf": "For test\\Myofascial.pdf",
+      "status": "exception",
+      "error": "run_book_pipeline() got an unexpected keyword argument 'output_dir'"
+    },
+    {
+      "pdf": "ingest\\._Book1.pdf",
+      "status": "exception",
+      "error": "run_book_pipeline() got an unexpected keyword argument 'output_dir'"
+    },
+    {
+      "pdf": "ingest\\Book1.pdf",
+      "status": "exception",
+      "error": "run_book_pipeline() got an unexpected keyword argument 'output_dir'"
+    },
+    {
+      "pdf": "ingest\\Основы фитнес тренировки.pdf",
+      "status": "exception",
+      "error": "run_book_pipeline() got an unexpected keyword argument 'output_dir'"
+    },
+    {
+      "pdf": "input.pdf",
+      "status": "exception",
+      "error": "run_book_pipeline() got an unexpected keyword argument 'output_dir'"
+    },
+    {
+      "pdf": "library\\0c7daf4499e5620f\\original.pdf",
+      "status": "exception",
+      "error": "run_book_pipeline() got an unexpected keyword argument 'output_dir'"
+    },
+    {
+      "pdf": "library\\16c9f47aa3421533\\original.pdf",
+      "status": "exception",
+      "error": "run_book_pipeline() got an unexpected keyword argument 'output_dir'"
+    },
+    {
+      "pdf": "library\\1f5b19cda18a95be\\original.pdf",
+      "status": "exception",
+      "error": "run_book_pipeline() got an unexpected keyword argument 'output_dir'"
+    },
+    {
+      "pdf": "library\\398d5642cc251cb7\\original.pdf",
+      "status": "exception",
+      "error": "run_book_pipeline() got an unexpected keyword argument 'output_dir'"
+    },
+    {
+      "pdf": "library\\9c0544e294de5ea8\\original.pdf",
+      "status": "exception",
+      "error": "run_book_pipeline() got an unexpected keyword argument 'output_dir'"
+    },
+    {
+      "pdf": "library\\a7e2c751b5e6db65\\original.pdf",
+      "status": "exception",
+      "error": "run_book_pipeline() got an unexpected keyword argument 'output_dir'"
+    },
+    {
+      "pdf": "library\\cbf3a7f393b697e4\\original.pdf",
+      "status": "exception",
+      "error": "run_book_pipeline() got an unexpected keyword argument 'output_dir'"
+    },
+    {
+      "pdf": "library\\d247362f641f5add\\original.pdf",
+      "status": "exception",
+      "error": "run_book_pipeline() got an unexpected keyword argument 'output_dir'"
+    },
+    {
+      "pdf": "library\\e4d0e0712aeb4be1\\original.pdf",
+      "status": "exception",
+      "error": "run_book_pipeline() got an unexpected keyword argument 'output_dir'"
+    },
+    {
+      "pdf": "library\\f4c13fdec42b7d46\\original.pdf",
+      "status": "exception",
+      "error": "run_book_pipeline() got an unexpected keyword argument 'output_dir'"
+    },
+    {
+      "pdf": "library\\GPT.pdf",
+      "status": "exception",
+      "error": "run_book_pipeline() got an unexpected keyword argument 'output_dir'"
+    }
+  ]
+}

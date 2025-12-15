@@ -7,77 +7,75 @@
   },
   {
     "type": "heading1",
-    "text": "RECIPE: How to Integrate ChatGPT into EFL Writing Education Jieun Han∗ KAIST Daejeon, South Korea jieun_han@kaist.ac.kr Haneul Yoo∗ KAIST Daejeon, South Korea haneul.yoo@kaist.ac.kr Yoonsu Kim KAIST Daejeon, South Korea yoonsu16@kaist.ac.kr Junho Myung KAIST Daejeon, South Korea junho00211@kaist.ac.kr Minsun Kim KAIST Daejeon, South Korea 9909cindy@kaist.ac.kr Hyunseung Lim KAIST Daejeon, South Korea charlie9807@kaist.ac.kr Juho Kim KAIST Daejeon, South Korea juhokim@kaist.ac.kr Tak Yeon Lee KAIST Daejeon, South Korea takyeonlee@kaist.ac.kr Hwajung Hong KAIST Daejeon, South Korea hwajung@kaist.ac.kr So-Yeon Ahn† KAIST Daejeon, South Korea ahnsoyeon@kaist.ac.kr Alice Oh† KAIST Daejeon, South Korea alice.oh@kaist.edu",
+    "text": "Реципий: Как интегрировать ЧатГПТ в EFL писательское образование Jieun Han KAIST Daejeon, Южная Корея jieun_han@kaist.ac.kr Haneul Yoo KAIST Daejeon, Южная Корея haneul.yoo@kaist.ac.kr Yoonsu Kim KAIST Daejeon, Южная Корея yoonsu16@kaist.ac.kr Junho Myung KAIST Daejeon, Южная Корея junho00211@kaist.ac.kr Minsun Kim KAIST Daejeon, Южная Корея 9909cindy @kaist.ac.kr Hyunseung Lim KAIST Daejeon, Южная Корея charlie9807@kaist.ac.kr Juho Kim KAIST Daejeon, Южная Корея juhokim@kaist.ac.kr Tak Yeon Lee KAIST Daejeon, Южная Корея takyeonlee@kaist.ac.kr Hwajung Hong KAIST Daejeon, Южная Корея hwajung@kaist.ac.kr So-Yeon Ahn† KAIST Daejeon, Южная Корея ahnsoyeon@kaist.ac.kr Alice Oh† KAIST Daejeon, Южная Корея Корейская Алиса.о@ kaist.edu",
     "page": 1
   },
   {
     "type": "paragraph",
-    "text": "arXiv:2305.11583v1 [cs. HC] 19 May 2023 L@S ’23, July 20–22, 2023, Copenhagen, Denmark. Han et al."
+    "text": "arXiv:2305.11583v1 [cs. HC] 19 мая 2023 L@S 23, 20 июля 2023 22, Копенгаген, Дания."
   },
   {
-    "type": "caption",
-    "text": "Figure 1: А screenshot of the writing exercise in our platform. А student’s original essay is initially provided at (А). А student starts а conversation with ChatGPT at (В) by summarizing what they learned in the previous lecture as we instructed. Conversation history is logged at (С), and а student is prompted to assess the performance of ChatGPT’s every response in а 5-point Likert scale at (D). Then, а student can revise the essay at (Е) and repeat the process from (В) to (Е).",
+    "type": "paragraph",
+    "text": "На рисунке 1: Скриншот упражнения по написанию на нашей платформе. Оригинальный эссе студента изначально предоставляется на (А). Студент начинает разговор с ChatGPT на (В) путем резюме того, что он узнал в предыдущей лекции, как мы указали. История конвертации записывается на (С), и студенту просят оценить эффективность каждого ответа ChatGPT в 5-балльной шкале Likert на (D)."
+  },
+  {
+    "type": "paragraph",
+    "text": "Для удовлетворения этой потребности мы представляем новую платформу обучения под названием RECIPE (Revising an Essay with ChatGPT on an Interactive Platform for EFL learners). На нашей платформе есть два типа запросов, которые облегчают разговоры между ChatGPT и студентами: (1) скрытый запрос для ChatGPT, чтобы он занял должность учителя EFL, и (2) открытый запрос для студентов, чтобы они начали диалог с автописьменным резюме того, что они узнали. Мы развернули эту платформу для 213 студентов-студентов и аспирантов, обучающихся на курсах написания EFL, и для семи инструкторов. Мы также проводим собеседование в фокус-группе с шестью студентами и индивидуальное собеседование с одним инструктором по EFL для изучения возможностей проектирования для использования генерирующих моделей ИИ в области образования по EFL."
+  },
+  {
+    "type": "heading1",
+    "text": "ОБСЕЧЕНИЕ",
     "page": 1
   },
   {
     "type": "paragraph",
-    "text": "English as а foreign language (EFL) education. To address this need, we present а novel learning platform called RECIPE (Revising an Essay with ChatGPT on an Interactive Platform for EFL learners). Our platform features two types of prompts that facilitate conversations between ChatGPT and students: (1) а hidden prompt for ChatGPT to take an EFL teacher role and (2) an open prompt for students to initiate а dialogue with а self-written summary of what they have learned. We deployed this platform for 213 undergraduate and graduate students enrolled in EFL writing courses and seven instructors. For this study, we collect students’ interaction data from RECIPE, including students’ perceptions and usage of the platform, and user scenarios are examined with the data. We also conduct а focus group interview with six students and an individual interview with one EFL instructor to explore design opportunities for leveraging generative AI models in the field of EFL education."
-  },
-  {
-    "type": "heading2",
-    "text": "Аннотация",
-    "page": 1
-  },
-  {
-    "type": "formula",
-    "text": "The integration of generative AI in the field of education is actively being explored. In particular, ChatGPT has garnered significant interest, offering an opportunity to examine its effectiveness in ∗Authors contributed equally. †Corresponding authors Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or а fee. Request permissions from permissions@acm.org. L@S ’23, July 20–22, 2023, Copenhagen, Denmark. © 2023 Copyright held by the owner/author(s). Publication rights licensed to ACM. ISBN 979-8-4007-0025-5/23/07…$15.00 https://doi.org/10.1145/3573051.3596200",
-    "page": 1
+    "text": "Интеграция генерирующего ИИ в области образования активно исследуется. В частности, ChatGPT вызвала значительный интерес, предлагая возможность изучить его эффективность в Авторы, вносившие равное вклад. †Отчеты-авторы Разрешение на создание цифровых или бумажных копий всей или части этой работы для личного или классового использования предоставляется бесплатно при условии, что копии не делаются или не распространяются с целью получения прибыли или коммерческой выгоды, и что копии содержат это уведомление и полную цитату на первой странице. Авторские права на составляющие этого произведения, принадлежащие не авторам, должны быть соблюдены. Допускается абстрагирование с кредитом. Для копирования или переиздания, размещения на серверах или перераспределения в списках требуется предварительное разрешение и/или плата. L@S 23, 2022 июля 2023, Копенгаген, Дания. © 2023 Авторские права владельца/автора."
   },
   {
     "type": "page_break",
     "page": 2
   },
   {
-    "type": "heading1",
-    "text": "CCS CONCEPTS",
+    "type": "heading2",
+    "text": "Концепции СЦС",
     "page": 2
   },
   {
     "type": "formula",
-    "text": "• Applied computing →Interactive learning environments; • Human-centered computing →User centered design.",
+    "text": "• Примененные вычисления →Интерактивные среды обучения; • Человекоцентрированные вычисления →Использовательский дизайн.",
     "page": 2
   },
   {
     "type": "heading2",
-    "text": "2 PRELIMINARY QUESTIONNAIRE In order to investigate",
+    "text": "2 ПРЕДВЕРНЫЙ ПРИМЕЧАНИЕ Для",
     "page": 2
   },
   {
     "type": "paragraph",
-    "text": "students’ attitudes, usage, and expectations of ChatGPT, especially in the context of EFL, we conducted а preliminary questionnaire with 213 (91 undergraduate and 122 graduate) college students in South Korea. They were enrolled in three types of English writing courses for the spring semester of 2023. In specific, 91 undergraduate students were enrolled either the Intermediate English Reading & Writing (IRW; 46 enrolled) or the Advanced English Writing (AW; 45 enrolled) course, based on their TOEFL writing scores (15-18 for IRW, and 19-21 for AW). 122 graduate students were enrolled in Scientific Writing (SW). The questionnaire consists of 5-point Likert scale questions about participant’s prior experience and evaluation of ChatGPT, with regard to perceived helpfulness, trustworthiness, credibility, appropriateness of style/tone, performance, overall satisfaction, and referral intention 6 of ChatGPT in the context of college education. Detailed questions are described in Appendix А. Results from this survey provide visions for developing an educational platform with ChatGPT."
+    "text": "того, чтобы исследовать отношение студентов к ChatGPT, использованию и ожиданиям, особенно в контексте EFL, мы провели предварительный анкету с 213 (91 аспирантом и 122 аспирантом) студентов колледжа в Южной Корее. Весенний семестр 2023 года они были зачислены в три типа курсов английского письма. В частности, 91 студента-бакалавра были зачислены либо в среднем английский чтение и письмо (IRW; 46 зачислены) или в Advanced English Writing (AW; 45 зачислены) курс, основанный на их оценках TOEFL (15-18 для IRW, и 19-21 для AW). 122 аспиранта были зачислены в научную литературу (SW). Вопросник состоит из вопросов 5-балльной шкалы Likert о предшествующем опыте и оценке ChatGPT участниками, в отношении воспринимаемой полезности, достоверности, доверия, целесообразности стиля/тонка, производительности, общего удовлетворения и намерения направления 6 ChatGPT в контексте высшего образования. Подробные вопросы описаны в Приложении А. Результаты данного опроса дают представления о разработке образовательной платформы с ChatGPT."
   },
   {
-    "type": "heading1",
-    "text": "KEYWORDS",
+    "type": "heading2",
+    "text": "Ключевые слова",
     "page": 2
   },
   {
     "type": "formula",
-    "text": "Generative AI, ChatGPT, Learner-ChatGPT Interaction, Essay Writing, EFL Learners ACM Reference Format: Jieun Han, Haneul Yoo, Yoonsu Kim, Junho Myung, Minsun Kim, Hyunseung Lim, Juho Kim, Tak Yeon Lee, Hwajung Hong, So-Yeon Ahn, and Alice Oh. 2023. RECIPE: How to Integrate ChatGPT into EFL Writing Education. In Proceedings of the Tenth ACM Conference on Learning @ Scale (L@S ’23), July 20–22, 2023, Copenhagen, Denmark. ACM, New York, NY, USA, 8 pages. https://doi.org/10.1145/3573051.3596200 1 INTRODUCTION In the context of English as а foreign language (EFL) education, the integration of artificial intelligence (AI) technology has been shown to enhance students’ learning experience. The use of AI-based tools, including Grammarly 1 and Quillbots 2, has resulted in significant improvement in EFL learners’ writing abilities. Moreover, learners have exhibited positive perceptions towards the use of these tools in their writing class [1, 4]. ChatGPT 3, а large language model (LLM)-driven chatbot by OpenAI, has made а significant breakthrough in the domain of language learning. While earlier chatbots were unnatural and incapable of engaging language learners [5], ChatGPT can generate natural and personalized responses, which make students’ learning experience more interactive and engaging [8, 9]. Recent studies have suggested the potential educational benefits of incorporating generative AI into education [6]. Hence many online educational platforms such as Khan Academy 4 and Duolingo 5 have already started integrating ChatGPT to their functionalities. Despite such suggestions and attempts to incorporate ChatGPT into language education, only episodic and anecdotal knowledge has been shared rather than systematic investigation [2, 7]. Therefore, we need to examine the effective use of ChatGPT in higher education and identify its learning effect. In order to effectively integrate ChatGPT into EFL writing courses, it is crucial to investigate the specific design of the integration, considering learners’ perceptions and usage of ChatGPT in higher education. In this regard, we introduce an interactive learning platform, RECIPE (Revising an Essay with ChatGPT on an Interactive Platform with EFL learners), aiming to leverage the data collected from our platform to guide learners towards а more effective and engaging learning experience. The main contributions of this work are as follows: (1) We analyze the perception and usage of ChatGPT in the context of EFL among learners and instructors. (2) We introduce RECIPE (Revising an Essay with ChatGPT on an Interactive Platform with EFL learners), а learning platform designed to integrate ChatGPT with underlying two types of prompts for students’ better learning experience.",
+    "text": "Генерирующий ИИ, ЧатГПТ, Взаимодействие Учитель-ЧатГПТ, Сочинение эссе, EFL обучающиеся ACM Справочный формат: Jieun Han, Haneul Yoo, Yoonsu Kim, Junho Myung, Minsun Kim, Hyunseung Lim, Juho Kim, Tak Yeon Lee, Hwajung Hong, So-Yeon Ahn и Alice Oh. 2023. В работе десятой конференции ACM по обучению @ Scale (L@S 23), 2022 июля 2023 года, Копенгаген, Дания. ACM, Нью-Йорк, США, 8 страниц. https://doi.org/10.1145/3573051.3596200 1 Введение В контексте обучения английскому языку как иностранному языку (EFL) показано, что интеграция технологии искусственного интеллекта (AI) улучшает опыт обучения студентов. Использование инструментов на базе ИИ, включая Grammarly 1 и Quillbots 2, привело к значительному улучшению навыков письма учащихся EFL. Кроме того, учащиеся продемонстрировали положительное восприятие использования этих инструментов в своем классе письма [1, 4]. ChatGPT 3, чат-бот, основанный на больших языковых моделях (LLM) от OpenAI, сделал значительный прорыв в области изучения языков. В то время как более ранние чат-боты были неестественными и неспособными привлекать учащихся языков [5], ChatGPT может генерировать естественные и персонализированные ответы, которые делают обучение студентов более интерактивным и привлекательным [8, 9]. Недавние исследования показали потенциальные образовательные преимущества включения генерирующего ИИ в образование [6]. Поэтому многие онлайн-образовательные платформы, такие как Khan Academy 4 и Duolingo 5, уже начали интегрировать ChatGPT в свои функциональные возможности. Поэтому необходимо изучить эффективное использование ChatGPT в высшем образовании и определить его эффективность в обучении. Для того, чтобы эффективно интегрировать ChatGPT в курсы написания EFL, крайне важно исследовать конкретный дизайн интеграции, учитывая восприятие и использование ChatGPT учащимися в высшем образовании. В связи с этим мы внедряем интерактивную платформу обучения, RECIPE (Revising an Essay with ChatGPT on an Interactive Platform with EFL learners), направленную на использование данных, собранных с нашей платформы, для направления учащихся на более эффективный и привлекательный опыт обучения. Основные вклады этой работы следуют: (1) Мы анализируем восприятие и использование ChatGPT в контексте EFL среди учащихся и преподавателей. (2) Внедряем RECIPE (Revising an Essay with ChatGPT on an Interactive Platform with EFL learners), учебную платформу, предназначенную для интеграции ChatGPT с двумя основными типами запросов для студентов лучшего опыта обучения.",
     "page": 2
   },
   {
     "type": "heading2",
-    "text": "2.1 Perception and Usage of ChatGPT",
+    "text": "2.1 Понимание и использование ChatGPT",
     "page": 2
   },
   {
     "type": "paragraph",
-    "text": "The majority of students reported а positive user experience with ChatGPT across all seven factors described above. Specifically, 85% of students with ChatGPT exposure used the tool in their academic work, indicating а potential for leveraging and developing the technology for educational purposes. Moreover, less than half of the students used ChatGPT to improve their English writing skills, highlighting an opportunity and а need for research on integrating ChatGPT into EFL education. These students also relied on other widely available AI tools including Grammarly1, Turnitin 7, and Google Translate 8, Papago 9, Wordtune 10, ExplainPaper 11, and Elicit 12 for help with English writing (90.4%) most, followed by reading (61.6%), grammar (57.1%), speaking (27.8%), and listening (12.6%) skills. This questionnaire also underscores the need for comprehensive and well-guided instructions for effectively and efficiently integrating ChatGPT into EFL writing courses, rather than implementing an LLM-agnostic class policy and allowing students to use ChatGPT on their own discretion. Students with prior experience and knowledge of LLMs expressed higher levels of satisfaction and expectations of using ChatGPT in the courses they enrolled. In particular, those who had low LLM understanding and enrolled in IRW and AW, expected that ChatGPT would be useful for asking questions about the lecture and finding sources to support their writing, which are notable limitations of ChatGPT with hallucination [3]. Whereas students with а 6to what extent they would recommend others to adopt ChatGPT 7https://www.turnitin.com/ 8https://translate.google.com/ 9https://papago.naver.com/ 10https://www.wordtune.com/ 11https://www.explainpaper.com/ 12https://elicit.org/ RECIPE: How to Integrate ChatGPT into EFL Writing Education L@S ’23, July 20–22, 2023, Copenhagen, Denmark."
+    "text": "Большинство студентов сообщили о положительном опыте пользователя ChatGPT по всем семи факторам, описанным выше. Более того, менее половины студентов использовали ChatGPT для улучшения своих навыков письма на английском языке, подчеркивая возможность и необходимость исследований по интеграции ChatGPT в образование по EFL. Эти студенты также полагались на другие широко доступные инструменты ИИ, включая Grammarly1, Turnitin 7 и Google Translate 8, Papago 9, Wordtune 10, ExplainPaper 11 и Elicit 12 для помощи в английском письме (90,4%), а затем на чтение (61,6%), грамматику (57,1%), разговор (27,8%), и слушание (12,6%). В этом вопроснике также подчеркивается необходимость предоставления всеобъемлющих и хорошо руководствующихся инструкций для эффективной и эффективной интеграции ChatGPT в курсы написания EFL, а не внедрения политики агностики LLM в классах и предоставления студентам возможности использовать ChatGPT по своему усмотрению. Студенты с предварительным опытом и знаниями LLM выразили более высокий уровень удовлетворенности и ожиданий от использования ChatGPT в курсах, которые они записались. В частности, те, кто имел низкое понимание LLM и записался в IRW и AW, ожидали, что ChatGPT будет полезным для задания вопросов о лекции и поиска источников, чтобы поддержать их письмо, которые являются заметными ограничениями ChatGPT с галлюцинацией [3]. В то время как студенты с 6 до какой степени они рекомендовали бы другим принять ChatGPT 7https://www.turnitin.com/ 8https://translate.google.com/ 9https://papago.naver.com/ 10https://www.wordtune.com/ 11https://www.explainpaper.com/ 12https://elicit.org/ RECIPE: Как интегрировать ChatGPT в EFL Writing Education L@S 23, 2022, 2023, Копенгаген, Дания."
   },
   {
     "type": "paragraph",
-    "text": "1https://www.grammarly.com/ 2https://quillbot.com/ 3https://chat.openai.com/ 4https://www.khanacademy.org/ 5https://www.duolingo.com/ (3) We collect students’ interaction data on their perception and ChatGPT usage through RECIPE to investigate further development of our platform."
+    "text": "1https://www.grammarly.com/ 2https://quillbot.com/ 3https://chat.openai.com/ 4https://www.khanacademy.org/ 5https://www.duolingo.com/ (3) Мы собираем студентам взаимодействие данных о их восприятии и использовании ChatGPT через RECIPE для исследования дальнейшего развития нашей платформы."
   },
   {
     "type": "page_break",
@@ -85,53 +83,52 @@
   },
   {
     "type": "paragraph",
-    "text": "high level of LLM understanding exhibited greater satisfaction with their previous ChatGPT experience regarding perceived helpfulness, appropriateness of style/tone, performance, overall satisfaction, and encouragement, compared to those with low LLM understanding. However, we did not find а statistically significant difference in terms of trustworthiness and credibility. Students with а high level of LLM understanding and those with ChatGPT exposure also exhibited significantly positive expectations regarding performance, credibility, and overall satisfaction towards the use of ChatGPT in academic courses. Based on these findings, we posit that our proposed platform RECIPE can effectively and efficiently guide students towards obtaining satisfactory responses from ChatGPT, ultimately enhancing their English writing skills."
+    "text": "Высокий уровень понимания LLM продемонстрировали большую удовлетворенность своим предыдущим опытом ChatGPT в отношении воспринимаемой полезности, пригодности стиля/тонна, производительности, общего удовлетворения и поощрения, по сравнению с теми, кто имеет низкое понимание LLM. Однако мы не обнаружили статистически значимых различий в отношении надежности и доверия. Студенты с высоким уровнем LLM понимания и те, кто имел доступ к ChatGPT также продемонстрировали значительно положительные ожидания в отношении производительности, доверия и общего удовлетворения в отношении использования ChatGPT в академических курсах. Исходя из этих выводов, мы полагаем, что предлагаемая платформа RECIPE может эффективно и эффективно направлять студентов на получение удовлетворительных спонсоров от ChatGPT, в конечном итоге повышая их навыки написания на английском языке."
   },
   {
     "type": "heading2",
-    "text": "3.3 Post-survey",
+    "text": "3.3 После исследования",
     "page": 3
   },
   {
     "type": "heading2",
-    "text": "3 PLATFORM DESIGN This section outlines the design of",
+    "text": "3 ПЛАТФОРМ ДЕЙСЕЙН Этот раздел описывает дизайн",
     "page": 3
   },
   {
     "type": "paragraph",
-    "text": "RECIPE, geared towards the development of English writing skills, utilizing ChatGPT’s capabilities in а targeted and effective manner. We deployed RECIPE for 213 students who enrolled to EFL courses (IRW, AW, and SW) in the spring semester of 2023. Students’ interaction data is gathered throughout the semester from undergraduate and graduate students using our platform. RECIPE comprises three main components: а pre-survey (§3.1), the writing exercise (§3.2), and а post-survey (§3.3). Table 1 displays the data collected at each phase of the platform."
+    "text": "RECIPE, ориентированный на развитие навыков письма на английском языке, используя возможности ChatGPTs целенаправленно и эффективно. Данные об взаимодействии студентов собираются на протяжении всего семестра от студентов-бакалавров и аспирантов, использующих нашу платформу. RECIPE включает в себя три основных компонента: предварительный опрос (§3.1), письменное упражнение (§3.2), и послепросный (§3.3)."
   },
   {
     "type": "paragraph",
-    "text": "First, to gain insights into students’ decision-making regarding essay revision, we inquire about their reasons for not making an edit. As the essay editing history is collected during the writing exercise, we can compare the original version of the student’s essay with the submitted version after the conversation with ChatGPT. To further analyze prompt engineering, we ask students about the main topic of their conversation using multi-select questions, including whether it was about the current week’s lecture, previous lectures, and content not covered in the lecture. To compare students’ expectations of the exercise with their actual usage of ChatGPT, we provide the same nine options mentioned in the pre-survey (§3.1). Additionally, we collect data on students’ confidence in their essay and overall satisfaction with ChatGPT’s responses to analyze their experiences throughout the semester. Finally, students share how they utilized ChatGPT’s responses to modify their essay and their experiences regarding it in а free-text form."
+    "text": "Во-первых, чтобы получить представление о принятии студентами решений в отношении, например, пересмотра, мы спрашиваем о причинах, по которым они не делают редактирование. Для дальнейшего анализа оперативной инженерии мы спрашиваем студентов о главной теме их разговора с помощью многопрофильных вопросов, в том числе о том, касалось ли это лекции текущей недели, предыдущих лекций и содержания, не охваченного лекцией. Чтобы сравнить представления студентов об упражнении с фактическим использованием ChatGPT, мы предоставляем те же девять вариантов, которые упоминаются в предварительном опросе (§3.1). Наконец, студенты рассказывают о том, как они использовали ответы ChatGPT для изменения своего эссе и опыта в отношении него в виде свободного текста."
   },
   {
     "type": "heading2",
-    "text": "3.1 Pre-survey",
-    "page": 3
-  },
-  {
-    "type": "paragraph",
-    "text": "We designed а pre-survey to collect (1) students’ expectations for the upcoming exercise and (2) their understanding of the topics that they will discuss with ChatGPT during the exercise. The presurvey aims to compare students’ expected and actual assistance and to examine changes in their understanding before and after the exercise. Students are asked to indicate all applicable objectives that they expect to receive assistance with during the exercise by selecting from а list of nine options provided in Table 6 of Appendix А. Additionally, students are required to rate their understanding of the topics to be addressed during the exercise, using а 5-point Likert scale."
-  },
-  {
-    "type": "heading2",
-    "text": "3.4 User Scenario",
+    "text": "3.1 Предварительный опрос",
     "page": 3
   },
   {
     "type": "paragraph",
-    "text": "Undergraduate courses (IRW and AW) and graduate courses (SW) have different requirements, as SW is focused on writing scientific research papers while IRW and AW are intended for essay writing. In order to better align with these varying needs, we have designed separate user scenarios. For IRW and AW, we collect in-class timed essay data from students before they use our platform. Students are provided with а prompt by their instructors and asked to write an argumentative essay. The essay is written in class within 40 minutes with pens and pencils, ensuring that they cannot rely on online tools for assistance. The essays are digitized and stored in our database. Throughout the course, students revise their essays utilizing our platform through multiple iterations. The conversation and revision are based on what they learned from the course, as students give the first prompt indicating the contents covered in the class. Students also rate the helpfulness of every response from ChatGPT. After each session, their interim essays are saved for use in subsequent iterations. Unlike IRW and AW courses, SW students submit а paragraph of their choice to get help with while using the platform. This is because the course is designed to write а complete research paper over the semester by adding sections, and research papers cannot be completed during an in-class timed setting like essay writing. Therefore, data shown in Table 1a is an optional element L@S ’23, July 20–22, 2023, Copenhagen, Denmark. Han et al."
+    "text": "Мы разработали предварительный опрос, чтобы собрать (1) ожидания студентов на предстоящее учение и (2) их понимание тем, которые они обсудят с ChatGPT во время учения. Студенты просят указать все применимые цели, с которыми они ожидают получить помощь во время упражнения, выбирая из списка девяти вариантов, предусмотренных в таблице 6 приложения А. Кроме того, студенты должны оценить свое понимание тем, которые будут рассмотрены во время упражнения, используя 5-балльную шкалу Ликерта."
   },
   {
     "type": "heading2",
-    "text": "3.2 Writing Exercise",
+    "text": "3.4 Сценарий пользователя",
     "page": 3
   },
   {
-    "type": "caption",
-    "text": "Figure 1 displays а screenshot of our platform, which has а writing exercise interface divided into two sections: the left side is for editing an essay, while the right side is for interacting with ChatGPT. The students’ essay from the previous session is available on the left side, enabling them to revise their work with the help of ChatGPT. On the right side, students can consult ChatGPT about their essay. Unlike the existing ChatGPT interface from OpenAI, our platform provides two initial prompts based on empirical prompt engineering, as shown in Table 2: (а) а hidden prompt for the model to set а persona for ChatGPT, acting as а personalized English writing teacher, and (в) an open prompt for students to start а dialogue efficiently. ChatGPT instructs students step by step to revise their essay based on the content they learned during the class, and students are asked to summarize what they learned during the corresponding week or previous classes as the first dialogue. We advise both ChatGPT and students not to provide or request а revised version of the entire essay without any explanation. These instructions serve two purposes: first, to remind students of the lecture content and enhance their learning, and second, to help students receive а more class-relevant response from ChatGPT. We believe this suggested interface can guide EFL learners to write а more specific opening prompt for ChatGPT. After each turn of the conversation, the edited version of the students’ essay will be saved to analyze how they revised it based on ChatGPT’s response. In addition, students are asked to rate the helpfulness of the response generated by ChatGPT using а 5-scale Likert scale. Students can continue to converse with ChatGPT and revise their essay.",
+    "type": "paragraph",
+    "text": "Курсы бакалавриата (IRW и AW) и аспирантуры (SW) имеют разные требования, поскольку SW фокусируется на написании научных исследований, а IRW и AW предназначены для написания эссе. Для IRW и AW мы собираем в классе своевременные данные о сочинениях у студентов, прежде чем они используют нашу платформу. Студенты получают запрос от своих инструкторов и просят написать аргументирующую сочинение. написано в классе в течение 40 минут ручками и карандашами, гарантируя, что они не могут полагаться на онлайн-инструменты для помощи. В течение всего курса студенты пересматривают свои сочинения с использованием нашей платформы через несколько итераций. Разговор и пересмотр основаны на том, что они узнали из курса, поскольку студенты дают первый запрос, указывающий на содержание, охваченное классом. Студенты также оценивают полезность каждого ответа от ChatGPT. После каждой сессии их промежуточные эссе сохраняются для использования в последующих итерациях. В отличие от курсов IRW и AW, студенты SW представляют абзац по своему выбору, чтобы получить помощь при использовании платформы. Это связано с тем, что курс предназначен для написания полной исследовательской работы в течение семестра путем добавления разделов, и исследовательские работы не могут быть завершены во время занятий в классе, например, написание эссе."
+  },
+  {
+    "type": "heading2",
+    "text": "3.2 Письменное упражнение",
     "page": 3
+  },
+  {
+    "type": "paragraph",
+    "text": "На рисунке 1 показывается скриншот нашей платформы, которая имеет интерфейс письменных упражнений, разделенный на два раздела: левая сторона предназначена для редактирования эссе, а правая для взаимодействия с ChatGPT. Студенты эссе из предыдущей сессии доступны на левой стороне, что позволяет им пересмотреть свою работу с помощью ChatGPT. С правой стороны студенты могут проконсультироваться с ChatGPT о своем эссе. В отличие от существующего интерфейса ChatGPT от OpenAI, наша платформа предоставляет два первоначальных запроса на основе эмпирической инженерии запросов, как показано в таблице 2: (а) скрытый запрос для модели, чтобы настроить персонаж для ChatGPT, действуя как персонализированный учитель английского языка, и (в) открытый запрос для студентов, чтобы начать диалог эффективно. ChatGPT инструктирует студентов шаг за шагом пересмотреть свой эссе на основе контента, который они узнали во время занятий, и студентов просят обобщить то, что они узнали в течение соответствующей недели или предыдущих занятий в качестве первого диалога. Мы советуем как ЧатГПТ, так и студентам не предоставлять или не запрашивать пересмотренную версию всего эссе без какого-либо объяснения. Эти инструкции служат двум целям: во-первых, чтобы напомнить студентам о содержании лекции и улучшить их обучение, а во-вторых, чтобы помочь студентам получить более релевантный для класса ответ от ЧатГПТ. Мы считаем, что этот предлагаемый интерфейс может помочь учащимся EFL написать более конкретный запрос на открытие для ChatGPT. После каждого поворота разговора, редактированная версия эссе студентов будет сохранена, чтобы проанализировать, как они пересмотрели его на основе ответа ChatGPT. Кроме того, студенты просят оценить полезность ответа, генерируемого ChatGPT, используя шкалу Likert в 5 масштабах."
   },
   {
     "type": "page_break",
@@ -139,45 +136,41 @@
   },
   {
     "type": "paragraph",
-    "text": "Table 1: Data collected during each phase of the platform."
+    "text": "Таблица 1: Данные, собранные на каждом этапе платформы."
   },
   {
     "type": "heading2",
-    "text": "Pre-survey Writing Exercise Post-survey",
+    "text": "Перед исследованием Письменное упражнение После исследования",
     "page": 4
   },
   {
     "type": "paragraph",
-    "text": "(а) Essay • Students’ original essay • Student’s edited essay and its revision history • Reason not to revise essay • Confidence on students’ essay (в) ChatGPT • Conversation log data • Helpfulness of each ChatGPT response • Topics discussed with ChatGPT • Overall satisfaction towards ChatGPT responses (с) Student • Expected help for the session • Comprehension level about course topics • Timestamp of each sent message • Actual help through the session • Improvements in comprehension level after writing exercise Table 2: Initial prompts at writing exercise (а) Hidden prompt for ChatGPT (в) Open prompt for students"
+    "text": "(а) Реферат • Студенты оригинальный реферат • Редактированный реферат студента и его история пересмотра • Причина не пересмотра реферат • Уверенность в студентов Реферат (в) ЧатГПТ • Данные дневника разговоров • Полезность каждого ответа ЧатГПТ • Темы, обсужденные с ЧатГПТ • Общее удовлетворение ответами ЧатГПТ (с) Студент • Ожидаемая помощь для сессии • Уровень понимания тематики курса • Временный отпечаток каждого отправленного сообщения • Фактическая помощь в течение сессии • Улучшение уровня понимания после написания упражнения Таблица 2: Первоначальные просьбы по написанию упражнения (а) Скрытый просьба для ChatGPT (б) Открытый просьба для студентов"
   },
   {
     "type": "paragraph",
-    "text": "Act as an English writing class teacher and instruct а student to revise an essay based on the content learned during class. The student will provide you with а summary of what they learned. Please guide them step by step and do not revise or rewrite the essay at once. If you understand, please say yes only."
+    "text": "Делайте себя учителем английского языка и поручите ученику пересмотреть эссе на основе полученного в ходе занятий содержания. Студент предоставит вам сводку того, что он узнал. Пожалуйста, направьте его шаг за шагом и не пересматривайте или перепишите эссе сразу. Если вы понимаете, пожалуйста, скажите только да."
   },
   {
     "type": "paragraph",
-    "text": "Hello! Welcome to the main exercise. Can you please tell me what you learned in class so that I can help you in а better way? An example can be: “Today I learned about comma rules. When there is а list that contains two or more elements, we should use commas to separate them.” in the platform for SW. Students with а paragraph can revise the essay and converse with ChatGPT, similar to IRW and AW user flow. Whereas students who do not submit any paragraph to edit can still review the course content and have conversations with ChatGPT, а personalized English writing teacher, to deepen their understanding. We illustrate actual interaction data collected from RECIPE with students taking IRW, AW, and SW. А selected portion of the interactive dialogue data is described in Table 8 and 9 of Appendix С. As shown in Table 9, the student followed the user scenario as we intended. The student described the content of the class in the first prompt, which is focused on methodology, and submitted the methodology section of his or her own paper. Furthermore, after receiving ChatGPT’s response suggesting three possible improvements to the paper, the student incorporated one of the suggestions into his or her own writing. In addition, а student taking IRW asked, “Is 7 and 8 grammatical error?” after ChatGPT listed up а revised version with ten grammatical errors. The student continues to question the response from ChatGPT by switching to Korean from English. Both students did not simply accept all the suggestions but sought clarification on suggested revisions that they did not understand. Therefore, this suggests that students are engaged in using RECIPE, and perform critical thinking, indicating the potential benefit of RECIPE for learning effect."
+    "text": "Привет! Добро пожаловать в основное упражнение. Можете ли вы рассказать мне, что вы узнали в классе, чтобы я мог вам лучше помочь? Примером может быть: Сегодня я узнал о правилах сделок. Студенты, имеющие абзац, могут пересмотреть эссе и общаться с ChatGPT, подобно IRW и AW потоку пользователей. В то время как студенты, которые не отправляют никаких абзацев для редактирования, все еще могут просмотреть содержание курса и иметь разговоры с ChatGPT, персонализированный учитель английского языка письма, чтобы углубить свое понимание. Мы иллюстрируем фактические данные об взаимодействии, собранные из RECIPE с студентами, принимающими IRW, AW и SW. Выбранная часть данных об интерактивном диалоге описана в таблицах 8 и 9 приложения С. Как показано в таблице 9, студент следовал сценарию пользователя, как мы намеревались. Студент описал содержание класса в первом запроте, который сосредоточен на методологии, и представил методологический раздел своей работы. Кроме того, студент, принимающий IRW, спросил: \"7 и 8 являются грамматическими ошибками?\" после того, как ChatGPT перечислил пересмотренную версию с десятью грамматическими ошибками. Оба студента не просто приняли все предложения, но ищут разъяснения по предложенным пересмотрам, которые они не понимали."
   },
   {
     "type": "paragraph",
-    "text": "Recommendation for optimal prompts. Although we provided instructions on the initial prompt and an example for the writing exercise, S5 and S6 reported difficulties in initiating а dialogue with ChatGPT. S1 mentioned that sharing prompts that had effectively worked in the focus group was helpful. Both S1 and S4 recommended implementing а tool to share the learning history of each student, including successful prompts and dialogue pattern logs. We believe that the assessment data on each student’s prompt and ChatGPT’s response collected through this platform can be utilized to enhance RECIPE’s prompt engineering techniques and build а recommendation model for optimal prompts."
+    "text": "Рекомендация для оптимальных запросов. Хотя мы предоставили инструкции по первоначальному запросу и пример для письменного упражнения, S5 и S6 сообщили о трудностях в инициировании диалога с ChatGPT. S1 отметил, что обмен запросами, которые эффективно работали в фокусной группе, был полезен. И S1 и S4 рекомендовали внедрить инструмент для обмена историей обучения каждого студента, включая успешные запросы и протоколы диалога. Мы считаем, что данные об оценке запроса каждого студента и ответа ChatGPT, собранные через эту платформу, могут быть использованы для улучшения техники инженерии запроса RECIPE и создания модели рекомендаций для оптимальных запросов."
   },
   {
     "type": "paragraph",
-    "text": "Personalized persona setup. The instructor noted the need for personalized responses from ChatGPT based on students’ situations, such as English proficiency level. Additionally, S1 observed that а detailed persona setup with diverse perspectives, such as EFL professors, domain experts, and slightly advanced level EFL learners, made ChatGPT generate insightful critiques. RECIPE’s persona, acting as an instructor of EFL writing courses, can be broadened in а diverse way so that students may choose the persona that best suits their purpose."
+    "text": "Инструктор отметил необходимость персонализированных ответов от ChatGPT на основе ситуации студентов, таких как уровень владения английским языком. Кроме того, S1 отметила, что детальная персональная настройка с различными перспективами, такими как профессора EFL, эксперты по области и немного продвинутые уровни EFL обучающихся, заставила ChatGPT генерировать проницательную критику. Личность RECIPE, действующая в качестве инструктора курсов письма EFL, может быть расширена различным образом, чтобы ученики могли выбрать личность, наиболее подходящую для их цели."
   },
   {
-    "type": "heading2",
-    "text": "4 INTERVIEW FOR FURTHER",
+    "type": "footnote",
+    "text": "4 Интервью для дальнейшего развития",
     "page": 4
   },
   {
     "type": "paragraph",
-    "text": "DEVELOPMENT"
-  },
-  {
-    "type": "paragraph",
-    "text": "We conducted two interviews to further scrutinize the needs for future work on RECIPE: (1) а focus group interview (FGI) among six students who had already taken at least one EFL writing course and (2) а 1:1 in-depth interview with an instructor who had taught EFL courses for 6 years, including IRW and AW. Three students (S1, S2, S3) had taken undergraduate courses (IRW and AW), and the other three students (S4, S5, S6) had taken а graduate course (SW). Detailed educational backgrounds of six student interviewees are depicted in Table 7 Appendix В. We asked both students and instructor to use RECIPE and suggest future directions to ChatGPTintegrated educational platforms. In general, both of them acknowledged the usefulness of ChatGPT in EFL writing and expressed the need for а specialized platform integrated with ChatGPT in the EFL writing courses."
+    "text": "Мы провели два интервью для дальнейшего изучения потребностей в будущей работе по RECIPE: (1) собеседование в фокус-группе (FGI) среди шести студентов, которые уже проходили по крайней мере один курс написания EFL, и (2) углубленный собеседование 1:1 с инструктором, который преподавал курсы EFL в течение 6 лет, включая IRW и AW. Три студента (S1, S2, S3) прошли бакалавриатные курсы (IRW и AW), а остальные три студента (S4, S5, S6) прошли аспирантуру (SW). Мы попросили как студентов, так и преподавателей использовать RECIPE и предложить дальнейшие направления для ChatGPT интегрированных образовательных платформ."
   },
   {
     "type": "page_break",
@@ -185,42 +178,37 @@
   },
   {
     "type": "paragraph",
-    "text": "RECIPE: How to Integrate ChatGPT into EFL Writing Education L@S ’23, July 20–22, 2023, Copenhagen, Denmark."
+    "text": "RECIPE: Как интегрировать ChatGPT в EFL Writing Education L@S 23, 20 июля 22, 2023, Копенгаген, Дания."
   },
   {
     "type": "paragraph",
-    "text": "Student-initiative platform design. The instructor remarked that continuous trials and errors in interactions with ChatGPT about revising their essays would be essential for their language learning. The instructor also commented that those interactions led by students’ initiative would facilitate their writing skills. In particular, S1 suggested generating errorful essays relevant to what students learned through ChatGPT as learning materials and asking them to revise those essays by themselves, step by step, as ChatGPT guided them."
+    "text": "Инструктор отметил, что непрерывные испытания и ошибки в взаимодействии с ChatGPT о пересмотре своих эссе будет иметь решающее значение для их изучения языка. Инструктор также отметил, что те взаимодействия, возглавляемые инициативой студентов, облегчат их навыки письма. В частности, S1 предложил создавать ошибочные эссе, относящиеся к тому, что ученики узнали через ChatGPT, в качестве учебных материалов и просить их пересмотреть эти эссе сами по себе, шаг за шагом, по мере руководства ChatGPT."
   },
   {
     "type": "paragraph",
-    "text": "Automated essay scoring. The instructor emphasized the need for automatically-measured essay scores and explanations for evaluation based on their own rubrics or grading systems. While some state-of-the-art automated essay scoring (AES) systems for overall scores exist, it is nearly inaccessible for EFL instructors who don’т have much background in AI techniques to incorporate and finetune them based on their own rubrics. We believe that instructorfriendly platforms based on interactions with ChatGPT may mitigate this issue."
+    "text": "Инструктор подчеркнул необходимость автоматически измеряемых баллов и объяснений для оценки на основе собственных рубрик или систем оценки. В то время как существуют некоторые современные автоматизированные системы оценки эссе (AES) для общих баллов, практически недоступно для инструкторов EFL, которые не имеют большого опыта в области искусственного интеллекта, включить и отрегулировать их на основе собственных рубрик. Мы считаем, что инструкторские платформы, основанные на взаимодействии с ChatGPT, могут решить эту проблему."
   },
   {
     "type": "paragraph",
-    "text": "Refined user interface. S5 suggested that а better user interface between two windows on the writing exercise of RECIPE would increase engagement among EFL students. Specifically, text visualization or toggles for comparison of а student’s original essay and ChatGPT’s suggestions may be useful."
+    "text": "Улучшенный пользовательский интерфейс. S5 предложил, что лучшее пользовательское интерфейс между двумя окнами на письменном упражнении RECIPE увеличит взаимодействие среди студентов EFL. В частности, визуализация текста или переключения для сравнения оригинального эссе студента и предложения ChatGPT могут быть полезны."
+  },
+  {
+    "type": "paragraph",
+    "text": "В этой статье мы исследовали восприятие и использование генерирующего ИИ студентами, включая ChatGPT, в академических курсах. Однако студенты с ограниченным пониманием LLM столкнулись с проблемами, ожидая, что ChatGPT найдет основной источник для своих писем, и это галлюцинация является одним из основных ограничений генерирующего ИИ. Для решения этой проблемы мы представили RECIPE, новую платформу изучения языка, которая использует ChatGPT для удовлетворения потребностей студентов и повышения их навыков написания на английском языке с помощью двух типов запросов. Данные взаимодействия, которые мы собираем с RECIPE, могут служить основой для разработки эффективной парадигмы интеграции ChatGPT в академических условиях."
   },
   {
     "type": "heading2",
-    "text": "5 CONCLUSION In this",
+    "text": "Признания Эллис поддержала эту работу.",
     "page": 5
-  },
-  {
-    "type": "paragraph",
-    "text": "paper, we investigated students’ perception and usage of generative AI, including ChatGPT, in academic courses. Our results indicated that most students reported positive experiences with ChatGPT for general, academic, and essay-writing purposes. However, students with а limited understanding of LLMs faced challenges as expecting ChatGPT to find ground sources for their writings, and this hallucination is one of the major limitations of generative AI. To address this issue, we introduce RECIPE, а novel language learning platform, that leverages ChatGPT to cater to students’ needs and enhance their English writing skills with two types of prompts. We aim to collect interaction data throughout the semester on students’ perception and usage of ChatGPT in English writing through RECIPE. The interaction data we gather with RECIPE has the potential to serve as а baseline for developing an effective paradigm for integrating ChatGPT in academic settings."
   },
   {
     "type": "heading2",
-    "text": "ACKNOWLEDGMENTS This work was supported by Elice.",
-    "page": 5
-  },
-  {
-    "type": "heading1",
-    "text": "ЛИТЕРАТУРА",
+    "text": "Ссылки",
     "page": 5
   },
   {
     "type": "formula",
-    "text": "[1] Ariyanti et al. 2021. Technology-Enhanced Paraphrasing Tool to Improve EFL Students’ Writing Achievement and Enjoyment. Journal of English Language Teaching and Linguistics (JELTL) 6, 3 (2021), 715–726. https://doi.org/10.21462/ jeltl.v6i3.698 [2] David Baidoo-Anu and Leticia Ansah. 2023. Education in the Era of Generative Artificial Intelligence (AI): Understanding the Potential Benefits of ChatGPT in Promoting Teaching and Learning. https://doi.org/10.2139/ssrn.4337484 [3] Yejin Bang, Samuel Cahyawijaya, Nayeon Lee, Wenliang Dai, Dan Su, Bryan Wilie, Holy Lovenia, Ziwei Ji, Tiezheng Yu, Willy Chung, Quyet V. Do, Yan Xu, and Pascale Fung. 2023. А Multitask, Multilingual, Multimodal Evaluation of ChatGPT on Reasoning, Hallucination, and Interactivity. arXiv:2302.04023 [cs. CL] [4] Hui-Wen Huang, Zehui Li, and Linda Taylor. 2020. The Effectiveness of Using Grammarly to Improve Students’ Writing Skills. In Proceedings of the 5th International Conference on Distance Education and Learning (Beijing, China) (ICDEL 2020). Association for Computing Machinery, New York, NY, USA, 122–127. https://doi.org/10.1145/3402569.3402594 [5] Weijiao Huang, Khe Foon Hew, and Luke К. Fryer. 2022. Chatbots for language learning—Are they really useful? А systematic review of chatbot-supported language learning. Journal of Computer Assisted Learning 38, 1 (2022), 237–257. https://doi.org/10.1111/jcal.12610 [6] Silvia Milano, Joshua А McGrane, and Sabina Leonelli. 2023. Large language models challenge the future of higher education. Nature Machine Intelligence (2023), 1–2. https://doi.org/10.1038/s42256-023-00644-2 [7] Junaid Qadir. 2022. Engineering education in the era of ChatGPT: Promise and pitfalls of generative AI for education. https://doi.org/10.36227/techrxiv.21789434 [8] Jürgen Rudolph, Samson Tan, and Shannon Tan. 2023. ChatGPT: Bullshit spewer or the end of traditional assessments in higher education? Journal of Applied Learning and Teaching (JALT) 6, 1 (2023). https://doi.org/10.37074/jalt.2023.6.1.17 [9] Miriam Sullivan, Andrew Kelly, and Paul McLaughlan. 2023. ChatGPT in higher education: Considerations for academic integrity and student learning. Journal of Applied Learning and Teaching (JALT) 6, 1 (2023). https://doi.org/10.37074/jalt. 2023.6.1.17 L@S ’23, July 20–22, 2023, Copenhagen, Denmark. Han et al.",
+    "text": "[1] Арианти и др. 2021. Технологическое улучшение парафразирования инструмента для улучшения успеваемости и удовольствия в написании студентов EFL. Журнал английского языка и языкознания (JELTL) 6, 3 (2021), 715726. https://doi.org/10.21462/ jeltl.v6i3.698 [2] Дэвид Байдо-Ану и Летиция Анса. 2023. Образование в эпоху генерирующего искусственного интеллекта (ИИ): понимание потенциальных преимуществ ЧатГПТ в поощрении обучения и обучения. https://doi.org/10.2139/ssrn.4337484 [3] Еджин Банг, Сэмюэль Кахьявиджая, Нейон Ли, Вэнлианг Дай, Дан Су, Брайан Уили, Святая Ловенья, Зивей Джи, Тиженг Ю, Вилли Чунг, Кьет V. Do, Yan Xu и Pascale Fung. 2023. Многозадачная, многоязычная, мультимодальная оценка ChatGPT по рассуждению, галлюцинации и интерактивности. arXiv:2302.04023 [cs. CL] [4] Hui-Wen Huang, Zehui Li и Linda Taylor. 2020. В работе 5-й Международной конференции по дистанционному обучению и обучению (Пекин, Китай) (ICDEL 2020). Ассоциация вычислительных машин, Нью-Йорк, США, 122127. https://doi.org/10.1145/3402569.3402594 [5] Вейжао Хуан, Кхэ Фун Хью и Люк К. Фрайер. 2022. Чат-боты для обучения языкам? Они действительно полезны? Системный обзор обучения языкам, поддерживаемым чат-ботами. Журнал компьютерного обучения 38, 1 (2022), 237257. https://doi.org/10.1111/jcal.12610 [6] Сильвия Милано, Джошуа А МакГрен и Сабина Леонелли. 2023. Nature Machine Intelligence (2023), 12. https://doi.org/10.1038/s42256-023-00644-2 [7] Джунайд Кадир. 2022. Инженерное образование в эпоху ЧатГПТ: обещания и ловушки генерирующего ИИ для образования. https://doi.org/10.36227/techrxiv.21789434 [8] Юрген Рудольф, Самсон Тан и Шаннон Тан. 2023. ЧатГПТ: пустырь или конец традиционных оценок в высшем образовании? Журнал прикладного обучения и обучения (JALT) 6, 1 (2023). https://doi.org/10.37074/jalt.2023.6.1.17 [9] Мириам Салливан, Эндрю Келли и Пол Маклауллан. 2023. ЧатГПТ в высшем образовании: соображения по академической целостности и обучению студентов. Журнал прикладного обучения и обучения (JALT) 6, 1 (2023). https://doi.org/10.37074/jalt. 2023.6.1.17 L@S 23, 2022 июля 2023, Копенгаген, Дания. Han et al.",
     "page": 5
   },
   {
@@ -229,58 +217,58 @@
   },
   {
     "type": "heading2",
-    "text": "Appendices А DETAILS ON PRELIMINARY QUESTIONNAIRE А.1 Study Design This section describes how we design preliminary questionnaires. Students are asked to answer 5-scale Likert questions in Table 3 towards their perception and usage of ChatGPT. We also provide Others option for multi-select questions to get free-form inputs from students.",
+    "text": "В этом разделе описывается, как мы разрабатываем предварительные анкеты. Студенты просят ответить на вопросы Likert в 5 масштабах в таблице 3 в отношении их восприятия и использования ChatGPT.",
     "page": 6
   },
   {
     "type": "paragraph",
-    "text": "Table 4: Multi-select questions for the general purpose of ChatGPT use asked to study participants in the preliminary questionnaire. Please choose the purpose(s) for using ChatGPT."
+    "text": "Таблица 4: Многопробиваемые вопросы для общей цели использования ChatGPT, задаваемые участникам предварительного анкеты."
   },
   {
     "type": "paragraph",
-    "text": "Table 3: 5-scale Likert questions asked to study participants in the preliminary questionnaire."
+    "text": "Таблица 3: Вопросы Likert в 5-й шкале, задаваемые участникам исследования в предварительном анкете."
   },
   {
     "type": "heading2",
-    "text": "Purpose Undergrad. Grad.",
+    "text": "Цель - начальный класс.",
     "page": 6
   },
   {
     "type": "paragraph",
-    "text": "Student’s expectation on their EFL writing course motivation How motivated are you to learn new things through this class? engagement How willing are you to actively engage in this class? confidence How confident are you in your ability to succeed in this class?"
+    "text": "Ожидания студентов по поводу мотивации курса написания EFL Как мотивированы вы, чтобы научиться новым вещам в этом классе? Участие Как готовы вы активно участвовать в этом классе? уверенность Как уверены вы в своей способности добиться успеха в этом классе?"
   },
   {
     "type": "paragraph",
-    "text": "For fun 45.95 (2) 50.82 (1) To get help with academic work in college (е.g., assignments, quiz, test) 51.65 (1) 42.62 (3) To improve English skills (е.g, reading, writing, grammar, vocabulary, listening, speaking) 4.60 (7) 21.31 (7) To translate texts 9.89 (5) 27.87 (5) To get help with research 4.49 (7) 48.36 (2) To assist coding and handling error messages 13.19 (4) 22.95 (6) To learn more about AI and chatbot 21.98 (3) 30.33 (4) To get advice on personal problems or issues 6.59 (6) 7.38 (8)"
+    "text": "Для удовольствия 45.95 (2) 50.82 (1) Получить помощь в академической работе в колледже (например, задания, викторина, тест) 51.65 (1) 42.62 (3) Улучшить навыки английского языка (например, чтение, письмо, грамматика, лексика, слушание, речь) 4.60 (7) 21.31 (7) Перевести тексты 9.89 (5) 27.87 (5) Получить помощь в исследованиях 4.49 (7) 48.36 (2) Помочь в кодировании и обращении с ошибками r сообщения 13.19 (4) 22.95 (6) Узнать больше об ИИ и чатботе 21.98 (3) 30.33 (4) Получить консультации по личным проблемам или вопросам 6.59 (6) 7.38 (8)"
   },
   {
     "type": "paragraph",
-    "text": "Student’s understanding of generative AI LLM understanding How much do you understand about how Generative AI including ChatGPT works? (е.g., dataset, training method, LLM, limitation) Student’s experience with ChatGPT perceived helpfulness How helpful was ChatGPT?"
+    "text": "Понимание студентов о генерирующем ИИ LLM понимание Сколько вы понимаете о том, как работает генерирующий ИИ, включая ChatGPT? (например, набор данных, метод обучения, LLM, ограничение) Опыт студентов с ChatGPT воспринимает полезность Насколько полезен был ChatGPT?"
   },
   {
     "type": "paragraph",
-    "text": "Table 5: Multi-select questions for English writing purpose of ChatGPT use asked to study participants in the preliminary questionnaire. By using ChatGPT in writing class, what kind of help do you expect from ChatGPT?"
+    "text": "Таблица 5: Вопросы с множественным выбором для написания на английском языке для использования ChatGPT, задаваемые для изучения участников предварительного анкеты."
   },
   {
     "type": "paragraph",
-    "text": "trustworthiness How much did you trust the response of ChatGPT? credibility How credible was the information provided by ChatGPT? appropriateness of style/tone How appropriate was the style or tone of responses provided by ChatGPT? performance How was the overall response quality of ChatGPT? overall satisfaction How was the overall satisfaction using ChatGPT? referral intention How likely would you encourage your friends to use ChatGPT?"
+    "text": "Достоверность До какой степени вы доверяли ответе ChatGPT? Достоверность До какой степени достоверна была информация, предоставляемая ChatGPT? Общее удовлетворение Какова была общая удовлетворение с использованием ChatGPT? намерение направления Какой вероятность, что вы поощряете своих друзей использовать ChatGPT?"
   },
   {
     "type": "heading2",
-    "text": "Purpose Undergrad. Grad.",
+    "text": "Цель - начальный класс.",
     "page": 6
   },
   {
-    "type": "paragraph",
-    "text": "To translate texts 40.66 (5) 51.64 (5) To get help with assignments 34.07 (7) 25.41 (8) To review the lecture 12.09 (9) 13.93 (10) To brainstorm ideas 43.96 (4) 34.43 (5) To find sources to support my writing 53.85 (2) 32.79 (6) To get assessed and receive feedback 48.35 (3) 45.08 (3) To get help with punctuation, spelling, capitalization, and grammar 56.04 (1) 61.48 (1) To ask questions about the lecture 7.69 (10) 15.57 (9) To generate а sample essay or paragraph 30.77 (8) 31.15 (7) To revise а draft 40.66 (5) 42.62 (4) В DETAILS ON INTERVIEW The educational backgrounds of six student interviewees in FGI, including education level, EFL course(s) taken, and frequency and purpose of ChatGPT use, are described in Table 7."
+    "type": "heading2",
+    "text": "Б ДЕТАЙЛЫ НА СВЕРЖДЕНИЕ"
   },
   {
     "type": "paragraph",
-    "text": "Student’s expectation of using ChatGPT in courses performance How do you expect overall response quality using ChatGPT in this class? credibility How do you expect the credibility of information from ChatGPT regarding this class? overall satisfaction How do you expect your overall satisfaction using ChatGPT in this class?"
+    "text": "Образовательные знания шести студентов Как вы ожидаете общего качества ответа с помощью ChatGPT в этом классе? доверие Как вы ожидаете доверия информации от ChatGPT в отношении этого класса? общее удовлетворение Как вы ожидаете общего удовлетворения с помощью ChatGPT в этом классе?"
   },
   {
     "type": "paragraph",
-    "text": "А.2 Findings This section describes detailed purposes of students’ experience and expectations of using ChatGPT. Students are asked to answer multi-select questions in Table 4, 5, and 6. Numbers in each cell indicate the percentage of students who replied as the purpose and the parenthesis indicate the rank, respectively."
+    "text": "А.2 Результаты В этом разделе описываются подробные цели студентов опыта и ожиданий использования ChatGPT. У студентов просят ответить на многопроектные вопросы в таблице 4, 5 и 6."
   },
   {
     "type": "page_break",
@@ -288,35 +276,37 @@
   },
   {
     "type": "paragraph",
-    "text": "RECIPE: How to Integrate ChatGPT into EFL Writing Education L@S ’23, July 20–22, 2023, Copenhagen, Denmark."
+    "text": "RECIPE: Как интегрировать ChatGPT в EFL Writing Education L@S 23, 20 июля 22, 2023, Копенгаген, Дания."
   },
   {
     "type": "paragraph",
-    "text": "Table 6: Multi-select questions for the academic purpose of ChatGPT use asked to study participants in the preliminary questionnaire. (а) If you have used ChatGPT for your academic work in college, what kind of academic work(s) did you use ChatGPT for? (в) For what kind of academic work do you plan to use ChatGPT?"
+    "text": "Таблица 6: Многопробиваемые вопросы для академической цели использования ChatGPT, задаваемые участникам предварительного анкеты. а) Если вы использовали ChatGPT для своей академической работы в колледже, для какой академической работы вы использовали ChatGPT? б) Для какой академической работы вы планируете использовать ChatGPT?"
+  },
+  {
+    "type": "heading2",
+    "text": "Цель (а) опыт (б) ожидания (андиграция).",
+    "page": 7
   },
   {
     "type": "paragraph",
-    "text": "Purpose (а) experience (в) expectation Undergrad. Grad. Undergrad. Grad."
-  },
-  {
-    "type": "paragraph",
-    "text": "To translate texts 16.48 (3) 31.97 (2) 50.60 (2) 61.86 (1) To get help with assignments 38.46 (1) 36.89 (1) 73.49 (1) 59.79 (2) To get answers for quizzes or tests 9.89 (6) 5.74 (6) 25.30 (6) 11.34 (7) To prepare for quizzes or tests 15.38 (4) 13.11 (5) 38.55 (4) 20.62 (6) To review the lectures 15.38 (4) 4.92 (7) 34.94 (5) 21.65 (5) To ask questions about the lecture 20.88 (2) 14.75 (4) 46.99 (3) 34.02 (4) To learn more in depth (beyond what is taught in class) 7.69 (7) 15.57 (3) 22.89 (7) 36.08 (3) Table 7: Educational Backgrounds of Students Student Current Program Class Taken Frequency of ChatGPT Use Purpose of ChatGPT Use S1 Masters IRW, AW Often • To translate texts • To paraphrase texts S2 Bachelors IRW, AW Rarely • For fun S3 Doctoral IRW, AW Occasionally • To get help with research S4 Doctoral SW Always • To translate texts • To get help with research S5 Doctoral SW Occasionally • To get help with research S6 Masters SW Often • To assist coding С INTERACTION DATA FROM RECIPE Table 8 and 9 reveals th detailed interactions and dialogues illustrated in §3.4. Students ask the initial prompt to ChatGPT in RECIPE, and they are asked to assess ChatGPT’s response on а 5-scale regarding the helpfulness of each response from ChatGPT. They can edit their essay after each dialogue turn and continue the conversation after essay revision based on suggestions from ChatGPT."
+    "text": "Переводить тексты 16.48 (3) 31.97 (2) 50.60 (2) 61.86 (1) Получить помощь с заданиями 38.46 (1) 36.89 (1) 73.49 (1) 59.79 (2) Получить ответы на викторины или тесты 9.89 (6) 5.74 (6) 25.30 (6) 11.34 (7) Подготовиться к викторинам или тестам 15.38 (4) 13.11 (5) 38.55 (4) 20.62 (6) Просмотреть лекции 15.38 (4) 4.92 (7) 34.94 (5) 21.65 (5) Задать вопрос Нс о лекции 20.88 (2) 14.75 (4) 46.99 (3) 34.02 (4) Чтобы узнать больше подробно (за пределами того, что преподается в классе) 7.69 (7) 15.57 (3) 22.89 (7) 36.08 (3) Таблица 7: Образовательные фон студентов Студенческая программа текущий класс Принятая частота Чат GPT Использование Чат GPT Использование S1 Мастера IRW, AW Часто • Для перевода текстов • Для перефразирования текстов С2 Бакалавриат ИРВ, АВ редко • Для удовольствия С3 Докторантура ИРВ, АВ Время от времени • Чтобы получить помощь в исследованиях С4 Докторантура СВ Всегда • Чтобы перевести тексты • Чтобы получить помощь в исследованиях С5 Докторантура СВ Время от времени • Чтобы получить помощь в исследованиях С6 Магистерские СВ Часто • Чтобы помочь в кодировании С ВИЧАДЕНИЕ DATA С РЕЦИПЕ Таблица 8 и 9 раскрывает подробные взаимодействия и диалогов, изображенных в §3.4. Студенты просят начальный запрос на ChatGPT в RECIPE, и им просят оценить ответ ChatGPT на 5-й шкале относительно полезности каждого ответа от ChatGPT. Они могут редактировать свой эссе после каждого повода диалога и продолжить разговор после пересмотра эссе на основе предложений от ChatGPT."
   },
   {
     "type": "page_break",
     "page": 8
   },
   {
-    "type": "paragraph",
-    "text": "L@S ’23, July 20–22, 2023, Copenhagen, Denmark. Han et al."
+    "type": "heading2",
+    "text": "L@S 23, 20 июля 22, 2023, Копенгаген, Дания.",
+    "page": 8
   },
   {
     "type": "paragraph",
-    "text": "Table 8: Interactive dialogue data collected from RECIPE in Intermediate English Reading & Writing (undergraduate course) Student’s Prompt ChatGPT’s Response Helpfulness Essay Edits <Student’s original essay> Is there any grammatical errors in my essay?"
+    "text": "Таблица 8: Интерактивные диалоги, собранные из RECIPE в среднем английском языке чтение и письмо (курс бакалавриата) Студент s Prompt ChatGPT s Response Helpfulness Essay Edits <Student s original essay> Есть ли какие-либо грамматические ошибки в моем эссе?"
   },
   {
     "type": "paragraph",
-    "text": "Yes, there are а few grammar errors in your essay. Let’s go over some of them and how to revise them: <Ten grammatical error feedbacks in order> 5 ✔ Is 7 and 8 grammatical error? Yes, 7 and 8 are grammatical errors. Let me explain why: <Explanations for grammatical error 7 and 8> 2 7번문장에서other말고다른부분은문법적오류가 아니지않아? (Isn’т the part other than “other” in sentence 7 а grammatical error?) 네, 다른부분들은문법적오류가아니라문체나표현 에있어서다소어색하거나효율적이지않은것으로 교정해야할때도있습니다. 다른부분들도함께교정 해보시면더욱발전된글쓰기를할수있을것입니다. (No, you might need to correct other parts that are not grammatical errors but somewhat awkward or inefficient in style or expression. If you correct those parts as well, you can write а better essay.) 2 Table 9: Interactive dialogue data collected from RECIPE in Scientific Writing (graduate course) Student’s Prompt ChatGPT’s Response Helpfulness Essay Edits I learned about the basic composition of the methodology part. Normally, methodology part contains information of material, method, procedure of the experiment."
+    "text": "Да, в вашем эссе есть несколько грамматических ошибок. Давайте перейдем к некоторым из них и как их пересмотреть: <Десять грамматических ошибок в порядке> 5 ✔ 7 и 8 являются грамматическими ошибками? Да, 7 и 8 являются грамматическими ошибками. Позвольте мне объяснить, почему: <Отъяснения грамматической ошибки 7 и 8> 2 7번문장에서other말고다른부분은문법적오류가 아니지않아? (Не является ли часть, кроме в предложении 7 грамматической ошибкой?) Да, другие части являются грамматическими ошибками, но есть и другие части, которые должны быть исправлены в виде неэффективных или неэффективных. Если вы также исправляете эти части, вы можете написать лучший эссе.) 2 Таблица 9: Интерактивные диалоги, собранные из RECIPE в научной литературе (курс выпускников) Студенты Students Prompt ChatGPTs Response Helpfulness Essay Edits Я узнал о базовом составе методологической части. Как правило, часть методологии содержит информацию о материале, методе, процедуре эксперимента."
   },
   {
     "type": "footnote",
@@ -325,15 +315,21 @@
   },
   {
     "type": "paragraph",
-    "text": "Yes, that is correct! The methodology section of а scientific paper is where you describe the materials, methods, and procedures used to conduct your research. It’s important to be clear and concise so that others can understand your research and potentially replicate it. Did you have any specific questions about the methodology section or any other part of scientific writing?"
+    "text": "В разделе методологии научной статьи вы описываете материалы, методы и процедуры, используемые для проведения исследования. У вас были какие-либо конкретные вопросы по поводу секции методологии или какой-либо другой части научной литературы?"
   },
   {
     "type": "paragraph",
-    "text": "Yes, I would be happy to take а look at your methodology section and provide you with feedback. Please share your work with me, and I’ll do my best to help you improve it."
+    "text": "Да, я с удовольствием ознакомлюсь с вашим разделом методологии и сообщу вам отзывы. Пожалуйста, поделитесь со мной своей работой, и я сделаю все возможное, чтобы помочь вам ее улучшить."
   },
   {
-    "type": "paragraph",
-    "text": "I wrote the methodology of my study. Could you have а look and give me some feedback?"
+    "type": "footnote",
+    "text": "4.",
+    "page": 8
+  },
+  {
+    "type": "heading2",
+    "text": "Я написал методику моего исследования.",
+    "page": 8
   },
   {
     "type": "footnote",
@@ -342,15 +338,15 @@
   },
   {
     "type": "paragraph",
-    "text": "<Methodology section from student’s research paper> Great job on writing your methodology section! I have а few suggestions that could help you improve it even more."
+    "text": "Отличная работа над написанием вашего методологического раздела! У меня есть несколько предложений, которые могут помочь вам улучшить его еще больше."
   },
   {
     "type": "paragraph",
-    "text": "<Three suggestions on writing methodology section in order>..."
+    "text": "<Три предложения по разделу методологии написания в порядке>..."
   },
   {
     "type": "paragraph",
-    "text": "If I add following sentence at the beginning of the paragraph, would it be enough to explain the context? “<А new sentence written by the student based on the first suggestion from previous ChatGPT response>” Yes, adding that sentence would help provide context for your study and give readers а better understanding of the rationale behind the methodology you used. It sets up the research question and hypothesis well, and makes it clear why the study was designed the way it was."
+    "text": "Если бы я добавил следующее предложение в начале абзаца, было бы достаточно объяснить контекст? <Новое предложение, написанное студентом на основе первого предложения из предыдущего ответа ChatGPT> Да, добавление этого предложения помогло бы обеспечить контекст для вашего исследования и дать читателям лучшее понимание обоснования использовавшейся вами методологии. Это хорошо ставит исследовательский вопрос и гипотезу, и делает ясно, почему исследование было разработано так, как было."
   },
   {
     "type": "footnote",

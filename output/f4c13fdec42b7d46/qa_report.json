@@ -2,6 +2,32 @@
   "status": "warn",
   "issues": [
     {
+      "block_id": "p137_b0",
+      "page": 137,
+      "order": 1264,
+      "type": "length_mismatch",
+      "severity": "medium",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
+      "meta": {
+        "src_len": 3,
+        "tgt_len": 15,
+        "ratio": 5.0
+      }
+    },
+    {
+      "block_id": "p141_b0",
+      "page": 141,
+      "order": 1309,
+      "type": "length_mismatch",
+      "severity": "medium",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
+      "meta": {
+        "src_len": 3,
+        "tgt_len": 14,
+        "ratio": 4.666666666666667
+      }
+    },
+    {
       "block_id": "p147_b3",
       "page": 147,
       "order": 1378,
@@ -29,6 +55,19 @@
       }
     },
     {
+      "block_id": "p187_b10",
+      "page": 187,
+      "order": 1738,
+      "type": "length_mismatch",
+      "severity": "medium",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
+      "meta": {
+        "src_len": 159,
+        "tgt_len": 47,
+        "ratio": 0.29559748427672955
+      }
+    },
+    {
       "block_id": "p192_b2",
       "page": 192,
       "order": 1775,
@@ -50,6 +89,202 @@
       }
     },
     {
+      "block_id": "p253_b0",
+      "page": 253,
+      "order": 2418,
+      "type": "length_mismatch",
+      "severity": "medium",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
+      "meta": {
+        "src_len": 3,
+        "tgt_len": 15,
+        "ratio": 5.0
+      }
+    },
+    {
+      "block_id": "p263_b0",
+      "page": 263,
+      "order": 2522,
+      "type": "length_mismatch",
+      "severity": "medium",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
+      "meta": {
+        "src_len": 3,
+        "tgt_len": 15,
+        "ratio": 5.0
+      }
+    },
+    {
+      "block_id": "p264_b0",
+      "page": 264,
+      "order": 2529,
+      "type": "repeated_tokens",
+      "severity": "low",
+      "message": "Repeated tokens detected in translated text.",
+      "meta": {
+        "tokens": [
+          "40",
+          "100"
+        ]
+      }
+    },
+    {
+      "block_id": "p269_b0",
+      "page": 269,
+      "order": 2594,
+      "type": "length_mismatch",
+      "severity": "medium",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
+      "meta": {
+        "src_len": 3,
+        "tgt_len": 15,
+        "ratio": 5.0
+      }
+    },
+    {
+      "block_id": "p276_b5",
+      "page": 276,
+      "order": 2653,
+      "type": "length_mismatch",
+      "severity": "medium",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
+      "meta": {
+        "src_len": 292,
+        "tgt_len": 74,
+        "ratio": 0.2534246575342466
+      }
+    },
+    {
+      "block_id": "p279_b0",
+      "page": 279,
+      "order": 2665,
+      "type": "length_mismatch",
+      "severity": "medium",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
+      "meta": {
+        "src_len": 3,
+        "tgt_len": 15,
+        "ratio": 5.0
+      }
+    },
+    {
+      "block_id": "p294_b0",
+      "page": 294,
+      "order": 2781,
+      "type": "length_mismatch",
+      "severity": "medium",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
+      "meta": {
+        "src_len": 3,
+        "tgt_len": 15,
+        "ratio": 5.0
+      }
+    },
+    {
+      "block_id": "p306_b7",
+      "page": 306,
+      "order": 2887,
+      "type": "length_mismatch",
+      "severity": "medium",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
+      "meta": {
+        "src_len": 290,
+        "tgt_len": 74,
+        "ratio": 0.25517241379310346
+      }
+    },
+    {
+      "block_id": "p313_b4",
+      "page": 313,
+      "order": 2952,
+      "type": "length_mismatch",
+      "severity": "medium",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
+      "meta": {
+        "src_len": 282,
+        "tgt_len": 54,
+        "ratio": 0.19148936170212766
+      }
+    },
+    {
+      "block_id": "p328_b5",
+      "page": 328,
+      "order": 3084,
+      "type": "length_mismatch",
+      "severity": "medium",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
+      "meta": {
+        "src_len": 253,
+        "tgt_len": 68,
+        "ratio": 0.26877470355731226
+      }
+    },
+    {
+      "block_id": "p333_b0",
+      "page": 333,
+      "order": 3123,
+      "type": "length_mismatch",
+      "severity": "medium",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
+      "meta": {
+        "src_len": 3,
+        "tgt_len": 15,
+        "ratio": 5.0
+      }
+    },
+    {
+      "block_id": "p334_b16",
+      "page": 334,
+      "order": 3157,
+      "type": "length_mismatch",
+      "severity": "medium",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
+      "meta": {
+        "src_len": 167,
+        "tgt_len": 40,
+        "ratio": 0.23952095808383234
+      }
+    },
+    {
+      "block_id": "p336_b12",
+      "page": 336,
+      "order": 3210,
+      "type": "length_mismatch",
+      "severity": "medium",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
+      "meta": {
+        "src_len": 180,
+        "tgt_len": 35,
+        "ratio": 0.19444444444444445
+      }
+    },
+    {
+      "block_id": "p344_b5",
+      "page": 344,
+      "order": 3299,
+      "type": "length_mismatch",
+      "severity": "medium",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
+      "meta": {
+        "src_len": 205,
+        "tgt_len": 50,
+        "ratio": 0.24390243902439024
+      }
+    },
+    {
+      "block_id": "p373_b0",
+      "page": 373,
+      "order": 3535,
+      "type": "length_mismatch",
+      "severity": "medium",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
+      "meta": {
+        "src_len": 3,
+        "tgt_len": 15,
+        "ratio": 5.0
+      }
+    },
+    {
       "block_id": "p373_b5",
       "page": 373,
       "order": 3540,
@@ -60,6 +295,19 @@
         "tokens": [
           "1"
         ]
+      }
+    },
+    {
+      "block_id": "p403_b0",
+      "page": 403,
+      "order": 3851,
+      "type": "length_mismatch",
+      "severity": "medium",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
+      "meta": {
+        "src_len": 3,
+        "tgt_len": 15,
+        "ratio": 5.0
       }
     },
     {
@@ -90,16 +338,108 @@
       }
     },
     {
-      "block_id": "p500_b5",
-      "page": 500,
-      "order": 5001,
-      "type": "repeated_tokens",
-      "severity": "low",
-      "message": "Repeated tokens detected in translated text.",
+      "block_id": "p463_b5",
+      "page": 463,
+      "order": 4560,
+      "type": "length_mismatch",
+      "severity": "medium",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
       "meta": {
-        "tokens": [
-          "1"
-        ]
+        "src_len": 198,
+        "tgt_len": 52,
+        "ratio": 0.26262626262626265
+      }
+    },
+    {
+      "block_id": "p468_b0",
+      "page": 468,
+      "order": 4607,
+      "type": "length_mismatch",
+      "severity": "medium",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
+      "meta": {
+        "src_len": 3,
+        "tgt_len": 15,
+        "ratio": 5.0
+      }
+    },
+    {
+      "block_id": "p483_b0",
+      "page": 483,
+      "order": 4720,
+      "type": "length_mismatch",
+      "severity": "medium",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
+      "meta": {
+        "src_len": 3,
+        "tgt_len": 15,
+        "ratio": 5.0
+      }
+    },
+    {
+      "block_id": "p488_b3",
+      "page": 488,
+      "order": 4758,
+      "type": "length_mismatch",
+      "severity": "medium",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
+      "meta": {
+        "src_len": 275,
+        "tgt_len": 81,
+        "ratio": 0.29454545454545455
+      }
+    },
+    {
+      "block_id": "p489_b14",
+      "page": 489,
+      "order": 4779,
+      "type": "length_mismatch",
+      "severity": "medium",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
+      "meta": {
+        "src_len": 219,
+        "tgt_len": 56,
+        "ratio": 0.2557077625570776
+      }
+    },
+    {
+      "block_id": "p491_b0",
+      "page": 491,
+      "order": 4815,
+      "type": "length_mismatch",
+      "severity": "medium",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
+      "meta": {
+        "src_len": 3,
+        "tgt_len": 15,
+        "ratio": 5.0
+      }
+    },
+    {
+      "block_id": "p492_b27",
+      "page": 492,
+      "order": 4872,
+      "type": "mixed_alphabet",
+      "severity": "medium",
+      "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
+      "meta": {
+        "latin": 23,
+        "cyr": 25,
+        "latin_ratio": 0.479,
+        "cyr_ratio": 0.521
+      }
+    },
+    {
+      "block_id": "p493_b0",
+      "page": 493,
+      "order": 4876,
+      "type": "length_mismatch",
+      "severity": "medium",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
+      "meta": {
+        "src_len": 3,
+        "tgt_len": 15,
+        "ratio": 5.0
       }
     },
     {
@@ -114,33 +454,20 @@
           "5"
         ]
       }
-    },
-    {
-      "block_id": "p95_b0",
-      "page": 95,
-      "order": 833,
-      "type": "mixed_alphabet",
-      "severity": "medium",
-      "message": "Translated text contains a suspicious mixture of Latin and Cyrillic characters.",
-      "meta": {
-        "latin": 4,
-        "cyr": 4,
-        "latin_ratio": 0.5,
-        "cyr_ratio": 0.5
-      }
     }
   ],
   "summary": {
     "total_blocks": 3161,
     "checked": 3161,
-    "issues_total": 9,
+    "issues_total": 34,
     "issues_by_type": {
+      "length_mismatch": 25,
       "repeated_tokens": 8,
       "mixed_alphabet": 1
     },
     "issues_by_severity": {
-      "low": 8,
-      "medium": 1
+      "medium": 26,
+      "low": 8
     },
     "roles_count": {
       "body": 2811,
@@ -150,9 +477,9 @@
     }
   },
   "translation_metrics": {
-    "average_length_ratio": 1.0021820318989865,
-    "min_length_ratio": 0.8,
-    "max_length_ratio": 1.3333333333333333,
+    "average_length_ratio": 0.8821654297962801,
+    "min_length_ratio": 0.21212121212121213,
+    "max_length_ratio": 2.675675675675676,
     "blocks_analyzed": 3161
   }
 }

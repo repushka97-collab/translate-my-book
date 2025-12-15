@@ -1,0 +1,53 @@
+{
+  "timestamp": "20251214_135236",
+  "total": 6,
+  "successful": 5,
+  "failed": 1,
+  "results": [
+    {
+      "pdf": "For test\\30-38.pdf",
+      "status": "success",
+      "duration": 2.19114,
+      "output": "output\\16c9f47aa3421533\\book_ru.pdf",
+      "quality_score": "N/A",
+      "human_score": "N/A"
+    },
+    {
+      "pdf": "For test\\GPT.pdf",
+      "status": "success",
+      "duration": 3.371822,
+      "output": "output\\d247362f641f5add\\book_ru.pdf",
+      "quality_score": "N/A",
+      "human_score": "N/A"
+    },
+    {
+      "pdf": "For test\\KIDCITY.pdf",
+      "status": "success",
+      "duration": 8.302933,
+      "output": "output\\a7e2c751b5e6db65\\book_ru.pdf",
+      "quality_score": "N/A",
+      "human_score": "N/A"
+    },
+    {
+      "pdf": "For test\\Myofascial.pdf",
+      "status": "success",
+      "duration": 4.541991,
+      "output": "output\\e4d0e0712aeb4be1\\book_ru.pdf",
+      "quality_score": "N/A",
+      "human_score": "N/A"
+    },
+    {
+      "pdf": "ingest\\Book1.pdf",
+      "status": "exception",
+      "error": "DOCX export failed: All strings must be XML compatible: Unicode or ASCII, no NULL bytes or control characters"
+    },
+    {
+      "pdf": "ingest\\Основы фитнес тренировки.pdf",
+      "status": "success",
+      "duration": 19.268212,
+      "output": "output\\f4c13fdec42b7d46\\book_ru.pdf",
+      "quality_score": "N/A",
+      "human_score": "N/A"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+[1/6] 30-38.pdf: SUCCESS (2.3s)
+  Output: output\16c9f47aa3421533\book_ru.pdf
+
+[2/6] GPT.pdf: SUCCESS (3.0s)
+  Output: output\d247362f641f5add\book_ru.pdf
+
+[3/6] KIDCITY.pdf: SUCCESS (4.2s)
+  Output: output\a7e2c751b5e6db65\book_ru.pdf
+

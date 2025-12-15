@@ -1,0 +1,6 @@
+{
+  "original_text": "a a=b\na<b\na>b b c a b c a b c a",
+  "translated_text": "a a=b\na<b\na>b b c a b c a b c a",
+  "source_lang": "en",
+  "target_lang": "ru"
+}

@@ -47,13 +47,18 @@ def rebuild_pdf_with_translations_v2(
     font_paths = {}  # Сохраняем пути к шрифтам
     if FONT_MANAGER_AVAILABLE and font_manager:
         for font_family in ["helv", "times", "cour"]:
-            font_path = font_manager.find_cyrillic_font(font_family)
-            if font_path:
-                font_name = f"cyrillic-{font_family}"
-                result = font_manager.load_font_to_doc(new_doc, font_name, font_path)
-                if result:
-                    font_paths[font_family] = font_path
-                    print(f"[PDF_REBUILD_V2] Found Unicode font: {font_name} ({Path(font_path).name})")
+            try:
+                font_path = font_manager.find_cyrillic_font(font_family)
+                if font_path:
+                    font_name = f"cyrillic-{font_family}"
+                    result = font_manager.load_font_to_doc(new_doc, font_name, font_path)
+                    if result:
+                        font_paths[font_family] = font_path
+                        print(f"[PDF_REBUILD_V2] Found Unicode font: {font_name} ({Path(font_path).name})")
+            except Exception as e:
+                error_log_path = os.getenv("ERROR_LOG_PATH", "errors.log")
+                with open(error_log_path, "a", encoding="utf-8") as f:
+                    f.write(f"[PDF_REBUILD_V2] Font loading error for {font_family}: {e}\n")
     
     # Группируем переводы по страницам
     translations_by_page: Dict[int, List[Dict[str, Any]]] = {}

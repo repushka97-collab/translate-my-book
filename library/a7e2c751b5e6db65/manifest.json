@@ -2,7 +2,7 @@
   "book_id": "a7e2c751b5e6db65",
   "source_pdf": "I:\\PROJECTS\\Translate-my-book\\translate-my-book\\For test\\KIDCITY.pdf",
   "library_pdf": "library\\a7e2c751b5e6db65\\original.pdf",
-  "created_at": "2025-12-13T18:59:45.226481Z",
+  "created_at": "2025-12-14T12:55:31.572512Z",
   "pages": 8,
   "metadata": {
     "title": "KIDCITY_INVESTMENT_PROPOSAL",
@@ -13,7 +13,9 @@
     "json": "output\\a7e2c751b5e6db65\\book.json",
     "docx_main": "output\\a7e2c751b5e6db65\\book_ru.docx",
     "html": "output\\a7e2c751b5e6db65\\book.html",
-    "pdf": "output\\a7e2c751b5e6db65\\book_ru.pdf"
+    "pdf": "output\\a7e2c751b5e6db65\\book_ru.pdf",
+    "quality_scorecard": "output\\a7e2c751b5e6db65\\quality_reports\\quality_scorecard.json",
+    "pdf_diff_report": "output\\a7e2c751b5e6db65\\quality_reports\\pdf_diff_report.html"
   },
   "qa": {
     "status": "ok",
@@ -30,8 +32,8 @@
       }
     },
     "translation_metrics": {
-      "average_length_ratio": 0.9992896742896743,
-      "min_length_ratio": 0.9833333333333333,
+      "average_length_ratio": 0.7434560080675088,
+      "min_length_ratio": 0.2558139534883721,
       "max_length_ratio": 1.0,
       "blocks_analyzed": 37
     }

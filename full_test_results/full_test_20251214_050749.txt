@@ -1,0 +1,63 @@
+[1/21] ._input.pdf: EXCEPTION
+  TypeError: run_book_pipeline() got an unexpected keyword argument 'output_dir'
+
+[2/21] input_ru.pdf: EXCEPTION
+  TypeError: run_book_pipeline() got an unexpected keyword argument 'output_dir'
+
+[3/21] 30-38.pdf: EXCEPTION
+  TypeError: run_book_pipeline() got an unexpected keyword argument 'output_dir'
+
+[4/21] GPT.pdf: EXCEPTION
+  TypeError: run_book_pipeline() got an unexpected keyword argument 'output_dir'
+
+[5/21] KIDCITY.pdf: EXCEPTION
+  TypeError: run_book_pipeline() got an unexpected keyword argument 'output_dir'
+
+[6/21] Myofascial.pdf: EXCEPTION
+  TypeError: run_book_pipeline() got an unexpected keyword argument 'output_dir'
+
+[7/21] ._Book1.pdf: EXCEPTION
+  TypeError: run_book_pipeline() got an unexpected keyword argument 'output_dir'
+
+[8/21] Book1.pdf: EXCEPTION
+  TypeError: run_book_pipeline() got an unexpected keyword argument 'output_dir'
+
+[9/21] Основы фитнес тренировки.pdf: EXCEPTION
+  TypeError: run_book_pipeline() got an unexpected keyword argument 'output_dir'
+
+[10/21] input.pdf: EXCEPTION
+  TypeError: run_book_pipeline() got an unexpected keyword argument 'output_dir'
+
+[11/21] original.pdf: EXCEPTION
+  TypeError: run_book_pipeline() got an unexpected keyword argument 'output_dir'
+
+[12/21] original.pdf: EXCEPTION
+  TypeError: run_book_pipeline() got an unexpected keyword argument 'output_dir'
+
+[13/21] original.pdf: EXCEPTION
+  TypeError: run_book_pipeline() got an unexpected keyword argument 'output_dir'
+
+[14/21] original.pdf: EXCEPTION
+  TypeError: run_book_pipeline() got an unexpected keyword argument 'output_dir'
+
+[15/21] original.pdf: EXCEPTION
+  TypeError: run_book_pipeline() got an unexpected keyword argument 'output_dir'
+
+[16/21] original.pdf: EXCEPTION
+  TypeError: run_book_pipeline() got an unexpected keyword argument 'output_dir'
+
+[17/21] original.pdf: EXCEPTION
+  TypeError: run_book_pipeline() got an unexpected keyword argument 'output_dir'
+
+[18/21] original.pdf: EXCEPTION
+  TypeError: run_book_pipeline() got an unexpected keyword argument 'output_dir'
+
+[19/21] original.pdf: EXCEPTION
+  TypeError: run_book_pipeline() got an unexpected keyword argument 'output_dir'
+
+[20/21] original.pdf: EXCEPTION
+  TypeError: run_book_pipeline() got an unexpected keyword argument 'output_dir'
+
+[21/21] GPT.pdf: EXCEPTION
+  TypeError: run_book_pipeline() got an unexpected keyword argument 'output_dir'
+

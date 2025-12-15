@@ -1,236 +1,44 @@
 {
-  "timestamp": "2025-12-13T21:59:45.224480",
+  "timestamp": "2025-12-14T15:55:31.083407",
   "original_pdf": "For test\\KIDCITY.pdf",
   "translated_pdf": "output\\a7e2c751b5e6db65\\book_ru.pdf",
-  "overall_score": 70.65147899126248,
-  "layout_preservation": 41.666666666666664,
-  "text_overflow_rate": 0.7575757575757576,
+  "overall_score": 61.66666666666666,
+  "layout_preservation": 60.55555555555555,
+  "text_overflow_rate": 0.0,
   "image_position_drift": 0.0,
-  "font_consistency": 100.0,
+  "font_consistency": 0.0,
   "table_integrity": 100.0,
-  "page_count_match": true,
-  "file_size_ratio": 1.7307764521515976,
+  "page_count_match": false,
+  "file_size_ratio": 0.04570961131211627,
   "recommendations": [
     "Критическое качество: требуется ручная проверка и корректировка",
     "Структурное сходство ниже порога: проверьте иерархию элементов",
-    "Размер файла увеличен более чем на 25%: примените сжатие через Ghostscript"
+    "Количество страниц не совпадает: проверьте разрывы страниц"
   ],
   "detailed_metrics": {
     "pixel_perfect": {
-      "shift_score": 0.9318181818181819,
-      "element_loss": 0.7424242424242424,
-      "text_overflow": 0.007575757575757576,
-      "displacements": [
-        {
-          "page": 4,
-          "element_index": 1,
-          "dx": 59.56172180175781,
-          "dy": 264.7714157104492,
-          "max_shift": 264.7714157104492,
-          "bbox_orig": [
-            68.69999694824219,
-            292.20001220703125,
-            541.2822875976562,
-            306.70001220703125
-          ],
-          "bbox_trans": [
-            128.26171875,
-            27.42859649658203,
-            469.4652404785156,
-            41.13279342651367
-          ],
-          "text_similarity": 0.8,
-          "layout_mode": "precise"
-        },
-        {
-          "page": 4,
-          "element_index": 2,
-          "dx": 52.30781555175781,
-          "dy": 241.02141571044922,
-          "max_shift": 241.02141571044922,
-          "bbox_orig": [
-            68.69999694824219,
-            306.70001220703125,
-            541.2989501953125,
-            334.70001220703125
-          ],
-          "bbox_trans": [
-            121.0078125,
-            65.67859649658203,
-            476.7306823730469,
-            79.38279724121094
-          ],
-          "text_similarity": 0.8,
-          "layout_mode": "precise"
-        },
-        {
-          "page": 4,
-          "element_index": 3,
-          "dx": 45.04219055175781,
-          "dy": 171.52142333984375,
-          "max_shift": 171.52142333984375,
-          "bbox_orig": [
-            68.69999694824219,
-            334.70001220703125,
-            541.2969360351562,
-            362.70001220703125
-          ],
-          "bbox_trans": [
-            113.7421875,
-            163.1785888671875,
-            483.9844055175781,
-            176.88279724121094
-          ],
-          "text_similarity": 0.8,
-          "layout_mode": "precise"
-        },
-        {
-          "page": 4,
-          "element_index": 4,
-          "dx": 52.30781555175781,
-          "dy": 161.27142333984375,
-          "max_shift": 161.27142333984375,
-          "bbox_orig": [
-            68.69999694824219,
-            362.70001220703125,
-            541.3004150390625,
-            446.70001220703125
-          ],
-          "bbox_trans": [
-            121.0078125,
-            201.4285888671875,
-            476.7306823730469,
-            215.13279724121094
-          ],
-          "text_similarity": 0.8,
-          "layout_mode": "precise"
-        },
-        {
-          "page": 4,
-          "element_index": 7,
-          "dx": 47.92499923706055,
-          "dy": 155.79705810546875,
-          "max_shift": 155.79705810546875,
-          "bbox_orig": [
-            56.70000076293945,
-            544.7000122070312,
-            155.31040954589844,
-            558.7000122070312
-          ],
-          "bbox_trans": [
-            104.625,
-            700.4970703125,
-            490.88885498046875,
-            808.22314453125
-          ],
-          "text_similarity": 0.8,
-          "layout_mode": "precise"
-        },
-        {
-          "page": 4,
-          "element_index": 13,
-          "dx": 47.92499923706055,
-          "dy": 52.82830810546875,
-          "max_shift": 52.82830810546875,
-          "bbox_orig": [
-            56.70000076293945,
-            762.9819946289062,
-            517.8276977539062,
-            773.4669799804688
-          ],
-          "bbox_trans": [
-            104.625,
-            815.810302734375,
-            490.8626708984375,
-            832.4798583984375
-          ],
-          "text_similarity": 0.8,
-          "layout_mode": "precise"
-        },
-        {
-          "page": 5,
-          "element_index": 11,
-          "dx": 47.92499923706055,
-          "dy": 25.82843017578125,
-          "max_shift": 25.82843017578125,
-          "bbox_orig": [
-            56.70000076293945,
-            440.70001220703125,
-            169.24880981445312,
-            454.70001220703125
-          ],
-          "bbox_trans": [
-            104.625,
-            414.87158203125,
-            490.87738037109375,
-            469.552001953125
-          ],
-          "text_similarity": 0.8,
-          "layout_mode": "flow"
-        },
-        {
-          "page": 5,
-          "element_index": 15,
-          "dx": 47.92499923706055,
-          "dy": 112.82843017578125,
-          "max_shift": 112.82843017578125,
-          "bbox_orig": [
-            56.70000076293945,
-            590.7000122070312,
-            137.84400939941406,
-            604.7000122070312
-          ],
-          "bbox_trans": [
-            104.625,
-            477.87158203125,
-            178.156494140625,
-            489.802001953125
-          ],
-          "text_similarity": 1.0,
-          "layout_mode": "flow"
-        },
-        {
-          "page": 7,
-          "element_index": 4,
-          "dx": 47.92499923706055,
-          "dy": 695.4529418945312,
-          "max_shift": 695.4529418945312,
-          "bbox_orig": [
-            56.70000076293945,
-            742.7000122070312,
-            541.3056030273438,
-            768.7000122070312
-          ],
-          "bbox_trans": [
-            104.625,
-            47.2470703125,
-            490.8683166503906,
-            69.47314453125
-          ],
-          "text_similarity": 0.875,
-          "layout_mode": "flow"
-        }
-      ],
-      "overall_score": 0.7477272727272728,
-      "total_elements": 132,
-      "shifted_elements": 9,
-      "lost_elements": 98,
-      "overflow_elements": 1
+      "shift_score": 1.0,
+      "element_loss": 1.0,
+      "text_overflow": 0.0,
+      "displacements": [],
+      "overall_score": 0.7,
+      "total_elements": 95,
+      "shifted_elements": 0,
+      "lost_elements": 95,
+      "overflow_elements": 0
     },
     "layout_similarity": {
-      "similarity": 0.41666666666666663,
-      "structure_match": 0.2665122592924317,
-      "element_types_match": 0.29511074414091654,
+      "similarity": 0.6055555555555555,
+      "structure_match": 0.2705447330447331,
+      "element_types_match": 0.16816378066378068,
       "hierarchy_preserved": false,
       "page_similarities": [
         0.3333333333333333,
-        0.0,
+        0.6666666666666666,
+        0.8,
         0.5,
-        0.6666666666666666,
-        0.6666666666666666,
-        0.6666666666666666,
-        0.5,
-        0.0
+        1.0,
+        0.3333333333333333
       ],
       "meets_threshold": false
     },
@@ -244,58 +52,46 @@
           "page": 1,
           "issue": "block_count_mismatch",
           "original_count": 0,
-          "translated_count": 7
+          "translated_count": 6
         },
         {
           "page": 2,
           "issue": "block_count_mismatch",
           "original_count": 24,
-          "translated_count": 0
+          "translated_count": 3
         },
         {
           "page": 3,
           "issue": "block_count_mismatch",
           "original_count": 4,
-          "translated_count": 0
+          "translated_count": 7
         },
         {
           "page": 4,
           "issue": "block_count_mismatch",
           "original_count": 16,
-          "translated_count": 20
+          "translated_count": 8
         },
         {
           "page": 5,
           "issue": "block_count_mismatch",
           "original_count": 21,
-          "translated_count": 8
+          "translated_count": 6
         },
         {
           "page": 6,
           "issue": "block_count_mismatch",
           "original_count": 30,
-          "translated_count": 10
-        },
-        {
-          "page": 7,
-          "issue": "block_count_mismatch",
-          "original_count": 29,
-          "translated_count": 9
-        },
-        {
-          "page": 8,
-          "issue": "block_count_mismatch",
-          "original_count": 8,
-          "translated_count": 0
+          "translated_count": 1
         }
       ],
-      "total_blocks_checked": 43
+      "total_blocks_checked": 22
     },
     "additional": {
-      "page_count_match": true,
-      "file_size_ratio": 1.7307764521515976,
+      "page_count_match": false,
+      "file_size_ratio": 0.04570961131211627,
       "avg_image_drift": 0.0,
-      "font_consistency": 100.0,
+      "font_consistency": 0.0,
       "table_integrity": 100.0
     }
   }

@@ -1,29 +1,136 @@
 {
-  "status": "warn",
+  "status": "error",
   "issues": [
     {
-      "block_id": "p78_b2",
-      "page": 78,
-      "order": 444,
+      "block_id": "p159_b3",
+      "page": 159,
+      "order": 929,
       "type": "length_mismatch",
       "severity": "medium",
       "message": "Translated text length is suspicious compared to source (translation drift).",
       "meta": {
-        "src_len": 5,
-        "tgt_len": 1,
-        "ratio": 0.2
+        "src_len": 234,
+        "tgt_len": 61,
+        "ratio": 0.2606837606837607
+      }
+    },
+    {
+      "block_id": "p224_b0",
+      "page": 224,
+      "order": 1312,
+      "type": "length_mismatch",
+      "severity": "high",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
+      "meta": {
+        "src_len": 548,
+        "tgt_len": 22,
+        "ratio": 0.040145985401459854
+      }
+    },
+    {
+      "block_id": "p224_b9",
+      "page": 224,
+      "order": 1321,
+      "type": "length_mismatch",
+      "severity": "medium",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
+      "meta": {
+        "src_len": 44,
+        "tgt_len": 11,
+        "ratio": 0.25
+      }
+    },
+    {
+      "block_id": "p45_b3",
+      "page": 45,
+      "order": 257,
+      "type": "length_mismatch",
+      "severity": "medium",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
+      "meta": {
+        "src_len": 334,
+        "tgt_len": 91,
+        "ratio": 0.27245508982035926
+      }
+    },
+    {
+      "block_id": "p50_b2",
+      "page": 50,
+      "order": 283,
+      "type": "length_mismatch",
+      "severity": "medium",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
+      "meta": {
+        "src_len": 254,
+        "tgt_len": 73,
+        "ratio": 0.2874015748031496
+      }
+    },
+    {
+      "block_id": "p70_b2",
+      "page": 70,
+      "order": 401,
+      "type": "suspicious_chars",
+      "severity": "medium",
+      "message": "Translated text contains suspicious control or mojibake characters.",
+      "meta": {
+        "chars": [
+          "\u0007",
+          "\b"
+        ]
+      }
+    },
+    {
+      "block_id": "p71_b2",
+      "page": 71,
+      "order": 407,
+      "type": "length_mismatch",
+      "severity": "medium",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
+      "meta": {
+        "src_len": 342,
+        "tgt_len": 100,
+        "ratio": 0.29239766081871343
+      }
+    },
+    {
+      "block_id": "p82_b4",
+      "page": 82,
+      "order": 467,
+      "type": "length_mismatch",
+      "severity": "medium",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
+      "meta": {
+        "src_len": 117,
+        "tgt_len": 35,
+        "ratio": 0.29914529914529914
+      }
+    },
+    {
+      "block_id": "p92_b3",
+      "page": 92,
+      "order": 528,
+      "type": "length_mismatch",
+      "severity": "medium",
+      "message": "Translated text length is suspicious compared to source (translation drift).",
+      "meta": {
+        "src_len": 190,
+        "tgt_len": 54,
+        "ratio": 0.28421052631578947
       }
     }
   ],
   "summary": {
     "total_blocks": 627,
     "checked": 627,
-    "issues_total": 1,
+    "issues_total": 9,
     "issues_by_type": {
-      "length_mismatch": 1
+      "length_mismatch": 8,
+      "suspicious_chars": 1
     },
     "issues_by_severity": {
-      "medium": 1
+      "medium": 8,
+      "high": 1
     },
     "roles_count": {
       "body": 553,
@@ -32,9 +139,9 @@
     }
   },
   "translation_metrics": {
-    "average_length_ratio": 1.020810210792843,
-    "min_length_ratio": 0.05555555555555555,
-    "max_length_ratio": 2.3333333333333335,
+    "average_length_ratio": 0.780181340436163,
+    "min_length_ratio": 0.0125,
+    "max_length_ratio": 2.0898876404494384,
     "blocks_analyzed": 627
   }
 }

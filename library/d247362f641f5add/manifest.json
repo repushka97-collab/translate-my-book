@@ -2,7 +2,7 @@
   "book_id": "d247362f641f5add",
   "source_pdf": "I:\\PROJECTS\\Translate-my-book\\translate-my-book\\For test\\GPT.pdf",
   "library_pdf": "library\\d247362f641f5add\\original.pdf",
-  "created_at": "2025-12-13T18:59:37.792402Z",
+  "created_at": "2025-12-14T12:55:26.368721Z",
   "pages": 8,
   "metadata": {
     "title": "",
@@ -13,7 +13,9 @@
     "json": "output\\d247362f641f5add\\book.json",
     "docx_main": "output\\d247362f641f5add\\book_ru.docx",
     "html": "output\\d247362f641f5add\\book.html",
-    "pdf": "output\\d247362f641f5add\\book_ru.pdf"
+    "pdf": "output\\d247362f641f5add\\book_ru.pdf",
+    "quality_scorecard": "output\\d247362f641f5add\\quality_reports\\quality_scorecard.json",
+    "pdf_diff_report": "output\\d247362f641f5add\\quality_reports\\pdf_diff_report.html"
   },
   "qa": {
     "status": "warn",
@@ -49,9 +51,9 @@
       }
     },
     "translation_metrics": {
-      "average_length_ratio": 0.9993281530608923,
-      "min_length_ratio": 0.8888888888888888,
-      "max_length_ratio": 1.0666666666666667,
+      "average_length_ratio": 0.8894930778325445,
+      "min_length_ratio": 0.29411764705882354,
+      "max_length_ratio": 2.0,
       "blocks_analyzed": 71
     }
   },

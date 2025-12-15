@@ -1,0 +1,38 @@
+{
+  "timestamp": "20251214_050806",
+  "total": 6,
+  "successful": 0,
+  "failed": 6,
+  "results": [
+    {
+      "pdf": "For test\\30-38.pdf",
+      "status": "failed",
+      "error": "Unknown error"
+    },
+    {
+      "pdf": "For test\\GPT.pdf",
+      "status": "failed",
+      "error": "Unknown error"
+    },
+    {
+      "pdf": "For test\\KIDCITY.pdf",
+      "status": "failed",
+      "error": "Unknown error"
+    },
+    {
+      "pdf": "For test\\Myofascial.pdf",
+      "status": "failed",
+      "error": "Unknown error"
+    },
+    {
+      "pdf": "ingest\\Book1.pdf",
+      "status": "exception",
+      "error": "DOCX export failed: All strings must be XML compatible: Unicode or ASCII, no NULL bytes or control characters"
+    },
+    {
+      "pdf": "ingest\\Основы фитнес тренировки.pdf",
+      "status": "failed",
+      "error": "Unknown error"
+    }
+  ]
+}
